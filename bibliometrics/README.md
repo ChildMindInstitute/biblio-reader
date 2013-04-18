@@ -11,6 +11,14 @@ To make the paper:
 
 or:
 > pdflatex rsbib_paper.tex
+
+
 > bibtex rsbib_paper.1
+
+
 > pdflatex rsbib_paper.tex
+
+
 > pdflatex rsbib_paper.tex
+
+
