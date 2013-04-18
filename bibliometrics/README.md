@@ -10,15 +10,10 @@ To make the paper:
 > make
 
 or:
-> pdflatex rsbib_paper.tex
+> pdflatex rsbib_paper.tex  
+> bibtex rsbib_paper.1  
+> pdflatex rsbib_paper.tex  
+> pdflatex rsbib_paper.tex  
 
-
-> bibtex rsbib_paper.1
-
-
-> pdflatex rsbib_paper.tex
-
-
-> pdflatex rsbib_paper.tex
 
 
