@@ -2,9 +2,9 @@
 % Neuroimage-like layout
 % Neuroimage-like layout
 %\documentclass[12pt,3p,review]{elsarticle}
-\documentclass[12pt,3p,review,number]{elsarticle}
+%\documentclass[12pt,3p,review,number]{elsarticle}
 %\documentclass[5p]{elsarticle}
-%\documentclass[5p]{elsarticle}
+\documentclass[5p]{elsarticle}
 % For kindle
 %\documentclass[1p,12pt]{elsarticle}
 %\usepackage{geometry}
@@ -17,6 +17,9 @@
 \usepackage{url}
 \usepackage[breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
 \usepackage[table]{xcolor}
+
+\usepackage[pagewise]{lineno}
+\biboptions{sort}
 
 \definecolor{deep_blue}{rgb}{0,.2,.5}
 \definecolor{dark_blue}{rgb}{0,.15,.5}
@@ -43,8 +46,49 @@
 % A compact fraction
 \def\slantfrac#1#2{\kern.1em^{#1}\kern-.1em/\kern-.1em_{#2}}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% For the final version: to output PDF figures from latex
+\newif\iffinal
+\finaltrue
+%\finalfalse
+\iffinal\else
+\usepackage[tightpage,active]{preview}
+\fi
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Modification tracking
+\usepackage{xcolor}
+\usepackage[normalem]{ulem}
+\colorlet{markercolor}{purple!50!black}
+\newcommand{\ADDED}[1]{\textcolor{markercolor}{\uline{#1}}}
+\newcommand{\DELETED}[1]{\textcolor{red}{\sout{#1}}}
+
+% For highlighting changes for reviewer
+\usepackage{MnSymbol}
+\def\marker{%
+    \vadjust{{%
+	\llap{\smash{%
+	    \color{purple}%
+	    \scalebox{1.8}{$\filledmedtriangleright$}}\;}%
+    }}\hspace*{-.1ex}%
+}%
+\def\hl#1{\textcolor{markercolor}{%
+   \protect\marker%
+  #1%
+}}%
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+
+% Show line numbers
+%\linenumbers
+%\linenumbersep 3pt\relax
+%\renewcommand\linenumberfont{\normalfont\tiny\sffamily\color{black!50}}
+%\renewcommand\linenumberfont{\normalfont\color{dark_blue}}
+
+
 
 \title{Bibliometric Analysis of Resting State fMRI Literature}
 
@@ -277,7 +321,6 @@ standard error over the jackknifes were reported, which is an overestimate of th
 true procedure error.  Additionally, the graph's mean shortest path length and
 mean clustering coefficient was calculated in a seperate analysis.
 
-
 \subsection{Graph Analysis of Co-authorships}
 Collaborative relationships between authors of R-fMRI literature can be
 characterized by co-authorships. A graph was constructed from the CMI Librarian
@@ -317,15 +360,26 @@ common with any other working group (line 8), then it is included in the results
 Growth of R-fMRI literature was fitted by piecewise exponential functions with
 32\% growth between January 1,1994 and December 31, 2005 and 47\% between January
 1, 2006 and December 31, 2012. In comparison, growth of fMRI literature was
-found to be 26\% and 17\% during the same time periods. Figure 1 shows the growth
+found to be 26\% and 17\% during the same time periods. Fig.
+\ref{fig:overallgrowth} shows the growth
 of each literature, and represents a total of 28,434 fMRI publications and 1,721
 R-fMRI publications. Additionally, 39\% of R-fMRI publications were determined to
 be open access, compared to 31\% in all of fMRI.
 
+%{{{------ Figure 1 -----}}}
+\begin{figure}
+  \begin{center}
+    \includegraphics[width=\linewidth]{figures/overall_growth}%
+    %\includegraphics[width=.5\linewidth]{figures/overall_growth}%
+    \caption{The growth of resting state and fMRI literature.
+        \label{fig:overallgrowth}
+    }
+  \end{center}
+\end{figure}
 
 
 The top 20 publication outlets for R-fMRI publications accounted for 59\% (1017)
-of the CMI R-fMRI library as shown in Fig. 2. This list is dominated by three
+of the CMI R-fMRI library as shown in Fig. \ref{fig:journal_dist}. This list is dominated by three
 neuroimaging journals (NeuroImage, Human Brain Mapping, Brain Connectivity),
 which accounted for approximately 26\% of the R-fMRI publications. The top 20
 also include nine general neuroscience, two general science, four clinical
@@ -335,9 +389,35 @@ library was spread over 268 different publication outlets. Nine of the top 20
 journals began publishing R-fMRI literature before 2006, and Brain Connectivity,
 founded in 2011, is the most recent addition.  
 
-The density-equalizing map is shown in figure 3. The top three countries are the
-United States of America, United Kingdom, and Netherlands, wherein lie 62.9\%,
-9.6\%, and 8.6\% of correspondence addresses, respectively.
+%{{{------ Figure 2 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/journal_dist}%
+    \includegraphics[width=\linewidth]{figures/journal_dist}%
+    %\includegraphics[width=.5\linewidth]{figures/overall_growth}%
+    \caption{Publication counts by journal.
+        \label{fig:journal_dist}
+    }
+  \end{center}
+\end{figure}
+
+
+The density-equalizing map is shown in Fig. \ref{fig:resting_state_map}. The top
+three countries are the United States of America, United Kingdom, and
+Netherlands, wherein lie 62.9\%, 9.6\%, and 8.6\% of correspondence addresses,
+respectively
+
+%{{{------ Figure 3 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/resting_state_map}%
+    \includegraphics[width=\linewidth]{figures/resting_state_map}%
+    %\includegraphics[width=.5\linewidth]{figures/resting_state_map}%
+    \caption{Amount of resting state publications by country.
+        \label{fig:resting_state_map}
+    }
+  \end{center}
+\end{figure}
 
 
 \subsection{Term Frequency Analysis}
@@ -364,37 +444,88 @@ Genetics&29 (2\%) \\ \hline
 \end{table}
 
 
-Growth of the most prevalent clinical terms is shown in figure 3. Of 1,721
+Growth of the most prevalent clinical terms is shown in Fig.
+\ref{fig:clinical_bytag_hist}. Of 1,721
 publications in the corpus, ``Clinical'' is the most commonly applied tag
 (Tab. \ref{tagfreqtable}). ``Schizophrenia'' (13\%), ``Alzheimer's Disease'' (11.3\%),
 and ``Depression'' (10.8\%) are the most common clinical sub-tags that co-occur with the
 ``clinical'' tag.
 
-Figure 5 shows growth of the term ``connectome'' in the corpus. Term frequency
+%{{{------ Figure 4 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/clinical_bytag_hist}%
+    \includegraphics[width=\linewidth]{figures/clinical_bytag_hist}%
+    %\includegraphics[width=.5\linewidth]{figures/clinical_bytag_hist}%
+    \caption{Most common clinical terms from the resting state literature.
+        \label{fig:clinical_bytag_hist}
+    }
+  \end{center}
+\end{figure}
+
+Fig. \ref{connectome_growth} shows growth of the term ``connectome'' in the corpus. Term frequency
 ($t\!f$), document frequency ($d\!f$), and term frequency-inverse document frequency
 ($t\!f \times d\!f^{-1}$) have all increased since 2009.  
 
-Figure 6 shows conditional-$t\!f$ and $d\!f$ for the terms with the highest values. The
-most common imaging modality was fMRI, which was a key term in the searches used
-to generate the corpus. The most investigated cognitive domains were activation,
-memory, attention, and association. The PFC, PCC, and anterior cingulate were
-the most discussed brain regions. 
+%{{{------ Figure 5 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/connectome_growth}%
+    \includegraphics[width=\linewidth]{figures/connectome_growth}%
+    %\includegraphics[width=.5\linewidth]{figures/connectome_growth}%
+    \caption{Most common clinical terms from the resting state literature.
+        \label{fig:connectome_growth}
+    }
+  \end{center}
+\end{figure}
+
+Fig. \ref{fig:tfidf_top2} shows conditional-$t\!f$ and $d\!f$ for the terms with
+the highest values. The most common imaging modality was fMRI, which was a key
+term in the searches used to generate the corpus. The most investigated
+cognitive domains were activation, memory, attention, and association. The PFC,
+PCC, and anterior cingulate were the most discussed brain regions. 
+
+%{{{------ Figure 6 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/tfidf_top2}%
+    \includegraphics[width=\linewidth]{figures/tfidf_top2}%
+    %\includegraphics[width=.5\linewidth]{figures/tfidf_top2}%
+    \caption{Comparison of the growth of the term ``connectome'' in the resting
+    state fMRI and DTI literature.
+        \label{fig:tfidf_top2}
+    }
+  \end{center}
+\end{figure}
 
 \subsection{Methods Analysis}
 
 The accuracy of the Na\"ive Bayes model in inferring
-algorithmic methods is shown in ??.
+algorithmic methods is shown in ??. \textcolor{red}{Table missing}
 
 The terms used as features, along with their $\chi^2$ values, are shown in
-??.
+??. \textcolor{red}{Table missing}
 
-Figure 6 shows growth over time of algorithmic methods in R-fMRI literature.
-Seed-based correlation is by far the most common method, accounting for nearly
-half of all uses of algorithmic methods. Independent component analysis (ICA)
-and clustering have shown steady growth since 2010, and use of machine learning
-methods increased at a faster pace in 2012.
+Fig. \ref{fig:methods_growth_hist} shows growth over time of algorithmic methods
+in R-fMRI literature.  Seed-based correlation is by far the most common method,
+accounting for nearly half of all uses of algorithmic methods. Independent
+component analysis (ICA) and clustering have shown steady growth since 2010, and
+use of machine learning methods increased at a faster pace in 2012.
 
-X\subsection{Citation Analysis} 
+%{{{------ Figure 7 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/methods_growth_hist}%
+    \includegraphics[width=\linewidth]{figures/methods_growth_hist}%
+    %\includegraphics[width=.5\linewidth]{figures/methods_growth_hist}%
+    \caption{Prevalence and growth of different methods applied in the resting
+    state fMRI literature. 
+        \label{fig:methods_growth_hist}
+    }
+  \end{center}
+\end{figure}
+
+\subsection{Citation Analysis} 
 The top 10 publications by pagerank were collectively cited by 66\% of the
 corpus, and the top 1\% of publications account for 10\% of the total pagerank.
 After these publications, pagerank falls off more slowly, with the next 10\% of
@@ -413,7 +544,7 @@ compared to 0.002 for a random graph with the same number of nodes and edges,
 and its average shortest path length was 4.964, compared to 3.915 for the random
 graph.
 
-Figure 11 shows the number of connected components, and size of the largest
+Figure \textcolor{red}{missing} shows the number of connected components, and size of the largest
 connected component, as publications and authors are removed.  
 
 \subsection{Working Groups Analysis}
@@ -426,11 +557,11 @@ was 0.11.
 
 Working group authors (number of publications in corpus by author):
 \begin{enumerate}
-\item Michael P. Milham (41), Clare Kelly (36), F. Xavier Castellanos (37), and
-Bharat Biswal (36) 
+\item Michael P. Milham (41), F. Xavier Castellanos (37), Bharat Biswal (36), and 
+Clare Kelly (36)
 \item Tianzi Jiang (35), Kun-Cheng Li (27), Chunshui Yu (19),
-Li-Xia Tian (18), Yuan Zhou (15), and Yong Liu (15) 
-\item Qi-Yong Gong (35), Yi-Jun Liu (21), Wei Liao (20), Hua-fu Chen (20),
+Li-Xia Tian (18), Yong Liu (15), and Yuan Zhou (15)
+\item Qi-Yong Gong (35), Yi-Jun Liu (21), Hua-fu Chen (20), Wei Liao (20), 
 Guang-Ming Lu (18), Zhiqiang Zhang (17), and Yuan Zhong (13) 
 \item Bradley L. Schlaggar (19), Steven E. Petersen (16), Alexander L.
 Cohen (13), Damien Fair (13), Nico U. F. Dosenbach (10) and Fran M. Miezin (10)
@@ -440,15 +571,17 @@ Cohen (13), Damien Fair (13), Nico U. F. Dosenbach (10) and Fran M. Miezin (10)
 
 Our bibliometric analysis of R-fMRI literature lends insight into the current
 state of the field, demonstrating its strength, areas of focus, and future
-potential. It was found that the growth of R-fMRI literature is currently
+potential. The growth of R-fMRI literature is currently
 significantly faster than fMRI, though R-fMRI currently comprises a small
-fraction of the total volume of fMRI literature. In academic research, a high
-rate of publication growth indicates not only that researchers in the field are
-publishing more, but also that additional researchers are publishing in the
-field. The journal Neuroimage has published more R-fMRI literature than any
+fraction of the total volume of fMRI literature. A high
+rate of publication growth likely indicates not only that researchers in the field are
+publishing more, but also that the field is growing to include new researchers. 
+The journal Neuroimage has published more R-fMRI literature than any
 other. In general, nearly 50\% of the literature was published in general
 neuroimaging journals, perhaps reflecting the rapid advancement of methods used
 to study R-fMRI over the past 10 years. 
+
+\textcolor{red}{\bf Need a table with these counts.}
 
 In contrast, only 1\% was published in clinical journals, suggesting that the
 field has not yet matured enough to be used in clinical applications. But
@@ -456,7 +589,7 @@ despite their venues, a full 35\% of the R-fMRI corpus was tagged “Clinical.�
 Indeed, a great proportion of R-fMRI research is performed on both clinical and
 control populations in order to identify differences between them; typically,
 however, the results of these experiments are not immediately applicable in
-clinical medicine.
+clinical medicine. \textcolor{red}{this is a odd statement}
 
 Another pattern that was explored, open access, is a relatively recent
 innovation that allows researchers to access publications without payment to the
@@ -464,75 +597,81 @@ journal by either front-loading the cost onto the author or subsidizing the cost
 in another way. Open access is not universal in R-fMRI (26\%) or fMRI (22\%), but
 has strong footholds in both. That the rate of open access is consistently
 increasing over time in both literatures bodes well for the future of open
-science.
+science. \textcolor{red}{May want to include information about the NIH mandate
+that publications resulting from their grants be published open-access.}
 
 Word frequency analysis easily identified the corpus domain, fMRI, as the most
 common imaging modality. In addition, there was a focus on the prefrontal cortex
 (PFC), which is implicated in executive function, as well as on the posterior
-cingulate cortex (PCC), which is a central node of the DMN used for integration.
+cingulate cortex (PCC), which is a central node of the DMN
+\textcolor{red}{citation here}.
 Notably, neither the parietal cortex nor any of its subregions appear in the top
-hits, though some are implicated in the DMN. This result may demonstrate the bag
+hits, though they are also implicated in the DMN. This result may demonstrate the bag
 of words model’s limited ability to aggregate concepts: for example, it may be
 the case that the sum of occurrences of subregions of the parietal cortex would
 appear in the top hits, but none appear individually. Finally, memory and
 activation were the most discussed cognitive domains, reflecting current
-research trends such as in [8] and [9]. A possible extension of this research is
+research trends such as in \textcolor{red}{missing citation [8]} and
+\textcolor{red}{missing citation [9]}. A possible extension of this research is
 to identify common terms across scientific fields to determine, for example,
-whether particular genes can affect PFC and PCC function.
+whether particular genes can affect PFC and PCC function \textcolor{red}{this is
+not clear}.
 
 Analysis of working groups found particularly prolific labs and collaborators,
 offers measures for whether the field is dominated by only a few authors, and
 found patterns in geographic localities and language. The resulting groups are
 together responsible for nearly a fifth of the total corpus, including some of
-the highest-pageranked publications, though there is little publication overlap
+the highest-Pageranked publications, though there is little publication overlap
 between groups. Ranking authors by their impact factor reveals that several of
-the authors in these groups, including M P Milham, F X Castellanos, A M Kelly, B
-Biswal, and Qi-Yong Gong, are not only prolific, but also are attributed many
+the authors in these groups, including M. P. Milham, F. X. Castellanos, C.
+Kelly, B. Biswal, and Qi-Yong Gong, are not only prolific, but also are attributed many
 citations. Furthermore, geographic location, language, and affiliation are
-consistent within groups, but very different between groups: M P Milham’s group
-is based in New York, T Z Jiang’s group is based in Beijing, Qi-Yong Gong’s
+consistent within groups, but very different between groups: M. P. Milham’s group
+is based in New York, T. Z. Jiang’s group is based in Beijing, Qi-Yong Gong’s
 group is based in Sichuan, and Bradley Schlaggar’s group is based in St. Louis.
 This result demonstrates the strength of R-fMRI research around the world, and
 suggests that distance, time zone, and language pose practical barriers to
-collaboration.
+collaboration \textcolor{red}{this statement is pushing it}.
 
 Analysis of the citation graph concluded that it can be considered ``small
 world'' because its mean clustering coefficient is significantly higher than
 that of a random graph, and its mean shortest path length is not significantly
-different from that of a random graph. [10] In a small world network, most nodes
+different from that of a random graph \cite{Watts1998}. In a small world network, most nodes
 are not adjacent to one another, but the mean path length is still fairly short
 because there are few degrees of separation needed to reach one node from
 another. More precisely, the mean path length of a small world network grows
 with the logarithm of the total number of nodes. In this application, this
-result indicates that most publications do not cite a large fraction of the
+result indicates that although most publications do not cite a large fraction of the
 corpus, but the number of hops needed to traverse from one publication to
-another is still fairly short. Indeed, there are many real-world relationships,
+another is still fairly short. \textcolor{red}{What qualifies as a large
+fraction here? We should offer something better to back up this statement} Indeed, there are many real-world relationships,
 such as social networks and Internet connections, that can be represented with
 small world graphs. 
 
-By measuring pagerank, publications were identified that are central to R-fMRI
-literature without necessarily having the highest raw citation count. The
-highest pageranked publications were found to be seminal publications that
+By measuring Pagerank, publications were identified that are central to R-fMRI
+literature without necessarily having the highest raw citation count. Among the
+highest Pageranked publications are the seminal publications that
 provide much of the historical groundwork for the field. Indeed, from these
 publication emerges a narrative of R-fMRI history, from the foundations of
 R-fMRI functional connectivity and activation, to the first clinical application
 in the field, to the discovery of the canonical independent R-fMRI networks.
-Relatively consistent pageranks among the remaining publications suggest that
+Relatively consistent Pageranks among the remaining publications suggest that
 the field is not completely represented in only a small subset of the corpus,
 but rather is still growing in high-impact directions. 
 
-The publication with the second highest pagerank, Biswal et al’s ``Functional
+The publication with the second highest Pagerank, Biswal et al’s ``Functional
 connectivity in the motor cortex of resting human brain using echo-planar MRI''
-(1995), demonstrated that functional connectivity—spontaneous, low frequency
-activity correlated between functional regions—is present not only during task,
-but also during R-fMRI. Resting state functional connectivity had been observed
-in clinical settings for a long time using EEG, which measures frequency bands,
-and PET, which measures glucose metabolism. However, this was the first time it
-was observed in the complex fMRI-measured BOLD signal, which lacks clear
-physiological underpinning. Biswal appears in a top working group and in the
-list of highest impact authors. Functional connectivity, first demonstrated with
-R-fMRI in this publication, is among the most frequently occurring terms in the
-corpus. 
+(1995)\cite{Biswal1995}, demonstrated functional connectivity in spontaneous,
+low frequency activity measured using R-fMRI. Resting state functional
+connectivity had been observed in clinical settings for a long time using
+electroencephlogram (EEG), and positron emission tomography (PET), which
+measures glucose metabolism. However, this was the first time it was observed in
+the complex fMRI-measured BOLD signal, which lacks clear physiological
+underpinning. Bharat Biswal appears in a top working group and in the list of
+highest impact authors. Functional connectivity, first demonstrated with R-fMRI
+in this publication, is among the most frequently occurring terms in the corpus
+\textcolor{red}{the corpus is determined by the presence of the term functional
+connectivity}. 
 
 Another, separate line of research took root with a series of 2001 publications
 that include those with first and seventh highest pagerank, Raichle et al’s ``A
