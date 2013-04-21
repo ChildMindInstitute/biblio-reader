@@ -3,8 +3,8 @@
 % Neuroimage-like layout
 %\documentclass[12pt,3p,review]{elsarticle}
 %\documentclass[12pt,3p,review,number]{elsarticle}
-%\documentclass[5p]{elsarticle}
 \documentclass[5p]{elsarticle}
+%\documentclass[5p]{elsarticle}
 % For kindle
 %\documentclass[1p,12pt]{elsarticle}
 %\usepackage{geometry}
@@ -19,6 +19,12 @@
 \usepackage[table]{xcolor}
 
 \usepackage[pagewise]{lineno}
+\usepackage{varwidth}
+
+\newcommand\MyCBox[1]{%
+  \colorbox{yellow!60}{\begin{varwidth}{\dimexpr\linewidth-2\fboxsep}#1\end{varwidth}}}
+
+
 \biboptions{sort}
 
 \definecolor{deep_blue}{rgb}{0,.2,.5}
@@ -60,8 +66,11 @@
 \usepackage{xcolor}
 \usepackage[normalem]{ulem}
 \colorlet{markercolor}{purple!50!black}
+\colorlet{cc_commentcolor}{blue!20!black!30!green}
 \newcommand{\ADDED}[1]{\textcolor{markercolor}{\uline{#1}}}
 \newcommand{\DELETED}[1]{\textcolor{red}{\sout{#1}}}
+\newcommand{\COMMENTCC}[1]{\MyCBox{\textcolor{cc_commentcolor}{\textbf{Cameron:
+#1}}}}
 
 % For highlighting changes for reviewer
 \usepackage{MnSymbol}
@@ -242,8 +251,8 @@ A bag of words model was used to learn about the field’s experimental methods
 and areas of focus. A bag of words model assumes that all of the words in a
 corpus are statistically independent, regardless of whether they appear in the
 same sentence or publication.  Under this model, a term’s significance can be
-measured simply by counting its occurrences. \textcolor{blue}{Should we reference
-a text mining review here? -cc}
+measured simply by counting its occurrences. \COMMENTCC{Should we reference
+a text mining review here?}
 
 Terms of interest were derived from n-grams (a phrase consisting of $n$ words)
 from neuroimaging methods, cognitive ontology \cite{Poldrack2011}, and the
@@ -262,20 +271,20 @@ the documents in which they appear.
 
 \subsection{Prevalence Of Methods} 
 A Na\"ive Bayes model was used to determine the prevalence of various analysis
-methods in the literature. \textcolor{blue}{Include a citation for this?} In particular, this model was used to discriminate
-papers that used seed-based correlation, ICA, clustering, graph theory, and machine
-learning methods. First, a small training set of 10 publications was manually
-created.  From this training set, important features were derived by finding
-tokens and n-grams with high values of the $\chi^2$ statistic, which is used as
-a proxy for information gain \cite{Quinlan86}. A term
-frequency matrix was then constructed, relating each publication to the
-frequency of each term contained in the publication. Logarithmic term
-frequencies ($\log{t\!f}$) were used to prevent a single term from dominating
-the model.  Each publication’s vector was normalized to unit length to mitigate
-the effect of publications that contain too many or too few terms. This term
-frequency matrix was used to train a Na\"ive Bayes model. Finally, 213
-additional publications were classified by hand and used to test the
-classification accuracy of the model.
+methods in the literature. \COMMENTCC{Include a citation for this?} In
+particular, this model was used to discriminate papers that used seed-based
+correlation, ICA, clustering, graph theory, and machine learning methods. First,
+a small training set of 10 publications was manually created.  From this
+training set, important features were derived by finding tokens and n-grams with
+high values of the $\chi^2$ statistic, which is used as a proxy for information
+gain \cite{Quinlan86}. A term frequency matrix was then constructed, relating
+each publication to the frequency of each term contained in the publication.
+Logarithmic term frequencies ($\log{t\!f}$) were used to prevent a single term
+from dominating the model.  Each publication’s vector was normalized to unit
+length to mitigate the effect of publications that contain too many or too few
+terms. This term frequency matrix was used to train a Na\"ive Bayes model.
+Finally, 213 additional publications were classified by hand and used to test
+the classification accuracy of the model.
 
 \subsection{Citation Analysis}
 Publications and the citations that link them were modeled as a directed graph
@@ -338,7 +347,7 @@ order to find these groups, a greedy community-detection algorithm was developed
 that uses the intersection of researchers’ publication sets to measure their
 similarity.
 
-\textcolor{blue}{\textbf ALGORITHM GOES HERE}
+\COMMENTCC{ALGORITHM GOES HERE}
 
 The procedure for identifying author working groups begins by repeatedly seeding
 a new working group with the author with the most publications (lines 2-3).
@@ -463,9 +472,10 @@ and ``Depression'' (10.8\%) are the most common clinical sub-tags that co-occur 
   \end{center}
 \end{figure}
 
-Fig. \ref{connectome_growth} shows growth of the term ``connectome'' in the corpus. Term frequency
-($t\!f$), document frequency ($d\!f$), and term frequency-inverse document frequency
-($t\!f \times d\!f^{-1}$) have all increased since 2009.  
+Fig. \ref{connectome_growth} shows growth of the term ``connectome'' in the
+corpus. Term frequency ($t\!f$), document frequency ($d\!f$), and term
+frequency-inverse document frequency ($t\!f \times d\!f^{-1}$) have all
+increased since 2009.  
 
 %{{{------ Figure 5 -----}}}
 \begin{figure}
@@ -501,10 +511,10 @@ PCC, and anterior cingulate were the most discussed brain regions.
 \subsection{Methods Analysis}
 
 The accuracy of the Na\"ive Bayes model in inferring
-algorithmic methods is shown in ??. \textcolor{red}{Table missing}
+algorithmic methods is shown in ??. \COMMENTCC{Table missing}
 
 The terms used as features, along with their $\chi^2$ values, are shown in
-??. \textcolor{red}{Table missing}
+??. \COMMENTCC{Table missing}
 
 Fig. \ref{fig:methods_growth_hist} shows growth over time of algorithmic methods
 in R-fMRI literature.  Seed-based correlation is by far the most common method,
@@ -544,7 +554,7 @@ compared to 0.002 for a random graph with the same number of nodes and edges,
 and its average shortest path length was 4.964, compared to 3.915 for the random
 graph.
 
-Figure \textcolor{red}{missing} shows the number of connected components, and size of the largest
+Figure \COMMENTCC{missing} shows the number of connected components, and size of the largest
 connected component, as publications and authors are removed.  
 
 \subsection{Working Groups Analysis}
@@ -571,17 +581,16 @@ Cohen (13), Damien Fair (13), Nico U. F. Dosenbach (10) and Fran M. Miezin (10)
 
 Our bibliometric analysis of R-fMRI literature lends insight into the current
 state of the field, demonstrating its strength, areas of focus, and future
-potential. The growth of R-fMRI literature is currently
-significantly faster than fMRI, though R-fMRI currently comprises a small
-fraction of the total volume of fMRI literature. A high
-rate of publication growth likely indicates not only that researchers in the field are
-publishing more, but also that the field is growing to include new researchers. 
-The journal Neuroimage has published more R-fMRI literature than any
-other. In general, nearly 50\% of the literature was published in general
-neuroimaging journals, perhaps reflecting the rapid advancement of methods used
-to study R-fMRI over the past 10 years. 
+potential. The growth of R-fMRI literature is currently significantly faster
+than fMRI, though R-fMRI currently comprises a small fraction of the total
+volume of fMRI literature. A high rate of publication growth likely indicates
+not only that researchers in the field are publishing more, but also that the
+field is growing to include new researchers.  The journal Neuroimage has
+published more R-fMRI literature than any other. In general, nearly 50\% of the
+literature was published in general neuroimaging journals, perhaps reflecting
+the rapid advancement of methods used to study R-fMRI over the past 10 years. 
 
-\textcolor{red}{\bf Need a table with these counts.}
+\COMMENTCC{Need a table with these counts.}
 
 In contrast, only 1\% was published in clinical journals, suggesting that the
 field has not yet matured enough to be used in clinical applications. But
@@ -589,7 +598,7 @@ despite their venues, a full 35\% of the R-fMRI corpus was tagged “Clinical.�
 Indeed, a great proportion of R-fMRI research is performed on both clinical and
 control populations in order to identify differences between them; typically,
 however, the results of these experiments are not immediately applicable in
-clinical medicine. \textcolor{red}{this is a odd statement}
+clinical medicine. \COMMENTCC{this is a odd statement}
 
 Another pattern that was explored, open access, is a relatively recent
 innovation that allows researchers to access publications without payment to the
@@ -597,24 +606,24 @@ journal by either front-loading the cost onto the author or subsidizing the cost
 in another way. Open access is not universal in R-fMRI (26\%) or fMRI (22\%), but
 has strong footholds in both. That the rate of open access is consistently
 increasing over time in both literatures bodes well for the future of open
-science. \textcolor{red}{May want to include information about the NIH mandate
+science. \COMMENTCC{May want to include information about the NIH mandate
 that publications resulting from their grants be published open-access.}
 
 Word frequency analysis easily identified the corpus domain, fMRI, as the most
 common imaging modality. In addition, there was a focus on the prefrontal cortex
 (PFC), which is implicated in executive function, as well as on the posterior
 cingulate cortex (PCC), which is a central node of the DMN
-\textcolor{red}{citation here}.
+\COMMENTCC{citation here}.
 Notably, neither the parietal cortex nor any of its subregions appear in the top
 hits, though they are also implicated in the DMN. This result may demonstrate the bag
 of words model’s limited ability to aggregate concepts: for example, it may be
 the case that the sum of occurrences of subregions of the parietal cortex would
 appear in the top hits, but none appear individually. Finally, memory and
 activation were the most discussed cognitive domains, reflecting current
-research trends such as in \textcolor{red}{missing citation [8]} and
-\textcolor{red}{missing citation [9]}. A possible extension of this research is
+research trends such as in \COMMENTCC{missing citation [8]} and
+\COMMENTCC{missing citation [9]}. A possible extension of this research is
 to identify common terms across scientific fields to determine, for example,
-whether particular genes can affect PFC and PCC function \textcolor{red}{this is
+whether particular genes can affect PFC and PCC function \COMMENTCC{this is
 not clear}.
 
 Analysis of working groups found particularly prolific labs and collaborators,
@@ -631,22 +640,22 @@ is based in New York, T. Z. Jiang’s group is based in Beijing, Qi-Yong Gong’
 group is based in Sichuan, and Bradley Schlaggar’s group is based in St. Louis.
 This result demonstrates the strength of R-fMRI research around the world, and
 suggests that distance, time zone, and language pose practical barriers to
-collaboration \textcolor{red}{this statement is pushing it}.
+collaboration \COMMENTCC{this statement is pushing it}.
 
 Analysis of the citation graph concluded that it can be considered ``small
 world'' because its mean clustering coefficient is significantly higher than
 that of a random graph, and its mean shortest path length is not significantly
-different from that of a random graph \cite{Watts1998}. In a small world network, most nodes
-are not adjacent to one another, but the mean path length is still fairly short
-because there are few degrees of separation needed to reach one node from
-another. More precisely, the mean path length of a small world network grows
-with the logarithm of the total number of nodes. In this application, this
-result indicates that although most publications do not cite a large fraction of the
-corpus, but the number of hops needed to traverse from one publication to
-another is still fairly short. \textcolor{red}{What qualifies as a large
-fraction here? We should offer something better to back up this statement} Indeed, there are many real-world relationships,
-such as social networks and Internet connections, that can be represented with
-small world graphs. 
+different from that of a random graph \cite{Watts1998}. In a small world
+network, most nodes are not adjacent to one another, but the mean path length is
+still fairly short because there are few degrees of separation needed to reach
+one node from another. More precisely, the mean path length of a small world
+network grows with the logarithm of the total number of nodes. In this
+application, this result indicates that although most publications do not cite a
+large fraction of the corpus, but the number of hops needed to traverse from one
+publication to another is still fairly short. \COMMENTCC{What qualifies as a
+large fraction here? We should offer something better to back up this statement}
+Indeed, there are many real-world relationships, such as social networks and
+Internet connections, that can be represented with small world graphs. 
 
 By measuring Pagerank, publications were identified that are central to R-fMRI
 literature without necessarily having the highest raw citation count. Among the
@@ -670,7 +679,7 @@ the complex fMRI-measured BOLD signal, which lacks clear physiological
 underpinning. Bharat Biswal appears in a top working group and in the list of
 highest impact authors. Functional connectivity, first demonstrated with R-fMRI
 in this publication, is among the most frequently occurring terms in the corpus
-\textcolor{red}{the corpus is determined by the presence of the term functional
+\COMMENTCC{the corpus is determined by the presence of the term functional
 connectivity}. 
 
 Another, separate line of research took root with a series of 2001 publications
