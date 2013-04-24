@@ -484,7 +484,7 @@ co-occur with the ``clinical'' tag.
   \end{center}
 \end{figure}
 
-Fig. \ref{connectome_growth} shows growth of the term ``connectome'' in the
+Fig. \ref{fig:connectome_growth} shows growth of the term ``connectome'' in the
 corpus. Term frequency ($t\!f$), document frequency ($d\!f$), and term
 frequency-inverse document frequency ($t\!f \times d\!f^{-1}$) have all
 increased since 2009.  
@@ -495,13 +495,13 @@ increased since 2009.
     %\includegraphics[]{figures/connectome_growth}%
     \includegraphics[width=\linewidth]{figures/connectome_growth}%
     %\includegraphics[width=.5\linewidth]{figures/connectome_growth}%
-    \caption{Most common clinical terms from the resting state literature.
+    \caption{Growth of use of term ``connectome'' in the corpus
         \label{fig:connectome_growth}
     }
   \end{center}
 \end{figure}
 
-Fig. \ref{fig:tfidf_top2} shows conditional-$t\!f$ and $d\!f$ for the
+Fig. \ref{fig:tfidf_top} shows conditional-$t\!f$ and $d\!f$ for the
 terms with the highest values. The most common imaging modality was fMRI,
 which was a key term in the searches used to generate the corpus. The most
 investigated cognitive domains were activation, memory, attention, and
@@ -512,11 +512,10 @@ brain regions.
 \begin{figure}
   \begin{center}
     %\includegraphics[]{figures/tfidf_top2}%
-    \includegraphics[width=\linewidth]{figures/tfidf_top2}%
+    \includegraphics[width=\linewidth]{figures/tfidf_top}%
     %\includegraphics[width=.5\linewidth]{figures/tfidf_top2}%
-    \caption{Comparison of the growth of the term ``connectome'' in the
-    resting state fMRI and DTI literature.  
-    \label{fig:tfidf_top2}
+    \caption{TF and conditional-DF for terms with the greatest values of each
+    \label{fig:tfidf_top}
     }
   \end{center}
 \end{figure}
@@ -549,6 +548,18 @@ a faster pace in 2012.
   \end{center}
 \end{figure}
 
+%{{{------ Figure 8 -----}}}
+\begin{figure}
+  \begin{center}
+    %\includegraphics[]{figures/methods_growth_hist}%
+    \includegraphics[width=\linewidth]{figures/connected_after_removing}%
+    %\includegraphics[width=.5\linewidth]{figures/methods_growth_hist}%
+    \caption{Number of components and size of largest component after removing authors and papers from co-authorship graph.
+        \label{fig:connected_after_removing}
+    }
+  \end{center}
+\end{figure}
+
 \subsection{Citation Analysis} 
 The top 10 publications by pagerank were collectively cited by 66\% of the
 corpus, and the top 1\% of publications account for 10\% of the total
@@ -567,7 +578,7 @@ its clustering coefficient was 0.878, compared to 0.002 for a random graph
 with the same number of nodes and edges, and its average shortest path
 length was 4.964, compared to 3.915 for the random graph.
 
-Figure \COMMENTCC{missing} shows the number of connected components, and
+Fig. \ref{fig:connected_after_removing} shows the number of connected components, and
 size of the largest connected component, as publications and authors are
 removed.  
 
