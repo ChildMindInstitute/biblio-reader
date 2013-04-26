@@ -5,6 +5,31 @@ library(reshape)
 library(grid)
 library(gridExtra)
 
+one_col_width=3.15
+two_col_width=7.25
+
+# colors
+cmi_main_blue="#0071b2"
+cmi_grey="#929d9e"
+cmi_light_blue="#00c4d9"
+cmi_pea_green="#b5bf00"
+
+cmi_rich_green="#73933d"
+cmi_rich_purple="#8e7fac"
+cmi_rich_red="#d75920"
+cmi_rich_blue="#4c87a1"
+cmi_rich_aqua="#66c7c3"
+cmi_rich_orange="#eebf42"
+
+cmi_vibrant_yellow="#ffd457"
+cmi_vibrant_orange="#f58025"
+cmi_vibrant_green="#78a22f"
+cmi_vibrant_garnet="#e6006f"
+cmi_vibrant_purple="#9A4d9e"
+cmi_vibrant_blue="#19398a"
+
+cmi_year_colors=c(,cmi_vibrant_green,cmi_vibrant_yellow,cmi_vibrant_orange,cmi_rich_red,cmi_vibrant_garnet,cmi_vibrant_purple,cmi_rich_blue,cmi_vibrant_blue)
+
 # TF-conditionalDF scatter plot
 if (T) {
   file = paste("tfidf_processed.txt",sep="");
@@ -152,26 +177,30 @@ if (T) {
 # Journal counts by year
 if (T) {
   citations = read.table("journal_counts_byear.txt", sep="\t", as.is=T, header=T)
-  pdf(file="journal_dist.pdf",onefile=TRUE,width=5,height=5,
+  pdf(file="journal_dist.pdf",onefile=TRUE,width=two_col_width,height=5,
       family="Times",title="growth_rate_journal",colormodel="rgb",paper="special")
   bp <- ggplot(citations,aes(y=count,x=reorder(journal, count, sum),fill=factor(year))) +
     theme_bw() +
-    geom_bar(alpha=1.0)+labs(fill='Year')+coord_flip()+
+    geom_bar(alpha=1.0)+
+    scale_colour_brewer()+
+    labs(fill='Year')+
     scale_x_discrete(expand=c(0.01,0.01))+
     scale_y_continuous(expand=c(0.01,0.01))+
+    scale_colour_brewer()+
     ylab("Publication Count") +
     xlab("Journal") +
     opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12, hjust=0.78, vjust=0)) +
     opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90,vjust=.3)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=0,vjust=0.5)) +
+    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1)) +
     opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
     opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
     opts(axis.ticks.length = unit(.15, "lines")) +
     opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.87,0.35)) +
+    opts(legend.position=c(0.1,0.65)) +
     opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
     opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
   
+  #coord_flip()+
   print(bp)
   dev.off()
   
@@ -233,24 +262,25 @@ if (T) {
   
   p=ggplot(yearFreqs)+
     theme_bw()+
-    geom_area(aes(x=year,y=pre_2005_vol),fill="#660000",alpha=.7)+
-    geom_line(aes(x=year,y=model_fit_pre2005),color="#660000")+
-    geom_area(aes(x=year,y=post_2004_vol),fill="#ff6600",alpha=.7)+
-    geom_line(aes(x=year,y=model_fit_post2004),color="#ff6600")+
+    geom_area(aes(x=year,y=pre_2005_vol),fill=cmi_grey,alpha=.7)+
+    geom_line(aes(x=year,y=model_fit_pre2005),color=cmi_grey)+
+    geom_area(aes(x=year,y=post_2004_vol),fill=cmi_main_blue,alpha=.7)+
+    geom_line(aes(x=year,y=model_fit_post2004),color=cmi_main_blue)+
     facet_grid(labels~.,scale="free")+
     ylab("Paper Volume") +
     xlab("Year") +
-    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=10)) +
-    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=10, angle=90)) +
-    opts(strip.text.x = theme_text(family = "Times", face = "bold", size=10)) +
-    opts(strip.text.y = theme_text(family = "Times", face = "bold", size=10, angle=270)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=8)) +
-    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=8, angle=90)) +
+    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
+    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90)) +
+    opts(strip.text.x = theme_text(family = "Times", face = "plain", size=12)) +
+    opts(strip.text.y = theme_text(family = "Times", face = "plain", size=12, angle=270)) +
+    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10)) +
+    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=90)) +
     opts(axis.ticks.length = unit(.15, "lines")) +
     opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(plot.margin = unit(c(0.75, 0.25,0.5,0.75), "lines"))
+    opts(plot.margin = unit(c(0.75, 0.25,0.5,0.75), "lines"))+
+    opts(strip.background=element_blank())
   
-  pdf(file="overall_growth.pdf",onefile=TRUE,width=6,height=6,
+  pdf(file="overall_growth.pdf",onefile=TRUE,width=one_col_width,height=4,
       family="Times",title="Overall Growth",colormodel="rgb",paper="special")
   print(p)
   dev.off()
