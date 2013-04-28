@@ -77,7 +77,7 @@ if (T) {
   all2$labels = "Papers Removed"
   all = rbind(all1, all2)
   
-  pdf(file="connected_after_removing.pdf",onefile=TRUE,width=9,height=6,
+  pdf(file="connected_after_removing.pdf",onefile=TRUE,width=one_col_width,height=5,
       family="Times",title="methods",colormodel="rgb",paper="special")
   bp <- ggplot(all,aes(y=count,x=removed,colour=labels)) + ylab("") + xlab("Quantity Removed") +
     theme_bw() + 
@@ -103,22 +103,23 @@ if (T) {
 if (T) {
   citations = read.table("methods_growth.txt", sep="\t", as.is=T, header=T)
   citations = citations[which(citations$year>=2005),]
-  pdf(file="methods_growth_hist.pdf",onefile=TRUE,width=9,height=6,
+  pdf(file="methods_growth_hist.pdf",onefile=TRUE,width=one_col_width,height=4.5,
       family="Times",title="citations",colormodel="rgb",paper="special")
   bp <- ggplot(citations,aes(y=count,x=reorder(method, count, sum),fill=factor(year))) +
     theme_bw() +
-    geom_bar(alpha=1.0)+labs(fill='Year')+coord_flip()+
+    geom_bar(alpha=1.0)+labs(fill='Year')+
+    scale_fill_manual(name="Year", values=cmi_year_colors)+
     scale_y_continuous() +
     ylab("Count") +
     xlab("Method") +
     opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
     opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=0,vjust=0.5)) +
+    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1)) +
     opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
     opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
     opts(axis.ticks.length = unit(.15, "lines")) +
     opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.85,0.32)) +
+    opts(legend.position=c(0.15,0.6)) +
     opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
     opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
   print(bp)
