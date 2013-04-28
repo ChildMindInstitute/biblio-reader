@@ -28,8 +28,14 @@ cmi_vibrant_garnet="#e6006f"
 cmi_vibrant_purple="#9A4d9e"
 cmi_vibrant_blue="#19398a"
 
-cmi_year_colors=c(,cmi_vibrant_green,cmi_vibrant_yellow,cmi_vibrant_orange,cmi_rich_red,cmi_vibrant_garnet,cmi_vibrant_purple,cmi_rich_blue,cmi_vibrant_blue)
-
+cmi_year_colors=c(cmi_vibrant_blue,
+                  cmi_rich_blue,
+                  cmi_vibrant_purple,
+                  cmi_vibrant_garnet,
+                  cmi_rich_red,
+                  cmi_vibrant_orange,
+                  cmi_vibrant_yellow,
+                  cmi_vibrant_green)
 # TF-conditionalDF scatter plot
 if (T) {
   file = paste("tfidf_processed.txt",sep="");
@@ -122,23 +128,24 @@ if (T) {
 # Growth of tags
 if (T) {
   x = read.table("clinical_bytag_growth.txt", as.is=T, header=T, sep="\t", allowEscapes=T, quote="\"")
-  pdf(file="clinical_bytag_hist.pdf",onefile=TRUE,width=9,height=9,
+  pdf(file="clinical_bytag_hist.pdf",onefile=TRUE,width=two_col_width,height=5,
       family="Times",title="Clinical Tags",colormodel="rgb",paper="special")
   bp <- ggplot(x,aes(y=count,x=reorder(Tag, count, sum),fill=factor(Year))) +
     theme_bw()+
-    geom_bar()+labs(fill='Year')+coord_flip()+
+    geom_bar()+labs(fill='Year')+
+    scale_fill_manual(name="Year", values=cmi_year_colors)+
     #geom_errorbar(aes(ymin = mean - stddev, ymax = mean + stddev),color="#660000",width=0.5)+
     scale_y_continuous() +
     ylab("Count") +
     xlab("Tag") +
     opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
     opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=0,vjust=0.5)) +
+    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1)) +
     opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
     opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
     opts(axis.ticks.length = unit(.15, "lines")) +
     opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.9,0.25)) +
+    opts(legend.position=c(0.1,0.65)) +
     opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
     opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
   print(bp)
@@ -181,12 +188,11 @@ if (T) {
       family="Times",title="growth_rate_journal",colormodel="rgb",paper="special")
   bp <- ggplot(citations,aes(y=count,x=reorder(journal, count, sum),fill=factor(year))) +
     theme_bw() +
+    scale_fill_manual(name="Year", values=cmi_year_colors) +
     geom_bar(alpha=1.0)+
-    scale_colour_brewer()+
     labs(fill='Year')+
     scale_x_discrete(expand=c(0.01,0.01))+
     scale_y_continuous(expand=c(0.01,0.01))+
-    scale_colour_brewer()+
     ylab("Publication Count") +
     xlab("Journal") +
     opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12, hjust=0.78, vjust=0)) +
