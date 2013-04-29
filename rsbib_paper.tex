@@ -12,8 +12,12 @@
 % End kindle
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{bm}
-\usepackage{algorithm}
-\usepackage{algorithmic}
+\usepackage{algpseudocode} 
+\algnewcommand\AAnd{\textbf{and }}
+\algnewcommand\IIf{\textbf{if }}
+\algnewcommand\TThen{\textbf{then }}
+\algnewcommand\EEndIf{\textbf{end if}}
+\algnewcommand\Or{\textbf{ or }}
 \usepackage{url}
 \usepackage[breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
 \usepackage[table]{xcolor}
@@ -281,18 +285,19 @@ A Na\"ive Bayes model was used to determine the prevalence of various
 analysis methods in the literature. \COMMENTCC{Include a citation for
 this?} In particular, this model was used to discriminate papers that used
 seed-based correlation, ICA, clustering, graph theory, and machine
-learning methods. First, a small training set of 10 publications was
-manually created.  From this training set, important features were derived
-by finding tokens and n-grams with high values of the $\chi^2$ statistic,
-which is used as a proxy for information gain \cite{Quinlan86}. A term
-frequency matrix was then constructed, relating each publication to the
-frequency of each term contained in the publication.  Logarithmic term
+learning methods. First, a pre-training set of 40 publications was
+manually created. From these publications, important features were 
+determined by finding tokens and n-grams with high values of the $\chi^2$ 
+statistic, which is used as a proxy for information gain \cite{Quinlan86}. A 
+term frequency matrix was then constructed, relating each publication to 
+the frequency of each term contained in the publication.  Logarithmic term
 frequencies ($\log{t\!f}$) were used to prevent a single term from
-dominating the model.  Each publication’s vector was normalized to unit
-length to mitigate the effect of publications that contain too many or too
-few terms. This term frequency matrix was used to train a Na\"ive Bayes
-model.  Finally, 213 additional publications were classified by hand and
-used to test the classification accuracy of the model.
+dominating the model.  Each publication's term frequency vector was 
+normalized to  unit length to mitigate the effect of publications that contain 
+too many or too few terms. This term frequency matrix was used to train a 
+Na\"ive Bayes model. The model was evaluated using five-fold 
+cross-validation on 183 additional publications that were also classified by 
+hand. 
 
 \subsection{Citation Analysis}
 Publications and the citations that link them were modeled as a directed
@@ -310,7 +315,7 @@ remove junk patterns and normalize whitespace. The longest identical match
 of the publication title was compared to this match and its context to the
 true publication title by finding the match ratio (measure of similarity
 between strings). Of 20,541 total matches with ratio greater than or equal
-to 0.8, 16,425 (80\%) had a ratio of 1.0—i.e., they were exact matches—and
+to 0.8, 16,425 (80\%) had a ratio of 1.0� i.e., they were exact matches� and
 17,983 (88\%) had a ratio at least 0.9. The cutoff for true matches was
 set to 0.9, resulting in 17,983 citations. 
 
@@ -356,20 +361,33 @@ together and, once found, the publication patterns of these groups were
 examined. In order to find these groups, a greedy community-detection
 algorithm was developed that uses the intersection of researchers’
 publication sets to measure their similarity.
-
-\COMMENTCC{ALGORITHM GOES HERE}
+\begin{algorithmic}[1]
+\State $WG \gets \emptyset$
+\For{each author $s$ by decreasing $|\text{pubs}(s)|$}
+	\State $a \gets s$
+	\Repeat 
+		\State $P \gets P + a$
+		\State $a \gets \arg \max_{a \notin P}| \text{pubs}(a) \cap \text{pubs}(P)|$ 
+	\Until $|\text{pubs}(a)| < 10 \Or $ \par
+		\State \hskip\algorithmicindent $| \text{pubs}(a) \cap \text{pubs}(P)|/|\text{pubs}(P)| < 0.3$ \par
+	\State \IIf{$\sum | \text{pubs}(P_i) \cap \text{pubs}(P)| \ge 50$ \par
+		\State \hskip\algorithmicindent $\AAnd \sum I(|P \cap WG_i|/|WG_i| > 0.2) = 0$} \par
+		\State \hskip\algorithmicindent \hskip\algorithmicindent $\TThen WG \gets WG + P$ \par
+	\State \EEndIf
+\EndFor
+\end{algorithmic}
 
 The procedure for identifying author working groups begins by repeatedly
-seeding a new working group with the author with the most publications
-(lines 2-3).  Authors are searched to find the author with the most
+seeding a new potential working group $P$ with the seed author $s$ who has the most publications
+(lines 2-5).  Authors are searched to find the author $a$ with the most
 co-authored publications with the working group (line 6). If this author
 has more than 10 publications, and is a co-author on at least 30\% of the
 publications authored by the members of the working group (line 7), then
-the author is added to the working group (line 6). Otherwise, the working
+the author $a$ is added to the potential working group $P$ (line 5). Otherwise, the potential working
 group is closed and considered for inclusion in the results. If the sum of
-all papers in common across the candidate working group is greater than
-50, and the working group has less than 20\% of authors in common with any
-other working group (line 8), then it is included in the results (line 9).
+all papers in common across the potential working group is greater than
+50 (line 9), and the potential working group has fewer than 20\% of authors in common with any
+other working group (line 10), then it is included in the results (line 11).
 
 \section{Results}
 
@@ -484,23 +502,7 @@ co-occur with the ``clinical'' tag.
   \end{center}
 \end{figure*}
 
-Fig. \ref{fig:connectome_growth} shows growth of the term ``connectome'' in the
-corpus. \COMMENTCC{Rather than using the plot for connectome growth, just
-	mention the numbers in the text.} Term frequency ($t\!f$), document
-frequency ($d\!f$), and term frequency-inverse document frequency ($t\!f \times
-d\!f^{-1}$) have all increased since 2009.  
-
-%{{{------ Figure 5 -----}}}
-\begin{figure}
-  \begin{center}
-    %\includegraphics[]{figures/connectome_growth}%
-    \includegraphics[width=\linewidth]{figures/connectome_growth}%
-    %\includegraphics[width=.5\linewidth]{figures/connectome_growth}%
-    \caption{Growth of use of term ``connectome'' in the corpus
-        \label{fig:connectome_growth}
-    }
-  \end{center}
-\end{figure}
+Use of the term ``connectome'' has steadily increased across several measures since 2009 . Term frequency ($t\!f$) has increased at a rate of 137 mentions per year, document frequency ($d\!f$) at 30 documents per year, and term frequency-inverse document frequency ($t\!f \times d\!f^{-1}$) at 33 terms per document per year.
 
 Fig. \ref{fig:tfidf_top} shows conditional-$t\!f$ and $d\!f$ for the
 terms with the highest values. The most common imaging modality was fMRI,
@@ -515,7 +517,7 @@ brain regions.
     %\includegraphics[]{figures/tfidf_top2}%
     \includegraphics[]{figures/tfidf_top}%
     %\includegraphics[width=.5\linewidth]{figures/tfidf_top2}%
-    \caption{TF and conditional-DF for terms with the greatest values of each
+    \caption{DF and conditional-TF for terms with the greatest values of each
     \label{fig:tfidf_top}
     }
   \end{center}
@@ -524,10 +526,66 @@ brain regions.
 \subsection{Methods Analysis}
 
 The accuracy of the Na\"ive Bayes model in inferring
-algorithmic methods is shown in ??. \COMMENTCC{Table missing}
+algorithmic methods is shown in Tab. \ref{table:nbaccuracy}.
+
+\begin{table}[H]
+\caption{\label{table:nbaccuracy} Mean cross-validation accuracy of the Na\"ive Bayes model}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+Accuracy & 89.8\% \\
+Sensitivity & 85.8\% \\
+Specificity & 90.9\% \\
+\hline
+True Positives & 169.9 \\
+True Negatives & 671.8 \\
+False Positives & 67.1 \\
+False Negatives & 28.1 \\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
 
 The terms used as features, along with their $\chi^2$ values, are shown in
-??. \COMMENTCC{Table missing}
+Tab. \ref{table:chisquare}.
+
+\begin{table}[H]
+\caption{\label{table:chisquare} The number and fraction of publications in the
+library tagged with a specific keyword}
+\begin{center}
+\begin{tabular}{|l|r|}
+\hline
+{\bf Feature}&{\bf  $\chi^2$} \\ \hline \hline
+ICA & 198 \\ \hline
+cross-validation & 182 \\ \hline
+Vapnik & 151 \\ \hline
+seed & 148 \\ \hline
+graph & 144 \\ \hline
+small world & 118 \\ \hline
+edges & 112 \\ \hline
+sigmoid & 112 \\ \hline
+multiclass & 112 \\ \hline
+independent component & 112 \\ \hline
+topological & 100 \\ \hline
+modularity & 96 \\ \hline
+machine learning & 92 \\ \hline
+seed region & 90 \\ \hline
+clustering & 86 \\ \hline
+worldness & 84 \\ \hline
+graph theory & 82 \\ \hline
+undirected & 81 \\ \hline
+RSN & 80 \\ \hline
+support vector & 78 \\ \hline
+fractal & 68 \\ \hline
+k0means & 65 \\ \hline
+hubs & 62 \\ \hline
+centrality & 60 \\ \hline
+seed-based correlation & 49 \\ \hline
+neighborhood & 44 \\ \hline
+exponential & 44 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
 
 Fig. \ref{fig:methods_growth_hist} shows growth over time of algorithmic
 methods in R-fMRI literature.  Seed-based correlation is by far the most
