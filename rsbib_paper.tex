@@ -3,7 +3,7 @@
 % Neuroimage-like layout
 %\documentclass[12pt,3p,review]{elsarticle}
 %\documentclass[12pt,3p,review,number]{elsarticle}
-\documentclass[5p]{elsarticle}
+\documentclass[12pt,5p]{elsarticle}
 %\documentclass[5p]{elsarticle}
 % For kindle
 %\documentclass[1p,12pt]{elsarticle}
@@ -17,7 +17,6 @@
 \usepackage{url}
 \usepackage[breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
 \usepackage[table]{xcolor}
-
 \usepackage[pagewise]{lineno}
 \usepackage{varwidth}
 
@@ -372,8 +371,6 @@ all papers in common across the candidate working group is greater than
 50, and the working group has less than 20\% of authors in common with any
 other working group (line 8), then it is included in the results (line 9).
 
-%% Algorithm goes here!!
-
 \section{Results}
 
 \subsection{Publication Trends}
@@ -424,11 +421,12 @@ Connectivity, founded in 2011, is the most recent addition.
   \end{center}
 \end{figure*}
 
-
-The density-equalizing map is shown in Fig. \ref{fig:resting_state_map}.
-The top three countries are the United States of America, United Kingdom,
-and Netherlands, wherein lie 62.9\%, 9.6\%, and 8.6\% of correspondence
-addresses, respectively
+The density-equalizing map is shown in Fig.
+\ref{fig:resting_state_map}.  The top three countries are the United States of
+America, United Kingdom, and Netherlands, wherein lie 62.9\%, 9.6\%, and 8.6\%
+of correspondence addresses, respectively.
+\COMMENTCC{Re-color the density map so that the colors are meaningful, and are
+more attractive.} 
 
 %{{{------ Figure 3 -----}}}
 \begin{figure}
@@ -455,7 +453,7 @@ library tagged with a specific keyword}
 Clinical & 747 (43\%) \\ \hline
 Basic Neuroscience&593 (34\%) \\ \hline
 Meta-analysis/reviews&235 (14\%) \\ \hline
-Methodolog&210 (12\%) \\ \hline
+Methodology&210 (12\%) \\ \hline
 Multimodal&143 (8\%) \\ \hline
 Brain and Behavior&79 (5\%) \\ \hline
 1000 Functional Connectomes&61 (4\%) \\ \hline
@@ -487,9 +485,10 @@ co-occur with the ``clinical'' tag.
 \end{figure*}
 
 Fig. \ref{fig:connectome_growth} shows growth of the term ``connectome'' in the
-corpus. Term frequency ($t\!f$), document frequency ($d\!f$), and term
-frequency-inverse document frequency ($t\!f \times d\!f^{-1}$) have all
-increased since 2009.  
+corpus. \COMMENTCC{Rather than using the plot for connectome growth, just
+	mention the numbers in the text.} Term frequency ($t\!f$), document
+frequency ($d\!f$), and term frequency-inverse document frequency ($t\!f \times
+d\!f^{-1}$) have all increased since 2009.  
 
 %{{{------ Figure 5 -----}}}
 \begin{figure}
@@ -511,16 +510,16 @@ association. The PFC, PCC, and anterior cingulate were the most discussed
 brain regions. 
 
 %{{{------ Figure 6 -----}}}
-\begin{figure}
+\begin{figure*}
   \begin{center}
     %\includegraphics[]{figures/tfidf_top2}%
-    \includegraphics[width=\linewidth]{figures/tfidf_top}%
+    \includegraphics[]{figures/tfidf_top}%
     %\includegraphics[width=.5\linewidth]{figures/tfidf_top2}%
     \caption{TF and conditional-DF for terms with the greatest values of each
     \label{fig:tfidf_top}
     }
   \end{center}
-\end{figure}
+\end{figure*}
 
 \subsection{Methods Analysis}
 
@@ -554,7 +553,7 @@ a faster pace in 2012.
 \begin{figure}
   \begin{center}
     %\includegraphics[]{figures/methods_growth_hist}%
-    \includegraphics[width=\linewidth]{figures/connected_after_removing}%
+    \includegraphics[]{figures/connected_after_removing}%
     %\includegraphics[width=.5\linewidth]{figures/methods_growth_hist}%
     \caption{Number of components and size of largest component after removing authors and papers from co-authorship graph.
         \label{fig:connected_after_removing}
@@ -563,6 +562,57 @@ a faster pace in 2012.
 \end{figure}
 
 \subsection{Citation Analysis} 
+
+\begin{table*}
+	\caption{Publication Pageranks\label{table:pub_pageranks} }
+%\begin{center}         % 7.25 inches
+	\begin{tabular}{|m{.15in}|m{4.3in}|m{.3in}|m{1.1in}|m{.65in}|} \hline
+		\# & Title & Year & Pagerank (SD) & Citations \\ \hline \hline 
+		%\textbf{\#} & \textbf{Title} & \textbf{Year} &
+		%\textbf{Pagerank (SD)} & \textbf{Citations} \\ \hline \hline 
+		1 & A default mode of brain
+		function.\cite{Raichle2001}&2001&0.0165 ($3\cdot\!
+		10^{-4}$) & \textcolor{red}{MISSING}\\ \hline 
+		2 & Functional connectivity in the motor cortex of resting
+		human brain using echo-planar MRI.\cite{Biswal1995}&1995&0.0136
+		($3\cdot\! 10^{-4}$) & \textcolor{red}{MISSING}\\ \hline
+		3 & Functional connectivity in the resting brain: a network
+		analysis of the default mode
+		hypothesis.\cite{Greicius2003}&2003&0.0104 ($2\cdot\!
+		10^{-4}$)& \textcolor{red}{MISSING}\\  \hline
+		4 & Consistent resting-state networks across
+		healthy subjects.\cite{Damoiseaux2006}&2006&0.0098 ($2\cdot\!
+		10^{-4}$)& \textcolor{red}{MISSING}\\  \hline
+		5 & Investigations into resting-state
+		connectivity using independent component
+		analysis.\cite{Beckmann2005}&2005&0.0069 ($2\cdot\!
+		10^{-4}$)& \textcolor{red}{MISSING}\\  \hline
+		6 & Functional connectivity in single and
+		multislice echoplanar imaging using resting-state
+		fluctuations.\cite{Lowe1998}&1998&0.0056 ($2\cdot\! 10^{-4}$)
+		& \textcolor{red}{MISSING}\\  \hline
+		7&Default-mode network activity distinguishes Alzheimer's
+		disease from healthy aging: evidence from functional
+		MRI.\cite{Greicius2004}&2004&0.0056 ($2\cdot\! 10^{-4}$)
+		& \textcolor{red}{MISSING}\\ \hline
+		8&Toward discovery science of human brain
+		function.\cite{Biswal2010}&2010&0.0055 ($2\cdot\! 10^{-4}$)
+		& \textcolor{red}{MISSING}\\  \hline
+		9&Dissociable intrinsic connectivity networks for salience
+		processing and executive control.\cite{Seeley2007}&2007&0.0055
+		($10^{-4}$) & \textcolor{red}{MISSING}\\  \hline
+		10&Intrinsic functional architecture in the
+		anaesthetized monkey brain.\cite{Vincent2007}&2007&0.0047
+		($10^{-4}$) & \textcolor{red}{MISSING}\\  \hline
+\end{tabular}
+%\end{center}
+\end{table*}
+
+\COMMENTCC{I think that the citation analysis  works better as a table
+	(\ref{table:pub_pageranks}) than a graph. We have space to add the next
+	10 papers, and the citation counts. also add in gephi plot of citation
+	network} 
+
 The top 10 publications by pagerank were collectively cited by 66\% of the
 corpus, and the top 1\% of publications account for 10\% of the total
 pagerank.  After these publications, pagerank falls off more slowly, with

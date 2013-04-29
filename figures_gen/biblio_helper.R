@@ -46,25 +46,33 @@ if (T) {
   text.data = x
   text.data$tf = x$y
   text.data$df = x$x
-  pdf(file=paste("tfidf_top.pdf",sep=""),onefile=TRUE,width=8,height=4,
+  pdf(file=paste("tfidf_top.pdf",sep=""),onefile=TRUE,width=two_col_width,height=3,
       family="Times",title="tfidf",colormodel="rgb",paper="special")
-  bp <- ggplot(NULL,aes(y=tf,x=df,label=term,color=Source))+
-    geom_text(data=text.data) +
+  bp <- ggplot(NULL,aes(x=df,y=tf,label=term,color=Source))+
+    geom_text(data=text.data,size=3.5,family="Times",face="plain") +
     geom_point(data=x) +
     theme_bw() + 
-    opts(legend.position="right") +
+    scale_color_manual(name="Source",values=c(cmi_main_blue,cmi_vibrant_orange,cmi_vibrant_green)) +
     ylab("conditional tf") +
     xlab("df") +
-    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=10)) +
-    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=10, angle=90)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=8, angle=0,vjust=0.5)) +
-    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=8, angle=0,hjust=1)) +
-    opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
-    opts(axis.ticks.length = unit(.15, "lines")) +
-    opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.85,0.35)) +
-    opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
-    opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
+    theme(
+      axis.title.x = element_text(family = "Times", face = "plain", size=12),
+      axis.title.y = element_text(family = "Times", face = "plain", size=12, angle=90),
+      axis.text.x  = element_text(family = "Times", face = "plain", size=10, angle=0,vjust=0.5),
+      axis.text.y  = element_text(family = "Times", face = "plain", size=10, angle=0,hjust=1),
+      legend.background = element_rect(fill = 'white', size = 0, colour='white', linetype='dashed'),
+      axis.ticks.length = unit(.15, "lines"),
+      axis.ticks.margin = unit(.15,"lines"),
+      legend.title = element_blank(),
+      legend.position = c(0.85,0.2),
+      legend.direction = "vertical",
+      legend.margin = unit(0.0, "lines"),
+      legend.text  = element_text(family = "Times", face = "plain", size=10),
+      legend.key.height = unit(1,"lines"),
+      legend.key=element_blank(),
+      panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"),
+      plot.margin = unit(c(0.2, 0.1,0.1,0.1), "lines")
+    )
   print(bp)
   dev.off()
 }
@@ -77,24 +85,34 @@ if (T) {
   all2$labels = "Papers Removed"
   all = rbind(all1, all2)
   
-  pdf(file="connected_after_removing.pdf",onefile=TRUE,width=one_col_width,height=5,
+  pdf(file="connected_after_removing.pdf",onefile=TRUE,width=one_col_width,height=4,
       family="Times",title="methods",colormodel="rgb",paper="special")
   bp <- ggplot(all,aes(y=count,x=removed,colour=labels)) + ylab("") + xlab("Quantity Removed") +
     theme_bw() + 
-    scale_colour_discrete(name = "")+
+    scale_colour_manual(name = "",values=c(cmi_light_blue,cmi_main_blue))+
     xlim(c(0,1000))+
-    geom_line(size=1) + geom_point(size=3) +
-    facet_grid(type~.,scale="free")+
-    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
-    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=45,vjust=0.5)) +
-    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
-    opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
-    opts(axis.ticks.length = unit(.15, "lines")) +
-    opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.84,0.865)) +
-    opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
-    opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
+    ylim(c(0,4260))+
+    geom_line(size=.5) + geom_point(size=2) +
+    facet_grid(type~.,scale="free_y",space="free_y")+
+    theme(
+      axis.title.x = element_text(family = "Times", face = "plain", size=12),
+      axis.title.y = element_text(family = "Times", face = "plain", size=12, angle=90),
+      axis.text.x  = element_text(family = "Times", face = "plain", size=10, angle=0,vjust=0.5),
+      axis.text.y  = element_text(family = "Times", face = "plain", size=10, angle=0,hjust=1),
+      legend.background = element_rect(fill = 'white', size = 0, colour='white', linetype='dashed'),
+      axis.ticks.length = unit(.15, "lines"),
+      axis.ticks.margin = unit(.15,"lines"),
+      legend.title = element_blank(),
+      legend.position = c(0.675,0.91),
+      legend.direction = "vertical",
+      legend.margin = unit(0.0, "lines"),
+      legend.text  = element_text(family = "Times", face = "plain", size=10),
+      legend.key.height = unit(1,"lines"),
+      legend.key=element_blank(),
+      strip.text.x = element_text(family = "Times", face = "plain", size=12),
+      strip.text.y = element_text(family = "Times", face = "plain", size=12, angle=270),
+      strip.background=element_blank(),
+      plot.margin = unit(c(0.2, 0.1,0.1,0.1), "lines"))
   print(bp)
   dev.off()
 }
@@ -103,7 +121,7 @@ if (T) {
 if (T) {
   citations = read.table("methods_growth.txt", sep="\t", as.is=T, header=T)
   citations = citations[which(citations$year>=2005),]
-  pdf(file="methods_growth_hist.pdf",onefile=TRUE,width=one_col_width,height=4.5,
+  pdf(file="methods_growth_hist.pdf",onefile=TRUE,width=one_col_width,height=4,
       family="Times",title="citations",colormodel="rgb",paper="special")
   bp <- ggplot(citations,aes(y=count,x=reorder(method, count, sum),fill=factor(year))) +
     theme_bw() +
@@ -112,16 +130,22 @@ if (T) {
     scale_y_continuous() +
     ylab("Count") +
     xlab("Method") +
-    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
-    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1)) +
-    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
-    opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
-    opts(axis.ticks.length = unit(.15, "lines")) +
-    opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.15,0.6)) +
-    opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
-    opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
+    theme(
+      axis.title.x = element_blank(),
+      axis.title.y = element_text(family = "Times", face = "plain", size=12, angle=90),
+      axis.text.x  = element_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1),
+      axis.text.y  = element_text(family = "Times", face = "plain", size=10, angle=0,hjust=1),
+      legend.background = element_rect(fill = 'white', size = 0, colour='white', linetype='dashed'),
+      axis.ticks.length = unit(.15, "lines"),
+      axis.ticks.margin = unit(.15,"lines"),
+      legend.position = c(0.15,0.63),
+      legend.direction = "vertical",
+      legend.margin = unit(0.05, "lines"),
+      legend.text  = element_text(family = "Times", face = "plain", size=10),
+      legend.key.height = unit(1,"lines"),
+      panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"),
+      plot.margin = unit(c(0.2, 0.1,0.1,0.1), "lines")
+    )
   print(bp)
   dev.off()
 }
@@ -129,7 +153,7 @@ if (T) {
 # Growth of tags
 if (T) {
   x = read.table("clinical_bytag_growth.txt", as.is=T, header=T, sep="\t", allowEscapes=T, quote="\"")
-  pdf(file="clinical_bytag_hist.pdf",onefile=TRUE,width=two_col_width,height=5,
+  pdf(file="clinical_bytag_hist.pdf",onefile=TRUE,width=two_col_width,height=4,
       family="Times",title="Clinical Tags",colormodel="rgb",paper="special")
   bp <- ggplot(x,aes(y=count,x=reorder(Tag, count, sum),fill=factor(Year))) +
     theme_bw()+
@@ -138,17 +162,24 @@ if (T) {
     #geom_errorbar(aes(ymin = mean - stddev, ymax = mean + stddev),color="#660000",width=0.5)+
     scale_y_continuous() +
     ylab("Count") +
-    xlab("Tag") +
-    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
-    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1)) +
-    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
-    opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
-    opts(axis.ticks.length = unit(.15, "lines")) +
-    opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.1,0.65)) +
-    opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
-    opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
+    #xlab("Tag") +
+    #opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12)) +
+    theme(
+        axis.title.x = element_blank(),
+        axis.title.y = element_text(family = "Times", face = "plain", size=12, angle=90),
+        axis.text.x  = element_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1),
+        axis.text.y  = element_text(family = "Times", face = "plain", size=10, angle=0,hjust=1),
+        legend.background = element_rect(fill = 'white', size = 0, colour='white', linetype='dashed'),
+        axis.ticks.length = unit(.15, "lines"),
+        axis.ticks.margin = unit(.15,"lines"),
+        legend.position = c(0.055,0.63),
+        legend.direction = "vertical",
+        legend.margin = unit(0.05, "lines"),
+        legend.text  = element_text(family = "Times", face = "plain", size=10),
+        legend.key.height = unit(1,"lines"),
+        panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"),
+        plot.margin = unit(c(0.2, 0.05,0.05,0.05), "lines")
+    )
   print(bp)
   dev.off()
 }
@@ -185,7 +216,7 @@ if (T) {
 # Journal counts by year
 if (T) {
   citations = read.table("journal_counts_byear.txt", sep="\t", as.is=T, header=T)
-  pdf(file="journal_dist.pdf",onefile=TRUE,width=two_col_width,height=5,
+  pdf(file="journal_dist.pdf",onefile=TRUE,width=two_col_width,height=4,
       family="Times",title="growth_rate_journal",colormodel="rgb",paper="special")
   bp <- ggplot(citations,aes(y=count,x=reorder(journal, count, sum),fill=factor(year))) +
     theme_bw() +
@@ -196,16 +227,22 @@ if (T) {
     scale_y_continuous(expand=c(0.01,0.01))+
     ylab("Publication Count") +
     xlab("Journal") +
-    opts(axis.title.x = theme_text(family = "Times", face = "plain", size=12, hjust=0.78, vjust=0)) +
-    opts(axis.title.y = theme_text(family = "Times", face = "plain", size=12, angle=90,vjust=.3)) +
-    opts(axis.text.x  = theme_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1)) +
-    opts(axis.text.y  = theme_text(family = "Times", face = "plain", size=10, angle=0,hjust=1)) +
-    opts(legend.background = theme_rect(fill = 'white', size = 0, colour='white', linetype='dashed')) +
-    opts(axis.ticks.length = unit(.15, "lines")) +
-    opts(axis.ticks.margin=unit(.15,"lines")) +
-    opts(legend.position=c(0.1,0.65)) +
-    opts(panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"))+
-    opts(plot.margin = unit(c(0.75, 0.75,0.75,0.75), "lines"))
+    theme(
+      axis.title.x = element_blank(),
+      axis.title.y = element_text(family = "Times", face = "plain", size=12, angle=90),
+      axis.text.x  = element_text(family = "Times", face = "plain", size=10, angle=30,vjust=1,hjust=1),
+      axis.text.y  = element_text(family = "Times", face = "plain", size=10, angle=0,hjust=1),
+      legend.background = element_rect(fill = 'white', size = 0, colour='white', linetype='dashed'),
+      axis.ticks.length = unit(.15, "lines"),
+      axis.ticks.margin = unit(.15,"lines"),
+      legend.position = c(0.055,0.63),
+      legend.direction = "vertical",
+      legend.margin = unit(0.05, "lines"),
+      legend.text  = element_text(family = "Times", face = "plain", size=10),
+      legend.key.height = unit(1,"lines"),
+      panel.margin = unit(c(0.0, 0.0,0.0,0.0), "lines"),
+      plot.margin = unit(c(0.2, 0.05,0.05,0.05), "lines")
+    )
   
   #coord_flip()+
   print(bp)
