@@ -12,6 +12,7 @@
 % End kindle
 \usepackage{amsmath,amsfonts,amssymb}
 \usepackage{bm}
+\usepackage{multirow}
 \usepackage{algpseudocode} 
 \algnewcommand\AAnd{\textbf{and }}
 \algnewcommand\IIf{\textbf{if }}
@@ -550,39 +551,42 @@ The terms used as features, along with their $\chi^2$ values, are shown in
 Tab. \ref{table:chisquare}.
 
 \begin{table}[H]
-\caption{\label{table:chisquare} The number and fraction of publications in the
-library tagged with a specific keyword}
+\caption{\label{table:chisquare} $\chi^2$ values for the top features used by the model.}
 \begin{center}
 \begin{tabular}{|l|r|}
 \hline
-{\bf Feature}&{\bf  $\chi^2$} \\ \hline \hline
-ICA & 198 \\ \hline
-cross-validation & 182 \\ \hline
-Vapnik & 151 \\ \hline
+\multicolumn{2}{|c|}{\bf Top Features} \\ \hline 
+\hline {\bf Seed-based Correlation} & {\bf  $\chi^2$} \\ \hline 
 seed & 148 \\ \hline
+seed region & 90 \\ \hline
+seed-based correlation & 49 \\ \hline
+\hline {\bf ICA }&{\bf  $\chi^2$} \\ \hline 
+ICA & 198 \\ \hline
+independent component & 112 \\ \hline
+cross-validation & 182 \\ \hline
+RSN & 80 \\ \hline
+\hline {\bf Clustering}&{\bf  $\chi^2$} \\ \hline 
+clustering & 86 \\ \hline
+fractal & 68 \\ \hline
+k-means & 65 \\ \hline
+exponential & 44 \\ \hline
+\hline {\bf Graph Theory}&{\bf  $\chi^2$} \\ \hline 
 graph & 144 \\ \hline
 small world & 118 \\ \hline
 edges & 112 \\ \hline
-sigmoid & 112 \\ \hline
-multiclass & 112 \\ \hline
-independent component & 112 \\ \hline
 topological & 100 \\ \hline
 modularity & 96 \\ \hline
-machine learning & 92 \\ \hline
-seed region & 90 \\ \hline
-clustering & 86 \\ \hline
 worldness & 84 \\ \hline
 graph theory & 82 \\ \hline
 undirected & 81 \\ \hline
-RSN & 80 \\ \hline
-support vector & 78 \\ \hline
-fractal & 68 \\ \hline
-k0means & 65 \\ \hline
 hubs & 62 \\ \hline
 centrality & 60 \\ \hline
-seed-based correlation & 49 \\ \hline
-neighborhood & 44 \\ \hline
-exponential & 44 \\ \hline
+\hline {\bf Machine Learning}&{\bf  $\chi^2$} \\ \hline
+Vapnik & 151 \\ \hline
+sigmoid & 112 \\ \hline
+multiclass & 112 \\ \hline
+machine learning & 92 \\ \hline
+support vector & 78 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
@@ -666,6 +670,7 @@ a faster pace in 2012.
 %\end{center}
 \end{table*}
 
+
 \COMMENTCC{I think that the citation analysis  works better as a table
 	(\ref{table:pub_pageranks}) than a graph. We have space to add the next
 	10 papers, and the citation counts. also add in gephi plot of citation
@@ -681,6 +686,19 @@ mean shortest path length was 4.4 (standard error 0.080). In a set of
 1,000 random graphs constructed on the same set of vertices, the mean
 clustering coefficient was 0.014 (standard error 0.0030) and the mean
 shortest path length was 4.1 (standard error (0.60).
+
+%%{{{------ Figure 9 -----}}}
+%\begin{figure}
+%  \begin{center}
+%    %\includegraphics[]{figures/methods_growth_hist}%
+%    \includegraphics[width=.5\linewidth]{figures/citation_graph}%
+%    %\includegraphics[width=.5\linewidth]{figures/methods_growth_hist}%
+%    \caption{Graph of citations within the library.
+%        \label{fig:citation_graph}
+%    }
+%  \end{center}
+%\end{figure}
+
 
 \subsection{Co-authorship Analysis} The co-authorship graph was found to
 be robust, exhibiting significant small-world statistics. In particular,
