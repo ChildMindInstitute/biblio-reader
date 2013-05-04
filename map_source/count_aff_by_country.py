@@ -2,8 +2,6 @@ import sys
 from collections import Counter
 import operator
 
-allLines = open('../data/cmi_library.bib', 'r').readlines()
-
 countries = []
 for line in open('countries.txt', 'r').readlines():
 	line = line.rstrip()
@@ -41,7 +39,7 @@ def getCountryCounts():
 	
 def getAffiliationCounts(): 
 	corrections = [("jersey", "united states"), ("georgia", "united states"), ("belgique", "belgium"), ("hunan", "china"), ("chongqing", "china"), ("stockholm", "sweden"), ("frankfurt", "germany"), ("dallas", "united states"), ("nashville", "united states"), ("michigan", "united states"), ("baltimore", "united states"), ("philadelphia", "united states"), ("new haven", "united states"), ("iran", "iran (islamic republic of)"), ("washington", "united states"), ("tokyo", "japan"), ("kyoto", "japan"), ("deutschland", "germany"), ("korea", "korea, republic of"), (", uk", "united kingdom"), ("england", "united kingdom"), ("new york", "united states"), ("usa", "united states"), ("cambridge", "united kingdom")]
-	removes = set(["jersey", "georgia"])
+	removes = set(["jordan", "jersey", "georgia"])
 	counts = Counter()
 	lines = open('affiliations.txt', 'r').readlines()
 	for line in lines:
@@ -69,20 +67,12 @@ print "count"
 covered = set()
 for country in countries:
 	covered.add(country)
-	if counts[country] == 0:
-		# print country, "not found"
-		for line in allLines:
-			if country in line:
-				# print "But found this", line
-				break
-	else:
-		pass
-		# print country, "found"
 	print counts[country]
+	
 for country in counts.keys():
 	if not country in covered:
 		print "I have a count for", country, "but nowhere to put it"
-	  
+  
 sorted_x = sorted(counts.iteritems(), key=operator.itemgetter(1))
 total = 0
 for x in sorted_x:

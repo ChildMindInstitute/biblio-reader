@@ -14,14 +14,12 @@ for line in lines:
 	if line.startswith("pmid = "):
 		pmid = line.split(" = ")[1][1:-2]
 		pmids.append(pmid)
-# pmids = ["17525980"]  # open(sys.argv[1], 'r').readlines()[:]
 print "Found", len(pmids), "results"
 
 i = 0
 total = len(pmids)
 
 pp = pprint.PrettyPrinter(indent=4)
-# print "Index\tPMID\tOpenAccess\tPMC\tArticleTitle"
 for id in pmids:
 	i += 1
 
