@@ -1,5 +1,6 @@
 from Bio import Entrez
 import sets
+from collections import *
 from pybtex.database.input import bibtex
 
 ## setup access to pubmed
@@ -26,6 +27,7 @@ def getNames(authorList):
 
 def writeBib(inFile, outFile):
     out = open(outFile, 'w')
+    keyCounter = Counter()
     for line in open(inFile, 'r').readlines():
         pmid = line.rstrip()
         k_result = Entrez.efetch(db=database, id=pmid, retmode="xml", \
@@ -66,10 +68,13 @@ def writeBib(inFile, outFile):
         if 'Affiliation' in record[0]['MedlineCitation']['Article']:
             e['affiliation'] = record[0]['MedlineCitation']['Article']['Affiliation']
         
-        firstLastName = record[0]['MedlineCitation']['Article']['AuthorList'][0]['LastName']
+        firstLastName = record[0]['MedlineCitation']['Article']['AuthorList'][0]['LastName'].replace(" ", "").encode('ascii', 'ignore')
         bibId = firstLastName + e['year']
-        out.write("@article{\n")
-        out.write(bibId.encode('utf8') + ",\n")
+        keyCounter[bibId] += 1
+        if keyCounter[bibId] >= 2:
+        	bibId += "_" + str(keyCounter[bibId])
+        out.write("@article{")
+        out.write(bibId + ",\n")
         entries = []
         for key in e.keys():
             if len(e[key]) > 0:
@@ -86,12 +91,12 @@ def writeBib(inFile, outFile):
                     print "Type is " + str(type(e[key]))
                     print str(e[key])
                     assert False
-                entries.append(key + ' = "' + x + '"')
+                entries.append(key + ' = "' + x.replace('"', "'").replace("@", "(at)") + '"')
         out.write(",\n".join(entries))
         out.write("\n}\n")
     pass
 
 if __name__ == "__main__":
-    for f in ["new_pmids_diff.txt", "new_pmids.txt"]:#,"old_pmids_diff.txt"]:
+    for f in ["old_pmids_diff.txt", "new_pmids_diff.txt", "new_pmids.txt"]:
         writeBib(f, f.split(".")[0] + ".bib")
     
