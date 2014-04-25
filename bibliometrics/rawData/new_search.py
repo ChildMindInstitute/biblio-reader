@@ -112,8 +112,6 @@ old_diff_pmids=lib_pmids.difference(new_pmids)
 print "checking %d pmids in the old library that are not in the new list"% \
     (len(old_diff_pmids))
 
-too_new = 0
-not_found = 0
 t_old_diff_pmids=old_diff_pmids.copy()
 for id in t_old_diff_pmids:
     k_result = Entrez.efetch(db=database, id=id, retmode="xml", \
