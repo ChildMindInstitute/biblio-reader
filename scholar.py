@@ -1243,6 +1243,8 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
                      help='Do not search, just use articles in given cluster ID')
     group.add_option('-c', '--count', type='int', default=None,
                      help='Maximum number of results')
+    group.add_option('--all-pages', action='store_true', default=False,
+                     help='Include results of all pages up to page 99')
     parser.add_option_group(group)
 
     group = optparse.OptionGroup(parser, 'Output format',
@@ -1311,6 +1313,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
         print('Invalid citation link format, must be one of "bt", "en", "rm", or "rw".')
         return 1
 
+
     querier.apply_settings(settings)
 
     if options.cluster_id:
@@ -1341,7 +1344,11 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
     if options.count is not None:
         options.count = min(options.count, ScholarConf.MAX_PAGE_RESULTS)
         query.set_num_page_results(options.count)
-    querier.send_query(query, True)
+
+    if options.all_pages:
+        querier.send_query(query, True)
+    else:
+        querier.send_query(query)
 
     if options.csv:
         csv(querier)
