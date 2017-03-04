@@ -388,9 +388,14 @@ class ScholarArticleParser(object):
         This method initiates parsing of HTML content, cleans resulting
         content as needed, and notifies the parser instance of
         resulting instances via the handle_article callback.
+
+        If the user wants to search all pages of results, it loops the
+        function and parses through an entire list of html documents
+        instead of one html doc.
         """
 
         if all_pages:
+            print("all")
             first = True
             for page in html:
                 self.soup = SoupKitchen.make_soup(page)
@@ -660,6 +665,7 @@ class ScholarQuery(object):
         # than one page of articles to be parsed through
         self.urls = []
 
+        # The current page that the query is on
         self.page = 0
 
     def set_num_page_results(self, num_page_results):
@@ -723,6 +729,12 @@ class ScholarQuery(object):
         return ' '.join(phrases)
 
     def flip_page(self, num_results):
+        """
+        For every page in the search (up to 99 pages), creates the url of each page
+        and appends it to the list of urls in the query
+        :param num_results: number of results in the query
+        :return: An updated list of all the urls of the pages of the query
+        """
         pages = min(math.ceil(num_results / 10) - 1, 99)
         for count in range(1, pages):
             self.page = count
@@ -796,7 +808,7 @@ class SearchScholarQuery(ScholarQuery):
         ScholarQuery.__init__(self)
         self._add_attribute_type('num_results', 'Results', 0)
         self.words = None # The default search behavior
-        self.page = 0
+        self.page = 0 # The first page of results
         self.words_some = None # At least one of those words
         self.words_none = None # None of these words
         self.phrase = None
@@ -1058,8 +1070,9 @@ class ScholarQuerier(object):
             return
 
         self.parse(html)
+
         num_results = query['num_results']
-        if all_pages:
+        if all_pages and num_results > 10:
             htmls = []
             for url in query.flip_page(num_results):
                 html = self._get_http_response(url=url,
