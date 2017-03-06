@@ -383,41 +383,24 @@ class ScholarArticleParser(object):
         base class implementation does nothing.
         """
 
-    def parse(self, html, all_pages=False):
+    def parse(self, html):
         """
         This method initiates parsing of HTML content, cleans resulting
         content as needed, and notifies the parser instance of
         resulting instances via the handle_article callback.
-
-        If the user wants to search all pages of results, it loops the
-        function and parses through an entire list of html documents
-        instead of one html doc.
         """
 
-        if all_pages:
-            first = True
-            for page in html:
-                self.soup = SoupKitchen.make_soup(page)
-                if first:
-                    self._parse_globals()
-                    first = False
-                for div in self.soup.findAll(ScholarArticleParser._tag_results_checker):
-                    self._parse_article(div)
-                    self._clean_article()
-                    if self.article['title']:
-                        self.handle_article(self.article)
-        else:
-            self.soup = SoupKitchen.make_soup(html)
+        self.soup = SoupKitchen.make_soup(html)
 
-            # This parses any global, non-itemized attributes from the page.
-            self._parse_globals()
+        # This parses any global, non-itemized attributes from the page.
+        self._parse_globals()
 
-            # Now parse out listed articles:
-            for div in self.soup.findAll(ScholarArticleParser._tag_results_checker):
-                self._parse_article(div)
-                self._clean_article()
-                if self.article['title']:
-                    self.handle_article(self.article)
+        # Now parse out listed articles:
+        for div in self.soup.findAll(ScholarArticleParser._tag_results_checker):
+            self._parse_article(div)
+            self._clean_article()
+            if self.article['title']:
+                self.handle_article(self.article)
 
     def _clean_article(self):
         """
@@ -446,7 +429,6 @@ class ScholarArticleParser(object):
 
     def _parse_article(self, div):
         self.article = ScholarArticle()
-
         for tag in div:
             if not hasattr(tag, 'name'):
                 continue
@@ -727,28 +709,13 @@ class ScholarQuery(object):
             phrases.append(phrase)
         return ' '.join(phrases)
 
-    def flip_page(self, num_results):
-        """
-        For every page in the search (up to 99 pages), creates the url of each page
-        and appends it to the list of urls in the query
-
-        :param num_results: number of results in the query
-        :return: An updated list of all the urls of the pages of the query
-        """
-        pages = min(math.ceil(num_results / 10) - 1, 99)
-        for count in range(1, pages):
-            self.page = count
-            self.urls.append(self.get_url())
-        return self.urls
-
-
 class ClusterScholarQuery(ScholarQuery):
     """
     This version just pulls up an article cluster whose ID we already
     know about.
     """
     SCHOLAR_CLUSTER_URL = ScholarConf.SCHOLAR_SITE + '/scholar?' \
-        + 'start=%(page)0' \
+        + 'start=%(page)s0' \
         + '&cluster=%(cluster)s' \
         + '%(num)s'
 
@@ -789,7 +756,7 @@ class SearchScholarQuery(ScholarQuery):
     configure on the Scholar website, in the advanced search options.
     """
     SCHOLAR_QUERY_URL = ScholarConf.SCHOLAR_SITE + '/scholar?' \
-        + 'start=%(page)s' \
+        + 'start=%(page)s0' \
         + '&as_q=%(words)s' \
         + '&as_epq=%(phrase)s' \
         + '&as_oq=%(words_some)s' \
@@ -1062,7 +1029,8 @@ class ScholarQuerier(object):
         with subsequent parsing of the response.
         """
         self.clear_articles()
-        self.query = query
+        self.query = queryf
+        print(query.get_url())
         html = self._get_http_response(url=query.get_url(),
                                        log_msg='dump of query response HTML',
                                        err_msg='results retrieval failed')
@@ -1073,15 +1041,13 @@ class ScholarQuerier(object):
 
         num_results = query['num_results']
         if all_pages and num_results > 10:
-            htmls = []
-            for url in query.flip_page(num_results):
-                html = self._get_http_response(url=url,
+            num_pages = min(math.floor(num_results / 10), 99)
+            for page in range(1, num_pages):
+                query.page = page
+                html = self._get_http_response(url=query.get_url(),
                                                log_msg='dump of query response HTML',
                                                err_msg='results retrieval failed')
-                htmls.append(html)
-            if not htmls:
-                return
-            self.parse(htmls, True)
+                self.parse(html)
 
     def get_citation_data(self, article):
         """
@@ -1104,12 +1070,12 @@ class ScholarQuerier(object):
         article.set_citation_data(data)
         return True
 
-    def parse(self, html, all_pages=False):
+    def parse(self, html):
         """
         This method allows parsing of provided HTML content.
         """
         parser = self.Parser(self)
-        parser.parse(html, all_pages)
+        parser.parse(html)
 
     def add_article(self, art):
         self.get_citation_data(art)
@@ -1204,10 +1170,10 @@ def citation_export(querier):
         print(art.as_citation() + b'\n')
 
 
-def write(querier, filename):
+def write_csv(querier, filename):
     with open(filename, 'w') as f:
         for article in querier.articles:
-            f.write(encode(article.as_txt()))
+            f.write(encode(article.as_csv()))
 
 
 def main():
