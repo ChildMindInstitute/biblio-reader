@@ -395,7 +395,6 @@ class ScholarArticleParser(object):
         """
 
         if all_pages:
-            print("all")
             first = True
             for page in html:
                 self.soup = SoupKitchen.make_soup(page)
@@ -732,6 +731,7 @@ class ScholarQuery(object):
         """
         For every page in the search (up to 99 pages), creates the url of each page
         and appends it to the list of urls in the query
+
         :param num_results: number of results in the query
         :return: An updated list of all the urls of the pages of the query
         """
@@ -1235,7 +1235,8 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
     group.add_option('-A', '--all', metavar='WORDS', default=None, dest='allw',
                      help='Results must contain all of these words')
     group.add_option('-s', '--some', metavar='WORDS', default=None,
-                     help='Results must contain at least one of these words. Pass arguments in form -s "foo bar baz" for simple words, and -s "a phrase, another phrase" for phrases')
+                     help='Results must contain at least one of these words. Pass arguments in form -s "foo bar baz" \
+                      for simple words, and -s "a phrase, another phrase" for phrases')
     group.add_option('-n', '--none', metavar='WORDS', default=None,
                      help='Results must contain none of these words. See -s|--some re. formatting')
     group.add_option('-p', '--phrase', metavar='PHRASE', default=None,
@@ -1271,12 +1272,14 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
     group.add_option('--csv-header', action='store_true',
                      help='Like --csv, but print header with column names')
     group.add_option('--citation', metavar='FORMAT', default=None,
-                     help='Print article details in standard citation format. Argument Must be one of "bt" (BibTeX), "en" (EndNote), "rm" (RefMan), or "rw" (RefWorks).')
+                     help='Print article details in standard citation format. Argument Must be one of "bt" (BibTeX), \
+                     "en" (EndNote), "rm" (RefMan), or "rw" (RefWorks).')
     parser.add_option_group(group)
 
     group = optparse.OptionGroup(parser, 'Miscellaneous')
     group.add_option('--cookie-file', metavar='FILE', default=None,
-                     help='File to use for cookie storage. If given, will read any existing cookies if found at startup, and save resulting cookies in the end.')
+                     help='File to use for cookie storage. If given, will read any existing cookies if found at  \
+                     startup, and save resulting cookies in the end.')
     group.add_option('-d', '--debug', action='count', default=0,
                      help='Enable verbose logging to stderr. Repeated options increase detail of debug output.')
     group.add_option('-v', '--version', action='store_true', default=False,
