@@ -299,6 +299,9 @@ class ScholarArticle(object):
             'url_versions':  [None, 'Versions list',  8],
             'url_citation':  [None, 'Citation link',  9],
             'excerpt':       [None, 'Excerpt',       10],
+            'journal':       [None, 'Journal',       11],
+            'author(s)':     [[],   'Authors',       12],
+            'author_links':  [[],   'Author Links',  13],
         }
 
         # The citation data in one of the standard export formats,
@@ -324,7 +327,8 @@ class ScholarArticle(object):
             del self.attrs[key]
 
     def set_citation_data(self, citation_data):
-        self.citation_data = citation_data
+        self.citation_data = citation_data.decode('utf-8').split('\n ')
+        print(citation_data)
 
     def as_txt(self):
         # Get items sorted in specified order:
@@ -408,7 +412,7 @@ class ScholarArticleParser(object):
         needed cleanup/polishing before we hand off the resulting
         article.
         """
-        if self.article['title']:
+        if self.article.attrs['title']:
             self.article['title'] = self.article['title'].strip()
 
     def _parse_globals(self):
@@ -607,11 +611,9 @@ class ScholarArticleParser120726(ScholarArticleParser):
                     for span in tag.h3.findAll(name='span'):
                         span.clear()
                     self.article['title'] = ''.join(tag.h3.findAll(text=True))
-
                 if tag.find('div', {'class': 'gs_a'}):
                     year = self.year_re.findall(tag.find('div', {'class': 'gs_a'}).text)
                     self.article['year'] = year[0] if len(year) > 0 else None
-
                 if tag.find('div', {'class': 'gs_fl'}):
                     self._parse_links(tag.find('div', {'class': 'gs_fl'}))
 
@@ -641,10 +643,6 @@ class ScholarQuery(object):
         # attributes may differ by query type, but they all share the
         # basic data structure:
         self.attrs = {}
-
-        # The array of urls that will be parsed if the user wants more
-        # than one page of articles to be parsed through
-        self.urls = []
 
         # The current page that the query is on
         self.page = 0
@@ -876,44 +874,6 @@ class SearchScholarQuery(ScholarQuery):
                           if self.num_results is not None else '')
         return self.SCHOLAR_QUERY_URL % urlargs
 
-
-
-class ScholarSettings(object):
-    """
-    This class lets you adjust the Scholar settings for your
-    session. It's intended to mirror the features tunable in the
-    Scholar Settings pane, but right now it's a bit basic.
-    """
-    CITFORM_NONE = 0
-    CITFORM_REFWORKS = 1
-    CITFORM_REFMAN = 2
-    CITFORM_ENDNOTE = 3
-    CITFORM_BIBTEX = 4
-
-    def __init__(self):
-        self.citform = 0 # Citation format, default none
-        self.per_page_results = None
-        self._is_configured = False
-
-    def set_citation_format(self, citform):
-        citform = ScholarUtils.ensure_int(citform)
-        if citform < 0 or citform > self.CITFORM_BIBTEX:
-            raise FormatError('citation format invalid, is "%s"'
-                              % citform)
-        self.citform = citform
-        self._is_configured = True
-
-    def set_per_page_results(self, per_page_results):
-        self.per_page_results = ScholarUtils.ensure_int(
-            per_page_results, 'page results must be integer')
-        self.per_page_results = min(
-            self.per_page_results, ScholarConf.MAX_PAGE_RESULTS)
-        self._is_configured = True
-
-    def is_configured(self):
-        return self._is_configured
-
-
 class ScholarQuerier(object):
     """
     ScholarQuerier instances can conduct a search on Google Scholar
@@ -971,14 +931,10 @@ class ScholarQuerier(object):
         self.opener = build_opener(HTTPCookieProcessor(self.cjar))
         self.settings = None # Last settings object, if any
 
-    def apply_settings(self, settings):
+    def apply_settings(self):
         """
         Applies settings as provided by a ScholarSettings instance.
         """
-        if settings is None or not settings.is_configured():
-            return True
-
-        self.settings = settings
 
         # This is a bit of work. We need to actually retrieve the
         # contents of the Settings pane HTML in order to extract
@@ -1006,17 +962,14 @@ class ScholarQuerier(object):
             return False
 
         urlargs = {'scisig': tag['value'],
-                   'num': settings.per_page_results,
-                   'scis': 'no',
-                   'scisf': ''}
-
-        if settings.citform != 0:
-            urlargs['scis'] = 'yes'
-            urlargs['scisf'] = '&scisf=%d' % settings.citform
+                   'num': 10,
+                   'scis': 'yes',
+                   'scisf': '&scisf=%d' % 4}
 
         html = self._get_http_response(url=self.SET_SETTINGS_URL % urlargs,
                                        log_msg='dump of settings result HTML',
                                        err_msg='applying setttings failed')
+
         if html is None:
             return False
 
@@ -1029,8 +982,7 @@ class ScholarQuerier(object):
         with subsequent parsing of the response.
         """
         self.clear_articles()
-        self.query = queryf
-        print(query.get_url())
+        self.query = query
         html = self._get_http_response(url=query.get_url(),
                                        log_msg='dump of query response HTML',
                                        err_msg='results retrieval failed')
@@ -1167,7 +1119,7 @@ def csv(querier, header=False, sep='|'):
 def citation_export(querier):
     articles = querier.articles
     for art in articles:
-        print(art.as_citation() + b'\n')
+        print(art.as_citation())
 
 
 def write_csv(querier, filename):
@@ -1281,22 +1233,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
             return 1
 
     querier = ScholarQuerier()
-    settings = ScholarSettings()
-
-    if options.citation == 'bt':
-        settings.set_citation_format(ScholarSettings.CITFORM_BIBTEX)
-    elif options.citation == 'en':
-        settings.set_citation_format(ScholarSettings.CITFORM_ENDNOTE)
-    elif options.citation == 'rm':
-        settings.set_citation_format(ScholarSettings.CITFORM_REFMAN)
-    elif options.citation == 'rw':
-        settings.set_citation_format(ScholarSettings.CITFORM_REFWORKS)
-    elif options.citation is not None:
-        print('Invalid citation link format, must be one of "bt", "en", "rm", or "rw".')
-        return 1
-
-
-    querier.apply_settings(settings)
+    querier.apply_settings()
 
     if options.cluster_id:
         query = ClusterScholarQuery(cluster=options.cluster_id)
