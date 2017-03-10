@@ -336,7 +336,7 @@ class ScholarArticle(object):
         if 'author' in self.citation_data:
             self['author(s)'] = str(self.citation_data['author']).replace(' and ', ' & ')
         if 'publisher' in self.citation_data:
-            self['publisher'] = str(self.citation_data['publisher']
+            self['publisher'] = str(self.citation_data['publisher'])
 
     def as_txt(self):
         # Get items sorted in specified order:
@@ -1087,6 +1087,7 @@ class ScholarQuerier(object):
 
             return html
         except Exception as err:
+            print("Error getting an http response:" + url)
             ScholarUtils.log('info', err_msg + ': %s' % err)
             return None
 
@@ -1119,6 +1120,9 @@ def txt(querier, with_globals):
 
 def csv(querier, filename):
     artlist = []
+    if len(querier.articles) == 0:
+        print("No articles")
+        return
     for art in querier.articles:
         artlist.append(art.getlist(0))
     df = pandas.DataFrame(data=artlist, columns= querier.articles[0].getlist(1))
