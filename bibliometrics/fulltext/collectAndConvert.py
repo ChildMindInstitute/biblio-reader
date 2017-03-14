@@ -11,7 +11,6 @@ def main():
             file = os.path.join('fulltexts', ''.join([re.sub(r'\W', '',
                    authors.split(' & ')[0])[:8], '_', re.sub(r'\W', '', title)[
                    :8], '.pdf']))
-            print(file)
             if not os.path.exists(file):
                 try:
                     pdffile = urllib.request.urlopen(pdf)
