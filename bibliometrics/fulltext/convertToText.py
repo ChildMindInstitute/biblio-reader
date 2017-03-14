@@ -20,7 +20,7 @@ class Command(object):
 
 		thread.join(timeout)
 		if thread.is_alive():
-			print 'Terminating process'
+			print('Terminating process')
 			self.process.terminate()
 			thread.join()
 		return self.process.returncode
@@ -30,14 +30,14 @@ def walkAndText(rootDir, outDir):
 		for file in files:
 			f = os.path.join(root,file)
 			if f[-3:] == "pdf":
-				print f
+				print(f)
 				outf = f
 				outf = outf.replace(rootDir, "")
 				outf = outf.replace("/", ".")
 				outf = outf + ".txt"
 				path = outDir + outf
 				if os.path.exists(path) and os.path.getsize(path) > 0:
-					print "Skipping", outf
+					print("Skipping", outf)
 				else:
 					command = Command("pdftotext %s %s" % (f, path))
 					command.run(10)
