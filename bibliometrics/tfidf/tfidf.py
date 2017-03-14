@@ -5,7 +5,7 @@ from collections import defaultdict
 import numpy as np
 import DbAPI
 
-rootDir = "/home/files/txt/"
+rootDir = "../"
 
 def dejunker(x):
 	x = x.translate(None, "'\"_.,:").lower().replace(" the "," ").replace("-", " ").replace("  ", " ").replace("\n", " ").replace(" ", "")
@@ -118,29 +118,32 @@ def getClazz(k, imagingTerms, cogAtlasTerms, pubBrainTerms):
 if __name__ == "__main__":
 	# Synonyms																				       
 	synDict = {}
-	synSet = readWordList('data/synDict.txt')
+	synSet = readWordList('working/synDict.txt')
 	for entry in synSet:
 		kv = entry.split(',')
 		synDict[kv[0]] = kv[1]
 		
 	# Stopwords
-	stopwords = readWordList('data/stopwords.txt')
+	stopwords = readWordList('working/stopwords.txt')
 	stopwords.update(readWordList('data/extraStopwords.txt'))
 	
 	# Terms of interest																					  
-	imagingTerms = readWordList('data/imagingTerms.txt')
+	searchedTerms = readWordList('data/searchedTerms.txt')
+	"""
 	cogAtlasTerms = readWordList('data/cogAtlas.csv')
 	pubBrainTermsRaw = readWordList('data/pubBrainLexicon.txt')
 	pubBrainTerms = set()
 	for term in pubBrainTermsRaw:
 		term = term.replace("*","")
 		pubBrainTerms.add(term) 
-	
+	"""
 	# Assemble ngrams
-	ngramSetRaw = readWordList('data/ngramList.txt')
-	ngramSetRaw.update(imagingTerms)
+	ngramSetRaw = readWordList('working/ngramList.txt')
+	ngramSetRaw.update(searchedTerms)
+	"""
 	ngramSetRaw.update(cogAtlasTerms)
 	ngramSetRaw.update(pubBrainTerms)
+	"""
 	ngramList = []
 	for term in ngramSetRaw:
 		ngramList.append(tuple(term.split()))
