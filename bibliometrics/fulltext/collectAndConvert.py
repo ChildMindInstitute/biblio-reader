@@ -32,18 +32,21 @@ def main():
             file = os.path.join('fulltexts', 'pdf', ''.join([re.sub(r'\W', '',
                    authors.split(' & ')[0])[:8], '_', re.sub(r'\W', '', title)[
                    :8], '.pdf']))
-            if not os.path.exists(file):
+            if not os.path.exists(file) or os.path.getsize(file) == 0:
                 try:
                     pdffile = urllib.request.urlopen(pdf)
+                    print(file)
+                    with open(file, 'wb') as ofile:
+                        ofile.write(pdffile.read())
                 except Exception as e:
-                    print('\t'.join([e, pdf]))
-            
-                print(file)
-                with open(file, 'wb') as ofile:
-                    ofile.write(pdffile.read())
+                    print('\t'.join([str(e), pdf]))
+                    next
+                
     
     # convert the pdfs to txts
-    convertToText.walkAndText('fulltexts/pdf', 'fulltexts/txt')
+    convertToText.walkAndText(os.path.abspath(os.path.join('fulltexts', 'pdf')
+                             ), os.path.abspath(os.path.join('fulltexts',
+                             'txt')))
 		
 # ============================================================================
 if __name__ == '__main__':
