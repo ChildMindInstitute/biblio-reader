@@ -58,7 +58,7 @@ def standardizeSynonyms(document, dictionary):
 def analyze(file, synDict, stopwords, ngramSetRaw, ngramList):
 	text = getText(file)
 	if len(text) == 0:
-		print "ERROR : TEXT LENGTH IS 0"
+		print("ERROR : TEXT LENGTH IS 0")
 		return {}
 
 	tokens = tokenize(text)
@@ -71,7 +71,7 @@ def analyze(file, synDict, stopwords, ngramSetRaw, ngramList):
 		if word in ngramSetRaw:
 			counters[word] += 1
 	freqs = {}
-	for key in counters.keys():
+	for key in list(counters.keys()):
 		freqs[key] = counters[key] / float(totalWords)
 	return freqs
 
@@ -152,25 +152,25 @@ if __name__ == "__main__":
 	idToTitle = getIDToTitle()
 	freqsLists = defaultdict(list)
 	docCounters = defaultdict(int)
-	for id in idToTitle.keys():
+	for id in list(idToTitle.keys()):
 		file = rootDir + id + ".txt"
 		i += 1
-		print "File :", file
+		print("File :", file)
 		docFreqs = analyze(file, synDict, stopwords, ngramSetRaw, ngramList)
 		appendDicts(freqsLists, docFreqs)
 		mergeDocCounterDicts(docCounters, docFreqs)
 	
 	termFreqs = {}
-	for key in freqsLists.keys():
+	for key in list(freqsLists.keys()):
 		termFreqs[key] = np.median(np.array(freqsLists[key]))
 	
-	print "TOTAL DOCS :", i
-	print "MEDIAN TERM FREQS"
+	print("TOTAL DOCS :", i)
+	print("MEDIAN TERM FREQS")
 	for k in termFreqs:
-	    print k, ":", termFreqs[k]
-	print "NUM DOCS TERM APPEARED IN"
+	    print(k, ":", termFreqs[k])
+	print("NUM DOCS TERM APPEARED IN")
 	for k in docCounters:
-	    print k, ":", docCounters[k]
+	    print(k, ":", docCounters[k])
 		 
 	
 	df = {}
@@ -200,7 +200,7 @@ if __name__ == "__main__":
 		
 
 	
-	for k in y.keys():
+	for k in list(y.keys()):
 		if not k in tweak:
 			y[k] -= 0.09
 	
@@ -237,13 +237,13 @@ if __name__ == "__main__":
 		else:
 			labels[k] = k
 	
-	coords = sorted(score.iteritems(), key=operator.itemgetter(1))
+	coords = sorted(iter(score.items()), key=operator.itemgetter(1))
 	coords.reverse()
 	
-	print "\t".join(["term", "tf", "df", "score", "x", "y", "Source"])
+	print("\t".join(["term", "tf", "df", "score", "x", "y", "Source"]))
 	for k, v in coords:
 		if not k in remove:
-			print "\t".join([labels[k], str(tf[k]), str(df[k]), str(v), str(x[k]), str(y[k]), clazz[k]])
+			print("\t".join([labels[k], str(tf[k]), str(df[k]), str(v), str(x[k]), str(y[k]), clazz[k]]))
 	 
 	
 	      
