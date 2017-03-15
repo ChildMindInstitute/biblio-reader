@@ -33,8 +33,8 @@ def walkAndText(rootDir, outDir):
 				print(f)
 				outf = f
 				outf = outf.replace(rootDir, "")
-				outf = outf.replace("/", ".")
-				outf = outf + ".txt"
+				# outf = outf.replace("/", ".")
+				outf = outf.replace(".pdf", ".txt")
 				path = outDir + outf
 				if os.path.exists(path) and os.path.getsize(path) > 0:
 					print("Skipping", outf)
