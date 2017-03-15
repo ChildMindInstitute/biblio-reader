@@ -39,7 +39,7 @@ def main():
                     with open(file, 'wb') as ofile:
                         ofile.write(pdffile.read())
                 except Exception as e:
-                    print('\t'.join([str(e), pdf]))
+                    print('\t'.join([str(e), os.path.basename(file), pdf]))
                     next
                 
     
