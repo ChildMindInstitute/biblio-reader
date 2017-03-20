@@ -184,6 +184,11 @@ except ImportError:
     from urllib import quote, unquote
     from cookielib import MozillaCookieJar
 
+try:
+    import bibtexparser
+except:
+    print("We need Bibtexparser, sorry...")
+
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:
     from bs4 import BeautifulSoup
