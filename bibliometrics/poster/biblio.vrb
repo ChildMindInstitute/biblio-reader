@@ -1,0 +1,134 @@
+\begin{columns}
+    % ---------------------------------------------------------%
+    % Set up a column
+    \begin{column}{.495\textwidth}
+      \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+        \begin{minipage}[T]{.95\textwidth}  % tweaks the width, makes a new \textwidth
+          \parbox[t][\columnheight]{\textwidth}{ % must be some better way to set the the height, width and textwidth simultaneously
+            % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
+            % ---------------------------------------------------------%
+            % fill each column with content
+            \begin{block}{Introduction}
+              \begin{itemize}
+              \item Mining of resting state (RS) literature is enabled by the CMI Librarian database. We performed a quantitative analysis of publication patterns within the resting state literature (bibliometric analysis) to gain insight into
+                \begin{itemize}
+                \item trends of publication rates
+                \item experimental methods
+                \item areas of focus
+                \item most important publications
+                \item working groups of authors
+                \end{itemize}
+              \end{itemize}
+            \end{block}
+            \begin{block}{CMI Librarian}
+              \begin{itemize}
+                  \item The CMI Librarian provides a hand-vetted database of 1,150 RS publications.
+                  \item PubMed IDs were used to retrieve records for each paper [1].
+                   \end{itemize}
+            \end{block}
+            \begin{block}{Publication Rates}
+              \begin{itemize}
+                  \item PubMed queries used to find growth of publication volume for resting state and all of fMRI.
+                  \item Piecewise exponential functions model growth
+                   \end{itemize}
+            \end{block}
+            \begin{block}{Word Frequency Analysis}
+                \begin{itemize}
+                    \item Performed on CMI Librarian tags, as well as terms appearing in the title and abstract from neuroimaging methods, cognitive ontology [2, 3], and the PubBrain lexicon [4].
+                \end{itemize}
+            \end{block}
+            \begin{block}{Citation Analysis}
+                \begin{itemize}
+                    \item Generated directed graph of citations from binary publication files
+                    \begin{itemize}
+                     \item Performed fuzzy search for every possible publication title in each file using Python difflib
+\item Resulted in 1,196 publications and 17,183 citations
+                    \end{itemize}
+                    \item Found publications with highest pagerank using NetworkX pagerank implementation
+                    \item Found mean and standard error of pageranks using jackknife procedure
+                    \begin{itemize}
+                     \item Randomly deleted 20\% of edges over 1,000 replicates
+                    \end{itemize}
+              \end{itemize}
+            \end{block}
+            \begin{block}{Working Group Analysis}
+              \begin{itemize}
+              \item Developed Dice coefficient-based algorithm to identify working groups\\
+              \begin{itemize}
+\item initialize $WG$ to \null
+\item for each author s,
+\item \ \ set $a = s$
+\item \ \ do
+\item \ \ \ \ add $a$ to $A$
+\item \ \ \ \ find author $a$ with $\arg \max_{a \notin A}(| \text{pubs}(a) \cap \text{pubs}(A)|)$
+\item \ \ loop until $\text{pubs}(b)$ is too small or $\text{pubs}(A)$ is too small or $\text{pubs}(b)/\text{pubs}(A)$ is too small
+\item \ \ if $|A| >= 3$ and $\sum(I(|A \cap WG_i|/|WG_i| > 0.5)) = 0$
+\item \ \ \ \ add $A$ to $WG$
+  \end{itemize}
+              \end{itemize}
+              \end{block}
+            }
+        \end{minipage}
+      \end{beamercolorbox}
+    \end{column}
+    % ---------------------------------------------------------%
+    % end the column
+
+    % ---------------------------------------------------------%
+    % Set up a column
+    \begin{column}{.495\textwidth}
+      \begin{beamercolorbox}[center,wd=\textwidth]{postercolumn}
+        \begin{minipage}[T]{.95\textwidth} % tweaks the width, makes a new \textwidth
+          \parbox[t][\columnheight]{\textwidth}{ % must be some better way to set the the height, width and textwidth simultaneously
+            % Since all columns are the same length, it is all nice and tidy.  You have to get the height empirically
+            % ---------------------------------------------------------%
+            % fill each column with content
+            \begin{block}{Results}
+                \begin{center}
+                \includegraphics[]{growth_rate.pdf}\\
+                \includegraphics[]{clouds.pdf}\\
+                \end{center}
+                \begin{center}
+\begin{itemize}
+\item Li, Shi-Jiang and Teng, Gao-Jun and Zhang, Hong-Ying and Zhang, Zhi-Jun
+\item Hamann, Stephan and Monk, Christopher S and Peltier, S J
+\item Fair, Damien and Petersen, Steven E and Raichle, M E and Schlaggar, Bradley L
+\item Beckmann, C F and Rombouts, S A R B and Smith, S M
+\item Liu, Bin and Teng, Gao-Jun and Zhang, Hong-Ying
+\item Biswal, B and Castellanos, F X and Kelly, A M and Margulies, D S and Mennes, Maarten and Milham, M P and Zuo, Xi-Nian
+\item Riedl, Valentin and Sorg, Christian and Wohlschlaeger, A M
+\end{itemize}
+                \end{center}
+            \end{block}
+            \begin{block}{Conclusions}
+              \begin{itemize}
+                  \item Biibliometric analysis lends valuable insight into the current state of the field, demonstrating its strength, areas of focus, and future potential.
+                  \item The growth of RS literature is currently faster than fMRI, the most common imaging modality in RS research.
+                  \item The analysis identified a focus on PFC, responsible for executive function, as well as the PCC and ACC, which are central nodes of the DMN.  Attention was the most discussed cognitive domain, reflecting a current research trend.
+                  \item Analysis of open access showed that it is not universal in resting state or fMRI, but has a strong foothold.
+                  \item A handful of seminal publications provide much of the groundwork for the field.
+                  \item A few working groups are responsible for the majority of total publications.
+              \end{itemize}
+            \end{block}
+            %\begin{block}{References}
+            %\end{block}
+            \begin{block}{Acknowledgements}
+            This research was supported by NINDS R21NS050183, NIDA 1R21DA026086, and the Robert and Janice McNair foundation.
+            \end{block}
+          }
+          % ---------------------------------------------------------%
+          % end the column
+        \end{minipage}
+      \end{beamercolorbox}
+    \end{column}
+    % ---------------------------------------------------------%
+    % end the column
+  \end{columns}
+  %\vskip1ex
+  \small\textcolor{black}{{\bf References:} $^1$National Center for Biotechnology Information, U.S. National Library of Medicine, http://www.ncbi.nlm.nih.gov/pubmed/ 2012,
+                                          $^2$Poldrack, R.A. http://www.russpoldrack.org/2011/07/my-analysis-of-ohbm-2011-abstracts.html 2011,\\
+                                          $^3$Poldrack, R.A. et. al. Front. Neuroinform. 5(17) 2011,
+                                          $^4$Kalar, D. http://www.pubbrain.org/ 2012.}
+
+  %\tiny\hfill\textcolor{ta2gray}{Created with \LaTeX \texttt{beamerposter}  \url{http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php}}
+  %\tiny\hfill{Created with \LaTeX \texttt{beamerposter}  \url{http://www-i6.informatik.rwth-aachen.de/~dreuw/latexbeamerposter.php} \hskip1em}

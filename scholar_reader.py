@@ -22,7 +22,6 @@ def citations_per_year(sort=False):
         data.sort_values('CPY', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
 
-
 def value_count_graph(series, xcount=10):
     value_series = countstats(series)
     value_df = pd.DataFrame()

@@ -167,6 +167,7 @@ import re
 import sys
 import warnings
 import math
+import bibtexparser
 import pandas
 
 
