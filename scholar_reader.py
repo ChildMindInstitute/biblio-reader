@@ -1,6 +1,8 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
-with open('FCP_2015.csv', 'r') as f:
+
+with open('FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 
@@ -11,7 +13,7 @@ def countstats(series, path=None, row_limit=None):
     if path:
         stat.to_csv(path=path, header=True)
     else:
-        print(stat)
+        return stat
 
 
 def citations_per_year(sort=False):
@@ -21,10 +23,30 @@ def citations_per_year(sort=False):
         data.reset_index(drop=True, inplace=True)
 
 
-def count_tuples():
-    journal_and_year = pd.Series(list(zip(data['Journal'].dropna(), data['Year'].dropna())))
-    countstats(journal_and_year)
-count_tuples()
+def value_count_graph(series, xcount=10):
+    value_series = countstats(series)
+    value_df = pd.DataFrame()
+    for item in value_series.head(xcount).index.tolist():
+        value_df[item] = count_item_year(series.name, item)
+    value_df.sort_index(inplace=True, ascending=False)
+    value_df = value_df.T
+    plt.figure()
+    plt.xlabel(series.name)
+    plt.ylabel('Number of' + series.name + 's')
+    value_df.plot.bar(stacked=True)
+    plt.savefig('Journals_by_year.png', bbox_inches='tight')
 
 
+def count_item_year(column, item):
+    return data.loc[data[column].apply(lambda x:str(x).casefold()) == item]['Year'].value_counts()
 
+
+def year_sum_graph(column):
+    df = data.groupby('Year').sum()[column]
+    plt.figure()
+    plt.ylabel(column)
+    plt.xlabel('Year')
+    df.plot.bar()
+    plt.savefig('Citations_sum.png', bbox_inches='tight')
+
+value_count_graph(data['Journal'], xcount=20)
