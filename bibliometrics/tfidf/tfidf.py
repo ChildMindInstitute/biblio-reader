@@ -11,7 +11,6 @@ Authors:
 """
 
 import math, numpy as np, re, operator, os, textmining
-from difflib import *
 from collections import defaultdict
 
 rootDir = "../"
