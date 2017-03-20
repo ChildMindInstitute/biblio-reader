@@ -167,7 +167,6 @@ import re
 import sys
 import warnings
 import math
-import bibtexparser
 import pandas
 
 
@@ -183,6 +182,11 @@ except ImportError:
     from urllib2 import Request, build_opener, HTTPCookieProcessor
     from urllib import quote, unquote
     from cookielib import MozillaCookieJar
+
+try:
+    import bibtexparser
+except:
+    print("We need Bibtexparser, sorry...")
 
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:
