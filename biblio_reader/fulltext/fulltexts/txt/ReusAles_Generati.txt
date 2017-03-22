@@ -1,0 +1,854 @@
+Generative models of the human connectome
+Richard F. Betzel1 , Andrea Avena-Koenigsberger1 , Joaquı́n Goñi1,2 , Ye He3 , Marcel A. de
+Reus4 , Alessandra Griffa5,6 , Petra E. Vértes7 , Bratislav Mišić1 , Jean-Philippe Thiran5,6 ,
+Patric Hagmann5,6 , Martijn van den Heuvel4 , Xi-Nian Zuo3 , Edward T. Bullmore7 , and Olaf
+Sporns1,2,*
+1 Indiana
+
+University, Psychological and Brain Sciences, Bloomington IN, 47405, USA
+University, Network Science Institute, Bloomington IN, 47405, USA
+3 Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology,
+Chinese Academy of Sciences, Beijing, China
+4 Brain Center Rudolf Magnus, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The
+Netherlands
+5 Department of Radiology, University Hospital Center and University of Lausanne, Lausanne, Switzerland
+6 Signal Processing Lab 5 (LTS5), École Polytechnique Fédérale de Lausanne, Lausanne, Switzerland
+7 Department of Psychiatry, Behavioural and Clinical Neuroscience Institute, University of Cambridge, Cambridge,
+UK
+* osporns@indiana.edu
+
+arXiv:1506.06795v1 [q-bio.NC] 22 Jun 2015
+
+2 Indiana
+
+ABSTRACT
+The human connectome represents a network map of the brain’s wiring diagram and the pattern into which its connections
+are organized is thought to play an important role in cognitive function. The generative rules that shape the topology of the
+human connectome remain incompletely understood. Earlier work in model organisms had shown that wiring rules based
+on geometric relationships (distance) cannot account for all topological features. Here we systematically explore a family
+of generative models of the human connectome that yield synthetic networks designed according to different wiring rules
+combining geometric and a broad range of topological factors. We find that a combination of geometric constraints with
+a homophilic attachment mechanism can create synthetic networks that closely match many topological characteristics of
+individual human connectomes, including features that were not included in the optimization of the generative model itself.
+We use these models to investigate a lifespan dataset and show that, with age, the model parameters undergo progressive
+changes, suggesting a rebalancing of the generative factors underlying the connectome across the lifespan.
+
+Introduction
+The human connectome represents a network map of the brain in which regions and inter-regional connections are rendered
+into the nodes and edges of a graph. In this format, the connectome can be analyzed using tools from network science and
+graph theory.1, 2 Network analyses of the connectome have revealed a host of attributes that are likely essential for healthy
+brain function, including hierarchical and multi-scale modules,3, 4 highly connected, highly central hubs,5, 6 and a rich club of
+mutually connected, high-degree regions.7 Additionally, the connectome’s topology (the pattern in which its connections are
+configured) is thought to play an important role in shaping task-evoked and spontaneous brain activity.8–10
+The connectome is an example of a physical network whose nodes and edges are embedded in Euclidean space.11
+Consequently, the formation of connections carries a material and metabolic cost that increases with connection length.12
+To remain within the limits of viability, the human connectome maintains disproportionally many short-range (i.e. low cost)
+connections. Despite the importance of conserving connection cost, previous work in model organisms has shown that wiring
+minimization alone cannot account for all the connectome’s topological features.13, 14 Rather, connectome networks strike a
+balance wherein the formation of costly features like hubs and rich clubs trades off with a drive to reduce the total cost of
+wiring.
+The conditions that allow this tradeoff to emerge are the central topic of this paper, and one that we explore using generative
+models applied to human connectome data obtained from individual participants. In the context of complex networks, generative
+modeling refers to a set of approaches for creating synthetic networks with properties similar to those of real-world networks.
+One example among many15–20 is the preferential attachment model,21 which generates synthetic networks with heavy-tailed
+degree distributions similar to those observed in many real-world socio-technical networks.
+In this report we build upon and expand the tradition of generative models for brain networks by fitting many different
+
+generative models to single-subject human connectome data and comparing models in terms of their overall performance.
+The models we investigate combine two distinct mechanisms for network growth: 1) geometric wiring rules which influence
+connection formation by favoring either shorter or longer connections and 2) non-geometric rules that ignore the distance
+between two regions and, instead, form connections on the basis of some shared topological relationship. Some of the models
+we consider implement rules that mimic well-established growth mechanisms like geometric random graphs, preferential
+attachment, degree assortativity, and homophilic attraction. In all cases, our aim is to discover wiring rules that produce
+synthetic networks with properties similar to those of observed connectomes.
+To this end, we tuned our models’ parameters to generate realistic synthetic networks. We found that the best-fitting model
+was one that penalized the formation of longer connections while increasing the likelihood of forming connections between
+brain regions with similar connectivity profiles (homophily). We cross-validated this result, comparing synthetic and observed
+connectomes along measures other than those used in the optimization process and using three different datasets. Finally, we fit
+the optimal generative model to data from a lifespan study (with ages ranging from 7-85 years) and found that the penalty on
+long-distance connections weakened monotonically with age. Older subjects’ connectomes were fit poorly compared to those
+of younger individuals, a result driven primarily by an inability to match edge length and clustering coefficient distributions.
+This suggests that the human connectome undergoes a characteristic reorganization across the lifespan.
+
+Results
+We fit generative models to the connectomes of individual participants. In the main text, we focus on 40 adults (ages 18-40
+years) scanned at the Department of Radiology, University Hospital Center and University of Lausanne (CHUV), Lausanne,
+Switzerland. The supplementary text contains results from replication cohorts of 214 and 126 participants from the Human
+Connectome Project (HCP)22, 23 and the Nathan Kline Institute, Rockland, New York (NKI) cohort,24 respectively. In the same
+supplement we also investigate the sensitivity of our results to alternative processing streams. For details regarding MRI image
+acquisition and pre-processing see Methods.
+In general, all the models we considered were of the same form. Starting with a sparse seed network (62 bi-directional edges
+that were common across all 40 participants), edges were added one at a time over a series of steps until M total connections
+were placed (where M = 576 ± 57 connections across subjects). The relative probability of connecting nodes u and v at any
+step was given by:
+P(u, v) ≈ E(u, v)η × K(u, v)γ
+
+(1)
+
+In this expression E(u, v) denotes the Euclidean distance between brain regions u and v. The exponent η controls the
+characteristic connection length. When η < 0, short-range connections are favored, while η > 0 increases the probability of
+forming longer connections. The other term, K(u, v), represents an arbitrary non-geometric relationship between nodes u and
+v and the value of γ scales its relative importance. The precise definition of K(u, v) is flexible and can be varied to realize
+different wiring rules. For instance, setting K(u, v) = ku kv and γ > 0 implements a variant of preferential attachment, wherein
+higher degree nodes are more likely to become connected. Alternative definitions can be used to implement rules such as degree
+assortativity (e.g. K(u, v) = |ku − kv |, where nodes with similar/dissimilar numbers of connections preferentially connect to
+one another) or homophily (e.g. K(u, v) = ∑w auw awv where connections form between nodes with more or fewer common
+neighbors). In Table 1 we show a complete list of all non-geometric wiring rules.
+To assess the fitness of a synthetic network we calculated its energy, which measures how dissimilar a synthetic network is
+to the observed connectome. Intuitively, if the two networks have many properties in common, then the synthetic network’s
+energy is small. Specifically, a synthetic network’s energy was defined as:
+E = max(KSk , KSc , KSb , KSe )
+
+(2)
+
+where the arguments are Kolmogorov-Smirnov statistics which quantify the discrepancy between the synthetic and observed
+connectomes in terms of their degree (k), clustering (c), betweenness centrality (b), and edge length (e) distributions. By taking
+the maximum of the four statistics we consider a synthetic network to be only as fit as its greatest discrepancy.
+Geometric models cannot generate clustered networks with long connections
+It is well known that the connectome’s physical embedding shapes its topology by promoting the formation of low-cost
+connections.12 On the other hand, forming only the shortest connections produces a skewed edge length distribution lacking
+long-distance connections,13 resulting in increased characteristic path length, thereby reducing the efficiency with which
+information can flow between distant brain regions. We first sought to test the extent to which cost conservation shapes the
+topology of the human connectome by implementing a pure geometric model (i.e. K(u, v) = 1).
+2/22
+
+For each participant we tuned the free parameter, η, to a range where the geometric model consistently produced
+synthetic networks with near-minimal energies (Figure 1B) and analyzed the top 1% lowest-energy synthetic networks (100
+networks/participant). At this point in parameter space (η = −4.01 ± 0.31; sample mean±standard error; see Figure1C),
+synthetic networks achieved an average energy of E = 0.29 ± 0.02 with KS statistics KSk = 0.15 ± 0.03, KSb = 0.18 ± 0.04,
+KSe = 0.27 ± 0.03, and KSc = 0.29 ± 0.02 (Figure 1B). To contextualize these scores, we compared them to KS statistics
+obtained from a null generative model where connections were formed with uniform probability. We found that, with the
+exception of KSe (p ≈ 0.4; Wilcoxon signed-rank test25 ), the geometric model produced significantly lower energy and smaller
+KS statistics (maximum p ≈ 10−5 ).
+Interestingly, the point at which energy is minimized deviates from the respective minima of KSe and KSc , demonstrating that
+even the-best fitting synthetic networks generated by the geometric model cannot simultaneously match observed connectomes
+in terms of clustering and edge length distributions. The reason for this is intuitive: A strong distance penalty is required to
+generate highly clustered networks, which inadvertently penalizes the formation of long-distance connections. Conversely,
+realistic edge length distributions arise when the distance penalty is relatively weak, at which point synthetic networks become
+vastly under-clustered. The energy minimum occurs at a point situated between these two extremes, trading off accuracy along
+one dimension with the other though never simultaneously minimizing both (Figure 1D).
+Models driven by geometry and topology outperform pure geometric models
+The failure of the pure geometric model to generate synthetic networks that were as clustered and contained as many longdistance connections as observed connectomes suggests that additional factors are needed as part of a realistic generative
+mechanism. To determine which factors were most capable in this regard we compared twelve different generative models where
+topological features such as degree, clustering, and homophily influenced the connection formation probabilities. As expected,
+due to the additional free parameter, γ, we find that all dual-factor models outperformed the pure geometric model, generating
+synthetic networks with significantly lower energies (p ≈ 0, see Figure 2). Importantly, dual-factor models were stratified, with
+clustering-based models outperforming degree-based models, which in turn were outperformed by homophily-based models.
+The absolute best model incorporated a homophilic attraction mechanism in the form of the matching index (MI), which is a
+normalized measure of overlap in two nodes’ neighborhoods. If Γu = {v : auv = 1} represents the set of node u’s neighbors,
+then the matching index is equal to:
+Muv =
+
+|Γu\v ∩ Γv\u |
+|Γu\v ∪ Γv\u |
+
+(3)
+
+where Γu\v is simply Γu but with v excluded from the set. In the event that u and v have perfect overlap in their neighborhoods,
+then Muv = 1. If the neighborhoods contain no common elements then Muv = 0.
+Applied to the CHUV dataset, the MI model achieved an average energy of E = 0.12 ± 0.02 with parameters η =
+−0.98 ± 0.37 and γ = 0.42 ± 0.04 (Figure 3C). Together, these parameter values indicated that, like the pure geometric model,
+the MI model exercised a penalty against long distance connections (albeit markedly weaker than the geometric model),
+while increasing the probability that nodes with similar connectivity profiles would connect to one another. Interestingly, the
+parameters η and γ appear to trade off with one another (Figure 3D), suggesting that the more an individual’s connectome
+is shaped by geometry (large amplitude of η), the less it is shaped by non-geometric constraints and vice versa. On average,
+the MI model outperformed the geometric model in reducing discrepancies along all four components of the energy function:
+KSk = 0.10 ± 0.03, KSb = 0.10 ± 0.02, KSe = 0.10 ± 0.03 and KSc = 0.11 ± 0.02 (maximum p-value for all KS statistics and
+energy was p ≈ 10−7 , Wilcoxon signed-rank test). Whereas the geometric model’s performance was limited primarily by
+mismatches in clustering and edge length, the MI model’s performance was more evenly limited. The best-fitting synthetic
+networks had energies equal to KSk , KSb , KSc , and KSe around 21%, 25%, 29%, and 25% of the time, respectively.
+Evaluating synthetic networks using additional measures
+Our analyses to this point consisted of tuning the parameters of generative models to ranges where the synthetic networks
+achieved low energy, which identified the MI model as the best fitting model. The form of the energy function, however, may
+be considered ad hoc; it represents only one of many alternative ways to evaluate a synthetic network’s fitness. For this reason
+it was important to establish that the best-fitting synthetic networks generated by the MI model matched observed connectomes
+across additional dimensions that were not part of the energy function used for optimization. To that end, we subjected the
+lowest-energy synthetic networks to a series of additional tests to determine whether they could also reproduce other properties
+of the human connectome.
+Graph theoretic measures
+
+The first test involved evaluating the best-fitting synthetic networks in terms of how well they matched graph-theoretical
+properties of observed connectomes, focusing on the measures: mean clustering (C), global efficiency (E), degree assortativity
+3/22
+
+(Rk ), modularity (Q), characteristic path length (L), and network diameter (max[D]) (see Supplement for descriptions of these
+measures). We estimated the magnitude of correlation between graph measures made on synthetic networks generated by the
+MI model and the same measures made on empirical networks. We found that the MI model did an excellent job reproducing
+the rank order of individual participants’ mean clustering (r = 0.90, p ≈ 0), modularity (r = 0.69, p ≈ 10−6 ), characteristic
+path length (r = 0.86, p ≈ 10−12 ), and efficiency (r = 0.64, p ≈ 10−5 ). Network diameter (r = 0.23, p = 0.15) and degree
+assortativity (r = 0.05, p = 0.74) were not well matched (Figure 4A). It should be noted that, in general, most graph measures
+are not completely orthogonal to one another.
+While the MI model generally reproduced the rank order of participant-level graph measures, it nonetheless systematically
+over-/under-estimated the values of certain measures. For instance, efficiency was, on average, smaller for synthetic networks
+than for empirical networks (points falling above the diagonal in Figure 4A, third panel). The same is true for characteristic
+path length (over-estimated). Despite these biases, the discrepancy between empirical and synthetic networks for any of these
+measures was, on average, small - across participants, the mean clustering, modularity, path length, and efficiency scores of
+synthetic networks were always within 5.5% of the same measure made on the corresponding observed network.
+Distance-dependent degree assortativity
+
+The human connectome features hub regions linked by long distance connections, forming rich clubs and cores. This propensity
+for higher-degree nodes to be linked by longer connections should be reproducible by a good generative model. To assess
+whether this were the case, we extracted and pooled across participants the list of all connections, the degrees of their stubs
+(ku and kv ), and length (E(u, v)). From these data, we estimated the three-dimensional cumulative distribution function,
+F(kα , kβ , E(α, β )). At any point {kα , kβ , E(α, β )}, the value of F corresponded to the fraction of all connections satisfying
+ku ≤ kα , kv ≤ kβ , and E(u, v) ≤ E(α, β ) (ku and kv were ordered so that ku ≤ kv ). We constructed similar distributions for the
+best-fitting synthetic networks generated by each model and quantified the discrepancy between distributions with a KS statistic.
+In general, the rank order of models scored by this KS statistic was similar to the rank order of their energies (Figure 4B). The
+MI model achieved the smallest KS statistic (KS = 0.12 ± 0.01) while the pure geometric model, on the other hand, performed
+the worst (KS = 0.37 ± 0.01).
+Local statistics
+
+Finally, we tested whether the best-fitting synthetic networks generated by the MI model were capable of predicting the
+degree and clustering coefficient sequences of the connectome. We expressed each node’s empirical degree, ku , and clustering
+coefficient, cu , as z-scores by standardizing the empirical values against the distributions obtained from the best-fitting synthetic
+networks. Z-scores were averaged across subjects and used to quantify the discrepancy in those measures (larger scores
+indicated poorer fit). We compared these z-scores against scores obtained from the best-fitting synthetic networks generated by
+the pure geometric model in order to ascertain whether they represented an improvement in fitting local network measures
+(Figure 4C). We found that, on average, the MI model produced smaller discrepancies (points below the diagonal) compared to
+the geometric model. Typically, the largest improvements were for nodes whose degree or clustering coefficient was mismatched
+the greatest by the geometric model. For some nodes, however, the geometric model actually outperformed the MI model,
+though the standardized scores for these nodes were, generally, rather small for both models.
+Application to human lifespan data
+In addition to quantifying models’ performances, we asked whether the parameters of the generative models captured meaningful
+information about individual differences in network organization. To demonstrate the utility of the network modeling approach
+for characterizing individual variation, we extended our analysis to the NKI dataset’s N = 126 participants, spanning a range of
+ages from 7-85 years. We hypothesized that age-related changes in network organization may be captured by the parameters of
+the generative models, η and γ. We tested this hypothesis by first regressing out participants’ intracranial volumes and mean
+framewise displacement from parameter values obtained from the best-fitting MI models and correlating the residuals with
+participant age. We also expressed energies and KS statistics as z-scores relative to a generative model in which connections
+were formed randomly to correct for variations in network density with age.26, 27 The results of these analyses indicated that
+the value of η decreased in magnitude with age (r̂age,η = 0.39, p ≈ 10−5.3 ), while γ did not exhibit any significant age-related
+changes (r̂age,γ = 0.07, p ≈ 0.45, which implied that the penalty on long-distance connections weakened with age. We also
+found that E, KSe , and KSc all increased with age (max p ≈ 10−4.7 ) (Figure 5), indicating that the MI model does an increasingly
+poor job capturing the organization of older connectomes compared to younger connectomes.
+
+Discussion
+In this report, we tested different classes of generative models for the human connectome. Our study makes several novel
+contributions, by quantitatively comparing different sets of generative models, by applying these models to human connectome
+data, and by fitting models to networks of individual participants. We confirmed that pure geometric models cannot create
+4/22
+
+synthetic networks that were both as clustered and also contained the same proportion of long-distance connections as the
+observed human connectome. To identify which additional factors were most capable of creating realistic networks we
+incorporated non-geometric information into our generative models’ wiring rules. With this additional degree of freedom, the
+synthetic networks generated by these more complex models more accurately reproduced the connectome’s clustering and
+edge length distributions. The best-fitting model formed connections on the basis of homophilic attraction (matching index)
+combined with geometric constraints. Importantly, synthetic networks generated by this model not only reproduced degree,
+betweenness centrality, clustering coefficient, and edge length distributions (all measures that contributed to the energy function
+used for optimization), but they also reproduced additional graph theoretic properties such as characteristic path length, mean
+clustering, global efficiency, modularity, the propensity for high-degree nodes to be connected via long-distance edges, and
+local node statistics such as degree and clustering coefficient sequences. We also demonstrated robustness of the matching
+index model, comparing it across three separate datasets totaling N = 380 participants and finding consistent results in all
+cases (See Supplement). As a final demonstration of the utility of generative models, we fit the MI model to connectomes of
+individuals whose ages ranged from 7-85 years, showing that the distance penalty weakened with age while energy increased,
+an effect driven by growing discrepancies in clustering and edge length distributions.
+Generative models for brain networks have been investigated before, serving as proofs of concept28–31 or as investigative
+tools for non-human connectome data.14, 32–34 One limitation of earlier studies was the use of composite connectivity matrices
+as empirical benchmarks. For example, Ercsey-Ravasz et al35 and Song et al36 proposed geometric models of an incomplete
+macaque connectome, where connections were based on composite tract-tracing data compiled across multiple subjects and
+only a subset of cortical areas. Another limitation of earlier work was the lack of model comparison. In many cases proposed
+generative models were only compared against random generative models35, 36 where connections were formed with uniform
+probability, as opposed to models incorporating more plausible generative mechanisms.
+The first model we examined was the pure geometric model, which was the simplest but also, in accordance with earlier
+studies, performed the worst. The observation that geometry only partly explains the topology of brain networks is in line
+with in a large literature on wiring minimization,37–40 and has been appreciated in modeling studies of both human brain
+networks30, 32, 41, 42 and those of non-human primates.14 Our findings also support the view that strong spatial constraints
+alone are insufficient for explaining all topological aspects of brain networks.12, 13 This conclusion stands in contrast to other
+reports35, 36 suggesting that geometric models are the sole generative mechanism underlying the connectome’s formation and
+evolution. Instead, we find that in order to accurately reproduce the connectome’s topology our models required information
+about node’s pairwise similarity (homophily), which agrees with earlier modeling studies of the primate connectome14 and
+human functional brain networks.41
+The final component of this report was an application of network modeling to human lifespan data, which revealed that
+geometric constraints weakened while energy and the mismatch of clustering and edge length distributions all increased with
+age. Collectively, these results indicate that the MI model is becoming an increasingly poor model of the connectome as
+participants become older. There are a number of possible explanations. For example, connectome patterns may become
+increasingly random with age, making it impossible for any wiring rule to model the connectome precisely. Alternatively,
+connectomes may exhibit different types of topology in younger versus older subjects (perhaps as a consequence of selective
+pruning). To accurately model these connectomes would require more complicated models and the introduction of additional
+growth mechanisms.
+The aim of this study was not to model the growth and development of the human connectome. Doing so would have
+required a more complicated model that included more system-specific detail. Instead, our models were designed to reduce
+a network’s description length. Naı̈vely, we can reconstruct a network exactly from a list of its nodes and edges. However,
+such a precise reconstruction may not be necessary or even desirable. Oftentimes we are more interested in a network’s
+high-level properties (e.g. modularity, degree distribution, etc.), than the exact configuration of its connections. In such a
+case, a mechanism that generates synthetic networks with the approximately the same set of properties represents a much
+more economical (compressed) description of the network. Our models are in line with this approach, seeking a parsimonious
+description of the human connectome, wherein its overt complexity gets compressed into a model’s wiring rule and parameters.
+This type of compressed description can be used toward any number of ends, including investigation of differences in individual
+participants. For instance, we found that some participants’ connectomes were compressible (low energy) while others were
+not (high energy). An important question, moving forward, is whether these differences become meaningful when examining
+individual differences or comparing clinical and control populations, or whether they can be related to some behavioral measures
+across both individual and group levels.
+There are a number of methodological considerations that should be discussed. First, the class of dual-term models left
+the definition of K(u, v) up to the user. For practical reasons, we explored only twelve such rules. Even with this limited
+exploration, we found a great deal of stratification in terms of model performance. This leaves open the possibility that wiring
+rules not explored in this report could produce superior results. While enumerating of all possible wiring rules is impractical, a
+5/22
+
+number of methods have been proposed that aim to discover wiring rules by evolving models themselves,43, 44 as opposed to
+proposing a model and fitting its parameters, as we did here. These approaches, we believe, warrant further attention.
+Another methodological consideration concerns the evaluation of a synthetic network’s fitness. The synthetic networks
+are mapped into a morphospace45 according to their geometric and topological properties and compared to the observed
+connectome along the same dimensions. Whether these properties are the most appropriate measures for network comparison is
+unclear. In principle, one could define alternative energy functions whose minima may not coincide with those reported here,
+and for which the MI model is not the best performer. Though we the exploration of alternative energy functions is beyond the
+scope of this report, we attempted to mitigate the concern that our choice of energy function biased our results by performing a
+series of additional tests, the results of which indicated that the MI model consistently outperformed other models.
+Another consideration relates to the combination of diffusion imaging and tractography for inferring the connectome’s
+organization. Though diffusion imaging/tractography represents the state of the art for in vivo reconstruction of the brain’s
+anatomical connections, these technologies are nonetheless prone to false positives and negatives,46 which could potentially
+affect our results. While the use of multiple atlases, independent datasets, and alternative processing streams help reduce the
+bias of any single processing strategy they do not completely address the issue. The shortcomings of diffusion imaging and
+tractography, while presently limiting, also serve to highlight the need to development new non-invasive methods for mapping
+the human brain.
+A final consideration is related to the size of networks, the definition of nodes, and the scalability of our models. In general,
+how one defines a network’s nodes has implications for the network properties of the resulting graph.47 It is likely that the size
+and number of nodes factor into the performance of the models studied here. The networks analyzed in this report consisted of
+either n = 74 or n = 108 nodes, representing two different parcellations of the cortex. However, it is becoming increasingly
+common to model brain networks with up to thousands of nodes. Because the number of possible positions to place an edge
+grows as O(n2 ), the space of all networks that the model could generate becomes much larger as n increases. Models with
+n >> 102 may require stronger parametric constraints (e.g. larger magnitudes for η or γ) or incorporating additional topological
+information (and an additional parameter) into a model’s wiring rule. In general, the choice of how to define a network’s nodes
+and at what scale the human connectome is best described is unclear, though future work on data-driven parcellations will
+surely help address this issue.
+
+Methods
+Generative algorithm
+The algorithm for producing synthetic networks is simple. Starting with a seed network comprised of connections common to
+all subjects, connections are added in sequence until a pre-specified number (equal to the number of edges in the observed
+network) have been placed. At each step, the relative probability that nodes u and v will become connected is given by
+P(u, v) = E(u, v)η × K(u, v)γ , where E(u, v) and K(u, v) are the Euclidean distance and an arbitrary topological relationship,
+respectively, between nodes u and v. To prevent cases where P(u, v) is undefined (e.g. if K(u, v) = 0 and γ < 0 then P(u, v) = ∞,
+we add ε = 10−6 to each K(u, v) before raising it to the power, γ. Over the course of the generative process new edges are
+added to the synthetic network which necessarily changes the value of K(u, v). Accordingly, at each step we update K(u, v) and
+the corresponding changes to P(u, v). If, at any step, the edge {u, v} is added to the synthetic network, then P(u, v) = 0 for all
+subsequent steps.
+Model optimization
+Given the generative rule and the energy measure for evaluating a model network’s goodness of fit, it was important to find
+the parameters {η, γ} that produced networks with the lowest possible energy values. To solve this optimization problem, we
+developed a simple procedure based on classical Monte Carlo methods. The procedure consisted of three stages that were
+repeated:
+1. A sampling stage in which points in parameter space are selected
+2. An evaluation stage, where synthetic networks are generated with the previously-selected parameter values and their
+energies calculated.
+3. A partitioning stage, in which the entire parameter space is partitioned according to a Voronoi tessellation.
+The procedure is initialized in stage 1 by randomly sampling Nsamp = 2000 points from parameter space. After evaluating
+the energy at each point and partitioning the entire parameter space into Voronoi cells, the algorithm returns to stage 1. Rather
+than sample points randomly, points are now sampled from within the boundaries of Voronoi cells, where the probability of
+drawing a point from within any given cell is inversely proportional to that cell’s energy (P(C) ∝ EC−α , where EC is the energy
+6/22
+
+of Voronoi cell, C, and P(C) is the relative probability of sampling from within that cell). This procedure ensures that points are
+sampled preferentially from low-energy regions of parameter space. We repeated stages 1, 2, and 3 a total of five times and
+varied α with each repetition, going from α = {0.0, 0.5, 1.0, 1.5, 2.0}. Early on, the low values of α meant that we searched
+the parameter space randomly, while the larger values at later repetitions allowed us to focus in on the low energy regions. We
+emphasize that alternative optimization schemes could be used to minimize E (e.g. simulated annealing); the approach used
+here was chosen because it allowed us to not only converge to good solutions, but also to explore the energy landscape.
+Data acquisition and processing
+Whole-brain tractography was performed on diffusion spectrum imaging (DSI) data acquired from N = 40 participants. The
+cortex was parcellated into the n = 219 regions according to a subdivision of FreeSurfers’s Desikan-Killiany atlas,48 of which
+we retained the 108 regions comprising the right hemisphere. The processing of these data have been described in greater
+detail elsewhere.4, 9, 49 We enforced an average connectome density of ρ ≈ 10%, resulting in a streamline threshold of 27
+streamlines (i.e. a minimum of 27 streamlines must have connected two regions for us to consider the presence of an anatomical
+connection).
+
+Acknowledgements
+Data were provided [in part] by the Human Connectome Project, WU-Minn Consortium (Principal Investigators: David Van
+Essen and Kamil Ugurbil; 1U54MH091657) funded by the 16 NIH Institutes and Centers that support the NIH Blueprint for
+Neuroscience Research; and by the McDonnell Center for Systems Neuroscience at Washington University.
+
+Funding information
+R.F.B. was supported by the National Science Foundation/Integrative Graduate Education and Research Traineeship Training
+Program in the Dynamics of Brain-Body-Environment Systems at Indiana University. J.G. was supported by the Indiana
+University Network Science Institute and the Indiana Alzheimer Disease Center (NIH/NIA P30 AG10133). A.G. was supported
+by the Swiss National Science Foundation (320030 130090). P.E.V. was supported by a Bioinformatics Research Fellowship
+from the Medical Research Council (UK) (MR/K020706/1). B.M. was supported by a Natural Sciences and Engineering
+Research Council of Canada Postdoctoral Fellowship. P.H. was supported by the Leenaards Foundation. M.H. was supported
+by VENI (451-12-001) grant of the Netherlands Organization for Scientific Research (NWO; http://www.nwo.nl) and by a
+Fellowship of the Brain Center Rudolf Magnus. X.Z. was supported by the National Basic Research Program (973) of China
+(http://www.most.gov.cn/eng/), grant number is 2015CB35170 and the Major Joint Fund for International Cooperation and
+Exchange of the National Natural Science Foundation (http://www.nsfc.gov.cn/publish/portal1/), grant number is 81220108014.
+E.T.B. was supported by a grant from the Behavioural & Clinical Neuroscience Institute (University of Cambridge) and by the
+Wellcome Trust and the Medical Research Council. O.S. was supported by the J.S. McDonnell Foundation (220020387) and
+the National Science Foundation (1212778).
+
+Author contributions statement
+R.F.B., P.E.V., E.T.B., O.S. conceived the experiment(s), R.F.B., A.A-K., B.M., J.G., and O.S. conducted the experiment(s),
+R.F.B., A.A-K., B.M., J.G., and O.S. analyzed the results, Y.H., M.A.R., A.G., J-P.T., P.H., M.H., and X-N.Z. contributed data.
+All authors reviewed the manuscript.
+
+Additional information
+ETB is employed half-time by the University of Cambridge and half-time by GlaxoSmithKline (GSK); he holds stock in GSK.
+The authors declare no other competing financial interests.
+
+Supplement
+The main text describes the results of generative models applied to a dataset of 40 participants scanned at CHUV. In this
+supplement we demonstrate the robustness of those results by reproducing the principal findings using alternative datasets.
+The additional datasets are described, briefly, below and in more detail later in this supplement. Figures S1-S9 shows model
+energies for each of the additional datasets, reproducing Figure 2 from the main text.
+1. Two replication datasets (HCP and NKI) of N = 214 and N = 126 participants, respectively.
+7/22
+
+2. The same CHUV dataset with different levels of network density (5% and 15%) and defined using an alternative
+weighting.
+3. CHUV dataset including both left/right cerebral hemispheres.
+4. Composite (i.e. group averaged) CHUV, HCP, and NKI connectomes.
+In addition to describing these datasets, we discuss whether Euclidean distance is an appropriate substitute for the actual
+length of white matter fibers. At the end of this supplement we have also included, as an appendix to the supplement, a glossary
+of graph theoretic terms that appear throughout the main text.
+
+1 Additional Datasets
+1.1 Human connectome project (HCP) - See Figure S1
+The HCP data were drawn from the 215 participants made available as part of the Q3 release of the human connectome
+project.22, 23 From each participant’s diffusion-weighted MR images (diffusion tensor imaging; DTI), white matter fibers
+were reconstructed from generalized q-sampling50 (GQI: allowing for the reconstruction of crossing fibers) and streamline
+tractography and the cortex was parcellated into 219 parcels based on a subdivision of FreeSurfers’s Desikan-Killiany atlas.48
+More details on the processing of these data can be found elsewhere.51 We focused on the right hemisphere only, which
+consisted of n = 108 regions. We imposed a threshold on streamline counts of 5 (i.e. a minimum of five streamlines must be
+present for us to consider two regions linked by a binary connection) in order to maintain an average connectome density of
+ρ ≈ 10% across subjects. We excluded a single subject on the grounds that their total streamline count was greater than two
+standard deviations from the group mean, leading to a final dataset of N = 214 participants.
+1.2 Nathan Kline Institute, Rockland, NY (NKI) - See Figure S2
+The NKI dataset consists of N = 126 participants whose ages ranged from 7-85 years.24 Tractography was performed using
+the Connectome Computation System (CCS: http://lfcd.psych.ac.cn/ccs.html). A more detailed description of the processing
+pipeline was included in other reports.26, 52, 53 Unlike the HCP and CHUV datasets, the cortex was parcellated into 148 regions
+according to the Destrieux atlas.54 We analyzed a single hemisphere (n = 74 regions), but instead of focusing on either the
+right or left, we formed a composite matrix by combining the streamline counts between homotopic pairs of regions. We, again,
+enforced a mean density of ρ ≈ 10% by selecting a streamline threshold of 30 streamlines.
+1.3 Alternative CHUV datasets - See Figures S3-S6
+We investigated four variants of the CHUV dataset. In the main text we analyzed binary connectivity matrices (average density
+of ρ ≈ 10%) by applying a threshold to streamline counts. The first two variants were constructed in the same manner but with
+the threshold level chosen to maintain average densities of ρ ≈ 5% and ρ ≈ 15%. The third variant retained a threshold of
+ρ ≈ 10% but instead of thresholding streamline counts we thresholded ”fiber density” matrices. The fiber density between
+nodes u and v is common choice for edge weights in weighted anatomical brain networks, and is defined as the number of
+streamlines divided by the sum of u and v’s surface areas.4, 5, 9 The fourth variant was constructed by thresholding streamline
+counts to ρ ≈ 10% but included both left and right cerebral hemispheres.
+1.4 Group-average matrices - See Figures S7-S9
+In addition to single-participant modeling, we analyzed group-average connectivity matrices for all three datasets (CHUV, HCP,
+and NKI). Group-average matrices boost the ratio of signal to noise by emphasizing connections that are consistently expressed
+across subjects, thereby rendering the human connectome more clearly. The de facto method for generating group-average
+matrices is to retain the supra-threshold elements of the [n × n] consistency matrix, C, whose element cuv indicates the fraction
+of all participants in which a connection was present between nodes u and v. The resulting matrix, however, over-expresses
+short-range connections, as short-range connections are more easily reconstructed and are hence the most consistent connections
+across subjects whereas long-range connections are more prone to error. Also, this method forces a user to choose, somewhat ad
+hoc, the threshold for including a connection in the group-average matrix. Instead, we use an alternative method for generating a
+group-average connectomes whose edge-length distribution matches that of the typical single-participant distribution.10 Briefly,
+this method begins by first estimating the average number of connections of a given length in a typical participant’s connectome.
+Next, all pairs of nodes separated by a comparable distance are identified and, from among this subset, the most consistent
+connections are added to the group-average connectivity matrix. Repeating this process for all distances yields a representative
+connectome that matches, almost exactly, the typical edge length distribution, but features only the most consistently expressed
+edges at each connection length.
+8/22
+
+2 Fiber length versus Euclidean distance
+In this report, we test the hypothesis that the human connectome emerges as a consequence of both topological and spatial
+constraints, which we model as power-law functions. In doing so, we assume that the material/metabolic cost of fiber tracts
+can be equated to Euclidean distance separating its endpoints, rather than the actual integrated length of the curved tract. The
+argument for doing so is twofold. First, estimates of fiber length can only be obtained for completed streamlines, meaning that
+no estimates exist for connections that were absent in the observed tractography data. In order to fill in the missing fiber lengths,
+one can resort to fiber interpolation (i.e. using the distance/fiber length relationship of existing connections to determine the
+fiber length of missing connections), which necessarily introduces an additional source of uncertainty. Second, the relationship
+of fiber length and Euclidean distance is rather strong across our datasets: the amount of variance in fiber length accounted for
+by Euclidean distance was 66%, 32%, and 79% for the CHUV, NKI, and HCP datasets, respectively. For these reasons, we
+assert that Euclidean distance, though imperfect, is a reasonable proxy for the cost of forming a connection.
+
+3 Appendix - graph theory
+In the main text we characterize networks using a number of different graph-theoretic measures. Here we describe those
+measures in some detail.55
+• Adjacency matrix: A topology of an n-node network can be described by the matrix A = [auv ]. The elements auv are
+equal to 1 if nodes u and v are connected and are otherwise equal to 0.
+• Node degree: A node’s degree counts the total number of connections that node makes. In an undirected network (i.e.
+auv = avu ) a node’s incoming and outgoing degrees are equivalent, and can be calculated as the sum across rows or
+columns of A, i.e. ku = ∑v auv .
+• Network density: A network’s density, ρ, is equal to the fraction of existing connections out of the total number of possible
+2m
+connections. If the total number of connections is equal to 2m = ∑u ku , then network density is equal to ρ = n(n−1)
+.
+• Degree assortativity: Degree assortativity measures the extent to which nodes of similar degree connect to one another. It
+is usually operationalized as a correlation measure, Rk , which measures the Pearson correlation of the stub degrees of all
+edges.56
+• Clustering coefficient: A node’s clustering coefficient measures the density of a node’s neighborhood. Phrased differently, clustering coefficient it measures the fraction of a nodes’ neighbors that are connected to one another. If
+tu = 12 ∑vw auv auw avw is the number of triangles (connected neighbors) surrounding node u, then u’s clustering coefficient
+is equal to cu = ku (k2·tu u−1) . The mean clustering of a network is simply the average of cu over all possible u.
+• Characteristic path length: The shortest path matrix, D = [duv ], measures the length of the shortest paths between all pairs
+duv
+of u and v. The characteristic path length is the average length of all shortest paths and is calculated as L = ∑u,v6=u n(n−1)
+.
+• Network diameter: A network’s diameter is the longest shortest path between any two nodes, and is calculated as
+max(duv ).
+• Global efficiency: A network’s efficiency is closely related to characteristic path length. Rather than calculating the
+average length of a shortest path, efficiency is calculated as the average length of d1uv . Specifically, a network’s efficiency
+d −1
+
+uv
+is calculated as E = ∑u,v6=u n(n−1)
+.
+
+• Modularity: Many network measures describe a network’s organization at the level of individual nodes or with a global
+summary statistic. Alternatively, it is possible to describe a network’s ”large-scale structure”57 - i.e. its organization
+at an intermediate scale. Perhaps the most common type of large-scale structure is known as a network’s community
+structure or a division of a network into internally dense and externally sparse modules.58, 59 The most popular method
+for identifying a network’s communities and evaluating their fitness is to maximize a ”modularity” function:60
+Q=
+
+1
+[auv − puv ]δ (gu , gv )
+2m ∑
+uv
+
+(4)
+
+In this expression, gu ∈ {1, . . . , K} is the community to which node u is assigned, δ (gu , gv ), is the Kronecker delta
+function and is equal to unity when gu = gv , and pu v indicates the expected number of connections between u and v
+u kv
+under a particular null model (typically puv = k2m
+, which is the expected weight under the null model where each node’s
+9/22
+
+degree is preserved but connections are otherwise made randomly). In general, high quality modules produce large values
+of Q. To maximize Q, then, one needs to ensure that connections satisfying (auv − puv ) > 0 fall within communities.
+The process of modularity maximization is computationally intractable for all but the most trivial cases, though many
+heuristics are available for identifying near-optimal modules. Here, we use the Louvain algorithm61 to produce 100
+near-optimal estimates of modules.
+Name
+Clu. Avg.
+Clu. Diff.
+Clu. Max.
+Clu. Min
+Clu. Prod.
+Deg. Avg.
+Deg. Diff.
+Deg. Max.
+Deg. Min.
+Deg. Prod.
+
+K(u, v)
+( c2u + c2v )
+|cu − cv |
+max[cu , cv ]
+min[cu , cv ]
+cu cv
+( k2u + k2v )
+|ku − kv |
+max[ku , kv ]
+min[ku , kv ]
+ku kv
+
+E
+0.19 ± 0.02
+0.19 ± 0.02
+0.19 ± 0.02
+0.24 ± 0.03
+0.20 ± 0.02
+0.24 ± 0.02
+0.25 ± 0.02
+0.25 ± 0.02
+0.25 ± 0.02
+0.26 ± 0.02
+
+η
+−3.06 ± 0.48
+−3.13 ± 0.49
+−3.14 ± 0.49
+−3.60 ± 0.41
+−3.14 ± 0.39
+−3.76 ± 0.57
+−4.55 ± 0.76
+−4.02 ± 0.60
+−3.99 ± 0.64
+−3.83 ± 0.70
+
+γ
+−5.75 ± 1.62
+−5.85 ± 2.07
+−5.75 ± 1.97
+−4.04 ± 1.09
+−3.44 ± 1.00
+2.47 ± 0.38
+−1.03 ± 2.61
+2.20 ± 0.43
+2.03 ± 0.47
+1.14 ± 0.32
+
+KSk
+0.14 ± 0.03
+0.15 ± 0.03
+0.15 ± 0.03
+0.12 ± 0.03
+0.11 ± 0.03
+0.18 ± 0.05
+0.13 ± 0.04
+0.13 ± 0.04
+0.20 ± 0.05
+0.19 ± 0.07
+
+KSb
+0.18 ± 0.03
+0.18 ± 0.03
+0.18 ± 0.03
+0.19 ± 0.05
+0.18 ± 0.03
+0.18 ± 0.05
+0.19 ± 0.04
+0.18 ± 0.05
+0.16 ± 0.04
+0.16 ± 0.06
+
+KSe
+0.17 ± 0.03
+0.17 ± 0.03
+0.17 ± 0.03
+0.23 ± 0.03
+0.19 ± 0.03
+0.23 ± 0.03
+0.24 ± 0.03
+0.24 ± 0.03
+0.24 ± 0.03
+0.24 ± 0.04
+
+KSc
+0.15 ± 0.03
+0.16 ± 0.03
+0.15 ± 0.03
+0.17 ± 0.05
+0.15 ± 0.04
+0.19 ± 0.04
+0.21 ± 0.05
+0.18 ± 0.05
+0.21 ± 0.04
+0.22 ± 0.04
+
+Matching
+
+|xu\v ∩xv\u |
+|xu\v ∪xv\u |
+
+0.12 ± 0.02
+
+−0.98 ± 0.37
+
+0.42 ± 0.04
+
+0.10 ± 0.03
+
+0.10 ± 0.02
+
+0.10 ± 0.03
+
+0.11 ± 0.02
+
+Nghbrs.
+Geom.
+
+∑w auw awv
+1
+
+0.14 ± 0.02
+0.29 ± 0.02
+
+−1.18 ± 0.43
+−4.01 ± 0.31
+
+0.35 ± 0.04
+N/A
+
+0.11 ± 0.03
+0.15 ± 0.03
+
+0.11 ± 0.03
+0.18 ± 0.04
+
+0.11 ± 0.03
+0.29 ± 0.02
+
+0.11 ± 0.03
+0.27 ± 0.03
+
+Table 1. Complete list of generative models. The first two columns show each model’s name and the non-geometric wiring
+rule. The remaining columns indicate sample mean±standard error energy (E), and the four KS statistics, KSk , KSb , KSe , and
+KSc .
+
+References
+1. Bullmore, E. & Sporns, O. Complex brain networks: graph theoretical analysis of structural and functional systems. Nature
+Reviews Neuroscience 10, 186–198 (2009).
+2. Sporns, O. Contributions and challenges for network models in cognitive neuroscience. Nature Neuroscience 17, 652–660
+(2014).
+3. Bassett, D. S. et al. Efficient physical embedding of topologically complex information processing networks in brains and
+computer circuits. PLoS Computational Biology 6, e1000748 (2010).
+4. Betzel, R. F. et al. Multi-scale community organization of the human structural connectome and its relationship with
+resting-state functional connectivity. Network Science 1, 353–373 (2013).
+5. Hagmann, P. et al. Mapping the structural core of human cerebral cortex. PLoS Biology 6, e159 (2008).
+6. van den Heuvel, M. P. & Sporns, O. Network hubs in the human brain. Trends in Cognitive Sciences 17, 683–696 (2013).
+7. van den Heuvel, M. P. & Sporns, O. Rich-club organization of the human connectome. The Journal of Neuroscience 31,
+15775–15786 (2011).
+8. Hermundstad, A. M. et al. Structural foundations of resting-state and task-based functional connectivity in the human
+brain. Proceedings of the National Academy of Sciences USA 110, 6169–6174 (2013).
+9. Goñi, J. et al. Resting-brain functional connectivity predicted by analytic measures of network communication. Proceedings
+of the National Academy of Sciences USA 111, 833–838 (2014).
+10. Mišić, B. et al. Cooperative and competitive spreading dynamics on the human connectome. Neuron 86, 1518–1529
+(2015).
+11. Barthélemy, M. Spatial networks. Physics Reports 499, 1–101 (2011).
+12. Bullmore, E. & Sporns, O. The economy of brain network organization. Nature Reviews Neuroscience 13, 336–349 (2012).
+13. Kaiser, M. & Hilgetag, C. C. Nonoptimal component placement, but short processing paths, due to long-distance projections
+in neural systems. PloS Computational Biology 2, e95 (2006).
+14. da F Costa, L., Kaiser, M. & Hilgetag, C. C. Predicting the connectivity of primate cortical networks from topological and
+spatial node properties. BMC Systems Biology 1, 16 (2007).
+10/22
+
+15. Watts, D. & Strogatz, S. Collective dynamics of small-world networks. Nature 393, 440–442 (1998).
+16. Kumar, R. et al. Stochastic models for the web graph. In Proceedings of the 41st Annual Symposium on the Foundations of
+Computer Science, 57–65 (IEEE, 2000).
+17. Solé, R., Satorras, R. P., Smith, E. & Kepler, T. A model of large-scale proteome evolution. Advances in Complex Systems
+5, 43–54 (2002).
+18. Vázquez, A., Flammini, A., Maritan, A. & Vespignani, A. Modeling of protein interaction networks. Complexus 1, 38–44
+(2003).
+19. Dall, J. & Christensen, M. Random geometric graphs. Physical Review E 66, 016121 (2002).
+20. Middendorf, M., Ziv, E. & Wiggins, C. H. Inferring network mechanisms: the drosophila melanogaster protein interaction
+network. Proceedings of the National Academy of Sciences USA 102, 3192–3197 (2005).
+21. Barabási, A.-L. & Albert, R. Emergence of scaling in random networks. Science 286, 509–512 (1999).
+22. Van Essen, D. C. et al. The human connectome project: a data acquisition perspective. Neuroimage 62, 2222–2231 (2012).
+23. Glasser, M. F. et al. The minimal preprocessing pipelines for the human connectome project. Neuroimage 80, 105–124
+(2013).
+24. Nooner, K. B. et al. The nki-rockland sample: a model for accelerating the pace of discovery science in psychiatry.
+Frontiers in neuroscience 6, 152 (2012).
+25. Wilcoxon, F. Individual comparisons by ranking methods. Biometrics Bulletin 80–83 (1945).
+26. Betzel, R. F. et al. Changes in structural and functional connectivity among resting-state networks across the human
+lifespan. Neuroimage 102, 345–357 (2014).
+27. Lim, S., Han, C. E., Uhlhaas, P. J. & Kaiser, M. Preferential detachment during human brain development: Age-and
+sex-specific structural connectivity in diffusion tensor imaging (DTI) data. Cerebral Cortex 25, 1477–1489 (2015).
+28. Kaiser, M. & Hilgetag, C. C. Spatial growth of real-world networks. Physical Review E 69, 036103 (2004).
+29. Kaiser, M., Hilgetag, C. C. & Van Ooyen, A. A simple rule for axon outgrowth and synaptic competition generates realistic
+connection lengths and filling fractions. Cerebral Cortex 19, 3001–3010 (2009).
+30. Henderson, J. A. & Robinson, P. A. Using geometry to uncover relationships between isotropy, homogeneity, and
+modularity in cortical connectivity. Brain Connectivity 3, 423–437 (2013).
+31. Lim, S. & Kaiser, M. Developmental time windows for axon growth influence neuronal network topology. Biological
+Cybernetics 109, 275–286 (2015).
+32. Kaiser, M. & Hilgetag, C. C. Modelling the development of cortical systems networks. Neurocomputing 58, 297–302
+(2004).
+33. Kaiser, M. & Hilgetag, C. C. Development of multi-cluster cortical networks by time windows for spatial growth.
+Neurocomputing 70, 1829–1832 (2007).
+34. Nicosia, V., Vértes, P. E., Schafer, W. R., Latora, V. & Bullmore, E. T. Phase transition in the economically modeled
+growth of a cellular nervous system. Proceedings of the National Academy of Sciences USA 110, 7880–7885 (2013).
+35. Ercsey-Ravasz, M. et al. A predictive network model of cerebral cortical connectivity based on a distance rule. Neuron 80,
+184–197 (2013).
+36. Song, H. F., Kennedy, H. & Wang, X.-J. Spatial embedding of structural similarity in the cerebral cortex. Proceedings of
+the National Academy of Sciences USA 111, 16580–16585 (2014).
+37. Mitchison, G. Neuronal branching patterns and the economy of cortical wiring. Proceedings of the Royal Society of
+London B: Biological Sciences 245, 151–158 (1991).
+38. Laughlin, S. B. & Sejnowski, T. J. Communication in neuronal networks. Science 301, 1870–1874 (2003).
+39. Cherniak, C., Mokhtarzada, Z., Rodriguez-Esteban, R. & Changizi, K. Global optimization of cerebral cortex layout.
+Proceedings of the National Academy of Sciences USA 101, 1081–1086 (2004).
+40. Samu, D., Seth, A. K. & Nowotny, T. Influence of wiring cost on the large-scale architecture of human cortical connectivity.
+PLoS Computational Biology 10, e1003557 (2014).
+41. Vértes, P. E. et al. Simple models of human brain functional networks. Proceedings of the National Academy of Sciences
+USA 109, 5868–5873 (2012).
+11/22
+
+42. Klimm, F., Bassett, D. S., Carlson, J. M. & Mucha, P. J. Resolving structural variability in network models and the brain.
+PLoS Computational Biology 10, e1003491 (2014).
+43. Bailey, A., Ventresca, M. & Ombuki-Berman, B. Automatic generation of graph models for complex networks by genetic
+programming. In Proceedings of the 14th Annual Conference on Genetic and Evolutionary Computation, 711–718 (ACM,
+2012).
+44. Menezes, T. & Roth, C. Symbolic regression of generative network models. Scientific Reports 4 (2014).
+45. Goñi, J. et al. Exploring the morphospace of communication efficiency in complex networks. PLoS ONE 8, e58070 (2013).
+46. Thomas, C. et al. Anatomical accuracy of brain connections derived from diffusion MRI tractography is inherently limited.
+Proceedings of the National Academy of Sciences USA 111, 16574–16579 (2014).
+47. Zalesky, A. et al. Whole-brain anatomical networks: does the choice of nodes matter? Neuroimage 50, 970–983 (2010).
+48. Cammoun, L. et al. Mapping the human connectome at multiple scales with diffusion spectrum MRI. Journal of
+neuroscience methods 203, 386–397 (2012).
+49. Avena-Koenigsberger, A. et al. Using Pareto optimality to explore the topology and dynamics of the human connectome.
+Philosophical Transactions of the Royal Society B: Biological Sciences 369, 20130530 (2014).
+50. Yeh, F.-C., Wedeen, V. J. & Tseng, W.-Y. I. Generalized-sampling imaging. Medical Imaging, IEEE Transactions on 29,
+1626–1635 (2010).
+51. de Reus, M. A. & van den Heuvel, M. P. Simulated rich club lesioning in brain networks: a scaffold for communication
+and integration? Frontiers in Human Neuroscience 8, 647 (2014).
+52. Cao, M. et al. Topological organization of the human brain functional connectome across the lifespan. Developmental
+cognitive neuroscience 7, 76–93 (2014).
+53. Yang, Z. et al. Connectivity trajectory across lifespan differentiates the precuneus from the default network. Neuroimage
+89, 45–56 (2014).
+54. Destrieux, C., Fischl, B., Dale, A. & Halgren, E. Automatic parcellation of human cortical gyri and sulci using standard
+anatomical nomenclature. Neuroimage 53, 1–15 (2010).
+55. Rubinov, M. & Sporns, O. Complex network measures of brain connectivity: uses and interpretations. Neuroimage 52,
+1059–1069 (2010).
+56. Newman, M. E. Assortative mixing in networks. Physical review letters 89, 208701 (2002).
+57. Newman, M. E. Communities, modules and large-scale structure in networks. Nature Physics 8, 25–31 (2012).
+58. Fortunato, S. Community detection in graphs. Physics Reports 486, 75–174 (2010).
+59. Sporns, O. & Betzel, R. F. Modular brain networks. Annual Review of Psychology 67 (2015).
+60. Newman, M. E. & Girvan, M. Finding and evaluating community structure in networks. Physical review E 69, 026113
+(2004).
+61. Blondel, V. D., Guillaume, J.-L., Lambiotte, R. & Lefebvre, E. Fast unfolding of communities in large networks. Journal
+of Statistical Mechanics: Theory and Experiment 2008, P10008 (2008).
+
+12/22
+
+Figure 1. Summary of the geometric model: (A) observed (black) and synthetic networks generated at different points in
+parameter space. (B) Energy landscape showing the behavior of KSe , KSc , and energy as a function of η. The dashed vertical
+lines indicate the parameter values at which the example synthetic networks were generated. (C) Distribution of η parameter of
+top 1% lowest-energy synthetic networks aggregated across all participants. (D) Cumulative distributions of degree (orange),
+clustering coefficient (green), betweenness centrality (yellow), and edge length (purple) for observed connectome (darker line)
+and best-fitting synthetic networks (lighter lines) for a representative participant.
+
+13/22
+
+Figure 2. Energy distributions across all models. Each box plot represents the top 1% lowest energy synthetic networks
+generated by each model and aggregated across all participants. The color of each plot indicates the general class of the model:
+Homophily is shown in blue, clustering in pink, degree in green, and geometric in purple. The specific wiring rule names are
+shown along the x-axis.
+
+14/22
+
+Figure 3. Matching Index Model: (A) observed (black) and synthetic networks generated at different points in parameter
+space. (B) Energy landscape showing the points at which the example synthetic networks were generated. (C) Distribution of η
+and γ parameters of best-fitting synthetic networks aggregated across all participants. (D) Tradeoff between η and γ. Each
+point represents the mean parameter values for an individual participant. Participants with larger values of η tend to have the
+smallest magnitude γ and vice versa. (E) KS statistic landscapes for degree (orange), clustering (green), betweenness (yellow),
+and edge length (purple) for observed connectome and best-fitting synthetic networks for a single participant. (F) Cumulative
+distributions of degree (orange), clustering (green), betweenness (yellow), and edge length (purple) for observed connectome
+(darker line) and best-fitting synthetic networks (lighter lines) for a representative participant.
+15/22
+
+Figure 4. Cross validation of the matching index model: (A) Comparison of matching index model and observed
+connectomes in terms of the graph-theoretic measures mean clustering, modularity, global efficiency, and characteristic path
+length. (B) Comparison of all models in terms of reproducing the distance-dependent degree assortativity (i.e. the propensity
+for high degree nodes to be linked by long-distance connections). (C) Discrepancies in degree and clustering coefficient
+sequences of synthetic networks generated by the matching index model and pure geometric model.
+
+Figure 5. Changes in model parameters and energy components across the lifespan: (A) The geometric parameter, η weakens
+with age. (B) The average energy of each participant’s best-fitting synthetic networks (z-scored against an ensemble of
+synthetic networks generated using a uniform wiring rule) also increases with age. (C, D) KSe and KSc increase with age, and
+these increases collectively drive the increase in energy.
+
+16/22
+
+Figure S1. Model energies for HCP dataset.
+
+Figure S2. Model energies for NKI dataset.
+
+17/22
+
+Figure S3. Model energies for CHUV dataset with ρ ≈ 5%.
+
+Figure S4. Model energies for CHUV dataset with ρ ≈ 15%.
+
+18/22
+
+Figure S5. Model energies for CHUV dataset with ρ ≈ 10% and edge presence/absence determined by fiber density weights
+rather than streamline/fiber tract counts.
+
+19/22
+
+Figure S6. Model energies for CHUV dataset with ρ ≈ 10% but for entire cerebral cortex.
+
+Figure S7. Model energies for CHUV composite connectivity matrix.
+
+20/22
+
+Figure S8. Model energies for HCP composite connectivity matrix.
+
+21/22
+
+Figure S9. Model energies for NKI composite connectivity matrix.
+
+22/22
+
+

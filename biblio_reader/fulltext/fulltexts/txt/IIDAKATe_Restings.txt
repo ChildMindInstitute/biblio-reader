@@ -1,0 +1,377 @@
+30th International Congress on Clinical Neurophysiology
+
+ICCN2014
+
+Berlin, Germany
+
+Resting state fMRI and connectivity analysis classified
+autism and control with high accuracy
+March 20, 2014
+
+P29
+
+Introduction
+
+Tetsuya IIDAKA, M.D., Ph.D.
+
+Results
+
+ Autism spectrum disorder (ASD) is
+characterized by impaired
+development of social interaction and
+communication skills and a restricted
+repertoire of activities and interests.
+Although the neural and genetic
+underpinnings of ASD have been
+extensively investigated, the etiology
+of the disorder has remained elusive,
+and clinical diagnosis continues to rely
+on symptom‐based criteria
+criteria.
+Functional magnetic resonance
+imaging (fMRI) of the brain is a
+powerful tool for exploring
+biomarkers of psychiatric and
+developmental disorders. In the
+present study, resting state (rs‐) fMRI
+and a neural network algorithm were
+used to classify a large sample of
+patients with ASD and control
+subjects
+
+Department of Psychiatry, Nagoya University, Graduate School of
+Medicine,
+Nagoya, Ai
+Aichi,
+M di i
+N
+hi JJapan
+
+ PNN algorithm classified a large
+sample
+data into
+ASD and
+l off rs‐fMRI
+fMRI d
+i
+d
+CTL with 90% accuracy. (Table 2)
+ Both increased and decreased
+connectivities between the regions
+contributed to high classification
+accuracy. (Fig. 3)
+ Several confounding factors (e.g.,
+site, sex, age, IQ, and medication) did
+not significantly affect the results. (Fig.
+4)
+ False negative (FN) group was
+characterized by higher IQ and equal
+level of autistic symptoms as
+compared with true positive (TP)
+group. (Fig. 5)
+
+Table 1: Demographic data of the subjects
+ASD
+
+CTL
+
+p‐value
+
+312
+
+328
+
+N.A.
+
+Sensitivity
+
+91.9%
+
+Mean age
+
+13.2 (3.1)
+
+12.9 (3.0)
+
+0.32
+
+Specificity
+
+86.9%
+
+Male (%)
+
+87.5
+
+81.4
+
+0.03
+
+Accuracy
+
+89.4%
+
+Rt handedness (%)
+
+84.3
+
+91.8
+
+0.003
+
+PPV
+
+86.9%
+
+Mean full scale IQ
+
+103 (17)
+
+110 (13)
+
+0 001
+0.001
+
+NPV
+
+91.9%
+
+Number of subjects
+
+Fig. 1: Workflow of resting state fMRI data analysis
+3T scanner
+
+(wiping cloth)
+(disaster defense)
+
+Methods
+ The subject's brain activity was
+measured during resting condition by
+using 3 Tesla MRI scanner for
+approximately six minutes. (Fig. 1)
+ Correlation matrices of 90 distinct
+regions computed from rs‐fMRI time‐
+series data were entered into a
+p
+(
+) for
+probabilistic neural network (PNN)
+classification. (Fig. 2)
+ A leave‐one‐out cross‐validation
+procedure was used to compute the
+sensitivity, specificity, and accuracy.
+ The effects of several confounding
+factors on accuracy data were
+investigated.
+ Finally, the participants with ASD
+who were classified as CTL were
+
+(composition)
+
+(art)
+
+• Linear detrend
+• Band‐pass filter
+(0.01‐0.08Hz)
+• Covariate 6 motion
+parameters, WM and
+CSF signals
+• No global signal
+covariate included
+
+SPM preprocessing
+Slice timing, Realignment,
+Normalisation (3x3x3mm),
+Smoothing (4x4x4mm)
+
+Resting state fMRI
+
+DPARSF software
+
+Automated Anatomical Labeling
+Tzourio‐Mazoyer, 2002
+8
+Region A
+
+Signal change
+
+6
+
+Materials
+
+Region B
+
+4
+2
+0
+‐2
+‐4
+
+Time course
+
+‐6
+
+e.g., A vs. B: r=0.68 → Fisher’s z transformation
+
+45 regions X 2 hemispheres = 90 regions
+
+Fig. 2: 90×90 correlation matrices
+n = 640
+
+mean matrix
+difference matrix
+of mean value
+
+・
+・
+・
+・
+
+red : ASD > CTL
+blue : CTL > ASD
+
+difference matrix
+in effect size
+(Cohen’s d )
+
+absolute value
+
+Fig. 3: Best prediction matrix |ES| > 0.16
+PNN
+
+3000
+
+Variables
+90
+80
+
+Accuracy
+R² = 0.88
+
+2500
+2000
+1500
+
+70
+1000
+
+60
+
+Number of variables
+
+100
+
+500
+
+50
+
+Limitations
+ Detailed characteristics of the
+subjects were not available in the
+d b
+database.
+ The same brain template was used
+to normalize the image for every
+subject, despite the wide range of
+subjects’ ages.
+ Confounding factors such as motion
+artifacts, the differences in imaging
+and experimental protocols could not
+be controlled in the analysis.
+ The classification results might be
+attributable to differences in subjects’
+head motion, attention, anxiety,
+thought content, or other
+physiological factors during scanning.
+
+Conclusions
+
+Effective number of cells
+90 * (90 ‐ 1) / 2 = 4005 cells
+
+Accuracy (%)
+
+ Rs‐fMRI data from subjects with
+ASD and typical development (CTL)
+was downloaded from the multi‐
+center research project database in
+U.S. (Autism Brain Image Data
+Exchange, ABIDE, http:// fcon_1000.
+projects nitrc org/indi/abide/index ht
+projects.nitrc.org/indi/abide/index.ht
+ml, Table 1)
+ ABIDE provides rs‐fMRI datasets of
+ASD and typical controls for the
+purpose of data sharing in the
+scientific community. In accordance
+with guidelines and protocols, all
+datasets are anonymous, with no
+protected health information
+included.
+ The data used in the present study
+were obtained from 12 institutes (see
+Notes).
+ The diagnosis of ASD was made by
+using ADI‐R and ADOS in all institutes
+except one.
+ In the present study, only subjects
+under 20 years of age were used as
+participants. (6‐19 years old)
+
+Table 2: Prediction accuracy
+
+0
+
+0 0.05 0.1 0.15 0.2 0.25 0.3 0.35
+
+|Effect size|
+
+Fig 4: Effects of confounding factors on accuracy
+Fig.
+
+ The present study suggests that an
+intrinsic connectivity matrix computed
+from rs‐fMRI data may yield a possible
+biomarker of ASD.
+ These results also support the view
+that altered network connectivity
+within the brain contributes to the
+neurobiological underpinnings of this
+disorder.
+ However, further investigation to
+remove several confounding factors is
+needed.
+
+References and Notes
+
+Fig. 5: Characteristics of the false‐negative group
+
+** p < 0.01, after
+multiple comparisons
+
+Contact: Tetsuya IIDAKA: iidaka@med.nagoya-u.ac.jp
+This study was funded by KAKENHI 21220005
+
+1) Di Martino, Mol Psychiatry, 1‐9, 2013
+2) Nielsen, Front Hum Neurosci, 7, 599, 2013
+3) Sherrod, DTREG manual, 2003
+4) Specht, IEEE Trans Neural Netw, 1, 111‐
+121, 1990
+5) Chao‐Gan, Front Syst Neurosci, 4, 13,
+2010
+The study was approved by the ethics
+committee of Nagoya University School of
+Medicine.
+Medicine
+The author thanks all researchers and funding
+agencies contributed to ABIDE database. (Kennedy
+Krieger Institute; University of Leuven; NYU
+Langone Medical Center; Oregon Health and
+Science University; Olin, Institute of Living at
+Hartford Hospital; University of Pittsburgh School
+of Medicine; San Diego State University; Stanford
+University; Trinity Centre for Health Sciences;
+University of California, Los Angeles; University of
+Utah School of Medicine; Yale Child Study Center)
+
+

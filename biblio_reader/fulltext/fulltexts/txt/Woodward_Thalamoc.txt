@@ -1,0 +1,829 @@
+Author’s Accepted Manuscript
+Thalamocortical Dysconnectivity in Autism
+Spectrum Disorder: An Analysis of the Autism
+Brain Imaging Data ExchangeThalamocortical
+dysconnectivity in ASD
+Neil D. Woodward, Monica Giraldo-Chica, Baxter
+Rogers, Carissa J. Cascio
+www.elsevier.com
+
+PII:
+DOI:
+Reference:
+
+S2451-9022(16)30110-0
+http://dx.doi.org/10.1016/j.bpsc.2016.09.002
+BPSC84
+
+To appear in: Biological
+Psychiatry:
+Neuroimaging
+
+Cognitive
+
+Neuroscience
+
+and
+
+Received date: 15 August 2016
+Revised date: 7 September 2016
+Accepted
+9 September 2016
+date:
+Cite this article as: Neil D. Woodward, Monica Giraldo-Chica, Baxter Rogers
+and Carissa J. Cascio, Thalamocortical Dysconnectivity in Autism Spectrum
+Disorder: An Analysis of the Autism Brain Imaging Data
+ExchangeThalamocortical dysconnectivity in ASD, Biological Psychiatry:
+Cognitive
+Neuroscience
+and
+Neuroimaging,
+http://dx.doi.org/10.1016/j.bpsc.2016.09.002
+This is a PDF file of an unedited manuscript that has been accepted for
+publication. As a service to our customers we are providing this early version of
+the manuscript. The manuscript will undergo copyediting, typesetting, and
+review of the resulting galley proof before it is published in its final citable form.
+Please note that during the production process errors may be discovered which
+could affect the content, and all legal disclaimers that apply to the journal pertain.
+
+Short title: Thalamocortical dysconnectivity in ASD
+
+Thalamocortical dysconnectivity in autism spectrum disorder: An analysis of the Autism Brain
+Imaging Data Exchange
+Neil D. Woodward1, Monica Giraldo-Chica1, Baxter Rogers2, Carissa J. Cascio1
+1
+
+Department of Psychiatry & Behavioral Sciences, Vanderbilt University School of Medicine,
+
+Nashville, TN
+2
+
+Vanderbilt University Institute of Imaging Science, Nashville, TN
+
+Corresponding Author:
+
+Carissa J. Cascio, Ph.D.
+Department of Psychiatry
+Vanderbilt Psychiatric Hospital
+Suite 3057, 1601 23rd Ave. S.
+Nashville, TN 37212
+Phone: 615.936.3598
+Fax: 615.936.3563
+
+Key
+
+words:
+
+autism,
+
+temporoparietal
+
+functional
+
+connectivity,
+
+resting
+
+state,
+
+thalamus,
+
+adolescents,
+
+Abstract
+
+Background: Individuals with autism spectrum disorder (ASD) exhibit differences in basic
+sensorimotor processing as well as general cortical excitability. These observations converge to
+implicate thalamocortical connectivity as a potential unifying neural mechanism. The goal of
+this study was to clarify mixed findings on thalamocortical functional connectivity in a large
+sample of individuals with ASD.
+Methods: Using the Autism Brain Imaging Data Exchange (ABIDE), we examined thalamocortical
+functional connectivity in 228 individuals with ASD and a matched comparison group of 228
+typically developing individuals.
+
+In order to fully characterize thalamocortical functional
+
+networks, we employed complementary seed-based approaches that examined connectivity of
+major cortical divisions (e.g. prefrontal cortex, temporal lobe) with the thalamus and wholebrain connectivity of specific thalamic sub-regions.
+Results: Prefrontal cortex, temporal lobe, and sensorimotor cortex exhibited hyper-connectivity
+with the thalamus in ASD. In the whole-brain analysis, hyper-connectivity of several thalamic
+seeds included multiple cortical areas, but tended to converge in temporal cortical areas,
+including the temporoparietal junction. Follow-up analyses of age effects revealed that the
+connectivity abnormalities in ASD were more pronounced in adolescents compared to children
+and adults.
+Conclusions: These results confirm previous findings of temporal and motor thalamocortical
+hyper-connectivity in ASD, and extend them to include somatosensory and prefrontal cortex.
+While not directly addressable with the data available in ABIDE, this widespread hyperconnectivity could theoretically account for sensorimotor symptoms and general cortical
+excitability in ASD. Future studies should target comprehensive clinical and behavioral
+characterization in combination with functional connectivity in order to explore this possibility.
+
+INTRODUCTION
+
+Autism spectrum disorder (ASD) is a pervasive developmental disorder defined by
+impairments in reciprocal social communication and patterns of rigid or repetitive behavior.
+However, a growing body of evidence suggests that ASD is also associated with more basic
+sensorimotor impairment (1-3), which is increasingly linked to core symptoms (4-6). The brain’s
+hierarchical organization suggests that these complex behavioral symptoms could be
+downstream of the more basic sensorimotor impairment, but this has yet to be empirically
+tested.
+Individuals with autism also often experience comorbid neurological symptoms that
+reflect problems with cortical excitability and arousal, including seizures and sleep disturbances
+(7). These clinical observations, along with experimental evidence from EEG (8) and genetic
+models (9) have contributed to the theory that a fundamental problem in ASD is a relative
+increase in excitatory and decrease in inhibitory functional activity in the brain (10).
+Both sensorimotor and cortical excitability differences in ASD implicate the thalamus.
+The thalamus is an important site for gating afferent sensory input to the cortex, modulating
+efferent motor signals, and regulating the overall level of cortical activity. Its functional
+organization comprises multiple parallel loops with dense reciprocal connections to nearly all
+regions of the cerebral cortex. These relays have been demonstrated to not only dynamically
+modulate subcortical-cortical communication, but also to play an important role in modulating
+cortico-cortical signaling (11). Thus, the connectivity between thalamus and cerebral cortex
+affects multiple critical processes that are relevant for the behavioral symptoms that define
+ASD, as well as for the current theory of excitatory/inhibitory imbalance in ASD.
+Recent studies have used resting-state fMRI to map functional connectivity between the
+cortex and thalamus, and examine thalamocortical connectivity in individuals with ASD. Resting
+state fMRI is particularly useful in clinical populations such as ASD because of its task-free
+nature (12). A study using large cortical seeds corresponding to the primary anatomical targets
+of the thalamus (13) reported over-connectivity between thalamus and temporal lobe (14),
+alongside under-connectivity between thalamus and other cortical regions. Nair et al further
+
+reported an association of thalamo-motor and thalamo-temporal connectivity with core ASD
+features. A follow-up study from the same group used a larger sample and a more fine-grained
+seed-based approach and reported a mixture of functional hyper- and hypo-connectivity with
+the thalamus, with hyper-connectivity in limbic and sensory regions and hypo-connectivity in
+frontal and parietal supramodal association cortical areas (15).
+While intriguing, the reliability of these findings is unclear as they are based on studies
+that used relatively small sample sizes. The recent emergence of data sharing initiatives for
+psychiatric neuroimaging can be leveraged to clarify discrepant or limited results in smaller
+samples. One such initiative for ASD is the Autism Brain Imaging Data Exchange (ABIDE), which
+contains imaging data on over 1100 individuals acquired from multiple international datasets
+(16). A recent study using an independent components analysis (ICA) approach applied to
+ABIDE data corroborated findings of hyper-connectivity between cortex and subcortical regions,
+including the thalamus, in ASD, but did not replicate findings of under-connectivity between
+cortical and subcortical regions (17). However, one limitation of the data driven approach in
+this case was that a single component encompassed both the thalamus and the basal ganglia,
+despite known anatomical and functional differences between these subcortical structures and
+their cortical connections, limiting the level of resolution of the findings and thus their
+interpretability. For this reason, a seed-based approach, rooted in established functional and
+structural anatomy of the thalamus, coupled with the statistical power of the ABIDE, is an ideal
+combination to provide a more definitive characterization of the functional connectivity of the
+thalamus in ASD. We made use of this combination in the current study.
+
+METHODS AND MATERIALS
+
+Study Participants and Resting-state fMRI Data Selection Procedures
+
+The data included in this investigation came from the ABIDE; an online, publically-available
+repository of neuroimaging data that includes resting-state fMRI data from 539 individuals with
+ASD and 573 age-matched typically developed individuals (16). The original studies included in
+ABIDE received approval from each site’s Institutional Review Board (IRB). With respect to
+diagnostic procedures, all sites used the Autism Diagnostic Observation Schedule (ADOS: 18);
+most also included the Autism Diagnostic Interview-Revised (19). In addition to diagnostic
+classification, each site provided basic phenotypic data on each subject, including age and sex.
+
+The following screening and selection procedures were employed to reduce heterogeneity
+between diagnostic groups and ensure that only good quality RS-fMRI data were included in the
+analyses. First, the ABIDE was screened to exclude individuals above 40 years of age. Second,
+RS-fMRI scans that did not have full-brain coverage (not including cerebellum) and failed spatial
+normalization to MNI space were excluded. Finally, each RS-fMRI scan underwent motion
+scrubbing as described below. RS-fMRI scans with more than 20% scrubbed volumes were
+excluded. Following screening, the case-control matching feature in the Statistical Package for
+the Social Sciences (SPSS: IBM SPSS for Windows v. 23. Armonk, NY: IBM Corp), which employs
+a probabilistic ‘fuzzy’ matching procedure, was used to match each individual with ASD to a
+typically developing individual on the basis of age (±5 years), sex, and percentage of scrubbed
+volumes (±5%).
+
+Importantly, case-control matching was done within each site to avoid
+
+diagnosis by site interactions. Sites with fewer than 5 case-control pairs (i.e. 10 subjects) were
+excluded. The final dataset included 456 subjects (228 ASD-TD pairs). The groups were almost
+perfectly matched with respect to eye status (open/closed: ASD=160/68; TD=157:71, χ2=0.09,
+p>.761), reflecting the strong dependence between eye status and site (χ2=373.68, p=1.39 x1072
+
+). Demographic and neuroimaging data quality metrics are presented in Table 1. Demographic
+
+data, broken down by site, are presented in Supplemental Table S2.
+
+Neuroimaging Preprocessing and Functional Connectivity Analysis
+
+Neuroimaging data preprocessing and statistical analysis were performed using SPM8
+(www.fil.ion.ucl.ac.uk/spm/software/spm8/).
+
+Preprocessing included correction for head
+
+motion and spatial normalization to Montreal Neurological Institute (MNI) space. Consistent
+with prior investigations of thalamocortical functional connectivity, no smoothing was applied
+to the functional data. RS-fMRI data underwent motion scrubbing (20). Volumes with framewise displacement greater than 0.5 mm and/or BOLD intensity changes between volumes
+greater than 5% were identified and excluded from the connectivity analysis, as was the
+preceding volume. In addition, the first four volumes were excluded from the connectivity
+analysis.
+
+Most investigations of thalamocortical functional connectivity have taken one of two
+approaches: 1) a cortical seed-based approach which examines connectivity of large cortical
+regions-of-interest (ROIs), such as the PFC, with the thalamus; or 2) a thalamus seed-based
+approach in which BOLD signal is extracted from the whole thalamus and correlated with the
+rest of the brain. The first approach is ideal for investigating cortical connectivity at the voxelwise level within the thalamus, but, because it uses large cortical ROIs, has limited resolution at
+the level of the cortex. The second approach can be used to examine thalamic connectivity at
+the voxel-wise level in the cortex, but, by treating the thalamus as a homogeneous structure,
+can not be used to examine specific thalamocortical networks. As such, to fully characterize
+thalamocortical functional networks at the level of both the thalamus and cortex, we used both
+approaches as described fully in a prior investigation by our group (see 21). Briefly, the cortex
+was divided into 6 ROIs spanning most of the cortical mantle (see Supplemental Material for a
+complete description of the cortical ROIs). The 6 cortical ROIs corresponded to the prefrontal
+cortex, motor cortex/supplementary motor area (SMA), somatosensory cortex, posterior
+parietal cortex, temporal cortex, and occipital cortex (see Supplemental Figure S1). Each
+
+cortical ROI was used as a seed to create seed-based functional connectivity maps, restricted to
+the Harvard-Oxford probabilistic atlas of the thalamus, thresholded at 10% to remove voxels
+with
+
+low
+
+probability
+
+of
+
+being
+
+(http://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases).
+
+in
+
+the
+
+thalamic
+
+anatomical
+
+atlas
+
+The functional connectivity maps were then
+
+entered into within and between group random effects analyses to identify functional
+connectivity of each cortical seed with the thalamus and compare connectivity between ASD
+and TD. The between group contrast was thresholded at the cluster-level Family-wise error
+(FWE) corrected p(FWE)=.05 for voxel-wise p(uncorrected)=.001. For each cortical seed, the between
+group contrast was masked to include voxels that demonstrated positive connectivity with their
+respective cortical seed at voxel-wise p(FWE)=.05 in the combined ASD-TD sample.
+
+The cortical seed-based analysis described above was followed-up with a thalamic seed-based
+analysis previously used by our group to examine whole-brain connectivity of functionally
+defined thalamic sub-regions (21). Using the entire sample of 458 subjects, the thalamus was
+segmented for functional connectivity based on functional connectivity at the voxel-wise level
+using the ‘winner take all’ approach in which each voxel within the Harvard-Oxford thalamus
+probabilistic atlas (thresholded at 10%) was assigned to the cortical seed it was most strongly
+connected to. Prior work has shown that functionally defined thalamic sub-regions correspond
+closely to thalamus segmentations based on structural connectivity (21,22). Each functionally
+defined thalamic sub-division was then used as a seed in a seed-based functional connectivity
+analysis to identify whole-brain connectivity of specific thalamic sub-regions. The resultant
+connectivity maps were smoothed 6 mm and entered into within and between group random
+effects analyses to identify functional connectivity of each thalamic seed separately in ASD and
+TD, and compare connectivity between ASD and TD. The between group contrasts were
+thresholded
+
+at
+
+whole-brain
+
+cluster-level
+
+FWE
+
+corrected
+
+p(FWE)=.05
+
+for
+
+voxel-wise
+
+p(uncorrected)=.001. For each thalamic seed, the between group contrast was restricted to only
+the voxels that demonstrated positive connectivity with their respective thalamic seed at voxelwise p(FWE)=.001 in the combined ASD-TD sample.
+
+All seed-based functional connectivity maps were created using the Conn toolbox version 14.n
+(23). Briefly, the BOLD time series was extracted from the seed and entered as a predictor in a
+multiple regression general linear model. The six motion correction parameters and their first
+temporal derivatives, motion scrubbed volumes, white matter, and CSF were included as
+additional regressors in the GLM to remove variance related to head motion, residual effects of
+head motion after motion correction, white matter, and CSF respectively. White matter and
+CSF nuisance regressors were derived using the anatomical component-based noise reduction
+method, as implemented in the Conn-fMRI toolbox (24). In brief, 5 principal components were
+extracted from each of the white matter and CSF. White matter and CSF masks were created
+from the a-priori white matter and CSF segmentations included in SPM8 (thresholded at 80%
+and 50% percent, respectively). The anatomical component-based noise reduction method is
+more effective than mean tissue signal approaches to removing unwanted signal related to
+white matter and CSF, and is effective at mitigating the effects of head motion on functional
+connectivity estimates (25). Following removal of nuisance regressors, the data were bandpass filtered (.01-.10 Hz).
+
+Age Effects Analysis
+
+Given evidence that thalamocortical functional connectivity networks undergo developmental
+changes and speculation that brain abnormalities in ASD are related to atypical developmental
+trajectories, we performed a secondary analysis examining group differences as a function of
+age. Most datasets in the ABIDE included either children/adolescents or adults, rarely both.
+The presence of site by age interaction prevented us from examining age and group effects
+within a single statistical model. As such, we used a similar approach as in our prior study of
+brain structure in ASD which also used ABIDE data (Riddle et al., 2016). Specifically, the 228
+case-controls pairs were divided into three age bands (i.e. tertiles), each containing 76 casecontrol pairs, and the between group analyses described above were repeated in each age
+
+band. The three age bands were denoted ‘children/young adolescents’ (age 6-13.27 years),
+‘adolescents’ (age 13.28-18.00 years), and ‘adults’ (age 18.01+).
+RESULTS
+
+Cortical Seed-based Connectivity of the Thalamus
+
+Consistent with prior studies, each cortical seed was functionally connected to distinct, largely
+non-overlapping regions of the thalamus in both ASD and TD groups (see Figure 1B and 1C).
+Importantly, the patterns of cortical functional connectivity within the thalamus corresponded
+very closely to the known structural connections and anatomical sub-divisions of the thalamus
+(22).
+
+Between group analysis revealed significant differences in cortical-thalamic connectivity
+between ASD and TD for several cortical ROIs (see Figure 1D and Supplemental Table S1). The
+PFC, motor, somatosensory, and temporal cortical ROIs exhibited significantly greater
+connectivity with the thalamus in ASD compared to TD. For the PFC and temporal cortical
+seeds, a single cluster within the medial region of the pulvinar exhibited increased connectivity
+in ASD. Motor and somatosensory cortex hyper-connectivity with the thalamus was more
+widespread and consisted of several clusters located in areas of the thalamus consistent with
+locations of the ventral anterior, ventral lateral, and ventral posterior lateral nuclei.
+
+Thalamic Seed-Based Whole Brain Connectivity
+
+Results of the functional parcellation of the thalamus in the entire cohort of 456 individuals
+along with the whole-brain functional connectivity of each thalamic sub-region in TD and ASD
+are presented in Figure 2 (results are also depicted on axial slices in Supplemental Figures S2S7). Whole-brain connectivity varied markedly across thalamic sub-region seeds. As shown in
+Figure 2D and detailed in Supplemental Table S2, functional connectivity of the thalamic PFC,
+
+motor, temporal lobe, and posterior parietal thalamus seeds differed between ASD and TD. For
+the thalamus PFC seed, functional connectivity was increased in ASD in several clusters in the
+right and left temporal lobe encompassing primarily Brodmann areas (BA) 22, 38, 41, and 42
+within the superior and middle temporal gyri. Thalamic motor seed functional connectivity was
+elevated in the lateral temporal cortex, primarily middle and superior temporal gyrus;
+precentral and postcentral gyrus; inferior frontal gyrus; cingulate gyrus; and precuneus. Lateral
+temporal cortex, including superior and middle temporal gyrus, also exhibited elevated
+connectivity with the temporal thalamic and posterior parietal cortex seeds in ASD. While most
+of the differences were in the direction of greater connectivity in ASD, two clusters within the
+thalamus demonstrated greater connectivity with the motor and posterior parietal cortex
+thalamic seeds in TD (see Supplemental Figures S3 and S6).
+
+Age Effects
+
+Hyper-connectivity of the cortical motor and temporal lobe seeds was most pronounced in the
+older adolescents age band relative to the children/young adolescents and adult age bands (see
+Figure 3). A similar pattern of results was observed for whole brain connectivity of functionally
+defined thalamic seeds. Hyper-connectivity of the motor and temporal thalamic seeds was
+more widespread in older adolescents compared to children/young adolescents and adults (see
+Figure 4). As discussed earlier, the age by site interaction in the ABIDE prevented a formal
+analysis of age effects. However, consistent with a prior study (26), there were significant
+qualitative differences in thalamocortical connectivity across age bands.
+
+For instance,
+
+connectivity of some thalamocortical networks, prefrontal-thalamic network in particular,
+appeared to increase with age, whereas others, such as occipital-thalamic connectivity, seemed
+relatively stable across age bands (complete results of the age effects analysis are presented in
+Supplemental Figures S8-S13).
+
+Associations Between Thalamocortical Connectivity Abnormalities and ASD Symptoms
+
+The association between clinical symptoms and abnormal functional connectivity was examined
+in the full sample of ASD individuals (i.e. 228 subjects) with available clinical data. Functional
+connectivity was extracted from each of the clusters identified in the between group
+comparisons for the cortex and thalamus seed-based analyses and entered into correlation
+analyses that included the following clinical variables: ADOS Social (n=160), Communication
+(n=160), and Stereotypical Behaviors scores (n=149), Social Responsiveness Scale (SRS) score
+(n=128); and intellectual functioning (Full Scale IQ: n=224). Given the number of clusters
+identified (n=8 cortex-based; 15 thalamus seed=23) and clinical variables (n=5), the significance
+for the correlation analysis was Bonferroni corrected (i.e. p=.05/(23*5)=.0004).
+
+For the cortex seed-based analysis: none of the correlations with clinical variables reached
+significance (all r’s <|.14|, p>.110). While not significant at the corrected p-value, a significant
+inverse correlation between motor cortex connectivity with the thalamus cluster located at
+MNI -14 -6 10 and full scale IQ was observed (r=-.16, p=.018) indicating that greater motorthalamic over-connectivity was associated with lower IQ in ASD. Closer examination revealed
+that this correlation was significant for both verbal IQ (r=-.18, p=.013) and performance IQ (r=.19, p=.007).
+
+For the thalamus seed-based analysis: none of the correlations reached the corrected
+significance level; although the correlation between thalamus motor seed connectivity with the
+cluster located at MNI 48 -32 8 correlated with SRS score at the un-corrected p=.05 (r=.18,
+p=.038).
+
+In addition, the cluster located at MNI -8 -14 4 which demonstrated reduced
+
+connectivity with the thalamus parietal seed in ASD was inversely correlated with full scale IQ
+(r=-.15, p=.026). All remaining correlations r<|.16|, p>.060.
+
+DISCUSSION
+
+We examined both cortical connectivity between thalamus and pre-defined cortical regions of
+interest, as well as whole-brain connectivity of specific thalamic sub-regions in a large sample of
+individuals with ASD and a carefully matched comparison sample included in the ABIDE. Our
+results reflect widespread hyper-connectivity between the thalamus and cerebral cortex; we
+found limited evidence for hypo-connectivity. These results parallel recent reports of hyperconnected striatal networks in ASD (17,27) and global hyper-connectivity associated with
+autism symptoms (28). Our findings are generally inconsistent with the prevalent notion of
+global “long-range hypo-connectivity” in ASD (29-31); however, many of these studies
+addressed cortico-cortical long range connections, which were not the focus of the current
+study.
+With regard to thalamic connectivity to cortical regions, we replicated previous findings of
+thalamic hyper-connectivity with temporal (14) and motor cortex (15). Further, we also noted
+hyper-connectivity to somatosensory and prefrontal regions. For the prefrontal and temporal
+cortices, this hyper-connectivity was tightly spatially localized to the pulvinar region of the
+thalamus, in contrast to the sensorimotor cortex, for which hyper-connectivity was widely
+distributed throughout the ventral thalamic nuclei. Because the ABIDE lacks comprehensive
+clinical and behavioral data, these findings cannot be directly linked to functional differences.
+However, we will explore possible associations that should be tested in future studies. The
+pulvinar’s connections with prefrontal and ventral/medial temporal regions has been
+implicated in social cognitive tasks such as face-name associations (32) that are impaired in
+individuals with ASD. fMRI studies of face professing in ASD implicate the pulvinar as part of a
+subcortical network that shows aberrant response to faces in ASD (33). Further, the pulvinar is
+thought to coordinate synchronous oscillations in the alpha band (34). Individuals with ASD
+show abnormalities in alpha oscillations that are attributed to thalamic dysfunction and related
+to social deficits (35). This may reflect inefficient thalamocortical communication related to
+cortical hyper-connectivity with the pulvinar nucleus. While the BOLD signal does not have the
+
+temporal resolution to capture oscillatory activity, future studies that include both fMRI and
+EEG resting state data may help to clarify how these phenomena relate to each other.
+The more diffuse hyper-connectivity of sensorimotor cortex with ventral thalamic nuclei is
+consistent with the functional roles and connections of these nuclei, which coordinate signals
+between the basal ganglia and sensorimotor cortex for initiation and coordination of
+movement. Sensorimotor deficits in ASD are becoming increasingly well-characterized, and
+include deficits in praxis (36) and modulation of grip force (3,37). In addition to motor
+coordination deficits, aberrant behavioral response to somatosensory input (e.g., tactile
+defensiveness) is also commonly reported in individuals with ASD (38,39). Thalamocortical
+hyper-connectivity as a putative mechanism for this hyper-responsiveness to touch is
+supported by the association of tactile defensiveness with enhanced global field power in
+response to touch in ASD (6), and with high levels of serotonin transporter expression (40). The
+serotonin transporter is heavily implicated in ASD (40-42) and the serotonergic system is also
+broadly implicated in hyper-excitability of sensory thalamocortical circuits (43).
+
+The
+
+serotonergic system likely has multiple functional influences on the development and
+expression of sensory and other behavioral features of ASD, including the influence of transient
+perinatal expression of serotonin transporter on the organization of thalamocortical
+somatotopic projections to primary somatosensory cortex (44,45). While tactile defensiveness
+in ASD has also been associated with structural connectivity differences in intracortical
+association fibers (46), a model of cascading effects downstream from aberrantly enhanced
+thalamocortical signals to somatosensory cortex is very plausible. Such a model could, if
+supported by future studies designed to test it explicitly, unify behavioral measures as well as
+brain structural and functional correlates of aberrant somatosensory perception in ASD.
+With regard to whole-brain connectivity of functionally-defined thalamic seeds, we noted
+hyper-connectivity of the thalamus (prefrontal, motor, temporal, posterior parietal thalamic
+seeds) with the superior and middle temporal gyri. This finding also converges with Nair et al.
+(14) and supports a well-established body of research that implicates these regions in the core
+deficits in autism (47). An area in the superior temporal gyrus/sulcus, particularly on the left
+
+side of the brain, consistently exhibited increased connectivity across several thalamic seeds.
+The TPJ has a known role in social cognition and has been reported to be under-responsive in
+ASD during social judgment tasks (48,49). Enhanced thalamocortical input to the TPJ in ASD
+may reflect increased stress during social cognitive tasks (50), which could take up bandwidth
+typically used for higher order processing in social cognition. In addition, we noted that
+prefrontal and motor thalamic seeds were also hyperconnected to other regions of lateral
+temporal cortex, such as the superior temporal and middle temporal gyri. This could reflect
+developmental persistence of thalamic connections with sensorimotor (e.g., auditory) cortex
+that, in typical development, is more completely replaced by prefrontal connectivity (15).
+
+Our exploratory analysis of age effects revealed a consistent trend for maturation of higherlevel thalamocortical networks (e.g. prefrontal) with age, but no apparent age effects for lower
+level sensorimotor networks. While site by age confounds limited our ability to examine age
+effects and interactions between age and group directly, we noted that the widespread overconnectivity of thalamocortical networks was particularly strong in the older adolescent age
+band, especially for motor and temporal cortical ROIs. This is in contrast to much more limited
+and circumscribed group differences in the children/young adolescent and adult age bands.
+This change in trajectory during adolescence is broadly consistent with structural neuroimaging
+findings of early overgrowth phase followed by later volumetric decline (42-43), and may reflect
+the compound effects of pubertal reorganization in an already developmentally compromised
+brain as described by Picci and Scherf in their “two-hit” model of autism (51).
+
+The clinical relevance of the current findings, however, remains inconclusive as none of the
+small number of associations we found between connectivity disturbances and clinical
+symptoms/IQ remained significant after statistical correction. The clinical assessment data in
+the ABIDE varies considerably by site, and does not include item-level data for the ADOS, which
+would allow calculation of calibrated severity scores (52) and thus direct comparison across
+modules. Additionally, future studies would benefit from inclusion of finer-grained behavioral
+measures designed to quantify social, sensory, motor, and cognitive features that are not well-
+
+captured by standard diagnostic rating scales, such as fine motor coordination, tactile hypersensitivity, or executive function. The ABIDE does provide consistent cognitive data, which
+illustrates that this sample represents a restricted range of the autism spectrum limited to
+relatively high functioning individuals who are capable of completing an fMRI protocol without
+sedation.
+Finally, the use of large cortical ROIs is another limitation, given Nair et al.’s (15) finding that
+these lobar ROIs may obscure competing effects from smaller sub-regions within them that
+may shed light on the functional specificity of the findings. However, the use of these large ROIs
+enabled us to directly investigate the replicability of previous findings, which is an important
+advantage of using the ABIDE, particularly in light of low replication rates of imaging studies in
+ASD. We dealt with this limitation by also including a whole-brain analysis with functionally
+defined thalamic seeds that allowed us to interrogate the entire cortex in a more fine-grained
+manner. However, the thalamic seed-based analysis may be vulnerable to partial volume
+effects given the small size of some thalamic nuclei relative to the standard resolution of fMRI
+data in the ABIDE (e.g. approximately 3x3 mm in-plane resolution).
+In conclusion, using the considerable resources of the ABIDE, we found that thalamocortical
+networks are abnormal in ASD. The abnormalities are characterized by marked prefrontal,
+sensorimotor, and temporal hyper-connectivity with the thalamus. More research is needed to
+determine the functional consequences of thalamic dysconnectivity and to understand the
+trajectory of the changes in ASD.
+
+Financial Disclosures: All authors report no biomedical financial interests or potential conflicts
+of interest.
+
+Acknowledgments: This research was supported by funding from the NIMH (R21-MH101321
+awarded to CJC and NDW) and the Jack Martin Professorship in Psychopharmacology (held by
+NDW).
+
+References
+
+1. Perry W, Minassian A, Lopez B, Maron L, Lincoln A (2007): Sensorimotor gating deficits
+in adults with autism. Biol Psychiatry 61:482-486.
+2. Takarae Y, Minshew NJ, Luna B, Sweeney JA (2007): Atypical involvement of
+frontostriatal systems during sensorimotor control in autism. Psychiatry Res 156:117127.
+3. Travers BG, Bigler ED, Tromp do PM, Adluru N, Destiche D, Samsin D, et al. (2015):
+Brainstem White Matter Predicts Individual Differences in Manual Motor Difficulties and
+Symptom Severity in Autism. J Autism Dev Disord 45:3030-3040.
+4. Boyd BA, Baranek GT, Sideris J, Poe MD, Watson LR, Patten E, et al. (2010): Sensory
+features and repetitive behaviors in children with autism and developmental delays.
+Autism Res 3:78-87.
+5. Foss-Feig JH, Heacock JL, Cascio CJ (2012): Tactile responsiveness patterns and their
+association with core features in autism spectrum disorders. Res Autism Spectr Disord
+6:337-344.
+6. Cascio CJ, Gu C, Schauder KB, Key AP, Yoder P (2015): Somatosensory Event-Related
+Potentials and Association with Tactile Behavioral Responsiveness Patterns in Children
+with ASD. Brain Topogr 28:895-903.
+7. Accardo JA, Malow BA (2015): Sleep, epilepsy, and autism. Epilepsy Behav 47:202-206.
+8. Thatcher RW, North DM, Neubrander J, Biver CJ, Cutler S, Defina P (2009): Autism and
+EEG phase reset: deficient GABA mediated inhibition in thalamo-cortical circuits. Dev
+Neuropsychol 34:780-800.
+9. Nelson SB, Valakh V (2015): Excitatory/Inhibitory Balance and Circuit Homeostasis in
+Autism Spectrum Disorders. Neuron 87:684-698.
+10. Rubenstein JL, Merzenich MM (2003): Model of autism: increased ratio of
+excitation/inhibition in key neural systems. Genes Brain Behav 2:255-267.
+11. Sherman SM (2005): Thalamic relays and cortical functioning. Prog Brain Res 149:107126.
+12. Woodward ND, Cascio CJ (2015): Resting-State Functional Connectivity in Psychiatric
+Disorders. JAMA Psychiatry 72:743-744.
+
+13. Zhang D, Snyder AZ, Fox MD, Sansbury MW, Shimony JS, Raichle ME (2008): Intrinsic
+functional relations between human cerebral cortex and thalamus. J Neurophysiol
+100:1740-1748.
+14. Nair A, Treiber JM, Shukla DK, Shih P, Muller RA (2013): Impaired thalamocortical
+connectivity in autism spectrum disorder: a study of functional and anatomical
+connectivity. Brain 136:1942-1955.
+15. Nair A, Carper RA, Abbott AE, Chen CP, Solders S, Nakutin S, et al. (2015): Regional
+specificity of aberrant thalamocortical connectivity in autism. Hum Brain Mapp 36:44974511.
+16. Di Martino A, Yan CG, Li Q, Denio E, Castellanos FX, Alaerts K, et al. (2014): The autism
+brain imaging data exchange: towards a large-scale evaluation of the intrinsic brain
+architecture in autism. Mol Psychiatry 19:659-667.
+17. Cerliani L, Mennes M, Thomas RM, Di MA, Thioux M, Keysers C (2015): Increased
+Functional Connectivity Between Subcortical and Cortical Resting-State Networks in
+Autism Spectrum Disorder. JAMA Psychiatry 72:767-777.
+18. Lord C, Risi S, Lambrecht L, Cook EH, Jr., Leventhal BL, DiLavore PC, et al. (2000): The
+autism diagnostic observation schedule-generic: a standard measure of social and
+communication deficits associated with the spectrum of autism. J Autism Dev Disord
+30:205-223.
+19. Lord C, Rutter M, Le CA (1994): Autism Diagnostic Interview-Revised: a revised version
+of a diagnostic interview for caregivers of individuals with possible pervasive
+developmental disorders. J Autism Dev Disord 24:659-685.
+20. Power JD, Barnes KA, Snyder AZ, Schlaggar BL, Petersen SE (2012): Spurious but
+systematic correlations in functional connectivity MRI networks arise from subject
+motion. Neuroimage 59:2142-2154.
+21. Woodward ND, Heckers S (2015): Mapping Thalamocortical Functional Connectivity in
+Chronic and Early Stages of Psychotic Disorders. Biol Psychiatry .
+22. Zhang D, Snyder AZ, Shimony JS, Fox MD, Raichle ME (2010): Noninvasive functional and
+structural connectivity mapping of the human thalamocortical system. Cereb Cortex
+20:1187-1194.
+23. Whitfield-Gabrieli S, Nieto-Castanon A (2012): Conn: a functional connectivity toolbox
+for correlated and anticorrelated brain networks. Brain Connect 2:125-141.
+24. Behzadi Y, Restom K, Liau J, Liu TT (2007): A component based noise correction method
+(CompCor) for BOLD and perfusion based fMRI. Neuroimage 37:90-101.
+
+25. Muschelli J, Nebel MB, Caffo BS, Barber AD, Pekar JJ, Mostofsky SH (2014): Reduction of
+motion-related artifacts in resting state fMRI using aCompCor. Neuroimage 96:22-35.
+26. Fair DA, Bathula D, Mills KL, Dias TG, Blythe MS, Zhang D, et al. (2010): Maturing
+thalamocortical functional connectivity across development. Front Syst Neurosci 4:10.
+27. Di Martino A, Kelly C, Grzadzinski R, Zuo XN, Mennes M, Mairena MA, et al. (2011):
+Aberrant striatal functional connectivity in children with autism. Biol Psychiatry 69:847856.
+28. Supekar K, Uddin LQ, Khouzam A, Phillips J, Gaillard WD, Kenworthy LE, et al. (2013):
+Brain hyperconnectivity in children with autism and its links to social deficits. Cell Rep
+5:738-747.
+29. Cherkassky VL, Kana RK, Keller TA, Just MA (2006). Functional connectivity in a baseline
+resting-state network in autism. Neuroreport 17(16):1687-90.
+30. Rudie JD, Brown JA, Beck-Pancer D, Hernandex LM, Dennis EL, Thompson PM,
+Bookheimer SY, Dapretto M (2012). Altered functional and structural brain network
+organization in autism. Neuroimage Clin 2:79-94.
+31. Khan S, Gramfort A, Shetty NR, Kitzbichler MG, Ganesan S, Moran JM, et al. (2013): Local
+and long-range functional connectivity is reduced in concert in autism spectrum
+disorders. Proc Natl Acad Sci U S A 110:3107-3112.
+32. Sperling RA, Bates JF, Cocchiarella AJ, Schacter DL, Rosen BR, Albert MS (2001): Encoding
+novel face-name associations: a functional MRI study. Hum Brain Mapp 14:129-139.
+33. Kleinhans NM, Richards T, Johnson LC, Weaver KE, Greenson J, Dawson G, et al. (2011):
+fMRI evidence of neural abnormalities in the subcortical face processing system in ASD.
+Neuroimage 54:697-704.
+34. Ketz NA, Jensen O, O'Reilly RC (2015): Thalamic pathways underlying prefrontal cortexmedial temporal lobe oscillatory interactions. Trends Neurosci 38:3-12.
+35. Edgar JC, Heiken K, Chen YH, Herrington JD, Chow V, Liu S, et al. (2015): Resting-state
+alpha in autism spectrum disorder and alpha associations with thalamic volume. J
+Autism Dev Disord 45:795-804.
+36. MacNeil LK, Mostofsky SH (2012): Specificity of dyspraxia in children with autism.
+Neuropsychology 26:165-171.
+37. Wang Z, Magnon GC, White SP, Greene RK, Vaillancourt DE, Mosconi MW (2015):
+Individuals with autism spectrum disorder show abnormalities during initial and
+subsequent phases of precision gripping. J Neurophysiol 113:1989-2001.
+
+38. Wiggins LD, Robins DL, Bakeman R, Adamson LB (2009): Brief report: sensory
+abnormalities as distinguishing symptoms of autism spectrum disorders in young
+children. J Autism Dev Disord 39:1087-1091.
+39. Cascio CJ, Lorenzi J, Baranek GT (2016): Self-reported Pleasantness Ratings and
+Examiner-Coded Defensiveness in Response to Touch in Children with ASD: Effects of
+Stimulus Material and Bodily Location. J Autism Dev Disord 46:1528-1537.
+40. Cook EH, Jr., Courchesne R, Lord C, Cox NJ, Yan S, Lincoln A, et al. (1997): Evidence of
+linkage between the serotonin transporter and autistic disorder. Mol Psychiatry 2:247250.
+41. Veenstra-Vanderweele J, Muller CL, Iwamoto H, Sauer JE, Owens WA, Shah CR, et al.
+(2012): Autism gene variant causes hyperserotonemia, serotonin receptor
+hypersensitivity, social impairment and repetitive behavior. Proc Natl Acad Sci U S A
+109:5469-5474.
+42. Muller CL, Anacker AM, Veenstra-Vanderweele J (2016): The serotonin system in autism
+spectrum disorder: From biomarker to animal models. Neuroscience 321:24-41.
+43. Bauernfeind AL, Dietrich MS, Blackford JU, Charboneau EJ, Lillevig JG, Cannistraci CJ, et
+al. (2011): Human Ecstasy use is associated with increased cortical excitability: an fMRI
+study. Neuropsychopharmacology 36:1127-1141.
+44. Lebrand C, Cases O, Adelbrecht C, Doye A, Alvarez C, El MS, et al. (1996): Transient
+uptake and storage of serotonin in developing thalamic neurons. Neuron 17:823-835.
+45. Salichon N, Gaspar P, Upton AL, Picaud S, Hanoun N, Hamon M, et al. (2001): Excessive
+activation of serotonin (5-HT) 1B receptors disrupts the formation of sensory maps in
+monoamine oxidase a and 5-ht transporter knock-out mice. J Neurosci 21:884-896.
+46. Pryweller JR, Schauder KB, Anderson AW, Heacock JL, Foss-Feig JH, Newsom CR, et al.
+(2014): White matter correlates of sensory processing in autism spectrum disorders.
+Neuroimage Clin 6:379-387.
+47. Yang DY, Rosenblau G, Keifer C, Pelphrey KA (2015): An integrative neural model of
+social perception, action observation, and theory of mind. Neurosci Biobehav Rev
+51:263-275.
+48. Murdaugh DL, Nadendla KD, Kana RK (2014): Differential role of temporoparietal
+junction and medial prefrontal cortex in causal inference in autism: an independent
+component analysis. Neurosci Lett 568:50-55.
+49. Kana RK, Libero LE, Hu CP, Deshpande HD, Colburn JS (2014): Functional brain networks
+and white matter underlying theory-of-mind in autism. Soc Cogn Affect Neurosci 9:98105.
+
+50. Edmiston EK, Merkle K, Corbett BA (2015): Neural and cortisol responses during play
+with human and computer partners in children with autism. Soc Cogn Affect Neurosci
+10:1074-1083.
+51. Picci G, Scherf KS (2015): A Two-Hit Model of Autism: Adolescence as the Second Hit.
+Clin Psychol Sci 3:349-371.
+52. Gotham K, Pickles A, Lord C (2009): Standardizing ADOS scores for a measure of severity
+in autism spectrum disorders. J Autism Dev Disord 39:693-705.
+
+Figure Captions
+
+Figure 1.
+
+Thalamocortical resting-state functional connectivity in typically developing
+
+individuals and autism spectrum disorder: cortical seed-based analysis of thalamocortical
+functional connectivity. Panel A: The cortex was partitioned into 6 non-overlapping regions-ofinterest (ROIs) that were used as seeds in a seed-based functional connectivity analysis. Panel
+B and C: Each cortical ROI exhibited a distinct pattern of functional connectivity within the
+thalamus in typically developing individuals and autism spectrum disorder. Panel D: Direct
+comparison between groups revealed increased prefrontal, motor, somatosensory, and
+temporal cortex connectivity with the thalamus in autism spectrum disorder. Panels B-D
+thresholded
+
+at
+
+cluster-level
+
+Family-wise
+
+error
+
+corrected
+
+p(FWE)=.05
+
+for
+
+voxel-wise
+
+p(uncorrected)=.001.
+
+Figure 2.
+
+Thalamocortical resting-state functional connectivity in typically developing
+
+individuals and autism spectrum disorder: whole brain analysis of functionally defined thalamic
+seeds. Panel A: Using the entire dataset of 456 subjects, the thalamus was segmented for
+functional connectivity into functionally defined sub-regions using the ‘winner take all’
+approach in which each voxel in the thalamus is color-coded based on which cortical region of
+interest (ROIs) it was most strongly connected to. These functionally-defined thalamic subregions where then used as a seeds in a whole-brain functional connectivity analysis. Panels B
+and C: Functional connectivity of each thalamic sub-region seed in typically developing
+individuals and ASD. Panel D: Functional connectivity with the prefrontal, motor, temporal, and
+parietal cortex thalamus seeds was increased in ASD. Panels B and C thresholded at wholebrain voxel-level Family-wise error corrected p(FWE)=.001. Panel D thresholded at whole-brain
+cluster-level Family-wise error corrected p(FWE)=.05 for voxel-wise p(uncorrected)=.001.
+
+Figure 3. Resting-state functional connectivity of motor and temporal cortex seeds with the
+thalamus in typically developing individuals and autism spectrum disorder: age effects analysis.
+Panel A: Cortex regions-of-interest (ROIs) that were used as seeds in a seed-based functional
+
+connectivity analysis. Motor and temporal seeds are shown in red and green, respectively.
+Panel B and C: Functional connectivity of motor and temporal cortex seeds with the thalamus in
+three different age bands: children/young adolescents (age 6-13.27 years), older adolescents
+(age 13.28-18.00 years), and adults (age 18.01+ years). Panel D: Within the older adolescent
+age band, thalamic connectivity with motor and temporal seeds was increased in ASD. Panels
+B-D thresholded at cluster-level Family-wise error corrected p(FWE)=.05 for voxel-wise
+p(uncorrected)=.001. Results for all cortical seeds are presented in the Supplemental Material.
+
+Figure 4. Whole-brain resting-state functional connectivity of motor and temporal thalamic
+seeds in typically developing individuals and autism spectrum disorder: age effects analysis.
+Thalamocortical resting-state functional connectivity in typically developing individuals and
+autism spectrum disorder: whole brain analysis of functionally defined thalamic seeds. Panel A:
+Thalamic functionally-defined seeds that were used in a seed-based functional connectivity
+analysis of whole-brain connectivity of thalamic sub-regions. Motor and temporal thalamic
+seeds are shown in red and green, respectively. Panels B and C: Whole-brain functional
+connectivity of motor and temporal thalamic seeds in three different age bands: children/young
+adolescents (age 6-13.27 years), older adolescents (age 13.28-18.00 years), and adults (age
+18.01+ years). Panel D: Motor and temporal thalamic connectivity was increased in ASD,
+primarily within the older adolescent age band. Panels B and C thresholded at whole-brain
+voxel-level Family-wise error corrected p(FWE)=.001. Panel D thresholded at whole-brain clusterlevel Family-wise error corrected p(FWE)=.05 for voxel-wise p(uncorrected)=.001. Results for all
+thalamic seeds are presented in the Supplemental Material.
+
+Table 1. Sample demographics
+
+Age
+Full-Scale IQ*
+
+Autism
+Spectrum
+Disorder
+228
+199:29
+Mean
+SD
+16.6
+6.1
+103.4
+17.0
+
+Typically
+Developing
+228
+199:29
+Mean
+SD
+16.6
+6.0
+111.3
+13.3
+
+t
+0.65
+5.49
+
+p
+.948
+<.001
+
+RS-fMRI Data Quality Metrics
+Percent Scrubbed Volumes
+Pre-scrubbing RMS FD
+Post-scrubbing RMS FD
+Pre-scrubbing DVARS
+Post-scrubbing DVARS
+
+5.34
+0.22
+0.16
+2.95
+2.25
+
+4.91
+0.21
+0.15
+2.97
+2.25
+
+0.91
+0.47
+0.93
+0.23
+0.05
+
+.362
+.641
+.351
+.816
+.960
+
+N
+Sex (m:f)
+
+5.19
+0.13
+0.05
+1.03
+0.74
+
+5.00
+0.12
+0.04
+1.02
+0.73
+
+Statistics
+
+*Full-Scale IQ was estimated by averaging Verbal and Performance IQ for 18 subjects.
+No IQ data were available for 4 ASD individuals.
+Abbreviations: f=Female; FD=Frame-wise Displacement; IQ=Intelligence Quotient;
+RMS=Root Mean Square; RS=Resting-state
+
+

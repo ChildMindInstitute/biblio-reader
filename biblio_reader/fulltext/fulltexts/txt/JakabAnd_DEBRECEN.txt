@@ -1,0 +1,2756 @@
+THESIS FOR THE DEGREE OF DOCTOR OF PHILOSOPHY (Ph.D.)
+
+Characterization of normal and pathological patterns of diffusion
+anisotropy with diffusion tensor imaging
+
+by András Jakab M.D.
+Supervisor: Ervin Berényi M.D. Ph.D.
+
+UNIVERSITY OF DEBRECEN
+DOCTORAL SCHOOL OF NEUROSCIENCES
+
+DEBRECEN, 2012
+
+Table of contents
+Abbreviations
+
+3.
+
+1. Introduction
+
+4.
+
+2. Background and review of literature
+
+5.
+
+2.1. Basics of diffusion tensor imaging
+
+7.
+
+2.2. Characterization of normal anatomical connectivity patterns in the human brain
+
+8.
+
+2.3. Characterization of pathological diffusion anisotropy patterns in the human brain
+
+11.
+
+2.4. Study aims
+
+15.
+
+3. Materials and methods
+
+17.
+
+3.1. Study subjects
+
+17.
+
+3.2. Image acquisition protocols
+
+18.
+
+3.3. Image and data processing protocols
+
+19.
+
+3.3.1. Calculating the microstructural descriptors of diffusion
+
+19.
+
+3.3.2. In vivo mapping of connections with probabilistic diffusion tractography
+
+20.
+
+3.3.3. Calculating the connectivity-based subdomains of the insular cortex
+
+22.
+
+3.3.4. Mapping connectivity-based subdomains of the mediodorsal thalamic nucleus
+
+24.
+
+3.3.5. Glioma characterization: general methods
+
+25.
+
+3.3.6. Glioma characterization: extracting imaging features as histograms
+
+27.
+
+3.3.7. Glioma characterization: statistical evaluations
+
+28.
+
+3.3.8. Construction of glioma grade maps
+
+29.
+34.
+
+4. Results
+4.1. In vivo description of the connectional anatomy of the insular cortex
+
+34.
+
+4.2. In vivo description of the connectional anatomy of the mediodorsal thalamic nucleus
+
+40.
+
+4.3. Glioma grading by using histogram analysis of diffusion anisotropy
+
+42.
+
+4.4. Characterization of gliomas by grade maps
+
+45.
+48.
+
+5. Discussion
+5.1. Using DTI to study the connectional anatomy of the insula
+
+48.
+
+5.2. Using DTI to study the connectional anatomy of the thalamus mediodorsal nucleus
+
+50.
+
+5.3. Characterization of gliomas by histogram analysis of diffusion anisotropy
+
+53.
+
+5.4. Characterization of gliomas by grade maps
+
+56.
+
+5.5. Conclusions
+
+59.
+
+6. Summary / Összefoglalás
+
+61.
+
+References
+
+63.
+
+Articles cited in the thesis
+
+63.
+
+Author’s publications
+
+76.
+
+Key words / Tárgyszavak
+
+81.
+
+Acknowledgements
+
+82.
+
+Appendix
+
+83.
+
+2
+
+Abbreviations
+ACC: anterior cingulate cortex
+ADC: apparent diffusion coefficient
+ANN: artificial neural network
+BAT: brain adjacent to tumor
+CNS: central nervous system
+COG: center of gravity
+DF: discriminant function
+DLPFC: dorsolateral prefrontal cortex
+dMRI: diffusion magnetic resonance imaging (i.e. DWI and DTI)
+DTI: diffusion tensor imaging
+DWI: diffusion weighted imaging
+EPI: echo planar imaging
+FLAIR: Fluid Attenuated Inversion Recovery
+fMRI: functional magnetic resonance imaging
+FOV: field of view
+FSL: Functional Magnetic Resonance Imaging of the Brain Software Library
+HGG: high grade glioma
+HGPM: high grade probability map
+LGG: low grade glioma
+LGPM: low grade probability map
+MD: mean diffusivity
+MD: mediodorsal thalamic nucleus
+MDA: multivariate discriminant analysis
+MDmc: mediodorsal thalamic nucleus, magnocellular part
+MDpc: mediodorsal thalamic nucleus, parvocellular part
+MPG: multiple pulsed gradient
+MNI: Montreal Neurological Institute
+MRI: magnetic resonance imaging
+NKI: Nathan Kline Institute
+NMR: nuclear magnetic resonance
+ROI: region of interest
+TE: echo time
+TPM: tumor probability map
+TR: repetition time
+UD-MHSC: University of Debrecen, Medical and Health Science Center
+WHO: World Health Organization
+
+3
+
+1. Introduction
+Water is a fundamental and ample constituent of all living creatures and it is an almost
+trivial statement that tissue water is structured according to the characteristics and intrinsic
+features of any given tissue type. This is undoubtedly the rationale of modern magnetic
+resonance technologies that dominated the field of biomedical and diagnostic imaging of the
+central nervous system for the last two decades. The initial and nearly prophetic enthusiasm
+about this technique led to anticipations that the ubiquitous nuclear magnetic resonance
+(NMR) phenomenon of tissues of the human body could reveal previously unseen details of
+pathologic processes; this could be done by characterizing the relaxation properties of spin
+systems. Here I shortly refer to an early patent of Raymond Damadian from 1972 in which he
+described a new design of an NMR device denoted as “Apparatus and method for detecting
+cancer in tissue” [1]. He correctly predicted that such scanners could pinpoint changes in
+tissue qualities that are brought about by neoplastic transformation.
+One attribute of the uniquely organized pattern of water molecules is their diffusion
+characteristics. As we will elucidate in the thesis, a new family of imaging technologies was
+built upon this phenomenon, namely diffusion magnetic resonance imaging (dMRI). The date
+of this work – 2012 – hallmarks the 25th anniversary of diffusion MRI. Since the first
+depiction of the diffusion process in the human brain significant conceptual and
+methodological developments have been applied to dMRI [2]. While the spatial resolution of
+MR images is typically on the range of a millimeter, a strikingly unique feature of diffusion
+MRI approaches is that they probe the motion of water molecule systems that are happening
+on the micrometer scale. This theoretically means a way to sample the microarchitecture of
+tissue or subcellular water compartments which is extensively used as the rationale of
+diffusion MRI augmented research.
+A significant part the thesis focuses on the application of diffusion tensor magnetic
+resonance imaging and related image processing techniques to characterize normal diffusion
+anisotropy patterns in the human brain. Such work is realized by the possibility to visualize
+and quantify the uniquely ordered structure of the brain’s white matter through probing the
+anisotropic water diffusion. This late twentieth century technique resurrects the explorations
+of the nineteenth century anatomists Theodor Meynert or Joseph Jules Dejerine who
+attributed a prominent role to white matter and fiber pathways in normal and pathological
+
+4
+
+brain functioning [3, 4]. We aim to demonstrate that diffusion MRI can be used for similar
+explorations but at a new level by portraying the connectional anatomy of living human
+subjects and relatively large cohorts. First, we explore the topography of diffusion anisotropy
+and structural connections of the human insula, then similar dissections for the mediodorsal
+thalamic nucleus are provided.
+The second part of our investigations focuses on the anisotropy patterns of diffusion in
+pathological conditions, more specifically, to portray the diffusion characteristics in brain
+neoplasms of glial origin. The most prevalent forms of brain tumors are glial neoplasms
+whereas astrocytic tumors constitute the majority of gliomas, as stated by the last World
+Health Organization (WHO) classification [5]; however, mixed cellular composition is also
+common [6]. Separating gliomas into low-grade and high-grade classes has become the means
+for assessing the neoplastic biological behavior and this partitioning fundamentally
+determines therapy and patients’ survival. Treatment of brain tumor patients remains a major
+challenge of oncology despite revolution of diagnostics and surgical therapies. The ability of
+diffusion MRI to probe the tissue microstructure may give hope for developing new
+radiological image processing methods that finally pinpoint early changes in the neoplastic
+transformation of the brain.
+
+2. Background and review of literature
+Early pioneers of nuclear magnetic resonance (NMR) research described that it is
+possible to sensitize the MR signal to the motion of water molecules that is caused by their
+self-diffusion [7]. By the same token, MR imaging sequences were developed that not only
+pictured different components of the spins’ relaxation phenomena but responded to the
+microscopic displacements driven by diffusion, taking place in living tissues during the
+acquisition of images. Hence diffusion-weighted magnetic resonance measurements provide
+non-invasive description of in vivo diffusion within elementary image units, voxels [8]. The
+most commonly used parameter to describe the self-diffusion process during dMRI is the
+apparent diffusion coefficient (ADC). The common way to calculate this formulation of the
+diffusion coefficient is to acquire images with and without the pulsed gradients switched on.
+The directionality of these gradients determine the axis where the apparent diffusion
+coefficient is measured; the average degree of the diffusion appearing along the X, Y and Z
+directions is simply referred to as average apparent diffusion coefficient, or again, ADC (or
+
+5
+
+aADC in other terminology). The relationship between the signal intensity on diffusionweighted images and the apparent diffusion coefficient is formalized in the following
+equation.
+Eq. 1.
+
+SIDWI = SIT2 * e-b*ADC
+
+Where SIDWI is the signal intensity of the voxels on the DWI images, SIT2 means the signal
+intensity on T2 acquisitions (B0 images). ADC is the apparent diffusion coefficient while b is
+the parameter reflecting the strength of diffusion weighting.
+In a glass of water, any water molecule covers the same distance per unit time in all
+directions of space and this isotropic diffusion is represented by a sphere. Such movement is
+only governed by fundamental physical parameters such as the size of particles, the viscosity
+and the absolute temperature (as formalized by the well-known “Stokes-Einstein” equation).
+In living systems the tissue structure determines the movement of the same molecule, i.e., the
+diffusion properties and its magnitude as well. The result of this phenomenon is called
+anisotropic diffusion where the diffusion profile (i.e. the profile of propagation of water
+molecules) can be described by amorphous 3D or ellipsoid geometric solids. Various proteins,
+membranes, cytoskeletal and extracellular matrix elements play an important role in
+characterizing and determining the movement (diffusivity) of water molecules. Such elements
+act as “obstacles”, subsequently modify the diffusion profile and hinder or restrict the
+movement of molecules. Given its specially organized cellular and tissue microarchitecture,
+the central nervous system already gained prominent attention in the pioneering times of
+diffusion MRI research. It was discovered that the intravoxel incoherent motion of water
+molecules shows significant directional preference in white matter when diffusion sensitizing
+gradients are applied and that such direction dependent changes of contrast patterns putatively
+match our previous knowledge about the distribution of major fiber tracts [9]. Since then, a
+great effort was invested into elucidating the main source of this highly ordered anisotropy in
+the white matter of the brain [10]. It is safe to conclude from such studies that the main
+component which contributes to the anisotropic patterns observed in white matter is the dense
+packaging of axonal membranes and that the myelin sheath or intracellular organs and
+proteins have minor influence.
+
+6
+
+2.1. Basics of diffusion tensor imaging
+The direct consequence of the hindered self-diffusion of water molecules in the brain –
+especially in the white matter – is that the observed magnitude of diffusion (i.e. the apparent
+diffusion coefficient) greatly varies depending of the direction of the pulsed gradient used. To
+formalize this direction-dependence of the diffusion process, Basser and Pierpaoli used
+tensors and suggested the use of quantitative diffusion tensor MRI to characterize
+microstructural and physiological features of tissues [11]. Diffusion tensor imaging (DTI) has
+increased sophistication over diffusion-weighted MRI since DTI data have information on the
+magnitude and orientation of anisotropic diffusion as well. In such models, the diffusion
+process is not characterized by a single scalar coefficient but by a symmetric tensor, D that
+describes displacements of water molecules along each axis (Dxx, Dxy, etc.) and the correlation
+between displacements along these axes are formalized in the following equation:
+
+Eq. 2.
+
+=
+
+This equation forecasts that it is theoretically feasible to obtain all the components of
+the diffusion tensor with diffusion MRI by acquiring images sensitized to 6 different diffusion
+directions. This is achieved by the combination of motion sensitizing gradient pulses along
+the X, Y and Z axes [2, 11]. When acquiring such images, the signal attenuation is given by
+the following equation:
+Eq. 3.
+
+= exp − ∑
+
+, ,
+
+∑
+
+, ,
+
+∗
+
+Where A is the signal attenuation, bij are the elements of a b matrix and Dij are the
+elements of the matrix mentioned previously.
+In order to ease the display of such tensorial data, the concept of diffusion ellipsoids
+were proposed. This ellipsoid is understood as the three-dimensional representation of the
+diffusion distance that is covered by molecules in a given diffusion time. It is calculated by
+“diagonalizing” the diffusion tensor for each image voxel. Diagonalization results in the socalled principal eigenvector of the tensor, which is the vector where the diffusion appears to
+have the largest magnitude. Furthermore, the ellipsoid is characterized by three eigenvalues
+that describe the extent of the three orthogonal axes. The eigenvalue of the principal
+7
+
+eigenvector is denoted with λ1, while the orthogonal components of the ellipsoid are given as
+λ2 and λ3. The tensor dataset and eigenvalues are fundamental in the calculation of secondary
+images, such images allow us to visualize various diffusion characteristics as grayscale
+images and enable thorough statistical analysis. The most commonly used DTI parameters are
+the following. Mean diffusivity (MD) characterizes the overall mean-squared displacement of
+molecules (average ellipsoid size) and the overall presence of obstacles to diffusion. One way
+to describe the degree of anisotropy is to calculate the fractional anisotropy (FA) measure, this
+parameter depicts how much molecular displacements vary in space (eccentricity of the
+ellipsoid) and is related to the coherence of oriented structures. The spatial orientation of the
+structures is described by the main direction of diffusivities (main ellipsoid axes) and referred
+to as the longitudinal diffusivity (along the axis of the principal eigenvector) or perpendicular
+diffusivity.
+2.2. Characterization of normal anatomical connectivity patterns in the human brain
+From the perspective of neuroanatomy research, mapping the structural (i.e.
+anatomical) connections is interesting as the inflow or output of information available to a
+certain brain territory hallmarks its putative function and determines the influence it can has
+over other areas [12]. Given that in brain tissue the densely packed axons are the main sources
+of the diffusion anisotropy, such tensors readily describe the orientation of the dominant fiber
+population in each voxel [10]. Major fiber bundles can be visualized by means of fiber
+tracking. For this purpose, many algorithms were suggested, introducing a previously unseen
+field of biomedical visualizations aiming to depict the anatomy of fiber paths in vivo [13, 14].
+The initial enthusiasm about this tool as a modality for in vivo virtual dissections of white
+matter anatomy was later transformed to an effort aiming to validate these re-discovered
+neuronal pathways [15]. This was mainly done by means of more conventional
+neuroanatomical approaches [16, 17]. Additionally, it became clear that newer computational
+methods are required to describe the complex intra-voxel distribution of axonal populations,
+such as mapping the propagation of uncertainty of possible fiber trajectories, one of the
+techniques denoted as probabilistic tractography [18]. The science of connectional anatomy –
+hodology – was recently electrified by the advent of fiber tractography and mapping
+techniques [19]. A probabilistic approach to trace the structural connections along trajectories
+that are defined by the diffusion modeling now allows to reveal tracts even adjacent to the
+cortex, or event depict the connections that arise primarily from cortical regions. We
+8
+
+hypothesize that a plausible work flow can be implemented that uses DTI data and allows
+studying the normal connectional anatomy of the human cerebral cortex. Our first special
+focus is on mapping the human insular cortex by in vivo diffusion MRI.
+The insula of Reil, located deeply within the lateral sulcus, is known to have a
+multifaceted sensory, motor, visceral and cognitive role and is also considered as a vestibular
+association area. The insular cortex is acknowledged as the anatomical representation for
+interoceptive awareness, i.e., the “sense of the physiological condition of the body” [20]. Its
+functional and anatomical diversity has been described in humans and non-human primates
+[21], with changes in cytoarchitecture that follow a rostroventral to dorsal and posterior
+gradient, from agranular to dysgranular and granular cortex [22, 23]. In humans, functional
+neuroimaging studies by means of resting-state functional MRI (fMRI) have been recently
+used to reinvigorate the relationship of morphology and function of the insula by
+demonstrating consistent changes of patterns of activation or functional connectivity [24].
+Cauda and colleagues demonstrated the functional connectivity of the insula to various
+cortical and subcortical targets by quantifying the similarities between time coursers of
+functional activations and using this information to reveal coherent connectivity networks.
+Their findings on this functional connectivity revealed two major complementary networks
+involving the ventral-anterior and dorsal-posterior insula. One network connects the anterior
+insula to the middle and inferior temporal cortex and anterior cingulate cortex, and is believed
+to be related to limbic regions which play a role in emotional aspects. The second links the
+middle-posterior insula to premotor, sensorimotor, supplementary motor and middle-posterior
+cingulate cortices, indicating a role for the insula in sensorimotor integration [24].
+Diffusion tensor imaging offers remarkable possibilities to explicate the properties of
+the hindered biological diffusion while tractography depicts structural connectivity within
+distinct brain regions. Diffusion-based techniques provide the possibility to parcellate the gray
+matter according to its local diffusion properties [25], either by quantifying the connection
+strengths to predefined cortical areas [26], or more generally, to compute similarities between
+connections to remote areas [27]. During this approach, structural connectivity is traced from
+areas of the cortex with probabilistic diffusion tractography and sub-domains are identified
+that present a demarked pattern of connections. Johansen-Berg and co-authors demonstrated
+rapid spatial changes in the connectivity profile between the supplementary motor area
+(SMA) and the pre-SMA, offering an in vivo method to delineate them on an individual basis.
+9
+
+Similarly, the technique has already been applied to segment the insula: Nanetti and
+colleagues revealed a rostrocaudal variation of connectivity-based segments dividing the
+insula into two clusters, while Cerliani et al. refined this picture by reporting a more gradual
+change of connectivity patterns along this axis [28, 29]. Our report aims to describe two
+separated regions within the left and right insula that are defined by clustering insular image
+voxels based on their distant cortical connections. Furthermore, we aim to provide evidence
+for interhemispheric variability of the clusters in terms of spatial location, overall volume and
+micro-structural properties of diffusion, for this purpose, we aim to use a cohort of healthy
+volunteers.
+Diffusion tensor imaging augmented with a probabilistic framework of fiber
+tractography allows mapping thalamocortical (or corticothalamic) connections noninvasively.
+This observation gave rise to a number of studies on the normal human thalamus anatomy or
+its putative alterations in pathological conditions [26, 30]. A novel way to picture structural
+connections of the thalamus is to delineate and define regions based on their primary sources
+of afferent or efferent connections [31]. This technique potentially depicts groups of thalamic
+nuclei that are different in terms of interconnections to the cortex or other, pre-defined
+“target” regions. We highlight that connectivity-based segmentation has already passed tests
+of reproducibility [32, 33], applicability in functional neurosurgical planning and correlation
+to neurophysiological mapping [34, 35]. We hypothesize that such approach can be used to
+demonstrate the connectional anatomy of the human thalamus mediodorsal nucleus in a
+relatively large population of healthy volunteers.
+Endeavors to study the role of the mediodorsal thalamic nucleus (MD) already
+postulated it as a possible association hub mediating affective and cognitive functions [36]. In
+non-human primates, evidence comes from a wide range of works describing the
+interconnections of the MD nucleus with several cortical areas, predominantly with the
+prefrontal cortex [37-39]. Changes of connectivity patterns were found to be coherent with the
+classical cytoarchitectural subdivisions of the MD, with the medial and orbital prefrontal
+regions projecting to the medial sector (magnocellular part) and fibers of the dorsolateral
+prefrontal cortex projecting to the lateral sector (parvocellular part) in experimental animals
+[40-42]. Many clinical studies support the active participation of the mediodorsal nucleus in
+higher cognitive functioning, although these investigations mainly concentrated on linking the
+
+10
+
+impairment of cognitive and executive performance to anatomical locations of intrathalamic
+lesions or to volume changes in epilepsy [43-45].
+The impetus for the second part of our study was that in vivo neuroimaging methods
+have successfully been applied to study the connectional anatomy of the mediodorsal nucleus,
+and compelling similarity to the primate thalamocortical networks was revealed [31]. We
+aimed to perform connectivity-based parcellation to reveal subdivisions within the human
+mediodorsal thalamic nucleus by automatically delineating areas that show distinct remote
+connectivity profiles. Our study was designed to unveil the interhemispheric differences and
+intersubject variability in the extent of such connectivity-based domains, for this purpose, we
+accessed the images of a large number of healthy subjects. We assumed that the macroscopic
+anatomy of such subdivisions provide further information on the functional specialization of
+the MD nucleus. This idea stems from the fact that structural connectivity determines the
+territories from where information could reach an area while the efferent connections limit the
+regions which it can directly influence [12]. Therefore, keeping in mind its limited capabilities
+in depicting finely detailed anatomy, we can use tractography-based charting of gray matter to
+obtain information not only about local features, but also about more remote trajectories and
+large circuits passing through that region [15]. The neuroanatomical model of segregated
+“cortico-striato-thalamo-cortical” networks forms the basis for our hypothesis, in which
+circuitry the mediodorsal thalamic nucleus was found to play an intermediary role [46].
+Neuroimaging studies show that macroscopic anatomical features (e.g., total gray matter
+volume of frontal lobe) show correlation with the intellectual abilities of the individual [47,
+48]. By the same token, individual, imaging-based and connectionist definition of anatomical
+features can be investigated as neuroanatomical correlates of higher cognitive functions. We
+conclude that an initial step in such explorations is to provide normative data on the anatomy
+of humans, preferably using large subject populations and in vivo imaging techniques.
+2.3. Characterization of pathological diffusion anisotropy patterns in the human brain
+As previously described, the highly anisotropic appearance of diffusion in the central
+nervous system is predominantly caused by the dense packaging of ordered axonal
+membranes in white matter [10]. Further components might influence such patterns by
+hindering the diffusion: intracellular proteins, microtubules, neurofilaments, extracellular
+matrix components and the myelin sheath of neurons. In case of changing intra- and
+extracellular structure, for instance the disorganization that accompanies neoplastic
+11
+
+transformation, the diffusion characteristics are bound to be altered. Therefore diffusion
+imaging putatively probes the biological microarchitecture and offers hope to correlate such
+measurements with tissue properties in pathological conditions or even to reveal the peculiar
+microstructure of neoplastic tissue.
+Diffusion data are often correlated with cellular physiology and tissue microstructure,
+and has extensively been used in the studies of central nervous system gliomas. Here we
+report the latest findings in glioma imaging from the perspective of diffusion MRI
+applications, with attention to studies that focused on diffusion derived parameters such as
+mean diffusivity or fractional anisotropy. Furthermore, we present the body of literature that
+supports the feasibility of diffusion MRI in the determination of glioma WHO grade or
+separate low and high grade gliomas. Mean diffusivity measures allowed differentiation and
+outlining the central necrotic areas within high-grade gliomas as well as separating
+peritumoral edema from adjacent WM structures; however, tumor infiltration cannot be
+evaluated properly [49, 50]. A strong correlation between tumor cellularity and the apparent
+diffusion coefficient (ADC) may also help to estimate tumor grade [51, 52]. The reliability of
+this grade assessment method, however, is questionable primarily due to a great deal of
+subjectivity involved in histological tumor typing [53]. Meanwhile, data on the association
+between fractional anisotropy values and tumor characteristics, including WHO grade are also
+available. Co-analysis of tensor-related parameters also provides basis for such correlative
+conclusions [54-56]. Combination of variables referring to the apparent diffusion coefficient
+in gliomas (e.g. minimum and maximum value of ADC) and multiparametric approaches
+facilitate tissue characterization and classification [57, 58]. Use of histograms for studying
+distributions of different parameters further improves identification of tumor subtypes [59,
+60]. Despite the endeavors to use conventional MRI for the delineation of high-grade gliomas,
+low sensitivity and specificity was reported [61]. When compared to region of interest
+analysis, construction of histograms to represent the distribution of voxels’ values in a tumor
+was more feasible whilst this approach allowed successful grading of gliomas [62].
+Dehmeshki and co-authors described that discriminant analysis (DA) is capable of selecting
+the most important features of individual image histograms for classifying cases in different
+pathologies; a practical representation of such features is calculating histogram bins for each
+case [63, 64]. Imaging results have already been interpreted as adequate indicators of not only
+WHO histopathology types (classification), but also as descriptors of tumor pathophysiology
+(proliferation, metabolism, blood flow). Comparing FA values, mean diffusivity to
+12
+
+histopathological evaluation of biopsy samples of glioblastoma multiforme tumors proved a
+consistent relationship between the radiology data and tumor cellularity as well as radiology
+measures and the Mib-1 LI (labeling index, assessed with the monoclonal antibody for Ki-67)
+[65, 66]. Further extension of non-invasive tumor evaluation needs to keep in sight those
+striking results which dominate the current neuro-oncopathology literature. It has recently
+become obvious that in addition to traditional morphology molecular features often allow
+estimates of not only disease prognosis but also prediction. The latter activity determines
+individual tumor sensitivity towards a specific chemotherapeutical regimen [67, 68].
+Various studies on the relationship between imaging parameters and pathology aim to
+develop new ways of depictions that can help to characterize tumors. Nosology – the
+discipline dealing with the classification of diseases – was reinterpreted by Szabo De Edelenyi
+in his report where he uses this term to introduce a new form of an imaging-based parametric
+map [69]. According to this terminology, nosological maps depict the probability of the
+occurrence of certain disease subtypes for each image voxel, based on the image features
+(typically multidimensional) underneath that particular voxel. Such visualizations potentially
+ease the interpretation of multispectral data, such as proton magnetic resonance spectroscopic
+images or diffusion tensor datasets. Literature shows that it is possible to visualize
+biologically diverse regions within a tumor based on image analysis and various modeling
+approaches; a method was reported that depicts histopathological subtypes (i.e. “oligo-like” or
+“astro-like” regions, according to the authors' nomenclature) of low-grade gliomas as color
+maps [70]. Similarly, “nosological images” graphically represented different tumor types by
+performing complex interpretation of MR spectroscopy data and it was practical to use T2 and
+ADC values for tumor xenograft characterization by segmenting tumor images into various
+sub-populations [69, 71, 72].
+Such works form the basis of our next hypothesis that machine-learning algorithms are
+capable of integrating information from preoperative images whilst multidimensional patternrecognition techniques could enhance the characterization of gliomas. A practical approach is
+supervised learning where previously determined ground truth is provided by histopathology
+and mathematical models are optimized for finding the correlation of individual, subjectbased data and the tumor classification. One such method, the artificial neural networks
+(ANN) has long been investigated as a potential candidate for oncology decision support
+finding more specific aims as brain tumor classification [73-76]. By the same token, our
+13
+
+investigation was designed to introduce a new visualization method that portrays glioma
+grade by incorporating information from postgadolinium T1- and T2-weighted, diffusionweighted and parametric images that were computed from diffusion-tensor measurements. We
+focused on the development of an imaging biomarker that estimates tumor grade by
+employing a voxel-wise computational approach based on a supervised learning algorithm.
+
+14
+
+2.4. Study aims
+The primary motivation of the study was to employ in vivo diffusion tensor imaging to
+portray individual anisotropy patterns of cerebral water diffusion in physiological and
+pathological scenarios. We aimed to demonstrate the applicability of DTI data analysis to
+study the normal human anatomy in a relatively large subject population. Furthermore, to
+retrospectively analyze a patient group with brain gliomas to reveal a possible neurooncological application of DTI. The experiments were designed to elucidate the following
+topics, each denoted as a specific (major) aim or secondary (minor) aims.
+A. To show the applicability of DTI to study the connectional anatomy of the human
+cerebral cortex, with special focus on the insula.
+A/1. To use probabilistic diffusion tractography to map the macroscopic structural
+……connections of the insular cortex.
+A/2. To use such data to reveal subdomains within the human insular cortex that are
+……automatically defined by analyzing the patterns of remote connections.
+A/3. To analyze the distribution, location and interhemispheric asymmetry of such
+……connectivity-based insular subdomains and to measure the microstructural
+……properties of water diffusion within the newly defined areas.
+A/4. To compare the subdomains based on the analysis of diffusion anisotropy and
+……tensor data with the classical depictions of major cytoarchitectural domains.
+B. To show the applicability of DTI to study the connectional anatomy of the human
+thalamus, with special attention to the mediodorsal nucleus.
+B/1. To employ probabilistic diffusion tractography to trace the interconnections
+……between the human mediodorsal thalamic nucleus and the cerebral cortex.
+B/2. Similarly to specific aims A/2 and A/3, to define subdomains in the mediodorsal
+……nucleus based on the patterns of remote connectivity.
+B/3. To compare the neuroanatomy of the connectionist definition of the subdomains
+……of the mediodorsal nucleus with the cytoarchitectural subdivisions.
+C. To use DTI to characterize the spatial patterns of diffusion anisotropy within CNS
+gliomas and correlate such findings with histological features that are used to type
+gliomas.
+15
+
+C/1. To assess the feasibility of using preoperatively acquired DTI images to grade
+……gliomas.
+C/2. To develop a graphical representation of the imaging-based interpretation of
+……glioma grade.
+
+16
+
+3. Materials and methods
+3.1. Study subjects
+In accordance with the aims (A, B and C) defined previously, three different cohorts of
+subjects were enrolled in the study. For aim A, data of healthy volunteers were accessed from
+the repository of a national collaborator (University of Kaposvár), while for aim B, we used
+the publicly available Rockland Neuroimaging Sample provided by the Nathan Kline Institute
+(NKI, Orangeburg, USA). The original NKI sample consisted of the images of 210 subjects,
+which was sampled and reduced to 155 subjects to have a more homogeneous population
+(according to the criteria outlined in Table 1.). This sample is a freely available, large-scale,
+extensively phenotyped dataset for the purpose of discovery science and contains healthy
+subjects from nearly all age groups. The general characteristics and the inclusion criteria of
+the study populations for specific aims A and B are summarized in Table 1.
+Name of specific
+aim served,
+dataset
+
+Subjects
+
+Specific aim A
+
+40
+
+Specific aim B
+
+Specific aim C
+
+155
+
+40
+
+Gender
+(male/female)
+
+19/21
+
+92/59
+
+18/22
+
+Age
+(mean ± SD )
+
+Selection criteria
+
+Source of
+subjects
+
+33.8 ± 12.7
+
+Right-handed, healthy
+adults
+
+University of
+Kaposvár
+
+38.8 ± 19.4
+
+Right-handed healthy
+subjects, age range 1465 years, available IQ
+data and DTI
+
+Rockland
+Sample, Nathan
+Kline Institute
+
+38.6 ± 16.6
+
+WHO grade II-IV
+gliomas, DTI scans
+available, no prior
+treatment
+
+UD-MHSC
+
+Table 1. Subject characteristics and selection criteria for specific aims A-C.
+Aim C required retrospective data analysis of patients with CNS gliomas and the
+construction of a dataset that was determined by the availability of an adequate pre-operative
+radiological workup including diffusion tensor imaging acquisitions. We collected the images
+and basic clinical data of 40 consecutive subjects meeting the inclusion criteria, diagnosed
+with brain gliomas between 2006 and 2010. Cases were labeled according to WHO grade (Gr.
+II: 26, Gr. III: 3, Gr. IV: 11) and were also divided into low and high grade classes. All
+tumors were histologically classified using either stereotactic biopsy material or specimens of
+17
+
+surgical debulking (Institute of Pathology, UD-MHSC). The original diagnoses were
+reviewed blind to the results of radiological analysis. Inclusion criteria were the availability of
+DTI scans and only those glial tumors were selected which had been sampled prior to any
+kind of treatment (i.e., surgical removal, radiotherapy or cytostatic therapy). Patient baseline
+characteristics and a summary of the histopathological diagnoses of the subjects’ tumors are
+demonstrated in Table 2.
+
+Subjects
+
+Gender
+(male/female)
+
+Age (mean ± SD, range)
+
+Low grade tumors
+
+26
+
+13/13
+
+34.6 ± 15.9 (8-68)
+
+astrocytoma gr. II. or
+astrocytoma fibrillare gr. II.
+
+13
+
+7/6
+
+30.6 ± 16.9 (8-59)
+
+oligoastrocytoma gr. II.
+
+7
+
+¾
+
+37.9 ± 18.4(11-68)
+
+oligodendroglioma gr. II.
+
+6
+
+3/3
+
+42.2 ± 9.9 (34-59)
+
+High grade tumors
+
+14
+
+5/9
+
+47.3 ± 15.4 (13-68)
+
+oligoastrocytoma gr. III.
+
+3
+
+0/3
+
+52.0 ± 2.6 (50-55)
+
+glioblastoma multiforme
+
+11
+
+5/6
+
+45.7 ± 17.6 (13-68)
+
+Overall
+
+40
+
+18/22
+
+38.6 ± 16.6 (8-68)
+
+Tumor histopathology
+
+Table 2. Preoperative assessment of glioma grade through the analysis of diffusion tensor
+images (specific aim C): subject baseline characteristics and histopathological composition
+of the subjects’ tumors.
+During the construction of each dataset, participants gave informed written consent to
+procedures approved by the relevant Institutional Review Boards. Further information of the
+study cohort for specific aim B is provided on the website of the International Neuroimaging
+Data-sharing Initiative, the INDI [77].
+3.2. Image acquisition protocols
+Due to the fact that three institutions contributed to the imaging datasets of the study, I
+report the MRI acquisition protocols according to the specific aim served by the relevant
+scans of the institutions. As a general rule, high-resolution anatomical, T1-weighted imaging
+18
+
+was performed for each subject in each cohort, which was complemented by diffusion tensor
+
+Diffusion tensor imaging
+
+Anatomical imaging
+
+imaging. Details of the MRI and DTI acquisitions are given in Table 3.
+
+Specific aim A
+
+Specific aim B
+
+Specific aim C
+
+Institution
+
+University of Kaposvár
+
+Nathan Kline Institute
+
+UD-MHSC
+
+Scanner type
+(Field strength,
+vendor)
+
+1.5 T MRI system
+(MagnetomAvanto,
+Siemens, Erlangen,
+Germany)
+
+3.0 T MRI system
+(Magnetom Trio Tim,
+Siemens, Erlangen,
+Germany)
+
+1.5 T MRI system
+(GE Signa Excite
+TwinGradient, GE
+Medical Systems,
+Milwaukee, WI)
+
+Applied sequence
+
+3DT1 MPRAGE
+(native)
+
+3DT1 MPRAGE
+(native)
+
+3DT1 SPGR (Gadolinium
+contrast agent
+administration)
+
+TE/TR
+
+4.2 / 1160 ms
+
+3.5 / 2500 ms
+
+6 / 21 ms
+
+Image matrix
+
+384 * 512
+
+256 * 256
+
+512 * 512
+
+Voxel size
+
+0.45 * 0.45 * 0.83 mm
+
+1 * 1 * 1 mm
+
+0.68 * 0.68 * 1.1 mm
+
+Applied sequence
+
+Spin echo EPI
+
+Spin echo EPI,
+GRAPPA parallel
+imaging (acceleration
+factor: 3)
+
+Spin echo EPI
+
+TE/TR
+
+118 / 10000 ms
+
+91 / 10000 ms
+
+98 / 10000 ms
+
+MPG
+
+12
+
+64
+
+25
+
+b-factor
+
+1000 s/mm2
+
+1000 s/mm2
+
+1000 s/mm2
+
+Voxel size
+
+1 * 1 mm
+
+2 * 2 mm
+
+1.5 * 1.5 mm
+
+Slice thickness
+
+3 mm
+
+2 mm
+
+3.3 mm
+
+Table 3. Anatomical MRI and DTI acquisition protocols used for the subject cohorts of
+specific aims A-C. FOV: field of view, EPI: echo planar imaging, TR: repetition time, TE:
+echo time, MPG: number of multiple pulsed gradients.
+3.3. Image and data processing protocols
+3.3.1. Calculating the microstructural descriptors of diffusion
+The acquisition of raw, diffusion weighted images allowed the voxel-wise estimation
+of the diffusion tensors for each subject. The diffusion tensor is described by the principal
+19
+
+eigenvector and three eigenvalues. To formulate the tensors based on the DWI data we relied
+on the built-in estimation algorithm of the FMRIB Diffusion Toolbox in the FSL software
+package (University of Oxford, [78]). All specific aims required the calculation of secondary
+images that are derived from the diffusion tensor; these are referred to as parametric or scalar
+images. The calculation of such parameters is extensively described by other studies; we refer
+to the technical reports and manuals of the applied algorithm, the dtifit (FMRIB Diffusion
+Toolbox. FSL, University of Oxford [78]). The following parametric maps were generated: B0
+images, which are acquired without diffusion sensitization thus conveying T2-weighted
+information; directionally averaged DWI images; fractional anisotropy maps (Eq. 4.);
+longitudinal (Eq. 5.) and radial diffusivity component maps (Eq. 6.), trace maps (Eq. 7.) and
+the MD (Eq. 8.). We used the following equations to calculate the parametric maps from the
+components of the diffusion tensor.
+
+(λ1 − λ2 )2 + (λ1 − λ3 )2 + (λ1 − λ3 )2
+
+Eq. 4.
+
+1
+FA =
+*
+2
+
+Eq. 5.
+
+λ║= λ1
+
+Eq. 6.
+
+λ┴ = (λ2+λ3)/2
+
+Eq. 7.
+
+Trace = λ1 + λ2 + λ3
+
+Eq. 8.
+
+MD=ADC= (λ1 + λ2 + λ3)/3
+
+λ12 + λ22 + λ23
+
+where λ1, λ2 and λ3 are the three eigenvalues of the diffusion tensor. FA: fractional
+anisotropy. λ║: longitudinal diffusivity, λ┴: radial diffusivity.
+3.3.2. In vivo mapping of connections with probabilistic diffusion tractography
+To study the properties of normal connectional anatomy for specific aims A and B, the
+following processing steps of the DTI data were performed: (1) fitting a symmetric tensor to
+the DWI data and using the tensor’s eigenvalues to calculate secondary, parametric maps,
+such as the fractional anisotropy image, (2) spatial standardization, i.e. registration of T1weighted and DTI data to a standard neuroimaging template space, (3) estimation of intravoxel distribution of fiber populations and (4) performing probabilistic tracking of structural
+connections arising from the investigated region. DTI processing steps were carried out using
+
+20
+
+the FMRIB Diffusion Toolbox in the FSL software package, we refer to this toolbox by
+naming the algorithm or built-in scripts used.
+We performed non-linear spatial standardization of images to enable inter-subject
+comparison of anatomy. For each subject, the calculated fractional anisotropy images were
+used to determine a deformation field which transforms it to a common neuroimaging
+reference space (MNI space), namely the FMRIB58 fractional anisotropy template
+(distributed with the FSL tool). Image registration steps were done by accessing the FLIRT
+(initial, mutual information-based, linear registration with 12 degrees of freedom) and the
+FNIRT (non-linear warping) algorithm in the FSL software package. For anatomical images,
+the T1-weighted scans of each subject were transformed to the T1-weighted MNI152 template
+with the procedure described for the DTI standardization. Subsequently, anatomical images
+and tractography results were stored in a standard MNI152 neuroimaging space. This allowed
+to define the “seeding” masks (i.e., the volume from which probabilistic fiber tracing samples
+will emerge) for diffusion tractography by using only one template image for every subject
+assuming good anatomical overlaps, and therefore the tracking of neuronal connections were
+performed in the native diffusion spaces of individual subjects, only transforming the seeding
+masks and resulting images from and to the standard space.
+The characterization of fiber distributions was carried out with a standard procedure,
+the BedpostX script. For more information on the probabilistic diffusion tractography
+procedure, see the relevant work by Behrens et al. [18]. This algorithm was set to search for
+two fiber populations in each image voxel in a way that the possible orientations of diffusion
+displacements best fit the observed raw, diffusion weighted data. Next, probabilistic tracking
+of structural connections were initiated by using the ProbtrackX program. The connection
+strength between each seeding voxel and every remote brain voxel was estimated as the
+probability of tracts reaching their target through a trajectory guided by the model of local
+diffusion characteristics. A non-linear registration was used to map the coordinates of seed
+voxels to the space of the diffusion images and then to project the tractograms back to the
+standard space. Each entry in such tractogram image shows the probability of that particular
+brain voxel to be interconnected to the seeding area.
+
+21
+
+3.3.3. Calculating the connectivity-based subdomains of the insular cortex
+The specific aim A was to use the diffusion anisotropy data and diffusion tensors to
+study the connectional anatomy of the human cerebral cortex, with special focus on the insula.
+One way to study the connectional anatomy of the cortex is to perform the probabilistic
+tracking of structural connections from a specific seed area (aim A/1), and use this
+information to parcellate the original territory into subdomains that differ in terms of the
+patterns of connectivity (aim A/2). This “hodologist” definition of cortical of subcortical areas
+require a mathematical approach that separates such fiber trajectories and maps the origin of
+each fiber cluster back to the examined brain region. For studying the insula, we first accessed
+the mask of the insular cortex from the Harvard-Oxford Cortical Atlas (FSL), and then the
+T1-weighted image template in the MNI152 space was used to review and refine the borders
+of the insular cortex. The final region of interest (ROI) comprised only the band of gray
+matter voxels surrounded by the extreme capsule and the periinsular sulci.
+Tractography was initiated from the reviewed insular cortical masks in the MNI152
+space, with the procedure described in the report previously. We aimed to perform
+connectivity-based segmentation; hence an alternative way to store diffusion tractography
+results was applied, similarly to a number of works in this field [79-83]. For each subject, a
+connectivity matrix (M * N) was stored where each row (M) represented the seed voxels
+while the columns corresponding to the brain voxels (N), as stored in a low resolution, 4 * 4 *
+4 mm space. This down-sampling was carried out to ease the computational and memory
+burden of the procedure. Elements of the matrix represented the probability of existing
+structural connections between corresponding seed and brain voxels. Next, a cross-correlation
+matrix was constructed (M * M), for each seed voxel quantifying the similarities of their
+connectivity patterns. Seed voxels were partitioned into two groups with a k-means clustering
+algorithm maximizing the within-group similarity of connection patterns (Ccops program,
+FSL). During the k-means algorithm, random initialization of cluster centers was employed,
+with an iterative search for the second cluster center to be the furthest away from the first; this
+method provides feasible within-subject reproducibility without performing multiple
+clustering, in contrast to other works [28]. Each voxel in the seed area (rows of the matrix)
+was assigned a label according to the cluster number it was classified previously. As this step
+was done in the standard neuroimaging space, the cluster membership labels were
+
+22
+
+consequently mapped back to the native space (T1-weighted anatomical) for each subject
+using the inverted spatial transformation of the standardization procedure.
+In this paragraph, we report the methods that were used to evaluate and describe the
+anatomy of the newly formed connectivity-based subdivisions of the insular cortex, as
+outlined in the specific aim A/3. Based on the contours of each connectivity cluster, threedimensional objects were formed and for each model the center of gravity point (COG) was
+determined in the MNI152 stereotactical space. The COG or the center of mass calculation
+was based on averaging the vertex coordinates of 3D meshes. This measure was done in order
+to reveal the spatial scatter of the connectivity-based domains through the study population.
+Hence the spatial consistency was measured as the scatter of COGs and the variability of
+absolute cluster volumes. For volumetric evaluations, each insular mask volume and its newly
+clustered partitions were transformed back to the subject’s native anatomical space by using
+the inverted transformation of the standardization step (i.e. registration of the T1-weighted
+images to the MNI152 T1-weighted template). A population-averaged representation of the
+partitioning was computed by assigning the label value to each reference-space insular voxel
+that was most likely to be found in the individual cluster maps, i.e. the mode of the 4D object
+was determined. This 3D dataset of the most common cluster assignment was then used to
+create a 3D mesh for each cluster. To demonstrate the intersubject variability of the
+discovered clusters across the study population, we calculated and visualized images
+representing the 95th, 90th, 50th, 10th and 5th percentiles of the label assignments.
+Specific aim A/4 was to evaluate whether the connectivity-based partitions present
+different diffusion microenvironment. To achieve this, the fractional anisotropy (FA) and
+mean diffusivity (MD) was provided for clusters in both hemispheres; the calculation was
+done using the standard equations provided previously. A morphological operation, namely
+erosion with a 3 * 3 * 3 voxel box kernel was performed on the cluster masks. We assume
+that this operation reduced the influence of partial volume effect by the adjacent cerebrospinal
+fluid voxels and therefore the diffusion scalar values can safely be measured in the
+connectivity-based insular subdomains.
+To reveal the anatomical correspondence of the fiber tracts emerging from the newly
+defined insular subdivisions, we performed probabilistic tractography for each subject,
+initiated from the voxels representing the discovered insular clusters. As the clustering
+algorithm was forced to search for two domains, this method provided two different
+23
+
+tractograms for each subject. For each voxel in the brain in each subject, a label was assigned
+indicating whether that voxel is most likely to be connected to the first cluster (label:1),
+second cluster (label:2) or no connections to the insula (label:0). Corresponding maps were
+summed over the subjects and the resulting back-projected tract distributions were visualized
+(i.e. separately computing maps projected from the 1st and 2nd clusters), in the same way as
+visualized in the study Menke et al. 2010, Figure 3. [82]. This population-based
+representation of connectional anatomy of the insula was observed and we described the
+major connections of the newly defined subdivisions in relation to the territories of widely
+used digital brain atlases. This visualization step was carried out with the FSLVIEW tool
+(FSL).
+3.3.4. Mapping connectivity-based subdomains of the mediodorsal thalamic nucleus
+Aim B was to demonstrate the applicability of DTI to study the connectional anatomy
+of the human thalamus, with special attention to the mediodorsal nucleus. Probabilistic
+diffusion tractography was performed to trace the interconnections between the human
+mediodorsal thalamic nucleus and the cerebral cortex. This part of the work flow required
+special measures to delineate the nucleus.
+The masks of the left and right mediodorsal nucleus were drawn in the standard
+MNI152 neuroimaging space. To define these borders, we used results from a previous work
+of our collaborators where a mean representation of the human thalamus anatomy was
+provided by the histological workup of seven thalami [84, 85]; this work is the threedimensional generalization of the Morel Atlas of the Human Thalamus and Basal Ganglia and
+therefore contains the depictions of thalamic subdivisions based on cyto- and
+myeloarchitecture [86]. The idea of using such multi-subject atlases is to incorporate the intersubject variability of the observed structures. As described in the work by Krauth and coauthors [85], a statistical shape model was constructed that describes this geometrical
+variability as a multidimensional point cloud, each transformed to a standard stereotactic
+space, defined by the anterior commissure and posterior commissure landmarks. These data
+allowed us to use a statistical shape model driven registration method to non-linearly match
+the outlines of the template’s MRI visible thalamus and the corresponding structure from the
+3D mean thalamus atlas [87, 88]. Therefore we had access to the borders of the putative
+borders of the mediodorsal thalamic nucleus in standard space, as defined by the Morel Atlas
+[86]. This also allowed us to make comparisons with the classical, cytoarchitecture-based
+24
+
+depictions of the anatomy of the mediodorsal nucleus (specific aim B/3.). In the standard
+space, the 3D outlines of its two subdivisions were accessed (MDmc - magnocellular part and
+MDpc - parvocellular part).
+Similarly to the methodology to characterize the connectivity-based divisions of the
+insular cortex, we employed the following steps to process DTI data. Estimation of two fiber
+directions in each image voxel of the brain was carried out by using BedpostX (FSL),
+probabilistic diffusion tractography was initiated from the mask of the mediodorsal thalamic
+nucleus and probabilistic tractograms were stored in M * N matrices representing the seed
+voxels (M, rows) and down-sampled brain voxels (N, columns). Cluster analysis by the kmeans algorithm was utilized to partition the M seed voxels into two groups that featured the
+most distinct distribution of connections. Finally, cluster membership labels were mapped
+back to the reference space for each subject using the inverted spatial transformation of the
+standardization procedure (specific aim B/2.).
+In order to study the spatial distribution of circuits and to localize distant regions
+connected to the connectivity-based mediodorsal thalamic clusters, a population-based
+representation of connectional anatomy was required. Probabilistic tractograms for each
+subject were accessed, and the emerging tract distribution images from the newly defined
+subdivisions were separated. For each brain voxel, we have assigned a label based on its
+highest probability of connection to either clusters (separately for left and right hemispheric
+clusters). Then these labeled maps were correspondingly summed through the 155 subjects.
+The pattern of this averaged tract anatomy was compared to digital atlas-based gray matter
+and white matter regions (Harvard-Oxford Cortical Atlas and Juelich Atlas of Fiber Tract
+Anatomy). Interhemispheric and inter-subject variability was estimated for the volumes of the
+connectivity-based subdivisions. Their spatial scatter from the group centroid (i.e. the average
+of coordinates) was determined in the MNI152 space. We have constructed three-dimensional
+meshes representing the 50th percentile volumes of connectivity-based domains through the
+examined population, such objects were visually compared to the atlas-based mediodorsal
+thalamic nuclei borders (specific aim B/3.).
+3.3.5. Glioma characterization: general methods
+We aimed to use DTI to characterize the spatial patterns of diffusion anisotropy in a
+pathological scenario, namely in patients with CNS gliomas and correlate such findings with
+25
+
+histological features that are used to type gliomas (aim C). More specifically, to perform
+analysis based on image features of DTI derived parametric maps, derived from the voxels of
+the tumor volumes. The final aim therefore is to reveal DTI-based imaging features that can
+be used noninvasively, preoperatively to predict the WHO grade of CNS gliomas. We also
+aimed to elucidate whether such DTI-based data are suitable for the creation of a predictive
+model that would allow determination of the grade of new cases. For this, we describe two
+main methods: the histogram approach (specific aim C/1) and glioma grade maps (specific
+aim C/2).
+Extracting imaging features for this step was carried out in the space of the diffusion
+tensor images, no registration or transformation of DTI parametric maps was performed. A
+crucial step during each procedure was the definition of tumor borders and the delineation of
+from the brain adjacent to tumor areas (BAT). The extent of the tumors and areas of tumorassociated edema were visually inspected on postcontrast T1-weighted, T2-weighted and
+FLAIR images. Regions of interests (ROI) were placed in two aspects: the tumor core and
+tumor periphery. The peripheral region was defined as the maximum high intensity
+abnormality seen on the unweighted, B0 images (non-enhancing, T2 abnormality), while the
+tumor core was outlined inside that region, on the central, low value abnormality seen on
+fractional anisotropy images. This method is similar to that of Wang et al. where they
+evaluated the feasibility of using FA and anisotropic diffusion component (q) maps to
+precisely assess changes in diffusion which are brought about by tumorous infiltration of the
+white matter [89]. Care was taken to ensure that no regions of cerebrospinal fluid are included
+inside the tumor borders and also to avoid the inclusion of the peritumoral edema in the
+analysis. In high grade tumors, the outlined tumor core were identical to the enhancing T1
+abnormality while in low grade tumors this comparison was not appropriate due to the low
+number of enhancing lesions. For the extraction of image features for assessing tumor grade,
+only the gross tumor core volumes were used, this step followed the inspection of ROIs by a
+qualified neuroradiologist. Tumor delineation procedure is illustrated in Figure 1.
+
+26
+
+Figure 1. Outlining tumors on B0 and fractional anisotropy images. First row shows axial
+images of a patient with GBM while the second row presents a typical case on a nonenhancing low grade glioma. Tumor regions were manually drawn on DTI parametric maps.
+White border delineates the following two areas: high intensity abnormal region on B0
+images (outside) and low intensity abnormal region on FA maps (inside). (a) and(d):
+postcontrast T1-weighted; (b), (e): B0 image; (c), (f): fractional anisotropy map.
+3.3.6. Glioma characterization: extracting imaging features as histograms
+We hypothesized that the characteristic shape of voxel values’ distribution over the
+entire tumor volume is represented more efficiently as histograms than the classical
+descriptors of the voxel values’ distribution. Compared with the approach of calculating the
+mean or median values of various DTI-based metrics over the tumor value, individual
+histogram channels (or bins) could be used as meaningful image features describing the
+distribution of values. We assume that the pathological attributes which characterizes a WHO
+grade II or WHO grade IV change the appearance of such histograms in a way that can be
+revealed with statistical analysis using a supervised learning method.
+To support this hypothesis, more conventional statistical parameters of regional
+diffusion distribution (i.e. means and standard deviations of diffusion tensor metrics: averaged
+27
+
+DWI, FA, longitudinal and parallel diffusivity, trace and B0) for the whole volume of each
+tumor were determined. We compared these values in low and high grade glioma groups by
+using Mann-Whitney-Wilcoxon non-parametric tests.
+The steps for determining image features as histograms were the following. Histogram
+resolution and range was uniformly defined for every image type. The interval between the
+minimum and maximum pixel values was divided into 25 equally spaced bins. The number of
+voxels in histogram bins was normalized by the total number of voxels in the sample, and
+frequency counts were plotted as a function of the bin locations. This allowed storing a
+normalized histogram for each subject and for each DTI parametric image type. Histogram
+data were saved and translated into the environment of statistical analysis. For this purpose
+and for image analysis, a dedicated program code (i.e. macro) was used in the ImageJ
+software package (National Institutes of Health, USA) [90]. Individual and group-averaged
+histograms of the tumorous voxel values on DWI, FA, trace, etc. images were generated and
+visually inspected.
+3.3.7. Glioma characterization: statistical evaluations
+Specific aim C/1 was to determine if statistical analysis on histogram bins derived
+from diffusion tensor datasets is capable of classifying gliomas according to their grade. To
+resolve this classification task, we used multivariate discriminant function analysis (MDA),
+which was carried out with the SPSS 16.0 for Windows software (SPSS Inc., Chicago, IL,
+USA).
+Multivariate discriminant function analysis, as described by Fisher [91], is a statistical
+classification method which gives insight into the relationship between group membership
+and the variables used to predict group membership. During stepwise discriminant analysis,
+variables (for specific aim C/1: normalized values of histogram channels) are reviewed and
+evaluated in order to select the ones which contribute most to the discrimination between
+groups and eventually, a discriminant score is calculated which determines predicted group
+membership. In our study, 150 variables from the histograms bins of 6 different images (i.e.
+6*25 from the following maps: B0, averaged DWI, FA, longitudinal and radial diffusivity,
+trace) were available. This approach incorporates finding a set of coefficients which, when
+multiplied by each value in the histogram, gives a score that optimally discriminates between
+the subgroups under consideration. The resulting model allows prediction of the categorical
+28
+
+variable (i.e. group) of new cases when only the independent variables are known. Further
+details on MDA can be found in the works by Rippley et al. [92] and Webb et al. [93].
+As outlined previously, each case for the aim C was labeled in agreement with the
+results of a repeated pathological evaluation of WHO grade, this data was used as ground
+truth for the classifier approach. MDA was employed to classify cases according to their
+dichotomous group membership (i.e. high grade or low grade glioma). Additionally,
+classification into 3 categories in accordance with the WHO grades (II-III-IV) was also
+performed. To evaluate the feasibility of classification on a more homogeneous patient
+database, analysis was also executed after removing the cases of oligodendroglial
+components.
+We utilized forward stepwise analysis to select the histogram bins that allowed the
+best classification of the patient dataset. Default vales of the discriminant analysis function in
+the SPSS software environment were used for this. The success rate of classification was
+described by two values. First, the classification accuracy was determined with all cases left
+in, which means post hoc prediction of the group membership. We found it necessary to
+perform a priori prediction therefore the validity of the model was assessed by a leave-oneout cross validation method. This method estimates the success of classification of each
+individual case by omitting it from the model and calculating the average rate over the 40
+cases, hence yielding a more realistic error rate which might be expected for new
+observations, i.e., new cases. For more details on the estimation of a classifier performance
+with cross-validation, see [94]. The discriminating power of the discriminant function (DF) is
+described by the Wilks’ lambda value ranging between zero and 1 (lower values mean higher
+discriminating power).
+3.3.8. Construction of glioma grade maps
+Specific aim C/2 was to introduce a new visualization approach that portrays glioma
+grade by incorporating information from postgadolinium T1- and T2-weighted, diffusionweighted and parametric images that were computed from diffusion tensor measurements.
+This would mean the voxel-wise interpretation of imaging features from a multidimensional
+dataset, where each dimension is a DTI derived parameter or T1 image intensity. The
+correlation of the multidimensional feature set and a global variable, the class of the tumor
+(i.e. the grade) is determined by a classifier algorithm. This rationale is similar to the
+29
+
+nosological maps introduced by De Edelenyi et al. [69] or the “oligo-like” and “astro-like”
+graphical representation of gliomas by Khayal and Nelson [70].
+Similarly to the image processing steps for the aim C/1, six DTI derived parametric
+maps were calculated: T2-weighted images (DWI without diffusion sensitization – B0),
+directionally averaged raw DWI images, fractional anisotropy, longitudinal and radial
+diffusivity images, mean diffusivity maps. To obtain anatomical correspondence through the
+imaging modalities, postcontrast T1 scans were coregistered with the B0 images (FLIRT affine
+registration algorithm, FSL) and finally, all images were re-sampled to smaller matrices of
+128 * 128 voxels. Intensity normalization of the T1-weighted images was performed with the
+built-in “enhance contrast” command in the ImageJ software tool [90]. Tumor outlines were
+defined identically to the method described in the section “Glioma characterization: general
+methods”.
+In the next two paragraphs, we describe the steps that were carried out to build a
+database for the classifier training. The data acquisition and image processing work flow for
+the specific aim C/2 is summarized in Figure 3. We utilized image information of the 40
+patients to generate two different databases for the classifier training procedure. In each
+database, samples represented consecutive voxels’ values on the images and a categorical
+variable was also assigned voxel-wise resulting in a total number of 8 variables per voxel.
+Database “A” provided ground truth for separating the voxels sampled from a low grade
+tumor or a high grade tumor. In contrast, the aim of database “B” was to separate tumorous
+regions from non-tumorous regions, as later described, this was only considered important for
+visualizing the results. Database “A” was built by sampling exclusively the intratumoral
+regions, the categorical variable was the tumor grade as determined by the histopathology
+workup (low grade=0; high grade=1) and this was assigned case-wise, without prior spatial
+control of the histology sampling. Database “B” included every cerebral voxels, whereas the
+eighth, dichotomous variable described whether the voxel was intratumoral (value: 1) or of
+normal-appearing brain tissue (value: 0) as determined by the tumor-mask. Database structure
+is exemplified in Figure 2.
+The relationship between imaging data and the categorical variables (i.e. tumor grade,
+tumor or normal-appearing brain tissue) was analyzed voxel-wise by utilizing a feed-forward,
+back propagation multilayer perceptron artificial neural network algorithm (ANN) in the
+SPSS 17.0 for Windows software (SPSS Inc., Chicago, IL, USA). The training regime
+30
+
+wasbased on the random splitting of the dataset into three groups, as offered by the statistical
+software: training (70% of all voxels), testing (20%) and holdout samples (10%). This
+supervised learning method resulted in two distinctive models, the first aiming to predict the
+grade of the glioma while the other assesses if the voxel is sampled from a tumor or from the
+normal-appearing brain tissue.
+After the classifier training, the image dataset was re-evaluated for each patient and
+outputs were mapped to grayscale images. The voxel-wise outputs of the neural network were
+continuous variables that estimated the likelihood of voxel group memberships. Grade map
+generation consisted of the following steps. First, we run the a priori trained neural net based
+on database “A” to generate an image yielding low- and high grade voxel membership
+probability maps (LGPM and HGPM). The value of this classifier output averaged over the
+every delineated tumorous voxels is defined as the grade index. As the cut-off value of 0.5
+was used for the ANN classifier to distinguish between a low grade or high grade voxel, by
+the same token, a total tumor grade index below 0.5 would indicate a low grade tumor and 0.5
+– 1 values would indicate a high grade tumor. Next, the second neural network estimation –
+previously trained with database “B” – resulted in an image that quantified the probability of
+tumor-like regions (tumor probability map, TPM). To provide a graphical representation,
+LGPM and HGPM images were weighted with the tumor probability maps. Eventually, we
+defined the glioma grade map as a color-coded composite image where the color lookup table
+was specified as follows. Blue shade represents low grade regions (LGPM), red shade is for
+high grade regions (HGPM), the opacity is derived from the TPM, overlaid on the coregistered anatomical T1-weighted image. Resulting images are exemplified in Figure 4.
+
+31
+
+Figure 2. Dataset structure for training an artificial neural network classifier. Individual
+samples are image voxels of 40 subjects, each given a categorical variable: tumor label (e.g.
+1 if the voxel was sampled from inside or 0 if outside a tumor), histopathological diagnosis
+(1: low grade glioma, 2: high grade glioma). Values of 6 imaging features are exemplified.
+
+Figure 3. Major data acquisition and image processing steps for specific aim C/2: to develop
+a graphical representation of the imaging-based interpretation of glioma grade referred to as
+“gliomas grade maps”.
+32
+
+Figure 4. Glioma grade map generation: calculation of intermediate grayscale images and
+the color-coded glioma grade map (study specific aim C/2). (a) Low grade tumor probability
+map (LGPM), (b) High grade tumor probability map (HGPM), (c) Tumor probability map
+(TPM), (d,e) LGPM and HGPM weighted with the TPM, (f) T1-weighted anatomical image.
+(g) Glioma grade maps are generated by assigning color-code to the probability maps (d,e)
+and merging them with the postcontrast T1 images.
+
+33
+
+4. Results
+4.1. In vivo description of the connectional anatomy of the insular cortex
+Our aim was to use DTI to study the connectional anatomy of the human cerebral
+cortex, with special focus on the insula. Based on the variability of remote connections, two
+insular subregions were
+re successfully identified in both hemispheres. The work flow of aim A
+and illustrations of the probabilistic diffusion tractography procedure is summarized in Figure
+5.
+
+connectivity
+subdomains of the insular
+i
+Figure 5.. Specific aim A: characterization of connectivity-based
+cortex. (a) Seeding mask of probabilistic diffusion tracing samples in the standard
+neuroimaging space; (b) 3D visualization of all probabilistic tracing samples emerging from
+the insular cortex for the study subjects; (c) A reordered cross-correlat
+cross correlation matrix for finding
+connectivity-based
+based clusters in the seed area; elements in the matrix represent the similarities
+between the seed voxels’ remote connections (Page 19.). (d) Back-projected
+projected connectivityconnectivity
+based clusters of one subject, overlaid on the native, T1-weighted
+T1 weighted anatomical image.
+34
+
+The stereotactic coordinates of the COGs of the newly defined insular clusters were
+consistent, with low deviation from the mean coordinates of each cluster. The spatial scatters
+from the group center were the following: X axis: 0.36 – 0.49 mm, Y axis:2.27 – 3.88 mm, Z
+axis: 1.2 – 3.73 mm.
+The population-averaged cluster map was controlled for correspondence to major
+anatomical landmarks (Figure 6.) and also, we compared results with the cytoarchictectonic
+map of the human insula (Figure 7.). As a result of the connectivity-based subdividing of the
+insular cortex, we defined an anterior (AI) and posterior insula (PI), the former extending to
+approximately one-third of the antero-posterior(AP) axis of the insula, delimited by a curved
+plane perpendicular to the AP axis. In both hemispheres, the AI comprised the limen of the
+insula and the anterior short gyri enclosed by the precentral insular sulcus and this partition
+also included the antero-ventral part of the long insular gyri. When comparing the
+connectivity-based domains with the depiction of cytoarchitectonic subdivisions, we noted a
+match between the AI and the agranular subdivision plus antero-dorsal dysgranular area was
+observed. The intersubject variability across the study population (n=40) in terms of cluster
+volumes is visualized in Figure 8.
+In the next three paragraphs, we report the quantitative results of the specific aims A/3
+and A/4. The total volume of insular gray matter was not different between the hemispheres.
+In the left hemisphere, the anterior division of the insular gray matter was found to be
+significantly larger than the posterior cluster (difference: 34.5%) while on the right side the
+two partitions were equal in volume. This asymmetry, as expressed by the AI volume to PI
+volume ratio, showed significant interhemispheric differences.
+For each connectivity cluster, the scalar properties of intra-voxel diffusion were
+determined. The degree of diffusion anisotropy, as expressed by the FA value did not present
+significant interhemispheric variability and neither was different measured on the AI/PI
+clusters in the left hemisphere. The FA value of the right AI was significantly higher than the
+PI. In both hemispheres, the mean diffusivity was consistently and significantly larger in the
+anterior connectivity partition. Cluster volumes and regional diffusion properties are
+summarized in Table 4.
+Furthermore, we visually controlled the interconnections from each (AI or PI)
+connectivity-based subdivision. In both hemispheres, tract distributions from the AI revealed
+35
+
+connections with the temporal and occipital lobe, opercular and orbitofrontal cortex,
+triangular and opercular parts of the inferior frontal gyrus. The density of pathways
+approaching the orbitofrontal and inferior frontal cortex appeared larger in left hemisphere.
+The PI subdivision showed extensive connections to the parietal and frontal lobes,
+predominantly to parts of the somatosensory, motor and premotor cortices adjacent to the
+midline. An overlap of AI/PI connections in the occipital lobe was noted. Cingular and
+thalamic connections of each connectivity-based cluster were only observed in a small
+number of cases. The AI connections were found projecting to the MD nucleus and the PI
+reaching the ventrolateral thalamus. Images showing the major domains of connections
+emerging from each insular subdivision are demonstrated in Figure 9.
+
+Left hemisphere
+
+Volume (mm3)
+(Sig. of anteroposterior volume
+difference)
+Sig. of left / right
+volume asymmetry
+Fractional anisotropy
+(Sig. of anteroposterior FA
+difference)
+Mean diffusivity
+(*10-3 mm/s2)
+(Sig. of anteroposterior MD
+difference)
+
+Right hemisphere
+
+Anterior
+cluster
+
+Posterior
+cluster
+
+AI / PI
+ratio
+
+Anterior
+cluster
+
+Posterior
+cluster
+
+AI / PI ratio
+
+3912
+± 946
+
+3466
+± 1027
+
+1.35
+± 0.9
+
+3560
+± 719
+
+3848
+± 842
+
+0.99
+±0.38
+
+(p=0.104)
+
+(p=0.047)
+
+p=0.065
+
+p=0.073
+
+p=0.027
+
+0.181
+± 0.01
+
+0.178
+± 0.02
+
+1.02
+±0.09
+
+0.182
+± 0.02
+
+(p=0.382)
+
+1.13
+± 0.1
+
+0.97
+± 0.06
+
+0.174
+± 0.01
+
+1.05
+±0.09
+
+(p=0.01)
+
+1.17
+± 0.14
+
+(p<0.001)
+
+1.17
+± 0.15
+
+0.932
+± 0.05
+
+1.26
+± 0.16
+
+(p<0.001)
+
+Table 4. Basic characteristics and measurements of the microstructural properties of water
+diffusion within the newly defined insular subdivisions, based on their patterns of remote
+connectivity (study aims A/2 and A/3). Volumes, volume ratios of the connectivity-based
+insular clusters in the subjects' native space are given. We calculated the regional values of
+diffusion characteristics: the fractional anisotropy and the mean diffusivity (MEAN ± SD). P
+values indicate the level of significance of paired, two-sided Student’s t-tests.
+
+36
+
+Figure 6. Connectivity-based
+based clusters of the human insular cortex. Top row: sagittal T1T1
+weighted MR image overlaid with the connectivity-based
+connectivity
+cortical subdivisions averaged
+through 40 subjects. Black outline: posterior insula (PI), white outline: anterior insula (AI).
+(A
+Bottom row: three-dimensional
+dimensional mesh representing the averaged anterior (white) and
+posterior insular connectivity clusters, overlay: major insular sulci. Rectangle markers:
+markers
+center-of-gravity
+gravity points of the AI subdivision of individual subjects in the standard
+sta
+stereotactical space, cross markers:
+markers center-of-gravity
+gravity of the PI subdivision of individual
+subjects.
+
+37
+
+Figure 7. Correspondence between insular anatomy and various subdivision approaches and
+imaging methods. Top left: clustering based on similarities of structural connectivity (DTI), 2way clustering. Top right: clustering based on similarities of structural connectivity (DTI), 3way clustering. Bottom left: three systems of functional connectivity identified using fMRI
+(schematic drawing based on the paper by Deen et al. 2011). Bottom right: major
+cytoarchitectural domains of the human insula. aps: anterior periinsular sulcus; sis: short
+insular sulcus; pcis: precentral insular sulcus; cis: central insular sulcus; pis: postcentral
+insular sulcus; sps: superior periinsular sulcus; ips: inferior periinsular sulcus; AI, PI:
+anterior, posterior insula; MI: dorsomedial insula (in 3-way clustering); vAI: ventro-anterior
+insula; dAI: dorso-anterior insula; Ia: agranular, Id: dysgranular, Ig: granular insula; G:
+hypergranular subdivision; VENs: von Economo neurons.
+Image credits: Bottom right figure is based on unpublished work by Gallay et al. on the
+cytoarchitectonic map of the human insula (2010 with permission).
+
+38
+
+Figure 8. Inter-subject
+subject of DTI connectivity-based clustering of the insular cortex. 3D surfaces
+were generated by accessing the 95th, 90th, 50th, 10th and 5th percentile volumes of each
+cluster assignment across the population (n=40). Major anatomical landmarks have been
+illustrated (for description of the nomenclature, see Figure 7.).
+
+Figure 9. Cross-sectional
+sectional images demonstrating the fiber tract
+tract anatomy of the connectivityconnectivity
+based insular subdivisions (specific aim A/2),, overlaid on a standard neuroimaging MRI T1weighted template (MNI152).
+152). Connection probability estimates (n=40, averaged) from the
+anterior and posterior insular subdivision depicted in three different sagittal images. The
+distance from the midline in stereotactic space is given.
+39
+
+4.2. In vivo description of the connectional anatomy of the mediodorsal thalamic nucleus
+The plane separating the connectivity-based clusters was observed to be parallel to the
+midline resulting in a medial (MDmed) and lateral (MDlat) subdivision of the mediodorsal
+nucleus. The clusters had a consistently similar shape across subjects, the center-of-gravity
+(COG) points of the three-dimensional volumes were found to be very similar, the standard
+deviation of their coordinates were below 1 mm in all axes. The medial domain was
+significantly larger than the lateral; this difference was on average 36% in both hemispheres.
+No significant interhemispheric asymmetry was observed for the cluster volumes and the
+ratios of the medial and lateral segments. Volumetric data are summarized in Table 5. which
+also includes the reproducibility of connectivity based clustering, marked by the standard
+deviations of the COG points of each cluster.
+Left hemisphere
+
+Volume (mm3)
+(Sig. of medial-lateral
+volume difference)
+Sig. of left / right
+volume asymmetry
+
+Right hemisphere
+
+MDmed
+
+MDlat
+
+med/lat ratio
+
+MDmed
+
+MDlat
+
+med/lat ratio
+
+674
+± 98
+
+535
+± 98
+
+1.33
+± 0.41
+
+680
+± 92
+
+517
+± 92
+
+1.39
+±0.44
+
+(p<0.001)
+
+(p<0.001)
+
+p=0.535
+
+p=0.051
+
+p=0.174
+
+Spatial scatter of
+centroids, X axis (mm)
+
+0.66
+
+0.82
+
+0.69
+
+0.58
+
+Spatial scatter of
+centroids, Y axis (mm)
+
+0.53
+
+0.64
+
+0.53
+
+0.46
+
+Spatial scatter of
+centroids, Z axis (mm)
+
+0.96
+
+0.98
+
+0.8
+
+0.76
+
+Table 5. Connectivity-based clusters of the human mediodorsal thalamic nucleus: volumetric
+measurements and center-of-gravity coordinates. Volumes, volume ratios of the connectivitybased insular clusters are given in the subjects' native space. P values indicate the level of
+significance of paired, two-sided Student’s t-tests.
+Next, we controlled the results for the cytoarchitecture-based subdivisions of the
+mediodorsal nucleus by comparing its borders with the nonlinearly registered thalamus atlas
+definitions of cytoarchitecture. This investigation revealed only a limited agreement between
+the average borders of the MDmed and the MDmc. The MDmed cluster extended approximately
+to one half of the latero-lateral diameter of the MD nucleus, and unlike the borders of the
+MDmc, it proportionally extends superiorly and anteriorly. The topography of the MD
+40
+
+connectivity-based clusters and the atlas-based depiction of classical anatomy are visualized
+in Figure 10.
+For each hemisphere, population-based representations of fiber tract anatomy were
+created. The probabilistic fiber tracking framework allowed following tracts until they reach
+the cortex, and even further, when the uncertainty of possible trajectories rise. Therefore we
+were able to review the clusters’ connections to atlas-defined cortical and subcortical regions.
+The MDlat cluster was the source of fibers propagating predominantly into the anterior
+thalamic radiation and terminating in the superior and middle frontal gyri. The MDmed cluster
+mainly gave rise to pathways that partially joined the inferior fronto-occipital fasciculus and
+the inferior longitudinal fasciculus, reaching the frontal orbital cortex and various temporal
+loci. No marked interhemispheric asymmetry was observed for the averaged fiber anatomy.
+For a more detailed description on interconnections of the MD clusters, see Figure 11.
+
+Figure 10. Visualization of the connectivity-based clusters of the human mediodorsal
+thalamic nucleus. Top and middle image: coronal and axial MRI images of the thalamus, with
+the connectivity-based clusters overlaid onto the MNI152 T1-weighted template. The outlines
+of the atlas-basedMDmc and MDpc+pl borders are depicted [86]). Bottom image: 3D
+representation of the 50th percentile volumes of the medial (MDmed) and lateral (MDlat)
+subdivisions, visualized with the center-of-gravity points of the segments for each subject
+(n=155).
+
+41
+
+Figure 11. Anatomy of fiber tracts emerging from the connectivity-based
+based subdivisions of the
+mediodorsal thalamic nucleus (study aim B/2).. Averaged representation of the examined
+population, connection probabilities were overlaid onto the sagittal and coronal crosscross
+sectional images of the MNI152 T1-weighted MR template. Blue overlay:
+verlay: tract trajectories
+from the MDmc cluster. Red overlay: tract trajectories from the MDlat cluster. We provide a
+description of connections to gray matter areas (Harvard-Oxford
+Oxford Cortical Atlas and
+Talairach Daemon nomenclature) and white matter structures (Jüelich Anatomical Fibers
+Atlas and Talairach Daemon nomenclature).
+
+4.3. Glioma grading by using histogram analysis of diffusion anisotropy
+We assumed that the characteristic shape of voxel values’ distribution over the entire
+tumor volume is represented
+epresented efficiently as histograms and this information can be used to
+assess the grade of gliomas (study aim C/1). Moreover, we aimed to prove that there is no
+clear correlation between the mean values of diffusion parameters over the tumor values and
+the tumor grade. Statistical descriptors of voxel-value
+voxel value distribution in the tumor ROIs were not
+42
+
+significantly different between the groups of high grade (HGG) and low grade gliomas
+(LGG); however, in high grade cases, a tendency towards higher trace values (HGG: 3.779 ±
+0.382, LGG: 3.638 ± 0.485) was discovered. The least significant group difference was
+observed when values of the directionally averaged DWI images were compared (HGG: 236.1
+± 40.1, LGG: 238.7 ± 35.1). The low significance of differences between groups suggested
+that classification is not feasible by using ROI analysis over the entire tumor volumes.
+We examined LGG and HGG group averaged histograms representing the B0, FA,
+DWI, longitudinal and radial diffusivity and trace value distributions in low and high grade
+gliomas. Groups appeared different, suggesting that classification of individual tumors may
+be possible. MDA revealed that 6 histogram bins are feasible enough for the discrimination: 3
+from the DWI images (value ranges: 100-120; 320-340; 340-360) and single bins from the B0
+(value range: 720-800), fractional anisotropy (0.1-0.12) and the longitudinal diffusivity
+images’ histograms (2.2-2.4). Figure 12. exemplifies the differences between the averaged
+histograms of low-grade (LGG) and high (HGG) grade cases. Results of the MDA evaluation
+are demonstrated in this image in a way that the histogram bins allowing the most successful
+classification of glioma subtypes are marked. A discriminant score was calculated by using
+these bins, and classification was based on these scores.
+With all cases left in, the model reached 92.5% precision in classifying cases
+according to their grade (post hoc classification). The “leave-one-out” cross-validation of the
+same dataset resulted in 87.5% success rate (a priori classification), this model resulted in
+high specificity (88.46%) and high sensitivity (85.71%) in identifying HG gliomas. The low
+Wilks’ lambda value (0.33) and high chi-square score (38.45) indicated good significance in
+discrimination for this model. Three LG gliomas were incorrectly classified as HG gliomas.
+One of these tumors was a Gr. II. oligoastrocytoma according to WHO histopathology
+criteria. It is noteworthy that 65% of the tumor cells of this lesion carried mutant p53 protein.
+The latter feature is ominous and may suggest imminent progression to a secondary
+glioblastoma multiforme. No histopathological characteristics seemed to explain the error in
+the other two cases, both of which were also Gr. II. oligoastrocytomas, unless the samples for
+histopathology were not representative. Preoperative classification of two glioblastoma
+multiforme cases was also incorrect as they were identified as LG tumors. Next, we evaluated
+the discriminant analysis on a slightly modified database: the cases with oligodendroglial
+components were omitted. This approach resulted in high specificity (100%) with low
+43
+
+sensitivity (72.7%), classification accuracy for both the training and the cross-validation
+scenario was 87%. Classifying the tumors using the histogram approach, the WHO grade IIIII-IV. separation agreed with the grading of the pathologist in 90% of the cases. By means of
+cross validation, a success rate of 80% was obtained for grouping the cases. Despite the
+relatively high overall accuracy, we must emphasize that it was not possible to classify the
+grade III. cases correctly, all the 3 cases were incorrectly categorized either as grade II. or IV.
+
+Figure 12. Averaged diffusion-tensor scalar map histograms depicting the differences
+between low grade (dotted lines) and high grade gliomas (solid lines). Six calculated images
+were used for the analysis. Although many histograms overlap, there are histogram regions
+where the percentages of the voxel populations show distinct features. Areas filled with gray
+represent the range of histogram bins that were selected during the multivariate discriminant
+analysis in order to precisely discriminate between LG and HG gliomas.
+44
+
+4.4. Characterization of gliomas by grade maps
+For the specific aim C/2, we have applied an ANN-based classifier to create
+parametric maps depicting locally interpreted gliomas grade. This classification was based on
+a multidimensional dataset consisting of features from the diffusion tensor dataset and T1
+weighted images of the subjects. Here we report the voxel-wise precision of these two
+classifiers in terms of classifying samples (voxels). The first neural network predicted the
+grade of voxels inside the tumor borders with 82.12 ± 1.84% accuracy (average of 10 runs,
+tested on the independent holdout sample, putatively marking the accuracy for new
+observations). Next, the intratumoral voxel membership was estimated correctly in 86.44 ±
+0.41% of the samples. Grade index was calculated for each outlined tumor volume. For low
+grade cases it was 0.281 ± 0.164 (range 0.012 – 0.601) while in high grade lesions it was
+0.646 ± 0.148 (range 0.331 – 0.837), the difference was significant (p<0.001, Mann-Whitney
+U test). Additionally, the grade index showed high correlation with the WHO grade (i.e. II, III
+or IV); Pearson score: 0.709, p<0.001. With the cut-off point set to 0.5, the grade index could
+identify high grade cases with 92.31% specificity, 85.71% sensitivity, AUC: 0.967.
+Visual assessment of the TPM (tumor probability map) images, T1 anatomical scans
+and tumor outline ground truth data revealed good correspondence with the predicted borders,
+with the following exceptions. Normal-appearing brain regions contained false positive voxels
+with either blue or red appearance, mainly matching the borders of the gray matter and the
+cerebrospinal fluid. This error was reported in 8 cases and could presumably be attributed to
+partial voluming or coregistration artifacts (Figure 13/e, white arrow). Six illustrative images
+of various glioma subtypes and WHO grades were selected to demonstrate the diagnostic
+features of grade maps (Figure 13).
+The appearance of astrocytoma, oligoastrocytoma grade II and oligodendroglioma
+grade II tumors on the color-coded grade maps was blue (Figure13/a). Sparse high-grade
+regions were identified in about six of the 17 non-enhancing and otherwise homogeneous
+low-grade tumors (Figure13/b) while the focal heterogeneity as marked by contrastenhancement was revealed correctly in 77.8% (7/9) by regions of red hue in low grade
+gliomas. WHO grade III (high grade) oligoastrocytomas (Figure13/c) and glioblastoma
+multiformes predominantly appeared purple to red, with marked heterogeneity as indicated by
+blue patches (Figure13/d). In 4 of 40 cases, classification by the grade index proved incorrect,
+for which the following facts are assumed to be responsible. In a patient with a voluminous
+45
+
+glioblastoma multiforme (Figure13/f) this could be putatively ascribed to the relatively high
+presence of necrotic areas in the tumor, unmasked during the classifier training, hence areas
+inside necrotic masses were predominantly recognized as low-grade with markedly highgrade rims that closely resembled the contrast-enhancing areas on T1 scans. In the other
+misclassified high-grade case we found no justification for the result, although the designated
+grade index was just below the cut-off point.
+
+The grade indices for the misclassified
+
+glioblastoma multiforme tumors were 0.331 and 0.48, respectively. Two low-grade tumors
+were improperly classified. In one case the pathologist described high Mib-1 labeling index
+(20%), hyperchromatic nuclei, geometric neovascularisation and a cellular atypia almost
+reaching the criteria for grade III classification; further on, closer clinical inspection was
+suggested for the neuro-oncology team. A cross-section image from the grade map of this
+case is shown in Figure13/e.
+
+46
+
+Figure 13. Graphical representation of the imaging-based interpretation of glioma grade
+(study specific aim C/2). Color-coded glioma grade maps depicting various glioma cases. (a)
+astrocytoma gr. II. tumors are shown as predominantly blue lesions. (b) oligoastrocytoma gr.
+II. In a number of cases where the histopathological evaluation judged the lesion as lowgrade, the grade maps revealed focal heterogeneity. (c) this astrocytoma gr. III. displays
+pronounced regional heterogeneity on the glioma grade map; whereas the contrast enhancing
+regions are well co-localized with the red regions resembling high grade characteristics. (d)
+Glioblastoma multiforme tumor. (e) a misclassified low-grade case with high cellular atypia.
+Coregistration and partial volume errors are observed outside the lesion (arrow). (f)
+glioblastoma multiforme with voluminous necrotic areas, incorrectly classified as low-grade.
+
+47
+
+5. Discussion
+During the last 25 years, diffusion MRI (dMRI) has been widely investigated as a
+promising modality to image and characterize neurological disorders. dMRI is generally
+acknowledged as a noninvasive tool to study the white matter organization and
+microstructure. This rationale gave rise to a new field of research that uses DTI and a new
+family of image processing techniques to discover brain connectivity and white matter
+anatomy in living patients and normal subjects [2, 95]. It has been suggested that the subtle
+changes of diffusion microenvironment can precede macroscopic anatomical alterations and
+hence diffusion MRI potentially unveils pathological processes in a way that is not accessible
+with conventional (i.e. T1 or T2 weighted) magnetic resonance imaging [96, 97].
+The main focus of our investigation was to use DTI and related image processing
+methodologies to characterize individual anisotropy patterns of cerebral water diffusion in
+physiological and pathological scenarios. First, to demonstrate the applicability of DTI in
+portraying new aspects of the macroscopic anatomy of the human brain, we chose to study the
+connectional anatomy of the insula and the mediodorsal thalamic nucleus.
+
+5.1. Using DTI to study the connectional anatomy of the insula
+Early endeavors to map the human cortex, such as works by K. Brodmann and Von
+Economo, discovered a limited agreement between macroscopic structures of the brain (gyral
+or sulcal anatomy) and the organization defined by fine microstructural features like the
+cytoarchitecture [98, 99]. The same ambiguity is present when attempting to define cortical
+areas based on similarities in activation patterns when performing executive or cognitive
+tasks, evidence comes from a large number of neuroimaging studies employing functional
+MRI. Revitalized by tractography and related techniques, the hodological (i.e. connectionist)
+approach identifies cortical regions that receive or send out similar connections [100, 79, 81].
+Such parcellations potentially generate interest by exploring the human connectional
+neuroanatomy, nonetheless facilitating the understanding of the cortical representations of
+major neurocognitive networks.
+We used diffusion tractography data to reveal changes in insular connectivity profile
+by executing a k-means clustering method that labels adjacent areas based on the similarities
+in the distribution of remote connections. As an initial hypothesis, the algorithms were forced
+48
+
+to search for two segments in the insular gray matter. The impetus for this assumption was
+that most studies on functional connectivity utilizing resting-state fMRI (r-fMRI)
+predominantly described a twofold division of the insula into an anteroventral and
+posterodorsal cluster [24], however, a threefold functional parcellation was also suggested
+[101]. Parcellating the insula based on diffusion tensor tractography demonstrated a gradual
+change in tractography patterns with a rostrocaudal trajectory [102].
+We conclude that the DTI-based segmentation greatly overlaps with the same
+depictions of studies using fMRI [24, 101]. It is noteworthy that connections of the ventral
+part of the long insular gyri and the anterior short insular gyri are similar, this coherence was
+more pronounced on the structural connectivity segmentations where a larger proportion of
+the long gyri were included in the area denoted as anterior insula (AI). There is evidence from
+primates [21-23, 103] and humans that the anterior insula presents a significantly different
+cytoarchitecture as well as afferent and efferent connectivity than the posterior division. The
+AI, as defined by its connections, embodied the agranular and part of dysgranular insula
+which is known to be interconnected to the frontal, orbitofrontal cortex and the amygdaloid
+body in macaque monkeys [104, 105].
+Connectivity data of the human insula is relatively sparse and limited to observations
+from resting state fMRI measurements or depictions of anatomical connectivity by means of
+diffusion tensor tractography. A study by Cauda and co-authors [24] concluded that the
+ventralmost anterior insula is functionally interconnected (i.e., shows temporal correlation of
+activation patterns) to the rostral anterior cingulate cortex, middle and inferior frontal cortex
+and the temporoparietal cortex while the dorsal posterior insula is connected to various
+cortical targets like the dorsal-posterior cingulate, premotor, supplementary motor, temporal
+and occipital cortex. While tract tracing studies from primates describe complex, regionspecific thalamic projections to both the anterior and posterior insula [106], a human fMRI
+study conflicts with such observations by reporting less pronounced or non-existing posterior
+insular connection with the thalamus [24]. When controlling the fiber tract anatomy from each
+connectivity cluster in both hemispheres, we discovered tracts anatomy similar to those of
+resting state fMRI studies.
+Our findings imply that connections of the anterior insula have larger leftward
+representation relative to the total insular gray matter volume; this leftward dominance of
+prefrontal and frontal connections coincides with the observations on forebrain asymmetry
+49
+
+[107] or lateralization of prefrontal activations, the latter already described as a biomarker for
+ingestive behavior [108]. Our result of a larger connectome of the left AI partially conflicts
+with the observation by Cauda et al., where it was shown that the anterior cluster is rightward
+dominant. However, this type of interhemispheric dominance is marked by the strength
+(degree of temporal correlation) of functional and not structural connectivity [24]. In contrast
+to a previous study using high-resolution MRI scans to assess the structural asymmetries
+[109], we reported no interhemispheric differences of the overall volume of insular gray
+matter. It is disputable whether our findings of larger left anterior cluster can be attributed to
+the structural asymmetry of the AI shown by Watkins et al., as our interpretation of the
+anterior division was independent of gyral anatomy. Further support for our results on
+interhemispheric differences comes from a study by Cao et al. [110] which demonstrated a
+marked L-R asymmetry of anisotropy (i.e. the “orderliness” of diffusion) of the subinsular
+white matter, implying a putative interhemipsheric asymmetry in the trajectory or density of
+pathways emerging from or projecting to the insula. The higher mean diffusivity, which is a
+directionless descriptor of the magnitude of diffusion, hallmarks different water
+microenvironment in the anterior insula albeit not displaying pronounced interhemispheric
+variability.
+
+5.2. Using DTI to study the connectional anatomy of the thalamus mediodorsal nucleus
+In order to further demonstrate the applicability of DTI to study the connectional
+anatomy of the human brain, we focused on the mediodorsal thalamic nucleus. As outlined in
+the study specific aims B/1 – B/3, we aimed to use probabilistic diffusion tractography to
+trace the interconnections between the human mediodorsal thalamic nucleus and the cerebral
+cortex. Such data can be used to define connectivity-based subdomains in the mediodorsal
+nucleus (MD), similarly to our study on the insula. This was done by automatically defining
+two regions within the MD that presented a coherent and correlated distribution of remote
+connections. As a continuation of studies attempting to discern the human corticothalamic
+networks [111, 112, 31], we report the identification of two separated cortico-mediodorsal
+networks that did not require the subsequent definition of atlas-based cortical targets when
+performing tractography. This is a major difference compared to the study by Klein et al.,
+where the delineation of the putative dorsolateral prefrontal cortex (DLPFC), lateral
+orbitofrontal cortex (LOFC) and anterior cingulate cortex (ACC) was necessary. The
+approach by Klein’s workgroup was found feasible to localize subdivisions of the human
+50
+
+mediodorsal nucleus (namely the MDpc, MDfi and caudodorsal MD) based on prior
+knowledge about cortical projections; moreover, they unveiled remarkable similarities with
+the macaque brain.
+We identified two subdomains in the human mediodorsal nucleus that are separated by
+a border almost parallel to the sagittal plane: medial part (MDmed) and lateral part (MDlat). We
+controlled the appearance of the connectivity-based subdivisions to the non-linearly matched,
+histology-based atlas regions. This separation created a medial segment which is similar to the
+magnocellular part of the mediodorsal nucleus (MDmc), but slightly larger than that and
+incorporates more than half of the total MD volume. When comparing this observation with
+earlier tract tracer studies in primates, it was noticeable that such experiments also revealed a
+sagittally oriented, band-like organization in the MD connectivity patterns [113, 114, 40]. The
+fiber tracts arising from the connectivity-based segments are in accordance with previous
+findings using in vivo techniques [112, 31]. The medial band has interconnections with the
+orbitofrontal cortex and the most rostral parts of the frontal convexities, the frontal pole; while
+the lateral band is connected to cortical strips that are more superiorly located, e.g. the
+dorsolateral prefrontal cortex. Klein and colleagues reported a third, cortico-mediodorsal
+circuit that matched the predictions from macaque: projections from the anterior cingulate
+cortex (ACC) and the lateral orbitofrontal cortex are separately located in the mediodorsal
+nucleus, namely in the caudo-dorsolateral parts [115]. Our experiments did not allow
+separating more than two components of the cortex-mediodorsal thalamus circuitry. Hence it
+is assumed that the thalamic sector with interconnections to the ACC remained
+undistinguishable from the MDlat cluster.
+We revealed connections between the medial band of the MD (MDmed) and three target
+loci in the temporal lobe: the temporal pole, amygdala and the anterior part of the
+parahippocampal gyrus. Such connections to the amygdala are in agreement with the findings
+in Cynomolgus monkeys where predominantly the basal group gave rise to axons connecting
+to the magnocellular (medial) part of the mediodorsal thalamic nucleus [116]. Classical tract
+tracing studies in primates confirm the existing connection between the temporopolar cortex
+and the magnocellular division of the mediodorsal thalamic nucleus [117]. The
+parahippocampal gyrus was found to be interconnected to both the caudal sector of the MD
+and the MDmc [118], this only partially overlaps with our observation that the medial band
+sends connections to the anterior parts of the parahippocampal gyrus. Inputs to the MD from
+51
+
+visually responsive regions were also reported in cats, these were mainly projecting to the
+anterior and central sectors of the MD [119], such connections were presumably located to the
+MDmed volume in our definition.
+Neuroanatomical models describe at least five distinct, segregated frontal-subcortical
+(i.e., cortico-striato-pallidal-thalamocortical) circuits [46, 120]. It is acknowledged that these
+networks are organized in parallel but remain partially segregated from each other, especially
+at subcortical levels. Literature supports our observation that the segregated nature of such
+networks can be studied by using in vivo probabilistic diffusion tractography or functional
+MRI and strong correlation can be revealed with previously reported invasive tracing studies
+[121, 122]. Two segregated networks are known to be involved in motor functioning,
+originating in the supplementary motor area and the frontal eye fields and mediating
+somatomotor and oculomotor functions, respectively. Masterman and colleagues emphasized
+that three of these circuits are particularly mediating aspects of cognition and behavior and the
+mediodorsal nucleus is accepted as an intermediary relay station for such functions, this role
+was acknowledged and used as a basis for other works as well [123,124]. These circuits are
+acknowledged to originate from the DLPFC, orbitofrontal cortex and the ACC. The
+trajectories of two “cognitive” circuits greatly coincide with the results of the present study
+suggesting that the two revealed subdivisions might be the thalamic representations of the
+DLPFC (MDlat) and the orbitofrontal (MDmed) segregated networks. This is further supported
+by the fact that in our study, the algorithms were forced to search for two networks that pass
+through or originate from the mediodorsal thalamic nucleus and differ from each other with
+the largest possible degree.
+Our approach to study the connectional anatomy of the human thalamus has several
+limitations. Diffusion tensor imaging and tractography methods were found plausible in
+recognizing major white matter structures but it is impossible to identify functional
+connections, individual synapses or tract polarity. Data acquisition is limited to elementary
+volumes of 4-8 mm3 which is potentially composed of tens of thousands of individual axons
+that are not necessarily coherent but cross, converge or diverge. Thus the estimation of
+multiple fiber directions per voxels is necessary, the applied protocol and the relatively high
+angular resolution of diffusion-weighting (64 directions) allowed us to approximate two of
+such populations. Furthermore, the definition of gross mediodorsal nucleus borders represents
+a further possible source of errors. In our case, a mean representation of thalamus geometry
+52
+
+and a non-linear matching method was used that have limited capabilities in tackling with
+individual variations of fine intrathalamic anatomy. Further studies are required to
+quantitatively study and validate such of atlas-to-patient registrations.
+When studying the connectional anatomy of the insula, the number of diffusion
+weighting directions (12) allowed estimating one fiber population per voxel, this inherently
+affects the result of probabilistic tracking of connections. While it is generally acknowledged
+that brain voxels tend to have multiple fiber directions (e.g. as crossing-fibers), a study on the
+added-value of multi-orientation models concluded that secondary fibers become less
+important when performing connectivity-based segmentations; e.g., in the thalamus [125].
+The quality of the DTI acquisitions for the specific aim A was also compromised by the
+anisotropic size of image voxels, i.e. 1.5 * 1.5 * 3.3 mm. We also highlight that to overcome
+the possible limitations of using a single modality, it would be necessary to conduct
+confirmatory studies using task based or resting-state fMRI, where the main goal would be to
+reveal similar subdivision patterns and interactions with psychological measurements.
+
+5.3. Characterization of gliomas by histogram analysis of diffusion anisotropy
+Previously in this study, we have shown the applicability of diffusion tensor imaging
+and mapping of structural connections to study the normal anatomy of the human brain. We
+further hypothesized that DTI can be used to characterize the spatial patterns of diffusion
+anisotropy within CNS gliomas and the correlation of such findings with histological features
+are beneficial in typing (i.e., grading) gliomas.
+We aimed this part of our work at the clarification of the interrelationship between the
+anisotropy patterns of cerebral water diffusion and various grades of gliomas (study aim C).
+To meet this goal, B0, directionally averaged DWI, FA, longitudinal, radial diffusivity and
+mean diffusivity (=trace) were analyzed retrospectively. We discarded the hypothesis that
+mean voxel values over ROIs might be sufficient enough to assess tumor grade or match any
+other type of tumor classification. A feature selection from the dataset of individual histogram
+bins was performed in order to assign a discriminant score (MDA) that allows the best
+discrimination between tumor classes (grades or histopathological types). Therefore, the
+MDA score incorporates information from the entire histogram in a way that has been
+optimized to place the most emphasis on those parts that contribute most to the separation of
+the groups. A classifier model using 6 histogram variables was feasible enough to delineate
+53
+
+low- and high-grade tumors: evaluating this discriminant function on these particular
+histogram bins of any new case would yield an estimated tumor grade, the discriminant score
+was significantly different between the two grade classes (p<0.001). Most variables were
+selected from the DWI histograms. It appears that the heterogeneity among high-grade tumors
+results in a more deviated and less kurtotic distribution of DWI values while the low-grade
+cases tend to have
+
+modal value of 250 (Figure 12.) and relatively less deviation. The
+
+histogram approach revealed that histogram channels far from the peak can discriminate
+between the two groups. Others reported a correlation between the information obtained from
+fractional anisotropy of diffusion coefficient images and tumors’ grade [126, 127]. According
+to these reports there exists a correlation between the information obtained from fractional
+anisotropy of diffusion coefficient images and tumors’ grade. Our results contradict this
+statement since we found no significant differences between mean FA values which
+characterize different tumor grades. The explanation for the variables selected still remains
+mathematical; however, it can be concluded that – with the histogram approach – radial
+diffusivity and trace (ADC*3) maps cannot discriminate between LG and HG tumors when
+tumors with various tissue compositions are used in the database.
+Our observations support the hypothesis that intratumoral heterogeneity can be
+depicted by calculating histograms for the tumor volume. Clonal selection within tumors is
+common and is indicated by locally altered diffusion characteristics which result in the
+modified distribution of voxels’ values as indicated by a new peak on the histogram. Such
+changes do not necessarily affect the mean or median values of the entire voxel population,
+but significantly change the value of an individual histogram bin.
+Preoperative classification of gliomas based on diffusion tensor imaging requires a
+complex dissection of data. This includes creation of histograms which properly represent
+individual variations of diffusion values inside the tumors and thus more precise
+characterization of gliomas becomes possible. This particular statistical approach to tumor
+classification is superior to those employing single parameters, like employing histogram
+peak position determination in order to characterize any given histogram. We here
+quantitatively show that it is more efficient to use MDA of histograms than rely on statistical
+descriptors (like mean values or standard deviations) of unimodal histograms. The MDA
+score is adequate for the decision on which group does any individual histogram belong to.
+Arvinda and colleagues presented a method that employed data from perfusion- and diffusion54
+
+weighted imaging and defined cut-off values for accurate classification [128]. Our results
+regarding the differentiation of LG and HG gliomas had similar specificity values (Arvinda et
+al.: 87.1% vs. our 88.4%) while the sensitivity was lower in our approach (Arvinda et al.: 9095% vs. our 85.7%). In our investigation, the estimation of the classifier performance was
+defined after leave-one-out cross-validation resulting in an inherently lower specificity and
+sensitivity compared to the studies that evaluate the discrimination power on the original
+database.
+Important limitations of the present study are the relatively low number of cases (40)
+on the one hand and the unequal representation of LG and HG cases on the other (13 vs. 27).
+There is also an ambiguity about the correctness of the pathology workup due to the fact that
+tissue sampling is not representative for the entire lesion. Even though the radiological
+workup was prepared to represent the whole tumor volume, the diagnoses used to “train” the
+database originated from the histopathological findings. We also point out that the
+discrimination of WHO grade III. cases was insufficient.
+Despite all the benefits of multimodal imaging, borders of especially low grade
+gliomas remain ill-defined and therefore ROI placement is a major cornerstone in the
+statistical analysis of radiological data. We find it important to minimize the involvement of
+voxels from non-tumorous areas in the statistical analysis and we suggest the exclusion of
+displaced or infiltrated WM tracts from the histogram construction; however, eventually
+measurements of various zones within any given tumor seem inevitable. When delineating
+HG tumors, the contrast enhancing rims engulfing a necrotic center putatively marks the
+active part of the tumor, however, this distinction is yet impossible for low grade gliomas. We
+applied fractional anisotropy images to visualize regions within the tumor where white matter
+integrity is severely disrupted (i.e. this is hallmarked by low FA values). For such tumors, this
+region was used as a guidance to outline the three-dimensional volume for the statistical
+analysis. Similarly, defining the BAT in low grades is not possible unambiguously. We note
+that the displaced, splayed tracts surrounding the main tumor parts on FA images may
+indicate relatively spared white matter, but the modality to assess the magnitude of tumorous
+infiltration is not available yet.
+The variations in fractional anisotropy histograms were insignificant between low- and
+high-grade tumors but the discriminant analysis included an FA bin as well (Figure 12.)
+consequently highlighting the vulnerability of this unsupervised method for the selection of
+55
+
+features to discriminate between tumor grades. It is highly likely that increasing the number of
+cases will result in a parallel increase in the reliability of the model therefore it would be
+desirable to validate the results on a larger set of patients in future studies. The clinical
+importance of this evolution is obvious: an interdependent evaluation of radiographic
+(imaging) and morphological (histopathological) data will definitely serve the improvement
+of therapeutic interventional thinking in glioma patients’ proper care.
+
+5.4. Characterization of gliomas by grade maps
+The current gold standard for determining glioma subtype and grade is surgical biopsy
+which is subject to sampling errors. Small volume surgical samples may not represent the
+entire tumor and due to the marked focal heterogeneity of gliomas it may lead to the false
+determination of subtype. Valuable radiological features of high-grade gliomas on
+gadolinium-enhanced MR images are signal intensity heterogeneity, necrosis, hemorrhage,
+degree of edema and mass effect. To precisely characterize an entity of pronounced
+heterogeneity like gliomas, further information is required: perfusion studies, MR
+spectroscopy and diffusion measurements were found feasible for this objective.
+
+Such
+
+modalities allow calculating functional maps and imaging biomarkers and have been shown to
+play a complementary role in assessing therapy response or pattern of recurrence [129, 130,
+67, 58, 68].
+The specific aim C/2 of our study was to develop a graphical representation of the
+imaging-based interpretation of glioma grade. This was done by correlating the DTI and post
+gadolinium T1-weighted image derived parameters’ in every voxel with the grade of the
+tumor assigned by a pathologist, and training (optimizing) a neural network-based software
+classifier to feasibly discriminate every voxel from a low grade and a high grade glioma. Two
+databases comprising voxel-wise image data of 40 glioma patients were construed whereas
+artificial neural network computing was utilized to re-classify the original image voxels and
+by the same token, it becomes possible to classify voxels of undiagnosed cases. Grayscale
+images were generated that depicted the probabilities of tumor classification (LGPM and
+HGPM). Eventually, they were combined to produce color-coded composite images, the
+grade map (Figure 4.). The neural network approach was effective in determining tumor grade
+of individual voxels whereas a new variable calculated from the voxel-wise outputs of the
+classifier – the grade index of entire tumor volumes – allowed sufficient classification. In
+terms of the correct determination of glioma grade, our results exceed the diagnostic power of
+56
+
+conventional MR imaging as described by Law et al. (postgadolinium MRI: 72.5%
+sensitivity, 65% specificity; grade index classification: 85.7% sensitivity, 92.3% specificity);
+however, it was reported that the feasibility of using perfusion MRI data vastly improves
+(95% sensitivity; 57.5% specificity) [61]. Arvinda and co-authors found that ADC, perfusion
+measurements and their combination could be successfully employed to characterize glioma
+grade [128]. Herein we report similar results, the grade index being more specific compared
+to the ADC values alone (92.3% and 87.1%, respectively). While conventional MR imaging
+provides usable features to discriminate grade IV (GBM) tumors from grade II malignancies,
+the separation of grade III. anaplastic astrocytomas from low grades is inefficient. White and
+co-authors described that fractional anisotropy (FA) values and descriptors of the distribution
+of such values over the tumor volume can increase the sensitivity of grade II. – III.
+discrimination [131]. Our method provides a novel way to incorporate FA as a feature.
+The presented grade map method has several limitations. The reproducibility of the
+artificial neural network (ANN) algorithm is often disputed; it is generally considered as a
+“black box” rather than an analytical approach. Increasing the number of processing layers in
+the ANN will reduce the classification error but consequently causes a loss of generalizability
+[74]. In our investigation, the number of samples (i.e. voxels) was high and the resulting
+network structure was kept simple, hence we conclude that the network is not overtrained. It
+is believed that reproducibility issues would partially be resolved by employing other
+algorithms such as support vector machines which has already been shown promising in
+glioma grading [132]. Nevertheless, prospective clinical testing is necessary to evaluate
+whether a radiologist can perform better with the presented tool than without it. We
+hypothesized that during the training procedure it is feasible to assign the same categorical
+diagnosis for each voxel in one particular tumor; however, this presumption required that
+pathological diagnoses were made from the analyses of representative tissue samples.
+Matching a specific set of voxels to the position of the surgical sampling would enable better
+correlation of voxel-wise imaging data and tumor grade. If the assumption is true that the
+grade index is a quantitative biomarker for depicting alterations in glioma microstructure
+representative for biological progression, it may also be hypothesized that the values of this
+biomarker for grade III. tumors are between the values of grade II. and IV. gliomas. Albeit
+this was not confirmed by our study, the two grade III case had higher grade indices compared
+to low grade samples: 0.673 ± 0.161 and 0.281 ± 0.164. This unusual distribution of grade
+indices in grade III. tumors could be attributed to the low number of cases. Another limitation
+57
+
+in our study design is the inclusion of tumors with mixed tissue composition like
+oligodendrogliomas. It is not evident that the same characteristic changes occur in terms of
+diffusion or relaxation parameters during the transition from any glioma subtype to higher
+grades therefore making it harder to generalize this phenomenon.
+Szabo De Edelenyi and colleagues found that multidimensional MRI data could be
+used to create images demonstrating the classification or “nosology” of brain neoplasms;
+moreover, they suggested incorporating diffusion data in similar future studies [69]. To the
+best of our knowledge, this is the first study that performs glioma characterization using
+machine-learning algorithms that combine imaging data of T1- and T2-weighted, diffusion
+anisotropy and apparent diffusion coefficient information.
+
+58
+
+5.5 Conclusions
+Specific aim A/1. In vivo probabilistic tracking of structural connections using diffusion
+tensor data provides a novel window on neuroanatomy that was previously unavailable. We
+used a representative subject population of 40 people to demonstrate the averaged tract
+anatomy emerging from the human insula. Such fiber tracts were clustered into two distinct
+populations, originating from the anterior and posterior insula. We provided evidence that the
+in vivo tract anatomy is similar to the depiction of trajectories by tract tracing studies in
+primates.
+Specific aim A/2. Two subdomains in the human insular cortex were revealed using a kmeans approach to cluster the structural connections from this region. We defined them as
+anterior insula (AI) and posterior insula (PI). Reproducibility across the subject was good,
+with a marked rostro-caudal variability of the fiber trajectories.
+Specific aim A/3. We observed interhemispheric asymmetry in the volumes of connectivitybased subdivisions. This putatively marked a leftward functional dominance of the anterior
+insula and its reciprocally interconnected targets which influences the size of insular area
+where similar connections are represented. The mean diffusivity (i.e. magnitude of diffusion)
+was higher in the anterior insula in both hemispheres while the anisotropy was not different.
+Specific aim A/4. The outlines of the change in connectivity profile did not respect the known
+cytoarchitectural subdivisions and were shown to be independent from the gyral anatomy.
+Similarly to the literature, we demonstrated a rostro-caudal changing pattern of connectivity
+domains.
+Specific aim B/1. Similarly to the relevant studies in this area, diffusion tractography was
+plausible to reveal the distribution of thalamocortical (or cortico-thalamic) connectivities.
+Details about the fiber tract anatomy arising from the mediodorsal thalamic nucleus were
+provided, which presents a good overlap with the classical descriptions of thalamocortical
+connections in primates or with other in vivo studies on humans.
+Specific aim B/2. Two subdivisions were described within the thalamus mediodorsal nucleus;
+the areas were defined based on the similarities of the remote connections. The separation
+border of the connectivity-based clusters was observed to be parallel to the midline resulting
+
+59
+
+in a medial (MDmed) and lateral (MDlat) subdivision of the mediodorsal nucleus, this
+separation was very reproducible across a population of 155 subjects.
+Specific aim B/3. This investigation revealed only a limited agreement between the borders of
+the connectivity-based subdivisions and the classical, cytoarchitecturally described areas (e.g.:
+MDmed vs. MDmc). The MDmed cluster extended approximately to one half of the laterolateral diameter of the MD nucleus, and unlike the borders of the MDmc, it proportionally
+extends superiorly and anteriorly.
+Specific aim C/1. Constructing histograms of preoperative radiological images over the tumor
+volume is a feasible technique to extract image features. DTI derived parameters such as
+values from the B0, fractional anisotropy, mean diffusivity, etc. images can be incorporated in
+such a method. When using parametric images from diffusion tensor datasets, this approach
+allows representation of the grade and enables discrimination of LG and HG gliomas
+plausibly which has been confirmed by histopathology.
+Specific aim C/2. Grade maps are graphical representations of tumor subtype and
+heterogeneity whilst the grade index was defined as an overall estimate of tumor grade as
+determined by the assignments of classifiers. In a number of cases, our findings allowed
+identification of tumors with prominent regional heterogeneity and marked biological
+progression. The glioma grade map might serve as an imaging biomarker for the
+characterization of brain gliomas and complement preoperative information available for
+clinicians.
+
+60
+
+6. Summary
+Water is a fundamental constituent of living creatures and tissue water is structured
+according to the characteristic features of any given tissue type. A unique property of the
+brain is that the propagation of water molecules is hindered by microscopic obstacles like the
+axonal membranes, myelin sheath or the extracellular matrix, resulting in anisotropic
+diffusion. Diffusion tensor magnetic resonance imaging (DTI) provides non-invasive
+depiction of diffusion through sampling the magnitude and orientation of diffusion
+anisotropy. Our first study aim was to apply DTI and related image processing techniques to
+describe normal diffusion anisotropy patterns in the human brain in vivo. We assume that such
+technique can provide information on the connectional topography of different brain areas
+over large subject groups; we aimed to reveal the distribution of structural connections from
+the human insular cortex and the mediodorsal nucleus (MD) of the thalamus. Secondly, we
+focused on the anisotropy patterns of diffusion in pathological conditions, more specifically,
+to portray the diffusion characteristics in brain neoplasms of glial origin of various WHO
+grades.
+We utilized standard image processing techniques to describe the connectional
+anatomy of the human insula and the mediodorsal thalamic nucleus. Our explorations
+included the analysis of 40 and 155 healthy volunteers when studying the normal anisotropy
+patterns; whereas we used 40 glioma patients for the second aim. Probabilistic DTI
+tractography was used to map the fiber pathways emerging from the observed areas.
+Subdomains were mathematically separated that were different in terms of remote
+interconnections. For the glioma patients, histograms of DTI derived images were fed into a
+discriminant function analysis based classifier which correlated the features with the
+histopathologically defined grade.
+Fiber tracts were separated into two clusters, originating from the anterior and
+posterior insula and interhemispheric asymmetry was revealed in such connectivity-based
+clusters; mean diffusivity values were higher in the anterior insula. We confirmed a rostrocaudal changing pattern of connectivity domains. We provide a description of the two
+connectivity-based clusters in the MD. Patterns of diffusion anisotropy of preoperative DTI
+images allowed the prediction of glioma grade with 88.5% specificity and 85.7% sensitivity
+by using the histogram analysis method.
+In vivo probabilistic tracking of structural connections using DTI data provides a
+novel window on neuroanatomy that was previously unavailable. We provided evidence that
+the in vivo tract anatomy of the insula and MD is similar to the depiction of trajectories by
+tract tracing studies in primates. Connectivity-based parcellation of the insular cortex and the
+mediodorsal thalamic nucleus revealed distinct and separated networks originating from these
+territories. The characterization of anisotropy patterns in brain gliomas allowed us to construct
+a classifier model that is feasible for the non-invasive, imaging based preoperative
+determination of grade.
+61
+
+Összefoglalás
+A víz alapvető összetevője az élő szervezeteknek, a víz eloszlása, “strukturáltsága”
+jellegzetes módon követi az adott szöveti környezet szerkezetét. Az agyszövetek
+mikroszkopikus felépítése különleges, a vízmolekulák mozgását bizonyos alkotóelemek
+korlátozzák és a vízdiffúziót anizotróppá teszik – ilyen bizonyított struktúrák az
+axonmembránok, myelinhüvely vagy az extracelluláris mátrix. A diffúziós tenzor mágneses
+rezonanciás képalkotás (DTI) a diffúziós folyamat non-invazív ábrázolását teszi lehetővé a
+diffúziós anizotrópia és diffúziós irányok mérésével. Kutatásunk első célja a DTI és
+képfeldolgozó módszerek alkalmazása volt a normál agyszövetek diffúziós anizotrópia
+mintázatának feltárására. E technikák segítségével az anatómiai kapcsolatok topográfiája is
+meghatározható nagyobb esetcsoportokban; a humán insuláris cortex és a thalamus nucleus
+mediodorsalis (MD) kapcsolatrendszerének jellemzését is célul tűztük ki. Második célunk a
+diffúziós terek kóros körülmények közötti jellemzése volt, mely célból különböző WHO
+grádusú agyi glioma DTI adatait elemeztük
+A DTI képfeldolgozás és során standard módszereket alkalmaztunk, mellyel a humán
+insula és MD kapcsolati anatómiája jól leírható in vivo. E célok eléréséhez 40 valamint 155
+egészséges alany felvételeit használtuk; a gliomákat tartalmazó adatbázisunk 40 beteg képeit
+tartalmazta. Probabilisztikus DTI traktográfiát alkalmaztunk a vizsgálati területekről eredő
+rostrendszerek kimutatására; alterületeket különítettünk a távoli kapcsolati mintázatok
+matematikai elemzésével. A gliomás betegcsoport esetén a DTI-ből származtatható képek
+hisztogramjainak elemzésével hoztunk létre egy diszkriminancia analízis alapú klasszifikációs
+modellt, ami ezeket a tulajdonságokat a grádusbecslésre alkalmazza. .
+Eredményeink a következők. Az insulából származó rostrendszer alapján anterior és
+posterior insularis területeket különítettünk el, melyek féltekék közötti méretbeli aszimmetriát
+mutattak, az anterior insula átlagos diffuzivitás értékei magasabbak voltak a hátulsó
+területénél. A kapcsolati anatómia rostro-caudalis irányú változását mutattuk ki. A thalamus
+MD mag két szeparált alterületének konnektivitási anatómiáját leírtuk. A diffúziós mintázatok
+hisztogram technikával való elemzése a gliomás betegek esetében a szövettanilag
+meghatározott grádust 88.5%-os specificitással és 85.7% szenzitivitással becsülte.
+Az agy strukturális kapcsolatrendszereinek meghatározásában az in vivo
+probabilisztikus DTI traktográfia korábban nem látott lehetőségeket teremt. Az insula és az
+MD rostrendszerének anatómiájáról gyűjtött eredményeink az állatkísérletes rostkövetéses
+kutatások eredményeivel jól korrelálnak. A kapcsolatrendszer alapú alterületek kijelölése az
+insulában és az mediodorsalis thalamusmagban két, egymástól elszeparált kapcsolati hálózatot
+fedett fel. Az agyi gliomákban mérhető diffúziós anizotrópia mintázatok segítségével olyan
+módszert mutattunk be, amely nem invazív módon, preoperatív képalkotás segítségével a
+grádus becslését lehetővé teszi.
+
+62
+
+References
+References cited in the thesis
+1. Damadian RV. Apparatus and method for detecting cancer in tissue. U.S. Patent
+nr.3.789.832.
+2. Le Bihan D, Johansen-Berg H. Diffusion MRI at 25: Exploring brain tissue structure and
+function. Neuroimage 2011; DOI: 10.1016/j.neuroimage.2011.11.006.
+3. Dejerine J. Anatomie des Centres Nerveux, pp. 91-198. Rueff et Cie, Paris, 1895.
+4. Meynert T. Klinik der Erkrankungen des Vorderhirns, pp. 164-166. Wilhelm Braumüller,
+Wien, 1884.
+5. Cohen N, Weller RO.WHO classification of tumours of the central nervous system (4th
+edition). Neuropathol Appl Neurobiol 2007; 33:710-711.
+6. Ohgaki H, Kleigues P. Population-based studies on incidence, survival rates, and genetic
+alterations in astrocytic and oligodendroglial gliomas. J Neuropath Exp Neur 2005; 64: 479489.
+7. Stejskal EO. Use of spin echoes in a pulsed magnetic-field gradient to study anisotropic,
+restricted diffusion and flow. J Chem Phys 1965; 43: 3597–3603.
+8. Merboldt K, Hanicke W, Frahm J. Self-diffusion NMR imaging using stimulated echoes. J
+Magn Reson 1985; 64 : 479–486.
+9. Le Bihan D, Breton E, Lallemand D, Grenier P, Cabanis E, Laval-Jeantet M. MR imaging
+of intravoxel incoherent motions: Application to diffusion and perfusion in neurologic
+disorders. Radiology 1986; 161:401-407.
+10. Beaulieu C. The basis of anisotropic water diffusion in the nervous system? A technical
+review. NMR Biomed 2002; 15: 435-455.
+11. Basser PJ, Pierpaoli C. Microstructural and physiological features of tissues elucidated by
+quantitative-diffusion-tensor MRI. J Magn Reson, Series B. 1996; 111:209-219.
+
+63
+
+12. Johansen-Berg H, Rushworth MFS. Using diffusion imaging to study human connectional
+anatomy. Annu Rev Neurosci 2009; 32: 75-94.
+13. Mori S, Crain BJ, Chacko VP, van Zijl PC. Three-dimensional tracking of axonal
+projections in the brain by magnetic resonance imaging. Ann Neurol 1999; 45:265–269.
+14. Jones DK, Simmons A, Williams SC, Horsfield MA. Non-invasive assessment of axonal
+fiber connectivity in the human brain via diffusion tensor MRI. Magn Reson Med 1999;
+42:37–41.
+15. Catani M. From hodology to function. Brain 2007; 130: 602-605.
+16. Dauguet J, Peled S, Berezovskii V, Delzescaux T, Warfield SK, Born R, et al.
+Comparison of fiber tracts derived from in-vivo DTI tractography with 3D histological neural
+tract tracer reconstruction on a macaque brain. Neuroimage 2007; 37: 530-538.
+17. Hansen B, Flint JJ, Heon-Lee C, Fey M, Vincent F, King MA, et al. Diffusion tensor
+microscopy in human nervous tissue with quantitative correlation based on direct histological
+comparison. Neuroimage 2011; 57: 1458-1465.
+18. Behrens TEJ, Woolrich MW, Jenkinson M, Johansen-Berg H, Nunes RG, Clare S, et al.
+Characterization and propagation of uncertainty in diffusion-weighted MR imaging. Mag
+Reson Med 2003; 50: 1077-1088.
+19. Catani M, Ffytche DH. The rises and falls of disconnection syndromes. Brain 2005;
+128:2224-2239.
+20. Craig AD. How do you feel? Interoception: the sense of the physiological condition of the
+body. Nat Rev Neurosci 2002; 3: 655-666.
+21. Augustine J. The insular lobe in primates including humans. Neurol Res 1985; 7: 2-10.
+22. Augustine JR. Circuitry and functional aspects of the insular lobe in primates including
+humans. Brain Res Rev 1996; 22: 229-244.
+23. Mesulam M, Mufson EJ. Insula of the old world monkey. Architectonics in the insuloorbito-temporal component of the paralimbic brain. J Comp Neurol 1982; 212: 1-22.
+
+64
+
+24. Cauda F, D'Agata F, Sacco K, Duca S, Geminiani G, Vercelli A. Functional connectivity
+of the insula in the resting brain. Neuroimage 2011; 55:8-23.
+25. Ziyan U, Westin C. Joint Segmentation of Thalamic Nuclei from a Population of
+Diffusion Tensor MR Images. In: Székely G (ed). Medical Image Computing and ComputerAssisted Intervention @ MICCAI 2008.Springer Berlin / Heidelberg; 2008. pp. 279-286.
+26. Behrens TEJ, Johansen-Berg H, Woolrich MW, Smith SM, Wheeler-Kingshott C, Boulby
+PA, et al. Non-invasive mapping of connections between human thalamus and cortex using
+diffusion imaging. Nat Neurosci 2003; 6: 750-757.
+27. Johansen-Berg H, Behrens TEJ, Robson MD, Drobnjak I, Rushworth MFS, Brady JM, et
+al. Changes in connectivity profiles define functionally distinct regions in human medial
+frontal cortex. P Natl Acad Sci Usa 2004; 101: 13335-13340.
+28. Nanetti L, Cerliani L, Gazzola V, Renken R, Keysers C. Group analyses of connectivitybased cortical parcellation using repeated k-means clustering. Neuroimage 2009; 47: 16661677.
+29. Cerliani L, Thomas RM, Jbabdi S, Siero JCW, Nanetti L, Crippa A, et al. Probabilistic
+tractography recovers a rostrocaudal trajectory of connectivity variability in the human insular
+cortex. Hum Brain Mapp 2011; Doi: 10.1002/hbm.21338.
+30. Marenco S, Stein JL, Savostyanova AA, Sambataro F, Tan H, Goldman AL, et al.
+investigation of anatomical thalamo-cortical connectivity and fMRI activation in
+schizophrenia. Neuropsychopharmacol 2012; 37: 499-507.
+31. Klein JC, Rushworth MFS, Behrens TEJ, Mackay CE, de Crespigny AJ, D'Arceuil H, et
+al. Topography of connections between human prefrontal cortex and mediodorsal thalamus
+studied with diffusion tractography. Neuroimage 2010; 51: 555-564.
+32. Traynor C, Heckemann RA, Hammers A, O'Muircheartaigh J, Crum WR, Barker GJ, et al.
+Reproducibility of thalamic segmentation based on probabilistic tractography. Neuroimage
+2010; 52: 69-85.
+
+65
+
+33. O'Muircheartaigh J, Vollmar C, Traynor C, Barker GJ, Kumari V, Symms MR, et al.
+Clustering probabilistic tractograms using independent component analysis applied to the
+thalamus. Neuroimage 2011; 54: 2020-2032.
+34. Pouratian N, Zheng Z, Bari AA, Behnke E, Elias WJ, DeSalles AAF. Multi-institutional
+evaluation of deep brain stimulation targeting using probabilistic connectivity-based thalamic
+segmentation. J Neurosurg 2011; 115: 995-1004.
+35. Elias WJ, Zheng ZA, Domer P, Quigg M, Pouratian N. Validation of connectivity-based
+thalamic segmentation with direct electrophysiologic recordings from human sensory
+thalamus. Neuroimage 2012; 59: 2025-2034.
+36. Izquierdo A, Murray EA. Functional interaction of medial mediodorsal thalamic nucleus
+but not nucleus accumbens with amygdala and orbital prefrontal cortex is essential for
+adaptive response selection after reinforcer devaluation. J Neurosci 2010; 30: 661-669.
+37. Goldman-Rakic PS, Porrino LJ. The primate mediodorsal (MD) nucleus and its projection
+to the frontal lobe. J Comp Neurol 1985; 242: 535-560.
+38. Siwek DF, Pandya DN. Prefrontal projections to the mediodorsal nucleus of the thalamus
+in the rhesus monkey. J Comp Neurol 1991; 312: 509-524.
+39. Negyessy L, Goldman-Rakic P. Morphometric characterization of synapses in the primate
+prefrontal cortex formed by afferents from the mediodorsal thalamic nucleus. Exp Brain Res
+2005; 164: 148-154.
+40. Ray JP, Price JL. The organization of projections from the mediodorsal nucleus of the
+thalamus to orbital and medial prefrontal cortex in macaque monkeys. J Comp Neurol 1993;
+337: 1-31.
+41. Öngür D, Price JL. The organization of networks within the orbital and medial prefrontal
+cortex of rats, monkeys and humans. Cereb Cortex 2000; 10: 206-219.
+42. Erickson SL, Lewis DA. Cortical connections of the lateral mediodorsal thalamus in
+cynomolgus monkeys. J Comp Neurol 2004; 473: 107-127.
+43. Van der Werf YD, Witter MP, Uylings HBM, Jolles J. Neuropsychology of infarctions in
+the thalamus: a review. Neuropsychologia 2000; 38: 613-627.
+66
+
+44. Van der Werf YD, Scheltens P, Lindeboom J, Witter MP, Uylings HBM, Jolles J. Deficits
+of memory, executive functioning and attention following infarction in the thalamus; a study
+of 22 cases with localised lesions. Neuropsychologia 2003; 41: 1330-1344.
+45. Pulsipher DT, Seidenberg M, Guidotti L, Tuchscherer VN, Morton J, Sheth RD, et al.
+Thalamofrontal circuitry and executive dysfunction in recent-onset juvenile myoclonic
+epilepsy. Epilepsia 2009; 50: 1210-1219.
+46. Alexander GE, DeLong MR, Strick PL. Parallel Organization of Functionally Segregated
+Circuits Linking Basal Ganglia and Cortex. Annu Rev Neurosci 1986; 9: 357-381.
+47. Luders E, Narr KL, Thompson PM, Toga AW. Neuroanatomical correlates of intelligence.
+Intelligence 2009; 37: 156-163.
+48. Haier RJ, Jung RE, Yeo RA, Head K, Alkire MT. Structural brain variation and general
+intelligence. Neuroimage 2004; 23: 425-433.
+49. Sinha S, Bastin ME, Whittle IR, Wardlaw JM. Diffusion tensor MR imaging of highgrade cerebral gliomas. Am J Neuroradiol 2002; 23:520-527.
+50. Tropine A, Vucurevic G, Delani P, Boor S, Hopf N, Bohl J, et al. Contribution of
+diffusion tensor imaging to delineation of gliomas and glioblastomas. J Magn Reson Imaging
+2004; 20: 905-912.
+51. Kono K, Inoue Y, Nakayama K, Shakudo M, Morino M, Ohata K, et al. The role of
+diffusion-weighted imaging in patients with brain tumors. Am J Neuroradiol 2001; 22: 10811088.
+52. Sugahara T, Korogi Y, Kochi M, Ikushima I, Shigematu Y, Hirai T, et al. Usefulness of
+diffusion-weighted MRI with echo-planar technique in the evaluation of cellularity in
+gliomas. J Magn Reson Imaging 1999; 9: 53-60.
+53. Zimmerman RD. Is There a Role for Diffusion-weighted imaging in patients with brain
+tumors or is the "Bloom off the Rose"? Am J Neuroradiol 2001; 22: 1013-1019.
+54. Khayal IS, McKnight TR, McGue C, Vandenberg S, Lamborn KR, Chang SM, et al.
+Apparent diffusion coefficient and fractional anisotropy of newly diagnosed grade II gliomas.
+NMR Biomed 2009; 22: 449-455.
+67
+
+55. Inoue T, Ogasawara K, Beppu T, Ogawa A, Kabasawa H. Diffusion tensor imaging for
+preoperative evaluation of tumor grade in gliomas. Clin Neurol Neurosurg 2005; 107: 174180.
+56. Goebell E, Paustenbach S, Vaeterlein O, Ding X, Heese O, Fiehler J, et al. Low-grade and
+anaplastic gliomas: differences in architecture evaluated with diffusion-tensor MR imaging.
+Radiology 2006; 239: 217-222.
+57. Murakami R, Hirai T, Sugahara T, Fukuoka H, Toya R, Nishimura S, et al. Grading
+astrocytic tumors by using apparent diffusion coefficient parameters: superiority of a oneversus two-parameter pilot method. Radiology 2009; 251: 838-845.
+58. Verma R, Zacharaki EI, Ou Y, Cai H, Chawla S, Lee S, et al. Multiparametric tissue
+characterization of brain neoplasms and their recurrence using pattern classification of MR
+images. Acad Radiol 2008; 15: 966-977.
+59. Emblem KE, Scheie D, Due-Tonnessen P, Nedregaard B, Nome T, Hald JK, et al.
+Histogram Analysis of MR Imaging-Derived Cerebral Blood Volume Maps: Combined
+glioma grading and identification of low-grade oligodendroglial subtypes. Am J Neuroradiol
+2008; 29: 1664-1670.
+60. Tozer DJ, Jäger HR, Danchaivijitr N, Benton CE, Tofts PS, Rees JH, et al. Apparent
+diffusion coefficient histograms may predict low-grade glioma subtype. NMR Biomed 2007;
+20: 49-57.
+61. Law M, Yang S, Wang H, Babb JS, Johnson G, Cha S, et al. Glioma grading: sensitivity,
+specificity, and predictive values of perfusion MR imaging and proton MR spectroscopic
+imaging compared with conventional MR imaging. Am J Neuroradiol 2003; 24: 1989-1998.
+62. Law M, Young R, Babb J, Pollack E, Johnson G. Histogram analysis versus region of
+interest analysis of dynamic susceptibility contrast perfusion MR imaging data in the grading
+of cerebral gliomas. Am J Neuroradiol 2007; 28: 761-766.
+63. Dehmeshki J, Ruto AC, Arridge S, Silver NC, Miller DH, Tofts PS. Analysis of MTR
+histograms in multiple sclerosis using principal components and multiple discriminant
+analysis. Magn Reson Med 2001; 46: 600-609.
+
+68
+
+64. Dehmeshki J, Van Buchem MA, Bosma GPT, Huizinga TWJ, Tofts PS. Systemic lupus
+erythematosus: diagnostic application of magnetization transfer ratio histograms in patients
+with neuropsychiatric symptoms - initial results. Radiology 2002; 222: 722-728.
+65. Calvar JA, Meli FJ, Romero C, Yenez ML, Calcagno P, Martinez AR, Lambre H, et al.
+Characterization of brain tumors by MRS, DWI and Ki-67 labeling index. J Neurooncol 2005;
+72: 273-280.
+66. Higano S, Yun X, Kumabe T, Watanabe M, Mugikura S, Umetsu A, et al. Malignant
+astrocytic tumors: clinical importance of apparent diffusion coefficient in prediction of grade
+and prognosis. Radiology 2006; 241: 839-846.
+67. Mardor Y, Roth Y, Ocherashvilli A, Spiegelmann R, Tichler T, Daniels D, et al.
+Pretreatment prediction of brain tumors' response to radiation therapy using high b-value
+diffusion-weighted MRI. Neoplasia 2004; 6: 136-142.
+68. Pope WB, Kim HJ, Huo J, Alger J, Brown MS, Gjertson D, et al. Recurrent glioblastoma
+multiforme: ADC histogram analysis predicts response to Bevacizumab treatment. Radiology
+2009; 252: 182-189.
+69. De Edelenyi FS, Rubin C, Esteve F, Grand S, Decorps M, Lefournier V, et al. A new
+approach for analyzing proton magnetic resonance spectroscopic images of brain tumors:
+nosologic images. Nat Med 2000; 6: 1287-1289.
+70. Khayal IS, Nelson SJ. Characterization of low-grade gliomas using RGB color maps
+derived from ADC histograms. J Magn Reson Imaging 2009; 30: 209-213.
+71. Luts J, Laudadio T, Idema AJ, Simonetti AW, Heerschap A, Vandermeulen D, et al.
+Nosologic imaging of the brain: segmentation and classification using MRI and MRSI. NMR
+Biomed 2009; 22: 374-390.
+72. Carano RAD, Ross AL, Ross J, Williams SP, Koeppen H, Schwall RH, et al.
+Quantification of tumor tissue populations by multispectral analysis. Magn Reson Med 2004;
+51: 542-551.
+73. Baxt WG. Application of artificial neural networks to clinical medicine. Lancet 1995;
+346: 1135-1138.
+
+69
+
+74. Hagberg G. From magnetic resonance spectroscopy to classification of tumors. A review
+of pattern recognition methods. NMR Biomed 1998; 11: 148-156.
+75. Wang X, Yang J, Jensen R, Liu X. Rough set feature selection and rule induction for
+prediction of malignancy degree in brain glioma. Comput Methods Programs Biomed 2006;
+83: 147-156.
+76. Joshi DM, Rana NK, Misra VM. Classification of brain cancer using artificial neural
+network. Electronic Computer Technology (ICECT), 2010 International Conference on 2010;
+112-116.
+77. Castellanos FX, Leventhal B, Milham M. Nathan Kline Institute (NKI) / Rockland
+Sample. http://fcon_1000.projects.nitrc.org/indi/pro/nki.html Accessed 01 July 2011
+78. Smith SM., Jenkinson M, Woolrich MW, Beckmann CF, Behrens TEJ, Johansen-Berg H
+et al. Advances in functional and structural MR image analysis and implementation as FSL.
+NeuroImage 2004;23(Suppl 1):S208-S219.
+79. Klein JC, Behrens TEJ, Robson MD, Mackay CE, Higham DJ, Johansen-Berg H.
+Connectivity-based parcellation of human cortex using diffusion MRI: Establishing
+reproducibility, validity and observer independence in BA 44/45 and SMA/pre-SMA.
+Neuroimage 2007; 34:204-211.
+80. Tomassini V, Jbabdi S, Klein JC, Behrens TEJ, Pozzilli C, Matthews PM, et al. Diffusionweighted imaging tractography-based parcellation of the human lateral premotor cortex
+identifies dorsal and ventral subregions with anatomical and functional specializations. J
+Neurosci 2007; 27: 10259-10269.
+81. Jbabdi S, Woolrich MW, Behrens TEJ. Multiple-subjects connectivity-based parcellation
+using hierarchical Dirichlet process mixture models. Neuroimage 2009; 44: 373-384.
+82. Menke RA, Jbabdi S, Miller KL, Matthews PM, Zarei M. Connectivity-based
+segmentation of the substantia nigra in human and its implications in Parkinson's disease.
+Neuroimage 2010; 52: 1175-1180.
+
+70
+
+83. JakabA, Molnar P, Bogner P, Beres M, Berenyi E. Connectivity-based parcellation reveals
+interhemispheric differences in the insula. Brain Topogr 2011; DOI: 10.1007/s10548-0110205-y.
+84. Niemann K, Mennicken VR, Jeanmonod D, Morel A. The Morel stereotactic atlas of the
+human thalamus: atlas-to-MR registration of internally consistent canonical model.
+Neuroimage 2000; 12: 601-616.
+85. Krauth A, Blanc R, Poveda A, Jeanmonod D, Morel A, Székely G. A mean threedimensional atlas of the human thalamus: Generation from multiple histological data.
+Neuroimage 2010; 49: 2053-2062.
+86. Morel A. Stereotactic Atlas of the Human Thalamus and Basal Ganglia. New York:
+Informa Healthcare USA, inc., 2007.
+87. Rao A, Aljabar P, Rueckert D. Hierarchical statistical shape analysis and prediction of
+sub-cortical brain structures. Med Image Anal 2008; 12: 55-68.
+88. Jakab A, Blanc R, Morel A, Berenyi E, Szekely G. Connectivity-augmented surgical
+targeting: individualization of a mean three-dimensional atlas of the human
+thalamus.“Proceedings of the European Society of Neuroradiology (ESNR) Congress” in
+Neuroradiology 2011; 53(Supplement 1): 1-2.
+89. Wang W, Steward CE, Desmond PM. Diffusion Tensor Imaging in Glioblastoma
+Multiforme and Brain Metastases: The Role of p, q, L, and Fractional Anisotropy. Am J
+Neuroradiol 2009; 30: 203-208.
+90. Abramoff MD, Magelhaes PJ, Ram SJ. Image Processing with ImageJ. Biophotonics
+International 2004; 11:36-42.
+91. Fisher RA. The use of multiple measurements in taxonomic problems. Annals Eugenics
+1936; 7: 179-188.
+92. Ripley BD. Pattern recognition and neural networks. Cambridge University Press,
+Cambridge 1997, page 91.
+93. Webb A. Statistical pattern recognition. Oxford University Press. New York 1999, page 6.
+
+71
+
+94. Fukunaga K, Hayes R. Estimation of classifier performance. IEEE Trans Pattern Anal
+Machine Intel 1989; 11:1087-1097.
+95. Assaf Y, Pasternak O. Diffusion tensor imaging (DTI)-based white matter mapping in
+brain research: a review. J Mol Neurosci 2008; 34: 51-61.
+96. Horsfield MA, Jones DK. Applications of diffusion-weighted and diffusion tensor MRI to
+white matter diseases? A review. NMR Biomed 2002; 15: 570-577.
+97. Sundgren PC, Dong Q, Gomez-Hassan D, Mukherji SK, Maly P, Welsh R. Diffusion
+tensor imaging of the brain: review of clinical applications. Neuroradiology 2004; 46: 339350.
+98. Brodmann K. Vergleichende Lokalisationslehre der Großhirnrinde, in ihren Prinzipien
+dargestellt auf Grund des Zellenbaues, Johann Ambrosius Barth, Leipzig, 1909, pp. 285-321,
+99. Economo C, Koskinas GN. Die Cytoarchitektonik der Hirnrinde des erwachsenen
+Menschen. Springer Verlag, Wien, 1925.
+100. Johansen-Berg H, Behrens TEJ, Robson MD, Drobnjak I, Rushworth MFS, Brady JM, et
+al. Changes in connectivity profiles define functionally distinct regions in human medial
+frontal cortex. P Natl Acad Sci Usa 2004; 101:13335-13340.
+101. Deen B, Pitskel NB, Pelphrey KA. Three systems of insular functional connectivity
+identified with cluster analysis. Cerebral Cortex 2011; 21: 1498-1506.
+102. Cerliani L, Thomas RM, Jbabdi S, Siero JCW, Nanetti L, Crippa A, et al. Probabilistic
+tractography recovers a rostrocaudal trajectory of connectivity variability in the human insular
+cortex. Hum Brain Mapp 2011; Doi: 10.1002/hbm.21338.
+103. Gallay DS, Gallay MN, Jeanmonod D, Rouiller EM, Morel A. The insula of Reil
+revisited: multiarchitectonic organization in macaque monkeys. Cereb Cortex 2012; 22: 175190.
+104. Carmichael ST, Price JL. Architectonic subdivision of the orbital and medial prefrontal
+cortex in the macaque monkey. J Comp Neurol 1994; 346: 366-402.
+
+72
+
+105. Stefanacci L, Amaral DG. Topographic organization of cortical inputs to the lateral
+nucleus of the macaque monkey amygdala: A retrograde tracing study. J Comp Neurol 2000;
+421: 52-79.
+106. Guldin WO, Markowitsch HJ. Cortical and thalamic afferent connections of the insular
+and adjacent cortex of the cat. J Comp Neurol 1984; 229: 393–418.
+107. Craig AD. Forebrain emotional asymmetry: a neuroanatomical basis? Trends Cogn Sci
+(Regul Ed) 2005; 9: 566-571.
+108. Ochner CN, Green D, van Steenburgh JJ, Kounios J, Lowe MR. Asymmetric prefrontal
+cortex activation in relation to markers of overeating in obese humans. Appetite 2009; 53: 4449.
+109. Watkins KE, Paus T, Lerch JP, Zijdenbos A, Collins DL, Neelin P, et al. Structural
+asymmetries in the human brain: a voxel based statistical analysis of 142 MRI scans. Cereb
+Cortex 2001; 11: 868-877.
+110. Cao Y, Whalen S, Huang J, Berger KL, DeLano MC. Asymmetry of subinsular
+anisotropy by in vivo diffusion tensor imaging. Hum Brain Mapp 2003; 20: 82-90.
+111. Johansen-Berg H, Behrens TEJ, Sillery E, Ciccarelli O, Thompson AJ, Smith SM, et al.
+Functional–anatomical validation and individual variation of diffusion tractography-based
+segmentation of the human thalamus. Cereb Cortex 2005; 15: 31-39.
+112. Croxson PL, Johansen-Berg H, Behrens TEJ, Robson MD, Pinsk MA, Gross CG, et al.
+Quantitative investigation of connections of the prefrontal cortex in the human and macaque
+using probabilistic diffusion tractography. J Neurosci 2005; 25: 8854-8866.
+113. Kievit J, Kuypers H. Organization of the thalamo-cortical connexions to the frontal lobe
+in the rhesus monkey. Exp Brain Res 1977; 29: 299-322.
+114. Barbas H, Henion THH, Dermon CR. Diverse thalamic projections to the prefrontal
+cortex in the rhesus monkey. J Comp Neurol 1991; 313: 65-94.
+115. Giguere M, Goldman-Rakic PS. Mediodorsal nucleus: Areal, laminar, and tangential
+distribution of afferents and efferents in the frontal lobe of rhesus monkeys. J Comp Neurol
+1988; 277: 195-213.
+73
+
+116. Aggleton JP, Mishkin M. Projections of the amygdala to the thalamus in the
+cynomolgus monkey. J Comp Neurol 1984; 222: 56-68.
+117. Gower EC. Efferent projections from limbic cortex of the temporal pole to the
+magnocellular medial dorsal nucleus in the rhesus monkey. J Comp Neurol 1989; 280: 343358.
+118. Yeterian EH, Pandya DN. Corticothalamic connections of paralimbic regions in the
+rhesus monkey. J Comp Neurol 1988; 269: 130-146.
+119. Markowitsch HJ, Irle E, Streicher M. The thalamic mediodorsal nucleus receives input
+from thalamic and cortical regions related to vision. Neurosci Lett 1982; 32: 131-136.
+120. Masterman DL, Cummings JL. Frontal-subcortical circuits: the anatomic basis of
+executive, social and motivated behaviors. J Psychopharmacol 1997; 11: 107-114.
+121. Draganski B, Kherif F, Kloppel S, Cook PA, Alexander DC, Parker GJM, et al. Evidence
+for segregated and integrative connectivity patterns in the human basal ganglia. J Neurosci
+2008; 28: 7143-7152.
+122. Metzger CD, Eckert U, Steiner J, Sartorius A, Buchmann JE, Stadler J, et al. High field
+fMRI reveals thalamocortical integration of segregated cognitive and emotional processing in
+mediodorsal and intralaminar thalamic nuclei. Front Neuroanat 2010; 4: 138.
+123. Tekin S, Cummings JL. Frontal–subcortical neuronal circuits and clinical
+neuropsychiatry: An update. J Psychosom Res 2002; 53: 647-654.
+124. Liang P, Wang Z, Yang Y, Jia X, Li K. Functional disconnection and compensation in
+mild cognitive impairment: evidence from DLPFC connectivity using resting-state fMRI.
+PLoS ONE 2011; 6: e22153.
+125. Behrens TEJ, Berg HJ, Jbabdi S, Rushworth MFS, Woolrich MW. Probabilistic diffusion
+tractography with multiple fibre orientations: What can we gain? Neuroimage 2007; 34: 144155.
+126. Lee, Ho Yun N, Dong Gyu S, InChan L, Dong Hoon S, Hyung Suk K, et al. DiffusionTensor Imaging for Glioma Grading at 3-T Magnetic Resonance Imaging: Analysis of
+Fractional Anisotropy and Mean Diffusivity. J Comput Assist Tomogr 2008; 32: 298-303.
+74
+
+127. Ferda J, Kastner J, Mukenšnabl P, Choc M, Horemužová J, Ferdová E, et al. Diffusion
+tensor magnetic resonance imaging of glial brain tumors. Eur J Radiol 2010; 74: 428-436.
+128. Arvinda H, Kesavadas C, Sarma P, Thomas B, Radhakrishnan V, Gupta A, et al. Glioma
+grading: sensitivity, specificity, positive and negative predictive values of diffusion and
+perfusion imaging. J Neurooncol 2009; 94: 87-96.
+129. Galban CJ, Chenevert TL, Meyer CR, Tsien C, Lawrence TS, Hamstra DA, et al. The
+parametric response map is an imaging biomarker for early cancer treatment outcome. Nat
+Med 2009; 15: 572-576.
+130. Ellingson BM, Malkin MG, Rand SD, Connelly JM, Quinsey C, LaViolette PS, et al.
+Validation of functional diffusion maps (fDMs) as a biomarker for human glioma cellularity.
+J Magn Reson Imaging 2010; 31: 538-548.
+131. White ML, Zhang Y, Yu F, JaffarKazmi SA. Diffusion tensor MR imaging of cerebral
+gliomas: evaluating fractional anisotropy characteristics. Am J Neuroradiol 2011; 32: 374381.
+132. Li G, Yang J, Ye C, Geng D. Degree prediction of malignancy in brain glioma using
+support vector machines. Comput Biol Med 2006; 36: 313-325.
+
+75
+
+Author’s publications used for the PhD thesis
+1. Jakab A, Molnar P, Bogner P, Beres M, Berenyi E. Connectivity-based parcellation
+reveals interhemispheric differences in the insula. Brain Topogr 2011; In press. DOI:
+10.1007/s10548-011-0205-y
+(IF: 3.288)
+2. Jakab A, Molnar P, Emri M, Berenyi E. Glioma grade assessment by using histogram
+analysis of diffusion tensor imaging-derived maps. Neuroradiology 2011; 53: 483491.
+(IF: 2.87)
+
+Author’s other publications
+1. Jakab A, Blanc R, Berenyi E, Szekely G. Generation of Individualized Thalamus
+Target Maps by Using Statistical Shape Models and Thalamocortical Tractography.
+Americal Journal of Neuroradiology; In press. DOI: 10.3174/ajnr.A3140.
+(IF: 3.464)
+2. Szakszon K, Berényi E, Jakab A, Bessenyei B, Balogh E, Köbling T, et al.
+Blepharophimosis mental retardation syndrome Say-Barber/Biesecker/YoungSimpson type? New findings with neuroimaging. American Journal of Medical
+Genetics Part A 2011; 155: 634-637.
+(IF: 2.505)
+
+Citable conference proceedings, posters or short papers
+1. Jakab A, Blanc R, Morel A, Berenyi E, Szekely G. Connectivity-augmented surgical
+targeting: individualization of a mean three-dimensional atlas of the human thalamus.
+“Proceedings of the European Society of Neuroradiology (ESNR) Congress” in
+Neuroradiology 2011; 53(Supplement 1): 1-2.
+2. Jakab A, Béres M, Spisák T, Kis SA, Emri M, Berényi E, Handedness and
+interhemispheric differences in the anatomical connectivity of perisylvian language
+areas: a network-based approach. “Proceedings of the Annual Meeting of the
+European Society for Magnetic Resonance in Medicine and Biology” in Mag. Res.
+Mat. Phys 2011; 24 (S1): 276.
+76
+
+3. Jakab A, Blanc R, Werner B, Martin E, Morel A, Székely G. Connectivity mapping of
+the thalamus: implementation for targeting in transcranial high-intensity focused
+ultrasound surgery. “Proceedings of the 13rd World Congress of Ultrasound in
+Medicine and Biology” in Ultrasound in Medicine & Biology 2011; 37(Supplement).
+doi:10.1016/S0301-5629(11)01229-4
+4. Jakab A, Berenyi E, Molnar PP. Imaging and morphology: current options in seizure
+diagnostics. “Proceedings of the 111th Meeting of the British Neuropathological
+Society” in Neuropathology and Applied Neurobiology 2010; 36(Suppl. 1).
+5. Jakab A, Berenyi E, Molnar PP. Preoperative diffusion imaging-derived data in
+prediction of glioma grades. “Abstracts of the XVIIth International Congress of
+Neuropathology (ICN 2010)” in Brain Pathology 2010; 20: 1-107.
+6. Berenyi E, Jakab A, Emri M, Molnar PP. Comparative analysis of water diffusion
+imaging and histopathological features of gliomas: is noninvasive grading feasible?
+“Proceedings of the 111th Meeting of the British Neuropathological Society” in
+Neuropathology and Applied Neurobiology 2010; 36(Suppl. 1).
+7. Spisák T, Koselák M, Opposits G, Kis SA, Trón L, Jakab A, Berényi E, Emri M,
+Region management toolkit for atlas-space image processing. “Proceedings of the
+Annual Meeting of the European Society for Magnetic Resonance in Medicine and
+Biology” in Mag. Res. Mat. Phys 2011; 24 (S1): 543.
+8. Spisák T, Koselak M, Opposits G, Kis S, Tron L, Jakab A, Berenyi E, Emri M. Digital
+brain atlas assisted localization software for individual and population analysis of
+SPECT and PET data. European Journal of Nuclear Medicine &Moleular Imaging
+2011; 38(S2): 258.
+9. Opposits G, Spisak T, Lajtos I, Pohubi L, Galuska L, Jakab A, Berenyi E, Emri M.
+Automated region analysis of brain PET examinations. European Journal of Nuclear
+Medicine &Moleular Imaging 2011; 38(S2): 333.
+
+77
+
+78
+
+79
+
+80
+
+Keywords
+Magnetic resonance imaging; diffusion weighted imaging; diffusion tensor imaging;
+biomedical image processing; neuroanatomy; insula; thalamus; glioma; tumor histopathology
+
+Tárgyszavak
+Mágneses rezonanciás képalkotás; diffúzió súlyozott képalkotás; diffúziós tenzor képalkotás;
+orvosi képfeldolgozás; neuroanatómia; insula; thalamus; glioma; tumor hisztopatológia
+
+81
+
+Acknowledgements
+I am grateful first of all to my supervisor, Dr. Ervin Berényi who has been the leader
+of my research studies for the majority of my studentship. My first scientific explorations
+were possible primarily due to his ability to motivate and that his breadth of view exceeds far
+beyond the everyday routine of radiological clinical practice. He started a laboratory for
+biomedical imaging and image processing at the University of Debrecen, Medical and Health
+Sciences Center in which I could pursue research without major boundaries. Herein I
+acknowledge the fruitful collaboration with Prof. Dr. Péter Molnár who not only shared his
+powerful know-how on brain glioma pathology but sharpened my sense of critical reading and
+scientific writing of high standards.
+I also thank the former colleagues and my supervisor Prof. Dr. Gábor Székely from the
+Swiss Federal Institution of Technology, Computer Vision Laboratory for hosting me and
+working with me for a very productive period. I acknowledge the help of Dr. Anne Morel on
+the exploration of the classical neuroanatomy of the insula and thalamus and also her valuable
+comments on my journal publications on such topics. I thank for Prof. Ernst Martin and Beat
+Werner for hosting me at the Focused Ultrasound Laboratory, University Children’s Hospital
+of Zürich where I could apply my theoretical knowledge of biomedical image processing to
+the benefit of patients undergoing image guided thalamotomies.
+I am grateful to my parents and my girlfriend for supporting and helping me not only
+during this exciting period but all through my life.
+
+82
+
+Appendix
+
+83
+
+

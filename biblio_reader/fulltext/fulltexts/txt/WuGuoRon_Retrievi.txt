@@ -1,0 +1,611 @@
+
+Retrieving the Hemodynamic Response Function in resting state fMRI:
+methodology and applications
+Guo-Rong Wua,b and Daniele Marinazzoa
+
+PrePrints
+
+a) Department of Data Analysis, Faculty of Psychology and Pedagogical Sciences, University of Ghent, Belgium
+b) Key Laboratory of Cognition and Personality, Southwest University, Chongqing, China
+
+Abstract
+We present a procedure to retrieve the hemodynamic response function from
+resting state (RS) fMRI data. The fundamentals of the procedure are further
+validated by a simulation and with ASL data. We then present the modifications to
+the shape of the HRF at rest when opening and closing the eyes using a
+simultaneous EEG-fMRI dataset. Finally, the HRF variability is further validated on a
+test-retest dataset.
+I. INTRODUCTION
+Functional MRI time series can be modeled as the convolution of a latent neural
+signal (which is not measured) and the hemodynamic response function (HRF). First,
+since the temporal characteristics of the HRF across different anatomical regions can
+be influenced by the underlying venous structure, it is possible that intrinsic activity
+across disparate brain regions can be temporally correlated only due to the
+underlying vascular architecture. Second, the hemodynamic response is affected by
+physiological fluctuations arising from cardiac pulsation and respiration (Cordes,
+Haughton et al. 2001). These can introduce temporal correlations in fMRI signals.
+Also, given the fact that fMRI data is sampled slowly (typically every 1-2 seconds),
+physiological fluctuations cannot be removed by simple filtering as they can alias
+into the low frequency band of interest (0.01-0.1 Hz). Third, the period of the fastest
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+variation in RS-fMRI data is 10 s, which is orders of magnitude greater than the
+sub-second time scale at which most neuronal processes occur.
+This confounding effect can be dealt with by deconvolution of the HRF. In
+task-related fMRI this procedure has been known and applied since the very
+beginnings, since the onset of the HRF was known. This is not the case for RS-fMRI.
+Motivated by this evidence, we developed an approach to perform blind
+
+PrePrints
+
+hemodynamic deconvolution (Wu, Liao et al. 2013) of RS-fMRI data to recover the
+underlying latent neuronal signals. This allowed to greatly improve the estimation of
+directed dynamical influences in RS-fMRI recordings (Wu, Liao et al. 2013), but also
+provided us with an estimation of the HRF shape for each voxel in the brain. In this
+chapter we will first validate the blind HRF retrieving approach by means of a
+simulation and a comparison with baseline CBF, then we will analyze the effects of
+physiological conditions (eyes open vs. eyes closed) on the HRF shape; finally the
+HRF variability will be assessed with the help of a test-retest resting state fMRI
+dataset.
+II. METHODOLOGY
+The deconvolution is blind because there is no external input in case of RS-fMRI
+data and consequently, both the HRF and the underlying neuronal latent variables
+must be simultaneously estimated from the observed fMRI data, making this an
+ill-posed estimation problem.
+We will now briefly review the foundations of a blind HRF retrieval technique for
+resting-state BOLD-fMRI signal developed in a previous work (Wu, Liao et al. 2013).
+There is accumulated evidence of specific BOLD events governing the dynamics of
+the brain at rest (Tagliazucchi, Balenzuela et al. 2012, Petridou, Gaudes et al. 2013).
+We start from the assumption that resting-state brain dynamics can be driven by
+spontaneous events, which can be seen as a point process. A linear time invariant
+(LTI) system is used to model the relationship between the spontaneous neural
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+event and the BOLD response. The hemodynamic response h(t ) represents such
+dynamic process; the BOLD signal at time t , y(t ) , is modeled as the convolution of
+neural state x(t ) and h(t ) , i.e.
+y(t )  s(t )  h(t )   (t ) .
+
+where
+
+
+
+denotes convolution, and  (t ) is the unexplained error.
+
+The right side of the above equation includes three unobserved quantities. In
+
+PrePrints
+
+order to solve the equation for h(t ) we need to substitute s(t ) with a hypothetical
+model of the neural activation for s(t ) . Here we employ a stimulus function sˆ(t ) to
+model s(t ) . sˆ(t ) is constituted by several time-shifted delta functions, which are
+centered at the onset of each spontaneous point process events. For task-related
+fMRI, the stimulus function is always derived according to the prior task design
+information. This is not the case for resting state fMRI. We need to retrieve the
+spontaneous point process event from a given signature (spike/peak) in the BOLD
+time series. As the peak of the BOLD signal lags behind the peak of neural activation
+(i.e.
+
+k
+
+seconds), it is reasonable to assume that these BOLD spikes are generated
+
+from the spontaneous point process events.
+In order to obtain the time lag k , we search all values in the interval [0, PST],
+where PST is the peristimulus time, choosing the one for which the noise squared
+error (i.e. y(t )  sˆ(t )  h(t ) ) is smallest, indicating the spontaneous event onset. In
+2
+
+practice, The timing set
+
+S
+
+of these resting-state BOLD spikes/transients is defined
+
+as the time points exceeding a given threshold  around a local peak, which can be
+detected according to the following expression:
+
+ 
+
+  
+
+
+
+  
+
+
+
+S{i}  t i , y t i   & y t i  y t i   & y t i  y t i   .
+
+It is worth mentioning that we make no assumptions about the exact shape or
+functional form of the hemodynamic responses. The application of prior knowledge
+about possible hemodynamic response shapes could reduce the bias in the linear
+estimation framework especially for the low signal noise ratio dataset, and sharply
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+reduce the computational cost. Therefore, we assume that the hemodynamic
+responses for all resting state spontaneous point process events and at all locations
+in the brain are fully contained in an
+any hemodynamic response
+
+h
+
+d
+
+-dimensional linear sub-space H of d , then,
+
+can be represented uniquely as the linear
+
+combination of the corresponding basis vectors. The canonical HRF with its delay
+and dispersion derivatives (we denote it as canon2dd) are employed as the basis
+
+PrePrints
+
+functions in our previous study (Wu, Liao et al. 2013). The HRF can also be
+reconstructed via (smoothed) Finite Impulse Response (sFIR) or ‘selective
+averaging’ (Dale and Buckner 1997).
+There are some implicit limitations in our previous work described so far.
+(1)  (t ) ~ N (0, 12 ) is assumed to be white. However,  (t ) is not independent in time
+due to aliased biorhythms and neural activity not accounted for in the model.
+(2) The spontaneous point process event onsets need to be synchronized with
+scans, i.e. the time lag
+
+k
+
+is an integral multiple of TR, which may induce some bias.
+
+(3) in equation 1, the baseline activity is not included.
+To reduce the above estimation bias, we modify the algorithm to account for the
+temporal dependency in  (t ) , and the mismatching between events onset and scans,
+in the following way:
+(1) Using an AR(p) model during the parameter estimation of temporal correlation
+structure in  (t ) .
+(2) Estimating the time lag in a much finer temporal grid rather than TR, i.e. the
+peak of BOLD response lags behind the peak of neural activation is presumed to
+k  TR / N
+
+seconds (where
+
+0  k  PST  N / TR ).
+
+(3) Adding a constant term into equation 1,
+y(t )  s(t )  h(t )  c   (t )
+
+(2)
+
+where c indicates the baseline magnitude of the BOLD response.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+To characterize the shape of the hemodynamic response, three parameters of the
+HRF, namely response height and its normalization (normalized by baseline
+magnitude c, i.e. percent signal change, PSC), time to peak, Full Width at Half
+Maximum (FWHM), were estimated. These quantities are interpretable in terms of
+potential proxies for response magnitude, latency and duration of neuronal activity
+(Lindquist and Wager 2007).
+
+PrePrints
+
+The procedure described above is sketched in Figure 1.
+
+Figure 1: scheme of the resting state HRF retrieving procedure.
+
+III. APPLICATIONS AND DISCUSSION
+1. Simulation
+To validate the feasibility and effectiveness of proposed algorithm, the simulated
+HRFs are used as the ground truth for simulations. The HRF was generated using a
+physiological model, the balloon model (Buxton, Wong et al. 1998), with TR=2s and
+the parameters used SPM package: signal delay = 0.64, autoregulation= 0.32,
+exponent for Fout(v) = 0.32, resting oxygen extraction = 0.4, and varying transit
+time (τ0) = 0.98, 1.3, 1.6, 2. The transit time is V0/F0, where V0 is resting blood
+volume fraction and F0 is resting flow. The physiology of the relationship between
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+flow and volume is determined by the evolution of the transit time (Friston, Mechelli
+et al. 2000). Two types of stimulus designs are employed to simulate the BOLD
+signal:
+1. Event-related (ER) design (0.1s on) with fixed inter-stimulus-interval (ISI) of 40
+s,
+2. Jittered ER design with non-uniform ISI (average ISI = 19s).
+
+PrePrints
+
+Different levels of white noise ε, modeled by an autoregressive AR(1) process with
+AR coefficient of 0.2, are added such that the resulting SNR (  Signal  Noise , where s is
+the standard deviation) are 1.5 (low noise) and 0.1 (high noise). Each ER design
+simulation is run 20 times with random values of ε in order to generate a null
+distribution (in order to ensure reliability of the result and calculate the mean and
+standard deviation of the HRF).
+We observe that the retrieved HRF shapes are dependent on the SNR. As expected,
+the variability of canon2dd HRF is much lower than sFIR model across all level of
+SNR, both for fixed and non-uniform ISI. As shown in Figure 2, two HRF basis
+vectors show similar but different degree of fitting of ground truth HRF, slightly
+vary with different transit time. These stable characteristics implicate that the
+proposed algorithm could be a robust indicator of spontaneous BOLD response.
+Besides, as the balloon model is a nonlinear HRF model, the jittered design may
+induce nonlinear interaction between stimuli, which could violate the assumption
+behind the proposed algorithm (Boynton, Engel et al. 2012).
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+
+(a)
+
+(b)
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+(c)
+Figure 2 shows (a) ER stimulus timing, the ideal BOLD response, and ideal response
+corrupted with noise (SNR=1) (b) Ground truth (Balloon) and estimated HRFs for fixed
+ISI ER design, (c) Ground truth and estimated HRFs for jittered ER design. The colored
+shadow indicates the standard deviation.
+2. Relation with cerebral blood flow
+The BOLD-fMRI signal reflects the complex interactions between cerebral metabolic
+rate of oxygen, cerebral blood flow (CBF) and volume; the comparison of CBF and
+HRF in the same voxels could provide a better understanding of the temporal
+dynamics of resting state spontaneous responses. In this section we employ a public
+dataset (Avants, Duda et al. 2015) to explore the relationship between baseline CBF
+and HRF.
+The resting state BOLD fMRI images were acquired using 2D EPI sequence (TR=2s, 8
+min). Subjects (N=108, some of them with longitudinal data) were required to relax
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+quietly while looking at a fixation point. Pseudo continuous arterial spin labeled
+(pCASL) images were acquired using gradient-EPI with TR/TE=4,000/12 ms. The
+total imaging time was 5.5 min, and 40 label/control pairs were acquired, with 1.5 s
+labeling duration and 1.2 s post-labeling delay.
+BOLD fMRI images were preprocessed with SPM12, including: realigning and
+unwarping, coregistration to anatomical image, spatial normalization into MNI
+
+PrePrints
+
+space, smoothing, detrending, and linear regression to remove possible spurious
+variances from the data (including six head motion parameters, non-neuronal
+sources of noise estimated using the anatomical component correction method, i.e.
+white matter and cerebral spinal fluid signal), 0.008~0.1HZ band filtering. As the
+slice order information is not reported in this dataset, we did not perform the slice
+timing correction, which does not affect the HRF retrieving algorithm anyway.
+pCASL data were preprocessed using the ASLtbx toolbox (Wang, Aguirre et al.
+2008), with the following steps: realigning, coregistration to anatomical image,
+regression of the six head motion parameters and smoothing with 6mm FWHM
+Gaussian kernel. CBF was then estimated, and finally normalization to MNI space
+was performed (same normalization method used in BOLD fMRI images). The group
+median map of CBF and HRF parameters are presented in Figure 3. We can observe
+that the HRF response height shows a spatial pattern similar to the CBF map. A prior
+functional parcellation of cerebrum is applied on the median map to validate the
+effect of spatial correlations between them. The prior functional parcellation is
+composed of seven large-scale subnetworks: visual (VN), somatomotor (SMN),
+dorsal attention (DAN), ventral attention (VAN), limbic (LN), frontoparietal (FPN)
+and default network (DMN) (Yeo, Krienen et al. 2011). The correlation analysis
+across voxels in each subnetworks showed a striking spatial overlap between CBF
+and HRF response height (PSC, baseline) (Figure 4). Such phenomenon is not
+observed in other HRF parameters. In particular there is evidence of a highly
+nonlinear relationship between height PSC/baseline and CBF. In the DMN (baseline)
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+and LN (height PSC) the linear relation is not evident, both for canon2dd and sFIR
+model. Furthermore, the across subject correlation between CBF and HRF were also
+analyzed both at voxel level and large-scale networks level (Figure 5 & 6). We found
+different HRF model show different correlation with CBF at the both spatial
+resolutions. In contrast to canon2dd, sFIR show higher correlation in HRF response
+height, lower in time to peak. The physiological basis of this complicated interaction
+
+PrePrints
+
+will need to be investigated further.
+
+(a)
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+
+(b)
+Figure 3. Median maps of CBF (a) and HRF (b) parameters across subjects.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+Figure 4. Scatterplot of the spatial correlations across voxels between CBF and HRF
+parameters. The X-axis is the CBF, Y-axis are the HRF parameters. Blue scatterplots
+indicate that the linear correlation is significant, p<0.05, corrected.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+Figure 5. Scatterplot of the across subject correlations between CBF and HRF
+parameters. X-axis is the CBF, Y-axis are the HRF parameters. Blue scatterplots
+indicate the linear correlation is significant, p<0.05, corrected.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+Figure 6. Correlations between CBF and HRF parameters at voxel level across subjects.
+The upper colorbar is for inside plots, the bottom colorbar is for surface plots.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+3.Relation with EEG power
+In order to further investigate the electrophysiological basis of the HRF and its
+coupling to electrical brain activity we considered simultaneously recorded EEG and
+fMRI data. EEG were collected at 1000 Hz and down-sampled at 250 Hz. Scanner
+
+PrePrints
+
+artifact correction, pulse artifact correction, notch filtering and ICA analysis were
+performed on the raw data. fMRI data were collected at 7 Tesla, with a repetition
+time of 1s. Resting-state fMRI data preprocessing was carried out using both AFNI
+and SPM8 package. First, the EPI volumes were corrected for the temporal
+difference in acquisition among different slices, and then the images were realigned
+to the first volume for head-motion correction. The resulting volumes were then
+despiked using AFNI's 3dDespike algorithm to mitigate the impact of outliers. Next,
+the despiked images were spatially normalized to the Montreal Neurological
+Institute template then resampled to 3-mm isotropic voxels.
+Several parameters were included in a linear regression to remove possible
+spurious variances from the data. These were i) six head motion parameters
+obtained in the realigning step, ii) non-neuronal sources of noise estimated using
+the anatomical component correction method (aCompCor, the representative
+signals of no interest from white matter (WM) and cerebral spinal fluid (CSF)
+included the top five principal components (PCs) from WM and the top five from
+CSF mask; the subject-specific WM and CSF masks was segmented from the
+anatomical image of each participant using SPM8's unified segmentation–
+normalization procedure) (Behzadi, Restom et al. 2007). Then the time series were
+temporally band-pass filtered (0.01~0.08 Hz) and linearly detrended.
+The scalp EEG voltage data from the three occipital channels O1, O2, and Oz were
+selected (Mo, Liu et al. 2013).
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+First, EEG signals for each channel were segmented into 500 ms non-overlapping
+epochs. Second, the EEG power spectrum for each single epoch was calculated using
+a nonparametric multitaper approach, and the alpha band power was obtained by
+integrating the power spectrum between 8 and 12 Hz. Third, the channel-level alpha
+power time series from each of the three occipital channels was averaged to yield
+the subject-level alpha power time series, which was convolved with a canonical
+
+PrePrints
+
+hemodynamic response function (HRF). The HRF-convolved alpha power time
+series was then downsampled to the same sampling frequency as the BOLD signal.
+To identify brain regions whose BOLD activity co-varied with EEG alpha power,
+we examined the temporal correlation between HRF-convolved alpha power time
+series and BOLD time series from all voxels based on the general linear model
+(GLM). HRF-convolved alpha power time series was incorporated as a parametric
+regressor in the GLM, modeling the coupling effects between alpha and BOLD.
+The processed BOLD signal at every voxel was converted into its z-score, and the
+resting state HRF was retrieved as described above, according to the canon2dd and
+sFIR model.
+
+Figure 7: clusters of significant correlation (red) and anti-correlation (blue) between
+BOLD and alpha power spectrum
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+Two canonical ROIs were chosen from the previous GLM analysis (Thalamus and
+Occipital Lobe) (Laufs, Kleinschmidt et al. 2003), both for eye closed and open
+condition, under individual voxel p-value<10-6, cluster size>50.
+A positive correlation between BOLD and canonical HRF convolved alpha power
+was observed in the thalamus, and a negative one in the Occipital Lobe (Figure 7).
+After (canon2dd and sFIR) HRF deconvolution, the Pearson correlation between
+
+PrePrints
+
+devonvolved BOLD and alpha power is almost strengthened, only one weaken
+connectivity is found in thalamus with eye closed after canon2dd HRF
+deconvolution (Figure 8).
+The voxel-level HRF shapes derived in these two regions in the two conditions are
+reported in Figure 9. We observe opposite patterns of HRF shapes between the
+thalamus and occipital cortex under the two conditions, which is consistent with the
+correlation and anti-correlation between the alpha power spectrum and BOLD
+signal in thalamic and occipital cortex. It is worth to note how the variations in HRF
+are consistent with the differences in net arterial and venous flow, and the
+consequent effects on the estimation of Granger causality reported in (Webb,
+Ferguson et al. 2013). This evidence confirms the importance of performing HRF
+deconvolution prior to estimating not only for lag-based directed connectivity (Wu,
+Liao et al. 2013), but also for standard functional connectivity .
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+
+Figure 8. Pearson correlation between (BOLD) Deconvolved BOLD signal and
+(canonical HRF convolved) alpha power. Occ: occipital area; Thal: thalamus; Cc: eyes
+closed, canon2dd; Cs: eyes closed, sFIR; Oc: eyes open, canon2dd; Os: eyes open, sFIR.ss
+
+Figure 9: HRF at rest in the occipital cortex (left) and in the thalamus (right) for eyes
+open and closed. Left upper pannel is HRF estimated by sFIR model, the bottom pannel
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+is HRF estimated by canonical HRF with its derivatives. The red and blue shadows are
+the standard deviations of voxelwise HRFs under eyes closed and open conditions.
+4. HRF modulations with eyes open and closed
+In order to study the modulations of HRF shape when opening or closing the eyes
+on a larger sample, we considered a dataset of 48 healthy controls collected at the
+Beijing Normal University in China with 3 resting state fMRI scans of six minutes
+
+PrePrints
+
+each (http://fcon_1000.projects.nitrc.org/indi/IndiPro.html). During the first scan
+participants were instructed to rest with their eyes closed. The second and third
+resting state scan were randomized between resting with eyes open versus eyes
+closed. Data were preprocessed as described in above section. Then the resting state
+HRF was retrieved. Statistical significance of the spontaneous hemodynamic
+response evoked by opening and closing eyes was assessed with a group-level
+repeated-measures analysis of covariance (ANCOVA) that included subjects as the
+random factor and two fixed factors, resting state type (eyes closed and open) and
+order (eyes closed-open-closed, eyes closed-closed-open), age, gender, and mean FD
+power as the covariates. The ANCOVA revealed significant main effect for resting
+state type in hemodynamic response height. No significant main effect of order and
+interaction effect were found. The significant differences in the height of the HRF
+located in the occipital areas, and were depicted in figure 10. The corresponding
+HRF shape is also reported. Though the difference in the thalamus is not obvious, we
+still can find the opposite patterns of HRF shapes under eye closed and open, similar
+with the finding in EEG-fMRI dataset.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+Figure 10: statistical differences in HRF height with eyes closed (1), open, then closed
+again (2) (top), and typical shapes in the occipital (left) and thalamic (right) area
+(middle: sFIR; bottom: canonical HRF with its derivatives).
+5. HRF variability
+The hemodynamic response has been shown to vary in timing, amplitude, and
+shape across brain regions and cognitive task paradigms (Miezin, Maccotta et al.
+2000, Handwerker, Gonzalez-Castillo et al. 2012). Such variation is expected also for
+resting state. In order to investigate the variability on the resting state HRF, a
+test-retest reliability analyses were performed on a resting-state fMRI dataset that
+has been publicly released in the ‘‘1000 Functional Connectomes Project’’. All
+included participants had no history of neurological and psychiatric disorders and
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+all gave the informed consent approved by local Institutional Review Board. During
+the scanning participants were instructed to keep their eyes closed, not to think of
+anything in particular, and to avoid falling asleep.
+Two data sets with different TR (TR = 2.5 s and TR = 0.645 s) were acquired on
+Siemens 3T Trio Tim scanners using standard EPI sequence (TR = 2500msec, 3mm
+isotropic voxels, 5 minutes) and multiband EPI sequence (TR = 0.645 s, 3 mm
+
+PrePrints
+
+isotropic voxels, 10 min).
+To evaluate the test–retest (TRT) reliability of the voxel HRF parameters
+between the two sessions, a measurement of the intraclass correlation coefficient
+(ICC) was employed. A one-way ANOVA with random subject effects was used to
+compute the between-subject mean square (BMS) and within-subject mean square
+(WMS). Then an ICC value was subsequently calculated according to the equation
+(Shrout and Fleiss 1979)
+ICC 
+
+BMS  WMS
+BMS  (m  1)WMS
+
+where m represents the number of repeated measurements of the voxel HRF
+parameter (here, m = 2). We calculated the ICC value for each voxel and generated
+the ICC map for each HRF parameter. Next, the TRT reliability of the HRF parameter
+was assessed in a voxel-wise manner with the classifying criteria of ICC values
+(Sampat, Whitman et al. 2006): less than 0.4 indicated low reliability; 0.4 to 0.6
+indicated fair reliability; 0.6 to 0.75 indicated good reliability and 0.75 to 1.0
+indicated excellent reliability. To further assess the regional variability of TRT
+reliability, we utilized the above-mentioned prior functional parcellation of
+cerebrum, and calculated the mean ICC values and their standard deviations within
+these subnetworks, respectively. As was expected, sFIR showed lower ICC than
+canon2dd model, both at voxel level and large-scale network level. We did not
+observe an obvious spatial pattern in the ICC maps for distinct networks. The
+hemodynamic response height (psc) showed good reliability for canon2dd model
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+acorss all subnetworks and TR (excluding the VN at TR=2.5s), and for sFIR in VAN,
+FPN and DMN at TR=2.5s, and fair reliability for most of the subneworks with sFIR
+model. The other HRF parameters (FWHM and time to peak) showed low reliability.
+These results reveal that the different hemodynamic response sampling (i.e. in units
+
+PrePrints
+
+of TR) only slightly affects the ICC maps of hemodynamic response height.
+
+Figure 11. TRT reliability of HRF parameters within seven subnetworks. C-TR645:
+canon2dd HRF, TR=0.645s; S-TR645: sFIR HRF, TR=0.645s; C-TR25: canon2dd HRF,
+TR=2.5s; S-TR25: sFIR HRF, TR=2.5s; T2P: Time to peak.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+PrePrints
+Figure 12. TRT reliability maps of hemodynamic response height (PSC) with different
+HRF basis vectors (canon2dd, sFIR), at different TR (0.645s, 2.5s).
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+IV. CONCLUSIONS AND FUTURE WORK
+We have presented a methodology to retrieve the hemodynamic response function
+from resting state fMRI data. The feasibility and effectiveness of proposed algorithm
+is confirmed by simulation data. The results are promising since the retrieved HRF
+is consistent with the literature and supports evidences of the vascular flow.
+Additionally, functional modifications to the HRF shape are consistent with evidence
+
+PrePrints
+
+previously reported using different methodologies. The approach will need further
+validation using electrophysiological and cardiovascular data.
+REFERENCES
+Avants, B. B., J. T. Duda, E. Kilroy, K. Krasileva, K. Jann, B. T. Kandel, N. J. Tustison, L.
+Yan, M. Jog, R. Smith, Y. Wang, M. Dapretto and D. J. Wang (2015). "The pediatric
+template of brain perfusion." Sci Data 2: 150003.
+Behzadi, Y., K. Restom, J. Liau and T. T. Liu (2007). "A component based noise
+correction method (CompCor) for BOLD and perfusion based fMRI." Neuroimage
+37(1): 90-101.
+Boynton, G. M., S. A. Engel and D. J. Heeger (2012). "Linear systems analysis of the
+fMRI signal." Neuroimage 62(2): 975-984.
+Buxton, R. B., E. C. Wong and L. R. Frank (1998). "Dynamics of blood flow and
+oxygenation changes during brain activation: the balloon model." Magn Reson Med
+39(6): 855-864.
+Cordes, D., V. M. Haughton, K. Arfanakis, J. D. Carew, P. A. Turski, C. H. Moritz, M. A.
+Quigley and M. E. Meyerand (2001). "Frequencies contributing to functional
+connectivity in the cerebral cortex in "resting-state" data." AJNR Am J Neuroradiol
+22(7): 1326-1333.
+Dale, A. M. and R. L. Buckner (1997). "Selective averaging of rapidly presented
+individual trials using fMRI." Hum Brain Mapp 5(5): 329-340.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+Friston, K. J., A. Mechelli, R. Turner and C. J. Price (2000). "Nonlinear responses in
+fMRI: the Balloon model, Volterra kernels, and other hemodynamics." Neuroimage
+12(4): 466-477.
+Handwerker, D. A., J. Gonzalez-Castillo, M. D'Esposito and P. A. Bandettini (2012).
+"The continuing challenge of understanding and modeling hemodynamic variation
+in fMRI." Neuroimage 62(2): 1017-1023.
+
+PrePrints
+
+Laufs, H., A. Kleinschmidt, A. Beyerle, E. Eger, A. Salek-Haddadi, C. Preibisch and K.
+Krakow (2003). "EEG-correlated fMRI of human alpha activity." Neuroimage 19(4):
+1463-1476.
+Lindquist, M. A. and T. D. Wager (2007). "Validity and power in hemodynamic
+response modeling: a comparison study and a new approach." Hum Brain Mapp
+28(8): 764-784.
+Miezin, F. M., L. Maccotta, J. M. Ollinger, S. E. Petersen and R. L. Buckner (2000).
+"Characterizing the hemodynamic response: effects of presentation rate, sampling
+procedure, and the possibility of ordering brain activity based on relative timing."
+Neuroimage 11(6 Pt 1): 735-759.
+Mo, J., Y. Liu, H. Huang and M. Ding (2013). "Coupling between visual alpha
+oscillations and default mode activity." Neuroimage 68: 112-118.
+Petridou, N., C. C. Gaudes, I. L. Dryden, S. T. Francis and P. A. Gowland (2013).
+"Periods of rest in fMRI contain individual spontaneous events which are related to
+slowly fluctuating spontaneous activity." Hum Brain Mapp 34(6): 1319-1329.
+Sampat, M. P., G. J. Whitman, T. W. Stephens, L. D. Broemeling, N. A. Heger, A. C. Bovik
+and M. K. Markey (2006). "The reliability of measuring physical characteristics of
+spiculated masses on mammography." Br J Radiol 79 Spec No 2: S134-140.
+Shrout, P. E. and J. L. Fleiss (1979). "Intraclass correlations: uses in assessing rater
+reliability." Psychological bulletin 86(2): 420.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+Tagliazucchi, E., P. Balenzuela, D. Fraiman and D. R. Chialvo (2012). "Criticality in
+large-scale brain FMRI dynamics unveiled by a novel point process analysis." Front
+Physiol 3: 15.
+Wang, Z., G. K. Aguirre, H. Rao, J. Wang, M. A. Fernandez-Seara, A. R. Childress and J.
+A. Detre (2008). "Empirical optimization of ASL data analysis using an ASL data
+processing toolbox: ASLtbx." Magn Reson Imaging 26(2): 261-269.
+
+PrePrints
+
+Webb, J. T., M. A. Ferguson, J. A. Nielsen and J. S. Anderson (2013). "BOLD Granger
+causality reflects vascular anatomy." PLoS One 8(12): e84279.
+Wu, G. R., W. Liao, S. Stramaglia, J. R. Ding, H. Chen and D. Marinazzo (2013). "A blind
+deconvolution approach to recover effective connectivity brain networks from
+resting state fMRI data." Med Image Anal 17(3): 365-374.
+Yeo, B. T., F. M. Krienen, J. Sepulcre, M. R. Sabuncu, D. Lashkari, M. Hollinshead, J. L.
+Roffman, J. W. Smoller, L. Zollei, J. R. Polimeni, B. Fischl, H. Liu and R. L. Buckner
+(2011). "The organization of the human cerebral cortex estimated by intrinsic
+functional connectivity." J Neurophysiol 106(3): 1125-1165.
+
+PeerJ PrePrints | https://dx.doi.org/10.7287/peerj.preprints.1317v1 | CC-BY 4.0 Open Access | rec: 20 Aug 2015, publ: 20 Aug 2015
+
+

@@ -1,0 +1,3133 @@
+Universidad Politécnica de Madrid
+Escuela Técnica Superior de Ingenieros de Telecomunicación
+
+Image processing methods for human brain connectivity
+analysis from in-vivo diffusion MRI
+
+PhD. Thesis Proposal
+Oscar Esteban Sanz-Dranguet
+Departamento de Ingenierı́a Electrónica
+Universidad Politécnica de Madrid
+October 2013
+
+Departamento de Ingenierı́a Electrónica
+Escuela Técnica Superior de Ingenieros de Telecomunicación
+Universidad Politécnica de Madrid (October 2013)
+PhD. Thesis Proposal: Image processing methods for human brain connectivity analysis from in-vivo
+diffusion MRI
+Author: Oscar Esteban Sanz-Dranguet
+Thesis Supervisors:
+Andrés Santos Lleó and M. Jesús Ledesma Carbayo
+
+c ba
+Copyright c 2014 Oscar Esteban Sanz-Dranguet
+This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a
+copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
+
+Contents
+Contents
+
+i
+
+List of Terms
+
+iii
+
+1 Introduction
+
+1
+
+2 Background and state of the art
+2.1 From physiology to diffusion MRI connectomics . . . . . . . . . . . . . . .
+2.2 Introduction to diffusion MRI . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3 The connectome pipeline . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.1 Overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.3.2 Existing computational tools for the dMRI-specific workflows . . .
+2.4 Open challenges in the connectome mapping . . . . . . . . . . . . . . . . .
+2.4.1 Correction for susceptibility distortions . . . . . . . . . . . . . . .
+2.4.2 Diffusion MRI segmentation . . . . . . . . . . . . . . . . . . . . . .
+2.4.3 Structural information co-registration . . . . . . . . . . . . . . . .
+2.5 Methodological background . . . . . . . . . . . . . . . . . . . . . . . . . .
+2.5.1 Bayesian inference in image segmentation . . . . . . . . . . . . . .
+2.5.2 Joint segmentation-registration through Active Deformation Fields
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+5
+5
+7
+9
+9
+11
+11
+12
+14
+15
+17
+17
+23
+
+3 Objectives
+3.1 Preliminary study of the applicability of existing techniques from other image processing
+fields . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.2 Proposal of a new methodology . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+3.3 Assessment of translational advance . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+
+27
+
+4 Research plan
+4.1 Work Unit 1:
+4.2 Work Unit 2:
+4.3 Work Unit 3:
+4.4 Work Unit 4:
+4.5 Work Unit 5:
+
+27
+28
+28
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+31
+31
+31
+31
+31
+31
+
+5 Resources and operational context
+5.1 Image Data . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+5.1.1 Simulated digital phantoms . . . . . . . . . . . . . . .
+5.1.2 Real magnetic resonance imaging (MRI) databases . .
+5.2 Hardware and software resources . . . . . . . . . . . . . . . .
+5.3 Operational context and creation of a Network of Excellence .
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+33
+33
+33
+33
+35
+36
+
+Preliminary work . . . . . .
+Bayesian inference . . . . .
+Active deformation fields . .
+Evaluation and applications
+Additional activities . . . .
+
+Bibliography
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+
+39
+
+i
+
+GRAPPA Generalized Autocalibrating Partially Parallel
+Acquisition. 7, 35
+GRE gradient echo sequence. 7, 13, 35
+HBP Human Brain Project. 1, 3
+HCP Human Connectome Project. 1
+
+List of Terms
+
+ICBM International
+database. 5
+
+Consortium
+
+for
+
+Brain
+
+Mapping
+
+ICM iterative conditional models. 21–23
+ACWE active contours without edges. 23, 24
+
+IMAGERS UCLA Image Processing Research Group. 37
+
+ADC apparent diffusion coefficient. 9, 15
+
+IPAM Institute for Pure and Applied Mathematics. 37
+
+ADF active deformation field. 17, 23–25, 27, 31
+
+ITK Insight Image Segmentation and Registration Toolkit.
+35
+
+ADMM alternating direction method of multipliers. 28
+ANTS Advanced Normalization ToolS. 35
+
+IXI Information eXtraction
+GR/S21533/02. 34
+
+from
+
+Images
+
+-
+
+EPSRC
+
+ASSET Array Spatial Sensitivity Encoding Technique. 7
+
+Kirby21 Multi-Modal MRI Reproducibility Resource. 33
+
+BBR boundary-based registration. 16
+
+LM Levenberg-Marquardt. 22
+
+BIT Biomedical Imaging Technologies. 36
+
+LPC local Pearson’s correlation. 16
+
+BRAIN Brain Research through Advancing Innovative Neurotechnologies. 1, 3
+
+LTS5 Signal Processing Laboratory. 36
+
+BW bandwidth. 7, 35
+
+M3N mixture model of multivariate Normal distributions.
+15, 17–20
+
+CHUV Universitary Hospital Center of Canton Vaud, Lausanne. 34, 36, 37
+
+MAP maximum a posteriori. 20, 22
+MBIS Multivariate Bayesian Image Segmentation tool. 27,
+28
+
+CIBER Biomedical Research Networking Center. 36
+
+MC Monte-Carlo. 22, 23
+
+CIBER-BBN CIBER in Bioengineering, Biomaterials and
+Nanomedicine. 36
+
+MCI mild-cognitive impairment. 35
+CMP the connectome mapper. 11, 35
+MD mean diffusivity. 9, 14, 34
+CR correlation ratio. 16
+MEG magentoencefalogram. 1
+CSF cerebrospinal fluid. 8, 9, 14, 17, 18, 28, 33, 34
+MI mutual information. 16
+DCT Discrete Cosine Transform. 22, 23
+
+MIAL Medical Image Analysis Laboratory. 36, 37
+
+dMRI diffusion MRI. 2, 3, 5–12, 14–17, 27–29, 31, 33, 35
+
+MR magnetic resonance. 2, 35
+
+DSI diffusion spectrum imaging. 15
+
+MRF Markov Random Field. 14, 15, 17, 19–22
+
+DTI diffusion tensor imaging. 9, 14–16, 33–35
+
+MRI magnetic resonance imaging. i, 1, 5, 7–10, 13, 16, 17,
+19, 22, 24, 27, 31, 33–35
+
+DWI diffusion weighted imaging. 6
+MT magnetization transfer MRI. 33, 35
+EEG electroencefalogram. 1
+NEX number of excitations. 7, 35
+EM expectation-maximization. 15, 20–22
+EMS Expectation-Maximization Segmentation. 22, 23
+
+NITRC Neuroimaging Informatics Tool Resources Clearinghouse. 3
+
+EPFL Swiss Federal Institute of Technology, Lausanne. 36
+
+NSF National Science Foundation. 37
+
+EPI echo-planar imaging. 7, 9, 13, 16, 33, 35
+
+PD proton density-weighted MRI. 34
+
+FA fractional anisotropy. 9, 14, 15, 34
+
+PDE partial differential equation. 23, 25
+
+FAST FMRIB’s Automated Segmentation Tool. 22, 23, 35
+
+PSF point-spread function. 13
+PVE partial volume effect. 9, 11, 15, 18–20, 28, 33
+
+FCP 1000 Functional Connectomes Project. 3
+fMRI functional MRI. 1, 13, 16
+
+R-fMRI resting-state fMRI. 3
+
+FMRIB Oxford Centre for fMRI of the Brain. 22
+
+RA radial anisotropy. 15
+
+FoV field of view. 10, 35
+SENSE Sensitivity Encoding. 7
+GC graph-cuts. 20, 21
+
+SNR signal-to-noise ratio. 7
+
+GM grey matter. 8, 9, 12, 14–18, 33
+
+SPM Statistical Parametric Mapping. 22, 23
+
+iii
+
+iv
+STAPLE simultaneous truth and performance level estimation. 15
+
+LIST OF TERMS
+UC University of California. 37
+UCLA University of California, Los Angeles. 36, 37
+
+T-fMRI task-based fMRI. 3
+
+UNIL University of Lausanne. 36, 37
+
+T1 T1-weighted. 6, 12, 14–16, 18, 33–35
+
+UPM Universidad Politécnica de Madrid. 36
+
+T2 T2-weighted. 6, 9, 13, 16, 18, 33–35
+TE echo time. 7, 35
+
+VFL variable flip-angle. 35
+VR volume ratio. 15
+
+TFL turboFLASH sequence. 35
+WM white matter. 5, 8–10, 14, 15, 17, 18, 27, 33
+TR repetition time. 7, 35
+WU Work Unit. 31
+TSE turbo spin-echo sequence. 35
+
+Chapter 1
+
+Introduction
+As humans, we can identify galaxies light years away and we can study particles smaller than an atom,
+but we still haven’t unlocked the mystery of the 3 lbs. of matter that sits between our ears.
+Barack Obama, President of the United States, April 2013
+
+Technological development applied in neuroscience is enabling unprecedented advances in a field
+that has been challenging the limits of our knowledge for centuries. Although the human brain has
+attracted more attention than any other organ system, it remains the least known. As a consequence,
+the nervous system is associated with the largest list of incurable diseases, from which only some have
+a widely accepted cause and/or agreed indicators.
+In 2005, the term connectome was simultaneously introduced by (Hagmann, 2005) and (Sporns
+et al., 2005) to refer to the comprehensive mapping of structural pathways that connect the different
+anatomical areas in the brain. Since then, the concept has been updated and broadened to cover other
+physiological elements in which the value is not (only) in the elements themselves, rather than the
+relationships between them. For instance, the functional connectomes (mapping the activity of the
+brain) are widely accepted and investigated nowadays. Additionally, the molecular connectivity is also
+promising to outburst soon. Establishing the links between the three connectivity levels (structural,
+functional, and further, molecular) stands at the horizon that will support the research activity for
+the connectome mapping (Bargmann and Marder, 2013).
+One recent proof of this growing interest on this new area of connectomics is the announcement of
+two significant research projects in Europe and the United States: the Human Brain Project (HBP)
+(Markram, 2012), and the Brain Research through Advancing Innovative Neurotechnologies (BRAIN)
+initiative (Obama, 2013), respectively. Whereas the two projects aim at unveiling how individual brain
+cells and complex neural circuits interact at the speed of thought, they diverge on the approach, and
+focus on different applications. On one hand, the HBP will apply the resulting insights for modeling
+the human brain function, and for developing novel computational systems inspired on these models.
+On the other, BRAIN is more oriented to the clinical application, set after the discovery and cataloging
+of “neurophenotypes” that promise to transform the way we study the healthy and diseased brain.
+Moreover, these two projects are only the latest ones to complement a number of ongoing research
+efforts that already keep the field highly active. A list of these projects is provided in Table 1.1.
+Notwithstanding some criticism over the connectome mapping, and albeit with limitations, such maps
+will reveal essential characteristics of neural circuits that would otherwise be inaccessible (Morgan
+and Lichtman, 2013).
+As regards structural connectivity, the “wiring map” of the brain can be observed at a wide range
+of scales depending on the pursued insights (Craddock et al., 2013). Regardless the chosen scale, the
+procedure fulfills the following general pattern. Data collection involves sensing the target feature,
+structuring and compressing the information gathered, and finally storing the contents in digital
+objects. Most of the sources for data acquisition are imaging techniques (microscopy (Lichtman et al.,
+2008), magnetic resonance imaging (MRI) (Hagmann et al., 2012), functional MRI (fMRI) (Smith,
+2012), digitalized histology (Kleinfeld et al., 2011), etc.), but there also exist other possibilities (i.e.
+electroencefalogram (EEG) and magentoencefalogram (MEG) records, etc.). An ambitious effort to
+comprehensive data acquisition is leaded by the Human Connectome Project (HCP) (Van Essen et al.,
+2012). The second step deals with building up the brain network from retrieved data. In the case
+of imaging data, as it is the aim of this work, it includes reconstruction, modeling, segmentation,
+registration, tractography, tract parcellation/clustering, and network set up (Daducci et al., 2012).
+1
+
+2
+
+CHAPTER 1. INTRODUCTION
+
+Finally, the last step looks for meaningful insights from the networks with mathematical and statistical
+analyses (Sporns, 2012).
+To narrow down the broad field of connectomics, the present work will be restricted to the extraction of human connectomes from in vivo diffusion MRI (dMRI) data. Therefore, the PhD Thesis
+presented in this document is aimed at improving the current dMRI-based mapping techniques and
+at enabling reliable analyses of the brain networks. The described framework is designed for studying
+the structural connectivity at the macro-scale. The scale is defined by the current imaging techniques,
+that in the case of dMRI reaches a typical resolution of 2.0mm × 2.0mm × 2.0mm. Considering that
+1.0mm3 volume might hold around 105 axons (Aboitiz et al., 1992), it is obvious that millions of
+axons are to be integrated at the dMRI scale of analysis. Therefore, the target features for analysis
+are the whole-brain network properties, with special attention to the discovery and characterization
+of network modules. Modularity is important due to several reasons (Sporns, 2013): 1) modules are
+the key point when trying to bridge the structural topology to the prominent functional subdivisions;
+2) clustering the network in modules will allow for statistical analyses and comparisons; 3) network
+modules are the needed atoms for finding subject- and group-wise characteristic patterns; 4) using
+modules it will be possible to reduce the network information by compression and/or modular decomposition; 5) modules are necessary to step down the scale pyramid to understand the roles of edges
+(fiber bundles) and nodes (cortical regions) within the global network topology, the so-called community concept (Guimerà and Amaral, 2005); and, 6) checking that networks theory fulfills, showing that
+human brain uses modularity as a strategy for robust network function (Kashtan and Alon, 2005).
+On the other hand, a wide number of limitations bound the impacts and outcomes of magnetic
+resonance (MR) connectomics. From data acquisition to network analysis, a large queue of chained
+processing tasks demands for new or improved methodologies that increase the overall accuracy (i.e.
+precision) and reliability (i.e. repeatability, and robustness). Comprehensive descriptions of these
+limitations are found in (Hagmann et al., 2010; Jones and Cercignani, 2010; Jbabdi and JohansenBerg, 2011) and will be introduced in Chapter 2 along with a discussion of the state of the art
+regarding dMRI basic concepts, the connectome generation methodologies, and the key points along
+the processing pipeline that will be investigated in the PhD Thesis. Chapter 3 details the objectives
+of the proposed PhD Thesis regarding the proposed contributions, with novel processing techniques
+to address certain weak points along the state-of-art pipelines for connectivity mapping. Chapter 4
+reviews the work plan to achieve the objectives, and Chapter 5 deals with the resources and needs
+necessary to carry the project out.
+
+3
+
+Title (weblink if available; location)
+Brain Genomics Superstruct
+(United States)
+
+Brainnetome
+(http://www.brainnetome.org/;
+China)
+
+Consortium of Neuroimagers for
+the Noninvasive Exploration of
+Brain Connectivity and Tracts
+(http://www.brain-connect.eu/;
+European Union)
+Developing Human Connectome
+Project (European Union)
+US National Institutes of Health
+Human Connectome Project:
+Washington University in Saint
+LouisUniversity of Minnesota
+consortium
+(http://humanconnectome.org/;
+United States)
+US National Institutes of Health
+Human Connectome Project:
+MGH-Harvard-UCLA consortium
+(http:
+//humanconnectomeproject.org/;
+United States)
+1000 Functional Connectomes
+Project (FCP) (http://fcon_1000.
+projects.nitrc.org/; global)
+International Neuroimaging
+Data-sharing Initiative (INDI)
+(global)
+
+UK Biobank Imaging
+(http://www.ukbiobank.ac.uk/;
+UK)
+
+Goals
+Aims to collect a large-scale imaging data set to explore brainbehavior relationships and their genetic influences. The initiative has collected resting-state
+fMRI (R-fMRI), dMRI and saliva samples from over 3,000 adults, along with
+comprehensive phenotyping data (cognition, personality and lifestyle), and
+the resultant repository containing 1,500 completed, quality-pass data sets is
+expected to be publicly available in 2013.
+Attempts to characterize brain networks with multimodal neuroimaging techniques, from the microscale (microtechnique, ultramicrotomy, staining and visualization techniques) to the macroscale (electroencephalography, fMRI and
+dMRI). R-fMRI and diffusion-imaging data sets, along with behavioral and
+blood data from more than 1,000 patients with schizophrenia, 300 patients
+with Alzheimer’s disease and mild cognitive impairment, 120 patients who
+had a stroke, 50 patients with glioma and 2,000 healthy controls collected
+from 11 hospitals and imaging centers.
+Consortium focused on studying the brain’s microstructure, tracts and connectivity using dMRI. Target deliverables include optimized acquisition protocols,
+analytic tools and a connectivity atlas.
+
+Initiative to comprehensively map and model the human connectome for 1,000
+babies, including in utero and in vivo imaging (2044 weeks after conception).
+State-of-the-art multimodal imaging initiative (R-fMRI, task-based fMRI (TfMRI), dMRI and magnetoencephalography) that makes use of a twin design
+(1,200 healthy adults, including twin pairs and their siblings from 300 families)
+to provide insights into relationships between brain connectivity, behavior and
+genetics. The project uses multiband imaging sequences for R-fMRI (high
+spatial and temporal resolution) and dMRI (high spatial resolution), which it
+has refined and is currently distributing to interested centers. All data and
+tools developed through the initiative will be openly shared.
+Initiative focusing on unraveling the full connectivity map using the first ’Connectome Scanner’, which is designed to carry out diffusion using ultrahigh
+gradient strength (48 times the strength of conventional systems). Efforts
+to optimize dMRI technology will focus on increasing the spatial resolution,
+quality and speed of acquisition.
+Grass-roots data-sharing initiative that brought together over 1,200 previously
+collected R-fMRI data sets from 33 independent sites around the world and
+released them openly to the scientific community via the Neuroimaging Informatics Tool Resources Clearinghouse (NITRC), http://www.nitrc.org/.
+Second FCP initiative that was founded in an attempt to (i) expand
+the scope of open data sharing in the functional neuroimaging community to include phenotypic data beyond age and sex (major INDI data
+releases: ADHD-200 Consortium (http://fcon_1000.projects.nitrc.org/
+indi/adhd200/), the Autism Brain Imaging Data Exchange (ABIDE; http:
+//con_1000.projects.nitrc.org/indi/abide/)) and (ii) provide a model
+for prospective, prepublication data sharing (major release: the Nathan
+Kline Institute-Rockland Sample http://fcon_1000.projects.nitrc.org/
+indi/enhanced/). More than 5,000 R-fMRI data sets are available through
+the FCP and INDI efforts combined as well as a growing number of dMRI
+data sets.
+Building on an existing long-term prospective epidemiological study that has
+collected genetics, blood samples and lifestyle information from a cohort
+of 500,000 subjects, the UK Biobank Imaging Extension aims to resample
+100,000 of the cohort using multimodal neuroimaging (including but not limited to R-fMRI and dMRI), as well as cardiac MRI and rich phenotyping.
+
+Table 1.1: Large-scale initiatives from around the world that are promising to accelerate the pace
+of macroscale connectomics existing before the publication of the HBP and the BRAIN. Reproduced
+from (Craddock et al., 2013)
+
+Chapter 2
+
+Background and state of the art
+2.1
+
+From physiology to diffusion MRI connectomics
+
+Diffusion MRI is a widely used family of MRI techniques (Sundgren et al., 2004) which accounts for a
+growing interest in its application to structural connectivity analyses of the brain at the macro-scale
+(Craddock et al., 2013). By exploiting the data in diffusion MRI (dMRI), it is possible to derive the
+local axonal structure at each imaging voxel (Basser and Pierpaoli, 1996) and estimate a whole-brain
+mapping of fiber tracts (Hagmann et al., 2012; Johansen-Berg and Rushworth, 2009) represented by
+trajectories reconstructed from the local information. The analysis of dMRI-derived connectomes is
+a promising tool for neuroscience in general (Bullmore and Sporns, 2009), but also for the clinical
+application in particular (Griffa et al., 2013).
+Although the explosion of dMRI to probe the diffusion restriction patterns within the brain is
+relatively recent, the study of structural development and topological patterns of brain networks
+started earlier. In 1997, Van Essen published a tension-based theory for morphogenesis and compact
+wiring in the central nervous system (Van Essen, 1997). This paper hypothesized that in the cerebral
+cortex, tension along axons in the white matter (WM) can explain how and why the cortex folds
+in a characteristic species-specific pattern. Therefore, it set a basis for shifting neuroimaging from
+“blob-ology” (specialization/segregation) towards “connectology” (integration). The success of the
+foundations presented by (Van Essen, 1997) have been lately recalled and confirmed by (Wedeen
+et al., 2012), that claimed a grid topology pattern for the networks of the brain. Therefore, the
+underlying developmental principles relating cortical features with the internal “wiring” of the brain
+served as trail head for a whole new line of research aiming at mapping all measurable features of the
+cortex (thickness, gyrification, volume, surface, etc.). Moreover, (Passingham et al., 2002) established
+the first demonstration of the anatomical support for the functional localization of the cortex. They
+used the CoCoMac database (Stephan et al., 2001) to extract unique cortico-cortical connectivity
+patterns. As a consequence, this “connectional fingerprint” further influences the functional properties
+of brain regions. These efforts resulted in an explosion of computational tools (for instance, (Fischl
+and Dale, 2000; Van Essen et al., 2001)), and the opening of the still emerging neuroinformatics field.
+Soon, connectivity analyses of the brain restricted to selected regions of interest using dMRI data
+were widespread. (Behrens et al., 2003) presented a prominent work in that direction, identifying
+specific connections between the human thalamus and cortex, and unveiling distinct subregions whose
+locations corresponded to nuclei previously described in histological studies. A review of the state of
+the art at that time is presented in (Parker, 2004).
+In 2005, Sporns et al. and Hagmann started an “-omics” race as regards connectivity mapping,
+with their independent works (Sporns et al., 2005; Hagmann, 2005). These are the first reports linking
+the brain structural insights and the global network viewpoint, postulating dMRI as the best indicated
+imaging modality. However, the first relevant report assessing whole-brain connectivity was carried
+out using only classical T1 weighted MRIs, rather than dMRI, due to the great unreliability of the
+existing early methodologies (among other factors). (He et al., 2007) analyzed 124 human T1 scans of
+the brain from the International Consortium for Brain Mapping database (ICBM), implicitly assuming
+Van Essen’s hypothesis, as they built the brain networks on top of the inter-regional correlations of
+cortical thickness maps. In another example (Sanabria-Diaz et al., 2010) the cortical surface is also
+applied to build up the networks. Therefore, they related the axonal development with the final
+morphology of the cortical sheet. Since 2005, the connectivity mapping pipelines (e.g. (Daducci et al.,
+2012)) are defined with fine detail (see figure 2.1 for a brief description, and section 2.3 for the full
+description), but techniques still demand for significant efforts in improving the image processing side.
+5
+
+6
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+Figure 2.1: Generic flowchart of the structural MRI connectivity pipelines. Extracting
+the connectome comprises a large set of image processing techniques. On one side, it is necessary
+to provide an anatomically precise and correct reference for further analysis (Morphology block, left
+side). This is achieved mainly with a T1 study. Additional MRI datasets can be available, such as
+T2 scans or gradient-phase mappings of the field (top right within the morphology box, T2 scan and
+field map with magnitude depicted in the top-left of the diagonal and phase on the bottom-right).
+From these datasets (generally T1-only), a set of computational methods are applied to extract the
+anatomical information (bottom-row of morphology box). Some of these features are cortical thickness
+maps, cortical parcellation (i.e. regions that will support the nodes of the network), segmentation of
+brain tissues and subcortical regions, etc. On the other hand, the information to be extracted from the
+diffusion data (labeled as dMRI in the right-side box) are maps of scalar features and the tractography
+(the whole-brain tracking of diffusion directions representing the fiber bundles). The dMRI volume
+has been represented with the B0 volume overlaid over 3 exemplary directions extracted from a larger
+dataset to illustrate the nature of DWI. By means of image registration techniques, it is possible to
+fuse the anatomical information onto the diffusion information. In the case of early networks built on
+cortical thickness correlations the diffusion branch is omitted (He et al., 2007). Finally, the main results
+are a network matrix (an abstract summary of the nodes and their connections) and representations
+of the network topology that have into account the anatomical information. On top of these two tools,
+a wide range of analyses and comparisons have been proposed on the area of connectivity analysis
+(blue box).
+
+Early dMRI research mainly focused on the improvements of imaging techniques by a better understanding of the diffusion effect, and improving image reconstruction methodologies. Currently, the
+connectome extraction and analysis relies on a large chain of sophisticated computational methods including acquisition, reconstruction, modeling and model fitting, image segmentation and registration,
+fibre tracking, connectivity mapping, visualization, statistical group studies, and inference (figure 2.5).
+This growing complexity has given rise to challenging issues towards reliable structural information
+about the neuronal tracts presented in, and also difficulties on the statistical analysis (Meskaldji et al.,
+2013). To our knowledge, studies regarding the downstream impact of the different sources of inaccuracy and variability along the toolchain for connectivity analysis (Jones and Cercignani, 2010; Cheng
+et al., 2012; Jones et al., 2013) are scarce, and shallow due to the complete absence of comprehensive
+
+2.2. INTRODUCTION TO DIFFUSION MRI
+
+7
+
+evaluation procedures. In the following sections, the fundamentals of dMRI, the current mapping
+framework and the existing limitations will be discussed.
+Parameter
+Echo time (TE)
+
+Definition
+Time between slice excitation and acquiring
+the center of k-space
+
+Repetition time
+(TR)
+
+The time between acquisitions of adjacent
+fMRI volumes (sampling period)
+
+Bandwidth (BW)
+(1/∆t )
+
+The range of frequencies mapped to a voxel
+
+Flip angle (α)
+
+The amount of rotation applied to proton
+spins by the excitation pulse
+
+Spatial resolution
+(∆x , ∆y , ∆z ,
+Nx , Ny )
+
+The volume of tissue sampled in a given
+voxel; determined by field of view and the
+number of points sampled in a slice
+
+Parallel imaging
+factor (Pf )
+
+Methods such as Generalized Autocalibrating Partially Parallel Acquisition
+(GRAPPA), Sensitivity Encoding (SENSE)
+and Array Spatial Sensitivity Encoding
+Technique (ASSET) can decrease repetition
+time and reduce spatial distortions by
+sampling k-space lines in parallel; decreases
+in repetition time are rate-limited by echo
+time required for BOLD contrast
+Number of repeated acquisitions (excitations) of the same sampling direction that
+are acquired and subsequently averaged
+Scalar value that encodes the intensity of
+gradient pulses
+
+Number of
+excitations
+(NEX)
+b-value
+
+echo-planar
+imaging (EPI)
+echo spacing or
+dwell time
+
+Time (ms) between the start of the readout
+of two successive lines in k-space during the
+EPI acquisition
+
+Description
+Determines the impact of spin-spin relaxation (T2) and spin dephasing (T2*) on image. Some acquisitions (as the gradient echo
+sequence (GRE) used for mapping the field
+inside the scaner) use more than one excitation, appearing the concept of TE difference
+(∆TE) or spacing.
+Impacts the signal available for imaging (I0 ),
+impacted by the number of slices; longer repetition time durations reduce motion sensitivity
+Lower bandwidth settings can increase artifacts owing to inadequate shimming or
+susceptibility and distortions in the phaseencoding direction (for example, ’scalloping’)
+Impacts I0 . Flip angles larger or smaller
+that the Ernst angle for a given repetition time will reduce I0 Low flip angles
+may reduce motion sensitivity and in-flow
+effects and improve spin-lattice relaxation
+(T1) contrast of images.
+signal-to-noise ratio (SNR) is substantially
+impacted by voxel volume; higher spatial
+resolution have lower SNR for example, a 2mm isovoxel has only 30% of the SNR of a
+3-mm isovoxel, holding all other factors constant
+Can allow faster image acquisition but at a
+reduction of SNR by 1/Pf , holding all other
+factors constant; will increase temporal noise
+resulting from head motion, respiration or
+pulsatile effects. Parallel imaging is important at 3T, and essential at 7T.
+
+Improves SNR and it is commonly used for
+dMRI
+Defines the amount of diffusion weighting in
+the experiment (Le Bihan and Breton, 1985),
+increasing angular sensitivity at the cost of
+SNR and acute distortion effects. Typical
+values range 700-1000smm−2 .
+Typically, it is around 0.5 − 0.7 ms. If parallel imaging is used, then the effective echo
+spacing is considered, being the standard
+echo time multiplied by a 1/Pf factor.
+
+Table 2.1: MRI and dMRI acquisition parameters. Based on (Craddock et al., 2013; Soares
+et al., 2013)
+
+2.2
+
+Introduction to diffusion MRI
+
+DMRI data are usually acquired with EPI sequences as they allow for very fast acquisition of large sets
+of slices each acquired after a single excitation (Mukherjee et al., 2008). EPI volumes are collected
+in sequence and each one represents one probed diffusion direction. The outcome of acquisition is
+called raw data or diffusion signal, and it packs a stack of 3D sequential volumes associated with a
+corresponding vector (with respect the scan system coordinates). The so-called b-vector informs about
+the direction sampled. All the b-vectors are stacked in a table that has been coined B-matrix. A brief
+description of the most relevant parameters in dMRI acquisition is presented in Table 2.1.
+
+8
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+Figure 2.2: MRI imaging protocol in detail. A) axial slice of a T1 weighted image, with the
+contours delineating the fundamental anatomical interfaces between tissues (i.e. pial, WM/GM and
+CSF/WM). B) B0 volume of the same subject, after affine mapping to the T1 space. The same
+contours are overlaid to highlight the geometrical distortions that happen in the orbitofrontal lobes.
+These regions require a non-linear mapping. C) close-up of the frontal lobe area, where susceptibility
+distortion is more present. Colored arrows indicate the direction of distortion with respect to the
+anatomically correct contours. The white window highlights an “almost-free” of susceptibility distortion region. D) high-resolution T2 weighted scan, to demonstrate the contrast similarity of this
+modality and the B0 volume in B. E) two conventional dMRI volumes extracted from the whole
+package and their associated gradient vector. Consequently, E-left is the B0 volume as no directional
+gradient is applied. E-right represents 1-of-n sampled directions and the corresponding direction
+vector.
+
+2.3. THE CONNECTOME PIPELINE
+
+9
+
+One or more volumes without directional encoding (so-called baseline, b = 0, low b, or just B0
+volumes) are interleaved as reference (one every 5 or 10 directions is recommended). At the least, one
+B0 should be acquired at the beginning of the EPI dataset. The number of sampled directions is mostly
+defined depending on the scanning time constraints and the intended model fitting methodology. For
+instance, a typical diffusion tensor imaging (DTI) dataset would comprehend 30 directions, with a
+scanning time around 5 min. These 30 directions plus one B0 interleaved every 10 directions would
+produce a 4D volume of 33 3D slices and a B-matrix of 33 × 3 elements. As the B0 volumes are
+acquired without angular direction gradient, they show a “T2-like” contrast (this similarity is shown
+in B) and D) of figure 2.2).
+EPI are known to suffer from geometrical distortions and artifacts due to, chiefly, three sources:
+the subject motion in between acquiring different sampling directions, the induced Eddy currents on
+the scanner coils due to the gradient switching (O’Brien et al., 2013), and, finally, distortions caused by
+the magnetic susceptibility inhomogeneity present at the interfaces between tissues. A comprehensive
+study of EPI distortion is presented in (Andersson and Skare, 2010). As we shall encounter, B0susceptibility distortions will be one of the central topics of interest for the present work, and it will
+be further reviewed in subsection 2.4.1. As a brief introduction, susceptibility distortions happen
+along the phase-encoding direction, and are most appreciable in the frontal lobes of the brain due to
+proximity of an air/tissue interface located around the sinuses. Two implications are associated to
+this artifact: the signal loss caused on highly distorted regions, and a significant added difficulty in
+registering with structural images (e.g. T1-weighted). A visual description of this pitfall is shown in
+figure 2.2, box C).
+After correcting for artifacts, the difficulty of performing analyses directly on the directionally
+dependent raw data is not affordable. Thus, dMRI data is reconstructed using one of a numerous
+set of readily available algorithms. The outcome is a voxel-wise model of diffusion shape. On top of
+the chosen model, some scalar maps describing tissue features is generally computed. For instance,
+the most popular dMRI-derived scalar map is fractional anisotropy (FA) which depicts the isotropy
+of water diffusion inside the brain. Another widely studied map is the apparent diffusion coefficient
+(ADC) (or mean diffusivity (MD) that has a dual definition), which reflects the intensity of the diffusion
+effect. Many other directionally invariant measurements have been defined. For a comprehensive
+study, please refer to (Ennis and Kindlmann, 2006).
+Alongside distortions and direction dependency, dMRI data is affected by partial volume effects
+(PVEs) (Alexander et al., 2001) that appear when several tissues, or signal emitters, are present in the
+same imaging unit, producing an averaged intensity. The effect is directly related to the low resolution
+achievable with dMRI (typically around 2.0 × 2.0 × 2.0mm3 ). An additional complication specific to
+dMRI is the CSF contamination (Metzler-Baddeley et al., 2012), given that the signal sensed at the
+voxel is modulated by the diffusion response, causing that CSF contribution is significantly favored
+versus WM or GM contributions in voxels located at region boundaries.
+
+2.3
+2.3.1
+
+The connectome pipeline
+Overview
+
+The big picture of the image processing workflow for computing human connectomes from MRI data
+is presented in figure 2.1. Saving for some exceptions as the one mentioned before (He et al., 2007),
+the general standpoint concerns three major areas that might be described as follows:
+Diffusion MRI data dMRI is the main source of information for the identification and location of
+the brain “wiring” and therefore, it supposes a major area within the connectome mapping framework.
+Starting from the raw dMRI data, the first step is fitting a model of orientation of the fibers at each
+voxel. The simplest model is the widely used tensor model (Basser and Pierpaoli, 1996) that provides
+DTI images, and requires probing a minimum of 6 independent directions. Many other models have
+been further proposed (Tuch et al., 2002; Tuch, 2004; Wedeen et al., 2005; Tournier et al., 2007;
+Canales-Rodrı́guez et al., 2009) among others. The models try to advance the current methodologies
+in two possible lines: either they try to achieve a higher angular resolution (usually increasing the
+number of directions and acquisition time), or they aim at improving the efficiency of the algorithms
+(to lower the number of directions and acquisition time) without significant loss of angular resolution.
+The angular resolution is the minimum angle of two crossing fibers (at a certain voxel) that the
+algorithm is able to discriminate.
+After the model is computed, then a second step called tractography performs the identification
+and location of streamlines that integrate some millions of axons with identical orientation. These
+
+10
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+Figure 2.3: Multi-resolution connectomes. Five multi-scale atlases derived from the DesikanKilliany’s anatomical atlas implemented in Freesurfer, with corresponding connectivity matrices. Reproduced from (Daducci et al., 2012).
+
+streamlines represent the fiber pathways, and it is important to recall that they do not represent
+single axons, as dMRI senses the anatomy of the brain at the macro-scale. Further advances on
+tractography derived on other possible representations of the fiber tracts, as probabilistic tractography.
+Tractography has evolved from local to global. The early tractography methods (both streamline and
+probabilistic tractographies) use a seed point and build the connectivity from it. In order to find
+whole-brain tractography, these algorithms set a certain number of seeds at every WM voxel to capture
+all the possible tracts. Currently, tractography is evolving to global methods that are expected to
+improve notably the outcome by using global information, but still one important limitation is the
+WM segmentation.
+
+Morphological data However, dMRI suffers from several issues, previously described in section 2.2,
+that demand for the fusion of other sources of information. Moreover, the neuroimaging knowledge
+gathered in the past decades of intensive research is mostly framed into the prominent T1 weighted
+MRI. This family of images has been deeply studied and subjected to uncountable analyses. Thus,
+such a rich source of information about morphology is mapped from the T1 reference image into the
+dMRI. Other usual sources of anatomical information that can be incorporated to the diffusion data
+are T2 weighted images and/or estimations of magnitude and phase of the magnetic field inside the
+scanned field of view (FoV) (the so-called “fieldmap”). Most often, the morphological data plays
+an important role for the following tasks: 1) the use of the fieldmap to correct for susceptibility
+distortions; 2) provide the tractography algorithm with a precise stopping criteria in the form of WM
+segmentation; and 3) impose a division of the cortex into meaningful areas, the so-called cortical
+parcellation. These three needs will be covered in section 2.4.
+
+Analysis of resulting networks The final output of the connectome mapping workflows is a
+network. The cortical parcellation is used to define the nodes of the network, at a specified resolution
+(see figure 2.3), and the edges are extracted from the streamlines connecting those nodes. Therefore,
+the objective of these workflows is building up a graph representing the network. On top of that, in this
+last analysis step, the graph is statistically analyzed, and visualized, to extract as much information
+as possible from the network. Simple visualization can provide very valuable interpretation of the
+resulting connectomes, for some examples, please see figure 2.4. On the other hand, pattern recognition
+and statistical comparison of connectomes will require a concerted effort directed at data analysis and
+reduction, as well as computational modeling (Sporns, 2013). The complexity of the networks, the
+multi-scale analysis, and the massive amount of necessary comparisons that dramatically hinders
+analysis power are demanding for new methodologies and strategies (Meskaldji et al., 2013).
+
+2.4. OPEN CHALLENGES IN THE CONNECTOME MAPPING
+
+11
+
+Figure 2.4: Visualizing connectomes. (A) Classical anatomical-tracing-style depiction of functional connectivity for posteromedial cortex subdivisions (image reproduced from (Margulies et al.,
+2009)). (B) Flatmap-based representation of the CoCoMac atlas of the macaque connectome (image
+reproduced from (Knock et al., 2009)). (C) Connectogram depicts brain areas (nodes) as columns in
+the circular band, differing connectivity metrics in separate layers and connections with lines; lobes
+are differentiated by color, and left or right halves corresponds to hemispheres (reproduced from
+(Van Horn et al., 2012)). (D) Network topology representation registered to the anatomical reference
+(T1), with nodes weighted by the number of connecting streamlines (logarithmic scale). (E) Typical
+non-binary network matrix, where nodes are the rows and columns indexes and connectivity values fill
+the matrix. Inter-hemispheric connections, for an example, are highlighted inside the white ellipsoid.
+(D) and (E) represent the same underlying network, and are reproduced from (Daducci et al., 2012).
+
+2.3.2
+
+Existing computational tools for the dMRI-specific workflows
+
+In figure 2.5, a fully detailed flowchart of the dMRI connectome pipeline is presented, highlighting the
+modules that the present work will address. The pipeline is general enough to represent the current
+trends, indicating the most common names for each of the connecting processing nodes. Generally
+speaking, researchers build up the pipeline selecting the appropriate tool from an enormous catalog
+of available software packages. The review presented in (Soares et al., 2013) could be considered an
+updated and comprehensive (with some relevant absences, it must be noted) picture of this catalog.
+Another survey the existing software tools is presented in (Hasan et al., 2011). Numerous pipelines
+covering part or the whole necessary tasks of the dMRI workflow have been released during the last
+years as: the connectome mapper (CMP) (Daducci et al., 2012), 3D Slicer (Fedorov et al., 2012),
+AFNI (Cox and Hyde, 1997), BioImage Suite (Papademetris et al., 2005), BrainVoyager QX (Goebel
+et al., 2006), Camino (Cook et al., 2006), Dipy (Garyfallis et al., 2011), DoDTI (Park et al., 2004),
+DTIStudio (Jiang et al., 2006), ExploreDTI (Leemans et al., 2009), Freesurfer-tracula (Yendiki et al.,
+2011; Fischl, 2012), FSL (Jenkinson et al., 2012), JIST (Lucas et al., 2010), MedINRIA (Toussaint
+et al., 2007), MRtrix (Tournier et al., 2012), SATURN (Cárdenes et al., 2010), SPM+toolboxes (e.g.
+(Glauche, 2013), DiffusionToolkit & TrackVis (Wang et al., 2007), TORTOISE (Pierpaoli et al., 2010),
+etc.
+
+2.4
+
+Open challenges in the connectome mapping
+
+All the available dMRI-derived models and scalar maps are very sensitive to distortions, PVE, noise
+and axonal dispersion (Jbabdi and Johansen-Berg, 2011), what yields numerous challenges in the
+
+12
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+Figure 2.5: Specific flowchart of the dMRI connectivity pipelines. Any high-standard software pipeline should integrate the following processing units. As dMRI data are generally affected
+by distortion, the first block sequentially corrects for motion, Eddy currents, and susceptibility artifacts. Motion correction is usually performed with a rigid registration of every sampled direction to
+a reference B0. The resulting rotations are then applied to the associated B-matrix, as it has been
+proven to be necessary (Leemans and Jones, 2009). Once the rigid components of the registration
+have been removed, an affine registration (or more complex methodologies (O’Brien et al., 2013))
+is performed to deal with Eddy currents derived distortions. The last module of artifact correction
+addresses the susceptibility induced deformations, marked in orange color because it shall be covered
+in subsection 2.4.1. The following prominent module is reconstruction of directionally independent
+information from the raw dMRI data. As outcome, a voxel-wise model of the fiber orientation is
+obtained, and a set of scalar maps depicting features of interest based on the fiber orientation model.
+Then, the model is fed an appropriate tractography algorithm. As (Jbabdi and Johansen-Berg, 2011)
+recall, these algorithms recover very successfully those streamlines where fibers are clearly aligned, but
+usually fail in those voxels where the model depicts more complex situations (fiber fanning, kissing,
+bending, crossing, etc.). One derived problem is the enormous difficulty at detecting with accuracy
+and reliably the locations at which the streamlines project into the GM sheet. Therefore, tractography
+is aided by a segmentation to as stopping criteria. The segmentation can be obtained from registered
+structural information. Finally, the connectivity matrix is generated with a cortical parcellation that
+usually is registered from the structural reference.
+
+processing tasks (artifact correction, segmentation, registration and parcellation) presented in figure 2.5. Additionally, as a result, a vast number of challenges and pitfalls emerge regarding accuracy
+(correctness) and precision (reproducibility) of tractography-based analyses (Jones et al., 2013) and
+subsequent connectome analyses.
+Moreover, the problems of precise segmentation in dMRI-space and the spatial mapping between
+these contours and the corresponding surfaces in anatomical images bear significant redundancy. Once
+the spatial relationship between T1 and dMRI space is established, the contours which are readily
+available in T1 space can simply be projected on to the dMRI data. Conversely, if a precise delineation
+in dMRI space was achieved, the spatial mapping with T1-space could be derived from one-to-one
+correspondences on the contours. However, neither segmentation nor registration can be performed
+flawlessly, if considered independently.
+The proposed PhD Thesis will investigate the fundamentals of dMRI data and processing methodologies in order to improve the accuracy and reliability of connectome extraction, in the highly coupled
+areas of: susceptibility distortion correction (subsection 2.4.1), segmentation (subsection 2.4.2), and
+structural information co-registration (subsection 2.4.3). These blocks are highlighted in orange color
+within the general framework in figure 2.5. Comprehensive summary tables of applications on the
+three challenging tasks are presented in Table 2.2, Table 2.3, and Table 2.4, respectively.
+
+2.4.1
+
+Correction for susceptibility distortions
+
+The distortion induced by the inhomogeneity of the magnetic susceptibility at tissue interfaces was
+first introduced in section 2.2, and it is visually illustrated in figure 2.2 (subfigures B, and C). The
+degradation effects introduced by this artifact severely impact the outcome in a negative manner, due
+to the geometrical incorrectness and the signal destruction (also called signal dropout).
+The problem of retrospective correction of susceptibility distortion took rise with the initial and
+
+2.4. OPEN CHALLENGES IN THE CONNECTOME MAPPING
+
+13
+
+wide application of EPI sequences in fMRI. All the methodologies proposed require the acquisition of
+additional MRI data. The first family of solutions (Jezzard and Balaban, 1995; Jezzard et al., 1998;
+Reber et al., 1998) used a fast GRE sequence to map the phase variation of the actual magnetic field
+inside the scanner. Based on the theory underlying the susceptibility distortion, these fieldmap-based
+techniques are able to correct only for the geometrical deformation. The signal dropout is usually
+corrected using the Jacobian of the displacement field.
+Almost contemporaneously, (Robson et al., 1997) proposed the use of point-spread function (PSF)
+maps. Again, the acquisition of additional MRI data is required and correction is performed based
+on the theoretical behaviour of distortion. PSF mapping-based techniques are able to correct for
+geometrical deformations and signal dropout. (Zaitsev et al., 2004) combined the PSF mapping and
+fieldmap-based techniques for enhancing results.
+Some methods were proposed acquiring extra data with variations from the standard EPI schemes.
+(Cordes et al., 2000) required the acquisition of an extra EPI instance with inversed phase-encoding
+direction (gradient increments are set in the opposite direction), and (Chiou and Nalcioglu, 2000)
+simultaneously proposed a very similar method. Extensions of these methods were presented by
+(Andersson et al., 2003; Holland et al., 2010).
+Finally, a prominent family of correction methods are those that use image registration with
+anatomically correct MRI data. Early proposals (Kybic et al., 2000; Studholme et al., 2000) used
+T2-weighted MRI due to the similarity of intensity distribution with the B0 distribution. Further
+works on this line were presented in (Li et al., 2007; Tao et al., 2009). As the second contribution of
+this PhD Thesis will cover registration, methods based on this technique shall be covered with detail
+in subsection 2.4.3.
+Other retrospective methodologies do not make use of extra MRI data, as explicitly modeling the
+distortion (Andersson et al., 2001). Recently, (Andersson et al., 2012) proposed a probabilistic framework for simultaneous correction of distortions generated by the three main sources of inconsistency
+(subject motion, Eddy currents, and susceptibility inhomogeneities).
+As regards evaluation, (Zeng and Constable, 2002) compared the performance of fieldmap-based
+and PSF-based methods. More recently, a comparison of fieldmap-based and T2-registration techniques is found in (Wu et al., 2008). This study claims that fieldmap-based are not accurate and
+reliable, even though the method is theoretically correct in principle. The conclusion was later confirmed by (Tao et al., 2009). Additional concerns regarding fieldmap correction are the requirement
+of extra ad-hoc acquisitions (that is not always met or it is impractical in clinical protocols), or the
+accuracy of the measured fieldmap that is sensitive to various effects (such us respiration, blood flow,
+etc.). All these factors have turned susceptibility distortion in EPI sequences an active field of research for the last 15 years, as shown in Table 2.2. Evaluation of the impact of these distortions on
+the outcome of tractography (and subsequent network analyses) is a recent topic of interest, and first
+studies are currently being published (Irfanoglu et al., 2012).
+Author (1st)
+Jezzard and
+Balaban; Jezzard
+et al.
+Robson et al.
+Reber et al.
+Cordes et al.
+
+Year
+1995
+
+Method description
+First proposal of the fieldmap-based correction on fMRI.
+
+1997
+1998
+2000
+
+Chiou and
+Nalcioglu
+Kybic et al.
+Studholme et al.
+Andersson et al.
+Zeng and
+Constable
+Zaitsev et al.
+Li et al.
+Wu et al.
+Hsu et al.
+Tao et al.
+Holland et al.
+Andersson et al.
+
+2000
+
+First proposal of the PSF mapping method on fMRI.
+Fieldmap-based methodology.
+First proposal of the reversed phase-encoding method for fMRI, that acquires an
+extra EPI image with opposed gradient increments.
+First proposal of an additional technique, familiar to the reversed phase-encoding
+method.
+Early proposal of the T2-B0 registration method (see Table 2.4).
+T2-B0 registration (see Table 2.4).
+Model fitting of the fieldmap.
+Comprehensive comparison between the fieldmap unwarping and the PSF mapping
+methods.
+Application of the PSF mapping method in parallel EPI.
+T2-B0 registration (see Table 2.4).
+T2-B0 registration (see Table 2.4).
+Fieldmap unwarping, improved with model-based PSF mapping.
+T2-B0 registration (see Table 2.4).
+Reversed phase-encoding method.
+Probabilistic solution to the three main distortion roots (namely motion, eddy currents, and susceptibility) through modeling in a Gaussian process.
+
+2000
+2000
+2001
+2002
+2004
+2007
+2008
+2009
+2009
+2010
+2012
+
+Table 2.2: Susceptibility correction techniques. Historical review of the different methodological
+approaches.
+
+14
+
+2.4.2
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+Diffusion MRI segmentation
+
+Brain tissue segmentation stands for the precise delineation of the CSF, GM and WM regions. This
+processing task has been covered with detail on T1 data of the brain, and, with less interest, in some
+other modalities. In this subsection, we shall see that few studies have tried to successfully tackle this
+task in dMRI. Most of the connectivity pipelines make use of the highly precise segmentation obtained
+by readily available software for T1 (figure 2.2-B for an instance). After obtaining the segmentation
+in T1-space, it needs to be registered to the dMRI as we shall cover in subsection 2.4.3. Nonetheless,
+it is pertinent to quickly review the state of the art as regards, at the least, WM segmentation.
+Tractography generally needs for a WM segmentation with sub-pixel resolution, as it provides
+with precise CSF, GM and WM interfacing surfaces. The main reason is that, whereas tractography
+algorithms are very good at estimating the location of bundles in deep WM, they are not good (yet) at
+identifying where the tracts project into the GM (the limitations on the termination criteria, (Jbabdi
+and Johansen-Berg, 2011; Craddock et al., 2013)). Thus, a WM segmentation is required by most
+of the available tractography algorithms to filter the resulting tractogram. The GM-WM interface is
+necessary to locate the starting and ending points of the detected fiber bundles, and CSF-WM surface
+is critical for pruning spurious and discontinued fiber bundles (denoted in figure 2.5 as fiber filtering).
+A visual description of this effect is provided in figure 2.6.
+
+Figure 2.6: Impact of segmentation on tractography. Close up of the prefrontal area of the FA
+map of a real DTI dataset. Contours for two different types of mask have been depicted with dashed
+lines. In yellow, the one corresponding to a voxel-wise binary mask. In blue, the contour mapped from
+a high resolution anatomical image. Streamlines in red color (C) are directly pruned when using a
+binary mask even though they represent valid fiber paths. In contrast, A and B are accepted in both
+cases (binary mask and T1-derived contour), but for the case of the binary mask, the intersection
+points are not correctly located.
+A number of methodologies have been proposed for dMRI segmentation, ranging from intensity
+thresholding to atlas-based segmentation (see Table 2.3 for a summary). The first approach is performed simply thresholding the FA map firstly described in section 2.2. Although this methodology
+was popular among the pioneer tractography studies, they were generally limited to certain regions
+or significant fiber tracts, normally selected in a way that avoids problematic regions with distortions
+or difficult to segment. Early approaches to dMRI segmentation include level set formulations using
+scalar maps of direction invariants derived from the tensor model (Zhukov et al., 2003), directly on
+the diffusion raw data (Rousson et al., 2004), or finding alternative diffusion representations (Jonasson et al., 2007). Iterative clustering performed on the B0 volumes of dMRI data was proposed by
+(Hadjiprocopis et al., 2005). Later studies investigated the application of probabilistic frameworks
+combining mixtures of gaussians, Markov Random Field (MRF) and labeling fusion techniques (Liu
+et al., 2007) using as features widely-used dMRI-derived scalar maps as FA or MD. A similar framework
+combining co-registered structural information (T1 weighted) with independent orthogonal invariants
+derived from the dMRI tensor model was proposed by (Awate et al., 2008). Some proposals suggest
+the use of the raw diffusion data (directionally dependent) to avoid fitting a certain model (Lu et al.,
+
+2.4. OPEN CHALLENGES IN THE CONNECTOME MAPPING
+
+15
+
+2008). In (Han et al., 2009), graph-cuts voxel-based techniques are proposed using the most common
+DTI-derived scalar features. Further developments of the probabilistic approach have been proposed
+adding more scalar maps as features, and a more detailed treatment of PVE (Kumazawa et al., 2010).
+None of the presented methods have claimed for definite results, mainly due to the lack of a goldstandard evaluation methodology. Most of them are tested only on certain regions, or do not provide
+sub-pixel resolution results (Hadjiprocopis et al., 2005; Liu et al., 2007; Awate et al., 2008; Lu et al.,
+2008; Han et al., 2009). Moreover, results achieved with T1 registration (subsection 2.4.3) are usually
+more compelling, thus limiting significantly the research activity towards dMRI segmentation. However, recently (Kumazawa et al., 2013) proposed to include this task within reconstruction algorithms.
+Finally, some golden-standard evaluation frameworks for task-based validation have been proposed
+for the segmentation results (e.g. lesion detection in visceral organs (Jha et al., 2012)).
+Author (1st)
+Zhukov et al.
+
+Year
+2003
+
+Rousson et al.
+
+2004
+
+Hadjiprocopis
+et al.
+Jonasson
+
+2005
+
+Liu et al.
+
+2007
+
+Awate et al.
+
+2008
+
+Lu et al.
+
+2008
+
+Han et al.
+
+2009
+
+Kumazawa et al.
+
+2010
+
+2005
+
+Method description
+Propose definitions of directionally invariant scalarmaps from DTI. Segmentation is
+performed with levelsets
+Propose region-based levelsets, using a multivariate Gaussian to approximate the
+density of the components of diffusion tensor for each sub-region of the volume.
+Successfully segmented the corpus callosum in DTI 3D data.
+Iterative Clustering on B0 from DTI
+Propose a 5-dimensional representation of diffusion spectrum imaging (DSI) data
+(location in 3D + two angles for the principal direction description). In (Jonasson
+et al., 2007), the levelset approach is used to segment this 5D representation.
+As features, they propose an specific scheme of combinations of ADC, FA, radial
+anisotropy (RA), volume ratio (VR), and eigenvalues. The resulting segmentation
+based on mixture model of multivariate Normal distributions (M3N) and MRF are
+combined using simultaneous truth and performance level estimation (STAPLE).
+Validation: Overlap measurement and volume agreement betweeen T1 segmentation
+(using standard software) and DTI segmentation (proposed method) results on 10
+subjects.
+Use a T1 co-registered to invariant maps obtained from DTI. The vectorized features
+(T1, tensor-norm and FA) are then segmented with a non-parametric model that
+maximizes the mutual information between the tissue multivariate distributions and
+regularized with MRF.
+Perform hierarchical clustering directly over DTI data. After that, a M3N models the
+tensor distribution, using expectation-maximization (EM) as optimization strategy.
+Graph-cuts segmentation on top of selected scalar maps (FA and the third eigenvector of the tensor, λ3 ) computed from DTI data
+Use the three eigenvalue maps (λ1 , λ2 , λ3 ), the ADC and the FA from DTI data to
+estimate the tissue fractions at each voxel. Later, in (Kumazawa et al., 2013) they
+refine the estimation applying the multiple tensor model (Tuch et al., 2002).
+
+Table 2.3: dMRI segmentation techniques. Brief summary of the existing approaches.
+
+2.4.3
+
+Structural information co-registration
+
+The last task addressed in the image processing pipeline of the connectivity analysis is the structural
+information co-registration. Co-registration or registration is a processing tool to look for a geometrical transformation that maps the information contained in two different coordinate systems (one
+corresponding to each image). Image registration is a very broad sub-field in image processing (Zitova
+and Flusser, 2003).
+Nearly all the procedures surveyed in figure 2.5 can be performed only within the dMRI coordinate
+system. However, it is greatly unpractical to perform cortical parcellation directly on the diffusion
+space. Cortical parcellation is the process that defines the areas in the WM/GM interface that will
+represent the nodes in the graph and that will be used to integrate clusters of streamlines into edges
+of the network. Even though some methodologies have been proposed to perform this task clustering
+the streamlines (Zimmerman-Moreno et al., 2008), the most extended and accepted procedure to
+accomplish the cortical parcellation in dMRI space is mapping it from a high-resolution T1-weighted
+atlas (as FreeSurfer package does (Fischl, 2012)).
+Notwithstanding the need of a very high-resolution parcellation, registration of structural data into
+dMRI space was deeply studied before, with the aim at correcting diffusion images for susceptibility
+distortion as introduced in subsection 2.4.1. Susceptibility distortion hinders a straightforward rigidtransform solution to the problem. Additionally, when applying non-linear intensity-based registration
+algorithms, other difficulties have to be addressed as the significant PVE in the WM-GM layer, or
+the inherent inadequacy of the B0 contrast due to the almost null difference of intensity between WM
+
+16
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+and GM pixels. It must be recalled that the B0 is the only useful volume for direct registration, for
+being directionally independent.
+Early registration methods appeared targeting the distortion correction. They quickly standardized
+the choice of T2 as anatomically correct source to be registered against the B0 in dMRI. This is
+justified by the fact that B0 images have a very similar contrast to T2 weighted due to the parallelism
+of acquisition sequences (see figure 2.2). As parcellation is defined in T1 weighted space, the use of an
+additional registration step (T2 to T1 ) is generally overlooked by existing literature in tractography
+and connectivity mapping. Even though this processing stage has a relatively low complexity compared
+to the remaining elements of the processing pipeline, (Saad et al., 2009) reported that standard
+registration techniques as correlation ratio (CR) or mutual information (MI) can account up to 3 mm
+of error when registering B0 and T1. With the complexity held in the brain, which cortex sheet is
+from 1 mm to 5 mm thick, that range of error is rather significant.
+One of the first proposals is (Kybic et al., 2000), where the deformation field is modeled with
+B-Splines, the cost function is least squares and optimized in a multi-resolution gradient descent
+strategy. Their method is evaluated in both synthetic and real 2D images. Similarly, (Studholme
+et al., 2000) proposed a spline-based deformation but including a weighting factor proportional to the
+Jacobian of the transform to correct the intensity of the undistorted data. They also use the log of the
+signal to enhance the low-signal regions, and optimize with a gradient descent algorithm the mutual
+information of the mapping. This framework set the basis for the following works. For instance, (Wu
+et al., 2008) also proposed a B-Spline registration providing quantitative comparisons with fieldmap
+correction methods. Recent approaches take into account the signal loss due to dephasing (Li et al.,
+2007), or introduce more complex variational frameworks (Tao et al., 2009).
+In 2009 the research line of registering T2 and B0 seems to get swapped by direct T1 and B0
+techniques. This new approach avoids solving the EPI distortions, focusing on the cortical parcellation problem itself. (Saad et al., 2009) proposed a new registration metric (local Pearson’s correlation
+(LPC)) that improved results with respect traditional cost functions (as MI and CR). Almost simultaneously, (Greve and Fischl, 2009) proposed the boundary-based registration (BBR) method included
+within the FreeSurfer package as bbregister. BBR seeks for a linear transformation of the contours
+extracted from the anatomical reference (T1) to the edges detected on the B0 target image. The regions that are likely to suffer from susceptibility distortions are dismissed in the registration process.
+Although this registration method does not correct for distortions, it is an outstanding methodology
+for direct T1 to B0 registration.
+The significant benefits of exploiting the anatomical MRI when segmenting the dMRI data have
+been shown by Zöllei et al. (2010), justifying the use of the contours prior information. To our knowledge, there is no study simultaneously taking advantage from segmentation or distortion correction
+tasks to be applied to the co-registration problem.
+Author (1st)
+Kybic et al.
+
+Year
+2000
+
+Studholme et al.
+
+2000
+
+Li et al.
+
+2007
+
+Wu et al.
+
+2008
+
+Tao et al.
+
+2009
+
+Saad et al.
+
+2009
+
+Greve and Fischl
+
+2009
+
+Method description
+Nonlinear registration of T2 and B0 for susceptibility distortion correction, 2D
+synthetic and real EPI images from fMRI, with B-Splines deformation field representation, least-squares metric, gradient descent optimization approach in a multiresolution scheme.
+Nonlinear registration of T2 and B0 for distortion correction in 3D fMRI images,
+with EPI signal correction (modulation with Jacobian), enhancement of low-contrast
+regions using the log-transform, MI cost function, and a B-Splines deformation field.
+Nonlinear registration of T2 and B0 for distortion correction in 3D DTI images with
+dephasing correction.
+Nonlinear registration of T2 and B0 for distortion correction in 3D DTI images. Registration methodology uses B-Splines. They also present a comprehensive validation
+framework with comparison of previously presented approaches.
+Nonlinear registration of T2 and B0 for distortion correction in 3D DTI images.
+Propose a variational framework, MI as cost function, signal loss correction.
+T1 and B0 linear registration using LPC. Assumes that EPI data is already corrected
+for distortions.
+BBR methodology: linear map of the high resolution cortical contours extracted in
+the subject’s T1 image onto the B0. Potentially distorted regions are dismissed for
+registration.
+
+Table 2.4: Structural to dMRI registration techniques. Historical review of the different
+methodological approaches.
+
+2.5. METHODOLOGICAL BACKGROUND
+
+2.5
+
+17
+
+Methodological background
+
+In this section, we review the existing methods that can be applied to solve the open challenges
+described in section 2.4, restricting the survey for those methodologies that apply to the objectives
+presented latter in Chapter 3. First, in subsection 2.5.1, the widely-used Bayesian framework for
+image segmentation will be briefly described, as it can be easily applied to the problem at hand.
+Second, in subsection 2.5.2, the so-called active deformation fields (ADFs) model will be presented for
+its flexibility to implement joint segmentation and registration solutions. In section 3.2, the aptness
+of these simultaneous approaches is justified, and the corresponding contributions expected from this
+PhD Thesis are described.
+
+2.5.1
+
+Bayesian inference in image segmentation
+
+Mixture models allow to express relatively complex marginal distributions over observed variables in
+terms of more tractable joint distributions over the expanded space of observed and latent variables
+(Bishop, 2006). This latent variables behave as simpler components used for building the inferred
+observed distribution. This general statistical framework provides not only the possibility of modeling
+complex distributions (e.g. figure 2.7), but also enables data to be clustered. Given the generation
+and reconstruction processes involved in brain MRI, it is accepted that these latent variables (the
+tissue classes) are reasonably well modeled with normal Gaussian distributions (Van Leemput et al.,
+1999b).
+The most relevant pitfall when modeling the target distribution is the existence of a spatially
+smooth offset field (named bias field ). Most imaging datasets are affected by this artifact, and it
+critically influences the success of the presented statistical frameworks in a negative manner. In MRI,
+this bias is produced by the spatial inhomogeneity of the magnetic field during the scan, an effect
+inherent to the acquisition process. Some techniques for tackling the bias field have been proposed,
+either embedded within the model (Van Leemput et al., 1999a) or as an independent process (Tustison
+et al., 2010). Albeit, this artifact is not present in dMRI datasets.
+In order to produce piecewise smooth results, that are more representative of the real latent variables, the mixture models are usually completed by including spatial information. This spatial prior
+knowledge is often modeled by Markov Random Field (MRF).
+In this section, the mixture model of multivariate Normal distributions (M3N) is introduced, with
+special focus on the multivariate formulation. A bias correction methodology is proposed, and finally
+the MRF framework is briefly described.
+The mixture model of multivariate Normal distributions (M3N) In the image, we index
+the location of data on a discrete grid of voxels with i ∈ S = {1, 2, . . . , N }, where S is the image
+domain. Denoting the observed data vector of C features (one per image channel ) at index i by
+yi = (yi1 , yi2 , ..., yic , ..., yiC ) ∈ RC , then Y = {y1 , y2 , . . . , yN } is the observed random vector field,
+and y is a realisation of Y .
+The classification process aims to cluster the data S into one of the hidden underlying random fields
+X = {x1 , x2 , . . . , xN }, where each sample xi could be assigned any of the latent variables represented
+by label values, xi ∈ L = {l1 , l2 , . . . , lK }, K being the total number of classes, and L the set of
+available labels. We denote as x a possible configuration of X, that is any specific solution, optimal or
+not, to the hard segmentation of S. The hard segmentation of the image is also referred as labeling. L
+contains three labels representing the CSF, GM and WM clusterings in the 3-class brain segmentation
+problem.
+Consequently, the observed distribution will be represented as a linear combination of C-dimensional
+Normal distributions. In the simplest approach, that is one Normal distribution per each possible value
+lk of the latent variable, what yields:
+P (yi | xi ) = N (yi | θk ) = p
+
+1
+(2π)C
+
+e(− 2 (yi −µk )
+1
+
+|Σk |
+
+T
+
+Σ−1
+k (yi −µk ))
+
+.
+
+(2.1)
+
+Equation (2.1) represents the probability density function of the observed intensity yi for the pure
+tissue class x ∈ L, with parameters θk = {µk , Σk }, where µk is the vector of means, Σk is the
+covariance matrix and k ∈ {1, 2, . . . , K}. Now, it is possible to combine these K components linearly
+in every pixel:
+
+18
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+Figure 2.7: Joint histogram of T1 and T2 volumes of the BrainWeb dataset (skull-stripped,
+noise 5%, inhomogeneity field 0%). The iso-contours of the resulting mixture of three pure-tissues
+are overlaid with white lines. WM and GM are precisely fitted with the model. Conversely, the CSF
+distribution is not so well modeled because it is strongly affected by PVE effect (see section 2.5.1). We
+only depict here the location and shape of its principal Normal distribution. CSF was modeled in this
+example with an extra PVE class, not represented here for better clarity. Additionally, the existence
+of other minor sources of tissue contrast and the non-normality of tissues under some conditions is
+widely accepted (Van Leemput et al., 1999b).
+
+P (yi ) =
+
+X
+
+P (xi ) P (yi | xi ) =
+
+∀xi ∈L
+
+X
+πk,i N (yi | θk ).
+
+(2.2)
+
+∀k
+
+In (2.2), P (xi ) is the prior probability of the tissue class xi . For simplicity of notation,
+P we substitute
+P (xi ) = πk,i , usually coined as proportion factor. This factor meets the condition ∀k πk,i = 1.0.
+Initially, for the simplest formulation of M3N, πk,i will be independent of the pixel position. More
+sophisticated priors will be presented in section 2.5.1 . For instance, when using atlases as prior
+knowledge, this proportion factor introduces the probability maps into the formulation.
+Let us formulate the clustering problem as a whole. Assuming that all the possible configurations of
+the observed random vector field Y are identically and independently distributed (i.i.d.), the posterior
+probability density function of the whole image is
+P (y) = P (y | x) P (x) =
+
+N
+Y
+
+P (yi ).
+
+(2.3)
+
+i=1
+
+The transition probability, P (y | x), models the feature vector formation process for each tissue
+xi . Thus, the problem of segmentation is solved by the estimated labeling x̃, which maximizes the
+posterior probability:
+
+2.5. METHODOLOGICAL BACKGROUND
+
+19
+
+x̃ = argmax {P (y | x) P (x)} .
+
+(2.4)
+
+x
+
+Finally, we advance a useful definition for further sections. The conditional probability of xi given
+yi represents the rate at which the component xi = lk contributes to model the observation yi . It is
+usually referred to as the posterior density or responsibility of class lk within the voxel i:
+πk,i N (yi | θk )
+.
+j∈K πj,i N (yi | θj )
+
+γk,i = P (xi = lk | yi ) = P
+
+(2.5)
+
+Bias field model We define the field inhomogeneity measurement vector at index i by fi =
+(fi1 , fi2 , ..., fic , ..., fiC ) ∈ RC with C being the dimension of the feature space (the total number
+of image channels). Consequently, F = {f1 , f2 , . . . , fN } is the estimated bias vector field. We follow
+the widely accepted assumption of F as a multiplicative smooth function of the pixel position (Vovk
+et al., 2007). Thus, the inhomogeneity field modifies our parametric model as follows:
+P (yi | xi , fi ) = N (yi fi T | θk ).
+
+(2.6)
+
+If observed variables yi are logarithm transformed, F becomes an additive field. Using the notation
+ŷi = log yi , a measurement of the error is obtained:
+X
+êi = ŷi − log
+γk,i µk .
+(2.7)
+k∈K
+
+In section 2.5.1, we shall discuss how to introduce the minimization of êi , and hence the estimation
+of fi into the optimization routine.
+PVE modeling Besides the bias field inhomogeneity, another important challenge associated with
+tomographic biomedical imaging is the PVE effect. Given that the images are defined on a grid of
+volume elements (voxels), they enclose a finite region. This region may contain a mixture of signals
+from several different tissues. The amount of voxels affected by the PVE effect within a typical MRI
+volume is usually significant, and worse when the resolution is poor (Bromiley and Thacker, 2008).
+Rather than complex intensity distribution models or distribution mixtures per class (Santago
+and Gage, 1995), PVE can be taken into account using extra classes added to the M3N distribution
+(Cuadra et al., 2005). As we shall see in section 2.5.1, appropriate spatial priors can be set for these
+PVE classes. In the end of the process, it is possible to merge this extra PVE classes to obtain the
+pure tissue distribution maps.
+The hidden Markov Random Field (MRF) model The spatial priors model is induced throughout the proportion factors πk,i , considering that the proportion of the tissue k at a given location i
+varies depending on the tissues found at the neighbouring locations. MRF theory models these spatial
+interactions among tissue classes. The sites in the image domain S are related to a neighbourhood
+system N = {Ni , i ∈ S}, where Ni is the set of sites neighbouring i (also called clique), with i ∈
+/ Ni
+and i ∈ Nj ⇐⇒ j ∈ Ni . A random field x is an MRF on S with respect to N if and only if
+P (x) > 0, x ∈ X
+
+(2.8)
+
+πk,i = P (xi | xNi ).
+
+(2.9)
+
+and
+Accordingly to the Hammersley-Clifford theorem (Hammersley and Clifford, 1971; Besag, 1974),
+an MRF can be equivalently characterized by a Gibbs distribution
+P (x) = Z(U )−1 e−U (x|β)
+
+(2.10)
+
+where U (x) is the energy function, β the spatial parameter and Z(U ) a normalization factor. The
+choice of the energy function is arbitrary and there are several definitions of U (x) for image segmentation. A general expression of the energy function for pairwise interactions is denoted by
+
+
+X
+X
+Vi (xi ) + λN
+Vij (xi , xj )
+(2.11)
+U (x | λN ) =
+2
+∀i∈S
+
+j∈Ni
+
+20
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+where Vi (xi ) is an external field that weights the relative importance of the different classes present in
+the image and Vij (xi , xj ) models the interactions between neighbours. Generally, Vi (xi ) = 0 is set in
+order to use a simplified model, or Vi (xi ) is an energy function derived from (2.1). The presented tool
+provides a handle to include more energy terms in this pixel-wise energy term. A typical definition of
+Vij (xi , xj ) follows the Pott’s model (Zhang et al., 2001):
+(
+1, if xi = xj
+Vij (xi , xj ) = δ(xi , xj ) =
+(2.12)
+0, otherwise.
+Nonetheless, the definition of Vij (xi , xj ) enables more complex neighbouring cliques, distance varying energies, and non-metric tissue transition models (we will discuss these modelsPin section 2.5.1).
+Finally, even though Z is theoretically defined, it is implicitly computed by letting ∀k∈K πk,i = 1.0.
+λN is usually determined empirically, by sampling a distance function on its value.
+For the treatment of the special PVE classes within the model certain values of the transition
+model can be set, letting the PVE classes have less energetic transitions to a different class than the
+pure tissues.
+Model Estimation: EM algorithm In order to find the maximum a posteriori (MAP) introduced
+in (2.4), a common solution is the Expectation-Maximization (EM) algorithm. A complete flowchart
+describing the optimization strategies is found in figure 2.8. Hereafter, we describe a modified version
+adapted to the M3N-MRF model:
+(t=0)
+
+Initialization Step Choose the best initialization for θk
+. One common option is the use of the
+k-means algorithm. Explicit initialization introducing µk and Σk manually, or estimating them
+from atlases are also extended options.
+(t)
+
+Expectation Step Compute the posterior densities γk,i (see (2.5)).
+Bias correction When bias correction is required, the new definition of likelihood derived from (2.6)
+is applied. The bias field F can be estimated regressing the error measurement E obtained after
+(2.7) with uniform B-splines. This parametric approach is dual to the non-parametric algorithm
+(N4ITK) presented in Tustison et al. (2010). For the subsequent step, the data is corrected with
+the field vector fi at i before the distribution parameters are calculated.
+Maximization Step Updates the parameters of the model. For details on this step, we refer the
+reader to (Bishop, 2006). Setting the derivatives with respect to µk and Σk equal to zero in
+log (P (yi | xi )) to compute the MAP (2.4), yields the following update equations:
+1 X (t−1)
+γk,i yi ,
+Nk
+
+(2.13)
+
+1 X (t−1)
+(t)
+(t)
+γk,i (yi − µk ) (yi − µk )T ,
+Nk
+
+(2.14)
+
+(t)
+
+µk =
+
+∀i∈S
+
+(t)
+
+Σk =
+
+∀i∈S
+
+with Nk =
+
+P
+
+∀i∈S
+
+(t−1)
+
+γk,i
+
+.
+
+Model Estimation: Graph-Cuts optimization As depicted in figure 2.8, the solution for the
+MRF problem posed in (2.11) remains outside the EM algorithm, which only approximates the solution
+of (2.4). The standard procedure is to approximate the solution closely with the EM algorithm and
+then impose the MRF implicit regularization of smoothness.
+Alternatively to the majority of available software (see Table 2.5), we shall propose using graphcuts (graph-cuts (GC)) to solve the MRF. To achieve this, the problem is formulated in terms of
+energy minimization. With GC, we refer to the min-cut/max-flow algorithms that are standard in
+combinatorial optimization. The problem is stated so that we seek the labeling x that minimizes the
+energy
+E(x) = Esmooth (x) + Edata (x)
+(2.15)
+where Esmooth measures the extent to which x is not piecewise smooth, while Edata measures the
+disagreement between x and the observed data (Boykov et al., 2001), and identifying the elements
+of the latest expression in (2.11). GC algorithms approximately minimize the energy E(x) for an
+
+2.5. METHODOLOGICAL BACKGROUND
+
+21
+
+Figure 2.8: Generic flowchart diagram for the MRF-EM model estimation strategies
+
+arbitrary finite set of labels L under two fairly general classes of interaction penalty (Vij ), metric and
+semi-metric.
+Two widely used algorithms for solving (2.15) are α-expansion and αβ-swap proposed by Boykov
+et al. (Boykov et al., 2001; Kolmogorov and Zabin, 2004). Both algorithms have been proven to be
+highly accurate and efficient approximations of the global minimum for n-cluster classification (Boykov
+and Kolmogorov, 2004). In the case of n = 2 this solution is exact, as opposed to greedy algorithms
+like the widely used iterative conditional models (ICM). GC algorithms represent the energy function
+with a weighted graph where the minimum of the optimized function concurs on the minimum cut
+of the graph. The edge weights represent the total possible energy configurations. In graph theory,
+a cut is a partition of the vertices of the graph in disjoint subsets. The size of a cut depends on the
+number and weights of the edges removed. Therefore, the minimum cut is that not larger than the
+size of any other cut. The binary case is extended to n-cluster classification with iterative algorithms
+of very large binary moves (a simultaneous change of labels for a significant number of pixels). The
+basic underlying concept is to find local minima sequentially at each iteration, based on the allowed
+moves.
+Algorithm 1 αβ-Swap algorithm, as proposed by Boykov et al. (2001)
+Require: Arbitrary initial labeling x
+1: success ← false
+2: while success 6= true do
+3:
+for all pair of labels {α, β} do
+4:
+Find x̂ = argmin {E(x0 )} among x0 within one α − β swap of x
+5:
+if E(x̂) < E(x) then
+6:
+x ← x̂
+7:
+else
+8:
+success ← true
+9:
+end if
+10:
+end for
+11: end while
+12: return x
+Given a label α, an α-expansion move is a change of a number of image pixels from any original
+label to α. Consequently, given a pair of labels α, β, an αβ-swap is a move where a number of pixels
+with label α change to β and a number of pixels previously labeled β change to α. Once the allowed
+moves are defined, the description of the αβ-swap is summarized in Algorithm 1. The α-expansion
+algorithm consists of a very similar formulation, explicitly described on (Boykov et al., 2001).
+
+22
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+MAP registration-segmentation approaches To finish, there have existed some efforts to adapt
+the MAP Bayesian framework (Zhang et al., 2001) for the joint registration-segmentation problems.
+(Wyatt and Noble, 2003) presented such an scheme, by introducing a transformation in (2.3). To
+do so, let T be the transformation defined with a vector field. Considering two images, the fixed or
+reference one F and the moving one M , then our observations field is y0 = {F, T(M )} (only two
+features in the vector, C = 2) and the Bayes’ rule for estimating the transform yields:
+P (y0 ) = P (y0 | x, T) P (x | T) P (T) =
+
+N X
+Y
+{ N (yi0 | θk , ti ) P (xi | ti ) P (ti )}.
+i=1
+
+(2.16)
+
+∀k
+
+When T is rigid (meaning, it allows only for rotations and translations), then the prior probability where the MRF is introduced can be simplified as the neighbors at each pixel can not change
+(P (xi | ti ) P (ti ) = P (xi )). That was the case in (Wyatt and Noble, 2003), that only allowed for
+rigid registration. (Xiaohua et al., 2004) extended their framework introducing a B-Spline based
+free-deformation regularized with MRF. This constraint is introduced with the P (ti ) term in (2.5.1).
+These two early cases where presented for 2D images with promising results. However, no further
+extensions of their methods have been published to our knowledge. It is important to mention that
+(Ashburner and Friston, 2005) use a very similar framework, but in this case to integrate atlas priors
+refinement registering them to the observed data during the segmentation process, increasing significantly the robustness of the overall task. Their Unified segmentation, released with the Statistical
+Parametric Mapping (SPM) neuroimage processing package, has become a reference software tool for
+segmentation.
+Available software The brain tissue segmentation problem has been successfully tackled by means
+of Bayesian classification techniques (Van Leemput et al., 1999b), with a number of matching evaluation studies (Cuadra et al., 2005; De Boer et al., 2010; Roche et al., 2011). Further refinements or
+extensions have been proposed (Zhang et al., 2001; Van Leemput et al., 2003; Ashburner and Friston,
+2005; Fischl et al., 2002), to increase the accuracy and robustness of these methods. As a consequence
+of the maturity of the application, a number of 3D brain tissue segmentation tools are readily available
+and widely used.
+In Table 2.5 there is a comparison among representative existing tools, along with a brief summary
+of the unique features of each. The tools listed in the table are FMRIB’s Automated Segmentation
+Tool (FAST)1 (Zhang et al., 2001), SPM (Ashburner and Friston, 2005), Expectation-Maximization
+Segmentation (EMS) (Van Leemput et al., 2003), ATROPOS (Avants et al., 2011), and NiftySeg (Cardoso et al., 2012). SPM is the only one without support for multivariate data, while FAST provides a
+multichannel segmentation that differs significantly from the univariate segmentation methodology (as
+it is indicated by partial support in Table 2.5). The model estimation is always performed with the EM
+algorithm, possibly with some improvements (in the case of EMS it is improved with a robust estimator and partial volume constraints). Thus, this property has been omitted in the table. All these tools
+provide a regularization methodology based on MRF model theory. The main differences are found in
+the MRF energy minimization problem, ICM being the most used methodology (with the exception
+of EMS that implements Monte-Carlo (MC) sampling). Another important feature is the bias correction technique, generally solved by fitting a linear combination of smooth basis functions. FAST and
+EMS use polynomial least-squares fitting, ATROPOS integrates the non-parametric algorithm N4ITK
+(Tustison et al., 2010), SPM uses the Discrete Cosine Transform (DCT) with Levenberg-Marquardt
+(LM) optimization. Finally, another important feature is the use of atlases in the model parameters
+estimation. All the tools provide support to incorporate prior atlas information, but in the cases of
+SPM and NiftySeg the priors are used all along the segmentation (indicated by intensive in Table 2.5).
+In terms of software availability, all the tools publicly release the source code and are distributed under
+open-source licenses. With respect to their installation, a number of them (FAST, SPM and EMS)
+are platform-dependent. To note, the Freesurfer tool (Fischl et al., 2002) has been omitted. Even
+though this tool provides brain tissue segmentation support, Freesurfer is a set of automated tools for
+reconstruction of the brain’s cortical surface from structural MRI data, and overlay of functional MRI
+data on to the reconstructed surface 2 . Therefore, the ultimate purpose and processing methods of
+Freesurfer are significantly different from those that appear in Table 2.5, as well as its outcome (e.g.
+Freesurfer does not provide real tissue probability maps).
+1 FMRIB
+
+stands for the Oxford Centre for fMRI of the Brain
+
+2 http://surfer.nmr.mgh.harvard.edu/
+
+2.5. METHODOLOGICAL BACKGROUND
+
+Multivariate
+Optimization
+Bias Correct.
+Atlas usage
+License
+Platform
+Reference
+
+FAST
+Partial
+ICM
+Polynomial
+Available
+GPL
+Unix
+(Zhang et
+2001)
+
+al.,
+
+SPM
+No
+ICM
+DCT
+Intensive
+GPL
+Matlab
+(Ashburner and
+Friston, 2005)
+
+23
+EMS
+Full
+MC
+Polynomial
+Available
+BSD-like
+SPM8
+(Van Leemput
+et al., 2003)
+
+ATROPOS
+Full
+ICM
+External
+Available
+BSD
+Any
+(Avants et al.,
+2011)
+
+NiftySeg
+Full
+Unknown
+Yes
+Intensive
+BSD
+Any
+(Cardoso et al.,
+2012)
+
+Table 2.5: Brain tissue segmentation tools comparison table. A wide range of tools have been
+proposed for the brain segmentation problem. Here, we show their main features to highlight the
+differences and identify the position of the proposed software in the field.
+
+2.5.2
+
+Joint segmentation-registration through Active Deformation Fields
+
+Active contours without edges (ACWE) (Chan and Vese, 2001), and level-set based formulations have
+been widely applied in image processing, as reviewed in (Suri et al., 2002). We suggest clustering the
+current methodologies of template-based segmentation methods into three groups. The first group
+typically adds a shape prior term to the energy functional of an evolving active contour (Bresson
+et al., 2006; Chan and Zhu, 2005; Chen et al., 2002; Cremers et al., 2006; Gastaud et al., 2004). These
+methods generally have an explicit description of the expected relative boundary locations of the object
+to be delineated, and some even model the statistical deviations from this average shape. By including
+a spatial mapping, it is possible to perform active contours based registration between timesteps in a
+time-series or between different images (Bertalmio et al., 2000; Wyatt and Noble, 2003; Paragios, 2003;
+Vemuri and Chen, 2003; Yezzi et al., 2003; Unal and Slabaugh, 2005; Le Guyader and Vese, 2011). A
+summary of these second set of techniques is performed in (Droske et al., 2009), proposing two different
+approaches to applying the Mumford-Shah (Mumford and Shah, 1989) functional in joint registration
+and segmentation. Finally, a derivation of the latter group of techniques is composed by atlas-based
+segmentation methods (Gorthi et al., 2009, 2011; Pohl et al., 2005, 2006; Wang et al., 2006), where the
+prior imposes consistent voxel-based classification of contiguous regions. Comprehensive summaries of
+the aforementioned methodologies, with special attention to joint registration-segmentation methods,
+are found in (Gorthi et al., 2011; Le Guyader and Vese, 2011). For convenience, a short review of the
+state of the art of these techniques is described hereafter.
+One of the first joint “morphing”-segmentation approach (as it was not a proper registration
+method) was proposed in (Bertalmio et al., 2000). A full registration framework is then presented
+by (Yezzi et al., 2001) assuming that the two (2D) images contain a common object to be registered
+and segmented. Their goal is to find two closed curves, each capturing the boundary of the object on
+both images with the constraint of a mapping function (an affine transform) from one curve to the
+other. The similarity criterium was a region-based energy function and the regularization is based
+on the mean curvature flow to ensure smoothness. This approach was later extended for non-linear
+deformations by (Unal and Slabaugh, 2005; Wang et al., 2006).
+Almost simultaneously (Vemuri et al., 2000) proposed a “coupled partial differential equations
+(PDEs) approach”, further extended in (Vemuri et al., 2003) for image registration based on level
+sets. The first PDE evolves the level sets of the source image along their normals, with an energy
+functional defined as the difference between the target and the evolving source image. The second
+PDE allows to explicitly retrieve the displacement vector field. In (Vemuri and Chen, 2003), they
+combine the level sets segmentation model from (Vese and Chan, 2002) with prior shape information
+through global alignment for joint image registration-segmentation.
+(Droske and Rumpf, 2004) proposed a shape-matching functional that locally measures defects
+using the field of normals of the level sets defined in both images. As the functional was not defined
+on the intensity correlation between images, their solution allows for multi-modal registration. The
+matching functional is completed with a nonlinear elastic regularization. More recently, in (Droske
+et al., 2009), they extended their work to use the Mumford-Shah functional (Mumford and Shah,
+1989) in the minimization, combined with registration of the unknown edge sets. They consider the
+deformation and the edge sets as separate variables, and they use finite elements.
+(Gorthi et al., 2011) generalized the surveyed methodologies, and proposed a method derived from
+(Yezzi et al., 2003) and (Vemuri and Chen, 2003). Moreover, they coined as ADFs to the described
+family of registration-segmentation methods, in which the evolution of the contours or the level sets
+is driven by a dense deformation vector field. One important contribution in (Gorthi et al., 2011)
+is the proposal of a novel multiphase function to compute the level sets, allowing for non-binary
+
+24
+
+CHAPTER 2. BACKGROUND AND STATE OF THE ART
+
+segmentation forces in registration. Almost simultaneously, (Le Guyader and Vese, 2011) presented
+a segmentation-registration method not based on explicit level sets. In their work, they use the
+Mumford-Shah functional to implement the similarity criterion, more similarly to (Droske et al.,
+2009). A first novelty is the use of finite differences, what lets Le Guyader and Vese use a regular grid
+(i.e. easier solution and extension to 3D). They proposed a similar nonlinear elastic regularization,
+but with a different methodology based on auxiliary variable and the augmented Lagrangians method.
+As limitations, they only work on 2D image (even though they affirm it is straightforward the 3D
+extension) and they only observe binary implicit level sets (e.g. only one object can be segmented at
+a time).
+Finally, there also exist some quite different approximations, as they are not based on the ADFs
+framework. For instance, (Rouchdy et al., 2007) segmented cardiac MRI by template deformation.
+Their approach used the gradient vector flow (Xu and Prince, 1998) as segmentation criterion, and a
+deformation field is computed by nonlinear elasticity applying the finite element method.
+Level sets approaches to joint image registration-segmentation using ACWE Most of the
+surveyed frameworks are deduced from the general level set evolution equation introduced by (Osher
+and Sethian, 1988):
+∂ΦD (x, t)
+= ν(ΦD (x, t)) |∇ΦD (x, t)|
+(2.17)
+∂t
+where ν is the velocity of the flow or speed function that contains the local segmentation and contour
+regularization constraints, and ΦD : Ω → R is the signed distance function often used to represent
+implicitly the active contour by its zero level. An early extension to image registration was proposed
+by (Vemuri and Chen, 2003) but replacing ΦD by the intensity function of the image to register,
+ΦI : Ω → R (the moving image). (Bertalmio et al., 2000; Vemuri and Chen, 2003) then define the
+speed function as ν(ΦI (x, t)) = ΦI (x, t) − ΦT (x, t), where ΦT (x) is the intensity function of the target
+image. Finally, (Gorthi et al., 2011) propose a different multiphase label function as level set function
+(ΦL ) that improves registration results.
+Naming ΦG a generic objective function, a dense deformation field of vectors u : Rn → Rn (typically
+n = {2, 3}) is introduced. Then, the conservation of the morphological description is assumed, such
+as ΦG (x, t) = ΦG (x + du, t + dt) =⇒ dΦG (x, t) = 0, where dΦG is the total derivative of ΦG . Using
+the chain rule, it can be rewritten as the evolution equation of a vector flow:
+∂u(x, t)
+ΦG
+=−
+NΦ ,
+∂t
+|∇ΦG | G
+
+(2.18)
+
+where NΦG is the normal of the level set. Finally, they introduce the general level set evolution
+equation into the vector flow to perform the registration task:
+∂u(x, t)
+= −ν(ΦG (x, t))NΦG .
+∂t
+
+(2.19)
+
+Therefore, the position of the level set function ΦG at time t is given by the deformation field u(x, t)
+and the initial level set function ΦG (x, 0), yielding:
+∂u(x, t)
+= −ν(ΦG (x + u(x, t), 0))NΦG .
+∂t
+
+(2.20)
+
+The Mumford-Shah functional The reviewed methods are based on the Mumford-Shah functional (Mumford and Shah, 1989) to compute the velocity function ν. The idea of Mumford and
+Shah was to combine image denoising and segmentation by a functional that simultaneously seeks a
+piecewise smooth approximation l : (Ω ⊂ Rn ) → R of an image I : (Ω ⊂ Rn ) → RC , where Ω is the
+image domain, with typically n = {2, 3}, and C the number of image channels in the multivariate case.
+Let K be an edge set that separates the non-smooth parts from each other. Then, the segmentation
+can be expressed as the minimization of the functional:
+Z
+Z
+2
+E(l(x), K) = (l(x) − I(x))2 dx + λ
+|∇l(x)| dx + γ |K| ,
+(2.21)
+Ω
+
+Ω−K
+
+in which, λ ≥ 0 and γ ≥ 0 are constant weighting parameters. The edge set partitions the image into
+an a priori unspecified number of disjoint regions Ωk , with Ω = ∪k Ωk , each being approximated by a
+smooth function lk : Ωk → R.
+
+2.5. METHODOLOGICAL BACKGROUND
+
+25
+
+Most of the implementations require l to be piecewise constant. This is called the cartoon limit,
+and occurs for λ → ∞. In this limiting case, uk are no longer functions, so they collapse to a single
+value. Due to the quadratic penalizer, given Ωk , lk becomes the mean of I within Ωk (lk = µk ), what
+yields a more common expression for (2.21):
+Z
+E(l, K) = (I(x) − µk )2 dx + γ0 |K| ,
+(2.22)
+Ω
+
+where γ0 is simply a rescaled version of γ.
+Regularization After introducing the deformation field within (2.22), a regularization term is usually appended to the energy functional, in order to introduce some constraints that correctly define
+the ill-posed registration problem. The regularizer, or smoother, depends on the particular properties
+required for the displacement vector field, and it is usually related to the physics of the object under
+consideration. In this regard, the most common approach to regularize the deformation field is linear
+diffusion smoothing (see (Vemuri et al., 2003)). It is applied at the end of each iteration on the current
+global deformation field u. Its PDE corresponds to the well-known heat equation:
+∂v(x, t)
+= ∆v(x, t),
+∂t
+v(x, t = 0) = u∗ (x),
+
+(2.23)
+
+where u∗ is the solution of (2.20) at x and ∆ is the Laplacian operator. This technique permits not
+only to smooth the deformation field, but also to diffuse the contour deformation in a narrow-band
+around it. The fastest way to perform this diffusion is by filtering. The filter corresponding to the
+heat equation is the Gaussian filter (Gorthi et al., 2011). Another regularization schemes make use of
+mean curvature smoothing, normally when the segmentation forces are region-based. Meanwhile, the
+linear diffusion smoothing is applied for pixel-based forces.
+Finally, it is necessary to mention the work of (Le Guyader and Vese, 2011), in which they introduce
+a nonlinear-elasticity-based smoother. As an outcome, this regularizer allows for topology-preserving
+large-magnitude deformations.
+Shape gradients Less activity can be reported regarding methods that do not make use of explicit
+implementation of the level set function. To compute NΦG in (2.20), (or equivalently, the gradientdescent of the data-term in (2.22)) with respect to the underlying deformation field, avoiding the
+explicit setting of the level sets, it is possible to use shape gradients Jehan-Besson et al. (2003);
+Herbulot et al. (2006).
+Let dΩk be the boundary of a partition Ωk of the full image domain, Ω. Further, r(x) is an
+“arbitrary” function over the image domain. We now derive the domain integral w.r.t. the contour
+evolution parameter t (time):
+
+
+Z
+Z
+Z
+∂
+∂r
+∂dΩk
+r(x)dx =
+(x)dx −
+r(x)
+, NdΩk dx
+(2.24)
+∂t Ωk
+∂t
+Ωk ∂t
+dΩk
+k
+where ∂dΩ
+∂t , NdΩk is the projection of the boundary movement on the unit inward normal. We
+recall here that equation (2.24) sets the bridge between the explicit level set formulations surveyed in
+section 2.5.2 by updating the distortion along the steepest energy descent:
+
+∂u(x, t)
+∂E(u)
+=−
+,
+∂t
+∂u
+what closes the loop with the general expression of the ADFs introduced in (2.20).
+
+(2.25)
+
+Chapter 3
+
+Objectives
+Chapter 1 introduced the connectome mapping and analysis as promising areas of pure research.
+Accordingly, clinical applications of the advances in the field are scarce and they are not outstanding
+in comparison with other mature techniques. However, it is indubitable that dMRI connectomics will
+be a very apt tool for neuroscience and clinical routine.
+This PhD Thesis project proposes a translational research that aims at advancing the computational tools for dMRI connectome mapping to make them useful in the practical applications that
+enhance human health and well-being. The fundamental hypothesis underneath the presented research
+is that current technical and computational limitations disable the application of such a potential tool
+in neuroscience and healthcare. Therefore, this work addresses specific points of the image processing
+performed within the connectivity mapping chain (introduced in Chapter 2), in order to improve the
+overall accuracy and reliability of connectome extraction from “in-vivo” human dMRI data. The
+achievement of these improvements will unlock the applied use of dMRI connectomics.
+This long-term goal will be implemented in three specific objectives:
+1. Perliminary study of the applicability of existing techniques from other image processing fields:
+WM segmentation in the native space of dMRI with Bayesian clustering techniques.
+2. Proposal of a new methodology: joint dMRI segmentation and registration with the anatomical
+reference to correct for susceptibility distortions, segment WM and impose an atlas-based cortical
+parcellation using an ADFs model.
+3. Assessment of the translational advance: evaluation of the presented algorithms, with application
+to clinical cases and large-scale databases of normal subjects.
+
+3.1
+
+Preliminary study of the applicability of existing techniques from
+other image processing fields
+
+A first approximation to the problem will only cover the segmentation task in native dMRI. A description of the problem at hand is given in subsection 2.4.2, along with a brief summary of the
+theory of the proposed framework and the overview of its applications to the target field. For the
+accomplishment of this objective we identify a number of elementary targets described below.
+Understanding data This objective implicitly deals with obtaining the necessary insights and
+the required background on dMRI data. Therefore, this preliminary section of the PhD Thesis will
+study the properties of these data, in order to seek for the best features to be exploited in further
+investigations.
+Registration-based segmentation Available non-linear registration methods will be surveyed in
+order to obtain a competitive set of registration tools with their set-up to cross compare results on
+dMRI data.
+Segmentation tool Once the potentials of the available data are identified, the effort will be set
+at defining proper methodologies to drive segmentation (and registration for the case of the second
+objective). A general purpose segmentation software will be contributed with comprehensive characterization and evaluation studies using publicly available MRI databases (see subsection 5.1.2). We
+will refer to this segmentation software as Multivariate Bayesian Image Segmentation tool (MBIS).
+27
+
+28
+
+CHAPTER 3. OBJECTIVES
+
+Adapting the tool to the data This target considers the necessary fine tuning of parameters and
+other details of MBIS, based on the conclusions drawn from the accomplished tasks and preliminary
+works on PVE and CSF contamination correction.
+Sub-voxel precision segmentation and variational Bayes This last block of specific subobjectives deals with investigating the expected evolution of the MBIS tool, investigating how to
+achieve sub-voxel precision, as well as using refined Bayesian techniques as the variational Bayes
+models.
+
+3.2
+
+Proposal of a new methodology
+
+As shown in Chapter 2, the opportunity and challenge still resides in the integration of processing
+techniques to improve results. By jointly solving three major challenging tasks of the connectome
+extraction (section 2.4), we aim to drastically improve the overall performance and reliability of
+connectome extraction pipelines. Rather than increasing the complexity of the solution, this simultaneous technique will overcome the shared pitfalls consistently with the unique underlying information
+to simplify the problem and improve overall performance.
+We will reformulate the segmentation and registration problem as an inverse problem, where we
+seek for an underlying deformation field (the distortion) mapping from the structural space into the
+diffusion space, such that the structural contours segment optimally the dMRI data.
+Implementation This novel methodology will be implemented with the resources described in
+Chapter 5. As a result, we will produce a software package that can be easily evaluated and analyzed.
+This contribution will also allow for the reproduction of experiments and its public communication.
+Study of strategies to vector field interpolation One key element of the methodology will be
+responsible of of interpolate a sparsely-defined deformation field (a vector for each off-grid node of the
+surface) to a dense deformation field, defined point-wise over the domain of the images.
+Evaluation and application on a digital phantom In order to illustrate the applicability of
+our solution, the PhD Thesis will show exemplary experiments to illustrate the performance and
+limitations of the proposed techniques, by using the advanced digital phantom further described in
+subsection 5.1.1. Under this objective, results will be compared to existing procedures.
+Optimization Two optimization approaches will be investigated, namely gradient descent and alternating direction method of multipliers (ADMM).
+
+3.3
+
+Assessment of translational advance
+
+With the aim at enclosing all the gathered findings into a consistent work, the PhD Thesis will
+end benchmarking the presented advances. Therefore, in this last objective, a group of validation
+experiments as well as applications to healthy and clinical cases will be provided. These examples
+will demonstrate the usefulness of the advances on real datasets, trying to highlight the improvements
+achieved with respect to widely-used procedures.
+Comprehensive evaluation in scan-rescan datasets A first evaluation experiment will address
+the validation requirements for a high-standard processing tool. This study will be conducted in a pilot
+of 5 healthy volunteers subjected to a scan-rescan session. Visual inspection by blinded experts, rating
+the accuracy achieved, and quantitative assessment of the repeatability of results will be reported.
+Clinical application After validating the tool, one experiment illustrating clinical application will
+be conducted. Available data allow for several options. Thus, a preliminary objective in this area is
+the selection of the most appropriate framework. In this regard, this PhD project will evaluate three
+possible experiments described below, and select the most appropriate to demonstrate the clinical
+application of the proposed advances:
+
+3.3. ASSESSMENT OF TRANSLATIONAL ADVANCE
+
+29
+
+1. The human connectome atlas. Once the tool has been proven to improve the overall performance of the connectome extracting pipeline, it will be used to obtain the corresponding
+networks of a large-scale database of dMRI datasets. For this objective, a preliminary check
+of aptness of the database will be performed as the objective can be impractical in the case
+that data is not adequate. Once this requirement is met, a template connectome will be built
+through probabilistic inference procedures. As an evaluation result, a comprehensive analysis of
+uncertainty of the resulting network will be compared with the corresponding matrix obtained
+without the proposed contributions. The expected outcome of this experiment is to prove that
+atlas uncertainty is lowered, and hence, the template networks obtained are more accurate.
+2. Thalamus segmentation in high-resolution diffusion weighted images. Currently, there
+is a high interest on atlas-based segmentation of the Thalamus on dMRI data. That is a
+straightforward application of the proposed methods, but some adaptations should be performed
+before proceeding with this second application.
+3. Application to neurodegenerative diseases Finally, based on the rate of success in advancing the connectomics to the clinic, the PhD Thesis will demonstrate the usefulness of its research
+by comparing end-analysis results with and without the proposed methodologies.
+
+Chapter 4
+
+Research plan
+A research plan has been developed in order to cover the objectives presented in Chapter 3, and hence
+it presents a parallel structure. It is organized in five units called Work Units (WUs). The first unit
+contains the preliminary work section 4.1 necessary to set the required standpoint for subsequent tasks
+and establish a background on the field. The following units (WUs 1, 2, and 3) address the three
+main objectives of this PhD proposal. Finally, the WU-5 contains other aside activities and works in
+related projects that benefit the development of this Thesis.
+
+4.1
+
+Work Unit 1: Preliminary work
+
+The tasks grouped in this unit address:
+• the accomplishment of the mandatory course work, fulfilling the Master’s degree included in the
+PhD Program (reference: DSE RD1393/2007),
+• the basic understanding of the dMRI images (section 2.2) and related modalities (such as those
+additional MRI data used in susceptibility distortion correction),
+• the study of the open challenges in the proposed research line described in section 2.4, and
+• the review and analysis of the state of the art methods in order to understand the open challenges.
+
+4.2
+
+Work Unit 2: Bayesian inference
+
+Based on the theory described in subsection 2.5.1, this WU will propose a solution for the first specific
+objective of this work (section 3.1). Hence, this unit will address the reliable segmentation of dMRI
+data in native space using Bayesian inference techniques.
+
+4.3
+
+Work Unit 3: Active deformation fields
+
+This WU will fulfill the third specific objective of the Thesis (section 3.2). All the tasks below this unit
+will address the research of the new methodology based on the ADFs described in subsection 2.5.2.
+
+4.4
+
+Work Unit 4: Evaluation and applications
+
+This last research unit will analyze and carry out the most illustrative applications of the conducted
+research. Based on real data described in Chapter 5, the aim of the WU4 is to demonstrate that the
+final commitment of translating the resulting methodologies into neuroscience research and potentially
+the clinical routine has been successfully satisfied.
+
+4.5
+
+Work Unit 5: Additional activities
+
+Some special events (courses, conferences, etc.) have been held or are scheduled to ensure the PhD
+Thesis high standards.
+
+31
+
+Chapter 5
+
+Resources and operational context
+5.1
+5.1.1
+
+Image Data
+Simulated digital phantoms
+
+The lack of a widely accepted gold -standards in the application field has been addressed by several
+authors (Côté et al., 2013). With the aim at evaluating the correctness of results and validating the
+methodologies proposed, highly realistic simulated digital phantoms will be used. In the context of
+the PhD Thesis, three different levels of completeness will be achieved for the proposed phantoms.
+Axial slices of the three phantoms are presented in figure 5.1.
+“Sulcus” phantom The first basic phantom is aimed at challenging the proposed solutions with the
+geometrical complexity of the human brain to demonstrate certain exclusive features of the methodology proposed in section 3.2. This model will simulate an artificial sulcus as proposed in (MacDonald
+et al., 2000), with an intensity distribution inspired on the T1 MRI corrupted with certain normally
+distributed noise.
+DMRI signal simulation (“spheres phantom”) The next level of simulation will comprehend
+a combination of spherical shapes mimicking the three main tissues in the brain (CSF, WM, GM).
+This model will produce a realistic EPI signal for each tissue. However, at this level of complexity, no
+fiber tracts are simulated because the generated signal will have random orientation per voxel.
+Advanced phantom Finally, the most complete digital phantom1 that is publicly available will
+be adapted to the application at hand. This phantom is a spherical volume containing a set of fiber
+bundles, that connect one area of a “cortex” to another. The model accounts for PVE using a similar
+approach to (Close et al., 2009).
+
+5.1.2
+
+Real MRI databases
+
+Evaluation dataset For the development of the first and second objectives (section 3.1 and section 3.2), an ad-hoc database is under acquisition. This database comprehends 5 healthy volunteers
+with no history of neurological conditions (ages 27±6, 2 female). All the subjects were scanned in a 3T
+MR Scanner (Siemens Magnetom TrioTim, Siemens, Erlangen, Germany) with a standard 12-channel
+head coil. Subjects were scanned twice with the same protocol, described in Table 5.1. After being
+scanned the first time, each subject exited the scan room for a short break and then reentered for
+an identical scan session. To note, there was a full repositioning of the volunteer, coils, blankets and
+pads before each scan and re-scan session.
+Publicly available databases This PhD Thesis proposal observes the utility of two publicly
+available databases. The first one is the the Multi-Modal MRI Reproducibility Resource (Kirby21)
+database (Landman et al., 2011). Kirby21 consists of scan-rescan imaging sessions on 21 healthy
+volunteers without history of neurological disease. The database includes a wide range of imaging
+modalities, from which we selected T1, T2, DTI and magnetization transfer MRI (MT). The complete
+database is publicly released online 2 .
+1 http://hardi.epfl.ch/static/events/2013_ISBI/testing_data.html
+2 http://www.nitrc.org/projects/multimodal
+
+33
+
+34
+
+CHAPTER 5. RESOURCES AND OPERATIONAL CONTEXT
+
+Figure 5.1: MRI digital phantoms. A) An axial slice of the “sulcus phantom”. B) Axial slice of
+the B0 volume belonging to the “advanced phantom” dataset, showing some fiber tracts and CSF
+regions. C1, C2) Axials slices of the FA and MD (respectively) obtained with the “spheres phantom”.
+
+The second database is the Information eXtraction from Images - EPSRC GR/S21533/02 (IXI)
+dataset (Hill et al., 2006), which contains nearly 600 MRI scans of normal and healthy subjects. The
+acquisition protocol for each subject includes T1, T2, proton density-weighted MRI (PD)-weighted,
+and DTI images and some other modalities which we did not consider in our current study. All
+additional information about this database can be found in their website. From this database, we
+discarded those subjects for which the age information was not available in the demographic spreadsheet distributed along with the IXI dataset. After that, a total cohort of 585 was selected for the
+experiment.
+Clinical databases Additional databases will be provided by the Department of Radiology, Universitary Hospital Center of Canton Vaud, Lausanne (CHUV), for the accomplishment of the objective
+described in section 3.3 regarding clinical application. Depending on a preliminary analysis of the improvement achieved with the proposed methodology, the most appropriate application will be selected
+among the following:
+• Epilepsy database: using the same database, the hypothesis of this experiment would confirm
+the results of the new methodology as it compares to an existing and conclusive experiment
+
+5.2. HARDWARE AND SOFTWARE RESOURCES
+#
+1
+2
+
+Acquisition
+Localizer
+Field Map
+
+3
+
+DTI
+
+4
+5
+
+Field Map
+Structural T1
+
+6
+
+Structural T2
+
+35
+
+Description
+Triplanar survey
+field mapping using GRE sequence was performed before dMRI acquisition for susceptibility correction purposes.
+dMRI EPI scans were acquired with transversal in-plane isotropic resolution 2mm,
+slice thickness 2mm, 128 × 128 × 53 image matrix, TR= 6200 ms, TE = 82 ms,
+NEX= 2, BW= 1502 Hz/pixel, GRAPPA Pf =3, b=1000sm−2 . The series included
+images acquired along 30 non-collinear directions and 5 interleaved B0 volumes.
+A secondary field mapping acquisition.
+An MPRAGE T1-weighted acquisition, sagittal turboFLASH sequence (TFL) sequence, in-plane isotropic resolution 1.0 mm, slice thickness 1.2mm 256 × 256 × 160
+image matrix, TR=2300 ms, TE=2.98 ms, FA= 9, NEX=1, BW= 240 Hz/pixel.
+A T2-weighted acquisition, sagittal turbo spin-echo sequence (TSE) with variable
+flip-angle (VFL), in-plane isotropic resolution 1.0 mm, slice thickness 1.2mm, 256 ×
+256 × 160 image matrix, TR=3200 ms, TE= 408 ms, NEX=1, BW= 751 Hz/pixel.
+
+Table 5.1: MRI acquisition protocol. Description and order of the acquired MR sequences, this
+protocol was repeated for a second time, after repositioning of the subject.
+
+(Lemkaddem et al., 2012) that uses classic connectivity analysis approaches.
+• Mild-cognitive impairment (MCI) database: consists of a comprehensive MRI protocol including
+T1, T2∗ , DTI, MT, etc. for 80 healthy controls and 40 pathologic subjects, with corresponding
+demographic and psychiatric information including diagnosis. Some studies to compare with
+have been conducted, but no conclusive one is available based on connectivity analyses.
+• High-resoultion dMRI of the thalamus: this database consists of 5 dMRI datasets (healthy
+subjects) from an ongoing pilot study. The protocol is specific for the human thalamus, and it
+is composed by T1, T2, standard DTI and high-resolution DTI at 7 Tesla with reduced FoV. In
+this case, the application would target the nuclei segmentation from an atlas.
+
+5.2
+
+Hardware and software resources
+
+Hardware resources
+• 3T MR Scanner (Siemens Magnetom TrioTim, Siemens, Erlangen, Germany) with a standard
+12-channel head coil.
+• Two personal computers. Minimum requirements: Intel Core Duo, 3 GHz, 64 bits, 8 GB RAM,
+Graphic card 512 MB.
+Software requirements
+• Operative Systems: Ubuntu Linux, Windows 7.
+• Python Development Tools: Python 2.7 (http://www.python.org/), nibabel (http://nipy.
+sourceforge.net/nibabel/), numpy (http://numpy.scipy.org/), NiPype (http://nipy.
+sourceforge.net/nipype/index.html), matplotlib (http://matplotlib.sourceforge.net/),
+and PyPR (http://pypr.sourceforge.net/).
+• C++ Development Tools: C++ and C++ Standard Library (platform dependent), Boost
+Program Options, Filesystem and System Libraries http://www.boost.org, Insight Image
+Segmentation and Registration Toolkit (ITK) http://www.itk.org/Wiki/ITK/Git/Download,
+maxflow-3.0.2 (only for research purposes, http://pub.ist.ac.at/~vnk/software.html) or
+maxflow-2.2.1 (GPL license, http://pub.ist.ac.at/~vnk/software/maxflow-v2.21.src.tar.
+gz), GitHub https://github.com/oesteban/, Eclipse CDT (http://www.eclipse.org).
+• Neuroimage Processing Tools: CMP (http://www.cmtk.org, (Daducci et al., 2012)), Freesurfer
+(http://surfer.nmr.mgh.harvard.edu/, (Fischl, 2012)), FAST (Zhang et al., 2001), Advanced
+Normalization ToolS (ANTS) (Avants et al., 2013), DiffusionToolkit & TrackVis (Wang et al.,
+2007).
+• Visualization Software: Paraview (Ahrens et al., 2005), 3D Slicer (Fedorov et al., 2012), ITKSNAP (Yushkevich et al., 2005).
+
+36
+
+CHAPTER 5. RESOURCES AND OPERATIONAL CONTEXT
+
+5.3
+
+Operational context and creation of a Network of Excellence
+
+This project is highly interdisciplinary and involves image acquisition, design of new image processing
+methodologies, data processing and analysis, tools characterization and validation, and medical application and interpretation. The proposed PhD work will establish an emerging collaboration framework
+along the involved institutions:
+• Biomedical Imaging Technologies (BIT), Universidad Politécnica de Madrid (UPM),
+Spain: will support this PhD Thesis. In terms of research activities, all of them related to the
+implementation, evaluation and validation of methodologies and the processing and analysis of
+imaging data will be carried out at BIT-UPM.
+• Signal Processing Laboratory (LTS5), Swiss Federal Institute of Technology, Lausanne (EPFL), Switzerland: the new image processing methodologies proposed in this work
+will be designed and started in this institution.
+• Department of Mathematics (Math), University of California, Los Angeles (UCLA),
+United States: will contribute with two stays under the UPM’s Program for PhD Students.
+• CHUV and Medical Image Analysis Laboratory (MIAL), University of Lausanne
+(UNIL), Switzerland: will conduct the necessary scanning protocols and support the clinical
+application of this work.
+International standards In order to obtain the “International PhD Mention” award, the proposed
+research work includes 12 months of activity in LTS5-EPFL (Switzerland) and more than 140 days in
+Math-UCLA (United States). In total, more than 16 months of stays abroad in partner laboratories
+will be undertaken. This training allows to apply for the “International PhD Mention”.
+Some other additional activities (i.e. conferences, courses) and collaborations are also planned,
+and will provide a rich training in different transversal subjects.
+BIT-UPM: Universidad Politécnica de Madrid The UPM is the largest Spanish technological
+university, as well as a renowned European institution. UPM has, among its objectives, the creation,
+development, transmission and criticism of science, technology, and culture. UPM holds two recognitions as Campus of International Excellence, a distinction that refers to the quality of its research
+and teaching activity. It is outstanding in its research activity together with its training of highlyqualified professionals, competitive at an international level. UPM heads the Spanish participation
+in the 7th Framework Program of the European Union for research and technological development.
+The Biomedical Imaging Technologies (BIT) (BIT, http://www.die.upm.es/im/) belongs to UPM,
+and since 2008, the group is also part of Biomedical Research Networking Center (CIBER), under the
+branch CIBER in Bioengineering, Biomaterials and Nanomedicine (CIBER-BBN). With the vision of
+contributing to improve the health care delivery through advances in biomedical imaging technologies, BIT’s main activities are: cardiovascular imaging, high-resolution preclinical imaging, microscopy
+image analysis, and functional and molecular imaging.
+LTS5-EPFL: École Polytechnique Fédérale de Lausanne The EPFL is a leading institution
+in research and education in engineering in Switzerland, it has three missions: education, research and
+technology transfer at the highest international level. With more than 250 laboratories and research
+groups on campus, EPFL is one of Europe’s most innovative and productive technology institutes.
+The School’s unique structure facilitates intersdisciplinary research and encourages partnerships with
+other institutions. EPFL emphasizes both fundamental research and engineering applications. The
+Signal Processing Laboratory (LTS5) (LTS5, http://lts5www.epfl.ch/) of EPFL is directed by
+Prof. Jean-Philippe Thiran. It counts some 20 researchers, both PhD students and post-docs, active
+in signal and image analysis. This group also counts one part-time neurosurgeon and one parttime neuro-radiologist. LTS5’s core competences include: Multimodal signal processing: information
+theoretical framework for multimodal signal/image analysis, Image analysis: segmentation, Partial
+Difference Equations in image analysis, Scale-space analysis, a-priori information in image analysis,
+multimedia multimodal signal/image processing, medical image analysis. EPFL-LTS5 (J.-Ph Thiran)
+has an extensive experience in EU Framework projects, including NoE of the 6th FP and SIMILAR
+(Project nbr FP6-507609), or the Thrombus STREP (FP7), where EPFL-LTS5 is the leader of the
+Image Processing WP.
+
+5.3. OPERATIONAL CONTEXT AND CREATION OF A NETWORK OF EXCELLENCE
+
+37
+
+MIAL-UNIL: University of Lausanne and Centre Hospitalier Universitarire Vadois UNIL
+is a leading institution in research and education in Switzerland, with emphasis placed on an interdisciplinary approach, with close cooperation between students, professors and teaching staff. Among
+its 7 faculties, the Faculty of Medicine and Biology (FBM) is in very close collaboration with CHUV
+in order to remain at the forefront of advances in medical knowledge. The Medical Image Analysis
+Laboratory (MIAL, http://www.unil.ch/mial) of UNIL is born in 2011 and it is directed by Dr.
+Meritxell Bach Cuadra and it is jointly between the FBM and the Department of Radiology of CHUV.
+It counts for 5 PhD students, 2 post-docs, and other senior affiliated researchers. MIAL is a growing
+group of scientists that aims at develop novel image processing methods to allow a more effective use
+of emerging medical images. To this end, MIAL research is balanced between fundamental aspects
+of image processing and application-oriented projects. The main methodological research regards the
+use of a-priori information (atlas, soft priors, and sparsity priors) in image analysis, particularly in
+segmentation and registration methods.
+Math-UCLA: University of California, Los Angeles The UCLA is a public research university
+located in California, United States. It is the second-oldest of the 10 campuses of the University of
+California (UC) system. UCLA is considered a Public Ivy and flagship campus of the UC system.
+UCLA is the university with the largest enrollment in the state of California and the most popular
+university in the United States by number of applicants. The Department of Mathematics is an
+outstanding research entity, associated with the Institute for Pure and Applied Mathematics (IPAM)
+which is funded by the National Science Foundation (NSF). The department was awarded in 2007
+with the American Society’s Award for an Exemplary Program or Achievement in a Mathematics
+Department. Within the department, the UCLA Image Processing Research Group (IMAGERS) is a
+renowned group in image processing with very reputed researchers on the field that this Thesis covers.
+
+Bibliography
+F. Aboitiz, A. B. Scheibel, R. S. Fisher, and E. Zaidel. Fiber composition of the human corpus
+callosum. Brain Research, 598(1–2):143–153, 1992.
+J. Ahrens, B. Geveci, and C. Law. Paraview: An end-user tool for large data visualization. In The
+Visualization Handbook, pages 717–731,LXX–LXXII. Elsevier Inc., 2005. ISBN 978-0123875822.
+A. L. Alexander, K. M. Hasan, M. Lazar, J. S. Tsuruda, and D. L. Parker. Analysis of partial volume
+effects in diffusion-tensor MRI. In Proc. Intl. Soc. Mag. Reson. Med. 9 (ISMRM 2001), volume 45,
+pages 770–780, Glasgow, Scotland, UK, 2001.
+J. L. R. Andersson, J. Xu, E. Yacoub, E. Auerbach, S. Moeller, and K. Ugurbil. A comprehensive
+gaussian process framework for correcting distortions and movements in diffusion images. In Proc.
+Intl. Soc. Mag. Reson. Med. 20 (ISMRM 2012), page 2426, Melbourne, Australia, 2012.
+J. L. Andersson and S. Skare. Image distortion and its correction in diffusion MRI. In Diffusion
+MRI: Theory, Methods, and Applications, pages 285–302. Oxford University Press, 2010. ISBN
+9780199708703.
+J. L. Andersson, C. Hutton, J. Ashburner, R. Turner, and K. Friston. Modeling geometric deformations
+in EPI time series. NeuroImage, 13(5):903–919, 2001.
+J. L. Andersson, S. Skare, and J. Ashburner. How to correct susceptibility distortions in spin-echo
+echo-planar images: application to diffusion tensor imaging. NeuroImage, 20(2):870–888, 2003.
+J. Ashburner and K. J. Friston. Unified segmentation. Neuroimage, 26(3):839–851, 2005.
+B. B. Avants, N. J. Tustison, J. Wu, P. A. Cook, and J. C. Gee. An open source multivariate framework
+for n-tissue segmentation with evaluation on public data. Neuroinformatics, 9(4):381–400, 2011.
+B. Avants, G. Song, J. Duda, H. Johnson, and N. Tustison. ANTs: Advanced Normalization Tools,
+2013. [online] http://www.picsl.upenn.edu/ANTS/. Last accessed May 7th, 2013.
+S. Awate, H. Zhang, T. Simon, and J. Gee. Multivariate segmentation of brain tissues by fusion of
+MRI and DTI data. In 5th IEEE International Symposium on Biomedical Imaging: From Nano to
+Macro (ISBI 2008), pages 213–216, Paris, France, 2008.
+C. I. Bargmann and E. Marder. From the connectome to brain function. Nature Methods, 10(6):
+483–490, 2013.
+P. J. Basser and C. Pierpaoli. Microstructural and physiological features of tissues elucidated by
+quantitative-diffusion-tensor MRI. Journal of Magnetic Resonance, 111:209–219, 1996.
+T. E. J. Behrens, H. Johansen-Berg, M. W. Woolrich, S. M. Smith, C. a. M. Wheeler-Kingshott, P. A.
+Boulby, G. J. Barker, E. L. Sillery, K. Sheehan, O. Ciccarelli, A. J. Thompson, J. M. Brady, and
+P. M. Matthews. Non-invasive mapping of connections between human thalamus and cortex using
+diffusion imaging. Nature Neuroscience, 6(7):750–757, 2003.
+M. Bertalmio, G. Sapiro, and G. Randall. Morphing active contours. IEEE Transactions on Pattern
+Analysis and Machine Intelligence, 22(7):733–737, 2000.
+J. Besag. Spatial interaction and the statistical analysis of lattice systems. Journal of the Royal
+Statistical Society. Series B (Methodological), 36(2):192–236, 1974.
+C. M. Bishop. Pattern recognition and machine learning, volume 4. Springer Science+Business Media,
+LLC, 2006. ISBN 978-0387-31073-2.
+39
+
+40
+
+BIBLIOGRAPHY
+
+Y. Boykov and V. Kolmogorov. An experimental comparison of min-cut/max-flow algorithms for
+energy minimization in vision. Pattern Analysis and Machine Intelligence, IEEE Transactions on,
+26(9):1124–1137, 2004.
+Y. Boykov, O. Veksler, and R. Zabih. Fast approximate energy minimization via graph cuts. Pattern
+Analysis and Machine Intelligence, IEEE Transactions on, 23(11):1222–1239, 2001.
+X. Bresson, P. Vandergheynst, and J. P. Thiran. A variational model for object segmentation using boundary information and shape prior driven by the mumford-shah functional. International
+Journal of Computer Vision, 68(2):145–162, 2006.
+P. A. Bromiley and N. A. Thacker. Multi-dimensional medical image segmentation with partial volume
+and gradient modelling. Annals of the BMVA, 2(1-22):2–4, 2008.
+E. Bullmore and O. Sporns. Complex brain networks: graph theoretical analysis of structural and
+functional systems. Nature Reviews Neuroscience, 10(3):186–198, 2009.
+E. J. Canales-Rodrı́guez, L. Melie-Garcı́a, and Y. Iturria-Medina. Mathematical description of q-space
+in spherical coordinates: Exact q-ball imaging. Magnetic Resonance in Medicine, 61(6):1350–1367,
+2009.
+R. Cárdenes, E. Muñoz-Moreno, A. Tristan-Vega, and M. Martin-Fernandez. Saturn: A software
+application of tensor utilities for research in neuroimaging. Computer Methods and Programs in
+Biomedicine, 97(3):264–279, 2010.
+M. J. Cardoso, M. J. Clarkson, M. Modat, and S. Ourselin. NiftySeg: open-source software for medical
+image segmentation, label fusion and cortical thickness estimation. In Medical Image Analysis
+Workshop, 9th IEEE International Symposium on Biomedical Imaging (ISBI), Barcelona, Spain,
+2012.
+T. Chan and W. Zhu. Level set based shape prior segmentation. In IEEE Computer Society Conference
+on Computer Vision and Pattern Recognition (CVPR 2005), volume 2, page 1164–1170, San Diego,
+CA, USA, 2005.
+T. F. Chan and L. A. Vese. Active contours without edges. IEEE Transactions on Image Processing,
+10(2):266–277, 2001.
+Y. Chen, H. D. Tagare, S. Thiruvenkadam, F. Huang, D. Wilson, K. S. Gopinath, R. W. Briggs,
+and E. A. Geiser. Using prior shapes in geometric active contours in a variational framework.
+International Journal of Computer Vision, 50(3):315–328, 2002.
+H. Cheng, Y. Wang, J. Sheng, W. G. Kronenberger, V. P. Mathews, T. A. Hummer, and A. J.
+Saykin. Characteristics and variability of structural networks derived from diffusion tensor imaging.
+NeuroImage, 61(4):1153–1164, 2012.
+J. Y. Chiou and O. Nalcioglu. A simple method to correct off-resonance related distortion in echo
+planar imaging. In Proc. Intl. Soc. Mag. Reson. Med. 8 (ISMRM 2000), page 1711, Denver, USA,
+2000.
+T. G. Close, J.-D. Tournier, F. Calamante, L. A. Johnston, I. Mareels, and A. Connelly. A software
+tool to generate simulated white matter structures for the assessment of fibre-tracking algorithms.
+NeuroImage, 47(4):1288–1300, 2009.
+P. Cook, Y. Bai, S. Nedjati-Gilani, K. Seunarine, M. Hall, G. Parker, and D. Alexander. Camino:
+Open-source diffusion-MRI reconstruction and processing. In Proc. Intl. Soc. Mag. Reson. Med. 14
+(ISMRM 2006), page 2759, Seattle, WA, USA, 2006.
+D. Cordes, K. Arfanakis, V. Haughton, and M. Meyerand. Geometric distortion correction in EPI
+using two images with orthogonal phase-encoding directions. In Proc. Intl. Soc. Mag. Reson. Med.
+8 (ISMRM 2000), page 1712, Denver, USA, 2000.
+M.-A. Côté, G. Girard, A. Boré, E. Garyfallidis, J.-C. Houde, and M. Descoteaux. Tractometer:
+Towards validation of tractography pipelines. Medical Image Analysis, 17(7):844–857, 2013.
+R. W. Cox and J. S. Hyde. Software tools for analysis and visualization of fMRI data. NMR in
+Biomedicine, 10(4-5):171–178, 1997.
+
+BIBLIOGRAPHY
+
+41
+
+R. C. Craddock, S. Jbabdi, C.-G. Yan, J. T. Vogelstein, F. X. Castellanos, A. Di Martino, C. Kelly,
+K. Heberlein, S. Colcombe, and M. P. Milham. Imaging human connectomes at the macroscale.
+Nature Methods, 10(6):524–539, 2013.
+D. Cremers, S. J. Osher, and S. Soatto. Kernel density estimation and intrinsic alignment for shape
+priors in level set segmentation. International Journal of Computer Vision, 69(3):335–351, 2006.
+M. B. Cuadra, L. Cammoun, T. Butz, O. Cuisenaire, and J. P. Thiran. Comparison and validation of
+tissue modelization and statistical classification methods in t1-weighted MR brain images. Medical
+Imaging, IEEE Transactions on, 24(12):1548–1565, 2005.
+A. Daducci, S. Gerhard, A. Griffa, A. Lemkaddem, L. Cammoun, X. Gigandet, R. Meuli, P. Hagmann,
+and J.-P. Thiran. The connectome mapper: An open-source processing pipeline to map connectomes
+with MRI. PLoS ONE, 7(12):e48121, 2012.
+R. De Boer, H. A. Vrooman, M. A. Ikram, M. W. Vernooij, M. Breteler, A. Van der Lugt, and W. J.
+Niessen. Accuracy and reproducibility study of automatic MRI brain tissue segmentation methods.
+NeuroImage, 51(3):1047–1056, 2010.
+M. Droske and M. Rumpf. A variational approach to nonrigid morphological image registration. SIAM
+Journal on Applied Mathematics, 64(2):668–687, 2004.
+M. Droske, W. Ring, and M. Rumpf. Mumford–Shah based registration: a comparison of a level set
+and a phase field approach. Computing and Visualization in Science, 12(3):101–114, 2009.
+D. B. Ennis and G. Kindlmann. Orthogonal tensor invariants and the analysis of diffusion tensor
+magnetic resonance images. Magnetic Resonance in Medicine, 55(1):136–146, 2006.
+A. Fedorov, R. Beichel, J. Kalpathy-Cramer, J. Finet, J.-C. Fillion-Robin, S. Pujol, C. Bauer, D. Jennings, F. Fennessy, M. Sonka, J. Buatti, S. Aylward, J. V. Miller, S. Pieper, and R. Kikinis. 3D
+slicer as an image computing platform for the quantitative imaging network. Magnetic Resonance
+Imaging, 30(9):1323–1341, 2012.
+B. Fischl. FreeSurfer. NeuroImage, 62(2):774–781, 2012.
+B. Fischl, D. H. Salat, E. Busa, M. Albert, M. Dieterich, C. Haselgrove, A. van der Kouwe, R. Killiany,
+D. Kennedy, and S. Klaveness. Whole brain segmentation: automated labeling of neuroanatomical
+structures in the human brain. Neuron, 33(3):341–355, 2002.
+B. Fischl and A. M. Dale. Measuring the thickness of the human cerebral cortex from magnetic
+resonance images. Proceedings of the National Academy of Sciences, 97(20):11050–11055, 2000.
+E. Garyfallis, M. Brett, B. Amirbekian, C. Nguyen, F. Yeh, Y. Halchenko, and I. Nimmo-Smith.
+Dipy - a novel software library for diffusion MR and tractography. In 17th annual meeting of the
+Organization for Human Brain Mapping, Québec City, Canada, 2011.
+M. Gastaud, M. Barlaud, and G. Aubert. Combining shape prior and statistical features for active
+contour segmentation. IEEE Transactions on Circuits and Systems for Video Technology, 14(5):
+726–734, 2004.
+V. Glauche. Diffusion II - Post-processing for diffusion weighted image series (toolbox for
+SPM2,SPM5,SPM8), 2013. [online] http://sourceforge.net/projects/spmtools. Last accessed
+May 7th, 2013.
+R. Goebel, F. Esposito, and E. Formisano. Analysis of functional image analysis contest (FIAC) data
+with brainvoyager QX: from single-subject to cortically aligned group general linear model analysis
+and self-organizing group independent component analysis. Human Brain Mapping, 27(5):392–401,
+2006.
+S. Gorthi, V. Duay, N. Houhou, M. Bach Cuadra, U. Schick, M. Becker, A. S. Allal, and J.-P. Thiran.
+Segmentation of head and neck lymph node regions for radiotherapy planning using active contourbased atlas registration. IEEE Journal of Selected Topics in Signal Processing, 3(1):135–147, 2009.
+S. Gorthi, V. Duay, X. Bresson, M. Bach Cuadra, F. J. Sánchez Castro, C. Pollo, A. S. Allal, and J.-P.
+Thiran. Active deformation fields: dense deformation field estimation for atlas-based segmentation
+using the active contour framework. Medical Image Analysis, 15(6):787–800, 2011.
+
+42
+
+BIBLIOGRAPHY
+
+D. N. Greve and B. Fischl. Accurate and robust brain image alignment using boundary-based registration. NeuroImage, 48(1):63–72, 2009.
+A. Griffa, P. S. Baumann, J.-P. Thiran, and P. Hagmann. Structural connectomics in brain diseases.
+NeuroImage, 80:515–526, 2013.
+R. Guimerà and L. A. N. Amaral. Functional cartography of complex metabolic networks. Nature,
+433(7028):895–900, 2005.
+A. Hadjiprocopis, W. Rashid, and P. S. Tofts. Unbiased segmentation of diffusion-weighted magnetic
+resonance images of the brain using iterative clustering. Magnetic Resonance Imaging, 23(8):877–
+885, 2005.
+P. Hagmann. From diffusion MRI to brain connectomics. PhD. thesis, École Polytechnique Fédérale
+de Lausanne, Lausanne, Switzerland, 2005.
+P. Hagmann, L. Cammoun, X. Gigandet, S. Gerhard, P. Ellen Grant, V. Wedeen, R. Meuli, J. P.
+Thiran, C. J. Honey, and O. Sporns. MR connectomics: principles and challenges. Journal of
+neuroscience methods, 194(1):34, 2010.
+P. Hagmann, P. E. Grant, and D. A. Fair. MR connectomics: a conceptual framework for studying
+the developing brain. Frontiers in Systems Neuroscience, 6:43, 2012.
+J. M. Hammersley and P. Clifford. Markov fields on finite graphs and lattices. 1971. [online] http:
+//www.statslab.cam.ac.uk/~grg/books/hammfest/hamm-cliff.pdf.
+D. Han, V. Singh, J. Lee, E. Zakszewski, N. Adluru, T. Oakes, and A. Alexander. An experimental evaluation of diffusion tensor image segmentation using graph-cuts. In 31st Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2009), page
+5653–5656, Minneapolis, Minnesota, USA, 2009.
+K. M. Hasan, I. S. Walimuni, H. Abid, and K. R. Hahn. A review of diffusion tensor magnetic
+resonance imaging computational methods and software tools. Computers in Biology and Medicine,
+41(12):1062–1072, 2011.
+Y. He, Z. J. Chen, and A. C. Evans. Small-world anatomical networks in the human brain revealed
+by cortical thickness from MRI. Cerebral Cortex, 17(10):2407–2419, 2007.
+A. Herbulot, S. Jehan-Besson, S. Duffner, M. Barlaud, and G. Aubert. Segmentation of vectorial
+image features using shape gradients and information measures. Journal of Mathematical Imaging
+and Vision, 25(3):365–386, 2006.
+D. Hill, S. Williams, D. Hawkes, and S. Smith. IXI dataset - Information eXtraction from Images
+project (EPSRC GR/S21533/02), 2006. [online] http://www.brain-development.org/. Last accessed May 7th, 2013.
+D. Holland, J. M. Kuperman, and A. M. Dale. Efficient correction of inhomogeneous static magnetic
+field-induced distortion in echo planar imaging. Neuroimage, 50(1):175, 2010.
+Y.-C. Hsu, C.-H. Hsu, and W.-Y. Tseng. Correction for susceptibility-induced distortion in echoplanar imaging using field maps and model-based point spread function. IEEE Transactions on
+Medical Imaging, 28(11):1850–1857, 2009.
+M. O. Irfanoglu, L. Walker, J. Sarlls, S. Marenco, and C. Pierpaoli. Effects of image distortions
+originating from susceptibility variations and concomitant fields on diffusion MRI tractography
+results. Neuroimage, 61(1):275–288, 2012.
+S. Jbabdi and H. Johansen-Berg. Tractography: Where do we go from here? Brain Connectivity, 1
+(3):169–183, 2011.
+S. Jehan-Besson, M. Barlaud, and G. Aubert. DREAM2S: deformable regions driven by an eulerian accurate minimization method for image and video segmentation. International Journal of
+Computer Vision, 53(1):45–70, 2003.
+M. Jenkinson, C. F. Beckmann, T. E. Behrens, M. W. Woolrich, and S. M. Smith. FSL. Neuroimage,
+62(2):782–790, 2012.
+
+BIBLIOGRAPHY
+
+43
+
+P. Jezzard and R. S. Balaban. Correction for geometric distortion in echo planar images from b0 field
+variations. Magn. Reson. Med., 34(1):65–73, 1995.
+P. Jezzard, A. S. Barnett, and C. Pierpaoli. Characterization of and correction for eddy current
+artifacts in echo planar diffusion imaging. Magnetic resonance in medicine, 39(5):801–812, 1998.
+A. K. Jha, M. A. Kupinski, J. J. Rodrı́guez, R. M. Stephen, and A. T. Stopeck. Task-based evaluation
+of segmentation algorithms for diffusion-weighted MRI without using a gold standard. Physics in
+Medicine and Biology, 57(13):4425, 2012.
+H. Jiang, P. C. van Zijl, J. Kim, G. D. Pearlson, and S. Mori. DtiStudio: resource program for diffusion
+tensor computation and fiber bundle tracking. Computer Methods and Programs in Biomedicine,
+81(2):106–116, 2006.
+H. Johansen-Berg and M. F. Rushworth. Using diffusion imaging to study human connectional
+anatomy. Annual Review of Neuroscience, 32(1):75–94, 2009.
+L. Jonasson, X. Bresson, J. Thiran, V. Wedeen, and P. Hagmann. Representing diffusion MRI in 5-d
+simplifies regularization and segmentation of white matter tracts. IEEE Transactions on Medical
+Imaging, 26(11):1547–1554, 2007.
+L. Jonasson. Segmentation of diffusion weighted MRI using the level set framework. Ph.D. thesis,
+École Polytechnique Fédérale de Lausanne, Lausanne (Swizerland), 2005.
+D. K. Jones and M. Cercignani. Twenty-five pitfalls in the analysis of diffusion MRI data. NMR in
+Biomed., 23(7):803–820, 2010.
+D. K. Jones, T. R. Knösche, and R. Turner. White matter integrity, fiber count, and other fallacies:
+The do’s and don’ts of diffusion MRI. NeuroImage, 73:239–254, 2013.
+N. Kashtan and U. Alon. Spontaneous evolution of modularity and network motifs. Proceedings of
+the National Academy of Sciences of the United States of America, 102(39):13773–13778, 2005.
+D. Kleinfeld, A. Bharioke, P. Blinder, D. D. Bock, K. L. Briggman, D. B. Chklovskii, W. Denk,
+M. Helmstaedter, J. P. Kaufhold, W.-C. A. Lee, H. S. Meyer, K. D. Micheva, M. Oberlaender,
+S. Prohaska, R. C. Reid, S. J. Smith, S. Takemura, P. S. Tsai, and B. Sakmann. Large-scale
+automated histology in the pursuit of connectomes. The Journal of Neuroscience, 31(45):16125–
+16138, 2011.
+S. Knock, A. McIntosh, O. Sporns, R. Kötter, P. Hagmann, and V. Jirsa. The effects of physiologically
+plausible connectivity structure on local and global dynamics in large scale brain models. Journal
+of Neuroscience Methods, 183(1):86–94, 2009.
+V. Kolmogorov and R. Zabin. What energy functions can be minimized via graph cuts? Pattern
+Analysis and Machine Intelligence, IEEE Transactions on, 26(2):147–159, 2004.
+S. Kumazawa, T. Yoshiura, H. Honda, F. Toyofuku, and Y. Higashida. Partial volume estimation
+and segmentation of brain tissue based on diffusion tensor MRI. Medical physics, 37(4):1482–1490,
+2010.
+S. Kumazawa, T. Yoshiura, H. Honda, and F. Toyofuku. Improvement of partial volume segmentation
+for brain tissue on diffusion tensor images using multiple-tensor estimation. Journal of Digital
+Imaging, pages 1–10, 2013.
+J. Kybic, P. Thevenaz, A. Nirkko, and M. Unser. Unwarping of unidirectionally distorted EPI images.
+IEEE Trans. Med. Imag., 19(2):80–93, 2000.
+B. A. Landman, A. J. Huang, A. Gifford, D. S. Vikram, I. A. L. Lim, J. A. D. Farrell, J. A. Bogovic,
+J. Hua, M. Chen, S. Jarso, et al. Multi-parametric neuroimaging reproducibility: A 3-t resource
+study. NeuroImage, 54(4):2854–2866, 2011.
+D. Le Bihan and E. Breton. Imagerie de diffusion in-vivo par résonance magnétique nucléaire.
+Comptes-Rendus de l’Académie des Sciences, 93(5):27–34, 1985.
+C. Le Guyader and L. A. Vese. A combined segmentation and registration framework with a nonlinear
+elasticity smoother. Computer Vision and Image Understanding, 115(12):1689–1709, 2011.
+
+44
+
+BIBLIOGRAPHY
+
+A. Leemans, B. Jeurissen, J. Sijbers, and D. Jones. ExploreDTI: a graphical toolbox for processing,
+analyzing, and visualizing diffusion MR data. In Proc. Intl. Soc. Mag. Reson. Med. 17 (ISMRM
+2009), page 3537, Hawaii, USA, 2009.
+A. Leemans and D. K. Jones. The b-matrix must be rotated when correcting for subject motion in
+DTI data. Magnetic Resonance in Medicine, 61(6):1336–1349, 2009.
+A. Lemkaddem, S. Vulliemoz, A. Griffa, A. Daducci, M. Seeck, and J.-P. Thiran. Altered structural
+connectivity in patients with medial temporal lobe epilepsy: A diffusion spectrum imaging and graph
+analysis study. In Proc. Intl. Soc. Mag. Reson. Med. 20 (ISMRM 2012), page 3205, Melbourne,
+Australia, 2012.
+Y. Li, N. Xu, J. Fitzpatrick, V. Morgan, D. Pickens, and B. Dawant. Accounting for signal loss due
+to dephasing in the correction of distortions in gradient-echo EPI via nonrigid registration. IEEE
+Transactions on Medical Imaging, 26(12):1698–1707, 2007.
+J. W. Lichtman, J. Livet, and J. R. Sanes. A technicolour approach to the connectome. Nature
+Reviews Neuroscience, 9(6):417–422, 2008.
+T. Liu, H. Li, K. Wong, A. Tarokh, L. Guo, and S. T. Wong. Brain tissue segmentation based on DTI
+data. NeuroImage, 38(1):114–123, 2007.
+C.-F. Lu, P.-S. Wang, Y.-C. Chou, H.-C. Li, B.-W. Soong, and Y.-T. Wu. Segmentation of diffusionweighted brain images using expectation maximization algorithm initialized by hierarchical clustering. In 30th Annual International Conference of the IEEE Engineering in Medicine and Biology
+Society (EMBC 2008), pages 5502–5505, Vancouver, Canada, 2008.
+B. C. Lucas, J. A. Bogovic, A. Carass, P.-L. Bazin, J. L. Prince, D. L. Pham, and B. A. Landman. The
+java image science toolkit (JIST) for rapid prototyping and publishing of neuroimaging software.
+Neuroinformatics, 8(1):5–17, 2010.
+D. MacDonald, N. Kabani, D. Avis, and A. C. Evans. Automated 3-d extraction of inner and outer
+surfaces of cerebral cortex from MRI. NeuroImage, 12(3):340, 2000.
+D. S. Margulies, J. L. Vincent, C. Kelly, G. Lohmann, L. Q. Uddin, B. B. Biswal, A. Villringer, F. X.
+Castellanos, M. P. Milham, and M. Petrides. Precuneus shares intrinsic functional architecture in
+humans and monkeys. Proceedings of the National Academy of Sciences, 2009.
+H. Markram. The human brain project. Scientific American, 306(6):50–55, 2012.
+D. E. Meskaldji, E. Fischi-Gomez, A. Griffa, P. Hagmann, S. Morgenthaler, and J.-P. Thiran. Comparing connectomes across subjects and populations at different scales. NeuroImage, 80:416–425,
+2013.
+C. Metzler-Baddeley, M. J. O’Sullivan, S. Bells, O. Pasternak, and D. K. Jones. How and how not to
+correct for CSF-contamination in diffusion MRI. NeuroImage, 59(2):1394–1403, 2012.
+J. L. Morgan and J. W. Lichtman. Why not connectomics? Nature Methods, 10(6):494–500, 2013.
+P. Mukherjee, S. W. Chung, J. I. Berman, C. P. Hess, and R. G. Henry. Diffusion tensor MR imaging
+and fiber tractography: Technical considerations. American Journal of Neuroradiology, 29(5):843–
+852, 2008.
+D. Mumford and J. Shah. Optimal approximations by piecewise smooth functions and associated
+variational problems. Communications on Pure and Applied Mathematics, 42(5):577–685, 1989.
+B. Obama. Remarks by the President on the BRAIN Initiative and American Innovation, The White
+House, 2013. [online] http://www.whitehouse.gov/the-press-office/2013/04/02/remarkspresident-brain-initiative-and-american-innovation. Last accessed: July 2nd, 2013.
+K. O’Brien, A. Daducci, N. Kickler, F. Lazeyras, R. Gruetter, T. Feiweier, and G. Krueger. 3D residual
+eddy current field characterisation: applied to diffusion weighted magnetic resonance imaging. IEEE
+Transactions on Medical Imaging, 32(8):1515–1525, 2013.
+S. Osher and J. A. Sethian. Fronts propagating with curvature-dependent speed: Algorithms based
+on hamilton-jacobi formulations. Journal of Computational Physics, 79(1):12–49, 1988.
+
+BIBLIOGRAPHY
+
+45
+
+Papademetris, Jackowski, Rajeevan, Constable, and Staib. BioImage suite: An integrated medical
+image analysis suite. In Open-Source Workshop, 8th International Conference of the Medical Image
+Computing and Computer-Assisted Intervention (MICCAI 2005), Palm Springs, CA, USA, 2005.
+Insight Journal.
+N. Paragios. A level set approach for shape-driven segmentation and tracking of the left ventricle.
+IEEE Transactions on Medical Imaging, 22(6):773–776, 2003.
+H.-J. Park, M. E. Shenton, and C.-F. Westin. An analysis tool for quantification of diffusion tensor
+MRI data. In C. Barillot, D. R. Haynor, and P. Hellier, editors, 7th International Conference of the
+Medical Image Computing and Computer-Assisted Intervention (MICCAI 2004), Lecture Notes in
+Computer Science, pages 1089–1090, Saint-Malo, France, 2004. Springer Berlin Heidelberg.
+G. J. M. Parker. Analysis of MR diffusion weighted images. British Journal of Radiology, 77(suppl
+2):S176–S185, 2004.
+R. E. Passingham, K. E. Stephan, and R. Kötter. The anatomical basis of functional localization in
+the cortex. Nature Reviews Neuroscience, 3(8):606–616, 2002.
+C. Pierpaoli, L. Walker, M. Irfanoglu, A. Barnett, L. C. Chang, C. Koay, S. Pajevic, G. Rohde,
+J. Sarlls, and M. Wu. TORTOISE: an integrated software package for processing of diffusion MRI
+data. In Proc. Intl. Soc. Mag. Reson. Med. 18 (ISMRM 2010), page 1597, Stockholm, Sweden,
+2010.
+K. M. Pohl, J. Fisher, J. J. Levitt, M. E. Shenton, R. Kikinis, W. E. L. Grimson, and W. M. Wells.
+A unifying approach to registration, segmentation, and intensity correction. In J. S. Duncan and
+G. Gerig, editors, 8th International Conference of the Medical Image Computing and ComputerAssisted Intervention (MICCAI 2005), volume 3749 of Lecture Notes in Computer Science, page
+310–318, Palm Springs, CA, USA, 2005. Springer Berlin Heidelberg.
+K. M. Pohl, J. Fisher, W. E. L. Grimson, R. Kikinis, and W. M. Wells. A bayesian model for joint
+segmentation and registration. NeuroImage, 31(1):228–39, 2006.
+P. J. Reber, E. C. Wong, R. B. Buxton, and L. R. Frank. Correction of off resonance-related distortion
+in echo-planar imaging using EPI-based field maps. Magnetic Resonance in Medicine, 39(2):328–330,
+1998.
+M. D. Robson, J. C. Gore, and R. T. Constable. Measurement of the point spread function in MRI
+using constant time imaging. Magn. Reson. Med., 38(5):733–740, 1997.
+A. Roche, D. Ribes, M. Bach-Cuadra, and G. Krüger. On the convergence of EM-like algorithms for
+image segmentation using markov random fields. Medical image analysis, 15(6):830–839, 2011.
+Y. Rouchdy, J. Pousin, J. Schaerer, and P. Clarysse. A nonlinear elastic deformable template for soft
+structure segmentation: application to the heart segmentation in MRI. Inverse Problems, 23(3):
+1017, 2007.
+M. Rousson, C. Lenglet, and R. Deriche. Level set and region based surface propagation for diffusion
+tensor MRI segmentation. In Computer Vision and Mathematical Methods in Medical and Biomedical Image Analysis, volume 3117 of Lecture Notes in Computer Science, pages 123–134, Prague,
+Czech Republic, 2004. Springer Berlin Heidelberg.
+Z. S. Saad, D. R. Glen, G. Chen, M. S. Beauchamp, R. Desai, and R. W. Cox. A new method for
+improving functional-to-structural MRI alignment using local pearson correlation. NeuroImage, 44
+(3):839–848, 2009.
+G. Sanabria-Diaz, L. Melie-Garcı́a, Y. Iturria-Medina, Y. Alemán-Gómez, G. Hernández-González,
+L. Valdés-Urrutia, L. Galán, and P. Valdés-Sosa. Surface area and cortical thickness descriptors
+reveal different attributes of the structural human brain networks. NeuroImage, 50(4):1497–1510,
+2010.
+P. Santago and H. Gage. Statistical models of partial volume effect. IEEE Transactions on Image
+Processing, 4(11):1531 –1540, 1995.
+S. M. Smith. The future of FMRI connectivity. NeuroImage, 62(2):1257–1266, 2012.
+
+46
+
+BIBLIOGRAPHY
+
+J. M. Soares, P. Marques, V. Alves, and N. Sousa. A hitchhiker’s guide to diffusion tensor imaging.
+Frontiers in Brain Imaging Methods, 7:31, 2013.
+O. Sporns. Discovering the Human Connectome. MIT Press, 2012. ISBN 9780262017909.
+O. Sporns. Making sense of brain network data. Nature Methods, 10(6):491–493, 2013.
+O. Sporns, G. Tononi, and R. Kötter. The human connectome: A structural description of the human
+brain. PLoS computational biology, 1(4):e42, 2005.
+K. E. Stephan, L. Kamper, A. Bozkurt, G. A. P. C. Burns, M. P. Young, and R. Kötter. Advanced
+database methodology for the collation of connectivity data on the macaque brain (CoCoMac).
+Philosophical Transactions of the Royal Society of London. Series B: Biological Sciences, 356(1412):
+1159–1186, 2001.
+C. Studholme, R. Constable, and J. Duncan. Accurate alignment of functional EPI data to anatomical
+MRI using a physics-based distortion model. IEEE Trans. Med. Imag., 19(11):1115–1127, 2000.
+P. C. Sundgren, Q. Dong, D. Gómez-Hassan, S. K. Mukherji, P. Maly, and R. Welsh. Diffusion tensor
+imaging of the brain: review of clinical applications. Neuroradiology, 46:339–350, 2004.
+J. Suri, K. Liu, S. Singh, S. Laxminarayan, X. Zeng, and L. Reden. Shape recovery algorithms using
+level sets in 2-d/3-d medical imagery: a state-of-the-art review. IEEE Transactions on Information
+Technology in Biomedicine, 6(1):8–28, 2002.
+R. Tao, P. T. Fletcher, S. Gerber, and R. T. Whitaker. A variational image-based approach to the
+correction of susceptibility artifacts in the alignment of diffusion weighted and structural MRI. In
+J. L. Prince, D. L. Pham, and K. J. Myers, editors, 21st Information Processing in Medical Imaging
+(IPMI), volume 5636 of Lecture Notes in Computer Science, pages 664–675, Williamsburg, VA,
+USA, 2009. Springer Berlin Heidelberg.
+J.-D. Tournier, F. Calamante, and A. Connelly. Robust determination of the fibre orientation distribution in diffusion MRI: non-negativity constrained super-resolved spherical deconvolution. NeuroImage, 35(4):1459–1472, 2007.
+J.-D. Tournier, F. Calamante, and A. Connelly. MRtrix: diffusion tractography in crossing fiber
+regions. International Journal of Imaging Systems and Technology, 22(1):53–66, 2012.
+N. Toussaint, J.-C. Souplet, and P. Fillard. MedINRIA: medical image navigation and research tool by
+INRIA. In Workshop on Interaction in medical image analysis and visualization, , 10th International
+Conference of the Medical Image Computing and Computer-Assisted Intervention (MICCAI 2007),
+volume 7, Brisbane, Australia, 2007.
+D. S. Tuch. Q-ball imaging. Magnetic Resonance in Medicine, 52(6):1358–1372, 2004.
+D. S. Tuch, T. G. Reese, M. R. Wiegell, N. Makris, J. W. Belliveau, and V. J. Wedeen. High angular
+resolution diffusion imaging reveals intravoxel white matter fiber heterogeneity. Magnetic Resonance
+in Medicine, 48(4):577–582, 2002.
+N. J. Tustison, B. B. Avants, P. A. Cook, Y. Zheng, A. Egan, P. A. Yushkevich, and J. C. Gee.
+N4ITK: improved n3 bias correction. Medical Imaging, IEEE Transactions on, 29(6):1310–1320,
+2010.
+G. Unal and G. Slabaugh. Coupled PDEs for non-rigid registration and segmentation. In IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR 2005), volume 1,
+pages 168–175, San Diego, CA, USA, 2005.
+D. C. V. Van Essen. A tension-based theory of morphogenesis and compact wiring in the central
+nervous system. Nature, 385(6614):313–318, 1997.
+D. C. V. Van Essen, H. A. Drury, J. Dickson, J. Harwell, D. Hanlon, and C. H. Anderson. An
+integrated software suite for surface-based analyses of cerebral cortex. Journal of the American
+Medical Informatics Association, 8(5):443–459, 2001.
+
+BIBLIOGRAPHY
+
+47
+
+D. Van Essen, K. Ugurbil, E. Auerbach, D. Barch, T. Behrens, R. Bucholz, A. Chang, L. Chen,
+M. Corbetta, S. Curtiss, S. Della Penna, D. Feinberg, M. Glasser, N. Harel, A. Heath, L. LarsonPrior, D. Marcus, G. Michalareas, S. Moeller, R. Oostenveld, S. Petersen, F. Prior, B. Schlaggar,
+S. Smith, A. Snyder, J. Xu, and E. Yacoub. The human connectome project: A data acquisition
+perspective. NeuroImage, 62(4):2222–2231, 2012.
+J. D. Van Horn, A. Irimia, C. M. Torgerson, M. C. Chambers, R. Kikinis, and A. W. Toga. Mapping
+connectivity damage in the case of phineas gage. PLoS ONE, 7(5):e37454, 2012.
+K. Van Leemput, F. Maes, D. Vandermeulen, and P. Suetens. Automated model-based bias field
+correction of MR images of the brain. Medical Imaging, IEEE Transactions on, 18(10):885–896,
+1999.
+K. Van Leemput, F. Maes, D. Vandermeulen, and P. Suetens. Automated model-based tissue classification of MR images of the brain. Medical Imaging, IEEE Transactions on, 18(10):897–908,
+1999.
+K. Van Leemput, F. Maes, D. Vandermeulen, and P. Suetens. A unifying framework for partial volume
+segmentation of brain MR images. Medical Imaging, IEEE Transactions on, 22(1):105–119, 2003.
+B. Vemuri and Y. Chen. Joint image registration and segmentation. In Geometric Level Set Methods
+in Imaging, Vision, and Graphics, page 251–269, New York, 2003. Springer-Verlag.
+B. Vemuri, J. Ye, Y. Chen, and C. Leonard. A level-set based approach to image registration. In
+IEEE Workshop on Mathematical Methods in Biomedical Image Analysis (MMBIA), Proceedings,
+pages 86–93, Hilton Head, South Carolina, USA, 2000.
+B. Vemuri, J. Ye, Y. Chen, and C. Leonard. Image registration via level-set motion: Applications to
+atlas-based segmentation. Medical Image Analysis, 7(1):1–20, 2003.
+L. A. Vese and T. F. Chan. A multiphase level set framework for image segmentation using the
+mumford and shah model. International Journal of Computer Vision, 50(3):271–293, 2002.
+U. Vovk, F. Pernus, and B. Likar. A review of methods for correction of intensity inhomogeneity in
+MRI. Medical Imaging, IEEE Transactions on, 26(3):405–421, 2007.
+F. Wang, B. C. Vemuri, and S. J. Eisenschenk. Joint registration and segmentation of neuroanatomic
+structures from brain MRI. Academic radiology, 13(9):1104–11, 2006.
+R. Wang, T. Benner, A. G. Sorensen, and V. J. Wedeen. Diffusion toolkit: a software package
+for diffusion imaging data processing and tractography. In Proc. Intl. Soc. Mag. Reson. Med. 15
+(ISMRM 2007), page 3720, Berlin, Germany, 2007.
+V. J. Wedeen, P. Hagmann, W.-Y. I. Tseng, T. G. Reese, and R. M. Weisskoff. Mapping complex
+tissue architecture with diffusion spectrum magnetic resonance imaging. Magnetic Resonance in
+Medicine, 54(6):1377–1386, 2005.
+V. J. Wedeen, D. L. Rosene, R. Wang, G. Dai, F. Mortazavi, P. Hagmann, J. H. Kaas, and W.-Y. I.
+Tseng. The geometric structure of the brain fiber pathways. Science, 335(6076):1628–1634, 2012.
+M. Wu, L.-C. Chang, L. Walker, H. Lemaitre, A. S. Barnett, S. Marenco, and C. Pierpaoli. Comparison of EPI distortion correction methods in diffusion tensor MRI using a novel framework. In
+D. Metaxas, L. Axel, G. Fichtinger, and G. Székely, editors, 11th International Conference MICCAI
+2008, volume 5242 of Lecture Notes in Computer Science, pages 321–329, New York City, NY, USA,
+2008. Springer Berlin Heidelberg.
+P. P. Wyatt and J. Noble. MAP MRF joint segmentation and registration of medical images. Medical
+Image Analysis, 7(4):539–552, 2003.
+C. Xiaohua, M. Brady, and D. Rueckert. Simultaneous segmentation and registration for medical
+image. In C. Barillot, D. R. Haynor, and P. Hellier, editors, 7th International Conference of the
+Medical Image Computing and Computer-Assisted Intervention (MICCAI 2004), volume 3216 of
+Lecture Notes in Computer Science, pages 663–670, Saint-Malo, France, 2004. Springer Berlin Heidelberg.
+
+48
+
+BIBLIOGRAPHY
+
+C. Xu and J. Prince. Snakes, shapes, and gradient vector flow. IEEE Transactions on Image Processing, 7(3):359–369, 1998.
+A. Yendiki, P. Srinivasan, L. Zöllei, J. Augustinack, T. Behrens, S. Jbabdi, and B. Fischl. Automated
+probabilistic reconstruction of white-matter pathways in health and disease using an atlas of the
+underlying anatomy. Frontiers in Neuroinformatics, 5:23, 2011.
+A. Yezzi, L. Zollei, and T. Kapur. A variational framework for joint segmentation and registration. In
+IEEE Workshop on Mathematical Methods in Biomedical Image Analysis (MMBIA), Proceedings,
+page 44–51, Kauai, Hawaii, USA, 2001. IEEE Comput. Soc.
+A. Yezzi, L. Zöllei, and T. Kapur. A variational framework for integrating segmentation and registration through active contours. Medical Image Analysis, 7(2):171–185, 2003.
+P. A. Yushkevich, J. Piven, H. Cody, S. Ho, J. C. Gee, and G. Gerig. User-guided level set segmentation
+of anatomical structures with ITK-SNAP. Insight Jounral, 1, 2005.
+M. Zaitsev, J. Hennig, and O. Speck. Point spread function mapping with parallel imaging techniques
+and high acceleration factors: Fast, robust, and flexible method for echo-planar imaging distortion
+correction. Magn. Reson. Med., 52(5):1156–1166, 2004.
+H. Zeng and R. T. Constable. Image distortion correction in EPI: comparison of field mapping with
+point spread function mapping. Magn. Reson. Med., 48(1):137–146, 2002.
+Y. Zhang, M. Brady, and S. Smith. Segmentation of brain MR images through a hidden markov random field model and the expectation-maximization algorithm. Medical Imaging, IEEE Transactions
+on, 20(1):45–57, 2001.
+L. Zhukov, K. Museth, D. Breen, R. Whitaker, and A. Barr. Level set modeling and segmentation of
+DT-MRI brain data. Journal of Electronic Imaging, 12(1):125–133, 2003.
+G. Zimmerman-Moreno, A. Mayer, and H. Greenspan. Classification trees for fast segmentation of
+DTI brain fiber tracts. In IEEE Computer Society Conference on Computer Vision and Pattern
+Recognition Workshops, 2008 (CVPRW 2008), pages 1–7, Anchorage, Alaska, 2008.
+B. Zitova and J. Flusser. Image registration methods: a survey. Image and vision computing, 21(11):
+977–1000, 2003.
+L. Zöllei, A. Stevens, K. Huber, S. Kakunoori, and B. Fischl. Improved tractography alignment using
+combined volumetric and surface registration. NeuroImage, 51(1):206–213, 2010.
+
+

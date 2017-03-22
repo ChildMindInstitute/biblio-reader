@@ -1,0 +1,125 @@
+K-Means Cluster Analysis of Resting-State
+fMRI Time Series (10-10 EEG related seeds)
+2
+
+Carlos Montoya , Gonzalo M. Rojas ,
+1
+Jaime Cisternas , Marcelo Gálvez 3
+1
+
+1
+
+School of Engineering and Applied Sciences, Universidad de los Andes, Santiago, Chile
+2
+Laboratory of Medical Image Processing, Department of Radiology, Clínica Las Condes, Santiago, Chile
+3
+Department of Radiology, Clínica Las Condes, Santiago, Chile
+
+Introduction
+
+K-means (Hartigan & Wong, 1979) is an unsupervised and iterative clustering
+algorithm that partition the data in k disjoint clusters (k is defined by the user). With Kmeans method it is posible to find brain functional networks between proyected 10-10
+EEG positioned seeds from resting state fMRI.
+●
+Final results shows a high similarity brain network organization with Yeo`s fMRI 7
+Networks.
+●
+
+The methods used to analyze Resting-State fMRI is mainly seed based, ICA, ALFF, fALFF.
+In Rojas et al., the authors shows a seed based analysis that used seeds positioned in 1010 EEG electrodes (65) equivalent standard MNI coordinates.
+●
+Generally, in the case of seed based analysis, a correlation coeficient is computed between
+different seed time series, and correlation matrices could be created.
+●
+
+Methods
+We processed resting state fMRI scans for 45 right handed healthy volunteers (age 18-30, 3T MRI,
+Cambridge-Buckner dataset, 1000 Functional Connectomes Project; http://fcon_1000.projects.nitrc.org). The
+data was motion-corrected, despiked, detrended and spatially-normalized using AFNI and FSL. We used
+6mm radius spherical seeds located in 65 EEG electrodes 10-10 system equivalent MNI coordinates (Rojas
+et al, 2012) to get resting state time series with each seed, and to calculate participant-level whole brain
+connectivity maps.
+We build one big time series for each seed, to simulate the behaviour characteristic of all 45 volunteers.
+The 65 resting state time series was clusterized using kmeans (Hartigan-Wong algorithm) in seven clusters
+(quantity of standard functional connectivity networks, Yeo et al 2011). To analyze the robustness, reliability
+and stability of the method and variability of connections, many replications of the method were used varying
+the initial conditions of the algorithm. This data was ordered in a matrix (named "K-Means based index
+matrix") in such a way that each value corresponds to the quantity of the same cluster that two seeds has in
+common in all replications.
+
+Fig. 1: 10-10 EEG seeds position. The standarrd brain used has
+not cerebellum.
+
+Results
+By visual inspection of Figs. 2-3, we could describe:
+1) symmetrical seeds in contralateral hemisphere has an index greater than 10 (for
+example, FP1-FP2, F1-F2, F7-F8, AF3-AF4, AF7-AF8, C1-C3, C2-C4, C1-C2, O1O2)
+2) more than 30 (for example: C1-C3, C2-C4, O2-PO8 (same hemisphere), P9-FT10)
+3) occipital electrodes has a kmeans index more than 30 (for example: O2-PO8
+(same hemisphere), O1-O2).
+81.5% of similarity in the comparison with Yeo's 7 Networks (Fig. 4) (Montoya, 2014).
+The results show that every cluster has symmetrical seeds in contralateral
+hemisphere (Fig. 5), the same shown in figures 2 and 3.
+
+Fig. 4: Comparison between K-Means 7 Networks
+(Fig.5) and Yeo's 7 Netwotrks.
+
+Fig. 5: K-means 7 networks.
+
+Using non linear regression econometric models (Montoya, 2014).K-Means method
+shown to be robust, reliable and stable for 7 Networks.
+
+Fig. 2: kmeans index matrix (binary)
+with lower threshold of 20.
+
+Fig. 3: kmeans index matrix
+(binary) with lower threshold of 30.
+
+Fig. 6: Total network conection
+using K-Means based index matrix.
+
+Fig. 7: Filtering lower match
+conections from Fig. 6.
+
+Conclusions
+Here we show another index to measure the dependence between seeds in resting state data.
+
+References
+●
+
+In comparison with correlation matrix of same 10-10 EEG related seeds (Rojas et al, 2012; Fig. 6), some ideas:
+•
+i) with both approach many contralateral seeds has high correlation. (For example, FP1-FP2, O1-O2)
+•
+ii) occipital seeds has high correlation (contralateral and ipsilateral seeds).
+•
+
+●
+
+Similar results of 7 networks connectivity are possible to obtain using 10-10 EEG projection from fMRI and comparing
+with Yeo's 7 networks.
+•
+
+As same as K-Means index matrix, K-Means 7 Networks show in each cluster symmetrical seeds in contralateral
+hemisphere (Fig. 5).
+•
+
+More research and studies should be done to understand better how these networks are formed and how the
+dynamics of connectivity of each node behaves.
+•
+
+●
+
+Rojas, G.M., Galvez, M. (2012), 'Functional Connectivity Networks obtained using
+10-10 EEG System related seeds: Preliminary Results', 3rd Biennial Conference on
+Resting State Brain Connectivity, Magdeburg, Germany, 5-7 September 2012.
+Montoya, C. (2014), 'K -Means method and metric applied to data sets obtained
+from resting state fMRI for detecting and analyzing brain connectivity networks'
+Thesis submitted for the degree of Industrial Engineer mention in operations
+management, Universidad de los Andes, Santiago.
+Yeo, B.T. , Krienen, F.M., Sepulcre, J., Sabuncu, M.R., Lashkari, D., Hollinshead,
+M., Roffman, J.L., Smoller, J.W., Zöllei, L., Polimeni, J.R., Fischl, B., Liu, H.,
+Buckner, R.L. (2011), 'The organization of the human cerebral cortex estimated by
+intrinsic functional connectivity', J. Neurophysiol., vol. 106, no. 3, pp. 1125-1165.
+
+

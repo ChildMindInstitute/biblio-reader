@@ -1,0 +1,2136 @@
+Journal of Machine Learning Research 15 (2014) 3513-3540
+
+Submitted 1/14; Revised 7/14; Published 11/14
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+Vince Lyzinski
+
+vlyzins1@jhu.edu
+
+Human Language Technology Center of Excellence
+Johns Hopkins University
+Baltimore, MD, 21218, USA
+
+Donniell E. Fishkind
+Carey E. Priebe
+
+def@jhu.edu
+cep@jhu.edu
+
+Department of Applied Mathematics and Statistics
+Johns Hopkins University
+Baltimore, MD, 21218, USA
+
+Editor: Edoardo Airoldi
+
+Abstract
+Graph matching is an important problem in machine learning and pattern recognition.
+Herein, we present theoretical and practical results on the consistency of graph matching
+for estimating a latent alignment function between the vertex sets of two graphs, as well as
+subsequent algorithmic implications when the latent alignment is partially observed. In the
+correlated Erdős-Rényi graph setting, we prove that graph matching provides a strongly
+consistent estimate of the latent alignment in the presence of even modest correlation. We
+then investigate a tractable, restricted-focus version of graph matching, which is only concerned with adjacency involving vertices in a partial observation of the latent alignment;
+we prove that a logarithmic number of vertices whose alignment is known is sufficient
+for this restricted-focus version of graph matching to yield a strongly consistent estimate
+of the latent alignment of the remaining vertices. We show how Frank-Wolfe methodology for approximate graph matching, when there is a partially observed latent alignment,
+inherently incorporates this restricted-focus graph matching. Lastly, we illustrate the relationship between seeded graph matching and restricted-focus graph matching by means of
+an illuminating example from human connectomics.
+Keywords: graph matching, Erdős-Rényi graph, consistency, estimation, seeded vertices,
+Frank-Wolfe, assignment problem
+
+1. Background and Overview
+The graph matching problem (GMP)—i.e., finding the alignment between the vertices of
+two graphs which best preserves the structure of the graphs—has a rich and active place in
+the literature. Graph matching has applications in a wide variety of disciplines, including
+machine learning (Cour et al., 2007; Liu and Qiao, 2012; Fiori et al., 2013), computer vision
+(Cho et al., 2009; Cho and Lee, 2012; Zhou and De la Torre, 2012), pattern recognition (Berg
+et al., 2005; Caelli and Kosinov, 2004), manifold and embedded graph alignment (RoblesKelly and Hancock, 2007; Xiao et al., 2009), shape matching and object recognition (Huet
+et al., 1999), and MAP inference (Leordeanu et al., 2009), to name a few.
+c 2014 Vince Lyzinski, Donniell E. Fishkind, and Carey E. Priebe.
+
+Lyzinski, Fishkind, and Priebe
+
+There are no efficient algorithms known for solving graph matching exactly. Even the
+easier problem of just deciding if two graphs are isomorphic is notoriously of unknown
+complexity (Garey and Johnson, 1979; Read and Corneil, 1977). Indeed, graph matching is
+a special case of the NP-hard quadratic assignment problem and, if the graphs are allowed
+to be directed, loopy, and weighted, then graph matching is actually equivalent to the
+quadratic assignment problem. Because of its practical applicability, there is a vast amount
+of literature devoted to approximate graph matching algorithms; for an interesting survey
+of the literature, see e.g., “Thirty Years of Graph Matching in Pattern Recognition” by
+Conte et al. (2004).
+In the presence of a latent alignment function between the vertex sets of two graphs,
+it is natural to ask how well graph matching would mirror this underlying alignment. In
+Section 2.2 we describe the correlated Erdős-Rényi random graph, which provides us with
+a useful and natural setting to explore this question. The correlated Erdős-Rényi random
+graph consists of two Erdős-Rényi random graphs which share a common vertex set and
+a common Bernoulli-trial probability parameter; for each pair of vertices, there is a given
+correlation between the two vertices’ adjacency in one graph and the two vertices’ adjacency in the other graph. In this manner, there is a natural latent alignment between the
+two graphs, and we can then explore whether or not graph matching the two graphs will
+consistently estimate this alignment.
+If Φ : V (G1 ) 7→ V (G2 ) is the latent alignment function between the vertex sets of two
+graphs, we define a vertex v ∈ V (G1 ) to be mismatched by graph matching if there exists
+a solution ψ to the graph matching problem such that Φ(v) 6= ψ(v). The graph matching
+problem provides a consistent estimate of Φ if the number of mismatched vertices goes to
+zero in probability as |V (G1 )| tends to infinity, and provides a strongly consistent estimate
+of Φ if the number of mismatched vertices converges to zero almost surely as |V (G1 )| tends
+to infinity.
+The first of our main results is Theorem 1, stated in Section 2.2 and proven in Appendix A. For correlated Erdős-Rényi random graphs, under mild assumptions, Theorem 1.i
+establishes that even very modest correlation is sufficient for graph matching to yield a
+strongly consistent estimate of the latent alignment; this expands and strengthens the important results in Pedarsani and Grossglauser (2011). Theorem 1.ii provides a partial
+converse; for very weakly correlated graphs, we prove that the expected number of permutations that align the graph more effectively (i.e., with fewer induced edge disagreements)
+than the latent alignment goes to infinity as the number of vertices tends to infinity. Unfortunately, since there is no known efficient algorithm for graph matching, Theorem 1.i
+doesn’t in-of-itself provide a means of efficient graph alignment. However, it does suggest
+that efficient approximate graph matching algorithms may be successful in graph alignment
+when there is correlation between the graphs above the threshold given in Theorem 1.i.
+Next, in Section 2.3, we discuss the seeded graph matching problem. This is a graph
+matching problem for which part of the bijection between the two graphs’ vertices is prespecified and fixed, and we seek to complete the bijection so as to minimize the number
+of edge disagreements between the graphs; in our correlated Erdős-Rényi graph setting,
+the seeds are taken from the existing latent alignment. Also in Section 2.3, we describe a
+restricted-focus version of the graph matching problem in the context of seeding; this is a
+problem wherein we seek the bijection between the two seeded graphs’ vertices that mini3514
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+mizes only the number of seeded vertex to nonseeded vertex edge disagreements between the
+two seeded graphs. Restricting the focus of graph matching in this particular fashion enables
+this restricted-focus graph matching problem to be efficiently solved as a linear assignment
+problem, in contrast to the algorithmic difficulty of (unrestricted) graph matching.
+Our second main result is Theorem 2, which we state in Section 2.4 and prove in Appendix A. For correlated Erdős-Rényi graphs, under mild assumptions, Theorem 2.i asserts
+that a logarithmic number of seeds is sufficient for restricted-focus graph matching to yield
+a strongly consistent estimate of the latent alignment function. Theorem 2.ii again provides
+a partial converse; for very weakly correlated graphs, we prove that the expected number
+of permutations that align the unseeded vertices more effectively (i.e., with fewer induced
+seeded vertex to nonseeded vertex edge disagreements) than the latent alignment goes to
+infinity as the number of vertices tends to infinity. Now, what should we do if we want
+to perform graph alignment and there are seeds, but the number of seeds is below this
+logarithmic threshold? The remainder of this paper deals with that situation.
+Back in the setting where there are no seeds, an important class of approximate graph
+matching algorithms utilize a Frank-Wolfe approach; the idea is more formally described
+later in Section 3. To briefly describe here, such methods relax an integer programming
+formulation of graph matching to obtain a continuous problem, then perform an iterative
+procedure in which a linearization about the current iterate is optimized, and the next
+iterate comes from a line search between the current iterate and the linearization optimum.
+At the conclusion of the iterative procedure, the final iterate is projected to the nearest
+integer-valued point which is feasible as a graph match, and this is taken as the approximate
+graph matching solution. It turns out that the linear optimization done in each iteration
+can be formulated as a linear assignment problem, which can be solved efficiently, and this
+makes the Frank-Wolfe approach an appealing method in terms of speed. The Frank-Wolfe
+approach can also be a very accurate method for approximate graph matching as well;
+see Brixius and Anstreicher (2001); Vogelstein et al. (2011); Zaslavskiy et al. (2009) for
+Frank-Wolfe methodology and variants.
+As done in Fishkind et al. (2012), we describe in Section 3.2 how this Frank-Wolfe
+methodology for approximate graph matching is naturally and seamlessly extended to the
+setting of seeded graph matching so as to perform approximate seeded graph matching. In
+analyzing Frank-Wolfe methodology for approximate seeded graph matching, we observe
+in Section 3.3 that each Frank-Wolfe iteration involves optimizing a sum of two terms.
+Restricting this optimization to just the first of these two terms turns out to be precisely
+solving the aforementioned restricted-focus graph matching problem, and restricting this
+optimization to just the second of these two terms turns out to be precisely the FrankWolfe methodology step if the seeds are completely ignored.
+We conclude this paper with simulations and a real-data example from human connectomics. These simulations and experiments illuminate the relationship between seeded
+graph matching via Frank-Wolfe and restricted-focus graph matching via the Hungarian
+algorithm. We demonstrate that Frank-Wolfe methodology is often superior to restrictedfocus graph matching, an unsurprising result as the Frank-Wolfe methodology merges
+restricted-focus graph matching with seedless Frank-Wolfe methodology. Perhaps more
+surprising, we also demonstrate the capacity for restricted-focus graph matching to outper3515
+
+Lyzinski, Fishkind, and Priebe
+
+form the full Frank-Wolfe methodology; in these cases, the noise in the unseeded adjacency
+can actually degrade overall performance!
+
+2. Graph Matching, Random Graph Setting, Main Results
+In this paper, all graphs will be simple graphs; in particular, edges are undirected, there
+are no edges with a common vertex for both endpoints, and there are no multiple edges
+between any pair of vertices. We will define Gn to be the set of simple graphs on n vertices.
+If G ∈ Gn , we will denote the vertex set of G as V (G) and the edge set of G via E(G). For
+any v, v 0 ∈ V (G), if v and v 0 are adjacent in G then this will be denoted {v, v 0 } ∈ E(G),
+and if v and v 0 are not adjacent
+in G then this willbe denoted {v, v 0 } ∈
+/ E(G). For any
+
+V
+finite set V , the symbol 2 will denote all of the n2 unordered pairs of distinct elements
+from V .
+2.1 The Graph Matching Problem
+We now describe the graph matching problem. Suppose G1 and G2 are graphs with the same
+number of vertices. Let Π denote the set of bijections V (G1 ) → V (G2 ). For any ψ ∈ Π, the
+number of adjacency disagreements
+is the number
+ induced by ψ,0 which will be denoted ∆(ψ),
+0 )} ∈
+1)
+such
+that
+[{v,
+v
+}
+∈
+E(G
+)
+and
+{ψ(v),
+ψ(v
+/ E(G2 )] or
+of vertex pairs {v, v 0 } ∈ V (G
+1
+2
+[{v, v 0 } ∈
+/ E(G1 ) and {ψ(v), ψ(v 0 )} ∈ E(G2 )]. The graph matching problem is to find a
+bijection in Π that minimizes the number of induced edge disagreements; we will denote
+the set of solutions Ψ := arg minψ∈Π ∆(ψ). Equivalently stated, if n := |V (G1 )| = |V (G2 )|,
+and if A, B ∈ {0, 1}n×n are the respectively the adjacency matrices for G1 and G2 , then
+the graph matching problem is to minimize kA − P BP T kF over all n-by-n permutation
+matrices P , where k · kF is the Frobenius matrix norm.
+There are no efficient algorithms known for graph matching. Even the easier problem
+of just deciding if G1 is isomorphic to G2 (i.e., deciding if there is a bijection V (G1 ) →
+V (G2 ) which does not induce any edge disagreements) is of unknown complexity (Garey
+and Johnson, 1979; Read and Corneil, 1977), and is a candidate for being in an intermediate
+class strictly between P and NP-complete (if P6=NP). Also, the problem of minimizing
+kA − P BP T kF over all n-by-n permutation matrices P , where A and B are any real-valued
+matrices, is equivalent to the NP-hard quadratic assignment problem. There are numerous
+approximate graph matching algorithms in the literature; in Section 3 we will discuss FrankWolfe methodology.
+2.2 Correlated Erdős-Rényi Random Graphs
+Presently, we describe the correlated Erdős-Rényi random graph; this will provide a theoretical framework within which we will prove our main theorems, Theorem 1 and Theorem 2.
+The parameters are a positive integer n, a real number p in the interval (0, 1), and a
+real number % in the interval [0, 1]; these parameters completely specify the distribution.
+There is an underlying vertex set V of cardinality n which is common to two graphs; call
+these graphs G1 and G2 . For each i = 1, 2 and each pair of vertices {v, v 0 } ∈ V2 , let
+1{{v, v0 } ∈ E(Gi )} denote the indicator random variable
+for the event {v, v 0 } ∈ E(Gi ). For
+
+V
+0
+each i = 1, 2 and each pair of vertices {v, v } ∈ 2 , the random variable 1{{v, v 0 } ∈ E(Gi )}
+3516
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+is Bernoulli(p) distributed,and they are all collectively independent except that, for each
+pair of vertices {v, v 0 } ∈ V2 , the variables 1{{v, v 0 } ∈ E(G1 )} and 1{{v, v 0 } ∈ E(G2 )} have
+Pearson product-moment correlation coefficient %. At one extreme, if % is 1, then G1 and G2
+are equal, almost surely, and at the other extreme, if % is 0, then G1 and G2 are independent.
+After G1 and G2 are thus realized, their vertices are (separately) arbitrarily relabeled, so
+that we don’t directly observe the latent alignment function (bijection) Φ : V (G1 ) → V (G2 )
+wherein, for all v ∈ V (G1 ), the vertices v and Φ(v) were corresponding vertices across the
+graphs before the relabeling (i.e., the same element of V ).
+If G1 is graph matched to G2 , to what extent will the graph match provide a consistent
+estimate of the latent alignment function? The following Theorem is our first main result.
+We will be considering a sequence of random correlated Erdős-Rényi graphs with n = 1,
+then n = 2, then n = 3 . . ., and the parameters p and % are each functions of n; i.e., p := p(n)
+and % := %(n). In this paper, when we say a sequence of events holds almost always, we
+mean that, with probability 1, all but a finite number of the events hold.
+Theorem 1 Suppose there exists a fixed real number ξ1 < 1 such that p ≤ ξ1 . Then there
+exists fixed q
+positive real numbers c1 , c2 , c3 , c4 (depending only on the value of ξ1 ) such that:
+i) If % ≥ c1
+
+ii) If % ≤ c3
+
+log n
+np
+
+q
+
+log n
+n
+
+and p ≥ c2 logn n then almost always Ψ = {Φ}, and
+
+and p ≥ c4 logn n then limn→∞ E| {ψ ∈ Π : ∆(ψ) < ∆(Φ)} | = ∞.
+
+For proof of Theorem 1, see Appendix A.
+Note that Theorem 1.i establishes the strong consistency of the graph matching estimate
+of the latent alignment function in the presence of even modest correlation between G1
+and G2 . This theorem is a strengthening and an extension of the pioneering work on deanonymizing networks in Pedarsani and Grossglauser (2011), wherein the authors proved
+a weaker version of Theorem 1.i in a sparse setting (in particular they require both p and
+% to converge to 0 at rate p%3 = O(log(n)/n)). Note that range of values of p for which
+Theorem 1.i applies includes both the sparse and the dense regimes.
+Because there is no known efficient algorithm for graph matching, Theorem 1.i does not
+directly provide a practical means of computing the latent alignment function. But it does
+hold out the hope that a good graph matching heuristic might be effective in approximating
+the latent alignment function for various classes of graphs.
+When proving Theorems 1 and 2, it will be useful for us to observe an equivalent
+ way
+V
+0
+to formulate correlated Erdős-Rényi graphs. For all pairs of vertices {v, v } ∈ 2 , the
+indicator random variables 1{{v, v 0 } ∈ E(G1 )} are independently distributed Bernoulli(p)
+and then (independently for the different pairs v, v 0 ), conditioning on 1{{v, v 0 } ∈ E(G1 )} =
+1, we let 1{{v, v 0 } ∈ E(G2 )} be distributed Bernoulli(p + %(1 − p)) and, conditioning on
+1{{v, v0 } ∈ E(G1 )} = 0, we let 1{{v, v0 } ∈ E(G2 )} be distributed
+ Bernoulli(p(1 − %)). It
+is an easy exercise to verify that as such, for each {v, v 0 } ∈ V2 , it holds that 1{{v, v 0 } ∈
+E(G2 )} is distributed Bernoulli(p), and that the correlation of 1{{v, v 0 } ∈ E(G1 )} and
+1{{v, v0 } ∈ E(G2 )} is %, as desired.
+3517
+
+Lyzinski, Fishkind, and Priebe
+
+2.3 Seeded Graph Matching, Restricted-focus Graph Matching
+Continuing with the setting from Section 2.1, suppose that we are also given a subset
+U1 ⊆ V (G1 ) of seeds and an injective seeding function φ : U1 → V (G2 ), say that U2 ⊆ V (G2 )
+is the image of φ. Let Πφ denote the set of bijections ψ : V (G1 ) → V (G2 ) such that for
+all u ∈ U1 it holds that ψ(u) = φ(u). As before, for any bijection ψ ∈ Πφ , the number
+of adjacency disagreements induced
+by ψ, which will be denoted ∆(ψ), is the number of
+
+1)
+vertex pairs {v, v 0 } ∈ V (G
+such
+that
+[{v, v 0 } ∈ E(G1 ) and {ψ(v), ψ(v 0 )} ∈
+/ E(G2 )] or
+2
+0
+0
+[{v, v } ∈
+/ E(G1 ) and {ψ(v), ψ(v )} ∈ E(G2 )]. The seeded graph matching problem is to find
+a bijection in Πφ that minimizes the number of induced edge disagreements; as before,
+we will denote the set of solutions Ψ := arg minψ∈Πφ ∆(ψ). Equivalently stated, suppose
+without loss of generality that U1 = U2 = {v1 , v2 , . . . , vs }, and that for all j = 1, 2, . . . , s,
+φ(vj ) = vj ; with A and B denoting the adjacency matrices for G1 and G2 respectively, the
+seeded graph matching problem is to minimize kA − (I ⊕ P )B(I ⊕ P )T kF over all m-by-m
+permutation matrices P , where m := |V (G1 )| − s, and ⊕ is the direct sum, and I is the
+s-by-s identity matrix.
+Like graph matching, there are no efficient algorithms known for seeded graph matching;
+in fact, seeded graph matching is at least as difficult as graph matching. In Section 3.2 we
+discuss how Frank-Wolfe methodology extends to provide efficient approximate seeded graph
+matching.
+We now present a restricted version of seeded graph matching which is efficiently solvable, in contrast to graph matching and seeded graph matching. Let W1 := V (G1 )\U1
+denote the nonseeds in V (G1 ). For any ψ ∈ Πφ , let ∆R (ψ) denote the number of pairs
+(w, u) ∈ W1 × U1 such that [{w, u} ∈ E(G1 ) and {ψ(w), ψ(u)} ∈
+/ E(G2 )] or [{w, u} ∈
+/
+E(G1 ) and {ψ(w), ψ(u)} ∈ E(G2 )]. The restricted-focus seeded graph matching problem
+(RGM) is to find a bijection in Πφ which minimizes such seed-nonseed adjacency disagreements; denote the set of solutions ΨR := arg minψ∈Πφ ∆R (ψ). Equivalently stated, if the
+adjacency matrices for G1 and G2 are respectively partitioned as
+
+A=
+
+
+
+
+T
+A11 AT21
+B11 B21
+, and B =
+A21 A22
+B21 B22
+
+where A21 , B21 ∈ R|W1 |×|U1 | each represent the adjacencies between the nonseed vertices
+and the seed vertices (and the seed vertices are ordered in A11 conformally to B11 ), then
+finding a member of ΨR is accomplished by minimizing kA21 − P B21 kF over all |W1 | × |W1 |
+permutation matrices P . Expanding,
+kA21 − P B21 k2F = trace(A21 − P B21 )T (A21 − P B21 )
+T
+T
+= traceAT21 A21 − traceAT21 P B21 − traceB21
+P T A21 + traceB21
+P T P B21
+
+T
+= kA21 k2F + kB21 k2F − 2 · trace P T (A21 B21
+) ,
+(1)
+T over all
+thus finding a member of ΨR is accomplished by maximizing traceP T A21 B21
+|W1 | × |W1 | permutation matrices P . This is a linear assignment problem and can be
+exactly solved in O(|W1 |3 ) time with the Hungarian Algorithm (Edmonds and Karp, 1972;
+Kuhn, 2006). So, whereas finding a member of Ψ is intractable, finding a member of ΨR
+
+3518
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+can done efficiently. An important question is how well ΨR approximates Ψ. Slightly abusing notation, we shall refer to both the restricted-focus graph matching problem and the
+associated algorithm for exactly solving it by RGM.
+2.4 Seeded, Correlated Erdős-Rényi Graphs
+Seeded, correlated Erdős-Rényi graphs are correlated Erdős-Rényi graphs G1 and G2 where
+part of the latent alignment function is observed; specifically, there is a subset of seeds
+U1 ⊆ V (G1 ) such that Φ is known on U1 . If we take φ to be the restriction of Φ to U1 and
+we run RGM, we may hope that ΨR = {Φ}; if this hope is true then we are provided an
+efficient means of computing the latent alignment function.
+The next theorem is another of our main results. We will be considering a sequence
+of random correlated Erdős-Rényi graphs where the number of nonseed vertices is m = 1,
+then m = 2, then m = 3 . . ., and the number of seeds s is a function of m.
+Theorem 2 Suppose there exists a fixed real number ξ2 > 0 such that ξ2 ≤ p ≤ 1 − ξ2 and
+ξ2 ≤ % ≤ 1 − ξ2 . Then there exists fixed real numbers c5 , c6 > 0 (depending only on ξ2 ) such
+that:
+i) If s ≥ c5 log m then almost always ΨR = {Φ}, and
+ii) If s ≤ c6 log m then limm→∞ E|{ψ ∈ Πφ : ∆R (ψ) < ∆R (Φ)}| = ∞.
+For proof of Theorem 2, see Appendix A.
+Note that Theorem 2.i establishes that RGM provides a strongly consistent estimate of
+the latent alignment in the presence of a logarithmic number of seeds. As noted, a member
+of ΨR is efficiently computable, and thus Theorem 2 (unlike Theorem 1) directly provides
+a means to efficiently recover the latent alignment bijection Φ, if there are enough seeds.
+
+3. The SGM Algorithm: Extending Frank-Wolfe Methodology for
+Approximate Graph Matching to Include Seeds
+In the setting with no seeds, there are numerous approximate graph matching algorithms in
+the literature. One such algorithm is the FAQ algorithm of Vogelstein et al. (2011), which is
+an efficient, state-of-the-art approximate graph matching algorithm based on Frank-Wolfe
+methodology. The algorithm’s performance is empirically shown to be state-of-the-art on
+many benchmark problems, and when a fixed constant number of Frank-Wolfe iterations
+are performed, the running time of FAQ is O(n3 ), where n is the number of vertices to be
+matched. Moreover, if 100 ≤ |V (G1 )| and G1 is selected with a discrete-uniform distribution
+(i.e., all possible graphs on V (G1 ) are equally likely) and G2 is an isomorphic copy of G1
+with V (G2 ) being a discrete-uniform random permutation of V (G1 ), then the probability
+that FAQ (with, say, 20 Frank-Wolfe iterations allowed) yields the correct isomorphism is
+empirically observed to be very nearly 1. We choose to focus on the FAQ algorithm here
+because of its amenability to seeding and because it is the simplest algorithm utilizing the
+Frank-Wolfe methodology while also achieving excellent performance on many of the QAP
+benchmark problems; see Vogelstein et al. (2011).
+In Section 3.2, we describe the SGM algorithm from Fishkind et al. (2012), which
+extends the Frank-Wolfe methodology to incorporate utilization of seeds in approximate
+3519
+
+Lyzinski, Fishkind, and Priebe
+
+seeded graph matching. In Section 3.3 we point out that each Frank-Wolfe iteration in
+SGM involves optimizing a sum of two terms. Restricting this optimization to just the first
+of these two terms turns out to be precisely the optimization of RGM from Section 2.3, and
+restricting this optimization to just the second of these two terms turns out to be precisely
+the corresponding optimization step of FAQ (i.e., the seeds are completely ignored).
+We conclude with simulations and real data experiments that illuminate the relationship
+between SGM and RGM. SGM can be superior to RGM matching, unsurprising in that
+SGM makes use of the unseeded adjacency information while RGM does not. Perhaps more
+surprisingly, we also demonstrate the capacity for RGM to outperform SGM in the presence
+of very informative seeds; in these case the unseeded connectivity is detrimental to overall
+algorithmic performance!
+3.1 The Frank-Wolfe Algorithm and Frank-Wolfe Methodology
+First, a brief review of the Frank-Wolfe algorithm: The general optimization problem that
+the Frank-Wolfe algorithm is applied to is maximize f (x) such that x ∈ S, where S is a
+polyhedral set in a Euclidean space, and the function f : S → R is continuously differentiable. The Frank-Wolfe algorithm is an iterative procedure. A starting point x(1) ∈ S
+is chosen in some fashion, perhaps arbitrarily. For i = 1, 2, 3, . . ., a Frank-Wolfe iteration
+consists of maximizing the first order (i.e., linear) approximation to f about x(i) , that is
+maximize f (x(i) ) + ∇f (x(i) )T (x − x(i) ) over x ∈ S, call the solution y (i) (of course, this is
+equivalent to maximizing ∇f (x(i) )T x over x ∈ S), then x(i+1) is defined to be the solution to
+maximize f (x) over x on the line segment from x(i) to y (i) . Terminate the Frank-Wolfe algorithm when the the sequence of iterates x(1) , x(2) , . . . (or their respective objective function
+values) stops changing much.
+Of course, the seeded graph matching problem is a combinatorial optimization problem
+and, as such, the Frank-Wolfe algorithm cannot be directly applied. The term Frank-Wolfe
+methodology will refer to the approach in which the integer constraints are relaxed so that
+the domain is a polyhedral set and the Frank-Wolfe algorithm can be directly applied to the
+relaxation and, at the termination of the Frank-Wolfe algorithm, the fractional solution is
+projected to the nearest feasible integer point. It is this projected-to point that is adopted
+as an approximate solution to the original combinatorial optimization problem. We next
+describe the SGM algorithm, which applies Frank-Wolfe methodology to the Seeded Graph
+Matching Problem.
+3.2 The SGM Algorithm
+We now describe the SGM algorithm for approximate seeded graph matching.
+Suppose G1 and G2 are graphs, say V (G1 ) = {v1 , v2 , . . . , vn } and V (G2 ) = {v10 , v20 , . . . , vn0 },
+and let A and B be the respective adjacency matrices of G1 and G2 . Suppose without loss of
+generality that U1 = {v1 , v2 , . . . , vs } are seeds, and the seeding function φ : U1 → V (G2 ) is
+given by φ(vi ) = vi0 for all i = 1, 2, . . . , s. Denote the number of nonseed vertices m := n − s.
+Let A and B be partitioned
+
+A=
+
+A11 AT21
+A21 A22
+
+
+
+
+B=
+
+3520
+
+T
+B11 B21
+B21 B22
+
+
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+where A11 , B11 ∈ {0, 1}s×s , A22 , B22 ∈ {0, 1}m×m , and A21 , B21 ∈ {0, 1}m×s .
+As mentioned in Section 2.3, the seeded graph matching problem is precisely to minimize
+kA − (I ⊕ P )B(I ⊕ P )T k2F = kAk2F + kBk2F − 2 · traceAT (I ⊕ P )B(I ⊕ P )T over all m-bym permutation matrices P . Clearly, the seeded graph matching problem is equivalent to
+maximizing the quadratic function traceAT (I ⊕ P )B(I ⊕ P )T over all m-by-m permutation
+matrices P .
+Relax this maximization of traceAT (I ⊕ P )B(I ⊕ P )T over all m-by-m permutation matrices P to the maximization of traceAT (I ⊕ P )B(I ⊕ P )T over all m-by-m doubly stochastic
+matrices P (which form a polyhedral set), and then the Frank-Wolfe algorithm can be
+applied directly to the relaxation. Simplification yields the objective function
+T
+f (P ) = traceA11 B11 + traceAT21 P B21 + traceA21 B21
+P T + traceA22 P B22 P T
+
+= traceA11 B11 + 2 · traceP
+
+T
+
+T
+A21 B21
+
++ traceA22 P B22 P
+
+(2)
+
+T
+
+which has gradient
+T
+∇(P ) = 2 · A21 B21
++ 2 · A22 P B22 .
+
+We start the Frank-Wolfe algorithm at an arbitrarily selected doubly stochastic m-by-m
+1
+.
+matrix P (1) ; for convenience we use the “barycenter” matrix P (1) with all entries equal to m
+Then, for successive i = 1, 2, . . ., the Frank-Wolfe iteration is to maximize the inner product
+of P with the gradient of f at P (i) over all m-by-m doubly stochastic matrices matrices P ;
+T +
+this maximization problem is (ignoring a benign factor of 2) maximizing trace P T (A21 B21
+A22 P (i) B22 ) over m-by-m doubly stochastic matrices. This is a linear assignment problem
+since the optimal P in this subproblem must be a permutation matrix (by the Birkhoff-von
+Neumann Theorem which states that the m-by-m doubly stochastic matrices are precisely
+the convex hull of the m-by-m permutation matrices), and this linear assignment problem
+can be solved efficiently with the Hungarian Algorithm in O(m3 ) time. Say the optimal
+value of P in this subproblem is Y (i) ; then, the function f on the line segment from P (i)
+to Y (i) is a quadratic that is easily maximized exactly, with P (i+1) defined as the doubly
+stochastic matrix attaining this maximum.
+When the Frank-Wolfe iterates P (1) , P (2) , P (3) , . . . stop changing much (or a constant
+maximum of iterations are performed—we allowed 20 iterations), then the Frank-Wolfe
+algorithm terminates; let the resultant approximate solution to the relaxed problem is
+the doubly stochastic matrix Q. The final step is to project Q to the nearest m-by-m
+permutation matrix. Minimizing kP − QkF over permutation matrices P is again a linear
+assignment problem solvable in O(m3 ) time; indeed, minimizing
+kP − Qk2F = kP k2F − 2traceP T Q + kQk2F
+is equivalent to maximizing trace P T Q over permutation matrices P . This optimal permutation matrix P is adopted as the approximate solution to the seeded graph matching
+problem. Specifically, the algorithm output is the bijection ψ : V (G1 ) → V (G2 ) where, for
+0
+i = 1, 2, . . . , s, ψ(vi ) = vi0 and, for each i = 1, 2, . . . , m, ψ(vs+i ) = vs+j
+for the j such
+that Pij = 1. This Frank-Wolfe Methodology approach described above is called the SGM
+algorithm.
+3521
+
+Lyzinski, Fishkind, and Priebe
+
+When there are no seeds, the SGM algorithm is exactly the FAQ algorithm of Vogelstein
+et al. (2011); the above development is a seamless extension of the Frank-Wolfe methodology
+for approximate graph matching when there are no seeds to Frank-Wolfe methodology for
+approximate seeded graph matching.
+The running time for the SGM algorithm, like for the FAQ algorithm, is O(n3 ). This
+is because of the linear assignment problem formulation and the use of the Hungarian
+algorithm in each Frank-Wolfe iteration, and is a huge savings over using the simplex method
+or an interior point method for solving the linearizations in each Frank-Wolfe iteration. This
+trick has made Frank-Wolfe methodology a very potent weapon for efficient approximate
+graph matching.
+3.3 Frank-Wolfe Methodology for Approximate Seeded Graph Matching
+Inherently Includes RGM
+In each Frank-Wolfe iteration (described in Section 3.2), the linearization which is solved is
+T +traceP T A P (i) B ) over all m-by-m permutation matrices P .
+maximize (trace P T A21 B21
+22
+22
+T then it would
+Observe that if this maximization were just over the first term trace P T A21 B21
+be precisely solving RGM from Section 2.3, as per Equation (1) there. Also observe that
+if the maximization were just over the second term traceP T A22 P (i) B22 , then it would be
+exactly the FAQ algorithm (ignoring all of the seeds). In this manner, the SGM algorithm
+can be seen as leveraging a combination of the information gleaned from the nonseed-seed
+relationships (the “restricted-focus term”) and the nonseed-nonseed relationships (the “FAQ
+term”).
+Although performing RGM is much simpler than performing SGM, and although RGM
+almost always produces the correct graph alignment if there are enough seeds, nonetheless
+SGM may perform substantially better when there aren’t enough seeds. Indeed, as noted,
+SGM merges RGM with FAQ, and thus utilizes the information contained in the unseeded
+adjacency structure. While FAQ alone is often unable to extract out this information (see
+Figure 1 below), the RGM term can steer the FAQ term in SGM, allowing it to extract the
+relevant signal in the nonseed–to–nonseed adjacency structure.
+The utility of this nonseeded term depends on the amount of information captured
+in the seed–to–nonseed adjacency. With less informative seeds, the SGM algorithm often
+significantly outperforms RGM alone, as there is important signal in the unseeded adjacency
+which RGM discards. However, in the presence of well chosen seeds, the seed–to–nonseed
+adjacency structure may contain all the relevant signal about the unknown alignment,
+and the unseeded adjacency information can be a nuisance (see Figure 4). As the RGM
+algorithm is exactly and efficiently solvable, this points to the centrality of both selecting
+and quantifying “good” seeds. This is a direction of future research, as we do not address
+the problem of intelligent seed selection at present.
+As we will see in Figure 1, for weakly correlated graphs, RGM can outperform SGM.
+Even with poorly-chosen seeds, the noise in the nonseed–to–nonseed adjacency structure
+can outweigh the relevant signal, and the performance of SGM is harmed by including
+this extra nuisance information. This further highlights the utility of RGM in real data
+applications, where the correlation between graphs can be low.
+3522
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+We explore the above further in Figure 1. There we compare the performance of SGM
+against solving RGM for correlated Erdős-Rényi graphs with n = 300 vertices, p = 0.5,
+seeding levels ranging from s = 0 to 275, and correlation ranging from % = 0.1 to 1. For
+each value of % and s, we ran 100 simulations and plotted the fraction of nonseeded vertices
+correctly matched across the graphs, with corresponding error bars of ±2 s.e. In all cases
+(except ρ = 0.1), RGM needed more seeds to perform comparably to SGM. Indeed, with
+sufficiently many seeds, all available information about the unknown alignment is captured
+in the seed–to–nonseed connectivity, and the (exactly solvable) RGM algorithm alone is
+enough to properly align the graphs.
+Also note the following from Figure 1. When there are no seeds, we see FAQ (which
+is SGM in the absence of seeds) working perfectly at capturing the latent alignment function when the two graphs are isomorphic (it bears noting that we have also observed FAQ
+perfectly matching when the two graphs are not isomorphic but rather *very* highly correlated), but FAQ does a surprisingly poor job (indeed, comparable to chance) when the
+correlation is even modestly less than one. However, with seeds, SGM quickly does a very
+substantially better job; indeed, the “restricted-focus” term is steering the SGM algorithm
+in the proper direction!
+
+4. Matching Human Connectomes
+We further illuminate the relationship between SGM and RGM through a real data experiment, which will serve to highlight both the utility of RGM and the effect of SGM’s further
+incorporation of the unseeded adjacency information. Our data set consists of 45 graphs,
+each on 70 vertices, these graphs constructed respectively from diffusion tensor (DT) MRI
+scans of 45 distinct healthy patients. We have 21 scans from the Kennedy Krieger Institute
+(KKI), with raw data available at http://www.nitrc.org/projects/multimodal/, and 24
+scans from the Nathan Kline Institute (NKI), with a description of the raw data available at
+http://fcon_1000.projects.nitrc.org/indi/pro/eNKI_RS_TRT/FrontPage.html. All
+raw scans were registered to a common template and identically processed with the MIGRAINE pipeline of Gray et al. (2012), each yielding a weighted, symmetric graph on
+70 vertices. (All graphs can be found at http://openconnecto.me/data/public/.MR/
+MIGRAINE/). Vertices in the graphs correspond to regions in the Desikan brain atlas, with
+edge weights counting the number of neural fiber bundles connecting the regions (note that
+although the theory and algorithms presented earlier were for simple graphs, they are easily
+modified to handle edge weights). In addition to shedding light on the relationship between
+SGM and RGM, we also explore the batch effect induced by the different medical centers
+and demonstrate the capacity for seeding to potentially ameliorate this batch effect.
+The pipeline which processes the scans into graphs first registers each of the graphs to
+a common template. As a result, there is a canonical alignment between the vertex sets
+of these graphs (vertices corresponding to respective regions in the Desikan brain atlas).
+How well is this alignment preserved across medical centers by the adjacency structure
+of the graphs alone? Figure 2 explores this question, and presents strong evidence for
+the existence of a batch effect (in both adjacency and geometric structure) induced by
+the different medical centers. In the figure, the heat map labeled “KKI matched to KKI”
+represents a 70 × 70 matrix, whose i, jth entry measures the relative number of times vertex
+3523
+
+Lyzinski, Fishkind, and Priebe
+
+1
+SGM corr=.1
+CNS corr=.1
+RGM
+SGM corr=.2
+RGM
+CNS corr=.2
+SGM corr=.3
+CNS corr=.3
+RGM
+SGM corr=.4
+CNS corr=.4
+RGM
+SGM corr=.5
+RGM
+CNS corr=.5
+
+0.9
+0.8
+
+Matched ratio
+
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+
+0
+
+50
+
+100
+
+150
+200
+Number of seeds
+
+250
+
+300
+
+350
+
+(a)
+1
+
+SGM corr=.6
+RGM
+CNS corr=.6
+SGM corr=.7
+CNS corr=.7
+RGM
+SGM corr=.8
+CNS corr=.8
+RGM
+SGM corr=.9
+RGM
+CNS corr=.9
+SGM corr=1
+RGM
+CNS corr=1
+
+0.9
+0.8
+
+Matched ratio
+
+0.7
+0.6
+0.5
+0.4
+0.3
+0.2
+0.1
+0
+
+0 1 2 3 4 5
+
+10
+
+15
+20
+Number of seeds
+
+25
+
+30
+
+(b)
+
+Figure 1: Fraction of vertices correctly matched for the SGM algorithm and for RGM,
+plotted versus the number of seeds utilized, for n = 300, p = 1/2 and correlation
+% varying from 0.1 to 1. For each value of % and s, we ran 100 simulations and
+plotted the fraction of nonseeded vertices correctly matched across the graphs,
+with corresponding error bars of ±2 s.e.
+
+3524
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+NKI matched to NKI
+
+NKI matched to KKI
+
+KKI matched to KKI
+
+Figure 2: Left: NKI to NKI matching. Center: NKI to KKI matching. Right: KKI to KKI
+matching. Each plot is a 70 × 70 heat map with the color intensity (from white
+to red) representing the relative number of times vertex i was match with vertex
+j across the experiments (white denoting no matches, dark red denoting many
+matches). The dark red diagonal in the left and right heat maps (as compared
+to the center map), indicates presence of a substantial batch effect, i.e., the correct alignment was recovered significantly better matching within medical center
+versus across medical center. Vertices 1–35 and 36–70 (as ordered) correspond to
+the respective brain hemispheres.
+
+
+i was mapped to vertex j when we ran the FAQ algorithm (i.e., no seeds) over the 21
+2 pairs
+of graphs from the KKI data set. Similarly, the “NKI to KKI” heat map counts the relative
+number of times vertices were matched to each other when running the FAQ algorithm
+over the 21 · 24 pairs of graphs, with one graph from each of the KKI and NKI data sets.
+The “NKI matched to NKI” heat map is defined similarly. The chromatic intensity of the
+pixel in the i, jth entry of each heat map represents the relative frequency in which vertex
+i was matched to vertex j across the experiments, with darker red implying more frequent
+and lighter red implying less frequent. White pixels represent vertex pairs that were never
+matched.
+Figure 2 demonstrates the existence of significant signal in the adjacency structure
+alone (without the associated brain geometry and without seeding) for recovering the latent alignment in all three experiments. When matching KKI to KKI, 32.8% of the vertices
+are correctly matched on average; when matching NKI to NKI, 37.4% of the vertices were
+correctly matched on average; when matching NKI to KKI, 9.8% of the vertices were correctly matched on average (whereas chance would have matched ≈ 1.4% on average). We
+note that the dramatic performance difference when matching within versus across medical
+centers is strong evidence of the presence of a batch effect induced by the different medical
+centers. Whether this batch effect is an artifact of experimental differences across medical
+centers (different MRI machines, different technicians, etc.) or the registration pipeline, it
+must be addressed before the data sets can be aggregated for use in further inference.
+Also note that while much of the within medical center matching error was due to
+mismatching brain hemispheres (vertices 1–35 representing one hemisphere, and vertices
+36–70 the other), the mismatch across medical centers appears significantly less structured.
+3525
+
+Lyzinski, Fishkind, and Priebe
+
+SGM 10 seeds
+
+SGM 20 seeds
+
+SGM 30 seeds
+
+SGM 40 seeds
+
+RGM 10 seeds
+
+RGM 20 seeds
+
+RGM 30 seeds
+
+RGM 40 seeds
+
+Figure 3: Clockwise from top left: SGM matching the 21 · 24 pairs of brains, one each from
+the NKI and KKI data sets, using 10, 20, 30, 40 seeds; RGM matching the same
+set of graphs using 40, 30, 20, 10 seeds. For each seed level, and each method we
+ran 100 paired MC replicates. Each plot is a 70 × 70 heat map with the color
+intensity (from white to red) representing the relative number of times vertex i
+was matched with vertex j across experiments (white denoting no matches, dark
+red denoting many matches). We do not count seeded vertices as being correctly
+matched to each other, which would have artificially inflated the diagonal.
+
+Can we use seeding to ameliorate this batch effect? In Figure 1, we established the
+capacity of seeded vertices to unearth significant signal in the adjacency structure for recovering the latent alignment function, signal which was not found without seeds. Figure 3
+further demonstrates this phenomenon in our present real data setting. We plot heat maps
+showing the 21 · 24 matchings of pairs of graphs, one each from the N KI and KKI data
+sets, for various seed levels. For each number of seeds= 10, 20, 30, 40, we ran 100 Monte
+Carlo replicates (for each of SGM and RGM) for each pair of matched graphs, with each
+seed set chosen uniformly at random from the 70 vertices. Clockwise, from the top left, we
+plot the performance of SGM with 10, 20, 30, and 40 seeds and then the performance of
+RGM with 40, 30, 20, and 10 seeds. The chromatic intensity of the pixel in the i, jth entry
+of each heat map represents the relative frequency in which vertex i was matched to vertex
+j across the experiments (seeded vertices are not counted as correctly matched here), with
+darker red implying more frequent and lighter red implying less frequent.
+The figure conclusively demonstrates that seeding extracts statistically significant signal
+in the adjacency structure alone for correctly aligning graphs across medical center, signal
+that was effectively obfuscated in the absence of seeds. While unseeded FAQ correctly
+matched 9.8% of the vertices on average across medical centers, with 10, 20, 30, 40 seeds,
+3526
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+SGM (RGM) correctly matches 49.9%,68.4%,78.8%, 85.1% (29.9%, 53.8%, 70.7%, 80.9%) of
+the unmatched vertices on average across medical centers. We also see that SGM outperforms RGM across all seed levels, with RGM requiring more seeds to achieve the same
+performance as SGM. This is not surprising, as RGM is not utilizing any of the adjacency
+information amongst the unseeded vertices.
+We also see that seeding teases out additional information on the neural geometry inherent to the graphs. For instance, with only 10 seeds, 4.3% (15.1%) vertices on average
+are mismatched across hemispheres by SGM (RGM). In contrast, 43.8% vertices on average
+were mismatched across hemispheres without seeds. Interestingly, some vertex pairs are
+consistently mismatched across all seed levels. For example, vertex 57 is matched by SGM
+to vertex 47 across medical centers 23.8%, 20.8%, 23.1%, 23.5% of the time with 10, 20, 30, 40
+seeds, whereas, with no seeds, vertex 57 is matched to vertex 47 on average 10.9% of the
+time when matching among the NKI data set and 10% of the time when matching amongst
+the KKI graphs. Indeed, these persistent artifacts are indicative of substantive differences
+across (and within) data sets and demand further investigation.
+We have noted that, on average, SGM outperformed RGM across all seed levels. How
+much of this performance gap is a function of the particular seeds chosen? We explore this
+further in Figure 4. For a pair of graphs, one each from the NKI and KKI data sets (we
+randomly chose graph 2 in the NKI data set and graph 7 in the KKI set—note that we see
+similar patterns across all tested graph pairs), we ran 200 Monte Carlo replicates of SGM and
+RGM seeded with the same randomly selected seeds. For each of seeds= 10, 20, 30, 40, 50
+(chosen uniformly at random from the vertices), the associated histogram plots the 200
+values of the number of vertices correctly matched by SGM minus the number of vertices
+correctly matched by RGM.
+The RGM algorithm ignores all the adjacency information amongst the unseeded vertices. If, in Figure 4, SGM performed uniformly better than RGM at each seed level, then
+there is consistently relevant signal in the unseeded adjacency structure, and we should
+never use RGM when SGM is feasibly run. However, we see that there are choices of seeds
+(at every level) for which RGM outperforms SGM. The unseeded adjacency information is a
+nuisance in these cases. As RGM is efficiently exactly solvable, this dramatically highlights
+the importance of intelligent seeding. Indeed, “good” seeds (and hence the RGM algorithm)
+have the potential to capture all of the relevant adjacency structure in the graph. While
+we do not pursue the question of how to select “good” seeds here, the figure points to the
+centrality of this question, and we plan on pursuing active seed selection in future work.
+For higher seed levels, we note that there is significantly less difference (and less variability) in the performance of SGM and RGM. More seeds capture more information in their
+neighborhood structure, and the effect of the unseeded adjacency on algorithm performance
+is dampened. Also, at higher seed levels the particular choice of seeds is less important,
+as any selection of a large number of seeds will probably contain enough “good” seeds to
+strongly align the graphs.
+
+5. Discussion
+Estimating the latent alignment between the vertices of two graphs is an important problem in many disciplines, and our results have both theoretical and practical implications
+3527
+
+Lyzinski, Fishkind, and Priebe
+
+−30
+
+−20
+
+−10
+
+0
+
+10
+
+20
+
+30
+
+25
+20
+15
+
+Frequency
+
+0
+
+0
+
+0
+
+5
+
+5
+
+10
+
+15
+10
+
+Frequency
+
+15
+10
+5
+
+Frequency
+
+Signal loss, 30 seeds
+
+30
+
+Signal loss, 20 seeds
+20
+
+Signal loss, 10 seeds
+
+−30
+
+−10
+
+0
+
+10
+
+20
+
+30
+
+−30
+
+−20
+
+−10
+
+0
+
+10
+
+20
+
+30
+
+60
+
+Frequency
+
+80
+
+100
+
+info[, 3]
+
+0
+
+0
+
+20
+
+40
+
+30
+20
+10
+
+Frequency
+
+−20
+
+info[, 2]
+Signal loss,
+50 seeds
+
+40
+
+info[, 1]
+Signal loss,
+40 seeds
+
+−30
+
+−20
+
+−10
+
+0
+info[, 4]
+
+10
+
+20
+
+30
+
+−30
+
+−20
+
+−10
+
+0
+
+10
+
+20
+
+30
+
+info[, 5]
+
+Figure 4: RGM versus SGM when matching one graph each from the NKI (graph 2)
+and KKI (graph 7) data sets over differing seed levels. For each of seeds=
+10, 20, 30, 40, 50 (chosen uniformly at random from the vertices), each histogram
+above plots 200 values of the number of vertices correctly matched by SGM minus the number of vertices correctly matched by RGM utilizing the same random
+seeds.
+
+for this problem. Indeed, under mild assumptions, we proved the strong consistency of the
+graph matching problem—and its restricted focus subproblem—for estimating the latent
+alignment function between the vertex sets of two correlated Erdős-Rényi graphs. Although
+seeded graph matching is computationally hard, this result gives hope that efficient approximation algorithms will be effective in recovering the latent alignment across a broad array
+of graphs.
+Embedded in the hard seeded graph matching problem is the tractable restricted-focus
+graph matching problem. This problem is exactly solvable and also provides a strongly
+consistent estimator of the latent alignment. While full seeded graph matching often out
+performs this restricted focus variant, we demonstrated the capacity for the restrictedfocus subproblem to also outperform the full matching. The relation between the two
+approaches hinges on the information contained in the seeded vertices. If the seeds capture
+the adjacency structure of the graph, then the restricted-focus subproblem can benefit by
+not including the unseeded adjacency information, and we demonstrate this phenomenon
+in both real and simulation data. This points to the primacy of intelligently seeding in
+graph matching, and we are working on active seeding algorithms for choosing good seeded
+vertices.
+3528
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+Even when outperformed by the full matching problem, we can still use the restrictedfocus problem to extract signal in the graphs that was obfuscated without seeding. In very
+large, complex problems, when it may be infeasible to run the full seeded graph matching algorithm, the restricted-focus approach could be run to provide a baseline matching between
+the graphs. We are presently investigating this further, as scalability of these approaches is
+an increasingly important demand of modern big-data.
+
+Acknowledgments
+This work is partially supported by a National Security Science and Engineering Faculty
+Fellowship (NSSEFF), Johns Hopkins University Human Language Technology Center of
+Excellence (JHU HLT COE), and the XDATA program of the Defense Advanced Research
+Projects Agency (DARPA) administered through Air Force Research Laboratory contract
+FA8750-12-2-0303. The line of research here was suggested by Dr. Richard Cox, director of
+the JHU HLT COE. We would like to thank Joshua Vogelstein and William Gray Roncal for
+providing us with the data for Section 5, and Daniel Sussman for his insightful suggestions
+and comments throughout. Lastly, we would like to thank the anonymous referees whose
+comments greatly improved the present draft.
+
+Appendix A. Proofs of Theorems 1 and 2
+Theorem 1 is proved in Sections A.2, A.3, and A.4, and these three subsections are a
+continuation one of the other. Theorem 2 is proved in Sections A.5, A.6, and A.7 and
+these three subsections are a continuation one of the other. Interestingly, the underlying
+methodology for proving Theorem 1 is very similar (but with notable differences) to the
+methodology for proving Theorem 2. We begin with some results that will subsequently be
+used in the proof of Theorems 1 and 2.
+A.1 Supporting Results
+The next result, Theorem 3, is from Alon et al. (1997), in the form found in Kim et al.
+(2002).
+Theorem 3 Suppose random variable X is a function of η independent Bernoulli(q) random variables such that changing the value of any one of the Bernoulli
+random varip
+ables
+value of Xi by at most 2. For any t : 0 ≤ t < ηq(1 − q), we have
+h changes thep
+2
+P |X − EX| > 4t ηq(1 − q) ≤ 2e−t .
+The next result, Theorem 4, is a Chernoff-Hoeffding bound which is Theorem 3.2 in Chung
+and Lu (2006).
+Theorem 4 Suppose X has a Binomial(η, q) distribution. Then for all t ≥ 0 it holds that
+
+
+−t2
+P [X − EX ≥ t] ≤ exp
+.
+2ηq + 2t/3
+
+3529
+
+Lyzinski, Fishkind, and Priebe
+
+ 
+
+
+1−r
+For any r, q ∈ (0, 1), define H(r, q) := r log qr +(1−r) log 1−q
+. This is the KullbackLeibler divergence between binomial random variables with respective success probabilities
+r and q. We will later use the following rough lower bound estimate of a binomial tail
+probability:
+Proposition 5 Suppose X has a Binomial(η, q) distribution, and suppose that 0 < q < r <
+1 − η1 for a real number r. Then
+√
+P(X ≥ ηr) ≥
+
+π
+
+e3
+
+r
+·
+
+(1 − r) −1/2
+η
+q · e−ηH(r,q) .
+r
+
+Proof We compute and bound
+
+
+η
+P(X ≥ ηr) ≥ P(X = dηre) =
+q dηre (1 − q)η−dηre
+dηre
+√
+2π
+η η+0.5
+≥ 2 q dηre (1 − q)η−dηre
+e
+dηredηre+0.5 (η − dηre)η−dηre+0.5
+√
+2π
+η η+0.5
+(ηr)ηr+0.5 (η − ηr)η−ηr+0.5
+= 2 q dηre (1 − q)η−dηre
+·
+,
+e
+(ηr)ηr+0.5 (η − ηr)η−ηr+0.5 dηredηre+0.5 (η − dηre)η−dηre+0.5
+where the inequality in the second display line follows from Stirling’s formula. Now,
+(ηr)ηr+0.5 (η − ηr)η−ηr+0.5
+dηredηre+0.5 (η − dηre)η−dηre+0.5
+
+(r)ηr+0.5 (1 − r)η−ηr+0.5
+dηre+0.5 
+η−dηre+0.5
+dηre
+dηre
+1
+−
+η
+η
+
+ηr+0.5
+1
+≥  dηre 
+(1 − r)dηre−ηr
+=
+
+
+
+ηr
+
+≥
+
+1
+1
+1 + ηr
+
+!ηr+0.5
+(1 − r)
+
+≥
+
+1
+√ (1 − r).
+e 2
+
+Combining the above, we obtain
+√
+π
+1−r
+ηη
+−1/2 ηr+1
+η−ηr
+P(X ≥ ηr) ≥
+·
+η
+q
+(1
+−
+q)
+e3 r1/2 (1 − r)1/2
+(ηr)ηr (η − ηr)η−ηr
+√ r
+π
+1 − r −1/2
+=
+·
+η
+q · e−ηH(r,q) ,
+3
+e
+r
+as desired.
+
+A.2 Overall Argument of the Proof for Theorem 1, Part i
+It is notationally convenient to assume without loss of generality that the correlated ErdősRényi graphs G1 and G2 are on the same set of n vertices V and we do not relabel the
+3530
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+vertices. Let Π denote the set of bijections V → V ; here, the identity function e ∈ Π is the
+latent alignment bijection Φ. For any ψ ∈ Π,
+
+ 
+
+V
++
+0
+0
+0
+∆ (G1 , G2 , ψ) := | {v, v } ∈
+s.t. {v, v } ∈
+/ E(G1 ) and {ψ(v), ψ(v )} ∈ E(G2 ) |,
+2
+
+ 
+
+V
+−
+0
+0
+0
+∆ (G1 , G2 , ψ) := | {v, v } ∈
+s.t. {v, v } ∈ E(G1 ) and {ψ(v), ψ(v )} ∈
+/ E(G2 ) |,
+2
+
+ 
+V
+∆0+ (G1 , G2 , ψ) := | {v, v 0 } ∈
+s.t. {v, v 0 } ∈
+/ E(G1 ), {ψ(v), ψ(v 0 )} ∈ E(G1 ),
+2
+
+0
+{ψ(v), ψ(v )} ∈
+/ E(G2 ) |,
+
+ 
+V
+∆0− (G1 , G2 , ψ) := | {v, v 0 } ∈
+s.t. {v, v 0 } ∈ E(G1 ), {ψ(v), ψ(v 0 )} ∈
+/ E(G1 ),
+2
+
+0
+{ψ(v), ψ(v )} ∈ E(G2 ) |,
+∆(G1 , G2 , ψ) := ∆+ (G1 , G2 , ψ) + ∆− (G1 , G2 , ψ).
+First, note that
+1
+∆+ (G1 , G1 , ψ) = ∆− (G1 , G1 , ψ) = ∆(G1 , G1 , ψ) ;
+2
+
+(3)
+
+this is because the number of edges in G1 isn’t changed when its vertices are permuted by
+ψ.
+Next, note that
+∆(G1 , G2 , ψ) − ∆(G1 , G2 , e) = ∆(G1 , G1 , ψ) − 2 · ∆0+ (G1 , G2 , ψ) − 2 · ∆0− (G1 , G2 , ψ) ;
+(4)
+this is easily verified by replacing “G2 ” in (4) by “G”, and observing the truth of (4) as G,
+starting out with G = G1 , is changed one edge-flip at a time until G = G2 .
+Now, consider the event, which we shall call Υ, that for all ψ ∈ Π\{e},
+
+%
+∆0+ (G1 , G2 , ψ) < ∆+ (G1 , G1 , ψ) · (1 − p)(1 − %) +
+and also
+(5)
+2
+
+
+%
+∆0− (G1 , G2 , ψ) < ∆− (G1 , G1 , ψ) · p(1 − %) +
+.
+(6)
+2
+We will next show in Section A.3 that, under the hypotheses of the first part of Theorem 1,
+Υ almost always happens (in other words, with probability 1, Υ happens for all but a finite
+numbers of n’s). Then, adding (5) to (6) and using (3), we then obtain that almost always
+∆0+ (G1 , G2 , ψ) + ∆0− (G1 , G2 , ψ) < 21 · ∆(G1 , G1 , ψ) for all ψ ∈ Π\{e}. Substituting this
+into (4) yields that almost always ∆(G1 , G2 , ψ) > ∆(G1 , G2 , e) for all ψ ∈ Π\{e}, and the
+first part of Theorem 1 is then proven.
+A.3 Under Hypotheses of Theorem 1, Part i, Υ Occurs Almost Always
+For any k ∈ {1, 2, . . . , n}, let Π(k) denote the set of bijections in Π such that the number
+of non-fixed-points of the bijection is exactly k; that is, Π(k) := {ψ ∈ Π : |{v ∈ V : ψ(v) 6=
+3531
+
+Lyzinski, Fishkind, and Priebe
+
+
+v}| = k}. A simple upper bound for |Π(k)| is |Π(k)| ≤ nk k! = n(n−1)(n−2) · · · (n−k+1) ≤
+nk .
+Just n
+for now, let k ∈ {1, 2, . . . , n} be chosen, and o
+let ψ ∈ Π(k) be chosen. Denoting
+
+V
+0
+0
+0
+T (ψ) := {v, v } ∈ 2 such that v = ψ(v ), v = ψ(v)} , we have that the random variable
+
+∆(G1 , G1 , ψ) is a function of the η := k2 + (n − k)k − |T (ψ)| independent Bernoulli(p)
+random variables
+{1{{v, v 0 } ∈ E(G1 )}}{v,v0 }∈(V )\T (ψ)
+2
+
+: ψ(v)6=v or ψ(v 0 )6=v 0
+
+and
+p note that the hypotheses of Theorem 3 are satisfied, hence for the choice of t =
+1
+ηp(1 − p) in Theorem 3 we obtain that
+20
+
+
+1
+P |∆(G1 , G1 , ψ) − E∆(G1 , G1 , ψ)| > ηp(1 − p) ≤ 2e−ηp(1−p)/400 .
+5
+
+(7)
+
+Also note that
+∆(G1 , G1 , ψ) =
+
+
+
+1
+
+X
+
+
+1{{v, v } ∈ E(G1 )} =
+6 1{{ψ(v), ψ(v )} ∈ E(G1 )}
+0
+
+0
+
+{v,v 0 }∈ V2
+
+( )\T (ψ)
+s.t. ψ(v)6=v or ψ(v 0 )6=v 0
+is the sum of η Bernoulli(2p(1 − p)) random variables hence
+E∆(G1 , G1 , ψ) = 2ηp(1 − p).
+
+(8)
+
+Because |T (ψ)| ≤ k2 , we have by elementary algebra that (n−2)k
+≤ η ≤ nk. Thus, by (7) and
+2
+(8) we obtain that (for large enough n; in the following our constants are very conservatively
+chosen)
+
+
+−(1−ξ1 )
+−1
+∆(G1 , G1 , ψ)
+P
+6∈ [1/2, 5/2] ≤ 2e 1000 nkp(1−p) ≤ 2e 1000 nkp .
+(9)
+nkp(1 − p)
+Conditioning on G1 , random variable ∆0+ (G1 , G2 , ψ) has a
+Binomial ∆+ (G1 , G1 , ψ), (1 − p)(1 − %)
+
+
+
+distribution, and random variable ∆0− (G1 , G2 , ψ) has a
+
+Binomial ∆− (G1 , G1 , ψ), p(1 − %)
+1 ,G1 ,ψ)
+distribution. Conditioning also on the event that ∆(G
+nkp(1−p) ∈ [1/2, 5/2], we apply Theorem 4 with the value t = %2 · ∆+ (G1 , G1 , ψ), and we use (3) to show
+−(1−ξ1 )
+% i
+2
+P ∆ (G1 , G2 , ψ) ≥ ∆ (G1 , G1 , ψ) · (1 − p)(1 − %) +
+≤ e 40 nkp% ,
+2
+h
+
+−(1−ξ1 )
+% i
+2
+P ∆0− (G1 , G2 , ψ) ≥ ∆− (G1 , G1 , ψ) · p(1 − %) +
+≤ e 40 nkp% .
+2
+
+h
+
+0+
+
++
+
+
+
+3532
+
+(10)
+(11)
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+Finally, applying (9), (10) and (11), the probability of ΥC can be bounded using subadditivity:
+P(ΥC ) ≤
+
+n
+X
+X 
+
+2e
+
+−(1−ξ1 )
+nkp
+1000
+
++e
+
+−(1−ξ1 )
+nkp%2
+40
+
++e
+
+−(1−ξ1 )
+nkp%2
+40
+
+
+
+k=1 ψ∈Π(k)
+
+≤
+
+n
+X
+
+ −(1−ξ1 )
+
+−(1−ξ1 )
+2
+nk 2e 1000 nkp + 2e 40 nkp%
+
+k=1
+
+≤
+
+n 
+X
+
+2e
+
+−(1−ξ1 )
+nkp+k log n
+1000
+
++ 2e
+
+−(1−ξ1 )
+nkp%2 +k log n
+40
+
+
+
+≤n·
+
+k=1
+
+4
+,
+n3
+
+q
+n
+the last inequality holding if p ≥ c2 logn n and % ≥ c1 log
+np for sufficiently large, for fixed
+P∞ 4
+constants c1 , c2 . Because
+n=1 n2 < ∞, we have by the Borel-Cantelli Lemma that Υ
+almost always happens. As mentioned in Section A.2, this completes the proof of the first
+part of Theorem 1.
+Remark 6 Note that we could tighten the constants c1 and c2 appearing above. Here we
+choose not to, instead focusing on the orders of magnitude of %, and do not pursue exact
+constants further.
+A.4 Proof of Theorem 1, Part ii
+We now prove the second part of Theorem 1.
+Just for now, let ψ ∈ Π(n) be chosen (i.e., ψ is a derangement), and condition on
+∆+ (G1 , G1 , ψ) = ∆, where 41 n2 p(1 − p) ≤ ∆ ≤ 54 n2 p(1 − p). The random variables
+∆0+ (G1 , G2 , ψ) and ∆0− (G1 , G2 , ψ) are independent, and have distributions Binomial(∆, q1 )
+and Binomial(∆, q2 ), respectively, where q1 := (1 − p)(1 − %) and q2 := p(1 − %).
+Denoting r1 := q1 + %2 and r2 := q2 + %2 , and observing that, under the hypotheses of
+1
+1
+Theorem 2, part ii, it holds that r1 < 1 − ∆
+and r2 < 1 − ∆
+we thus have by Proposition 5
+1
+π
+that (as e6 > 200 )
+!
+P ∆
+
+0+
+
+0−
+
+(G1 , G2 , ψ) ≥ ∆ · r1 and ∆
+q1 q2
+≥
+200∆
+
+s
+
+(G1 , G2 , ψ) ≥ ∆ · r2
+
+(1 − r1 )(1 − r2 ) −∆·H(r1 ,q1 )−∆·H(r2 ,q2 )
+e
+r1 r2
+
+Note that we can change the inequalities “≥” in the expression P( ) above into strict
+inequalities “>” with a harmless tweak. An elementary calculus argument yields that
+H(x + y, y) ≤ x2 /(y − y 2 ) for all 0 < y < 1 and x ≥ 0 such that y + 2x < 1. Indeed, fixing
+any value for y, the function value and the derivative of H(x + y, y) with respect to x are
+both 0 at x = 0, the function value and the derivative of x2 /(y − y 2 ) with respect to x are
+both 0 at x = 0, and the second derivative of H(x + y, y) is less than the second derivative
+of x2 /(y − y 2 ) for all relevant x. This, together with the fact that 1 − r1 = r2 , 1 − r2 = r1
+3533
+
+Lyzinski, Fishkind, and Priebe
+
+and assuming that % is bounded away from 1 (which, indeed, will turn out to be assumed),
+we have that there exists a real number c > 0 such that
+!
+P ∆0+ (G1 , G2 , ψ) > ∆·r1 and ∆0− (G1 , G2 , ψ) > ∆ · r2
+
+
+1
+1
+q1 q2 −%2 ∆ 4q (1−q
++ 4q (1−q
+1
+1)
+2
+2)
+≥
+e
+200∆
+ 
+1
+c
+−%2 n2 p· c·p
+≥ 2 ·e
+n
+−%2 n2
+c
+= 2 ·e c
+.
+n
+
+
+
+(12)
+
+From (3) and (9) we have that there exists a fixed constant c4 such that if p ≥ c4 logn n
+then, with probability > 12 (for n large enough) it holds that 14 n2 p(1−p) ≤ ∆+ (G1 , G1 , ψ) ≤
+5 2
++
+4 n p(1 − p). Thus, by (12), noting again that r1 + r2 = 1 and that ∆ (G1 , G1 , ψ) =
+1
+2 ∆(G1 , G1 , ψ), we have unconditionally
+!
+−%2 n2
+1
+c
+0+
+0−
+(13)
+P ∆ (G1 , G2 , ψ) + ∆ (G1 , G2 , ψ) > · ∆(G1 , G1 , ψ) ≥ 2 · e c
+2
+2n
+Next, the number of derangements |Π(n)| satisfies limn→∞ |Π(n)|
+= 1e , thus with Stirn!
+n
+ling’s formula we have that for n large enough it will hold that |Π(n)| ≥ ne . Thus, for n
+large enough, by (4) and (13),
+!
+X
+E| {ψ ∈ Π : ∆(G1 , G2 , ψ) < ∆(G1 , G2 , e)} | =
+P ∆(G1 , G2 , ψ) < ∆(G1 , G2 , e)
+ψ∈Π
+
+!
+≥
+
+X
+
+P ∆(G1 , G2 , ψ) < ∆(G1 , G2 , e)
+
+ψ∈Π(n)
+
+ n n c
+−%2 n2
+c
+·
+e
+e
+2n2
+−%2 n2
+c
++n log n−n
+c
+=
+·
+e
+,
+2n2
+q
+so that there exists a fixed real number c3 > 0 such that if % ≤ c3 logn n then it holds
+that E| {ψ ∈ Π(n) : ∆(G1 , G2 , ψ) < ∆(G1 , G2 , e)} | → ∞ as n → ∞, and the second part of
+Theorem 1 is proven.
+≥
+
+Remark 7 Note that we could tighten the constants c3 and c4 appearing above. Here we
+choose not to, instead focusing on the orders of magnitude of %, and do not pursue exact
+constants further.
+A.5 Overall Argument of the Proof for Theorem 2, part i
+The proof of Theorem 2 is very similar in structure to the proof of Theorem 1. For simplicity
+of notation, suppose without loss of generality that the correlated Erdős-Rényi graphs G1
+3534
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+and G2 are on the same set of n vertices V , and we do not relabel the vertices. Let Π
+denote the set of bijections V → V ; here the identity function e ∈ Π is the latent alignment
+bijection. Further suppose that V is partitioned into s seed vertices U , and m nonseed
+vertices W . Let φ : U → U be the identity function, and let Πφ := {ψ ∈ Π : ∀u ∈ U ψ(u) =
+u}. For any ψ ∈ Πφ , define
+∆+
+/ E(G1 ) and {ψ(w), u} ∈ E(G2 )}|,
+R (G1 , G2 , ψ) := |{(w, u) ∈ W × U : {w, u} ∈
+∆−
+/ E(G2 )}|,
+R (G1 , G2 , ψ) := |{(w, u) ∈ W × U : {w, u} ∈ E(G1 ) and {ψ(w), u} ∈
+∆0+
+/ E(G1 ), {ψ(w), u} ∈ E(G1 ),
+R (G1 , G2 , ψ) := {(w, u) ∈ W × U : {w, u} ∈
+{ψ(w), u} ∈
+/ E(G2 )} ,
+∆0−
+R (G1 , G2 , ψ)
+
+:= {(w, u) ∈ W × U : {w, u} ∈ E(G1 ), {ψ(w), u} ∈
+/ E(G1 ),
+{ψ(w), u} ∈ E(G2 )} ,
+
+∆R (G1 , G2 , ψ) :=
+
+∆+
+R (G1 , G2 , ψ)
+
++
+
+∆−
+R (G1 , G2 , ψ).
+
+First note that
+1
+−
+∆+
+R (G1 , G1 , ψ) = ∆R (G1 , G1 , ψ) = ∆R (G1 , G1 , ψ) ;
+2
+
+(14)
+
+this can be easily verified by considering, for each u ∈ U and for each cycle C of the
+permutation ψ, the changes of status in adjacency-to-u of the vertices as the vertices of
+C are considered in their cyclic order. (Specifically, the number of changes along C from
+adjacency-to-u to nonadjacency-to-u are equal to the number of changes along C from
+nonadjacency-to-u to adjacency-to-u.)
+Next, note that
+∆R (G1 , G2 , ψ) − ∆R (G1 , G2 , e) = ∆R (G1 , G1 , ψ)−2 · ∆0+
+R (G1 , G2 , ψ)
+− 2 · ∆0−
+R (G1 , G2 , ψ);
+
+(15)
+
+this is easily verified by replacing “G2 ” in (15) with “G”, and observing the truth of (15)
+as G, starting out with G = G1 , is changed one edge-flip at a time until G = G2 .
+Now, consider the event ΥR defined as it holding that, for all ψ ∈ Πφ besides e,
+
+%
++
+∆0+
+(G
+,
+G
+,
+ψ)
+<
+∆
+(G
+,
+G
+,
+ψ)
+·
+(1
+−
+p)(1
+−
+%)
++
+and also
+(16)
+1
+2
+1
+1
+R
+R
+2
+
+
+%
+−
+∆0−
+.
+(17)
+R (G1 , G2 , ψ) < ∆R (G1 , G1 , ψ) · p(1 − %) +
+2
+We will show in Section A.6 that, under the hypotheses of the first part of Theorem 2, ΥR
+almost always happens. Then, adding (16) to (17) and using (14), we then obtain that
+0−
+1
+almost always ∆0+
+R (G1 , G2 , ψ) + ∆R (G1 , G2 , ψ) < 2 · ∆R (G1 , G1 , ψ) for all ψ ∈ Πφ \{e}.
+Substituting this into (15) yields that almost always ∆R (G1 , G2 , ψ) > ∆R (G1 , G2 , e) for all
+ψ ∈ Πφ \{e}, and the first part of Theorem 2 will then be proven.
+A.6 Under Hypotheses of Theorem 2, Part i, ΥR Occurs Almost Always
+For any k ∈ {1, 2, . . . , m}, denote Πφ (k) := {ψ ∈ Πφ : |{v ∈ V : ψ(v) 6= v}| = k}. Just for
+now, let k ∈ {1, 2, . . . , m} be chosen, and let ψ ∈ Πφ (k) be chosen. The random variable
+3535
+
+Lyzinski, Fishkind, and Priebe
+
+∆R (G1 , G1 , ψ) is a function of the η 0 := ks independent Bernoulli(p) random variables
+{1{{w, u} ∈ E(G1 )}}(w,u)∈W ×U :ψ(w)6=w ,
+and
+p note that the hypotheses of Theorem 3 are satisfied, hence for the choice of t =
+1
+η 0 p(1 − p) in Theorem 3 we obtain that
+20
+
+
+1 0
+0
+P |∆R (G1 , G1 , ψ) − E∆R (G1 , G1 , ψ)| > η p(1 − p) ≤ 2e−η p(1−p)/400 .
+(18)
+5
+Also note that
+
+
+1 1{{w, u} ∈ E(G1 )} =
+6 1{{ψ(w), u} ∈ E(G1 )}
+
+X
+
+∆R (G1 , G1 , ψ) =
+
+
+
+(w,u)∈W ×U
+s.t.ψ(w)6=w
+
+is the sum of η 0 Bernoulli(2p(1 − p)) random variables hence
+E∆R (G1 , G1 , ψ) = 2η 0 p(1 − p).
+
+(19)
+
+Thus, by (18) and (19) we obtain that
+
+
+2
+−ξ2
+−1
+∆R (G1 , G1 , ψ)
+6∈ [9/5, 11/5] ≤ 2e 400 ksp(1−p) ≤ 2e 400 ks .
+P
+ksp(1 − p)
+
+(20)
+
+Conditioning on G1 , random variable ∆0+
+R (G1 , G2 , ψ) has a
+Binomial ∆+
+R (G1 , G1 , ψ), (1 − p)(1 − %)
+
+
+
+distribution, and random variable ∆0−
+R (G1 , G2 , ψ) has a
+
+Binomial ∆−
+R (G1 , G1 , ψ), p(1 − %)
+(G1 ,G1 ,ψ)
+distribution. Conditioning also on the event that ∆Rksp(1−p)
+∈ [9/5, 11/5], applying The%
++
+orem 4 with the value t = 2 · ∆R (G1 , G1 , ψ), and using (14), we have that
+
+
+h
+4
+−ξ2
+% i
++
+·ks
+20
+(G
+,
+G
+,
+ψ)
+·
+(1
+−
+p)(1
+−
+%)
++
+(G
+,
+G
+,
+ψ)
+≥
+∆
+P ∆0+
+≤
+e
+,
+1
+1
+1
+2
+R
+R
+2
+h
+
+4
+−ξ2
+% i
+−
+P ∆0−
+≤ e 20 ·ks .
+R (G1 , G2 , ψ) ≥ ∆R (G1 , G1 , ψ) · p(1 − %) +
+2
+
+(21)
+(22)
+
+Finally, applying (20), (21) and (22), the probability of ΥC
+R can be bounded using
+subadditivity:
+
+m
+4
+4
+X
+X  −ξ22
+−ξ2
+−ξ2
+C
+ks
+·ks
+·ks
+P(ΥR ) ≤
+2e 400 + e 20
++ e 20
+k=1 ψ∈Πφ (k)
+
+≤
+
+m
+X
+
+
+
+2
+4
+−ξ2
+−ξ2
+ks
+·ks
+400
+20
+m 2e
++ 2e
+k
+
+k=1
+
+≤
+
+m 
+X
+
+2e
+
+2
+−ξ2
+ks+k log m
+400
+
++ 2e
+
+k=1
+
+3536
+
+4
+−ξ2
+·ks+k log m
+20
+
+
+≤m·
+
+4
+,
+m3
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+the
+P∞last4inequality holding if s ≥ c5 log m for sufficiently large, fixed constant c5 . Because
+m=1 n2 < ∞ we have by the Borel-Cantelli Lemma that ΥR almost always happens. As
+mentioned in Section A.5, this completes the proof of the first part of Theorem 2.
+Remark 8 We do not chase the exact constant c5 here, focusing on the order of magnitude
+of s instead. Also, if we allow p and ρ to vary with m, then a minor alteration of the above
+proof (and a tighter Chernoff-Hoeffding bound) yields the same conclusion as in Theorem 2.i
+if for (an arbitrary but) fixed 0 <  < 2 and q1 := (1 − p)(1 − %) and q2 := p(1 − %)
+c5 := c5 (p, %)
+
+
+2
+2
+16
+> max
+.
+,
+,
+H(q1 + %2 , q1 ) · p(1 − p)(2 − ) H(q2 + %2 , q2 ) · p(1 − p)(2 − ) 2 p(1 − p)
+Details are left to the reader.
+A.7 Proof of the Theorem 2, Part ii
+We now prove the second part of Theorem 2.
+Just for now, let ψ ∈ Π(m) be chosen (i.e., none of the nonseeds are fixed points
+9
+11
+for ψ), and condition on ∆+
+R (G1 , G1 , ψ) = L, where 10 smp(1 − p) ≤ L ≤ 10 smp(1 −
+0−
+p). The random variables ∆0+
+R (G1 , G2 , ψ) and ∆R (G1 , G2 , ψ) are independent, and have
+distributions Binomial(L, q1 ) and Binomial(L, q2 ), respectively, where q1 := (1 − p)(1 − %)
+and q2 := p(1 − %).
+Denoting r1 := q1 + ρ2 and r2 := q2 + %2 , we have by Proposition 5 that
+!
+P
+
+∆0+
+R (G1 , G2 , ψ)
+
+> L · r1 and
+q1 q2
+≥
+200L
+
+s
+
+∆0−
+R (G1 , G2 , ψ)
+
+> L · r2
+
+(1 − r1 )(1 − r2 ) −L·H(r1 ,q1 )−L·H(r2 ,q2 )
+e
+r1 r2
+
+Considering the bound on H(x + y, y) described in Section A.4, we have that H(r1 , q1 )
+and H(r2 , q2 ) are both bounded above by a constant. With the fact that 1 − r1 = r2 and
+1 − r2 = r1 , from the above we obtain that there is a positive real number c such that
+!
+P
+
+∆0+
+R (G1 , G2 , ψ)
+
+> L · r1 and
+
+∆0−
+R (G1 , G2 , ψ)
+
+> L · r2
+
+sm
+c
+· e− c
+sm
+sm
+c
+≥
+· e− c
+m log m
+
+≥
+
+(23)
+
+under the hypotheses of the second part of Theorem 2.
+Next, |Πφ (m)| is the number of derangements of an m element set, and it satisfies
+|Π (m)|
+limm→∞ φm! = 1e , thus with Stirling’s formula we have that for m large enough it will
+3537
+
+Lyzinski, Fishkind, and Priebe
+
+hold that |Π(m)| ≥
+
+
+m m
+.
+e
+
+Thus, for m large enough, by (15) and (23),
+!
+
+E|{ψ ∈ Πφ : ∆R (G1 , G2 , ψ) < ∆R (G1 , G2 , e)}| =
+
+X
+
+P ∆R (G1 , G2 , ψ) < ∆R (G1 , G2 , e)
+
+ψ∈Πφ
+
+!
+X
+
+≥
+
+P ∆R (G1 , G2 , ψ) < ∆R (G1 , G2 , e)
+
+ψ∈Πφ (m)
+ m m
+
+≥
+=
+
+e
+
+sm
+c
+· e− c
+m log m
+
+sm
+c
+· e− c +m log m−m ,
+m log m
+
+so that there exists a fixed real number c6 > 0 such that if s ≤ c6 log m then it follows
+that E| {ψ ∈ Πφ : ∆R (G1 , G2 , ψ) < ∆R (G1 , G2 , e)} | → ∞ as m → ∞, and Theorem 2 part
+ii is proven.
+Remark 9 We could tighten the constant c6 here, but choose instead to focus on the order
+of magnitude of s. If we allow p and % to be functions of m, then a simple alteration of the
+above proof yields the same results of Theorem 2.ii if
+1
+
+c6 := c6 (p, %) < 
+;
+%
+4 H(q1 + 2 , q1 ) + H(q2 + %2 , q2 ) p(1 − p)
+again details are left to the reader.
+
+References
+N. Alon, J. Kim, and J. Spencer. Nearly perfect matchings in regular simple hypergraphs.
+Israel Journal of Mathematics, 100(1):171–187, 1997.
+A. C. Berg, T. L. Berg, and J. Malik. Shape matching and object recognition using low
+distortion correspondences. In 2005 IEEE Conference on Computer Vision and Pattern
+Recognition, pages 26–33, 2005.
+N.W. Brixius and K. M. Anstreicher. Solving quadratic assignment problems using convex
+quadratic programming relaxations. Optimization Methods and Software, 16:49–68, 2001.
+T. Caelli and S. Kosinov. An eigenspace projection clustering method for inexact graph
+matching. IEEE Transactions on Pattern Analysis and Machine Intelligence, 26(4):515–
+519, 2004.
+M. Cho and K. M. Lee. Progressive graph matching: Making a move of graphs via probabilistic voting. In 2012 IEEE Conference on Computer Vision and Pattern Recognition,
+pages 398–405, 2012.
+M. Cho, J. Lee, and K. M. Lee. Feature correspondence and deformable object matching via
+agglomerative correspondence clustering. In 2009 IEEE 12th International Conference
+on Computer Vision, pages 1280–1287, 2009.
+3538
+
+Seeded Graph Matching for Correlated Erdős-Rényi Graphs
+
+F. Chung and L. Lu. Concentration inequalities and martingale inequalities: A survey.
+Internet Mathematics, 3(1):79–127, 2006.
+D. Conte, P. Foggia, C. Sansone, and M. Vento. Thirty years of graph matching in pattern
+recognition. International Journal of Pattern Recognition and Artificial Intelligence, 18
+(03):265–298, 2004.
+T. Cour, P. Srinivasan, and J. Shi. Balanced graph matching. In Advances in Neural
+Information Processing Systems, volume 19, pages 313–320. MIT; 1998, 2007.
+J. Edmonds and R. M. Karp. Theoretical improvements in algorithmic efficiency for network
+flow problems. J. ACM, 19:248–264, 1972.
+M. Fiori, P. Sprechmann, J. T. Vogelstein, P. Musé, and G. Sapiro. Robust multimodal
+graph matching: Sparse coding meets graph matching. In Advances in Neural Information
+Processing Systems, pages 127–135, 2013.
+D. E. Fishkind, S. Adali, and C. E. Priebe. Seeded graph matching. arXiv preprint
+arXiv:1209.0367, 2012.
+M. R. Garey and D. S. Johnson. Computers and Intractability: A Guide to the Theory of
+NP-completeness. W. H. Freeman, 1979.
+W. R. Gray, J. A. Bogovic, J. T. Vogelstein, B. A. Landman, J. L. Prince, and R. J.
+Vogelstein. Magnetic resonance connectome automated pipeline: An overview. IEEE
+Pulse, 3(2):42–48, 2012.
+B. Huet, A. D. J. Cross, and E. R. Hancock. Graph matching for shape retrieval. In
+Advances in Neural Information Processing Systems, pages 896–902, 1999.
+J. H. Kim, B. Sudakov, and V. H. Vu. On the asymmetry of random regular graphs and
+random graphs. Random Structures & Algorithms, 21(3-4):216–224, 2002.
+H. W. Kuhn. The Hungarian method for the assignment problem. Naval Research Logistics
+Quarterly, 2(1-2):83–97, 2006.
+M. Leordeanu, M. Hebert, and R. Sukthankar. An integer projected fixed point method
+for graph matching and map inference. In Advances in Neural Information Processing
+Systems, pages 1114–1122, 2009.
+Z. Liu and H. Qiao. A convex-concave relaxation procedure based subgraph matching
+algorithm. In ACML, pages 237–252, 2012.
+P. Pedarsani and M. Grossglauser. On the privacy of anonymized networks. In Proceedings
+of the 17th ACM SIGKDD International Conference on Knowledge Discovery and Data
+Mining, pages 1235–1243, 2011.
+R. C. Read and D. G. Corneil. The graph isomorphism disease. Journal of Graph Theory,
+1(4):339–363, 1977.
+3539
+
+Lyzinski, Fishkind, and Priebe
+
+A. Robles-Kelly and E. R. Hancock. A Riemannian approach to graph embedding. Pattern
+Recognition, 40(3):1042–1056, 2007.
+J. T. Vogelstein, J. M. Conroy, L. J. Podrazik, S. G. Kratzer, E. T. Harley, D. E. Fishkind,
+R. J. Vogelstein, and C. E. Priebe. Large (brain) graph matching via fast approximate
+quadratic programming. arXiv preprint arXiv:1112.5507, 2011.
+B. Xiao, E. R. Hancock, and R. C. Wilson. A generative model for graph matching and
+embedding. Computer Vision and Image Understanding, 113(7):777–789, 2009.
+M. Zaslavskiy, F. Bach, and J. P. Vert. A path following algorithm for the graph matching
+problem. IEEE Transactions on Pattern Analysis and Machine Intelligence, 31(12):2227–
+2242, 2009.
+F. Zhou and F. De la Torre. Factorized graph matching. In 2012 IEEE Conference on
+Computer Vision and Pattern Recognition, pages 127–134, 2012.
+
+3540
+
+

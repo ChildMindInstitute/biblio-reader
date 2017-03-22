@@ -1,0 +1,174 @@
+BrainSuite13: New Tools for Brain Image Labeling,
+Connectivity Analysis, and Visualization
+1
+Shattuck ,
+
+2
+Joshi ,
+
+2,3,4
+Haldar ,
+
+2
+Bhushan ,
+
+3
+Choi ,
+
+David W
+Anand A
+Justin P
+Chitresh
+Soyoung
+Andrew C Krause1, Jessica L Wisnowski4,5, Hanna Damasio3, Arthur W Toga1, and Richard M Leahy2
+1 Laboratory
+
+of Neuro Imaging, University of California, Los Angeles, Los Angeles, CA, United States
+2 Signal and Image Processing Institute, University of Southern California, Los Angeles, CA, United States
+3 Dana and David Dornsife Cognitive Neuroscience Imaging Institute, University of Southern California, Los Angeles, CA, United States
+4Brain and Creativity Institute, University of Southern California, Los Angeles, CA, United States
+5Radiology, Children's Hospital of Pittsburgh of UPMC, Pittsburgh, PA, United States
+
+I. INTRODUCTION
+• We describe BrainSuite13, a collection of software tools for jointly processing and
+visualizing structural and diffusion MRI of the brain.
+• BrainSuite13 can combine the results of structural and diffusion processing to
+generate connectivity maps of the brain based on a set of anatomical ROIs.
+• These tools can be applied using scripts or through a graphical user interface (GUI)
+that provides sophisticated interactive processing and visualization capabilities.
+• BrainSuite13 features:
+• Fast processing times – less than 1 hour to extract, register, and label a T1 MRI.
+• Novel methods for correcting distortion in DWI.
+• Visualization capabilities for multiple types of data.
+• Powerful tools for exploring diffusion and connectivity information.
+• Flexibility for performing different types of analysis.
+
+II. METHODS
+II.a. Software Implementation
+• We developed the BrainSuite13 image processing software collection using C++
+and compiled MATLAB code.
+• The command line tools can be run on Windows, Mac, and Linux
+• The graphical user interface is developed using C++, Qt, and OpenGL.
+• Provides interactive tools for displaying image slices, surface models, tensor
+glyphs, orientation distribution functions (ODFs), and streamline tractography.
+• Provides guided processing through extraction, registration, and labeling steps
+• Includes tools for delineating ROIs interactively.
+• The interactive version is available for Windows and Mac (Linux release planned).
+
+Atlas
+T1 MRI and label overlay
+
+Subject
+
+Fig.2. BrainSuite13 ROI Labeling (top) Surface and volume views of the BrainSuite13
+anatomical atlas, delineated into anatomical regions of interest. (bottom) Similar views
+of an automatically labeled subject dataset.
+
+II.d. DIFFUSION IMAGE PROCESSING
+Distortion Correction
+BrainSuite13 provides two methods for correcting distortion induced by B0
+inhomogeneity in diffusion weighted images (either can be used for correction):
+• Registration-based: uses a constrained non-rigid registration (see Fig. 3) to the
+undistorted T1-weighted anatomical image [4] (does not require fieldmap).
+• Fieldmap-based: uses a fieldmap collected during the diffusion MRI session to
+correct for distortion.
+
+Fig. 4. Diffusion Imaging in BrainSuite13. (left) T1 image, overlaid with a color FA map
+computed from the coregistered, distortion-corrected diffusion images; and (right) 3D
+rendering of FRACT ODFs displayed with blended T1 and color FA image slices. The
+input imaging data are from the Beijing Enhanced dataset [8].
+II.e. CONNECTIVITY ANALYSIS AND VISUALIZATION
+• Diffusion streamlines are tracked using a deterministic method.
+• For each pair of ROIs, the number of tracks passing through both ROIs is counted
+to produce a connectivity matrix, which is normalized by its maximum element.
+• This matrix structure is represented visually using a circular plot, in which the
+connectivity strength is indicated by the weight and color of the arc connecting
+the ROIs on the plot (see Fig. 5).
+• The connectivity graph is synchronized with the 3D display, enabling users to
+select regions of interest and visualize the corresponding connected fiber tracks.
+
+Fig.1. The BrainSuite Cortical Extraction Sequence. This sequence can extract a set of
+inner and outer cortical surface meshes for a typical T1-weighted MRI in approximately
+10-15 minutes (processed on an Intel 3.5GHz i7-3770).
+II.b. SURFACE EXTRACTION
+Whole-head human T1-weighted anatomical MRIs are processed using BrainSuite’s
+automated cortical surface extraction sequence (see Fig. 1) [1].
+• Produces inner and outer surface mesh models of the cerebral cortex.
+• The GUI enables manual corrections to be applied at several stages if automated
+processing does not achieve sufficient quality for segmenting structures.
+
+II.c. AUTOMATED LABELING OF NEUROANATOMICAL ROIS
+The cortical mesh models are registered spatially to a labeled single subject
+anatomical brain atlas.
+Neuroanatomical Atlas
+• Based on a T1-weighted MRI with corresponding cortical surface mesh
+representations generated using the BrainSuite software.
+• The atlas comprises surface and volume data that were delineated manually by an
+expert neuroanatomist into 98 anatomical ROIs (see Fig. 2).
+Surface/Volume Registration (SVReg)
+• Registration is performed using a combined surface/volume procedure [2].
+• First employs a curvature-based surface registration process to align the
+cortical surface features of the subject and the atlas.
+• Surface registration is used to initialize a volumetric alignment.
+• Volumetric alignment is refined using elastic image registration.
+• Produces an alignment of the cortical features in the surface space, with a
+corresponding alignment of the volumetric data.
+• The labels from the atlas are transferred to the surface and volume of the subject
+data, producing a segmentation of the subject MRI into the delineated ROIs.
+• The ROI boundaries on the cortical surfaces are refined locally at the mid-cortical
+surface using geodesic curvature flow [3], such that the boundaries conform to the
+bottoms of the sulcal valleys.
+• The structural image processing modules enable various attributes to be
+measured and compared, e.g., cortical thickness and ROI volumes.
+• The surface and volume labels are useful for analysis of functional, structural, and
+parametric images.
+• Registration, labeling, and refinement stages can be performed in ~40 minutes for
+a typical MRI (processed on an Intel 3.5GHz i7-3770).
+
+Fig. 3. Registration based distortion correction (without fieldmap) via the BrainSuite
+Diffusion Pipeline (BDP). Each sub-figure shows (left) distorted and (right) corrected
+b=0 image, overlaid with the edge-map (red outline) generated from the T1-weighted
+image. Arrows indicate areas of significant correction.
+
+Tensor and ODF Estimation
+• After coregistering the diffusion weighted images and the T1-weighted image,
+tensors and ODFs are estimated in the structural T1 image space (see Fig. 4).
+• The BrainSuite Diffusion Pipeline can quantify the diffusion signal in three ways:
+• Fitting a diffusion tensor imaging (DTI) model.
+• Applying the Funk-Radon Transform (FRT) [5].
+• Applying the Funk-Radon and Cosine Transform (FRACT) [6-7].
+• The Funk-Radon and Cosine Transform is a new linear transform-based ODF
+estimation method that generalizes the FRT.
+• FRACT can provide higher angular resolution and/or robustness to noise and
+modeling errors than existing state-of-the-art ODF estimation methods.
+
+SOFTWARE DOWNLOAD
+For more information or to download the software, please visit
+the BrainSuite website: http://brainsuite.loni.ucla.edu. Tutorials
+and sample data are also available on our website.
+
+Fig. 5. Tractography and connectivity in BrainSuite13. (left) a T1-weighted MRI and
+extracted hemisphere surface with labeled ROIs, and a set of diffusion fiber tracks;
+(right) the interactive connectivity diagram, based on the same data shown in Fig. 4.
+III. RESULTS
+• Our recently released software, BrainSuite13, provides integrated functionality for
+processing and visualizing structural and diffusion MRI.
+• The results of BrainSuite13’s segmentation, labeling, diffusion, and connectivity
+processing are shown in Fig. 5.
+• The software is available for download at http://brainsuite.loni.ucla.edu.
+
+IV. REFERENCES
+[1] Shattuck and Leahy, Medical Image Analysis 2002; 8(2):129-142.
+[2] Joshi et al., IEEE TMI 2007; 26(12):1657-1669.
+[3] Joshi et al., WBIR 2012: 180-189.
+[4] Bhushan et al., APSIPA 2012.
+[5] Tuch et al., Magn Reson Med 2004;52:1358-1372.
+[6] Haldar and Leahy, NeuroImage 2013;71:233-247.
+[7] Haldar and Leahy, Proc IEEE ISBI 2013; 504-507.
+[8] http://fcon_1000.projects.nitrc.org/indi/retro/BeijingEnhanced.html
+
+ACKNOWLEDGEMENTS
+This work was supported in part by NIH grants R01-NS074980, R01-EB002010,
+P41-EB015922, and U01-MH93765.
+
+

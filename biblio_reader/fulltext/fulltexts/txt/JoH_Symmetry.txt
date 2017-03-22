@@ -1,0 +1,64 @@
+Symmetry of Resting-State Functional Connectivity in FMRI: High Correlation Across Hemispheres Exists with or without
+Callosal Connection
+1
+
+H. Jo1, Z. S. Saad1, S. J. Gotts2, R. C. Reynolds1, P. Christidis1, D. R. Glen1, A. Martin2, and R. W. Cox1
+Statistical and Scientific Computing Core, National Institute of Mental Health, National Institutes of Health, Bethesda, MD, United States, 2Cognitive Neuropsychology Section, Laboratory of Brain and Cognition, National Institute of Mental Health, National Institutes of Health, Bethesda, MD, United States
+
+Introduction
+Resting-State Functional Connectivity (RSFC) [1] is now widely used in Functional Magnetic Resonance Imaging (FMRI) to study brain connectedness during rest. A
+commonly used method for RSFC measures cross correlations between the FMRI time series of a seed region and the rest of the brain. Significantly high correlations
+between brain regions are interpreted to reflect a functional connection between the areas. One of the most common observations across a range of RSFC studies is that
+a seed placed in one hemisphere tends to correlate highly with the homologous anatomical location in the opposite hemisphere in areas such as primary motor and somatosensory cortex. When combined with evidence from anatomical studies in animals and other brain imaging methods in humans such as diffusion tensor imaging,
+these symmetrical correlation patterns found across hemispheres have been taken to reflect direct synaptic interactions via axonal projections through the corpus callosum (CC) [2-4]. This interpretation is seemingly further supported by fine gradients of the symmetric correlations within somatotopic cortex, perhaps implicating an
+ordered map of callosal inter-hemispheric connections. In the current study, we evaluate the fine organization of cross-hemispheric correlations maps in a variety of
+brain regions outside somatotopic cortex, including occipital, temporal, and prefrontal areas. We find that the fine-grained nature of the symmetric correlation maps
+carries over more generally to these other areas of cortex. However, we also find that this property carries over equally well to parts of primary visual cortex that have
+no direct callosal connections, namely the cortex along the depth of the calcarine sulcus that represents the horizontal meridian in V1.
+Materials and Method
+Twenty seven healthy subjects were randomly selected from the 3T data set of 1000 Functional Connectomes Project (FCON_1000) [5], and their T1 weighted images
+were used to get cortical surfaces, tissue masks, and structurally parcellated regions by FreeSurfer pipeline [6]. The following procedures were done by AFNI and SUMA packages [7]. RS EPI data were despiked, and then slice timing and motion corrected. To reduce artifacts, remove head-coil malfunction, and minimize correlation
+bias, we applied ANATICOR with head-motion estimates, nuisance signals averaged in eroded lateral ventricle mask, and local white matter (WM) regressor averaged
+in a spherical mask (r=30 mm for common-resolution EPI data) [8]. The residual time-series from ANATICOR were mapped and smoothed (target FWHM = 6 mm) on
+geometrically corrected and standardized cortical surfaces by SUMA [9]. For the seed time-series on left and right hemispheric surfaces, the probabilistic map of central, calcarine, superior temporal (STS), and inferior frontal (IFS) sulci were made by averaging binary indices for each region across the subject group, and the vertices
+having p=1 value were chosen as regions of interest (ROIs) containing seed points for correlation analysis. To get the connectivity maps, Pearson correlation coefficients (ρ) were calculated between the residual time series of every seed point in a hemisphere and those of every vertex in the other (target) hemisphere, and then these
+individual ρ values were Fisher transformed and averaged on correspondent vertices of standard surfaces across subjects. At each vertex in the target hemisphere we
+retain the maximal correlation and the seed number which produced that maximum. It is the seed numbers that are displayed in color to show the fine level of symmetry
+in the maximally correlated pairs (MaxRSFC maps).
+Results
+In all ROIs examined, seeds in one hemisphere are most correlated on the contralateral hemisphere to spatially homologous locations (see Figs. 1-4). This is visually
+evident in the matching color patterns between seed and target hemispheres. The symmetry in the central sulcus is a replication of the finding by [4], and other ROIs
+show a similar degree of symmetry. It is tempting to consider this high degree of symmetry as a reflection of first order callosal connections between functionally homologous regions between hemispheres. However, this alone cannot explain the symmetry in the calcarine sulcus. The horizontal meridian representation within area
+V1 lies along the fundus of the calcarine in most subjects and notably lacks inter-hemispheric callosal connections. Fig. 5 shows the MaxRSFC maps when the calcarine
+ROI was further restricted to the fundus of calcarine sulcus. The symmetry is still evident in correlation maps, strongly undermining callosal connections as the primary
+determinant of symmetric correlation maps in this case.
+Discussion
+The striking degree of symmetry in group MaxRSFC maps has been reported in the motor cortex [4]. Here we show that is equally present in multiple other areas, if not
+across the whole brain. Areas with direct and strong contralateral callosal connections exhibit the symmetry, but so do areas with little callosal connections, such as
+cortex along the fundus of the calcarine sulcus, suggesting that low order anatomical connectedness does not necessarily imply the strongest functional one. Average
+maximal correlations in the calcarine sulcus were comparable in magnitude to those elsewhere in the brain. In the calcarine sulcus, the symmetry pattern evokes the
+eccentricity mapping of the visual cortex, but it is tenuous to make the conclusion that these resting state maps are a reflection of retinotopic organization; the symmetry
+is also present in lateral inferior frontal cortex where one expects more lateralized patterns related to language processing. With or without the callosal connection, we
+found that there are high correlations between the same regions in both hemispheres over large brain regions. Despite the absence of bidirectional callosal connection
+between two regions (e.g. left and right calcarine sulci), they can show high ρ values through alternative mechanisms such as common input or highly structured "mediated" input through intra-hemispheric connections with areas that do share callosal connections. More generally, our results highlight the importance of considering
+these alternative mechanisms even in circumstances in which callosal connections are indeed plausible.
+
+Fig. 5. MaxRSFC result for the fundus of calcarine sulcus.
+
+References
+[1] Biswal,B., et al., 1995. Magn Reson Med 34, 537-541.
+[2] Kandel,E.R., et al., 1997. Principles of Neural Science.
+[3] Servos,P., et al., 1998. Neuroreport 9(4), 605-609.
+[4] van den Heuvel,M.P., et al., 2010. Hum Brain Mapp 31(4), 631-644.
+[5] Biswal,B., et al., 2010. PNAS 107(10), 4734-4739.
+Figs. 1-4. MaxRSFC result for central (1), calcarine (2), superior temporal (3), and inferior [6] Fischl,B., et al., 2002. Neuron 33, 341-355.
+frontal sulci (4). The colors in “Seeds” and “Target” present vertex indices in ROIs sorted [7] Cox,R.W., 1996. Comput Biomed Res 29, 162-173.
+along A-P and then I-S directions and their correspondent vertices having maximum ρ val- [8] Jo,H.J., et al., 2010. Neuroimage 52(2), 571-582.
+ues in the contralateral hemispheres.
+[9] Argall,B.D., et al., 2006. Hum Brain Mapp 27(1), 14-27.
+
+Proc. Intl. Soc. Mag. Reson. Med. 19 (2011)
+
+430
+
+

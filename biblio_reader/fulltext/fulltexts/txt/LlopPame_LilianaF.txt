@@ -1,0 +1,2228 @@
+Density estimation for spatial-temporal
+models
+
+Liliana Forzani, Ricardo Fraiman &
+Pamela Llop
+
+TEST
+An Official Journal of the Spanish
+Society of Statistics and Operations
+Research
+ISSN 1133-0686
+Volume 22
+Number 2
+TEST (2013) 22:321-342
+DOI 10.1007/s11749-012-0313-3
+
+1 23
+
+Your article is protected by copyright and all
+rights are held exclusively by Sociedad de
+Estadística e Investigación Operativa. This eoffprint is for personal use only and shall not
+be self-archived in electronic repositories. If
+you wish to self-archive your article, please
+use the accepted manuscript version for
+posting on your own website. You may
+further deposit the accepted manuscript
+version in any repository, provided it is only
+made publicly available 12 months after
+official publication or later and provided
+acknowledgement is given to the original
+source of publication and a link is inserted
+to the published article on Springer's
+website. The link must be accompanied by
+the following text: "The final publication is
+available at link.springer.com”.
+
+1 23
+
+Author's personal copy
+Test (2013) 22:321–342
+DOI 10.1007/s11749-012-0313-3
+O R I G I N A L PA P E R
+
+Density estimation for spatial-temporal models
+Liliana Forzani · Ricardo Fraiman · Pamela Llop
+
+Received: 18 December 2011 / Accepted: 30 September 2012 / Published online: 14 December 2012
+© Sociedad de Estadística e Investigación Operativa 2012
+
+Abstract In this paper a k-nearest neighbor type estimator of the marginal density
+function for a random field which evolves with time is considered. Considering dependence, the consistency and asymptotic distribution are studied for the station√
+ary and nonstationary cases. In particular, the parametric rate of convergence T
+is proven when the random field is stationary. The performance of the estimator is
+shown by applying our procedure to a real data example.
+Keywords Spatio-temporal data · Density estimation · Local times
+Mathematics Subject Classification 91B72 · 62G07 · 60J55
+
+1 Introduction
+In the last decade there has been a significant growth on research of functional data
+as well as spatial-temporal data (see Tang et al. 2008). However, not all the theory
+developed for curves has been extended to random fields as is the case of nonparametric marginal density estimation which so far has only been performed for RN -valued
+random fields. For instance, for mixing stationary random fields, Tran and Yakowitz
+(1993) proved the asymptotic normality of the k-nearest neighbor estimator. Tran
+L. Forzani · P. Llop ()
+Facultad de Ingeniería Química and Instituto de Matemática Aplicada del Litoral, UNL-CONICET,
+Santa Fe, Argentina
+e-mail: lloppamela@gmail.com
+R. Fraiman
+Departamento de Matemática and Ciencias, Universidad de San Andrés, Buenos Aires, Argentina
+R. Fraiman
+CMAT, Universidad de la República, Montevideo, Uruguay
+
+Author's personal copy
+322
+
+L. Forzani et al.
+
+(1990) obtained the asymptotic normality of kernel type estimator, while Carbon et al.
+(1996) studied its L1 convergence. The uniform consistency of this kind of estimator
+was shown by Carbon et al. (1997) and further extensions were studied by Hallin
+et al. (2001, 2004).
+For functional data, the problem of nonparametric marginal density estimation
+has been considered by several authors in different setups. The case when a single
+sample path is observed over an increasing interval [0, T ] as T grows to infinity has
+been studied by Rosenblatt (1970), Nguyen (1979), and Castellana and Leadbetter
+(1986). In particular, the latter showed that for continuous time processes a parametric speed of convergence is attained by kernel type estimators. More recently, some
+extensions have been obtained by Blanke and Bosq (1997), Blanke (2004), Kutoyants
+(2004) among others. In particular, Labrador (2008) proposed a k-nearest neighbor
+type estimator using local time ideas. Later, Llop et al. (2011) redefined the k-nearest
+neighbor estimator for the case when an independent sample is observed, obtaining
+parametric rates of convergence and its asymptotic normality.
+This work addresses the problem of nonparametric marginal density estimation
+for random fields which evolve in time. More precisely, given the following random
+field:
+X (s) = μ(s) + e(s),
+
+s ∈ S ⊂ Rd ,
+
+(1)
+
+we estimate its marginal density function using a k-nearest neighbor type estimator
+defined via local time when a dependent sample of identically distributed random
+fields X1 , . . . , XT is given. For this estimator we study its asymptotic properties. The
+functional nature of the data (a random surface) plays a fundamental role which allows us to obtain parametric rates of convergence of this density estimator in the
+stationary case, contrary to what generally happens in nonparametric problems. This
+kind of data appears naturally when analyzing the evolution of some measurements
+in a geographical area (such as the Amazon), or when recording responses from the
+brain during a time interval, among other interesting practical problems.
+This paper is organized as follows: in Sect. 2 we recall some well-known dependence notions and give a new one which will be used in this work. Section 3 is dedicated to theoretical results. More precisely, in Sect. 3.2 we introduce the estimator for
+the stationary case, prove its consistency obtaining strong rates of convergence, and
+show its asymptotic normality. In Sect. 3.3, we extend the definition given in Sect. 3.2
+to nonstationary random fields, and also obtain its rates of convergence. Section 4 is
+devoted to numerically show the performance of our estimation methods. In Sect. 4.1
+a simulated example is presented for d = 2, and in Sect. 4.2 a real data example of
+fMRI images corresponding to the brain in the resting state is considered. Main and
+auxiliary proofs are given in Appendices B and C, respectively.
+
+2 Dependence notions
+In this section we will review some known dependence notions and introduce a new
+one which will be used in this work to find convergence rates of our density estimators. We will start with the classical α-mixing condition, introduced by Rosenblatt
+(1956) whose definition is the following:
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+323
+
+Definition 1 We say that a sequence of random variables {Xt }t∈N is α-mixing if there
+exists a sequence {α(r), r ∈ N} decreasing to zero at infinity such that for each r,
+
+
+P (A ∩ B) − P (A)P (B) ≤ α(r),
+for all A ∈ Mttu1 and B ∈ Mllv1 with Mba the σ -field generated by the random variables
+{Xt }bt=a , where 1 ≤ t1 ≤ tu < tu + r = l1 ≤ lv ≤ ∞. If in addition there exist 0 <
+ρ < 1 and a > 0 such that α(r) ≤ aρ r then, we say that the sequence {Xt }t∈N is
+geometrically α-mixing.
+Although this is one of the weakest notions of dependence, Doukhan and Louhichi
+(1999) observed that certain processes which are of interest in statistics are not αmixing. This is the case of the autoregressive process of order one (AR(1)) given by
+Xt = θ Xt−1 + t , t ∈ Z, where t are independent and P (t = 1) = P (t = −1) = 12 ,
+0 < |θ | ≤ 12 . Inspired by this problem, the authors introduced a new notion of dependence which was called weak dependence (Definition 2), and using the AR(1) process
+they showed that this definition is even weaker than the α-mixing dependence (see
+Lemma 1).
+Definition 2 (Doukhan and Louhichi 1999) We say that a sequence of random variables {Xt }t∈N is (G, α, ψ)-weakly dependent if there exist a class G of real-valued
+functions, a sequence {α(r), r ∈ N} of positive numbers decreasing to zero at infinity,
+and a function ψ : G 2 × N2 → R such that for any u-tuple (t1 , . . . , tu ) and for any
+v-tuple (l1 , . . . , lv ) with 1 ≤ t1 ≤ tu < tu + r = l1 ≤ lv ≤ ∞,
+ 
+
+cov f (Xt , . . . , Xt ), g(Xl , . . . , Xl )  ≤ ψ(f, g, u, v)α(r),
+u
+v
+1
+1
+for all functions f, g ∈ G defined on Ru and Rv , respectively.
+Lemma 1 (Doukhan and Louhichi 1999) Let us consider the process AR(1), Xt =
+θ Xt−1 + t with t independent and P (t = 1) = P (t = −1) = 12 , 0 < |θ | ≤ 12 . Then,
+Xt is (G, α, ψ)-weakly dependent with G the set of the bounded Lipschitz functions.
+Here we will use the (G, α, ψ)-weak dependence for G = {IE : E ∈ A} the class
+of the indicator functions over measurable sets and ψ(f, g, u, v) = φ(u, v) with φ :
+N × N → R+ a function greater or equal to one. This weak dependence will be called
+(α, φ)-weak dependence as specified in the following definition:
+Definition 3 We say that a sequence of random variables {Xt }t∈N is (α, φ)-weakly
+dependent if there exist a sequence {α(r), r ∈ N} decreasing to zero at infinity and a
+function φ : N × N → R+ with φ(u, v) ≥ 1 such that
+
+
+P (A ∩ B) − P (A)P (B) ≤ α(r)φ(u, v),
+for all A ∈ Mttu1 and B ∈ Mllv1 with Mba the σ -field generated by the random variables {Xt }bt=a , where 1 ≤ t1 ≤ tu < tu + r = l1 ≤ lv ≤ ∞. If, in addition, there exist
+
+Author's personal copy
+324
+
+L. Forzani et al.
+
+constants L1 , L2 < ∞ and μ ≥ 0 such that
+∞
+
+(j + 1)k α(j ) ≤ L1 Lk2 (k!)μ ,
+
+∀k ≥ 0,
+
+j =0
+
+then, we say that the sequence {Xt }t∈N is geometrically (α, φ)-weakly dependent.
+The following lemma, whose proof is given in Appendix C, shows the relationship
+between the (geometric) α-mixing and the (geometric) (α, φ)-weak dependence.
+Lemma 2 If the sequence {Xt }t∈N is (geometric) α-mixing then it is (geometric)
+a
+1
+, L2 = 1−ρ
+, μ = 1 and any φ ≥ 1.
+(α, φ)-weakly dependent with L1 = 1−ρ
+Observe that we need to prove only the geometric case since Rosenblatt (1956)
+showed the explicit weak dependence structure of the α-mixing process for G = L∞
+and ψ(f, g, u, v) = 4 f ∞ g ∞ .
+
+3 Density estimation
+In this section we will introduce the density estimators for the stationary and nonstationary cases and present some asymptotic results. We will start the section by
+introducing the setting of our work and some useful notation.
+3.1 Setting and notation
+.
+Let S1 , S2 , . . . , Sd ⊂ R be finite intervals and let S = S1 × S2 × · · · × Sd ∈ Rd be
+a rectangle of measure |S|. Let us consider the first-order stationary random field
+{e(s, ω) ∈ R : s ∈ S, ω ∈ Ω} defined in a probability space (Ω, A, P ) with unknown
+marginal density function fe , and which admits a local time. More precisely, if λ is
+the occupation measure of e(s, ω),
+
+
+
+
+. 
+λ(A, e) = λ A, e(s, ω) = IA e(s, ω) ds, A ∈ B(R), ω ∈ Ω,
+S
+
+where B(R) stands for the Borel sigma–algebra on R, and if λ is absolutely continuous with respect to the Lebesgue measure, then the local time is defined as a regular
+.
+version of the Radon–Nikodym derivative lT (·, e) = lT (·, e(s, ω)) for almost all ω
+(from now on e(s)). In this case we can write
+
+λ(A, e) = lT (u, e) du.
+A
+
+Given a sequence of random fields {et (s, ω)}Tt=1 of e(s, ω) (from now on e(s) and
+et (s)), I(x,r) = [x − r, x + r] the interval of center x and radius r, and {kT } being a
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+325
+
+sequence of real numbers such that kT /T < |S|, we define the random variable heT (x)
+such that the time spend by {et (s)}Tt=1 at I(x,heT (x)) be kT . That is,
+kT =
+
+T 
+
+t=1 S
+
+
+
+II(x,he (x)) et (s) ds.
+
+(2)
+
+T
+
+Lemma 3 If X (s) admits a local time, then the random variable heT exists and it is
+unique.
+Next we state some assumptions which will be used in this work.
+H1 {et (s), s ∈ S}Tt=1 is a sequence of random fields with the same distribution as
+e(s), where e(s) is a first-order stationary random field with unknown strictly
+positive density function fe which admits a local time;
+H2 the density fe is a strictly positive Lipschitz function with constant K;
+H2 the density fe has two bounded derivatives;
+H3 for each s fixed, {et (s)}Tt=1 is geometrically (α, φ)-weakly dependent with φ
+some of the following functions:
+–
+–
+–
+–
+
+φ(u, v) = 2v,
+φ(u, v) = u + v,
+φ(u, v) = uv,
+φ(u, v) = ρ(u + v) + (1 − ρ)uv, for some ρ ∈ (0, 1);
+
+H3 for each s fixed, {et (s)}Tt=1 is geometrically (α, φ)-mixing;
+H4 {kT } and {vT } are sequences of positive integers which converge to infinity such
+that vT ( kTT ) → 0 and T1 ( vkTT )2 → ∞.
+H4 {kT } and {vT } are sequences of positive integers which converge to infinity such
+that vT ( kTT ) → 0 and vkTT → ∞.
+H5 for each s fixed, {et (s)}Tt=1 is α-mixing with the mixing coefficients α(r) verifying
+N
+
+∞
+
+
+α(r) → 0 as N → ∞.
+
+r=N
+
+H6 For each c > 0,
+  
+−2 −2
+c cT
+
+
+
+
+S S {x:|u−x|≤ccT } {x:|v−x|≤ccT }
+
+→
+S×S
+
+
+
+fsr (u, v) − fX (u)fX (v) du dv ds dr
+
+
+
+.
+fsr (x, x) − fe2 (x) ds dr = c02 (x) > 0,
+
+where fsr is the joint density of (e(s), e(r)) and cT = kTT with {kT } is a sequence
+of positive integers going to infinity such that kTT → 0.
+H7 For some c > 0,
+  
+
+
+
+
+
+
+
+ ≤ cc4 ,
+f
+(u,
+v)
+−
+f
+(u)f
+(v)
+du
+dv
+ds
+dr
+sr
+e
+e
+T
+
+
+S S {x:|u−x|≤ccT } {x:|v−x|≤ccT }
+
+Author's personal copy
+326
+
+L. Forzani et al.
+
+where again fsr is the joint density of (e(s), e(r)) and cT = kTT with {kT } is a
+sequence of positive integers going to infinity such that kTT → 0.
+Remark 1 The choice of the function φ in H3 is related with the exponential inequality (Theorem 4) used in the proofs (see Doukhan and Neumann 2006).
+The symbol C will denote generic constants whose value may be different in each
+occurrence.
+3.2 The stationary case: μ(s) = μ constant
+If in model (1) we assume that the deterministic unknown mean function μ(s) is
+constant with respect to the space (that is, μ(s) = μ) then the process X (s) (with
+density fX ) inherits the stationarity of e(s). In this case, given a sample sequence of
+random fields {Xt (s)}Tt=1 and a sequence {kT } of real numbers such that kT /T < |S|
+we define the estimator of the density function fX as
+.
+fX (x) =
+
+kT
+2T |S|hX
+T (x)
+
+,
+
+(3)
+
+where the random variable hX
+T (x) is defined as in (2) but with X instead of e.
+Remark 2 From Lemma 3, if X (s) admits a local time then fX (x) is well defined.
+If {Xt (s)}Tt=1 is an iid sample of X (s), a direct extension to Rd of the results given
+in Llop et al. (2011) will allow us obtain the consistency of the estimator (3). However, in this work we will not assume independence of the data but the processes will
+be (α, φ)-weakly dependent and therefore we will need another exponential inequalities to obtain rates of convergence.
+Theorem 1 (Rates of convergence) For each x ∈ R we have
+
+
+lim vT fX (x) − fX (x) = 0 a.co.
+T →∞
+
+in the following two cases:
+(a) weakly dependent case: for X fulfilling H1, H2, H3 and H4;
+(b) α-mixing case: for X fulfilling H1, H2, H3 and H4 .
+Remark 3
+(a) Weakly dependent case: Our assumptions imply that we can choose kT such that
+vT = T γ for any γ < 14 . More precisely, if kT = T β and vT = T γ , in order that
+conditions
+
+
+1 kT 2
+kT
+vT
+→ 0 and
+→∞
+T
+T vT
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+327
+
+are met, it enough that β −1+γ < 0 and β −γ − 12 > 0 or equivalently, β < 1−γ
+and β > γ + 12 from which follows that given γ < 14 we can choose β such that
+the conditions hold.
+(b) α-mixing case: Our assumptions imply that we can choose kT such that vT = T γ
+for any γ < 12 . More precisely, if kT = T β and vT = T γ , in order that conditions
+
+kT
+kT
+→ 0 and
+→∞
+vT
+T
+vT
+are met, it enough that β − 1 + γ < 0 and β − γ > 0 or equivalently, β < 1 − γ
+and β > γ from which follows that given γ < 12 we can choose β such that the
+conditions hold.
+Next we show the asymptotic normality of our estimator assuming the classical
+α-mixing dependence condition. The result can still be shown for (G, α, ψ)-weak
+dependent sequences (using for instance Theorem 6.1 in Neumann and Paparoditis
+2008), although it requires some technical hypotheses which we would like to avoid.
+On the other hand, for (α, φ)-weak dependent sequences there is not yet a Central
+Limit Theorem (CLT from now on) available. As in Castellana and Leadbetter (1986)
+and Llop et al. (2011), the functional
+nature of the data makes possible to attain a
+√
+parametric rate of convergence T for our density estimator as stated in the following
+result:
+Theorem 2 (Asymptotic normality) Assume that H1, H2 and H5 hold for X (s).
+Choose a sequence {kT } of positive real numbers going to infinite such that
+kT2 /T 3/2 → 0
+
+and kT2 /T → ∞.
+
+(4)
+
+For that kT assume that H6 and H7 hold. Then, for all x ∈ R
+
+√ 
+
+2|S|
+
+in distribution.
+T fX (x) − fX (x) → N 0,
+co
+Remark 4 Observe that for this result we ask α to verify H5 which is weaker than the
+condition for the (α, φ)-weak dependence required in Theorem 1. However, for this
+result we require H7, which is another condition on the decay of the covariances.
+3.3 The nonstationary case: μ(s) any function
+If in model (1) we assume that the mean function μ(s) is any function then the process X (s) (with density fXs ) is not stationary any more. In this case, given a sample
+sequence of random fields {Xt (s)}Tt=1 and a sequence {kT } of real numbers such that
+kT /T < |S| we define the estimator of the density function fXs as
+
+
+fXs (x) = fu x − X̄T (s) ,
+being
+.
+fu (x) =
+
+kT
+2T |S|huT (x)
+
+(5)
+
+Author's personal copy
+328
+
+L. Forzani et al.
+
+with u = {UT 1 , . . . , UT T } given by UT t (s) = Xt (s) − X̄T (s) = et (s) − ēT (s).
+Here {e1 (s), . . . , eT (s)} is a sequence with the same distribution as e(s), ēT (s) =
+T
+1
+u
+T
+t=1 et (s) and hT is defined as in (2) replacing {et (s)}t=1 by u.
+T
+Remark 5 From Lemma 3, if X (s) admits a local time then fXs (x) is well defined.
+For every s fixed, the random variables {UT 1 (s), . . . , UT T (s)} with E(UT t (s)) = 0
+are identically distributed but not necessarily (α, φ)-weakly dependent. Therefore,
+we cannot use directly the results given in Sect. 3.2. However, we can still prove the
+complete convergence of the estimator of fXs and obtain rates of convergence.
+Theorem 3 (Rates of convergence) Assume H1–H3 and choose two sequences {kT }
+and {vT } of positive real numbers converging to infinity such that, for each fixed s,
+vT (T /kT )|ēT (s)| → 0 a.co. For that sequences, suppose that H4 holds. Then for each
+x∈R
+
+
+lim vT fXs (x) − fXs (x) = 0 a.co.
+T →∞
+
+Remark 6 If for s fixed the sequence {et (s)}Tt=1 is geometric α-mixing with
+|e(s)| < M for some constant M > 0, we can choose kT such that vT = T γ for
+any γ < 14 . More precisely, let kT = T β and vT = T γ . In order that conditions
+
+vT
+
+kT
+T
+
+→ 0 and
+
+1
+T
+
+
+
+kT
+vT
+
+2
+
+→∞
+
+are met, it is sufficient that β < 1 − γ and β > γ + 12 . In addition, in order that
+vT (T /kT )|ēT (s)| → 0 a.co., as ēT (s) = o(T −α ) with α < 12 it would be β > γ + 12
+from which follows that given γ < 14 we can choose β such that the conditions hold.
+Remark 7 In the stationary case, we got a faster rate of convergence in the geometric α-mixing case than in the geometric (α, φ)-weak case. However, we are not
+able to do the same in the nonstationary case since here we need the condition
+vT (T /kT )|ēT (s)| → 0 to hold and therefore vT = T γ for γ < 14 .
+
+4 Numerical examples
+4.1 A simulated example
+In this section we illustrate the performance of our method by estimating the marginal
+density function of a nonstationary random field process Xt (s) : R2 → R defined by
+Xt (s) = μ(s) + et (s) + θ et−1 (s),
+
+θ ∈ [0, 1],
+
+s = (s1 , s2 ) ∈ S = (0, 1] × (0, 1],
+
+t ≥ 1,
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+329
+
+Fig. 1 Estimated (dashed curve) and theoretical (solid curve) density functions of Xt (s) for μ(s1 , s2 ) =
+s1 + s2 , (s1 , s2 ) ∈ (0, 1] × (0, 1] for θ = 1/2
+
+where μ(s) = μ(s1 , s2 ) = s1 + s2 and, for each t, et (s) is a Gaussian stationary random field with E(et (s)) = 0, var(et (s)) = 1, et (s) independent of el (s), for t = l and
+cov(et (s), et (r)) = exp {−d(s, r)/0.25} with d(s, r) the Euclidean distance between
+s and r.
+We use the estimator defined in (5) for with 100 equispaced points in time and
+100 × 100 in space and compute the L1 -norm between the estimated (computed with
+cross-validated parameter) and the true density for different for different values of θ :
+θ
+
+L1 -norm
+
+0
+0.21
+0.5
+0.32
+0.99 0.57
+
+kT
+19.1
+26.4
+29.2
+
+As expected, the good behavior of the estimator decreases as θ increases. In Fig. 1
+we plot the estimator (dashed line) and the theoretical density (solid line) for some
+points of S for θ = 0.5. As we can see, the estimator fits very well the true density
+except in the tails where, due to the nature of the field and classical border effects,
+we are not able to perform a good estimation.
+4.2 A real data example: brain activity
+In neuroscience, it is well known that BOLD (blood-oxygen-level-dependence) activity in gray matter and white matter of the brain are different. The activity in areas
+
+Author's personal copy
+330
+
+L. Forzani et al.
+
+Fig. 2 (Left) Estimated mean. (Right) Estimated scale function
+
+of gray matter is higher than in the white matter, which is reflected in the difference
+between the mean μgray (s, t) and μwhite (s, t), the first being greater than the second
+one. One question that arises is whether the fluctuations around the mean may be
+detectable at the level of the distribution, i.e. if the density of the centered data is
+different from the BOLD activity at the gray and the white matter. To do this type
+of analysis, functional magnetic resonance imaging (from now fMRI) is used with
+two types of experimental paradigm: the common stimulus response paradigm and
+the “nonstimulus experiment”. When the brain is in absence of stimulus, we say that
+it is in a “resting state”. The brain at this condition has rich dynamics (see Fox and
+Raichle 2007), so this state is the most useful to study brain activity. Here we analyze a two dimensional (slice) axial cut of the brain at a resting state condition.
+The data studied correspond to one subject from the 1000 Functional Connectomes
+Project (see Chao-Gan and Yu-Feng 2010a, 2010b). For the same axial cut T = 225
+images of the brain were measured. Each image contains the same s = 1532 spatial
+points (voxels) at different times. Among the 1532 voxels 617 of them corresponds
+to the brain white matter and 884 to brain gray matter. The plots of the mean and
+scale functions are given in the next two figures (Fig. 2). We first standardize the data
+subtracting the mean value image and dividing by the scale image. Next we estimate
+the stationary density functions of the white and gray matter separately using the
+corresponding cross-validated parameters kT . The estimates obtained for the brain
+gray matter and the white gray matter (for the standardized data) are very close (see
+Fig. 3), which suggests that the main differences are just explained by the mean and
+the scale functions.
+
+5 Conclusions
+In this paper the problem of estimating the marginal density function of a random
+field that evolves in time was studied. For this purpose, a nearest-neighbor type estimator based on the occupation measure was defined for stationary and nonstationary
+random fields. Under dependence, strong rates of convergence were obtained and, for
+the stationary case, the asymptotic normality was also proven. The functional
+struc√
+ture of the data allowed us to obtain parametric rates of convergence T contrary
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+331
+
+Fig. 3 Estimated stationary
+density functions of brain gray
+(kT = 63.6) and white matter
+(kT = 46.7)
+
+to what generally happens in nonparametric problems. A small simulation study was
+performed and a real data example was analyzed to check the performance of the
+estimator.
+Acknowledgements We are most grateful to Daniel Fraiman for his very helpful insights to analyze the
+brain fMRI data. We would also like to thank Roberto Scotto for helpful discussions. The authors were
+supported by PICT2008-0921, PICT2008-0622, PI 62-309 and PIP 112-200801-0218.
+
+Appendix A: Auxiliary results
+Theorem 4 (Doukhan and Neumann 2006) Suppose that X1 , X2 , . . . , XT are realvalued random variables defined on a probability space (Ω, A, P ) with E(Xt ) = 0
+and P (|Xt | ≤ M) = 1, for all t = 1, . . . , T and some M < ∞. Let ST = Tt=1 Xt
+and φ : N2 → R+ be one of the following functions:
+–
+–
+–
+–
+
+φ(u, v) = 2v;
+φ(u, v) = u + v;
+φ(u, v) = uv;
+φ(u, v) = ρ(u + v) + (1 − ρ)uv, for some ρ ∈ (0, 1).
+
+We assume that there exist constants K, L1 , L2 < ∞, μ ≥ 0 and a nonincreasing
+sequence of real coefficients {α(n)}n≥1 such that, for all u-tuples (t1 , . . . , tu ) and all
+v-tuples (l1 , . . . , lv ) with 1 ≤ t1 ≤ tu < tu + r = l1 ≤ lv ≤ ∞ the following inequality
+is fulfilled:
+
+
+cov(Xt · · · Xt , Xl · · · Xl ) ≤ K 2 M u+v−2 φ(u, v)α(r),
+u
+v
+1
+1
+where
+∞
+
+(j + 1)k α(j ) ≤ L1 Lk2 (k!)μ ,
+j =0
+
+∀k ≥ 0.
+
+Author's personal copy
+332
+
+L. Forzani et al.
+
+Then,
+
+
+P (ST ≥ ) ≤ exp −
+
+ 2 /2
+1/(μ+2) (2μ+3)/(μ+2)
+ΣT + ΓT
+
+
+,
+
+where ΣT can be chosen as any number greater than or equal to σT2 = var(ST ) and
+
+ΓT = 2(K ∨ M)L2
+
+24+μ T K 2 L1
+ΣT
+
+∨1 .
+
+Theorem 5 (Doukhan et al. 1984) Let X1 , X2 , . . . , XT be a sequence of α-mixing
+random variables verifying E(Xt ) = 0 and |Xt | ≤ 1, for all t = 1, . . . , T . Let ST =
+T
+γ 1/γ }. Then, there
+t=1 Xt and denote γ = 2/(1 − θ ) and σ = sup1≤t≤T {E(|Xt | )
+exist constants C1 and C2 which depend only on the mixing coefficients, such that for
+0 < θ < 1,
+
+C2,T  1/2
+1
+P (ST ≥ ) ≤ C1 exp − 1/4 1/2 ,
+θ
+T σ
+where C2,T = C2 if T 1/2 σ ≤ 1 and C2,T = C2 T 1/4 σ 1/2 if T 1/2 σ > 1.
+Theorem 6 (Robinson 1983) Let {VtT }Tt=1 be a triangular array of zero mean random variables and {bT }T ≥1 a sequence of positive constants such that:
+(i) for each T , VtT , t = 1, . . . , T are identically distributed and α-mixing with the
+mixing coefficients α(r) verifying
+N
+
+∞
+
+
+α(r) → 0 as N → ∞;
+
+r=N
+
+(ii)
+(iii)
+(iv)
+(v)
+
+there exists M > 0 such that P (|VtT | ≤ M) = 1 for all t = 1, . . . , T ;
+bT → 0 and T bT → ∞ as T → ∞;
+2 )/b → σ 2 as T → ∞;
+there exists σ 2 > 0 such that E(VtT
+T
+E(|VtT V(t+s)T |) ≤ CbT2 for s ≥ 1, t = 1, . . . , T where C is independent of T .
+
+Then
+T
+
+
+1 
+VtT → N 0, σ 2
+√
+T bT t=1
+
+in distribution.
+
+Appendix B: Proof of main results
+Proof of Theorem 1 Let x ∈ R be fixed. By definition of complete convergence we
+need to show that for all  > 0,
+∞
+
+
+
+ 
+P vT fX (x) − fX (x) >  < ∞.
+T =1
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+333
+
+Using the definition of the estimator fX (x), it is enough to prove that
+∞
+
+
+P (AT ) < ∞ and
+
+T =1
+
+.
+where for T =
+
+
+vT
+
+∞
+
+
+P (BT ) < ∞,
+
+(6)
+
+T =1
+
+, the sets AT and BT are defined by
+
+.
+AT = AT (x) = hX
+T (x) <
+
+kT
+2T |S|(fX (x) + T )
+
+and
+. {hX
+T (x) >
+BT = BT (x) =
+∅
+
+kT
+2T |S|(fX (x)−T ) }
+
+si fX (x) > T
+si fX (x) ≤ T .
+
+To prove the left-side inequality of (6) (the proof of the right-side inequality is iden.
+kT
+tical and it will be omitted), let us define aT = aT (x) = 2T |S|(fX
+(x)+T ) so that
+AT = {hX
+T < aT }. From the equivalence
+hX
+T < aT ⇔
+
+T 
+
+t=1
+
+
+
+I(x−aT ,x+aT ) Xt (s) ds > kT ,
+S
+
+
+.
+=Y
+Tt
+
+we have
+
+
+P (AT ) = P
+
+T
+
+
+
+(7)
+
+YT t > kT .
+
+t=1
+
+.
+.
+Next we define Y T t = YT t − E(YT t ) and the probability pT = P (Xt (s) ∈ (x − aT ,
+x + aT )). Since E(YT t ) = |S|pT , using the definition of aT we get
+P (AT ) = P
+
+ T
+
+
+YTt
+
+
+> kT 1 −
+
+t=1
+
+1
+pT
+fX (x) + T 2aT
+
+
+.
+
+(8)
+
+pT
+=
+By the Mean Value Theorem there exists xT ∈ (x − aT , x + aT ) for which 2a
+T
+fX (xT ). In addition, by condition H2, the definition of aT and the fact that T → 0
+we have
+
+
+ pT
+ 
+
+
+ = fX (xT ) − fX (x) ≤ K|xT − x| ≤ KaT ≤ T ,
+−
+f
+(x)
+X
+ 2a
+
+2
+T
+
+from which it follows that
+1−
+
+pT
+2aT
+
+≤ fX (x) +
+
+T
+2
+
+and then
+
+pT
+1
+T /2
+1
+≥
+≥ C(x, ) .
+fX (x) + T 2aT
+fX (x) + T
+vT
+
+Author's personal copy
+334
+
+L. Forzani et al.
+
+Therefore, with this inequality in (8) we get
+ T
+
+
+kT
+YTt > C
+.
+P (AT ) ≤ P
+vT
+
+(9)
+
+t=1
+
+(a) Weakly dependent case: in order to use a Bernstein type inequality in (9), we need
+the following Lemma which will be proved in Appendix B.
+Lemma 4 Under H3 for X (s) we have
+(i) for any u-tuple (t1 , . . . , tu ) and any v-tuple (l1 , . . . , lv ), 1 ≤ t1 ≤ tu < tu + r =
+l1 ≤ lv ≤ T we have
+ 
+
+
+cov(Y T t · · · Y T t , Y T l · · · Y T l ) ≤ 2|S| u+v φ(u, v)α(r),
+1
+
+u
+
+1
+
+v
+
+where 2|S| is such that |Y T t | ≤ 2|S| for all t, α(r) → 0 with φ any of the functions given in H3;
+(ii) for some constant C,
+ T
+
+
+Y T t ≤ CT .
+var
+t=1
+
+Therefore, Lemma 4(i) implies that the sequence {Y T t }Tt=1 is (G, α, ψ)-weakly
+with f : Ru → R and g : Rv → R given by f (Y T t1 , . . . , Y T tu ) = Y T t1 · · · Y T tu and
+g(Y T l1 , . . . , Y T lv ) = Y T l1 . . . Y T lv , respectively, and ψ : G 2 × N2 → R+ defined by
+ψ(f, g, u, v) = (2|S|)u+v φ(u, v) with φ any of the four functions given in H3. Therefore, applying Theorem 4 with K = (2|S|)2 , M = 2|S|, ΓT = C and ΣT = CT in (9)
+we have
+
+∞
+∞
+
+
+CkT2
+P (AT ) ≤ T0 +
+exp − 2
+CvT T + CvT2 ( vkTT )(2μ+3)/(μ+2)
+T =T0
+T =1
+
+∞
+
+C
+,
+exp − vT 2
+≤ T0 +
+C( kT ) T + C( vkTT )1/(μ+2)
+T =T0
+
+and the result follows since (2μ + 3)/(μ + 2) < 2 and H4 ( vkTT )2 T → 0 and, as a
+consequence, vkTT → 0.
+(b) α-mixing case: under H1, H2, H3 and H4 for X (s). Since Xt verifies H5,
+Y T t inherits the same condition and then we apply the Bernstein inequality given in
+. tT
+Theorem 5 to the random variables ZT t = Y2|S|
+with |ZT t | ≤ 1 and E(ZT t ) = 0. For
+γ =
+
+2
+1−θ
+
+with 0 < θ < 1, it is easy to verify that E(|ZT t |γ )1/γ ≤ (2|S|)1−γ so that
+
+σ ≤ (2|S|)1−γ and then, since
+
+C2,T
+T 1/4 σ 1/2
+
+≥ C in (9) we have
+
+
+∞
+∞
+
+kT
+1 
+,
+P (AT ) ≤ T0 + C
+exp −C
+θ
+vT
+
+T =1
+
+which is finite by H4 .
+
+T =T0
+
+
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+335
+
+Proof of Theorem 2 For a fixed x ∈ R we define
+ST =
+
+T
+
+
+sT2 = var(ST ) and aT =
+
+YT t ,
+
+t=1
+
+kT
+2T |S|(fX (x) +
+
+√z
+T
+
+)
+
+.
+
+From the definition of fX (x) and analogously to (7) we have
+
+
+
+
+√ 
+P T fX (x) − fX (x) ≤ z = P hX
+T ≥ aT
+
+ST − E(ST ) kT − T |S|pT
+=P
+.
+≤
+sT
+sT
+Then the proof will be completed if we prove:
+ST −E(ST )
+→ N (0, 1)
+sT
+kT −T |S|pT
+→ 2|S|
+sT
+co z.
+
+(a)
+(b)
+
+in distribution;
+
+(a) It will a consequence of
+sT2
+T aT2
+
+ST√
+−E(ST )
+T aT
+
+=
+
+√1
+T aT
+
+T
+t=1 Y tT
+
+→ N (0, c02 ) and
+
+→ c02 where c02 is given in H6. To prove the second part observe that
+
+sT2 = var(ST ) =
+
+=
+
+T
+
+
+var(YT t ) + 2
+
+T
+−1
+
+T
+
+
+t=1
+
+t=1 s=t+1
+
+T
+
+
+T
+−1 T
+−t
+
+
+var(YT t ) + 2
+
+t=1
+
+cov(YT t , YT s )
+
+cov(YT t , YT t+l )
+
+(taking l = s − t).
+
+t=1 l=1
+
+Then,
+sT2
+T aT2
+
+=
+
+T
+T −1 T −t
+1 
+1 
+.
+var(Y
+)
++
+2
+cov(YT t , YT l+l ) = I + II.
+Tt
+T aT2 t=1
+T aT2 t=1 l=1
+
+(10)
+
+Since aT ∼ kT /T , from H6 we get
+1
+var(YT t )
+aT2
+=
+
+1
+aT2
+
+  
+
+
+
+S S {u:|u−x|≤aT } {v:|v−x|≤aT }
+
+
+
+fst (u, v) − fX (u)fX (v) du dv dt ds → c02 > 0,
+
+(11)
+from which follows that I → c02 as T → ∞. On the other hand, for N integer we
+write,
+T −1 N −1
+T −1 T −t
+
+.
+1   
+1   
+
+cov(YT t , YT t+l ) +2 2
+cov(YT t , YT t+l ) = III+IV,
+|II| ≤ 2 2
+T aT t=1 l=1
+T aT t=1 l=N
+
+Author's personal copy
+336
+
+L. Forzani et al.
+
+where the term IV is considered zero if T − t < N . Since
+ 
+ 
+
+
+ 
+
+P At (s) ∩ At+l (r) − P At (r) P At+l (r) ds dr,
+cov(YT t , YT l+l ) =
+S S
+
+.
+.
+and At (s) = {Xt (s) ∈ (x − aT , x + aT )} ∈ Mtt and At+l (r) = {Xt+l (s) ∈ (x − aT ,
+t+l
+x + aT )} ∈ Mt+l for each fixed s and r, hypothesis H5 implies that
+ 
+
+ 
+
+
+
+ 
+
+P At (s) ∩ At+l (r) − P At (r) P At+l (r)  ds dr
+cov(YT t , YT l+l ) ≤
+S S
+
+≤ |S|2 α(l),
+from which follows
+∞
+T −1 T −t
+∞
+
+C 
+C 
+C
+IV ≤
+α(l) ≤ 2
+α(l) =
+N
+α(l).
+T aT2 t=1 l=N
+aT l=N
+N aT2 l=N
+
+On the other hand, from H7 we have
+
+
+ cov(YT t , YT l+l )
+ 
+
+
+
+ 
+
+
+ 
+
+
+=
+P At (s) ∩ At+l (r) − P At (r) P At+l (r) ds dr
+S S 
+
+
+
+
+
+
+
+=
+fsr (u, v) − fX (u)fX (v) du dv ds dr
+S S {x:|u−x|≤ccT } {x:|v−x|≤ccT }
+≤ CaT4
+
+(12)
+
+for some constant C which implies that III ≤ 2CN aT2 and hence
+|II| ≤ 2CNaT2
+Let  > 0 fixed and N = 
+
+
+aT2
+
+∞
+
+C
++
+N
+α(l).
+N aT2 l=N
+
+. For this choice we get |II| ≤ C + C N
+
+∞
+l=N
+
+α(l) for
+
+T large enough (since aT ∼ kTT → 0). From hypothesis H5 there exists N0 such that
+2
+if M ≥ N0 , M ∞
+l=M α(l) <  . On the other hand, again since aT → 0, there exists
+
+2
+T0 such that if T ≥ T0 ,  2  ≥ N0 and then  2  ∞
+l= 2  α(l) < 2 which implies
+aT
+aT
+a
+T
+
+that II ≤ C which implies
+
+sT2
+T aT2
+
+→ c02 .
+
+(13)
+
+T
+2
+To prove that ST√−E(ST ) = √ 1
+t=1 Y tT → N (0, c0 ) we will show that the variT aT
+T aT
+.
+ables VT t = Y tT verify the assumptions (i)–(v) of the Lindeberg version of the CLT
+given in Theorem 6 with bT = aT2 . As before, since Xt verifies H5, Y T t inherits the
+same condition from which (i) follows. Condition (ii) holds for M = 2|S|. (iii) follows from (4) (since kT → ∞ and aT ∼ kTT → 0), H5 implies (iv) (see (11)) and H7
+implies (v) (see (12)). Therefore, from Theorem 6 we get the result since σ 2 = c02 .
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+337
+
+To prove (b) we use the definition of aT to get
+√
+ x+a
+2T aT |S|(fX (x) + z/ T ) − T |S| x−aTT fX (u) du
+kT − T |S|pT
+=
+sT
+sT
+ x+aT
+
+
+2T aT |S|z
+.
+fX (x) − fX (u) du +
+= sT−1 T |S|
+√
+sT T
+x−aT
+
+(14)
+
+By Taylor Theorem and since f has two derivatives bounded, for x ∗ between x and
+u we have
+ x+a
+ 
+
+
+T
+
+
+ ∗
+   1 x+aT
+2
+
+
+
+ ≤ Cs −1 T a 3 .
+−
+=
+f
+x
+(u
+−
+x)
+(x)
+−
+f
+(u)
+du
+f
+du
+X
+X
+T
+X
+T
+
+  2
+
+x−aT
+
+x−aT
+
+Therefore, in (14) we have
+
+
+2|S|z
+kT − T |S|pT
+= O sT−1 T aT3 +
+.
+√
+sT
+sT / T aT
+Finally, by hypothesis (4) and (13) sT−1 T aT3 → 0 then from (11) we get (b).
+
+
+
+Proof of Theorem 3 This proof will be an immediate consequence of Theorem 1 and
+of the following lemma which was proved in Llop et al. (2011, Lemma 5, p. 85). 
+Lemma 5 Assume H1–H3 and choose two sequences {kT } and {vT } of positive real
+numbers converging to infinity such that, for each fixed s, vT (T /kT )|ēT (s)| → 0 a.co.
+For this sequences, suppose that H4 hold. Then for each x ∈ R
+ 
+
+
+
+lim vT fu x − X̄T (s) − fe x − μ(s) = 0, a.co.
+n→∞
+
+where fe is the estimator of fe .
+
+Appendix C: Proof of the auxiliary lemmas
+Proof of Lemma 2 We need to prove that if α(r) ≤ aρ r with 0 < ρ < 1 and a > 0
+k
+k
+μ
+then, ∞
+j =0 (j + 1) α(j ) ≤ L1 L2 (k!) , ∀k ≥ 0. For that, let us suppose that α(r) ≤
+aρ r for some 0 < ρ < 1 and a > 0. If f (k) denotes the kth derivative of f then
+∞
+∞
+
+
+(j + 1)k α(j ) ≤ a
+(j + 1)k ρ j
+j =0
+
+j =0
+∞
+
+≤a
+(j + k)(j + k − 1) · · · (j + 1)ρ j
+j =0
+
+=a
+
+∞
+
+j =0
+
+(k)
+ρ
+
+j +k
+
+
+= a ρk
+
+1
+1−ρ
+
+(k)
+
+.
+
+(15)
+
+Author's personal copy
+338
+
+L. Forzani et al.
+
+Let C(k, j ) be denote the combinatorial number
+k
+
+
+(fg)(k) =
+
+n
+k
+
+. Since
+
+C(k, j )f (k−j ) g (j ) ,
+
+j =0
+
+ k (j )
+ρ
+=
+
+
+
+k!
+ρ k−j
+(k − j )!
+
+and
+
+1
+1−ρ
+
+(j )
+
+=
+
+j!
+(1 − ρ)j +1
+
+we have
+
+a ρk
+
+(k)
+
+1
+1−ρ
+
+=a
+
+k
+
+
+ (k−j )
+C(k, j ) ρ k
+
+j =0
+
+=a
+
+k
+
+
+C(k, j )
+
+j =0
+
+=a
+
+
+
+1
+1−ρ
+
+(j )
+
+j!
+k! j
+ρ
+j ! (1 − ρ)j +1
+
+
+k
+ρ
+k! 
+C(k, j )
+1−ρ
+1−ρ
+
+j
+
+1k−j
+
+j =0
+
+
+
+=
+
+1
+a
+1−ρ 1−ρ
+
+k
+
+k!
+
+where in the last equality we have used the Binomial Theorem. Then, with this inequality in (15), we get
+∞
+
+(j + 1)k α(j ) ≤
+j =0
+
+Therefore, taking L1 =
+
+a
+1−ρ ,
+
+L2 =
+
+
+1
+a
+1−ρ 1−ρ
+
+k
+
+k!
+
+and μ = 1 we get the result.
+
+1
+1−ρ
+
+
+
+Proof of Lemma 3 For T and x fixed, the function
+T 
+. 1
+G(r) =
+lT (u, Xt ) du,
+T
+I(x,r)
+t=1
+
+is strictly increasing with G(0) = 0. On the other hand, due to the existence of local
+time we can write
+G(r) =
+
+T
+1
+λ(I(x,r) , Xt ),
+T
+t=1
+
+then, G(r) → |S| when r → ∞ and therefore, the existence and uniqueness of hX
+T (x)
+is ensured. For a further reading on local times see Geman and Horowitz (1980). 
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+339
+
+Proof of Lemma 4 To prove part (i) let us consider the u-tuple (t1 , . . . , tu ) and the
+v-tuple (l1 , . . . , lv ) for 1 ≤ t1≤ tu < tu + r = l1 ≤ lv ≤ T and let C(k, j ) be denote
+n
+the combinatorial number k . Since E(YT t ) = |S|pT then,
+u
+
+
+Y T tk =
+
+k=1
+
+u
+u
+k
+
+
+ . 
+
+u−k 
+YT tk − pT |S| =
+C(u, k) −pT |S|
+YT ti .
+k=1
+
+k=0
+
+i=1
+
+Therefore, taking absolute value and considering that |pT | ≤ 1 we get
+
+
+cov(Y T t · · · Y T t , Y T l · · · Y T l )
+u
+v
+1
+1
+  u
+
+v
+
+
+
+
+
+
+= cov
+Y T tk ,
+Y T lm 
+
+
+k=1
+
+m=1
+
+  u
+
+v
+k
+m
+
+
+
+
+
+u−k 
+
+v−m 
+
+
+= cov
+C(u, k) −pT |S|
+YT ti ,
+C(v, m) −pT |S|
+YT lj 
+
+
+k=1
+
+i=1
+
+m=1
+
+  k
+
+u
+v
+m
+
+
+
+
+
+
+
+
+≤
+C(u, k)
+C(v, m)|S|u+v−(k+m) cov
+YT ti ,
+YT lj .
+
+
+k=1
+
+m=1
+
+i=1
+
+j =1
+
+(16)
+
+j =1
+
+To compute
+  k
+   k
+
+ k
+ m
+
+m
+m
+
+  
+
+
+
+
+
+
+
+ 
+
+YT ti ,
+YT lj  = E
+YT ti
+YT lj − E
+YT ti E
+YT lj ,
+cov
+
+ 
+
+j =1
+
+i=1
+
+j =1
+
+i=1
+
+i=1
+
+we will consider the following events:
+
+. 
+Ati (s) = ω ∈ Ω : Xti (s, ω) ∈ (x − aT , x + aT ) ,
+and
+
+
+. 
+Alj (r) = ω ∈ Ω : Xlj (r, ω) ∈ (x − aT , x + aT ) ,
+
+In addition, we will denote
+
+Su
+
+.
+dsu =
+
+
+
+i = 1, . . . , u
+
+j = 1, . . . , v.
+
+
+···
+
+S
+
+j =1
+
+ds1 · · · dsu .
+S
+
+Then,
+
+E
+
+k
+
+i=1
+
+=E
+
+YT ti
+
+m
+
+
+
+YT lj
+
+j =1
+
+ k 
+
+i=1
+
+S
+
+m 
+
+
+
+
+
+I(x−aT ,x+aT ) Xti (s) ds
+I(x−aT ,x+aT ) Xlj (r) dr
+j =1
+
+S
+
+
+
+Author's personal copy
+340
+
+L. Forzani et al.
+
+ 
+=
+
+Su
+
+E
+
+Sv
+
+P
+Su
+
+
+m
+
+
+
+
+I(x−aT ,x+aT ) Xti (s)
+I(x−aT ,x+aT ) Xlj (s) dsu drv
+
+i=1
+
+
+
+ 
+=
+
+ k
+
+
+Sv
+
+k
+
+
+
+
+m
+
+
+Ati (s) ∩
+
+j =1
+
+Alj (r) dsu drv ,
+
+(17)
+
+j =1
+
+i=1
+
+and similarly
+
+E
+
+k
+
+
+ 
+YT ti E
+
+m
+
+
+
+YT lj
+
+=
+
+j =1
+
+i=1
+
+
+
+ 
+P
+Su
+
+Sv
+
+k
+
+
+ 
+Ati (s) P
+
+m
+
+
+
+Alj (r) dsu drv .
+
+j =1
+
+i=1
+
+Hence,
+  k
+
+m
+
+
+
+
+
+
+YT ti ,
+YT lj 
+cov
+
+
+j =1
+
+i=1
+
+
+ k
+ m
+
+   
+k
+m
+
+
+
+
+
+
+≤
+Ati (s) ∩
+Alj (r) − P
+Ati (s) P
+Alj (r)  dsu drv
+P
+
+
+u
+v
+S S
+≤
+
+Su
+
+Sv
+
+j =1
+
+i=1
+
+ 
+
+j =1
+
+i=1
+
+α(r)φ(u, v) dsu drv = |S|u+v α(r)φ(u, v),
+
+(18)
+
+where in the last inequality we have used hypothesis H4 since, for each fixed s, r,
+since k ≤ u and m ≤ v,
+k
+
+
+Ati (s) ∈ Mttu1
+
+and
+
+m
+
+j =1
+
+i=1
+
+Alj (r) ∈ Mllv1 ,
+
+with 1 ≤ t1 ≤ tu < tu + r = l1 ≤ lv ≤ T . Finally, with inequality (18) in (16) we get
+  k
+
+m
+
+
+
+
+
+
+Y T ti ,
+Y T lj 
+cov
+
+
+j =1
+
+i=1
+
+≤
+
+u
+
+
+C(u, k)
+
+k=1
+
+≤
+
+u
+
+
+v
+
+
+C(v, m)|S|
+
+m=1
+
+C(u, k)
+
+k=1
+
+≤ |S|u+v
+
+v
+
+
+  k
+
+m
+
+
+
+
+
+YT ti ,
+YT lj 
+cov
+
+
+
+u+v−(k+m) 
+
+i=1
+
+C(v, m)|S|u+v−(k+m) |S|k+m α(l1 − ti )φ(u, v)
+
+m=1
+u
+
+k=1
+
+j =1
+
+C(u, k)
+
+v
+
+m=1
+
+
+u+v
+≤ 2|S|
+α(r)φ(u, v).
+
+C(v, m)α(r)φ(u, v)
+
+Author's personal copy
+Density estimation for spatial-temporal models
+
+341
+
+To prove part (ii) of this lemma, first observe that since var(YT t ) ≤ E(YT2 t ) ≤
+|S|2 pT2 ≤ |S|2 we may write
+
+var
+
+T
+
+t=1
+
+
+YTt
+
+≤
+
+T
+
+
+var(YT t ) + 2
+
+t=1
+
+T
+−1
+
+T
+
+
+
+cov(Y T t , Y T l )
+
+t=1 l=t+1
+
+≤ T |S|2 + 23 |S|2 φ(1, 1)
+
+T
+−1
+
+T
+
+
+α(l − t)
+
+t=1 l=t+1
+
+≤ CT .
+
+
+
+References
+Blanke D (2004) Adaptive sampling schemes for density estimation. J Stat Plan Inference 136(9):2898–
+2917
+Blanke D, Bosq D (1997) Accurate rates of density estimators for continuous-time processes. Stat Probab
+Lett 33(2):185–191
+Carbon M, Hallin M, Tran L (1996) Kernel density estimation for random fields: the L1 theory. J Nonparametr Stat 6(2–3):157–170
+Carbon M, Hallin M, Tran L (1997) Kernel density estimation for random fields (density estimation for
+random fields). Stat Probab Lett 36(2):115–125
+Castellana JV, Leadbetter MR (1986) On smoothed probability density estimation for stationary processes.
+Stoch Process Appl 21(2):179–193
+Chao–Gan Y, Yu-Feng Z (2010a) DPARSF: a MATLAB toolbox for “pipeline” data analysis of resting–
+state fMRI. Frontiers Syst Neurosci 4:1–7
+Chao–Gan Y, Yu-Feng Z (2010b). http://www.nitrc.org
+Doukhan P, Leon J, Portal F (1984) Vitesse de convergence dans le théoréme central limite pour des
+variables aleatoires mtlangeantes a valeurs dans un espace de Hilbert. C R Acad Sci Paris 289:305–
+308
+Doukhan P, Louhichi S (1999) A new dependence condition and applications to moment inequalities.
+Stoch Process Appl 84:313–342
+Doukhan P, Neumann M (2006) Probability and moment inequalities for sums of weakly dependent random variables, with applications. Stoch Process Appl 117:878–903
+Fox MD, Raichle ME (2007) Spontaneous fluctuations in brain activity observed with functional networks.
+Nat Rev Neurosci 8:700–711
+Geman D, Horowitz J (1980) Occupation densities. Ann Probab 8(1):1–67
+Hallin M, Lu Z, Tran L (2001) Density estimation for spatial linear processes. Bernoulli 7(4):657–668
+Hallin M, Lu Z, Tran L (2004) Kernel density estimation for spatial processes: the L1 theory. Ann Stat
+88:61–75
+Kutoyants Y (2004) On invariant density estimation for ergodic diffusion processes. SORT 28(2):111–124
+Labrador B (2008) Strong pointwise consistency of the kT -occupation time density estimator. Stat Probab
+Lett 78(9):1128–1137
+Llop P, Forzani L, Fraiman R (2011) On local times, density estimation and supervised classification from
+functional data. J Multivar Anal 102(1):73–86
+Nguyen H (1979) Density estimation in a continuous-time stationary Markov process. Ann Stat 7(2):341–
+348
+Neumann M, Paparoditis E (2008) Goodness-of-t tests for Markovian time series models: central limit
+theory and bootstrap approximations. Bernoulli 14(1):14–46
+Robinson PM (1983) Nonparametric estimators for time series. J Time Ser Anal 4:185–206
+
+Author's personal copy
+342
+
+L. Forzani et al.
+
+Rosenblatt M (1956) A central limit theorem and a strong mixing condition. Proc Natl Acad Sci USA
+42:43–47
+Rosenblatt M (1970) Density estimates and Markov sequences. In: Nonparametric techniques in statistical
+inference. Cambridge University Press, Cambridge, pp 199–210
+Tang X, Liu Y, Zhang J, Kainz W (2008) In: Advances in spatio-temporal analysis. ISPRS, vol 5
+Tran LT (1990) Kernel density estimation on random fields. J Multivar Anal 34(1):37–53
+Tran L, Yakowitz S (1993) Nearest neighbour estimators for random fields. J Multivar Anal 44(1):23–46
+
+

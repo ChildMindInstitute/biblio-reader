@@ -1,0 +1,1695 @@
+Biometrika (2016), 99, 1, pp. 1–17
+C 2016 Biometrika Trust
+Printed in Great Britain
+
+Advance Access publication on 2016
+
+Replicates in high dimensions, with applications to latent
+variable graphical models
+B Y KEAN MING TAN
+Department of Operations Research and Financial Engineering, Princeton University,
+Princeton, New Jersey 08544, U.S.A.
+kmtan@princeton.edu
+
+5
+
+YANG NING
+Department of Statistical Science, Cornell University, Ithaca, New York 14853, U.S.A.
+yn265@cornell.edu
+DANIELA M. WITTEN
+Department of Statistics, University of Washington, Seattle, Washington 98195, U.S.A.
+dwitten@uw.edu
+HAN LIU
+Department of Operations Research and Financial Engineering, Princeton University,
+Princeton, New Jersey 08544, U.S.A.
+hanliu@princeton.edu
+
+10
+
+AND
+
+S UMMARY
+In classical statistics, much thought has been put into experimental design and data collection.
+In the high-dimensional setting, however, experimental design has been less of a focus. In this
+paper, we stress the importance of collecting multiple replicates for each subject in this setting.
+We consider learning the structure of a graphical model with latent variables, under the assumption that these variables take a constant value across replicates within each subject. By collecting
+multiple replicates for each subject, we are able to estimate the conditional dependence relationships among the observed variables given the latent variables. To test the null hypothesis of
+conditional independence between two observed variables, we propose a pairwise decorrelated
+score test. Theoretical guarantees are established for parameter estimation and for this test. We
+show that our proposal is able to estimate latent variable graphical models more accurately than
+some existing proposals, and apply the proposed method to a brain imaging dataset.
+
+15
+
+20
+
+25
+
+Some key words: Experimental design; Nuisance parameter; Pairwise decorrelated score test; Semiparametric exponential family graphical model.
+
+30
+
+1. I NTRODUCTION
+Experimental design and data collection have been the subjects of extensive research (Box
+et al., 2005; Montgomery, 2008). For instance, randomised clinical trials are conducted to determine the treatment effect of a new drug, and sample size calculations are performed to determine
+the smallest number of patients needed to give sufficient power to detect the treatment effect. In
+
+35
+
+2
+
+40
+
+45
+
+50
+
+55
+
+60
+
+65
+
+70
+
+75
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+
+contrast, in the high-dimensional setting, statisticians are usually not involved in experimental
+design and data collection. Given a cost constraint, investigators often try to obtain the largest
+possible number of subjects; that is, replicates are typically not collected for each subject. In this
+paper, we show that collecting replicates aids when learning an undirected graphical model with
+latent variables.
+In an undirected graphical model, each node represents a random variable, and an edge connecting a pair of nodes indicates that the two variables are conditionally dependent, given all
+the other variables. The Gaussian graphical model has been studied extensively (Meinshausen &
+Bühlmann, 2006; Yuan & Lin, 2007; Friedman et al., 2008; Rothman et al., 2008; Peng et al.,
+2009; Ravikumar et al., 2011; Cai et al., 2011; Sun & Zhang, 2013). Other authors have considered extensions to the case in which each node-conditional distribution belongs to a univariate
+exponential family (Ravikumar et al., 2010; Yang et al., 2015; Lee & Hastie, 2015; Chen et al.,
+2015). Others have considered estimating conditional dependence relationships using semiparametric or nonparametric approaches (Liu et al., 2009, 2012; Fellinghauer et al., 2013; Voorman
+et al., 2014).
+However, in many scientific studies, we observe only a subset of the relevant variables. For
+instance, in the context of a gene expression study, certain patients may have undiagnosed disease
+or some unknown risk factors. If the heterogeneity among patients is ignored, then the estimated
+conditional relationships among the genes may be distorted. This is made apparent in recent work
+on Gaussian graphical modelling in the presence of latent variables (Chandrasekaran et al., 2012),
+which showed that after marginalizing over the latent variables, the conditional independence
+graph corresponding to the observed variables may be dense.
+In this paper, we propose an estimator and develop theory for the semiparametric exponential
+family graphical model with latent variables. This work builds upon an unpublished 2014 technical report by Yang et al. (arXiv:1412.8697), in which the semiparametric exponential family
+graphical model was introduced. We assume that these variables are constant across replicates
+within a given subject and that we have at least two replicates per subject. We exploit the replicates in order to construct a nuisance-free loss function that does not depend on the latent variables. In addition, we propose a pairwise decorrelated score test of the null hypothesis that two
+variables are conditionally independent, given all the other variables.
+
+2. A M ODEL FOR L ATENT VARIABLE G RAPHICAL M ODELS
+2·1. Review of the semiparametric exponential family graphical model
+We provide a brief review of the semiparametric exponential family graphical model proposed in Yang et al. (arXiv:1412:8697). Let X be a p-dimensional random vector and let
+X−j = (X1 , . . . , Xj−1 , Xj+1 , . . . , Xp )T . The p-dimensional random vector X follows the semiparametric exponential family graphical model if, for any node j, the conditional density of Xj
+given X−j satisfies
+
+T
+p(xj | x−j ) = exp xj βj,−j
+x−j + fj (xj ) − Aj (βj , fj ) ,
+(1)
+where βj,−j encodes the conditional dependence relationships between the jth node and the
+other nodes, fj (·) is an unknown function, and Aj (·) is the log-partition function. Because fj (·)
+is unknown, obtaining the maximum likelihood estimator of (1) may be infeasible. To estimate
+βj,−j , we can instead construct a loss function that does not depend on fj (·).
+Let Xi and xi be the random variables and data corresponding to the ith subject, respectively.
+(·)
+Let x·j = (x1j , . . . , xnj )T , and let xj and z·j be the order and rank statistics of x·j , respec-
+
+Latent variable graphical models
+
+3
+
+(·)
+
+tively. For instance, if x·j = (1, 5, 2)T , then xj = (1, 2, 5)T and z·j = (1, 3, 2)T . Furthermore,
+let x·,−j denote an n × (p − 1) matrix obtained by stacking the vectors x·k for k 6= j. The joint
+conditional density of the jth variable given the others can be decomposed as
+n
+o n
+o
+(·)
+(·)
+p(x·j | x·,−j , βj,−j , fj ) = p z·j | x·,−j , xj , βj,−j p xj | x·,−j , βj,−j , fj ,
+the product of the conditional density of the rank statistics given the order statistics, and the
+density of the order statistics. The former does not depend on fj (·): the key insight is that the
+rank statistics given the order statistics have no information about fj (·). Rather than estimating
+βj,−j from the joint conditional density that involves the unknown function fj (·), we can estimate
+βj,−j by maximising the conditional density of the rank statistics.
+However, computing the conditional density of the rank statistics may be computationally
+prohibitive. Thus, we can consider the conditional density formed by a single pair of samples,
+and construct a nuisance-free likelihood function by multiplying the conditional densities of the
+n(n − 1)/2 pairs of samples. This approach is also considered in Ning et al. (2016) in the context
+of semiparametric regression.
+2·2. Semiparametric exponential family graphical models with latent variables
+We generalise the semiparametric exponential family graphical model to accommodate latent
+T T
+T
+) be a (p + h)-dimensional random vector, where XO ∈ Rp and
+, XH
+variables. Let X = (XO
+h
+XH ∈ R are the vectors of observed and latent random variables, respectively. We let O =
+{1, . . . , p} and H = {p + 1, . . . , p + h} denote the index sets of the observed and latent random
+variables, respectively.
+D EFINITION 1. A (p + h)-dimensional random vector X = (XOT , XHT )T follows a semiparametric exponential family graphical model with latent variables, if for any node j, the conditional
+density of Xj given X−j satisfies
+
+T
+p(xj | x−j ) = exp xj βj,−j
+x−j + fj (xj ) − Aj (βj , fj ) ,
+
+80
+
+85
+
+90
+
+95
+
+100
+
+where fj (xj ) is some possibly unknown function and Aj (βj , fj ) is the log-partition function.
+For any j ∈ O, we write XO\j = (X1 , . . . , Xj−1 , Xj+1 , . . . , Xp )T ∈ Rp−1 and X−j =
+T
+T T
+(XO\j
+, XH
+) ∈ Rp+h−1 . Let βj,O\j = (βj1 , . . . , βj,j−1 , βj,j+1 , . . . , βjp )T ∈ Rp−1 , βj,H =
+T
+T
+(βj,p+1 , . . . , βj,p+h )T ∈ Rh , and βj = (βj,O\j
+, βj,H
+)T . The model introduced in Definition 1 can
+be rewritten as
+n
+o
+T
+T
+p(xj | x−j ) = exp xj βj,O\j
+xO\j + xj βj,H
+xH + fj (xj ) − Aj (βj , fj ) .
+(2)
+The parameters βj,O\j and βj,H encode the conditional dependence relationships between the
+jth node and all the other observed and latent variables, respectively. In particular, βjk = 0 if
+and only if the jth and kth nodes are conditionally independent, given all the other nodes.
+Pp+h P
+Pp+h
+In this paper, we assume that: βjk = βkj and exp{ j=1
+k6=j βjk xj xk /2 +
+j=1 fj (xj )}
+is integrable with respect to its measure. By an application of Proposition 1 in Chen et al. (2015),
+under these conditions, there exists a joint probability distribution for the model introduced in
+Definition 1 that takes the form
+
+
+p+h X
+p+h
+
+1 X
+X
+p(x) ∝ exp
+βjk xj xk +
+fj (xj ) .
+(3)
+2
+
+j=1 k6=j
+
+j=1
+
+105
+
+110
+
+4
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+
+We provide two special cases of (2), and consider them in Section 4.
+
+115
+
+Example 1. The Gaussian graphical model with latent variables: let X = (XOT , XHT )T ∼
+N (0, Σ), where Σ ∈ R(p+h)×(p+h) and let Θ = Σ−1 . For j ∈ O, the conditional density of Xj
+given all the other variables is
+
+
+2 
+
+1/2
+
+T
+
+
+Θj,−j x−j 
+Θjj
+T
+T
+2
+exp −xj Θj,O\j xO\j − xj Θj,H xH − Θjj xj /2 −
+.
+p(xj | x−j ) =
+
+
+2π
+2Θjj
+
+
+Comparing this to (2), we see that βj,O\j = −Θj,O\j , βj,H = −Θj,H , fj (xj ) = −Θjj x2j /2, and
+P
+Aj (βj , fj ) = ( k6=j Θjk xk )2 /(2Θjj ) + log(2π/Θjj )/2.
+
+120
+
+Example
+2. The Ising model with latent variables: let Xj ∈ {0, 1} with joint density p(x) ∝
+P
+exp( j<k Θjk xj xk ). For j ∈ O, the conditional density of Xj given the other variables is
+h
+
+ i
+p(xj | x−j ) = exp xj ΘTj,O\j xO\j + xj ΘTj,H xH − log 1 + exp ΘTj,−j x−j
+.
+Comparing this to (2), we see that βj,O\j = Θj,O\j , βj,H = Θj,H , fj (xj ) = 0, and Aj (βj , fj ) =
+log{1 + exp(ΘTj,−j x−j )}.
+
+125
+
+130
+
+135
+
+2·3. From replicates to a nuisance-free loss function
+Recall that we are interested in estimating the conditional dependence relationships among the
+observed variables given the latent variables, βj,O\j . Due to the presence of the possibly unknown
+function fj (xj ) and the latent variables xH in (2), it is not possible to directly maximise (2) with
+respect to βj,O\j . By collecting multiple replicates per subject, and assuming that the latent
+variables are constant across replicates for a given subject, we construct a loss function that does
+not depend on the latent variables and the unknown function.
+Let Ri be the number of replicates for the ith subject. To simplify bookkeeping, we assume that
+R1 = · · · = Rn = R, though this assumption is not critical. Suppose that Xir , the random vector
+for the rth replicate for the ith subject is distributed as in (3), for i = 1, . . . , n and r = 1, . . . , R.
+0
+Throughout the paper, we assume that Xir and Xir0 are independent, while Xir and Xir may be
+dependent. Let xri = {(xriO )T , (xriH )T }T be the data corresponding to the rth replicate of the ith
+subject. We make two assumptions on the replicates.
+0
+
+Assumption 1. The latent variables are constant across replicates, that is, xriH = xriH = xiH
+for all 1 ≤ r0 ≤ r ≤ R.
+Assumption 2. Given the
+the R replicates are mutually independent. That is,
+QRlatent variables,
+1
+R
+r
+p(xiO , . . . , xiO | xiH ) = r=1 p(xiO | xiH ).
+140
+
+145
+
+Assumptions 1 and 2 are plausible in many scientific settings. For instance, consider a gene
+expression study in which the expression levels of thousands of genes are measured for a number of subjects. Certain subjects may have unknown risk factors that might be associated with
+their gene expression levels. In this setting, the observed variables are the genes, and the latent
+variables represent unknown risk factors. Assumption 1 is satisfied if the disease status or the
+unknown risk factors do not change across time. Assumption 2 is likely to be satisfied, if the
+gene expression levels are measured in multiple independent clinical visits.
+We now construct a nuisance-free loss function using an approach similar to the one outlined
+in Section 2·1, by exploiting the fact that R replicates are available for each subject. Under
+
+5
+
+Latent variable graphical models
+Assumption 2, the joint conditional density for the ith subject for j ∈ O is
+1
+R
+p(x1ij , . . . , xR
+ij | xi,−j , . . . , xi,−j ) =
+
+R
+Y
+
+p(xrij | xri,−j ).
+
+r=1
+
+Estimating βj,O\j by maximising the joint conditional density, which depends on both the unmeasured data xiH and the possibly unknown function fj (·), may not be feasible.
+0
+0
+(r,r0 )
+Let xij
+= {min(xrij , xrij ), max(xrij , xrij )} be the order statistics of a pair of replicates for
+the ith subject. The joint conditional density for the pair of replicates is
+
+
+0
+0
+0
+p Xijr = xrij , Xijr = xrij | xri,−j , xri,−j
+n
+o n
+o
+(4)
+0
+0
+0
+(r,r0 )
+(r,r0 )
+r0
+= p Xijr = xrij , Xijr = xij
+| xri,−j , xri,−j , xij
+p xij
+| xri,−j , xri,−j .
+0
+
+150
+
+0
+
+The following proposition shows that the conditional density p{Xijr = xrij , Xijr = xrij |
+(r,r0 )
+
+0
+
+xri,−j , xri,−j , xij
+
+0
+
+} does not depend on xriH , xriH , or on the unknown function fj (·).
+
+P ROPOSITION 1. Under Assumptions 1 and 2, for j ∈ O,
+n
+o n
+o−1
+0
+0
+0
+(r,r0 )
+rr0
+p Xijr = xrij , Xijr = xrij | xri,−j , xri,−j , xij
+= 1 + Rij
+(βj,O\j )
+,
+0
+
+0
+
+155
+
+(5)
+
+0
+
+rr (β
+r
+r
+T
+r
+r
+where Rij
+j,O\j ) = exp{−(xij − xij )βj,O\j (xi,O\j − xi,O\j )}.
+
+In the absence of latent variables, similar results were established in the context of the semiparametric generalised linear model (Equation (3.4) in Ning et al., 2016) and the semiparametric
+exponential family graphical model (Equation (3.1) in Yang et al. (arXiv:1412.8697)), both of
+which applied the approach outlined in Section 2·1.
+
+160
+
+Remark 1. When Assumption 1 is violated, the conditional density (5) takes the form
+h
+n
+oi−1
+0
+0
+0
+0
+T
+T
+1 + exp −(xrij − xrij )βj,O\j
+(xri,O\j − xri,O\j ) − (xrij − xrij )βj,H
+(xriH − xriH )
+,
+0
+
+0
+
+T
+which has an additional term (xrij − xrij )βj,H
+(xriH − xriH ) that depends on the latent variables.
+0
+Provided that |xriH − xriH | is sufficiently small, this term is ignorable, and therefore it has negligible effect on the estimation of βj,O\j .
+
+(r,r0 )
+
+165
+
+0
+
+To obtain an estimate of βj,O\j , we ignore the term p{xij
+| xri,−j , xri,−j } in (4), and consider
+the product of joint conditional densities over all pairs of replicates across the n subjects,
+n
+n
+o
+Y
+Y
+0
+0
+(r,r0 )
+.
+p xrij , xrij | xri,−j , xri,−j , xij
+i=1 1≤r<r0 ≤R
+
+This leads to a nuisance-free loss function that does not depend on the latent variables or on the
+unknown function, i.e.,
+
+
+ −1 X
+n
+n
+o
+X
+1
+rr0
+ R
+(βj,O\j )  .
+(6)
+log 1 + Rij
+`j (βj,O\j ) =
+2
+n
+0
+i=1
+
+∗
+βj,O\j
+
+1≤r<r ≤R
+
+From now onwards, we let
+be the true parameter values in (2) that encode the underlying conditional dependence relationships between the jth variable and the observed variables.
+
+170
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+
+6
+
+Similarly, we let fj∗ be the underlying function in (2). The following proposition justifies the use
+∗
+of the loss function (6) for estimating βj,O\j
+.
+
+175
+
+∗
+∗
+P ROPOSITION 2. For all j ∈ O, E{∇`j (βj,O\j
+)} = 0 and βj,O\j
+is a global minimizer of
+∗
+E{`j (βj,O\j )}, where E(·) is the expectation under the true parameters (βj,O\j
+, fj∗ ).
+
+To encourage the estimated parameter to contain many zero elements, we solve
+
+minimize `j (βj,O\j ) + λkβj,O\j k1 ,
+βj,O\j ∈Rp−1
+
+(7)
+
+where λ is a non-negative tuning parameter that controls the sparsity of the estimate β̂j,O\j . The
+0
+loss function (6) can be interpreted as a logistic loss function with xrij − xrij as the outcome and
+0
+0
+r
+r0
+xri,O\j − xri,O\j as the covariates. We create a pseudo-binary outcome x̃rr
+ij = sign(xij − xij )
+0
+
+180
+
+185
+
+versus
+
+∗
+∗
+6= 0,
+= βkj
+H1 : βjk
+
+(8)
+
+∗
+∗
+for any j, k ∈ O, by treating the remaining parameters βj,O\{j,k}
+and βk,O\{j,k}
+as nuisance parameters. The classical score test is often used for this purpose in the low-dimensional setting.
+However, in the high-dimensional setting, the score test statistic is not asymptotically normal,
+because the number of nuisance parameters is large. We propose a pairwise decorrelated score
+test to test the null hypothesis given in (8). The test is constructed so that the effect of the nuisance parameters is asymptotically negligible. The decorrelated score test has been previously
+considered in Ning & Liu (2016), Ning et al. (2016), and Yang et al. (arXiv:1412.8697).
+Let ∇`j (βj,O\j ) ∈ Rp−1 and ∇2 `j (βj,O\j ) ∈ R(p−1)×(p−1) be the gradient and the Hessian of
+the loss function `j (βj,O\j ) in (6), respectively. For k ∈ O \ j, we let
+
+∇k `j (βj,O\j ) =
+195
+
+0
+
+2·4. Pairwise decorrelated score test
+∗
+∗
+In this section, we consider testing a pre-specified component in βj,O\j
+and βk,O\k
+, that is,
+∗
+∗
+=0
+= βkj
+H0 : βjk
+
+190
+
+0
+
+r
+r
+r
+r
+and pseudo covariates x̃rr
+i,O\j = (xi,O\j − xi,O\j )|xij − xij |. We can then solve (7) using the R
+package glmnet for fitting an `1 -penalised logistic regression to obtain an estimate of βj,O\j .
+0
+When there are ties in the outcome, that is, xrij = xrij , we ignore the pair of observations, since
+its contribution to the loss function (6) is free of the parameter of interest, βj,O\j .
+
+∂`j (βj,O\j )
+∈ R,
+∂βjk
+
+∇−k `j (βj,O\j ) =
+
+∂`j (βj,O\j )
+∈ Rp−2 .
+∂βj,O\{j,k}
+
+Similarly, for k ∈ O \ j, we let
+∇2k,−k `j (βj,O\j ) =
+
+∂ 2 `j (βj,O\j )
+∈ Rp−2 ,
+∂βjk ∂βj,O\{j,k}
+
+∇2−k,−k `j (βj,O\j ) =
+
+∂ 2 `j (βj,O\j )
+∈ R(p−2)×(p−2) .
+(∂βj,O\{j,k} )2
+
+∗
+Define H j = E{∇2 `j (βj,O\j
+)} ∈ R(p−1)×(p−1) , and for k ∈ O \ j, let
+n
+o
+n
+o
+j
+j
+∗
+∗
+Hk,−k
+= E ∇2k,−k `j (βj,O\j
+) ∈ Rp−2 ,
+H−k,−k
+= E ∇2−k,−k `j (βj,O\j
+) ∈ R(p−2)×(p−2) .
+j
+∗ )T = (H j
+T
+−1 ∈ Rp−2 , and let β
+T
+T
+T
+Let (wjk
+j∨k = (βjk , βj,O\{j,k} , βk,O\{j,k} ) ∈
+k,−k ) (H−k,−k )
+R2p−3 denote the parameters associated with the loss functions for the jth and kth observed
+
+Latent variable graphical models
+
+7
+
+variables. The pairwise decorrelated score function for βjk is defined as
+∗ T
+∗ T
+Sjk (βj∨k ) = ∇k `j (βj,O\j ) + ∇j `k (βk,O\k ) − (wjk
+) ∇−k `j (βj,O\j ) − (wkj
+) ∇−j `k (βk,O\k ).
+(9)
+The last two terms in (9) are constructed so that the effect of the nuisance parameters on the
+score function is asymptotically negligible (Section 3·2 of Ning et al., 2016).
+∗ and w ∗ .
+The pairwise decorrelated score function (9) depends on the unknown quantities wjk
+kj
+We estimate them using a Dantzig selector type estimator (Candès & Tao, 2007),
+
+ŵjk = arg min kwk1
+w∈Rp−2
+
+subject to
+
+∇2k,−k `j (0, β̂j,O\{j,k} ) − wT ∇2−k,−k `j (0, β̂j,O\{j,k} )
+
+∞
+
+200
+
+≤ λw ,
+
+(10)
+where (0, β̂j,O\{j,k} ) is an estimate of βj,O\j obtained by solving (7) and replacing β̂jk with
+zero, and λw is a non-negative tuning parameter. With some abuse of notation in (10), we use the
+notation (0, β̂j,O\{j,k} ) to indicate (β̂j1 , . . . , β̂j,k−1 , 0, β̂j,k+1 , . . . , β̂jp ).
+∗ = 0 is obtained by replacing
+The estimated pairwise decorrelated score function for testing βjk
+∗ , and w ∗ in (9) with the estimated parameters (0, β̂
+βj,O\j , βk,O\k , wjk
+j,O\{j,k} ), (0, β̂k,O\{j,k} ),
+kj
+ŵjk , and ŵkj , respectively, leading to
+
+205
+
+T
+T
+∇−j `k (0, β̂k,O\{j,k} ).
+∇−k `j (0, β̂j,O\{j,k} ) − ŵkj
+Ŝjk = ∇k `j (0, β̂j,O\{j,k} ) + ∇j `k (0, β̂k,O\{j,k} ) − ŵjk
+(11)
+
+Let
+
+210
+
+jk
+jk
+jk
+jk
+T
+T
+2
+= Σ̂jk
+σ̂jk
+jk,jk − 2Σ̂jk,j\k ŵjk − 2Σ̂jk,k\j ŵkj + ŵjk Σ̂j\k,j\k ŵjk + ŵkj Σ̂k\j,k\j ŵkj ,
+
+(12)
+
+where Σ̂jk is to be defined in (16). For a given significance level 0 < α < 1, our proposed pairwise decorrelated score test takes the form
+(
+1, n1/2 Ŝjk /σ̂jk > Φ−1 (1 − α/2),
+ψjk (α) =
+(13)
+0, otherwise,
+where Φ(x) is the standard normal cumulative distribution function. We will show in Section 3·3
+that under the null hypothesis given in (8), the type I error of ψjk (α) converges to α. We summarise the overall procedure for conducting the pairwise decorrelated score test for (8) in Algorithm 1.
+
+∗ = β ∗ = 0.
+Algorithm 1. Pairwise decorrelated score test for testing H0 : βjk
+kj
+
+1.
+2.
+3.
+4.
+5.
+
+Obtain β̂j,O\j and β̂k,O\k by solving the optimization problem (7).
+Obtain ŵjk and ŵkj from (10).
+Calculate the estimated pairwise decorrelated score function Ŝjk as in (11).
+2 as defined in (12).
+Calculate σ̂jk
+∗ = β ∗ = 0 if |n1/2 Ŝ /σ̂ | > Φ−1 (1 − α/2), where
+Reject the null hypothesis H0 : βjk
+jk
+jk
+kj
+0 < α < 1 is the given significance level.
+
+215
+
+8
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+3.
+
+225
+
+T HEORETICAL R ESULTS
+3·1. Notation
+We use the Landau symbol f (n) = O{g(n)} to indicate the existence of a constant C > 0
+such that f (n) ≤ Cg(n) for two sequences f (n) and g(n). We write f (n) = Ω{g(n)} to indicate
+g(n) = O{f (n)}. In addition, we write f (n) = o{g(n)} if limn→∞ f (n)/g(n) → 0. We use
+the stochastic Landau symbol f (n) = OP {g(n)} to indicate that f (n) = O{g(n)} with high
+probability. For a vector v = (v1 , . . . , vd )T ∈ Rd , we let v ⊗2 denote the outer product vv T . For
+a symmetric matrix M ∈ Rd×d , we let kM k∞ = max1≤j,j 0 ≤d |Mjj 0 |. Also, let Λmin (M ) and
+Λmax (M ) denote the minimum and maximum eigenvalues of M , respectively.
+
+230
+
+3·2. Parameter estimation
+We provide an upper bound on the estimation error of β̂j,O\j obtained from solving (7). We
+study the asymptotic regime in which both n and p are allowed to grow, with R and h fixed.
+Proofs are deferred to the Supplementary Material. We first state an assumption on the first
+moment of the random variables and the local smoothness of the log-partition function.
+
+220
+
+Assumption 3. Let βj∗ , fj∗ be the true parameters in (3), and define the univariate function
+Āj (·) : R → R as
+
+
+
+
+Z
+p+h
+p+h X
+
+
+X
+X
+1
+∗
+Āj (u) = log  exp uxj +
+xj xk +
+fj∗ (xj ) dν(x ) .
+βjk
+
+
+2
+j=1 k6=j
+
+j=1
+
+00
+
+For all j ∈ O, we assume the following: (i) |E(Xj )| ≤ κm , and (ii) maxu:|u|≤1 Āj (u) ≤ κh .
+235
+
+240
+
+Assumption 3 allows us to control the tail behaviors of the random variables. The same assumption has been used in recent work on the mixed graphical model (Chen et al., 2015).
+∗ 6= 0, k ∈ O \ j} be the support set of β ∗
+Let Sj = {k : βjk
+j,O\j and let sj = |Sj | be the cardi2
+nality of the set Sj . Let smax = maxj∈O sj . Let κmin , REmin , and ρq,min be the compatibility
+factor, restricted eigenvalue, and weak cone invertibility factor. These depend on the minimal
+eigenvalues of the Hessian matrix of the loss function, and will be defined rigorously in the Supplementary Material. These quantities are commonly used to establish upper bounds for estimation error in the context of `1 -penalised regression (Bickel et al., 2009; van de Geer & Bühlmann,
+2009). We now establish upper bounds on the estimation error of β̂j,O\j .
+T HEOREM 1. Let λ = C(log5 p/n)1/2 for some constant C > 0. For j ∈ O, assume the event
+
+
+
+
+
+r
+r0
+r
+r0
+A = max max0
+xij − xij xi,O\j − xi,O\j
+≤M
+1≤i≤n 1≤r<r ≤R
+
+∞
+
+and that M smax λ/κ2min = o(1). Under Assumption 3, there exists a constant C 0 > 0 such that
+∗
+kβ̂j,O\j − βj,O\j
+k1 ≤ C 0 smax λ/κ2min ,
+∗
+kβ̂j,O\j − βj,O\j
+k2 ≤ C 0 (smax )1/2 λ/REmin ,
+∗
+kβ̂j,O\j − βj,O\j
+kq ≤ C 0 (smax )1/q λ/ρq,min ,
+245
+
+(q ≥ 1),
+
+with probability at least 1 − p−1 .
+Theorem 1 generalises Theorem 4.4 in Yang et al. (arXiv:1412.8697). Interestingly, we obtain
+the same rate of convergence even when latent variables are present. Our rate of convergence
+
+9
+
+Latent variable graphical models
+
+does not depend on the number of latent variables h. Theorem 1 holds with high probability
+conditioned on the event A. For binary or categorical variables, A holds with M constant. In the
+case of sub-exponential random variables, it can be shown that A holds with high probability,
+with M = C log2 p for a sufficiently large constant C.
+The upper bounds on the estimation error in Theorem 1 depend on the quantities κ2min , REmin ,
+and ρq,min . These conditions can be bounded below by a positive constant when the random
+variables follow a multivariate Gaussian distribution.
+T HEOREM 2. Assume that smax (log9 p/n)1/2 = o(1). Let
+
+
+ΣO,O ΣO,H
+r T
+T
+{(XiO
+) , XiH
+}T ∼ N (0, Σ),
+Σ=
+.
+ΣH,O ΣH,H
+
+250
+
+255
+
+Under Assumption 3, for n sufficiently large, the quantities κ2min , REmin , and ρq,min are larger
+than CΛmin (Σ) with probability at least 1 − p−1 for some constant C > 0.
+3·3. Pairwise decorrelated score test
+In this section, we show that the type I error of the pairwise decorrelated score test in (13)
+∗ = β ∗ = 0. We
+converges to the desired significance level, under the null hypothesis H0 : βjk
+kj
+start by introducing some additional notation. Let
+0
+
+∗
+Uij (βj,O\j
+)
+
+2
+=−
+R(R − 1)
+
+0
+
+0
+
+X
+
+rr (β ∗
+r
+r
+r
+r
+Rij
+j,O\j )(xij − xij )(xi,O\j − xi,O\j )
+
+1≤r<r0 ≤R
+
+rr (β ∗
+1 + Rij
+j,O\j )
+
+0
+
+260
+
+∈ Rp−1 .
+
+j
+∗
+∗
+(βj,O\j
+) be the element in Uij (βj,O\j
+) corresponding to the kth feature
+Furthermore, let Uik
+j
+j
+∗
+∗
+and let Ui,−k
+(βj,O\j
+) ∈ Rp−2 be the vector obtained by removing the entry Uik
+(βj,O\j
+) from
+∗
+Uij (βj,O\j
+). For j, k ∈ O, we let
+
+
+ j
+∗
+k
+∗
+
+
+Uik (βj,O\j ) + Uij (βk,O\k )
+j
+∗
+∗
+)=
+∈ R2p−3
+gijk (βj∨k
+(βj,O\j
+)
+Ui,−k
+
+
+
+
+k (β ∗
+Ui,−j
+k,O\k )
+
+(14)
+
+and
+Σjk
+
+265
+
+
+
+jk
+Σjk
+Σjk
+n
+jk,j\k
+jk,k\j 
+ Σjk,jk
+
+o⊗2  
+jk
+jk
+jk
+∗
+= E gijk (βj∨k
+)
+= (Σjk,j\k )T Σj\k,j\k Σj\k,k\j ∈ R(2p−3)×(2p−3) . (15)
+
+
+ jk
+
+jk
+T
+(Σjk,k\j )T (Σjk
+j\k,k\j ) Σk\j,k\j
+
+The quantity Σjk can be estimated using
+n n
+
+ 1X
+o⊗2
+jk
+Σ̂
+0, β̂j,O\{j,k} , β̂k,O\{j,k} =
+gijk (0, β̂j,O\{j,k} , β̂k,O\{j,k} )
+.
+n
+
+(16)
+
+i=1
+
+In what follows, we write Σ̂jk to indicate Σ̂jk (0, β̂j,O\{j,k} , β̂k,O\{j,k} ).
+We now state several assumptions. Recall from (9) that the pairwise decorrelated score funcj
+∗ )T = (H j
+T
+−1 ∈ Rp−2 . The following assumption depends on the quantity (wjk
+k,−k ) (H−k,−k )
+tion on the expected Hessian of the loss function guarantees that the pairwise decorrelated score
+function (9) is well-defined.
+
+270
+
+10
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+∗
+Assumption 4. Let H j = E{∇2 `j (βj,O\j
+)}. For all j ∈ O, assume that
+j
+j
+H
+0 < ΛH
+lower ≤ Λmin (H ) ≤ Λmax (H ) ≤ Λupper < ∞.
+∗ ) defined in (14) is not degenerate, in the sense
+The next assumption guarantees that gijk (βj∨k
+
+275
+
+∗ ) is not equal to zero. It
+that the variance of any linear combination of the elements of gijk (βj∨k
+is needed to guarantee the existence of the asymptotic variance of the score function (9).
+
+Assumption 5. For j, k ∈ O, assume that Λmin (Σjk ) ≥ ΛΣ
+lower > 0.
+∗ = β ∗ = 0, the type
+The following theorem establishes that under the null hypothesis H0 : βjk
+kj
+I error of ψjk (α) in (13) converges to α, and the associated p-value is asymptotically uniformly
+distributed in the [0, 1] interval.
+280
+
+T HEOREM 3. Let the pairwise decorrelated score test with significance level 0 < α < 1,
+∗ = β ∗ = 0 if ψ (α) = 1.
+ψjk (α), be as defined in (13). We reject the null hypothesis H0 : βjk
+jk
+kj
+1/2
+The associated p-value is defined as p̂jk = 2{1 − Φ(|n Ŝjk /σ̂jk |)}, where
+jk
+jk
+jk
+jk
+2
+T
+T
+σ̂jk
+= Σ̂jk
+jk,jk − 2Σ̂jk,j\k ŵjk − 2Σ̂jk,k\j ŵkj + ŵjk Σ̂j\k,j\k ŵjk + ŵkj Σ̂k\j,k\j ŵkj .
+
+285
+
+Under Assumptions 3–5 and scaling assumptions in Assumptions S1–S2 in the Supplementary
+Material, limn→∞ pr{ψjk (α) = 1 | H0 } = α and p̂jk converges to a uniform distribution on
+the interval [0, 1].
+Results similar to Theorem 3 have been proven in the context of semiparametric regression and graphical models (Theorem 4.1 in Ning et al., 2016; Theorem 4.7 of Yang et al.
+(arXiv:1412.8697)).
+
+290
+
+295
+
+300
+
+305
+
+4. S IMULATION S TUDIES
+4·1. Overview and competing proposals
+∗ 6= 0 if and only if the jth and kth nodes are conditionally
+Recall from Definition 1 that βjk
+dependent, given all the other variables. To evaluate the performance across different methods,
+we define the true positive rate as the proportion of correctly identified non-zeros, and the false
+positive rate as the proportion of zeros that are incorrectly identified to be non-zeros. To examine
+the finite-sample performance of the pairwise decorrelated score test, we test the null hypothesis
+∗ = 0. The type I error and power are calculated as the proportion of falsely rejected H
+H0 : βjk
+0
+and correctly rejected H0 , respectively.
+Five approaches are compared in our simulation studies: our proposal; the low-rank plus
+sparse latent variable Gaussian graphical model (Chandrasekaran et al., 2012); the semiparametric exponential family graphical model in Yang et al. (arXiv:1412.8697); the graphical lasso
+(Friedman et al., 2008); and the neighbourhood selection procedure (Meinshausen & Bühlmann,
+2006; Ravikumar et al., 2011). Our proposal, Meinshausen & Bühlmann (2006), Ravikumar et al.
+(2011), and the semiparametric exponential family graphical model yield asymmetric estimates
+of the edge set. To symmetrise the edge set, we consider both the intersection and union rules
+described in Meinshausen & Bühlmann (2006), and report the best results for the competing
+proposals. We report our results using only the union rule.
+Since the competing methods cannot accommodate replicates, we apply them to all nR observations, treating the replicates as independent samples. Our proposal, Friedman et al. (2008),
+Meinshausen & Bühlmann (2006), Ravikumar et al. (2011), and the semiparametric exponential
+
+Latent variable graphical models
+
+11
+
+family graphical model each involves one tuning parameter. We applied a fine grid of tuning
+parameter values to obtain the curves shown in Figs. 1–4. There are two tuning parameters for
+Chandrasekaran et al. (2012). We set the second tuning parameter to equal ten times the first,
+and consider a fine grid of the first. Similar results were obtained for different ratios of the two
+tuning parameters.
+4·2. Gaussian graphical models with latent variables
+Let Θ =
+be the inverse covariance matrix of a Gaussian distribution, so that from Exam∗ = −Θ . We partition Θ and Σ into
+ple 1, βjk
+jk
+
+
+
+
+ΘO,O ΘO,H
+ΣO,O ΣO,H
+Θ=
+,
+Σ=
+,
+ΘH,O ΘH,H
+ΣH,O ΣH,H
+
+310
+
+315
+
+Σ−1
+
+where ΘO,O , ΘO,H , and ΘH,H encode the conditional dependence relationships among the observed variables, between the observed and latent variables, and among the latent variables. We
+construct ΘO,O by randomly setting 10% of the off-diagonal entries to 0·3. For ΘO,H and ΘH,H ,
+we randomly set 80% of the off-diagonal entries to 0·3. To ensure the positive definiteness of Θ,
+we set Θjj = |Λmin (Θ)|+0·2 for j = 1, . . . , p + h. Finally, we set Σ = Θ−1 .
+We first generate the latent variables xiH for the n subjects from N (0, ΣH,H ). We then
+simulate the R replicates for each subject from the conditional distribution of the observed
+−1
+variables N (ΣO,H Σ−1
+H,H xiH , ΣO,O − ΣO,H ΣH,H ΣH,O ). The results for n = 100, p = 100, h =
+{2, 5, 10}, and R = 10, averaged over 100 datasets, are presented in Fig. 1.
+In general, our proposal outperforms Friedman et al. (2008), Meinshausen & Bühlmann
+(2006), and the semiparametric exponential family graphical model, which do not model the
+latent variables. As shown in Fig. 1(a), our proposal has performance similar to Chandrasekaran
+et al. (2012), even though this is intended for the Gaussian setting which holds here, whereas
+our approach is semiparametric. As we increase the number of latent variables, the low-rank assumption of Chandrasekaran et al. (2012) is increasingly violated. Our proposal, which does not
+rely on the low-rank assumption, outperforms Chandrasekaran et al. (2012) when h is large.
+Next, we investigate the role of the number of latent variables h and replicates R in the performance of our proposed method. We vary the ratio of R and h, while keeping n = 100 and
+p = 100 fixed. In addition, to study the tradeoff between n and R, we keep p = 100 and h = 3
+fixed, and vary n and R with nR = 600. The results, averaged over 100 datasets, are shown in
+Fig. 2. From Figs. 2(a)–(b), we see that our proposal’s performance improves as we increase the
+ratio R/h. From Fig. 2(c), we see that the performance of our method improves when R > 2.
+This suggests that for a fixed experimental budget, that is, keeping nR fixed, it may be beneficial
+to collect more than two replicates per sample.
+Our proposal relies on Assumption 1, which states that the latent variables are constant
+across replicates. We perform a sensitivity analysis by allowing the latent variables to vary
+across replicates within each subject. Let zir be a h-vector with each element independently
+drawn from a uniform distribution U [−, ]. We simulate the rth replicate for the ith obser−1
+r
+vation from N {ΣO,H Σ−1
+H,H (xiH + zi ), ΣO,O − ΣO,H ΣH,H ΣH,O }. We consider five values of
+ = {0, 1, 1·5, 2, 2·5}. Results averaged over 100 datasets are in Fig. 3, which shows that our
+proposal is robust to small perturbations of the latent variables.
+We now perform the pairwise decorrelated score test described in Algorithm 1, in order to
+∗ = 0. The pairwise decorrelated score test involves two tuning
+test the null hypothesis H0 : βjk
+parameters, λ in (7) and λw in (10). We select λ using 10-fold cross-validation, implemented in
+the R package glmnet. We use the R package fastclime to solve (10). We set λw = 0·06, so that
+
+320
+
+325
+
+330
+
+335
+
+340
+
+345
+
+350
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+1.0
+
+1.0
+
+0.8
+
+0.8
+
+0.8
+
+0.6
+0.4
+0.2
+
+True positive rate
+
+1.0
+
+True positive rate
+
+True positive rate
+
+12
+
+0.6
+0.4
+
+0.0
+
+0.0
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+0.4
+0.2
+
+0.2
+
+0.0
+
+0.6
+
+0.0
+
+False positive rate
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+0.0
+
+1.0
+
+(a)
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+False positive rate
+
+False positive rate
+
+(b)
+
+(c)
+
+1.0
+
+1.0
+
+0.8
+
+0.8
+
+0.8
+
+0.6
+0.4
+
+True positive rate
+
+1.0
+
+True positive rate
+
+True positive rate
+
+Fig. 1: Results for the simulation study for the Gaussian graphical model with n = 100, p = 100,
+and R = 10. Panels (a), (b), and (c) correspond to h = {2, 5, 10} latent variables, respectively.
+The different curves represent our proposal (long-dashed), Chandrasekaran et al. (2012) (dots),
+Meinshausen & Bühlmann (2006) (grey long-dashed), Friedman et al. (2008) (grey dots), and
+the semiparametric exponential family graphical model in Yang et al. (arXiv:1412.8697) (grey
+dot-dashed).
+
+0.6
+0.4
+0.2
+
+0.2
+
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+False positive rate
+
+(a)
+
+1.0
+
+0.4
+0.2
+
+0.0
+
+0.0
+
+0.6
+
+0.0
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+False positive rate
+
+(b)
+
+1.0
+
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+False positive rate
+
+(c)
+
+Fig. 2: Results of a simulation study investigating the relationship between h and R, and
+the tradeoff between n and R. Panels (a) and (b) are the results for h = 8 with R =
+{2, 4, 6, 8, 10, 12}, and R = 6 with h = {4, 5, 6, 8, 12, 24}, respectively, with n = 100 and
+p = 100. The curves represent different ratios R/h: 0·25 (grey dot-dashed), 0·5 (grey dots),
+0·75 (grey long-dashed), 1 (dot-dashed), 1·25 (dots), and 1·5 (long-dashed). Panel (c) contains
+the results for p = 100 and h = 3, with different values of n and R such that nR = 600. The
+curves represent n = 100 and R = 6 (long-dashed), n = 120 and R = 5 (dots), n = 150 and
+R = 4 (grey long-dashed), and n = 300 and R = 2 (grey dots).
+
+355
+
+the estimates ŵjk and ŵkj contain a small number of non-zero entries. The results for p = 100,
+R = 4, and h = 4, over a range of sample sizes, are reported in Table 1. We see that the pairwise
+decorrelated score test is able to approximately control the type I error at level α =0·05.
+4·3. Ising model with latent variables
+We consider the Ising model with latent variables, as presented in Example 2. From Example 2,
+∗ = Θ . We construct Θ
+βjk
+O,O , ΘO,H , and ΘH,H as in the previous section, but with nonzero
+jk
+
+Latent variable graphical models
+
+13
+
+True positive rate
+
+1.0
+0.8
+0.6
+0.4
+0.2
+0.0
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+False positive rate
+
+Fig. 3: Sensitivity analysis with Unif[−, ] noise added to each replicate, with  = {1, 1·5,
+2, 2·5}. Results are for n = 100, p = 100, h = 4, and R = 6. The curves correspond to  = 0
+(solid),  = 1 (long-dashed),  =1·5 (dots),  = 2 (grey long-dashed), and  = 2·5 (grey dots).
+
+True positive rate
+
+1.0
+0.8
+0.6
+0.4
+0.2
+0.0
+0.0
+
+0.2
+
+0.4
+
+0.6
+
+0.8
+
+1.0
+
+False positive rate
+
+Fig. 4: Simulation results for the Ising model with n = 100, p = 50, h = 5, and R = 10, as
+described in Section 4·3. The curves represent our proposal (long-dashed) and the proposal of
+Ravikumar et al. (2011) (grey long-dashed).
+
+entries drawn uniformly from [−0·5,−0·25] ∪ [0·25,0·5]. Furthermore, we do not require Θ to
+be positive definite. To obtain samples from the joint density (3), we employ a Gibbs sampler as
+described in Section 4 of Guo et al. (2015). The results for n = 100, p = 50, h = 5, and R = 10,
+averaged over 100 data sets, are presented in Fig. 4. Our proposal outperforms that of Ravikumar
+et al. (2011), which does not model the latent variables.
+As in Section 4·2, we perform the pairwise decorrelated score test of the null hypothesis
+∗ = 0. We set λ = 0·005 in (10), so that the estimates ŵ
+H0 : βjk
+w
+jk and ŵkj are sparse. The
+tuning parameter λ in (7) is again chosen by cross-validation. The type I error and power for
+p = 50, R = 10, and h = 5, over a range of sample sizes, are in Table 1. We see that the pairwise
+decorrelated score test is able to approximately control the type I error rate at level α = 0·05.
+
+5. A PPLICATION TO ADHD-200 DATA
+We applied our method to the ADHD-200 data (Biswal et al., 2010). The data consist of
+resting state functional magnetic resonance images on 197 subjects who have been diagnosed
+with attention deficit hyperactivity disorder, and 491 control subjects. The number of images for
+each subject ranges from 76 to 276. Covariates such as age, gender, site, and intelligence quotient
+
+360
+
+365
+
+370
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+
+14
+
+Table 1: Type I error and power of the pairwise decorrelated score test at the 5% significance
+level are calculated as the % of falsely rejected and correctly rejected null hypotheses, respectively, over 2000 data sets. Data were generated under the Gaussian graphical model with latent
+variables with p = 100, R = 4, and h = 4. Data were generated under the Ising model with
+latent variables with p = 50, R = 10, and h = 5
+Gaussian
+Ising
+
+375
+
+380
+
+385
+
+390
+
+395
+
+400
+
+405
+
+Type I error
+Power
+Type I error
+Power
+
+n = 50
+9
+18
+7
+30
+
+n = 100
+7
+27
+5
+46
+
+n = 200
+6
+45
+5
+73
+
+n = 300
+5
+59
+5
+87
+
+n = 400
+5
+70
+5
+95
+
+are also available. Similar to Power et al. (2011) and Qiu et al. (2016), we use 264 seed regions
+of interest to define the nodes in the graphical model.
+We treat the images for each subject as replicates, and treat the covariates such as age and gender as latent variables. However, certain covariates such as age and gender serve as confounders
+that may alter the conditional dependence relationships among the variables. For instance, Qiu
+et al. (2016) showed that the brain networks at ages 7, 12, and 22 years are quite different. Biswal
+et al. (2010) showed that males and females have different brain connectivity networks. Thus,
+standard techniques for estimating graphical models that do not model the latent variables may
+yield inaccurate network estimates.
+After removing subjects with missing values, we consider 465 control subjects in the dataset.
+For computational purposes, we choose R = 10 replicates randomly for each subject. Assumption 2 may not hold, since the replicate brain images for a given subject are very likely to be
+dependent. We standardize each seed region to have mean zero and standard deviation one for
+each subject. Our proposal (7) involves one tuning parameter λ. For visualization, we set λ = 0·2
+so that the estimated network is sparse, but in practice, λ can be chosen by cross-validation. We
+then symmetrise our estimates using the intersection rule described in Section 4. This yields an
+estimated network with 376 edges. Figs. 5(a)–(c) show coronal, sagittal, and transverse snapshots
+of the estimated brain connectivity network.
+We compare our proposal to that of Friedman et al. (2008), which does not model the latent
+variables. We perform their proposal by treating the replicates as independent observations. For
+ease of comparison, the tuning parameter for Friedman et al. (2008) is chosen to yield 376 edges.
+The coronal, sagittal, and transverse snapshots of the estimated brain connectivity network from
+Friedman et al. (2008) are plotted in Figs. 5(d)–(f).
+The two estimated networks are somewhat different. For instance, we see from Figs. 5(b)
+and 5(e) that the lower region of the brain connectivity network estimated by their proposal is
+more densely connected than that of our proposal. This might be a consequence of marginalizing
+over the latent variables, as discussed in Chandrasekaran et al. (2012). In contrast, edges in the
+network estimated by our proposal seem to be more spread throughout the network.
+
+6. D ISCUSSION
+Our proposal can be generalised beyond estimating latent variable graphical models. For instance, in the context of regression, unmeasured confounders may remain constant across replicates. Without adjusting for these confounders, it can be shown that the estimated regression
+coefficients for the observed variables are biased. Using the ideas laid out in this paper, one can
+estimate the parameter of interest accurately by treating the confounders as nuisance parameters.
+
+15
+
+Latent variable graphical models
+
+(a) Coronal, our proposal
+
+(b) Sagittal, our proposal
+
+(c) Transverse, our proposal
+
+(d) Coronal, Friedman et al. (2008)
+
+(e) Sagittal, Friedman et al. (2008)
+
+(f) Transverse, Friedman et al. (2008)
+
+Fig. 5: Coronal, sagittal, and transverse snapshots of the estimated brain connectivity networks
+resulting from our proposal and Friedman et al. (2008). Panels (a)–(c) and panels (d)–(f) contain
+the estimated networks from our proposal and Friedman et al. (2008), respectively.
+
+Our model requires that the replicates are mutually conditionally independent given the latent
+variables; this is laid out in Assumption 2. In future work, it would be interesting to study whether
+that assumption can be relaxed.
+An R package latentGraph will be made available on CRAN.
+
+410
+
+ACKNOWLEDGEMENT
+We thank the editor, an associate editor, and two reviewers for helpful comments, Shizhe Chen
+for responding to our inquiries, and Huitong Qiu for providing us R code to plot Fig. 5.
+
+S UPPLEMENTARY MATERIAL
+Supplementary material available at Biometrika online includes proofs of the theoretical results and the scaling assumptions used in Theorem 3.
+
+415
+
+16
+
+K. M. TAN , Y. N ING , D. M. W ITTEN AND H. L IU
+R EFERENCES
+
+420
+
+425
+
+430
+
+435
+
+440
+
+445
+
+450
+
+455
+
+460
+
+465
+
+470
+
+B ICKEL , P. J., R ITOV, Y. & T SYBAKOV, A. B. (2009). Simultaneous analysis of Lasso and Dantzig selector. Ann.
+Statist. 37, 1705–1732.
+B ISWAL , B. B., M ENNES , M., Z UO , X.-N. et al. (2010). Toward discovery science of human brain function. Proc.
+Natl. Acad. Sci. 107, 4734–4739.
+B OX , G. E., H UNTER , J. S. & H UNTER , W. G. (2005). Statistics for Experimenters: Design, Innovation, and
+Discovery. New York: Wiley-Interscience, 2nd ed.
+C AI , T. T., L IU , W. & L UO , X. (2011). A constrained `1 minimization approach to sparse precision matrix estimation. J. Am. Statist. Assoc. 106, 594–607.
+C AND ÈS , E. J. & TAO , T. (2007). The Dantzig selector: statistical estimation when p is much larger than n. Ann.
+Statist. 35, 2313–2351.
+C HANDRASEKARAN , V., PARRILO , P. A. & W ILLSKY, A. S. (2012). Latent variable graphical model selection via
+convex optimization. Ann. Statist. 40, 1935–1967.
+C HEN , S., W ITTEN , D. M. & S HOJAIE , A. (2015). Selection and estimation for mixed graphical models. Biometrika
+102, 47–64.
+F ELLINGHAUER , B., B ÜHLMANN , P., RYFFEL , M., VON R HEIN , M. & R EINHARDT, J. D. (2013). Stable graphical
+model estimation with random forests for discrete, continuous, and mixed variables. Comp. Statist. Data Anal. 64,
+132–152.
+F RIEDMAN , J. H., H ASTIE , T. J. & T IBSHIRANI , R. J. (2008). Sparse inverse covariance estimation with the
+graphical lasso. Biostatistics 9, 432–441.
+G UO , J., C HENG , J., L EVINA , E., M ICHAILIDIS , G. & Z HU , J. (2015). Estimating heterogenous graphical models
+for discrete data with an application to roll call voting. Ann. Appl. Statist. 9, 821–848.
+L EE , J. D. & H ASTIE , T. J. (2015). Learning the structure of mixed graphical models. J. Comp. Graph. Statist. 25,
+230–253.
+L IU , H., H AN , F., Y UAN , M., L AFFERTY, J. D. & WASSERMAN , L. (2012). High-dimensional semiparametric
+Gaussian copula graphical models. Ann. Statist. 40, 2293–2326.
+L IU , H., L AFFERTY, J. D. & WASSERMAN , L. (2009). The nonparanormal: semiparametric estimation of high
+dimensional undirected graphs. J. Mach. Learn. Res. 10, 2295–2328.
+M EINSHAUSEN , N. & B ÜHLMANN , P. (2006). High-dimensional graphs and variable selection with the lasso. Ann.
+Statist. 34, 1436–1462.
+M ONTGOMERY, D. C. (2008). Design and Analysis of Experiments. New York: John Wiley & Sons, 8th ed.
+N ING , Y. & L IU , H. (2016). A general theory of hypothesis tests and confidence regions for sparse high dimensional
+models. Ann. Statist., in press.
+N ING , Y., Z HAO , T. & L IU , H. (2016). A likelihood ratio framework for high dimensional semiparametric regression.
+Ann. Statist., in press.
+P ENG , J., WANG , P., Z HOU , N. & Z HU , J. (2009). Partial correlation estimation by joint sparse regression models.
+J. Am. Statist. Assoc. 104, 735–746.
+P OWER , J. D., C OHEN , A. L., N ELSON , S. M. et al. (2011). Functional network organization of the human brain.
+Neuron 72, 665–678.
+Q IU , H., H AN , F., L IU , H. & C AFFO , B. (2016). Joint estimation of multiple graphical models from high dimensional
+time series. J. R. Statist. Soc. B 78, 487–504.
+R AVIKUMAR , P., WAINWRIGHT, M. J. & L AFFERTY, J. D. (2010). High-dimensional Ising model selection using
+`1 -regularized logistic regression. Ann. Statist. 38, 1287–1319.
+R AVIKUMAR , P., WAINWRIGHT, M. J., R ASKUTTI , G. & Y U , B. (2011). High-dimensional covariance estimation
+by minimizing `1 -penalized log-determinant divergence. Electron. J. Statist. 5, 935–980.
+ROTHMAN , A. J., B ICKEL , P. J., L EVINA , E. & Z HU , J. (2008). Sparse permutation invariant covariance estimation.
+Electron. J. Statist. 2, 494–515.
+S UN , T. & Z HANG , C.-H. (2013). Sparse matrix inversion with scaled lasso. J. Mach. Learn. Res. 14, 3385–3418.
+VAN DE G EER , S. A. & B ÜHLMANN , P. (2009). On the conditions used to prove oracle results for the lasso. Electron.
+J. Statist. 3, 1360–1392.
+VOORMAN , A., S HOJAIE , A. & W ITTEN , D. M. (2014). Graph estimation with joint additive models. Biometrika
+101, 85–101.
+YANG , E., R AVIKUMAR , P., A LLEN , G. I. & L IU , Z. (2015). Graphical models via univariate exponential family
+distributions. J. Mach. Learn. Res. 16, 3813–3847.
+Y UAN , M. & L IN , Y. (2007). Model selection and estimation in the Gaussian graphical model. Biometrika 94,
+19–35.
+
+[Received M Y . Revised M Y ]
+
+

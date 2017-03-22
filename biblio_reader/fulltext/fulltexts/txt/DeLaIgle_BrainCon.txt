@@ -1,0 +1,705 @@
+Chapter 3
+
+Brain Connections – Resting State
+fMRI Functional Connectivity
+Maria de la Iglesia-Vaya, Jose Molina-Mateo, Mª Jose Escarti-Fabra,
+Ahmad S. Kanaan and Luis Martí-Bonmatí
+Additional information is available at the end of the chapter
+http://dx.doi.org/10.5772/52273
+
+1. Introduction
+With the introduction of electroencephalography (EEG) in 1930, researchers began to
+explore spontaneous activity in the brain by recording the individual, independently of any
+task. Subsequently, evoked potential studies, where electrical potentials were recorded at the
+onset of a stimulus, marked a milestone in brain research. Utilizing such methods coupled
+with experimental psychology, researchers were able to explore task-related brain activity.
+These early methods paved the way for new approaches to exploring brain function.
+With the advent of blood oxygen-level dependent contrast (BOLD) measurements using
+MRI, the first fMRI study was published in 1992 by Kwong and colleagues [1]. Within two
+decades, fMRI has been an indispensable tool in the investigation of cognitive function of
+brain. Currently fMRI studies comprise 43% of all fMRI publications [2]. At the time, it was
+believed that when a stimulation paradigm is used to explore brain function (task-based
+fMRI), only a small percentage of the energy utilized by the brain is actually measured.
+The brain represents 2% of our entire body mass. Despite this, studies have shown that the
+human brain is responsible for approximately 20% of the energy we consume. Additionally,
+when one performs a specific cognitive task that involves attention or reflection, the brain
+only uses 5% of its total metabolic expenditure [3, 4]. Yet, how does the brain expend the
+majority of its energy?
+In 1995, Biswal and colleagues observed that regions that are co-activated during a task are
+correlated in their activity in the absence of a task [5]. This observation led to the conclusion
+that intrinsic activity in the brain is a major source of energy expenditure. Up to that point of
+time, spontaneous low frequency BOLD fluctuations were discarded as noise in task based
+fMRI studies. These signals were considered to be crucial to understanding the intrinsic
+activity of the brain.
+© 2013 de la Iglesia-Vaya et al., licensee InTech. This is an open access chapter distributed under the terms
+of the Creative Commons Attribution License (http://creativecommons.org/licenses/by/3.0), which permits
+unrestricted use, distribution, and reproduction in any medium, provided the original work is properly cited.
+
+52 Novel Frontiers of Advanced Neuroimaging
+
+Resting state fMRI relies on the assumption that spontaneous low frequency BOLD
+fluctuations are a measure of intrinsic activity in the brain. Furthermore, the robustness of
+functional connectivity analysis as a tool that reflects fundamental aspects of brain
+organization through various cognitive states is another assumption that underlies this
+methodology. Early methods of clinical observation and measurement were essential to the
+development of the neurosciences. With the emergence of these techniques in the 19th
+century, their application to the investigation of certain diseases and syndromes led the
+conclusion that certain areas of the brain are correlated with specific higher executive
+function, such as language and memory [6].
+However, it is currently understood that higher cognitive functions are not localized to
+specific areas of the brain, nor are they organized in a topographic fashion. Higher mental
+processes are based on the cohesive and dynamic interplay of a complex set of functional
+systems and cortical networks. To explore these dynamic and cohesive networks, the utility
+of fMRI in linking a specific task with a specific pattern of brain activation (a set of coactivated areas) is indispensable. For example, studies that sought to demarcate cortical
+regions of face recognition and mathematical computation demonstrated that such higher
+mental functions require the integration of distributed cortical regions. Thus, cognitive
+activities of higher mental order are not region specific, but are the result of the dynamic
+interplay of a diffuse set of cortical areas and their underlying anatomical connectivity.
+Consolidating the knowledge gleaned from various studies that focus on patterns of neural
+Activation is a serious challenge that the neuro-scientific community faces today. Studies of
+neurological and neuropsychiatric diseases [7] have substantiated that dysfunction in the
+brain is not due to a focal lesion or the alteration of a single brain area, but due to the failure
+of more widespread and diffuse systems. Schizophrenia and autism, for example, are
+currently regarded as complex disorders of connectivity between components of large-scale
+brain networks. The human brain is composed of approximately one billion neurons that
+establish a complex underlying network of structurally and functionally interconnected
+regions. Complex cognitive processes are possible as a result of the transmission of
+information between different functional areas of the brain [8]. By exploring the
+neuroanatomy of the brain and the underlying connectivity of different functional areas, we
+can afford new insights on the organization of the human brain.
+
+2. Brain connectivity: Basic concepts
+To better understand the concept of functional connectivity, it is necessary to differentiate
+between functional connectivity and structural connectivity. We define the two concepts in
+the sections below.
+
+2.1. Structural connectivity
+Structural connectivity is defined as the set of physical connections between neural units.
+Physically, anatomical connections are relatively stable over short time scales (seconds or
+minutes), however, on larger time scales (days) they are subject to significant morphological
+
+Brain Connections – Resting State fMRI Functional Connectivity 53
+
+changes due to neuroplasticity. Nonetheless, the acquisition of these 'static' images of the
+microstructure underlying the brain has wide implications on neuroscientific and clinical
+questions. Currently, structural connectivity is investigated via methods that span axonal
+tracing, histology and MRI. Technical progress in high-resolution MR has paved the road for
+the examination the human cortex in vivo at resolutions of up to 300 microns. These scales
+are approaching the resolutions obtained by histological analysis, which allow for the
+verification of information obtained with cytoarchitectural maps for better division of the
+images obtained by MR. [9]
+Early work by Hahn [10] focusing on the effects of molecular diffusion on the magnetic
+resonance signal marked a landmark in nuclear magnetic resonance research. Within a
+decade, pulsed magnetic field gradients for the measurement of molecular diffusion were
+introduced by Stejskal and Tanner [11]. Later, Le Bihan was able to incorporate diffusion
+sensitizing magnetic field gradients into MRI [12]. This led to a novel method that had wide
+applications in the analysis of the microstructure of the brain (Diffusion MRI). Diffusion
+MRI is based on the simple idea of tracking the random walk of water molecules in the
+anisotropic and confined space of axonal fibers. In 1994, Basser proposed a simple method
+to quantify the Brownian motion of water molecules using tensor models (Diffusion Tensor
+Imaging) [13]. While others models of quantifying diffusion were proposed, Basser`s single
+tensor model is the most popular. Further research on the application of the tensor model
+led to the introduction of tractography techniques (DTT, Diffusion Tensor Tractography). By
+tracking the path of the principal eigenvector in a single voxel, researchers were now able to
+reconstruct various white matter tracts noninvasively. However, the Diffusion Tensor
+models introduced had a limited number of degrees of freedom and assumed that the
+probability density function was Gaussian. As a result, single tensor diffusion imaging is
+intrinsically limited in the analysis of voxels with multiple fiber populations, which could be
+crossing, fanning or kissing [14]. Although multi-tensor models (high angular resolution
+diffusion) and Diffusion Spectrum Imaging methods were introduced to overcome these
+limitations, assumptions persist in these methods, making it difficult to explore
+neuroanatomy to a high degree of accuracy.
+To investigate the accuracy of these methods, several groups have attempted to compare
+noninvasive fiber tracking with gold standard methods [15,16]. Lawes performed a direct
+comparison between atlas based reconstruction methods and postmortem classical
+dissection methods [17]. Tracts reconstructed using the Diffusion Tensor model are accurate
+to some degree, as they have been applied to the clinical setting.
+Nonetheless, although it may provide important information about the structural
+connectivity between different brain areas, diffusion MRI does not provide a direct measure
+of functional connectivity in the brain. While diffusion imaging can provide information
+about the spatial relationship between two areas, it does not provide any information about
+their temporal correlation. Such information has vast implications for cognitive
+neuroscience research.
+
+54 Novel Frontiers of Advanced Neuroimaging
+
+Figure 1. Diffusion Tensor Tractography (left), graph of connectivity (center), functional connectivity
+(right). Modified from Hagmann P, Cammoun L, Gigandet X, Meuli R, Honey CJ, Wedeen VJ, Sporns O
+(2008) Mapping the structural core of human cerebral cortex. PLoS Biology.
+
+2.2. Functional connectivity
+Functional connectivity (FC) can be investigated through various analytic methods that
+include electroencephalogram (EEG), infrared light spectroscopy, task-based and resting
+state fMRI.
+By extracting correlation measurements from time series, functional
+connectivity information can be acquired. Functional connectivity is essentially a statistical
+concept [18]. Unlike anatomical connectivity, which describes physical pathways of
+information exchange, functional connectivity describes the correlation of spatially remote
+areas in the temporal domain. Dependence is calculated between all elements of a system,
+whether these elements are connected by direct or indirect structural links. Functional
+connectivity relies primarily on traditional fMRI techniques, but takes advantage of low
+BOLD frequency fluctuations to examine intrinsic activity in the brain. Functional networks
+generated using this method have been termed 'resting-state networks’. Approximately 6080% of brain metabolic consumption is due to the intrinsic activity of these networks.
+
+2.3. Linking structure and function
+In order to link structure to functions, one must consider the mechanism by which two
+spatially remote areas are coactivated at any given time. It is currently unclear how many of
+the networks detected at rest consist of direct anatomical links between cortical regions. Can
+areas that do not have direct anatomical links exhibit functional connectivity? White matter
+tracts can be considered as information highways that allow the exchange of functional
+information between spatially remote regions. In this context, a high temporal correlation
+between spatially remote areas must reflect a path of communication. Temporal correlation
+between two regions implies that there are underlying anatomical links that facilitate
+information transfer. Recently, studies that utilized both diffusion weighted MRI and resting
+
+Brain Connections – Resting State fMRI Functional Connectivity 55
+
+state fMRI, have suggested that there is a direct association between functional connectivity
+and structural connectivity in the human brain [15, 19]. Having a clearer picture of
+anatomical structure is critical for the analysis of functional dynamics. However, structural
+connectivity does not provide any information about the temporal organization of
+information exchange between regions. Therefore, it is important to note that while
+functional connectivity implies structural connectivity, it does not imply that two areas a
+directly connected. For example, the primary visual cortex has been shown to have strong
+functional connections between its left and the right cerebral hemispheres, although
+underlying white matter links are lacking between those regions [20].
+It is observed that the functional interactions and their expression in behavior of the whole
+organism can profoundly influence the structural patterns through a variety of mechanisms
+of plasticity so that shows how the structural and functional connectivity are reciprocally
+linked.
+Studies that utilized EEG methods to examine spontaneous neuronal activity have shown
+similar patterns of correlations exhibited by resting state fMRI. The nature of spontaneous
+neuronal dynamics is a potential indicator of the presence of a "critical state", similar to a
+dynamic regime that is characterized by a diverse set of intrinsic neuronal states that
+provide answers to extrinsic disturbances. These consistent patterns of activation and
+deactivation of brain regions during the transition from the task and resting state, led to the
+discovery of a default mode state called default mode network (DMN) that is consistent
+across multiple studies of rs-fMRI and/or EEG [21-25].
+
+3. Functional connectivity: Resting state fMRI methods
+In the following sections, we review several commonly used techniques for investigating
+functional connectivity using resting state fMRI data. While these methods range across
+numerous mathematical fields, and are based in various different assumptions about how to
+understand underlying brain organization, they can fundamentally be grouped into two
+categories: model-based and model-free methods. In any case all methodologies can lead us
+to define a brain network as we will see in the following sections.
+
+3.1. Model-based functional connectivity methods
+Seed-based analysis is a hypothesis-driven method that is based on a priori decision
+regarding the region-of-interest (ROI). Functional connectivity is then calculated using the
+signal from this ROI as the model in subsequent voxelwise analysis.
+Another common method used to establish ROIs for seed-based functional connectivity
+analysis is meta-analysis. This technique is used to summarize the results across several
+neuroimaging studies in order to establish common regions of activation. Such results then
+serve to establish a consensus on the location of functional regions and to develop
+hypotheses for further investigation.
+
+56 Novel Frontiers of Advanced Neuroimaging
+
+The goal of this analysis is to locate regions consistently activated (if any) on a set of diverse
+and independent studies, which are related to the same psychological state [26]. This
+method works basically by counting the number of peaks of activation in the studies
+presented, comparing the number of peaks observed with a distribution of null to set a
+criterion of significance. The two most representative approaches to perform such an
+analysis are kernel density analysis (KDA) and activation likelihood estimation (ALE) [27].
+
+3.2. Model-free functional connectivity methods
+By definition, hypothesis independent methods lack a priori assumptions. These methods
+are especially useful in the analysis of spatially distributed functional connectivity networks,
+as they are not reliant of localized assumptions [15, 28-36].
+The first analysis to study the functional integration used Principal Component Analysis
+(PCA) [15, 37] to decompose fMRI data into a set of mutually uncorrelated components in
+either space or time. More recently, Independent Component Analysis (ICA) has been used
+to identify components that describe the activity in a widely dispersed network [28-35]. ICA
+is an extension of the classical methods of Blind Source Separation (BSS). This technique
+decomposes the time series in order to identify statistically independent components that
+define functional networks. This technique has the advantage of extracting independent
+components that may consist of noise signal, such as physiological or movement-related
+noise. Although this analysis has many advantages and its applicability has opened doors to
+new possibilities in the study design, the maps generated with this method are usually more
+difficult to explain in comparison with those generated with the seed voxel analysis,
+therefore, its applicability has some restrictions and limitations. Different authors have
+analyzed the methodology of this technique and there are different variations of the method
+[38, 39]. ICA has been used to explain a better way the large-scale structures that have been
+detected in several independent studies [15, 36].
+Clustering techniques aim to subdivide the data by means of a mathematical algorithm, so
+that the observations assigned to the same group are more similar to each other than the
+observations assigned to other groups. In the context of the study of functional connectivity
+analysis in rs-fMRI, clustering algorithms have been used to perform brain parcellation in
+groups of voxels or regions that are functionally connected to other regions. It should be
+noted that clustering techniques applied to fMRI data are having a good acceptance both in
+the detection of functional connectivity networks and in the architectural (anatomical)
+subdivision of the brain [36].
+The first application of clustering techniques to resting state functional data was performed
+by Cordes et al [40]. Firsts attempts to employ this technique were limited due to the
+computational complexity [41, 42]. Recently, more sophisticated studies have been
+performed [43, 44] that have enabled identification of large-scale networks that agree with
+those found in other studies [44].
+
+Brain Connections – Resting State fMRI Functional Connectivity 57
+
+Still, we should take into account some limitations to the technique. The most important is
+that most clustering techniques require a priori selection of the number of clusters (K),
+which will partition the data [36]. Since this value clustering (K) is unknown, multiple
+solutions are usually calculated using a metric that predicts the "goodness" to determine the
+optimal number of groups for that data set.
+There is no single measure or an optimized solution, so different methods are used.
+Ultimately, it is unlikely that the clustering is entirely independent of the initial partition
+decision (K) determined by the subjectivity of the user, since it must evaluate the
+appropriateness of pooling the results compared with networks of functional connectivity
+well known. It can be concluded, therefore, that this technique also depends on the
+subjectivity of the observer when describing the goodness of a grouping, as well as ICA.
+
+3.3. Brain networks and graph theory
+In 1998 Watts and Strogatz introduced the concept of small-world network [45]. There are
+certain reasons, both empirical and theoretical, to understand the brain as a small-world
+network [46] because the brain supports both distributed and modular processing (linked to
+the concepts of functional segregation and functional integration). Considering the cognitive
+processes under the network architecture, it is more efficient when exchanging information
+at various scales: a high clustering allows a modular processing, while further distances
+allow for distributed processing. Thus, small-world networks maximize the efficiency of
+parallel processing and minimize the cost of communication between modules of nodes, as
+well as being tolerant to failures.
+Graph theory is the field of mathematics that is used to characterize various aspects of
+network structure. In functional connectivity analysis, the application of graph theory aims
+to ascribe nodes to various regions of interest, and generates links or arcs between them.
+This approach makes it possible to explore functional connectivity networks using tools that
+characterize typical properties of networks, for example the study of efficiency and
+modularity.
+Applying graph theory to resting state fMRI data involves assigning nodes to various
+regions of interest. A functional connectivity graph is generated once edges are assigned to
+connect nodes that have correlation values above a certain threshold. An important feature is
+to study "the path", which is defined as a sequence of connected nodes. Path length between
+two nodes is defined as the number of edges passing through node i to a node j. The distance
+between two nodes of a graph is the minimum length among all possible paths connecting
+these nodes. Degree of a node is defined as the number edges that are connected to it.
+Two types of metrics are used to characterize graphs: local and global metrics. In local
+metrics, values are assigned to each node individually, while in global metrics, values
+characterize the graph as a whole.
+A very important metric is the degree of distribution of a graph P(k). This metric provides
+information on the number of nodes that offer a high degree of centrality. Various studies
+
+58 Novel Frontiers of Advanced Neuroimaging
+
+have shown that the scarcity of these nodes can be related to cognitive decline as observed
+in Alzheimer's patients.
+A complex network can be represented mathematically by edges and nodes [47].
+Mathematically, nodes represent different parts of a system, and the relationship between two
+nodes is represented by an edge. Applying these mathematical concepts to the brain, nodes
+represent different areas of the brain, while edges represent anatomical, functional or effective
+connectivity’s between these nodes. Utilizing such tools, we can construct (i) anatomically
+based networks of white matter tracts; (ii) functional connectivity maps representing patterns
+of correlation between BOLD signals; and (iii) effective networks representing causal
+interaction patterns between brain areas. All three methods of network depiction can be
+represented by adjacency matrices. In these matrices, rows and columns represent nodes,
+while each array element (i, j) represents the interaction between two nodes i, j.
+Criteria for the selection of nodes and edges to represent cortical networks often combine
+methods from anatomical parcellation schemes and connectivity measures. Nodes must
+represent brain regions with consistent patterns of connectivity, since only similar patterns
+of fragmentations can be compared. Weighting of edges is interpreted differently in
+different connectivity models. In anatomical connectivity modelling, weighting is
+interpreted as a measure of the density of the anatomical tracts. While in functional
+connectivity models, weighting indicates the magnitude of a correlation between brain
+areas. And in effective connectivity models, weights may indicate causal interactions. By
+thresholding weights of connections, networks could be trimmed to establish the topology
+of significant links. The possibility of directionality in the edges makes it possible to
+represent anatomical and effective models, while functional models can be perfectly
+modelled by non-directional arcs.
+Functional segregation refers to the involvement of specialized regions or networks in
+specific functions. Segregation measures are important as they seek to quantify clusters in
+given network. A basic strategy is to divide a network into subgroups, minimizing the
+number of edges within a group and maximizing the number of edges outside of a group.
+Utilizing such means, we can divide a network to be able to analyse a networks modular
+structure.
+Certain areas of the brain that act as hubs are crucial to the functionality of given networks.
+In order to quantify this importance there are measures of centrality for the network. The
+degree of a node can be used as a simple measure of the centrality of a node. Other more
+sophisticated measures can also be used to quantify centrality. Many centrality measures are
+based on important hubs that play a role in various networks. Measures of centrality have
+different interpretations depending on type of network under study. A central node in an
+anatomical network allows the assignment of structure to function between distant regions.
+Such central anatomic nodes decrease values of centrality in functional networks.
+Here we conclude that the analysis of complex networks has equipped use with necessary
+tools to examine anatomical and functional networks of the brain, paving the way for the
+possibility of quantifying many of their parameters.
+
+Brain Connections – Resting State fMRI Functional Connectivity 59
+
+4. RS-fMRI in cognitive neuroscience
+It was in 1995 when Biswal and colleagues observed that a significant fraction of supposed
+noise showed organized patterns consistent with known brain systems [5]. Biswal's work
+aimed to examine patterns of neural activity of the motor system, and for that, experimental
+subjects were asked for a standard task of finger opposition and then compared to a rs-fMRI
+without asking them to do something. As Biswal initially demonstrated, the left and right
+primary motor networks are correlated. This suggested that these areas are functionally
+connected and that the process of information transfer between them is on-going [7, 39]. Later,
+groups were able to replicate these results and further demonstrate correlations between
+primary visual networks, auditory networks and higher order cognitive networks [3,7, 48-51].
+
+4.1. Adquisition
+Advantages of employing resting state functional connectivity analysis in cognitive
+neuroscience studies include:
+1.
+
+2.
+
+3.
+
+A brief period of time of acquisition (minutes) provides an expanded application to
+the clinical setting. One of the most frequently cited motivations for using resting state
+functional connectivity in clinical studies, is that it allows for increased sampling of
+patient populations, since (i) it requires a brief acquisition period and (ii) has no specific
+stimulation paradigm. This allows the patient to remain rest, or asleep or under the
+influence of anesthesia. The absence of a stimulation paradigm in this case, is especially
+important to the sampling of patient populations with neuropsychiatric disorders.
+Computation: Several resting state functional connectivity methods are available for
+analysis of neural circuitry in vivo. In contrast, using task-based fMRI, we are only
+afforded connectivity information about the activated regions only.
+Simple design: (baseline acquisition). Resting state studies may offer a better signal to
+noise ratio than conventional task-based approaches.
+
+4.2. Networks identified using resting state functional connectivity
+A resting state network of particular interest is the default mode network (DMN). This
+group of brain regions is active during rest and deactivates during most externally oriented
+tasks [7, 52]. This component has been studied in different ways, the main interest of past
+studies that implemented model-dependent method (seed voxel techniques) [5, 52] as well
+as independent component analysis (ICA) [29].
+Compared with other networks, the DMN is unique in the direction of its response to task
+performance, which probably relates to its baseline level of neuronal and metabolic activity
+and its role in brain function. The DMN is not unique, however, in demonstrating correlated
+intrinsic activity; multiple networks exhibit coherent resting state activity that persists across
+different states. The default mode network is one of the most robustly identified and
+extensively investigated resting state networks that involves a set of regions that routinely
+decrease their activity with tasks that demand attention [3, 7, 52]. Interestingly, this network
+
+60 Novel Frontiers of Advanced Neuroimaging
+
+has also been found to be negatively correlated with regions that tend to increase their activity
+during attention demanding tasks. Other identified networks include a self-referential system
+engaging the medial prefrontal regions; a posterior network involved in visual processing; an
+attention network engaging superior frontal and parietal cortex; a superior temporal system;
+and a network-engaging precentral and postcentral cortex [3, 7]. The most consistently
+reported resting state networks include the primary sensorimotor network; the primary visual
+and extra-striate visual network consisting of bilateral temporal/insular and anterior cingulate
+cortex regions; left and right lateralized networks consisting of superior parietal and superior
+frontal regions; and the default mode network consisting of precuneus, medial frontal, inferior
+parietal cortical regions and medial temporal lobe [53].
+Given the success of resting state functional connectivity for probing the brain’s functional
+architecture in normal subjects, it is a great benefit to employ this technique towards the
+investigation of dysfunction in the brain. A review by Fox and Greicius [8] highlights
+advantages of examining the resting state signal for clinical applications and discusses
+methodological issues that need to be resolved to facilitate translational applications of rsfMRI. A number of clinical applications are already emerging as emphasized by the studies
+of functional connectivity in premature children [54], adolescents with schizotypal traits
+[55], major depression, and aging [56]. Two recent reviews detail the large number of
+studies that have utilized resting state fcMRI to study various neurological and psychiatric
+conditions [4, 57].
+
+4.3. Networks involved in neurological and psychiatric diseases
+The functional connectivity of the DMN has been linked to core process of human cognition
+such as the integration of cognitive and emotional processing [7], monitoring [58] and mindwandering. As a result, analysis of the connectivity patterns of the DMN is especially
+important in examining cognitive dysfunction in neurological and neuropsychiatric brain
+disorders [57, 59]. DMN alterations have been reported in a number of neuropsychiatric
+diseases.
+It has been shown that the DMN exhibits decreased connectivity patters in patients with
+Alzheimer disease [60], decreased correlations within the DMN including hippocampi,
+decreased anticorrelations with the DMN, and reduced local connectivity as reflected in
+clustering coefficients, in which parts of this network have been clearly implicated.
+Schizophrenia has been marked as a potential disconnection disease [61]. Widespread
+functional disconnectivity between brain regions has been suggested to underlie these
+symptoms [62, 63]. Schizophrenia is known to have aberrant effects on frontal and parietal
+regions involved with the DMN. Resting state fMRI studies have reported a decrease in the
+functional connectivity between medial frontal cortex and precuneus in schizophrenic
+patients [64]. Additionally, diffusion tensor imaging studies have reported diminished
+white matter integrity in patients with schizophrenia [65]. Specifically, a decrease in white
+matter integrity was observed in the cingulum tract, which is known to be interconnected
+with DMN regions MFC and PCC [50, 57]. Therefore, symptoms of patients with
+
+Brain Connections – Resting State fMRI Functional Connectivity 61
+
+schizophrenia can be attributed to alterations of the functional connectivity of the DMN.
+Moreover, studies have also marked spatial differences in the default mode network in
+schizophrenia patients together with significant higher frequency fluctuations in default
+mode regions, as well as hyperactivity and hyperconnectivity of the default mode network
+in patients in the early phase of schizophrenia [64]. These studies suggest an important role
+for the default mode network in the pathophysiology of schizophrenia.
+Altered functional connectivity patterns have been reported in other neurological disorders.
+For example, in multiple sclerosis (MS) a decreased functional connectivity in the primary
+motor has been established. This has substantiated studies that showed decreased
+microstructural integrity of the callosal white matter tracts [66]. Additionally, in patients
+with amyotrophic lateral sclerosis (ALS), ICA analysis has suggested a decrease in
+functional connectivity [67].
+
+5. Global initiatives and the Human Connectome Project
+There has been a long standing interest in the unrestricted sharing and access of functional
+neuroimaging data within the neuroimaging community. Inherent within the methodology
+of task based fMRI, the complexity of conforming task paradigms across different
+acquisition sites limited the potential of having such an open access platform. However,
+with the introduction of the unique methodological approach of resting state fMRI, a new
+era in open access data sharing was ushered. Most notably, a data sharing consortium - the
+1000 Functional Connectomes project (fcon_1000.projects.nitrc.org) - composed of various
+groups from all around began this initiative in 2009. The fcon1000 project aggregated and
+publicly released over 1200 resting state and anatomical MRI datasets acquired at 33 sites
+around the world. Within the first six months, the release generated over 9000 download
+from 78 countries. The benefit of unrestricted data sharing on the advancement of
+neuroimaging is self-evident. Researchers with the resources to acquire data can ensure that
+their resources are most widely used, while those researchers who prefer to focus on data
+analysis can do so. Such initiatives had wide implications on the neuroimaging community.
+Since large sets of data are now freely accessible, the valued commodity of the imaging
+community is no longer the data itself, but the analytic tools and approaches of
+interpretation and analysis. This new paradigm of unrestricted data access will be an
+integral part of the future of brain research. The human brain is usually divided into several
+hundred areas that exhibit highly specialized function. Cortical and subcortical regions of
+divergent function exhibit distinct cytoarchitecture when viewed under a microscope. As
+the human brain develops, mechanisms of axonal guidance allow the projection of millions
+of axonal fibbers to target destinations. In the process, a complex network of information
+processing pathways is formed.
+The Human Connectome Project (HCP) [68] is an ambitious five year initiative that was
+launched in 2010. Its main objective is to build a network map of the human brain to shed
+light on its structural and functional connectivity. HCP leans on the general facet that the
+function of a system is determined by its structure. By elucidating the complete underlying
+
+62 Novel Frontiers of Advanced Neuroimaging
+
+structure of white matter pathways, we will be able to glean significant information about
+the function of this composite organ.
+The term Connectome was introduced by Olaf Sporns in analogy to the human genome. An
+approach that is more elaborate than mapping Connectomes, is mapping Synaptomes of the
+brain. Such an effort would require imaging synaptic clefts at ultra-structural levels of
+resolution. This endeavour is currently out of reach of the methods we possess today, as it
+necessitates acquiring images of proteins and neurochemicals that govern the various
+biochemical pathways of all synapses. Nonetheless, by relying on simple models systems
+such as Caenorhabditis elegans – which has a total number of 302 neurons – we can examine
+the feasibility of such a project.
+Such mapping undertakings would provide considerable information to solve mysteries of
+brain function. Connectivity in the brain can be studies at three levels of analysis.
+Combining information from macroscopic, microscopic and nanoscopic levels of analysis,
+would have wide implications on appreciating the full structural map of the brain.
+
+Author details
+Maria de la Iglesia-Vaya
+Centre of Excelence in Biomedical Image (CEIB-CIPF), Medical Bioimage Unit,
+Bioinformatics & Genomics Department. Prince Felipe Research Centre (CIPF).
+Eduardo Primo Yúfera (Científic), Valencia,Spain
+CIBERSAM, ISC III, Valencia, Spain
+Jose Molina-Mateo
+Centre for Biomaterials and Tissue Engineering,
+Universitat Politècnica de València, (Spain)
+Jose Escarti-Fabra
+CIBERSAM, ISC III, Valencia, Spain
+Psychiatric Unit, Clinic Hospital, Valencia, Spain
+Ahmad S. Kanaan
+Max Planck Institute for Human Cognitive and Brain Sciences, Leipzig,Germany
+Luis Martí-Bonmatí
+Centre of Excelence in Biomedical Image (CEIB-CIPF), Medical Bioimage Unit,
+Bioinformatics & Genomics Department. Prince Felipe Research Centre (CIPF).
+Eduardo Primo Yúfera (Científic), Valencia,Spain
+Radiology. Faculty of Medicine, Universitat de Valencia, Spain
+
+Acknowledgement
+The authors wish to thank Erika Proal, Xavier Castellanosand Daniel Margulies for their
+helpful discussion. This study was supported by Spanish grants from Ministry of Science
+
+Brain Connections – Resting State fMRI Functional Connectivity 63
+
+and Innovation (ISCIII: FIS P.I. 02/0018, P.I. 05/2332.), Spanish Mental Health Network:
+CIBERSAM.
+
+6. References
+[1] Kwong KK, Belliveau JW, Chesler DA, Goldberg IE, Weisskoff RM, Poncelet BP, et al.
+(1992) Dynamic magnetic resonance Imaging of human brain activity during primary
+sensory stimulation. Proc Natl Acad Sci U S A. 89: 5675-5679.
+[2] Logothetis NK (2008) What we can do and what we cannot do with fMRI. Nature. 453:
+869-878.
+[3] Fox MD, Raichle ME (2007) Spontaneous fluctuations in brain activity observed with
+functional magnetic resonance imaging. Nat Rev Neurosci. 8: 700-711.
+[4] Zhang D, Raichle ME (2010) Disease and the brain's dark energy. Nat Rev Neurol. 6: 1528.
+[5] Biswal B, Yetkin FZ, Haughton VM, Hyde JS (1995) Functional connectivity in the
+motor cortex of resting human brain using echo-planar MRI. Magn Reson Med. 34: 537541.
+[6] Fair DA, Dosenbach NU, Church JA, Cohen AL, Brahmbhatt S, Miezin FM, et al. (2007)
+Development of distinct control networks through segregation and integration. Proc
+Natl Acad Sci U S A. 104: 13507-13512.
+[7] Greicius M (2008) Resting-state functional connectivity in neuropsychiatric disorders.
+Curr Opin Neurol. 21: 424-430.
+[8] Fox MD, Greicius M (2010) Clinical applications of resting state functional connectivity.
+Front Syst Neurosci. 4: 19.
+[9] Walters NB, Eickhoff SB, Schleicher A, Zilles K, Amunts K, Egan G, et al. (2007)
+Observer-Independent Analysis of High-Resolution MR Images of the Human Cerebral
+Cortex: In Vivo Delineation of Cortical Areas. Human Brain Mapping. 28: 1-8.
+[10] Hahn EL. (1950) Phys. Rev. 80: 580-594.
+[11] Stejskal EO, Tanner JE (1965) Spin Diffusion Measurements: Spin Echoes in the Presence
+of a Time-Dependent Field Gradient. The Journal of Chemical Physics 42: 288-292.
+[12] Le Bihan D, Breton E, Lallemand D, Grenier P, Cabanis E, Laval-Jeantet M (1986) MR
+imaging of intravoxel incoherent motions: application to diffusion and perfusion in
+neurologic disorders. Radiology. 161: 401–407.
+[13] Basser PJ, Mattiello J, LeBihan D (1994) MR diffusion tensor spectroscopy and imaging.
+Biophys J. 66: 259-267.
+[14] Basser PJ, Pajevic S, Pierpaoli C, Duda J, Aldroubi A (2000) In vivo fiber tractography
+using DT-MRI data. Magn Reson Med. 44: 625-632.
+[15] De la Iglesia-Vaya M, Molina-Mateo J, Escarti-Fabra MJ, Martí-Bonmatí L, Robles M,
+Meneu T, et al. (2011) Magnetic resonance imaging postprocessing techniques in the
+study of brain connectivity. Radiologia. 53: 236-245.
+[16] Ellison-Wright I, Bullmore E (2009) Meta-analysis of diffusion tensor imaging studies in
+schizophrenia. Schizophr. Res. 108: 3-10.
+[17] Lawes IN, Barrica TR, Murugam V, Clark CA (2007) Atlas based segmentation of white
+matter tracts of the human brain using diffusion tensor tractography and comparison
+
+64 Novel Frontiers of Advanced Neuroimaging
+
+[18]
+[19]
+
+[20]
+
+[21]
+[22]
+[23]
+
+[24]
+
+[25]
+
+[26]
+[27]
+[28]
+[29]
+
+[30]
+[31]
+
+[32]
+
+[33]
+
+with classical dissection. In: International Society of Magnetic Resonance in Medicine
+15th Annual Meeting. Berlin: Abstract #229.
+Friston KJ (1994) Functional and effective connectivity in neuroimaging: a synthesis.
+Hum. Brain Mapp. 2: 56-78.
+Proal E, Álvarez-Segura M, de la Iglesia-Vaya M, Martí-Bonmatí L, Castellanos FX
+(2011) Actividad funcional cerebral en estado de reposo: redes en conexión. Rev Neurol
+52: S3-S10.
+Damoiseaux JS, Rombouts SA, Barkhof F, Scheltens P, Stam CJ, Smith SM, et al. (2006)
+Consistent resting-state networks across healthy subjects. Proc Natl Acad Sci U S A. 103:
+13848-13853.
+Andrews-Hanna JR, Reidler JS, Sepulcre J, Poulin R, Buckner RL (2010) Functionalanatomic fractionation of the brain's default network. Neuron. 65: 550-562.
+Buckner RL, Andrews-Hanna JR, Schacter DL (2008) The brain's default network:
+anatomy, function, and relevance to disease. Ann N Y Acad Sci. 1124: 1-38.
+Garrity A, Pearlson GD, McKiernan K, Lloyd D, Kiehl KA, Calhoun, VD (2007)
+Aberrant ‘default mode’ functional connectivity in schizophrenia. Am. J. Psychiatry.
+164: 450–457.
+Pomarol-Clotet E, Salvador R, Sarró S, Gomar J, Vila F, Martínez A, et al. (2008) Failure
+to deactivate in the prefrontal cortex in schizophrenia: dysfunction of the default-mode
+network? Psychol. Med. 38: 1185–1193.
+Thermenos HW, Milanovic S, Tsuang MT, Faraone SV, McCarley RW, Shenton ME, et
+al. (2009) Hyperactivity and hyperconnectivity of the default network in schizophrenia
+and in first-degree relatives of persons with schizophrenia. Proc. Natl. Acad. Sci. U.S.A.
+106: 1279–1284.
+Wager TD, Lindquist M, Kaplan L (2007) Meta-analysis of functional neuroimaging
+data: current and future directions. SCAN. 2: 150-158.
+Wager TD, Lindquist M, Kaplan L (2007) Meta-analysis of functional neuroimaging
+data: current and future directions. Soc Cogn Affect Neurosci. 2: 150-158.
+Beckmann CF, Smith SM (2004) Probabilistic independent component analysis for
+functional magnetic resonance imaging. IEEE Trans. Med. Imaging. 23: 137–152
+Beckmann CF, De Luca M, Devlin JT, Smith SM (2005) Investigations into resting-state
+connectivity using independent component analysis. Philos. Trans. R. Soc. Lond., B,
+Biol. Sci. 360: 1001–1013.
+Bell AJ, Sejnowski TJ (1995) An information maximisation approach to blind separation
+and blind deconvolution. Neural Comput. 7: 1129–1159.
+Calhoun VD, Adali T, Giuliani N, Pekar JJ, Pearlson GD, Kiehl KA (2006) A method for
+multimodal analysis of independent source differences in schizophrenia: combining gray
+matter structural and auditory oddball functional data. Hum. Brain Mapp. 27: 47–62.
+Calhoun VD, Adali T, Pearlson GD, Pekar JJ (2001) A Method for making group
+inferences from functional MRI data using independent component analysis. Hum.
+Brain Mapp. 14: 140–151.
+Calhoun VD, Adali T, Pearlson GD, Pekar JJ (2001) Spatial and temporal independent
+component analysis of functional MRI data containing a pair of task-related waveforms.
+Hum. Brain Mapp. 13: 43–53.
+
+Brain Connections – Resting State fMRI Functional Connectivity 65
+
+[34] Calhoun VD, Adali T, McGinty V, Pekar JJ, Watson T, Pearlson GD (2001) fMRI
+Activation In A Visual-Perception Task: Network Of Areas Detected Using The General
+Linear Model And Independent Component Analysis. NeuroImage. 14: 1080-1088.
+[35] Calhoun VD, Kiehl KA, Pearlson GD (2008) Modulation of temporally coherent brain
+networks estimated using ICA at rest and during cognitive tasks. Hum. Brain Mapp. 29:
+828–838.
+[36] Margulies DS, Boettger J, Long X, Lv Y, Kelly C, Schäfer A, et al. (2010) Resting
+developments: A review of fMRI post-processing methodologies for spontaneous brain
+activity. Magnetic Resonance Materials in Physics, Biology and Medicine. 23: 289-307.
+[37] Liu J, Xu L, Calhoun VD (2008) Extracting Principle Components for Discriminant
+Analysis of FMRI Images. ICASSP IEEE, Las Vegas: 449–452.
+[38] Liu J, Demirci O, Calhoun VD (2008) A Parallel Independent Component Analysis
+Approach to Investigate Genomic Influence on Brain Function. IEEE Signal Proc.
+Letters. 15: 413-416,
+[39] Liu, Pearlson JGD, Windemuth A, Ruano G, Perrone-Bizzozero NI, Calhoun VD (2009)
+Combining fMRI and SNP data to investigate connections between brain function and
+genetics using parallel ICA. Hum. Brain Map 30: 241-255.
+[40] Cordes D, Haughton V, Carew JD, Arfanakis K, Maravilla K (2002) Hierarchical clustering to
+measure connectivity in fMRI resting-state data. Magn Reson Imaging. 20: 305–317.
+[41] Salvador R, Suckling J, Coleman MR, Pickard JD, Menon D, Bullmore E (2005)
+Neurophysiological architecture of functional magnetic resonance images of human
+brain. Cereb Cortex. 15: 1332–1342.
+[42] Thirion B, Dodel S, Poline JB (2006) Detection of signal synchronizations in resting-state
+fMRI datasets. Neuroimage. 29: 321–327.
+[43] Van den Heuvel M, Mandl R, Hulshoff Pol H (2008) Normalized cut group clustering of
+resting-state fMRI data. PLoS One. 3: e2001.
+[44] Bellec P, Rosa-Neto P, Lyttelton OC, Benali H, Evans AC (2010) Multi-level bootstrap
+analysis of stable clusters in resting- state fmri. Neuroimage. 51: 1126–1139.
+[45] Watts DJ, Strogatz SH (1998) Collective dynamics of “smallworld” networks. Nature
+393: 440-442.
+[46] Bassett DS, Bullmore E (2006) Small-world brain networks. Neuroscientist. 12: 512–523.
+[47] Rubinov M, Sporns O. (2010) Complex network measures of brain connectivity: uses
+and interpretations. Neuroimage. 52: 1059-1069.
+[48] Biswal BB, Van Kylen J, Hyde JS (1997) Simultaneous assessment of flow and BOLD
+signals in resting-state functional connectivity maps. NMR Biomed. 10: 165–170.
+[49] Damoiseaux JS, Rombouts SA, Barkhof F, Scheltens P, Stam CJ, Smith SM, et al. (2006)
+Consistent resting-state networks across healthy subjects. Proc Natl Acad Sci USA. 103:
+13848-13853.
+[50] van den Heuvel MP, Mandl RC, Kahn RS, Hulshoff Pol HE. (2009) Functionally linked
+resting-state networks reflect the underlying structural connectivity architecture of the
+human brain. Hum Brain Mapp. 30: 3127-3141.
+[51] Deco G, Jirsa VK, McIntosh AR. (2011) Emerging concepts for the dynamical
+organization of resting-state activity in the brain. Nat Rev Neurosci. 12: 43-56.
+
+66 Novel Frontiers of Advanced Neuroimaging
+
+[52] Raichle ME, MacLeod AM, Snyder AZ, Powers WJ, Gusnard DA, Shulman GL (2001) A
+default mode of brain function. Proc Natl Acad Sci USA. 98: 676-682.
+[53] Van den Heuvel MP, Hulshoff Pol HE (2010) Exploring the brain network: a review on
+resting-state fMRI functional connectivity. Eur Neuropsychopharmacol. 20: 519-534.
+[54] Damaraju E, Phillips JR, Lowe JR, Ohls R, Calhoun VD, Caprihan A (2010) Resting-state
+functional connectivity differences in premature children. Front Syst Neurosci. 4: 23.
+[55] Lagioia A, Eliez S, Schneider M, Simons JS, Van der Linden M, Debbané M. (2011)
+Neural correlates of reality monitoring during adolescence. Neuroimage. 55: 1393-1400.
+[56] Langan J, Peltier SJ, Bo J, Fling BW, Welsh RC, Seidler RD (2010) Functional
+implications of age differences in motor system connectivity. Front Syst Neurosci. 4: 17.
+[57] Greicius M (2008) Resting-state functional connectivity in neuropsychiatric disorders.
+Curr Opin Neurol. 21: 424-430.
+[58] Gusnard DA, Raichle ME (2001) Searching for a baseline: functional imaging and the
+resting human brain. Nat Rev Neurosci. 2: 685-694.
+[59] Bullmore E, Sporns O (2009) Complex brain networks: graph theoretical analysis of
+structural and functional systems. Nat Rev Neurosci. 10: 186-198.
+[60] Greicius M, Srivastava G, Reiss A, Menon V. (2004) Default-mode network activity
+distinguishes Alzheimer’s disease from healthy aging: Evidence from functional MRI.
+Proc Natl Acad Sci USA 101: 4637-4642.
+[61] Bleuler E (1911) Dementia Praecox or the Group of Schizophrenias. English Translation
+1961. New York: International Universities Press.
+[62] Andreasen NC, Nopoulos P, O’Leary DS, Miller DD, Wassink T, Flaum M (1999)
+Defining the phenotype of schizophrenia: cognitive dysmetria and its neural
+mechanisms. Biol. Psychiatry. 46: 908–920.
+[63] Friston KJ, Frith CD (1995) Schizophrenia: a disconnection syndrome? Clin. Neurosci. 3:
+89–97.
+[64] Whitfield-Gabrieli S, Thermenos HW, Milanovic S, Tsuang MT, Faraone SV, McCarley
+RW, et al. (2009) Hyperactivity and hyperconnectivity of the default network in
+schizophrenia and in first-degree relatives of persons with schizophrenia. Proc Natl
+Acad Sci USA. 106: 1279-1284.
+[65] Ellison-Wright I, Bullmore E (2009) Meta-analysis of diffusion tensor imaging studies in
+schizophrenia. Schizophr Res. 108: 3-10.
+[66] Lowe MJ, Beall EB, Sakaie KE, Koenig KA, Stone L, Marrie RA, et al. (2008) Resting state
+sensorimotor functional connectivity in multiple sclerosis inversely correlates with
+transcallosal motor pathway transverse diffusivity. Hum Brain Mapp. 29: 818-827.
+[67] Mohammadi B, Kollewe K, Samii A, Krampfl K, Dengler R, Münte TF (2009) Changes of
+resting state brain networks in amyotrophic lateral sclerosis. Exp Neurol. 217: 147-153.
+[68] Sporns O, Tononi G, Kötter R. (2005) The human connectome: A structural description
+of the human brain. PLoS Comput Biol. 1: 245-251.
+
+

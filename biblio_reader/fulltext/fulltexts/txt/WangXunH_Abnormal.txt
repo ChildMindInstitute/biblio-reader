@@ -1,0 +1,942 @@
+Research
+
+Abnormal developmental trajectories of amplitude of
+low frequency fluctuations within intrinsic connectivity
+networks for school-age boys with ADHD
+Xun-Heng Wang†,1, Yun Jiao2, Lihua Li1, Zhongxiang Ding3
+ABSTRACT
+Background: ADHD is a prevalent brain disorder in school-age children. To our knowledge,
+the development of intrinsic connectivity networks (ICNs) remains unclear for children with
+ADHD. The goals of this paper are two-folds: 1) modeling the ICN-related brain connectivity
+based on phenotype scores; 2) exploring the altered growth curves of ICNs for ADHD.
+Methods and Findings: A cohort of boys with ADHD and a cohort of normal controls were
+recruited from ADHD-200 Consortium. Amplitude of low frequency fluctuations (ALFFs) was
+applied to measure the brain connectivity within ICNs. Quantic models consisted of age; IQ,
+behavioral scores and head motion were applied to investigate the relationships between
+brain developments and intra-ICN ALFFs. The results found that the lateral visual network
+and executive control network were nonlinearly correlated to aging in both ADHD group and
+normal control group. Based on intra-ICN ALFFs, the turning points of brain developments
+might be 11-12 years old for ADHD.
+Conclusions: The lateral visual network, cerebellum network, auditory network, and executive
+control network might play important roles in the brain development of ADHD. The abnormal
+developmental trajectories of ADHD could be discovered by intra-ICN ALFFs, which could be
+a potential biomarker for functional connectome.
+Keywords
+ADHD, Intrinsic connectivity networks, Temporal patterns, Growth curves, ALFFs
+Introduction
+ADHD is a common brain disorder observed
+in school-age children [1]. Structural MRIrelated studies found decreased brain volume
+and thinning cortical thickness in patients with
+ADHD [2,3]. Diffusion MRI-related studies
+found altered white matters in ADHD [4].
+Resting-state functional MRI-related studies
+found patients with ADHD exhibited altered
+amplitude of low frequency fluctuations (ALFFs)
+
+and regional homogeneity (ReHo) [5,6], most of
+which were located in default mode networkrelated brain regions [7,8].
+In addition to the distinctive brain mechanisms
+in ADHD, the abnormal brain developmental
+patterns in ADHD have also been reported
+by many studies. The cerebellar developments
+measured by volume size were lagged in
+children and adolescents with ADHD [9]. The
+maturations of cortical thickness and surface
+
+College of Life Information Science and Instrument Engineering, Hangzhou Dianzi University, Hangzhou, 310018, China
+
+1
+
+Jiangsu Key Laboratory of Molecular and Functional Imaging, Department of Radiology, Zhongda Hospital, Medical School of
+Southeast University, Nanjing, 210009, China
+
+2
+
+Department of Radiology, Zhejiang Provincial People’s Hospital, Hangzhou, 310014, China
+
+3
+
+Author for correspondence: Xun-Heng Wang, Ph.D, College of Life Information Science and Instrument Engineering, Hangzhou Dianzi
+University, Hangzhou, 310018, China; Phone: 0571-87713533, Fax: 0571-87713528; email: xhwang@hdu.edu.cn
+
+†
+
+10.4172/Neuropsychiatry.1000159 © 2016
+
+Neuropsychiatry (London) (2016) 6(6), 344–350
+
+ISSN 1758-2008
+
+344
+
+Research
+
+Xun-Heng Wang
+area were both delayed in children with ADHD
+[10]. Furthermore, growth curves of cortical
+thickness were related to different IQ levels in
+children with ADHD [11]. Lagged functional
+connectivities were found between sensorymotor and default mode-related resting state
+networks in children with ADHD [12]. Lagged
+maturations of functional connectivity within
+default mode network and between certain brain
+networks were reported by analyzing a large
+sample of children with ADHD [13]. Therefore,
+MRI-based measures might be beneficial to
+investigate brain maturations for ADHD.
+However, the developmental patterns of largescale brain networks remain unclear for children
+with ADHD.
+
+boys (8-14.92 years old) were recruited from
+the Peking site of ADHD-200 Consortium
+[18]. The ethic of this study has been approved
+by functional 1000 connectome project. All
+patients and normal controls were diagnosed
+using the Schedule of Affective Disorders and
+Schizophrenia for Children-Present and Lifetime
+Version (KSADS-PL). The clinical symptoms
+of patients were evaluated with ADHD Rating
+Scale (ADHD-RS) IV. The Intelligence Quotient
+(IQ) scores for all participants were measured
+using Wechsler Intelligence Scale for Chinese
+Children-Revised (WISCC-R). In addition, the
+patient group contains three subtypes of ADHD.
+Of note, certain patients exhibited secondary
+clinical symptoms (Table 1).
+
+Abnormal large-scale brain networks were
+reported in patients with ADHD [14]. The altered
+spatial components of default mode network
+were discovered in ADHD using independent
+component analysis [15]. However, multivariate
+spatial features of intrinsic connectivity networks
+(ICNs) might lead difficulties in fitting the
+growth curves for patients. Thus, univariate
+features might benefit the research of ICN-related
+brain development for ADHD. Recently, the
+univariate temporal complexity of ICN dynamics
+was found with good test-retest reliability [16] and
+could reflect the information flows within brain
+networks [17]. The above findings suggested that
+the temporal dynamics of ICN could be potential
+biomarkers for brain disorders. Therefore, the
+Univariate temporal patterns of ICN might
+possess biological meanings in some extent, and
+could be beneficial for investigations of ADHD
+development.
+
+Both structural and resting state functional
+images were collected for each participant.
+The high-resolution T1-weighted images
+were obtained using Magnetization Prepared
+Rapid Acquisition Gradient Echo (MPRAGE)
+sequences. The resting state images were
+obtained using standard echo-planar imaging
+(EPI) sequences. Participants were instructed to
+relax and remain still with eyes either open or
+closed during scan sessions. A black screen with
+a white cross was presented to each participant
+during the scan. The detailed information of
+scan parameters could be found on the website
+of ADHD-200 Consortium [19].
+
+Based on previous studies, we hypothesized
+that children with ADHD, particularly schoolage boys, might have abnormal developmental
+trajectories of brain networks, which could be
+detected by temporal complexity within ICNs.
+To test this hypothesis, ALFFs were used as
+temporal pattern to analyze the information flow
+within ICNs for patients and normal controls.
+Moreover, the relationships between age and
+intra-ICN ALFFs were analyzed using regression
+models. The altered developmental trajectories of
+intra-ICN ALFFs were discovered by comparing
+ADHD group with normal control group.
+Methods
+ Participants and MRI protocols
+
+A cohort of 80 boys with ADHD (8.33-14.92
+years old) and a cohort of 77 normal-developed
+345
+
+Neuropsychiatry (London) (2016) 6(6)
+
+ Preprocessing
+
+The pipeline of data preprocessing was based
+on FSL [20] and AFNI [21], according to the
+scripts of functional 1000 connectome project
+[22]. The structural images were skull-stripped
+and nonlinearly transformed into MNI brain
+space. The preprocessing for resting state images
+contained the following steps: 1) discarded the
+first five volumes; 2) slice-timing; 3) motion
+correction; 4) regressing out Friston-24 motion
+parameters, CSF, whiter matter, global signal,
+as well as linear and quantic trends; 5) spatial
+smoothing using Gaussian kernel of FWMH = 6
+mm; 6) nonlinearly normalized into MNI space
+with spatial resolution of 3 mm × 3 mm × 3 mm.
+ Intra-ICN ALFFs
+
+The amplitude of low frequency fluctuations
+(ALFF) is a popular measure for resting state
+fMRI [6]. Here, ALFFs were applied to
+investigate the temporal dynamics within ICNs
+[23]. Ten well-established templates of ICNs
+[24] were illustrated in Figure 1 and Table 2. The
+spatial components of ICNs were consisted of
+
+Abnormal developmental trajectories of amplitude of low frequency fluctuations within intrinsic
+connectivity networks for school-age boys with ADHD
+visual, default mode, cerebellum, sensorimotor,
+auditory, executive control, and frontoparietalrelated networks. For detailed information of
+the spatial components of ICNs and spatial
+regression, please see [25] and [16]. First,
+spatial general linear regressions were applied
+between the 3-dimentional maps of template
+ICNs and functional volumes. Then, the timecourses of ICNs were generated by temporally
+concatenating the beta values returned by spatial
+regressions. Finally, the intra-ICN ALFFs (0.010.1Hz) were computed by conducting FastFourier Transform (FFT) on the individual
+time-courses of corresponding ICNs.
+
+Research
+
+Table 1: Subjects’ demographic variables.
+Number of subjects
+Gender (male: female)
+Handless (R: L)
+Age (year)
+Full IQ
+Inattentive scores
+Impulsive scores
+
+ADHD
+80
+80:0
+80:0
+12.07 ± 1.86
+107.78 ± 12.82
+49.82 ± 8.89
+28.97 ± 5.56
+
+Normal
+77
+77:0
+77:0
+11.84 ± 1.8
+119.31 ± 13.68
+28.95 ± 6.61
+16.75 ± 4.88
+
+p-value
+1
+1
+0.44
+<10-5
+<10-30
+<10-30
+
+ Models for developmental trajectories
+
+Quadratic models were applied to investigate
+the nonlinear relationships between age and
+intra-ICN ALFFs. Here, equation 1.1 denoted
+formula of the quadratic model, where the age,
+IQ, inattention, impulsivity and head motion
+might have influences on the intra-ICN ALFFs.
+In this paper, head motion was measured by
+mean frame displacement (mFD) [26]. The IQ
+was indicated by full IQ values. The clinical
+scores of inattention and impulsivity were
+measured by ADHD-RS. Finally, the impacts
+of age on intra-ICN ALFFs were analyzed by
+regressing out the covariates of IQ, inattention,
+impulsivity and head motion. The comparisons
+between ADHD and normal control groups of
+growth curves were applied by the growthcurve
+function in the statmod packages [27].
+Intra-ICN ALFFs = 1 + age + age2 + IQ +
+inattention + impulsivity + mFD (1.1)
+Results
+The developmental trajectories of intra-ICN
+ALFFs were successfully modeled by phenotype
+scores. Significant age-related effects on the
+developmental trajectories of intra-ICN ALFFs
+were found for certain ICNs. In addition, altered
+growth curves were found between ADHD group
+and normal control group. The turning points of
+brain developmental trajectories were also found
+for ADHD patients and normal controls.
+ Effects of age, behavioral scores and
+
+head motion on intra-ICN ALFFs for
+ADHDs
+
+Table 3 shows the effect of age, behavioral
+scores and head motion on intra-ICN ALFFs
+for ADHDs. Significant age-related effects are
+found within lateral visual network, cerebellum
+and executive control network for ADHD.
+
+Figure 1: Spatial maps for the 10 ICNs. Subfigures 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 denote the MVN, OVN,
+LVN, DMN, CN, SMN, AN, ECN, RFP and LFP, respectively.
+
+Table 2: Names of 10 ICNs.
+Index
+ICN1
+ICN2
+ICN3
+ICN4
+ICN5
+ICN6
+ICN7
+ICN8
+ICN9
+
+Names of ICNs
+Medial visual network (MVN)
+Occipital visual network (OVN)
+Lateral visual network (LVN)
+Default mode network (DMN)
+Cerebellum network (CN)
+Sensorimotor network (SMN)
+Auditory network (AN)
+Executive control network (ECN)
+Right frontoparietal network (RFP)
+
+ICN10
+
+Left frontoparietal network (LFP)
+
+Significant attention-related effect is found
+within cerebellum for ADHD. Head motion is
+related to intra-ICN ALFFs for most of the brain
+networks. No effects of IQ on intra-ICN ALFFs
+are found for ADHD.
+ Effects of age, behavioral scores and
+
+head motion on intra-ICN ALFFs for
+normal controls
+
+Table 4 shows the effect of age, behavioral
+scores and head motion on intra-ICN ALFFs
+for normal controls. Significant age-related
+effects are found within lateral visual network,
+auditory network and executive control network
+for normal controls. Significant attention-related
+effect is found within occipital visual network for
+normal controls. Head motion is related to intraICN ALFFs for certain networks. No effects of
+IQ on intra-ICN ALFFs are found for normal
+controls.
+346
+
+Research
+
+Xun-Heng Wang
+
+Table 3: Effects of age, behavioral scores and head motion on intra-ICN ALFFs for ADHDs.
+
+(Intercept)
+age
+age2
+IQ
+Inattention
+Impulsivity
+mFD
+a
+p<0.01
+
+ICN1
+(T, p)
+(1.07, 0.29)
+(-0.8, 0.43)
+(0.85, 0.4)
+(-0.01, 0.99)
+(-0.91, 0.37)
+(0.9, 0.37)
+(2.12, 0.04)
+
+ICN2
+(T, p)
+(1.71, 0.09)
+(-1.4, 0.17)
+(1.48, 0.14)
+(-0.37, 0.71)
+(-1.23, 0.22)
+(0.89, 0.38)
+(2.78, 0.01)
+
+ICN3
+(T, p)
+(3.02, 0)
+(-2.71, 0.01)
+(2.81, 0.01)
+(0.53, 0.59)
+(-0.34, 0.73)
+(1.17, 0.25)
+(3.03, 0a)
+
+ICN4
+(T, p)
+(1.33, 0.19)
+(-0.98, 0.33)
+(1.16, 0.25)
+(-0.13, 0.9)
+(-0.28, 0.78)
+(0.93, 0.36)
+(5.01, 0a)
+
+ICN5
+(T, p)
+(1.92, 0.06)
+(-1.97, 0.05)
+(2.09, 0.04)
+(-1.2, 0.23)
+(2.31, 0.02)
+(2.01, 0.05)
+(5.37, 0a)
+
+ICN6
+(T, p)
+(1.77, 0.08)
+(-1.76, 0.08)
+(1.82, 0.07)
+(-0.16, 0.88)
+(0.32, 0.75)
+(1.99, 0.05)
+(3.8, 0a)
+
+ICN7
+(T, p)
+(1.82, 0.07)
+(-1.8, 0.08)
+(1.89, 0.06)
+(0.75, 0.45)
+(0.45, 0.65)
+(1.2, 0.24)
+(2.98, 0a)
+
+ICN8
+(T, p)
+(2.44, 0.02)
+(-2.2, 0.03)
+(2.24, 0.03)
+(-0.2, 0.84)
+(1.06, 0.29)
+(1.65, 0.1)
+(4.25, 0a)
+
+ICN9
+(T, p)
+(-0.75, 0.45)
+(1.45, 0.15)
+(-1.2, 0.24)
+(0.01, 0.99)
+(-0.59, 0.56)
+(0.57, 0.57)
+(2.19, 0.03)
+
+ICN10
+(T, p)
+(1.84, 0.07)
+(-1.06, 0.29)
+(1.2, 0.24)
+(-1.77, 0.08)
+(-0.64, 0.52)
+(1.47, 0.15)
+(2.41, 0.02)
+
+ICN9
+(T, p)
+(-0.94, 0.35)
+(1.46, 0.15)
+(-1.37, 0.17)
+(0.79, 0.43)
+(0.15, 0.88)
+(0.82, 0.42)
+(2.7, 0.01)
+
+ICN10
+(T, p)
+(-1.06, 0.29)
+(1.83, 0.07)
+(-1.91, 0.06)
+(1.26, 0.21)
+(-0.51, 0.61)
+(0.56, 0.58)
+(0.47, 0.64)
+
+Table 4: Effects of age, behavioral scores and head motion on intra-ICN ALFFs for normal controls.
+
+(Intercept)
+age
+age2
+IQ
+Inattention
+Impulsivity
+mFD
+a
+p<0.01
+
+ICN1
+(T, p)
+(-0.33, 0.74)
+(0.32, 0.75)
+(-0.15, 0.88)
+(-0.27, 0.79)
+(1.49, 0.14)
+(-0.68, 0.5)
+(2.3, 0.02)
+
+ICN2
+(T, p)
+(-0.95, 0.35)
+(0.98, 0.33)
+(-0.82, 0.42)
+(-0.38, 0.71)
+(2.23, 0.03)
+(-0.92, 0.36)
+(2.58, 0.01)
+
+ICN3
+(T, p)
+(-2.08, 0.04)
+(2.59, 0.01)
+(-2.52, 0.01)
+(0.46, 0.65)
+(0.11, 0.91)
+(1.67, 0.1)
+(1.24, 0.22)
+
+ICN4
+(T, p)
+(-1.27, 0.21)
+(1.71, 0.09)
+(-1.55, 0.13)
+(0.35, 0.73)
+(1.83, 0.07)
+(-0.62, 0.54)
+(2.31, 0.02)
+
+ICN5
+(T, p)
+(-0.71, 0.48)
+(1.2, 0.23)
+(-1.12, 0.27)
+(-0.38, 0.7)
+(0.24, 0.81)
+(0.68, 0.5)
+(3.88, 0a)
+
+ICN6
+(T, p)
+(-0.96, 0.34)
+(1.33, 0.19)
+(-1.23, 0.22)
+(0.06, 0.96)
+(0.27, 0.79)
+(0.78, 0.44)
+(1.51, 0.14)
+
+ Altered development of intra-ICN ALFFs
+
+between ADHD group and normal control
+group
+
+Table 5 and Figure 2 show the altered development
+of intra-ICN ALFFs between ADHD group and
+normal control group. Compared to normal
+control group, the U shapes of the growth
+curves for certain networks are altered in
+ADHD group. The developmental curves for
+lateral visual network, auditory network, and
+executive control network are significantly
+altered between the two groups. Table 6
+shows the turning points of developmental
+brains for ADHD group and normal control
+group. Based on intra-ICN ALFFs within
+lateral visual network, auditory network, and
+executive control network, the turning points
+of brain developments might be 11-12 years
+old for ADHD.
+Discussions
+In this paper, we investigated the
+developmental curves of large-scale networks
+for school-age boys with ADHD by analyzing
+the ALFFs within intrinsic connectivity
+networks (ICNs). To our knowledge, this
+was the first study attempted to model the
+growth curves of ICNs for ADHD’s brain.
+The results demonstrated that the maturity of
+functional connectivity within ICNs might be
+347
+
+Neuropsychiatry (London) (2016) 6(6)
+
+ICN7
+(T, p)
+(-2.26, 0.03)
+(2.79, 0.01)
+(-2.71, 0.01)
+(0, 1)
+(0.05, 0.96)
+(1.74, 0.09)
+(1.19, 0.24)
+
+ICN8
+(T, p)
+(-1.91, 0.06)
+(2.77, 0.01)
+(-2.74, 0.01)
+(0.23, 0.82)
+(-1.75, 0.08)
+(2.02, 0.05)
+(2.41, 0.02)
+
+delayed in children with ADHD, suggesting
+the intra-ICN ALFFs could be beneficial
+to investigating the development of human
+functional connectome.
+Patients with ADHD were reported with altered
+functional connectivity in sensory-related brain
+regions. Our results found that the developments
+of intra-ICN ALFFs were altered in lateral visual
+network, cerebellum, and auditory network.
+Abnormal structural connectivity between
+thalamus and sensory-motor cortex was found in
+patients with ADHD based on DTI tractography
+[28]. Altered ALFF of left sensory-motor cortex
+were found in children with ADHD using
+resting state fMRI [6]. Disrupted functional
+connectivity between default mode network
+and visual network was found in children with
+ADHD [29]. The above studies supported our
+findings that the development of sensory-related
+brain network might be lagged in patients with
+ADHD.
+The abnormal developments of intra-ICN
+ALFFs in executive control network suggested
+that the executive function might be altered in
+patients with ADHD. The abnormal executive
+control network might reflect the dysfunction of
+action-inhibition as well as emotion-regulation in
+ADHD [25]. The executive control-related brain
+regions also exhibited thinning cortical thickness,
+according to a previous study based on brain
+morphometry [2]. Overall, the intra-ICN ALFFs in
+
+Abnormal developmental trajectories of amplitude of low frequency fluctuations within intrinsic
+connectivity networks for school-age boys with ADHD
+executive control network might play an important
+role in the developments of ADHD.
+The developmental trajectories based on intraICN ALFFs exhibited as U-shaped curves
+for patients with ADHD during childhood.
+Previous findings suggested that the lagged brain
+development might explain the vulnerability of
+the patients’ attention [13]. The linear model
+based on inter-ICN connectivity also found slow
+maturation in children with ADHD [12]. Our
+results provided additional information of brain
+maturation-related studies. The U-shaped curves
+indicated the turning points of brain maturation
+might be 11-12 years old for children with
+ADHD. Moreover, the U-shaped curves implied
+that the brain developments of ADHD might be
+delayed before 11-12 years old, and the growth
+might be out of control after the pitch age. In
+summary, the results confirmed that the brain
+maturation were delayed and then distracted in
+patient group, and suggested that there might
+be a pitch point during brain development for
+patients with ADHD.
+One advantage of this study was applying intraICN ALFFs to investigate the brain developments
+for children with ADHD. The intra-ICN ALFFs
+were univariate features, which could reflect the
+information flow within ICNs. Moreover, the
+computation procedure for intra-ICN ALFFs was
+simple and easy for implementation. Thus, the
+intra-ICN ALFFs could be potential biomarker
+to measure the temporal dynamics within ICNs.
+Another advantage of this study was modeling
+the growth curves of large-scale networks for
+ADHD. So far, to the best of our knowledge,
+this might be the first attempt to investigate the
+brain developmental trajectories for ADHD
+based on ICNs. In addition, our study found
+out the turning points for ADHD group and
+normal control group. The informative results
+could provide supplementary evidences for brain
+developments from different aspects.
+One limitation of this study was relatively small
+size of research population (80 ADHDs and
+77 normal controls). To remove the effects of
+scan parameters, gender and clinical scales, we
+only considered a cohort of boys with ADHD
+and a cohort of age-matched normal controls
+in this prospective study. Although the research
+population is sufficient for a pilot study, we
+should extend this study on multi-sites datasets
+with different subtypes, medication status, scan
+
+Research
+
+Table 5: Altered growth curves between ADHDs and normal controls.
+Names
+ICN1
+ICN2
+ICN3
+ICN4
+ICN5
+ICN6
+ICN7
+ICN8
+ICN9
+ICN10
+
+(T, p)
+(1.49, 0.14)
+(1.68, 0.09)
+(2.1, 0.03)
+(0.65, 0.52)
+(1.12, 0.28)
+(1.88, 0.06)
+(2.02, 0.04)
+(2.45, 0.02)
+(-1.28, 0.21)
+(0.24, 0.81)
+
+Table 6: Turning points for developmental brains based on intra-ICN ALFFs.
+Names
+ICN1
+ICN2
+ICN3
+ICN4
+ICN5
+ICN6
+ICN7
+ICN8
+ICN9
+ICN10
+
+ADHDs
+11.2
+11.2
+11.4
+10.1
+11.1
+11.4
+11.3
+11.6
+8
+10.5
+
+Normal controls
+15
+13.8
+12
+12.7
+12.4
+12.6
+12
+11.8
+12.3
+11.3
+
+parameters, gender and clinical scales in future
+study. Another limitation was the limited
+frequency bands for intra-ICN ALFFs (0.010.1Hz). In future study, we should consider
+wavelets transform or split the intra-ICN
+ALFFs into different frequency bands [30]. In
+addition, other univariate metrics (i.e., entropy,
+Hurst exponent) could also be considered and
+compared as intra-ICN complexity in future
+study [31,32].
+Conclusion
+In conclusion, intra-ICN ALFFs were applied to
+analyze the development of ICNs for children
+with ADHD. The abnormal developments of
+large-scale network were found in sensory and
+execution-related ICNs for patients group. The
+results suggested that the intra-ICN ALFFs could
+be supplemental biomarkers for neuroimaging
+studies.
+Acknowledgments
+This work is supported in part by the grants from
+National Natural Science Foundation of China
+(61271063), 973 Program (2013CB329502),
+National Distinguished Young Research Scientist
+Award (60788101). This research is partly
+348
+
+Research
+
+Xun-Heng Wang
+
+Figure 2: Altered developmental trajectories of intra-ICN ALFFs for ADHDs and normal controls. The red dots denote intra-ICN ALFFs for patients. The
+blue dots denote the intra-ICN ALFFs for normal controls. The red lines represent the growth curves for patients. The blue lines represent the growth
+curves for normal controls. Subfigures A, B, C, D, E, F, G, H, I, J denote the MVN, OVN, LVN, DMN, CN, SMN, AN, ECN, RFP and LFP, respectively.
+
+supported by the Science Foundation from Health
+Commission of Zhejiang Province, 2013RCA001.
+We want to thank the ADHD-200 Consortium
+References
+
+for sharing resting fMRI datasets. We also want to
+thank for the two anonymous reviewers for their
+insightful helps.
+
+deficit/hyperactivity disorder. Biol.
+Psychiatry 63(3), 332-337 (2008).
+
+1. Bush G, Valera EM, Seidman LJ. Functional
+neuroimaging of attention-deficit/
+hyperactivity disorder: a review and
+suggested future directions. Biol. Psychiatry
+57(11), 1273-1284 (2005).
+
+8. Uddin LQ, Kelly AM, Biswal BB, et al.
+Network homogeneity reveals decreased
+integrity of default-mode network in ADHD.
+J. Neurosci. Methods 169(1), 249-254 (2008).
+
+2. Makris N, Biederman J, Valera EM, et al.
+Cortical thinning of the attention and
+executive function networks in adults with
+attention-deficit/hyperactivity disorder.
+Cereb. cortex 17(6), 1364-1375 (2007).
+
+9. Mackie S, Shaw P, Lenroot R, et al.
+Cerebellar development and clinical
+outcome in attention deficit hyperactivity
+disorder. Am. J. Psychiatry 164(4), 647-655
+(2007).
+
+3. Qiu A, Crocetti D, Adler M, et al. Basal
+ganglia volume and shape in children with
+attention deficit hyperactivity disorder. Am.
+J. Psychiatry 166(1), 74-82 (2009).
+
+10. Shaw P, Malek M, Watson B, et al.
+Development of cortical surface area
+and gyrification in attention-deficit/
+hyperactivity disorder. Biol. Psychiatry 72(3),
+191-197 (2012).
+
+4. de Zeeuw P, Mandl RC, Hulshoff Pol HE, et
+al. Decreased frontostriatal microstructural
+organization in attention deficit/
+hyperactivity disorder. Hum. Brain. Mapp
+33(8), 1941-1951 (2012).
+5. Wang X, Jiao Y, Tang T, et al. Altered
+regional homogeneity patterns in adults
+with attention-deficit hyperactivity
+disorder. Eur. J. Radiol 82(9), 1552-1557
+(2013).
+6. Zang YF, He Y, Zhu CZ, et al. Altered
+baseline brain activity in children with
+ADHD revealed by resting-state functional
+MRI. Brain. Dev 29(2), 83-91 (2007).
+7. Castellanos FX, Margulies DS, Kelly C, et al.
+Cingulate-precuneus interactions: a new
+locus of dysfunction in adult attention-
+
+349
+
+11. de Zeeuw P, Schnack HG, van Belle J, et
+al. Differential brain development with
+low and high IQ in attention-deficit/
+hyperactivity disorder. PLoS. one 7(4),
+e35770 (2012).
+12. Choi J, Jeong B, Lee SW, et al. Aberrant
+development of functional connectivity
+among resting state-related functional
+networks in medication-naïve ADHD
+children. PLoS. one 8(12), e83516 (2013).
+13. Sripada CS, Kessler D, Angstadt M. Lag
+in maturation of the brain’s intrinsic
+functional architecture in attention-deficit /
+hyperactivity disorder. Proc. Natl. Acad. Sci.
+U S A 111(39), 14259-14264 (2014).
+14. Castellanos FX, Proal E. Large-scale brain
+
+Neuropsychiatry (London) (2016) 6(6)
+
+systems in ADHD: beyond the prefrontalstriatal model. Trends. Cogn. Sci 16(1), 17-26
+(2012).
+15. Hoekzema E, Carmona S, Ramos-Quiroga
+JA, et al. An independent components and
+functional connectivity analysis of resting
+state fMRI data points to neural network
+dysregulation in adult ADHD. Hum. Brain.
+Mapp 35(4), 1261-1272 (2014).
+16. Wang X, Jiao Y, Tang T, et al. Investigating
+univariate temporal patterns for intrinsic
+connectivity networks based on complexity
+and low-frequency oscillation: a test-retest
+reliability study. Neuroscience 254(1), 404426 (2013).
+17. McDonough IM, Nashiro K. Network
+complexity as a measure of information
+processing across resting-state networks:
+evidence from the Human Connectome
+Project. Front. Hum. Neurosci 8(1), 409
+(2014).
+18. http://fcon_1000.projects.nitrc.org/indi/
+adhd200/
+19. Milham MP, Fair D, Mennes M, et al.
+The ADHD-200 Consortium: A Model to
+Advance the Translational Potential of
+Neuroimaging in Clinical Neuroscience.
+Front. Syst. Neurosci 6(1), 62 (2012).
+20. www.fmrib.ox.ac.uk/fsl
+21. afni.nimh.nih.gov
+22. Biswal BB, Mennes M, Zuo XN, et al. Toward
+discovery science of human brain function.
+
+Abnormal developmental trajectories of amplitude of low frequency fluctuations within intrinsic
+connectivity networks for school-age boys with ADHD
+Proc. Natl. Acad. Sci. U S A 107(10), 4734-4739
+(2010).
+23. Wang XH, Li L. Altered temporal features
+of intrinsic connectivity networks in boys
+with combined type of attention deficit
+hyperactivity disorder. Eur. J. Radiol 84(5), 947954 (2015).
+24. http://brainmap.org/tools.html
+25. Smith SM, Fox PT, Miller KL, et al.
+Correspondence of the brain’s functional
+architecture during activation and rest. Proc.
+Natl. Acad. Sci. U S A 106(31), 13040-13045
+(2009).
+
+26. Power JD, Barnes KA, Snyder AZ, et al.
+Spurious but systematic correlations in
+functional connectivity MRI networks arise
+from subject motion. NeuroImage 59(3), 21422154 (2012).
+27. http://www.ugrad.stat.ubc.ca/R/library/
+statmod/html/growthcurve.html
+28. Xia S, Li X, Kimball AE, et al. Thalamic shape
+and connectivity abnormalities in children
+with attention-deficit/hyperactivity disorder.
+Psychiatry. Res 204(2-3), 161-167 (2012).
+29. Sripada C, Kessler D, Fang Y, et al. Disrupted
+network architecture of the resting brain in
+
+Research
+
+attention-deficit/hyperactivity disorder. Hum.
+Brain. Mapp 35(9), 4693-4705 (2014).
+30. Zuo XN, Di Martino A, Kelly C, et al.
+Castellanos, B.B. Biswal, M.P. Milham, The
+oscillating brain: complex and reliable.
+Neuroimage 49(2), 1432-1445 (2010).
+31. Lei X, Zhao Z, Chen H. Extraversion is encoded
+by scale-free dynamics of default mode
+network, Neuroimage 74(1), 52-57 (2013).
+32. Wei M, Qin J, Yan R, et al. Identifying major
+depressive disorder using Hurst exponent of
+resting-state brain networks. Psychiatry. Res
+214(3), 306-312 (2013).
+
+350
+
+

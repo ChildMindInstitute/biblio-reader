@@ -1,0 +1,1409 @@
+King’s Research Portal
+DOI:
+10.1016/j.dcn.2016.05.002
+Document Version
+Peer reviewed version
+Link to publication record in King's Research Portal
+
+Citation for published version (APA):
+Sato, J. R., Jr, C. E. B., Salum, G. A., Gadelha, A., Crossley, N., Vieira, G., ... Jackowski, A. P. (2016).
+Connectome hubs at resting state in children and adolescents: reproducibility and psychopathological
+correlation. Developmental cognitive neuroscience. 10.1016/j.dcn.2016.05.002
+
+Citing this paper
+Please note that where the full-text provided on King's Research Portal is the Author Accepted Manuscript or Post-Print version this may
+differ from the final Published version. If citing, it is advised that you check and use the publisher's definitive version for pagination,
+volume/issue, and date of publication details. And where the final published version is provided on the Research Portal, if citing you are
+again advised to check the publisher's website for any subsequent corrections.
+General rights
+Copyright and moral rights for the publications made accessible in the Research Portal are retained by the authors and/or other copyright
+owners and it is a condition of accessing publications that users recognize and abide by the legal requirements associated with these rights.
+•Users may download and print one copy of any publication from the Research Portal for the purpose of private study or research.
+•You may not further distribute the material or use it for any profit-making activity or commercial gain
+•You may freely distribute the URL identifying the publication in the Research Portal
+Take down policy
+If you believe that this document breaches copyright please contact librarypure@kcl.ac.uk providing details, and we will remove access to
+the work immediately and investigate your claim.
+
+Download date: 21. Mar. 2017
+
+Accepted Manuscript
+Title: Connectome hubs at resting state in children and
+adolescents: reproducibility and psychopathological
+correlation
+Author: João Ricardo Sato Claudinei Eduardo Biazoli Jr
+Giovanni Abrahão Salum Ary Gadelha Nicolas Crossley
+Gilson Vieira André Zugman Felipe Almeida Picon Pedro
+Mario Pan Marcelo Queiroz Hoexter Mauricio Anés Luciana
+Monteiro Moura Marco Antonio Gomes Del ’Aquilla Edson
+Amaro Junior Philip Mcguire Luis Augusto Rohde Euripedes
+Constantino Miguel Rodrigo Affonseca Bressan Andrea
+Parolin Jackowski
+PII:
+DOI:
+Reference:
+
+S1878-9293(15)30119-5
+http://dx.doi.org/doi:10.1016/j.dcn.2016.05.002
+DCN 375
+
+To appear in:
+Received date:
+Revised date:
+Accepted date:
+
+2-12-2015
+9-5-2016
+9-5-2016
+
+Please cite this article as: Sato, João Ricardo, Jr, Claudinei Eduardo Biazoli,
+Salum, Giovanni Abrahão, Gadelha, Ary, Crossley, Nicolas, Vieira, Gilson,
+Zugman, André, Picon, Felipe Almeida, Pan, Pedro Mario, Hoexter, Marcelo
+Queiroz, Anés, Mauricio, Moura, Luciana Monteiro, ’Aquilla, Marco Antonio
+Gomes Del, Junior, Edson Amaro, Mcguire, Philip, Rohde, Luis Augusto, Miguel,
+Euripedes Constantino, Bressan, Rodrigo Affonseca, Jackowski, Andrea Parolin,
+Connectome hubs at resting state in children and adolescents: reproducibility
+and psychopathological correlation.Developmental Cognitive Neuroscience
+http://dx.doi.org/10.1016/j.dcn.2016.05.002
+This is a PDF file of an unedited manuscript that has been accepted for publication.
+As a service to our customers we are providing this early version of the manuscript.
+The manuscript will undergo copyediting, typesetting, and review of the resulting proof
+before it is published in its final form. Please note that during the production process
+errors may be discovered which could affect the content, and all legal disclaimers that
+apply to the journal pertain.
+
+Title: Connectome Hubs at Resting State in Children and Adolescents:
+Reproducibility and Psychopathological Correlation
+
+Authors: João Ricardo Sato1,3,7,9, Claudinei Eduardo Biazoli Jr1,7, Giovanni
+Abrahão Salum2,9, Ary Gadelha3,9, Nicolas Crossley6,10, Gilson Vieira5,7, André
+Zugman3,9, Felipe Almeida Picon2,9, Pedro Mario Pan3,9, Marcelo Queiroz
+Hoexter3,4,9, Mauricio Anés2,9, Luciana Monteiro Moura3,9, Marco Antonio
+Gomes Del’Aquilla3,9, Edson Amaro Junior7, Philip Mcguire6, Luis Augusto
+Rohde2,9, Euripedes Constantino Miguel4,9, Rodrigo Affonseca Bressan3,9,
+Andrea Parolin Jackowski3,9.
+
+Affiliations
+1
+
+Centro de Matemática, Computação e Cognição, Universidade Federal do
+ABC, Santo Andre, Brazil.
+2
+
+Department of Psychiatry, Federal University of Rio Grande do Sul and
+Psychiatric Service, Hospital de Clinicas de Porto Alegre, Brazil.
+3
+
+Interdisciplinary Lab for Clinical Neurosciences (LiNC), Universidade Federal
+de Sao Paulo (UNIFESP), Sao Paulo, Brazil
+4
+
+Department of Psychiatry, University of São Paulo School of Medicine, São
+Paulo, Brazil.
+5
+
+Bioinformatics Program, Institute of Mathematics and Statistics, University of
+Sao Paulo, Brazil.
+6
+
+Institute of Psychiatry, King’s College London, United Kingdom.
+
+7
+
+Department of Radiology, School of Medicine, University of Sao Paulo, Brazil.
+
+8
+
+Department of Psychiatry, University of Pennsylvania Perelman School of
+Medicine, Philadelphia, PA, United States.
+9
+
+National Institute of Developmental Psychiatry for Children and Adolescents,
+CNPq, Brazil.
+10
+
+Institute for Biological and Medical Engineering, Faculties of Engineering,
+Medicine and Biological Sciences, P. Catholic University of Chile.
+
+Corresponding Author: Name: João Ricardo Sato Address: Av. dos Estados,
+5001. Bairro Bangu. Santo André - SP - Brazil. CEP 09210-580 Phone: +55 11
+995536307 Email: joao.sato@ufabc.edu.br
+
+Abstract
+Functional brain hubs are key integrative regions in brain networks. Recently,
+brain hubs identified through resting-state fMRI have emerged as interesting
+targets to increase understanding of the relationships between large-scale
+functional networks and psychopathology. However, few studies have directly
+addressed the replicability and consistency of the hub regions identified and
+their association with symptoms. Here, we used the eigenvector centrality
+(EVC) measure obtained from graph analysis of two large, independent
+population-based samples of children and adolescents (7 to 15 years old; total
+N = 652; 341 subjects for site 1 and 311 for site 2) to evaluate the replicability of
+hub identification. Subsequently, we tested the association between replicable
+hub regions and psychiatric symptoms. We identified a set of hubs consisting of
+the anterior medial prefrontal cortex and inferior parietal lobule/intraparietal
+sulcus (IPL/IPS). Moreover, lower EVC values in the right IPS were associated
+with psychiatric symptoms in both samples. Thus, low centrality of the IPS was
+a replicable sign of potential vulnerability to mental disorders in children. The
+identification of critical and replicable hubs in functional cortical networks in
+children and adolescents can foster understanding of the mechanisms
+underlying mental disorders.
+
+Keywords: resting state; replication; fMRI; connectivity; development; children
+
+Introduction
+Graph theory has been increasingly applied in the analysis of
+connectivity in neuroimaging data. Graph-theory-derived centrality measures,
+especially eigenvector centrality (EVC), can rank the relevance of a node in a
+complex network (Zuo et al., 2012) in terms of strategic location. This feature is
+particularly useful for exploring the etiology of mental disorders that are
+associated with functional alterations at a network rather than a focal level
+(Fornito et al., 2015; Sporns, 2014; He et al., 2016). However, there is currently
+a lack of consistent findings from independent large samples in the literature
+(Horga et al., 2014). In particular, few studies have investigated if central
+functional brain regions in children and adolescents are replicable across
+different sites of acquisition (Zuo et al., 2012). In addition, even fewer studies
+have explored the replicability of associations between network-level disruptions
+and dimensional psychopathology in childhood.
+Previous studies of human structural and functional brain networks have
+identified a set of highly connected brain regions (i.e., hubs) (Power et al.,
+2013). These hubs are believed to play a central role in the flow of information
+throughout the brain, integrating parallel and distributed networks (Gong et al.,
+2009; Hagmann et al., 2008; Hwang et al., 2013). Structural connectivity studies
+have shown that hubs are mainly located at integrative cortical areas in adults
+(Power et al., 2013; Sporns et al., 2007). In the adult brain, functional cortical
+hubs include the medial prefrontal cortex, posterior cingulate cortex (PCC),
+precuneus, inferior parietal lobule (IPL; particularly the angular gyrus) and
+medial temporal cortex (Buckner et al., 2009). Moreover, Betzel et al. (2014)
+have noted that functional hub regions are affected by changes in white matter
+connections and that the relationship between functional and structural
+connectivity changes with age.
+Two major gaps can be drawn from the current neuroimaging literature of
+children and adolescents: (i) the replicability across different samples; and (ii)
+the differential effects of hubs over neurodevelopment. Several resting-state
+fMRI studies of large samples of children and adolescents have been carried
+out, but in healthy developing children as opposed to clinical samples (Grayson
+
+et al., 2014; Sato et al., 2015; Supekar et al., 2009; Uddin et al., 2011; Hwang
+2013). Evidence for a typical developmental trajectory emerged from these
+studies: large-scale networks apparently shift from a locally segregated to a
+more distributed and integrated organizational pattern (Fair et al., 2008; Fair et
+al., 2009; Fair et al., 2007; Fransson et al., 2011; Gao et al., 2009; Supekar et
+al., 2009). Interestingly, in infants, hubs have been identified in primary
+sensorimotor regions as opposed to the association cortex, where hubs have
+been identified in adults (Fransson et al., 2011). Hwang et al. (2013) showed
+that the connectivity between frontal hubs and other brain regions increases
+from childhood to adolescence. However, Khundrakpam et al. (2013) described
+developmental changes in the topological properties of the networks that
+suggested an organizational shift towards a more random configuration.
+Moreover, Zuo et al. (2012) demonstrated the test-retest reliability of EVC in
+functional connectivity networks over a subject age range of 7-85 years old.
+Therefore, despite the emergence of several brain regions as potential hubs of
+intrinsic brain connectivity in children, few studies have investigated which
+regions are most replicable across different samples (Horga et al., 2014). This
+is a crucial point for progress in biological psychiatry. In addition, many findings
+from early resting-state fMRI studies were limited by the issue of head micromotion artifacts (Power et al., 2012). These movement artifacts are also related
+to age and influence functional connectivity estimates, complicating the
+interpretation of results.
+The fact that hub regions constitute potential points of vulnerability for
+network disintegration is a key issue (Albert et al., 2000). Indeed, the
+abnormalities associated with several brain disorders have been shown to
+concentrate in hubs; such disorders include ADHD (dos Santos Siqueira et al.,
+2014), autism (Ray et al., 2014) and schizophrenia (Tomasi and Volkow, 2014).
+As such, hub disruption has been proposed as a general pathological
+mechanism in brain disorders (Crossley et al., 2014; van den Heuvel and
+Sporns,
+
+2013).
+
+Therefore,
+
+description
+
+of
+
+atypical
+
+neurodevelopmental
+
+trajectories of the brain connectome appears crucial to unveil the neural
+substrates of mental symptoms and disorders (Di Martino et al., 2014).
+
+However, full characterization of these functional networks and possible
+differences in their architecture in childhood has not yet been achieved.
+Here, we first sought to explore the replicability of mapping regions with
+high EVC values in children and adolescents. Then, we investigated the
+hypothesis that diminished or “impaired” centrality of these hubs would reliably
+correlate with psychopathological symptoms in two independent, populationbased cohorts of children and adolescents. For these purposes, we analyzed
+resting-state fMRI data acquired using identical acquisition protocols from two
+large samples of children and adolescents who were recruited at two different
+centers in Brazil.
+Materials and Methods
+Subjects
+The children and adolescents who participated in this study were part of
+the ‘High Risk Cohort Study for Psychiatric Disorders in Childhood’ (HRC, N =
+2512 children; for a detailed description see Salum et al., 2013, 2014). This is a
+population-based sample of children from among the 9937 students of 57 public
+schools in two Brazilian cities: São Paulo (site 1) and Porto Alegre (site 2). The
+members of the HRC cohort were screened using a modified version of the
+Family History Screen (Weissman et al., 2000). Nine hundred fifty-eight
+subjects were randomly selected, and 1554 were selected based on their risk of
+developing psychiatric disorders (using the same criteria at the two sites; Salum
+et al., 2013, 2014); these individuals comprised the 2512 subjects of the HRC.
+Among the total of 2512 volunteers, 741 subjects (and their
+parent/guardian) accepted the invitation for MRI scanning session. Functional
+MRI data were acquired from these subjects using the same acquisition
+protocol at the two sites. Eighty-one participants were discarded due to an
+incomplete session, missing data, observable excessive motion (as identified by
+the system operator) or preprocessing errors (failure in registration to the
+template/atlas).
+Thus, 652 remaining subjects were considered in the analyses of the
+current study. Because this was a community sample, participants were not
+
+discarded depending on IQ. The mean age (years) ± standard deviation (sd) of
+the participants was 10.81 ± 2.00 at site 1 and 10.58 ± 1.75 at site 2, with ages
+ranging from 7 to 15 years at both sites. Three hundred forty-one subjects were
+scanned at site 1 (165 males, 159 randomly selected) and 311 at site 2 (179
+males, 139 randomly selected).
+The local ethics committee approved this study. Written consent was
+obtained from all of the parents (or legal guardians), and verbal assent was
+obtained from all of the participants.
+
+Assessment
+IQ was estimated using the vocabulary and block design subtests of the
+Wechsler Intelligence Scale for Children (in a household interview) and the
+approach of Tellegen and Briggs (1967). The socioeconomic status of the
+families was classified according to the Brazilian rating scale (ABIPEME, 2010;
+low = E and D classes; medium = C and B classes; high = A class):
+The parents/caregivers filled out a Portuguese-translated version of the
+Child Behavior Checklist (CBCL) (Achenbach and Rescorla, 2001) on the day of
+scanning. This assessment tool provided scores for psychopathological
+manifestations. The total CBCL score is a measure of overall psychopathology.
+It represents the sum of points for 112 CBCL items (0, 1 and 2 points per item),
+including the 8 syndromes described by the questionnaire (anxiety/depression,
+withdrawal/depression, somatic, rule breaking, aggression, social problems,
+thought problems and attention problems) as well as other symptoms not
+classified with any syndrome. The total CBCL score is a common measure of
+overall psychopathology. The analyses were carried out only for the total CBCL
+scores and not for scores on all the subscales to reduce the number of multiple
+comparisons and because the subscale scores are highly correlated with low
+specificity.
+
+Data Acquisition
+
+Recreational activities were performed for desensitization on the day of
+scanning. The neuroimaging data were acquired using two 1.5 T MR systems
+(Signa HDX and HD from the same manufacturer - G.E., United States of
+America) using the same parameters and protocols. The fMRI acquisition
+protocol consisted of 180 EPI dynamic volumes with the following parameters:
+TR = 2000 ms; TE = 30 ms; slice thickness = 4 mm; gap = 0.5 mm; flip angle =
+80 degrees; matrix size = 80 x 80; reconstruction matrix = 128 x 128, 1.875 x
+1.875 mm; NEX = 1; number of slices = 26; and total acquisition time = 6
+minutes. Resting-state scans were acquired while the subject’s eyes were open
+and fixated on a target. Alongside the functional images, T1-weighted scans
+(3D FSPGR sequence) were collected to cover the whole brain, up to 160 axial
+slices (TR = 10.91 ms; TE = in phase 4.2 ms; thickness = 1.2 mm; flip angle =
+15 degrees; matrix size = 256 x 192; FOV = 24.0 x 18.0 cm; and NEX = 1).
+
+Data Preprocessing
+The neuroimaging data were preprocessed using AFNI (version
+2011_12_21_1014) (Cox, 1996) and FSL software (version 5.0) (Jenkinson et
+al.,
+
+2012).
+
+We
+
+used
+
+the
+
+following
+
+steps
+
+(scripts
+
+from
+
+www.nitrc.org/projects/fcon_1000): discarding of the first four volumes of EPI;
+skull stripping; head motion correction; despiking; rescaling to a grand mean of
+10000; band-pass filtering (0.01 and 0.1 Hz); detrending; spatial smoothing
+(FWHM = 8 mm); linear registration to the subject’s structural scan; structural
+image non-linear registration to the Montreal Neurological Institute (MNI152)
+template; non-linear registration of functional scans; and regression out of
+nuisance covariates (CSF, white matter, global signal and six linear motion
+parameters). The scrubbing method proposed by Power et al. (2012) was
+applied to minimize the impact of head motion. Scans (frames) were discarded
+(flagged frame as well as one before and two after) if the corresponding framewise displacement (FD) or the temporal derivative of the RMS variance over the
+voxels (DVARS) was greater than the 95th percentile of all subjects with
+successful processing (FD > 0.5 mm and DVARS > 46.4).
+
+Network Modeling
+For each subject, the average BOLD signal was extracted from 325
+similarly sized regions of interest covering the whole brain (Patel et al., 2014);
+these ROIs were defined using previously established algorithms (Zalesky,
+2011). Although some notable studies (Zuo et al., 2012) have used a voxel-wise
+approach to construct connectomes, we opted to use a ROI-based approach for
+two main reasons: (i) voxel-wise analyses would considerably increase the
+positive correlations between regions due to spatial smoothing and data
+redundancy; and (ii) the number of comparisons in subsequent statistical testing
+would be increased from the order of hundreds to tens of thousands. A pairwise
+Pearson correlation was calculated between every pair of ROIs, and these
+correlations were then used to index the strength of functional connectivity.
+A graph is a mathematical object that can be used to represent networks
+in general (social, brain, transport networks, etc.). This representation facilitates
+the extraction of some descriptive features and quantitative analyses. In the
+current study, the ROIs are the graph nodes, and edges represent the
+functional connectivity between them. To avoid arbitrary choices of functional
+connectivity, we modelled an undirected weighted graph by using the absolute
+value of the Pearson correlation coefficients as the weight of the connections.
+This approach has some limitations because it considers correlated and “anticorrelated” networks in the same manner, which may make interpreting this
+graph from a physiological perspective difficult. We discuss this limitation in the
+Discussion section. In addition, short-distance correlations might be affected by
+spatial smoothing, slicing and head movement (Grayson et al., 2014; Power et
+al., 2013); thus, we discarded connections between ROIs that were less than 20
+mm apart.
+The EVC of a node is a metric obtained from graph analysis that
+quantifies the relevance of a node (i.e., a brain region in this case) in the
+context of the organization of connections of the network. In other words, some
+nodes interact with the whole network more than others, and these key nodes
+are named hubs. Thus, to investigate the hierarchical organization of the wholebrain network, we ranked all of the included ROIs according to their EVC. The
+
+EVC of a brain region is proportional to the EVC of its connected regions
+(Bonacich, 1987). In this sense, EVC also considers how the neighbors
+(connected regions) of a node are connected to the network. This is a wellestablished method in graph analysis that is used to investigate the hierarchical
+relevance of a node, or its ‘hubness’, in the context of the global features of a
+network (Rubinov and Sporns, 2010). For each subject, the EVC of the nodes
+was calculated by the eigenvector corresponding to the greatest eigenvalue of
+the correlation matrix (in absolute values) between the BOLD signal of the ROIs
+(i.e., if A is the bivariate correlation matrix, the EVC is the vector x such that Ax
+= mx, for the greatest m).
+In the current study, we focused solely on EVC as the metric used to
+identify hubs for the following reasons: (i) EVC provides a global measure of
+centrality that takes into account not only the neighbors of a node but also the
+context of the whole network; (ii) this metric is based on connection strength
+(weights) and not distance (and is thus a straightforward choice regarding
+functional connectivity. Otherwise, a distance metric based on correlations must
+be defined); (iii) EVC displays good test-retest reliability, as demonstrated by
+Zuo et al. (2012), and is sensitive for functional connectivity changes in children
+and adolescents (Sato et al., 2015a, 2015b); and (iv) exploring other centrality
+measures would at least double the number of comparisons.
+
+Data analysis
+We analyzed each site of acquisition separately, which allowed us to
+assess the reliability of our analyses across the two samples. We first
+calculated the mean EVC rank across subjects for every ROI. Subsequently, we
+identified the overlap (across sites) of the top 10% (21 out of 325) of regions
+with the highest EVC ranks. Then, a Monte Carlo analysis was performed to
+assess the significance of the number of overlapping regions, preserving the
+correlation structure between regions at each site. Finally, to demonstrate that
+the replicability across sites was not dependent on the 10% threshold, we also
+repeated the overlap analyses for the regions with EVC ranks within the top 5%
+and top 1%.
+
+Once these top 10% EVC hub regions were identified, we tested the
+hypothesis that the subjects with hubs with lower EVC ranks would be more
+likely to have psychiatric symptoms. For each region (from 21 hubs), a
+univariate general linear model (GLM) was fitted, considering the total CBCL
+score as the dependent variable; the EVC rank as the main regressor; and
+gender, age and degree of head motion (measured by the mean FD) as
+nuisance variables. Although EVC was the main variable of interest, the
+nuisance variables - mainly FD - were included as covariates not to assess their
+significance but to take them into account as potential confounders. Moreover,
+to reduce the number of comparisons, we excluded brain regions with
+suspected influences of head motion. The 21 GLMs were also performed
+without FD as a covariate. Thus, the brain regions for which the EVC p-value
+difference (with and without FD as a covariate) was greater than 5% were
+excluded from results. The Type I error for the remaining regions was set at 5%
+(uncorrected for multiple comparisons).
+
+Results
+Figure 1 highlights a strong replication (Pearson’s r = 0.91, p < 0.001) of
+the ranks of the mean EVC (across subjects) for brain regions in the two sites,
+especially for regions with high and low EVC values; more variability was
+observed in the intermediate values. Our main result was the overlap (across
+sites) of 21 regions within the set of regions with EVC scores within the top 10%
+(see Table 2). For the top 5% and 1%, the number of overlapping regions was
+11 and 2, respectively. The p-value for the comparison of the number of
+overlapping regions was less than 0.001 (Monte Carlo method), regardless of
+the threshold (10%, 5% and 1%) considered.
+As shown in Figure 2, the individual variability in the EVC scores of the
+overlapping regions was relatively low, with similar results for both sites. Figure
+3 shows brain maps of the hub regions that overlapped across the sites. Note
+that regardless of the threshold considered, the anterior medial prefrontal cortex
+(amPFC) and the IPL/intraparietal sulcus (IPS) were included among the most
+relevant regions.
+
+Regarding the GLM analyses of psychopathological manifestations, only
+four regions were not strongly affected by the inclusion of head motion (FD) as
+a covariate (Table 3). Among these four regions, the EVC rank of the right
+intraparietal cortex (see Figure 4) was found to be negatively associated with
+the CBCL score, a finding replicated at both sites (uncorrected p < 0.02 and
+0.03 for site 1 and site 2, respectively). The box plots presented in Figure 4
+(bottom) were built considering a quartile categorization of the mean EVC rank
+(low if less than first quartile; high if greater than third quartile; typical
+otherwise). The data were categorized this way solely for visualization purposes
+(the statistical evaluation was carried out previously through a GLM in which
+EVC was considered as a quantitative variable) because the association effect
+is more evident in box plots than in scatter plots.
+Regarding head motion, the mean FD (± sd) was 0.19 (± 0.29) for site 1
+and 0.12 (± 0.12) for site 2. As expected, the EVC of the top 10% of regions
+was significantly correlated (Pearson correlation) with the mean FD. However,
+the Pearson correlation between mean FD and CBCL score was not significant
+(p = 0.40 and 0.21 for site 1 and 2, respectively). In addition, we repeated both
+the hub identification and CBCL analyses by considering only the subjects with
+a mean FD < 0.2 mm. Only one of the previous 21 regions was not identified as
+a replicable hub (the right Insula). The results of the CBCL analysis remained
+the same (see Supplementary Table 1 for further details). We did not find any
+significant association between EVC and estimated IQ in either of the two sites.
+Finally, the findings were not altered by the inclusion of socioeconomic status
+(SES) as an additional nuisance variable in the GLM analyses (Supplementary
+Table 2).
+
+Discussion
+As integrative nodes, brain hubs play a key role in functional connectivity
+networks. In the current study, we used two large and independent populationbased samples of children and adolescents to explore the consistency of the
+identification of brain hubs under resting-state conditions and the associations
+of these hubs with psychopathological symptoms. We first identified a set of
+
+hubs that was replicated across both sites: the amPFC and the IPL/IPS. Within
+this set of hubs, we found that a right IPS with lower EVC was associated with
+the presence of psychiatric symptoms, a finding that was replicable across the
+two samples.
+In addition to the IPL/IPS and amPFC, other fairly consistent regions
+(across gender and age) included the ventral medial prefrontal cortex (vmPFC),
+medial temporal gyrus (mTG), precuneus and PCC. Many of these regions are
+components of the default mode network (DMN) (Raichle et al., 2001; Raichle
+and Snyder, 2007). The IPL/IPS and amPFC are associative areas and might
+play a role as hubs in the cross-modal integration of cortical and subcortical
+regions (Buckner et al., 2008). The amPFC is involved in social cognition (Wang
+and Hamilton, 2014), metacognitive abilities for memory and perception (Baird
+et al., 2013), evaluative judgment and self-referential processes (Zysset et al.,
+2003). The IPS/IPL is part of the parietal cortex (Rademacher et al., 1992),
+which has been characterized as a cross-modal hub of multisensory information
+convergence (Seghier, 2013) and implicated in several cognitive processes.
+Semantic processing and complex language functions frequently activate the
+angular gyrus, for instance (Binder et al., 2009; Vigneau et al., 2006). In
+addition, the right IPL is also involved in attentional maintenance, the encoding
+of salient events (Singh-Curry and Husain, 2009), spatial cognition, internal
+representations (Sack, 2009), social cognition (Buckner et al., 2008) and the
+autobiographical memory system (Spreng et al., 2009). Thus, our findings
+support crucial roles for the IPL/IPS and amPFC as integrative regions.
+From a network dynamics perspective, the amPFC is part of the midline
+core components of the DMN and may underlie the evaluation of experiences
+with a high personal significance (Andrews-Hanna et al., 2010). In a detailed
+study of the structural and functional changes that occur in the DMN, Supekar
+et al. (2010) and Sato et al. (2015) showed that the connectivity between the
+amPFC and PCC is immature in children. Our finding of a relative absence of
+the PCC from the group of the most consistent hub regions, in contrast to the
+amPFC, may be in line with this previous observation. Similarly, the IPS and IPL
+are central integrative nodes of the frontoparietal component of the executive
+control network (Dosenbach et al., 2007) and are thought to underlie top-down
+
+control. Our results support a view in which the IPL/IPS and amPFC constitute a
+stable (across the age range investigated) and replicable core of the
+control/default mode network, with the PCC/precuneus and other parts of the
+medial prefrontal cortex included as hubs.
+Finally, we tested the hypothesis of an association between the
+disruption of hub regions and the expression of psychiatric symptoms in
+children and adolescents. As expected, lower values of centrality in a replicable
+hub region, the right IPS, correlated with the increased expression of psychiatric
+symptoms. Higher right IPS activity was previously found to be positively
+correlated with better executive function among populations at risk for brain
+disorders including mild cognitive impairment (Jacobs et al., 2012) and among
+carriers of genes associated with predisposition to Parkinson’s disease (Thaler
+et al., 2013). Moreover, right IPS activity was correlated with reduced symptom
+severity in a subgroup of patients with schizophrenia (Bleich-Cohen et al.,
+2014). This finding demands further investigation of the potential role of hub
+impairment, particularly of right IPS, as a potential marker of vulnerability or as
+part of the natural history of several neuropsychiatric pathologies.
+Interestingly, in addition to the correlation of lower EVC values in the right
+but not left IPS with psychiatric symptoms, the majority of hubs identified were
+concentrated in the right hemisphere. Higher connectivity and centrality of the
+right but not the left IPS was previously shown to be associated with improved
+executive task performance (Marketti et al., 2015; Seeley et al., 2007).
+Furthermore, there is evidence for asymmetric arrangements of large-scale
+networks, including the DMN (Saenger et al., 2012). By simultaneously
+acquiring EEG and fMRI, Biazoli et al. (2013) showed that BOLD activity in the
+nodes of resting-state networks is correlated with an increased flow of
+information from the right to the left hemisphere. Accordingly, stronger
+connectivity was found in the right hemisphere, and causality measures
+suggested a crucial functional role of this hemisphere during the resting state
+(Medvedev, 2014).
+Figure 3 highlights the replicated hubs in yellow, while the regions
+depicted in red and green show the non-overlapping regions. Some of these
+
+regions are nodes of the DMN, such as precuneus/posterior cingulate and right
+temporal gyrus. In these cases, we believe the divergence between the two
+sites may be due to sampling fluctuations. In addition, occipital and cerebellar
+regions seem to be specific to one of the sites. Indeed, although the age and
+gender distributions were similar between the two sites, the two samples
+considerably differed in terms of psychiatric symptoms and levels of head
+motion, as shown in Table 1. The participants at site 1 presented a wider range
+of symptom severity and head motion, which may explain the between-sites
+differences in brain hubs.
+Finally, it is important to mention some of the limitations of the current
+study. Although we used a scrubbing method, head motion artifacts may still
+affect the analyses. This is an inherent challenge in neuroimaging studies
+involving children, and the challenge is even greater when psychiatric
+symptoms are present. We also tried to include FD as a possible confounder in
+the GLM and discarded regions in which the p-value depended on FD.
+However, head motion effects cannot be completely eliminated because these
+artifacts may also be due to non-linear influences of motion on the signal or field
+inhomogeneity. Despite reducing the number of comparisons by discarding the
+analyses more prone to motion effects, the remaining four GLM analyses with
+CBCL were not adjusted for multiple testing. Although the findings did not
+persist after Bonferroni correction, the association between EVC and CBCL in
+the IPS was replicated across the two sites when uncorrected p-values were
+considered. In addition, we acknowledge that by using the absolute values of
+the correlation coefficients as functional connectivity estimates, we could not
+differentiate correlated and “anti-correlated” (negatively correlated) networks.
+This assumption may not be an accurate representation of the underlying
+neurophysiology, which may complicate the interpretation of the results. We
+acknowledge that this approach is not optimal, but there is no established
+framework (conceptual and methodological) for handling anti-correlated
+networks in whole-brain analyses. When analyzing these data considering
+solely the positive correlations between the ROIs, the results are very different
+because the graph connectivity structure is altered. However, two of the main
+resting-state networks are the default-mode and control networks (which were
+
+part of our findings). Because the activities of both networks are negatively
+correlated, using solely the connections with positive weights to define the
+graphs would mask this antagonism. Moreover, some studies suggest that this
+opposition is intrinsic, and the dynamic of cognitive control involves the union of
+both systems (Fox et al., 2005; Hellyer et al., 2014). Finally, we emphasize that
+one of the main limitations of the current study was the choice of parcellation
+scheme. Indeed, the results are expected to vary according to the parcellation
+atlas used because atlases differ with respect to the number of ROIs and the
+size and location of the parcels. These differences strongly impact the
+estimated functional connectomes. We opted to use an anatomical parcellation
+based on predefined cortical and subcortical areas, but we recognize this is an
+arbitrary choice.
+In summary, our findings suggest that in late childhood and adolescence,
+the amPFC and IPL/IPS play a role as integrative regions with high hierarchical
+positions within the whole-brain network. Furthermore, we showed that
+disruptions in the hierarchical position of the IPS are associated with
+psychopathology.
+
+These
+
+results
+
+point
+
+towards
+
+a
+
+model
+
+in
+
+which
+
+psychopathological manifestations are associated with disruptions of the typical
+functional hierarchy of brain networks. Our findings are in agreement with
+current hypotheses regarding the relationships between mental disorders and
+abnormal connectomics (Fornito et al., 2015; Satterthwaite and Baker, 2015;
+Sporns, 2014). Because this study is based on a pediatric sample, this result
+might be explored as a potential feature that could be used to identify risk
+factors in children and adolescents. Moreover, our sample is a community
+sample based on a non-European/North American population from a developing
+country, for which relatively few studies exist.
+Disclosures and conflict of interest
+João R. Sato, Euripedes C. Miguel and Andrea P. Jackowsky are supported by
+grants from the São Paulo Research Foundation (FAPESP).
+Ary Gadelha receives support from a CAPES post-doctoral fellowship and
+declares no potential conflicts of interest related to the current study.
+
+Felipe Almeida Picon receives support from a CAPES PhD fellowship and
+declares no potential conflicts of interest.
+André Zugman Picon receives support from a CAPES PhD fellowship with no
+direct conflict of interest with the making of this article.
+Giovanni A. Salum receives support from a FAPERGS/CAPES post-doctoral
+fellowship and declares no potential conflicts of interest.
+Pedro Mario Pan receives support from a CNPq PhD fellowship and declares
+no potential conflicts of interest.
+Dr. Edson Amaro Jr has received research grants from FAPESP, CNPq,
+CAPES, Fundação E.J. Safra and Fundação ABAHDS.
+Dr. Luis Augusto Rohde is supported by grants from CNPq and has been on the
+speakers’ bureau/advisory board and/or acted as a consultant for Eli-Lilly,
+Janssen-Cilag, Novartis and Shire in the last three years. The ADHD and
+Juvenile Bipolar Disorder Outpatient Programs he chaired received unrestricted
+educational and research support from the following pharmaceutical companies
+in the last three years: Eli-Lilly, Janssen-Cilag, Novartis, and Shire. He receives
+authorship royalties from Oxford Press and ArtMed. He has also received travel
+awards from Shire for his participation in the 2014 APA and 2015 WFADHD
+meetings.
+Dr. Rodrigo A. Bressan has been on the speakers’ bureau/advisory board of
+AstraZeneca, Bristol, Janssen and Lundbeck and has received research grants
+from Janssen, Eli Lilly, Lundbeck, Novartis, Roche, FAPESP, CNPq, CAPES,
+Fundação E.J. Safra and Fundação ABAHDS. He is a shareholder of
+Biomolecular Technology Ltd.
+
+All of the other authors report no biomedical financial interests or
+potential conflicts of interest.
+
+Acknowledgements
+The opinions, hypotheses, conclusions and recommendations of this study are
+those of the authors and do not necessary represent the opinions of the funding
+agencies. The authors are grateful to Sao Paulo Research Foundation FAPESP (J.R.S. grants 2013/10498-6 and 2013/00506-1; A.P.J. grant
+2013/08531-5) for funding this research. This is a study from the National
+Institutes of Science and Technology for Developmental Psychiatry of Children
+and
+
+Adolescents
+
+(INPD)
+
+supported
+
+by
+
+CNPq
+
+(573974/2008-0
+
+and
+
+442026/2014-5) and FAPESP (2008/57896-8). A.G., A.Z., F.A.P. and G.A.S.
+receive fellowships from CAPES-Brazil. P.M.P. receives a fellowship from
+CNPq-Brazil.
+
+References
+ABIPEME. Associação Brasileira de Empresas de Pesquisa (ABEP) (2010).
+Critério de Classificação Econômica Brasil. São Paulo: ABEP.
+Achenbach, T., Rescorla, L., 2001. Manual for the ASEBA school-age forms &
+profiles: an integrated system of multi-informant assessment Burlington, VT:
+University of Vermont. Research Center for Children, Youth, & Families.
+Albert, R., Jeong, H., Barabasi, A.L. (2000). Error and attack tolerance of
+complex networks. Nature, 406(6794):378-82.
+
+Andrews-Hanna, J.R., Reidler, J.S., Sepulcre, J., Poulin, R., Buckner, R.L.,
+2010. Functional-anatomic fractionation of the brain’s default network. Neuron
+65, 550-562.
+Baird, B., Smallwood, J., Gorgolewski, K.J., Margulies, D.S., 2013. Medial and
+lateral networks in anterior prefrontal cortex support metacognitive ability for
+memory and perception. The Journal of Neuroscience 33, 16657-16665.
+Ball, G., Aljabar, P., Zebari, S., Tusor, N., Arichi, T., Merchant, N., Robinson,
+E.C., Ogundipe, E., Rueckert, D., Edwards, A.D., 2014. Rich-club organization
+of the newborn human brain. Proceedings of the National Academy of Sciences
+111, 7456-7461.
+Betzel RF, Byrge L, He Y, Goñi J, Zuo XN, Sporns O (2014). Changes in
+structural and functional connectivity among resting-state networks across the
+human lifespan. Neuroimage, 102(2):345-57.
+Biazoli Jr, C. E., Sturzbecher, M., White, T. P., dos Santos Onias, H. H.,
+Andrade, K. C., de Araujo, D. B., & Sato, J. R. (2013). Application of partial
+directed coherence to the analysis of resting-state EEG-fMRI data. Brain
+connectivity, 3(6), 563-568.
+Binder, J.R., Desai, R.H., Graves, W.W., Conant, L.L., 2009. Where is the
+semantic system? A critical review and meta-analysis of 120 functional
+neuroimaging studies. Cereb Cortex 19, 2767-2796.
+Biswal, B.B., Mennes, M., Zuo, X.-N., Gohel, S., Kelly, C., Smith, S.M.,
+Beckmann, C.F., Adelstein, J.S., Buckner, R.L., Colcombe, S., 2010. Toward
+discovery science of human brain function. Proceedings of the National
+Academy of Sciences 107, 4734-4739.
+Bleich-Cohen, M., Jamshy, S., Sharon, H., Weizman, R., Intrator, N.,
+Poyurovsky, M., & Hendler, T. (2014). Machine learning fMRI classifier
+delineates subgroups of schizophrenia patients. Schizophrenia research,160(1),
+196-200.
+
+Bonacich, P., 1987. Power and centrality: A family of measures. American
+journal of sociology, 1170-1182.
+Buckner, R.L., Andrews‐ Hanna, J.R., Schacter, D.L., 2008. The brain’s default
+network. Ann N Y Acad Sci 1124, 1-38.
+Buckner, R.L., Sepulcre, J., Talukdar, T., Krienen, F.M., Liu, H., Hedden, T.,
+Andrews-Hanna, J.R., Sperling, R.A., Johnson, K.A., 2009. Cortical hubs
+revealed by intrinsic functional connectivity: mapping, assessment of stability,
+and relation to Alzheimer’s disease. The Journal of Neuroscience 29, 18601873.
+Cao, M., Shu, N., Cao, Q., Wang, Y., He, Y., 2014. Imaging functional and
+structural
+
+brain
+
+connectomics
+
+in
+
+attention-deficit/hyperactivity
+
+disorder.
+
+Molecular neurobiology 50, 1111-1123.
+Consortium, A.-. 2012. The ADHD-200 consortium: a model to advance the
+translational potential of neuroimaging in clinical neuroscience. Front Syst
+Neurosci 6.
+Cox, C.L., Gotimer, K., Roy, A.K., Castellanos, F.X., Milham, M.P., Kelly, C.,
+2010. Your resting brain CAREs about your risky behavior. PLoS One 5,
+e12296.
+Cox, R.W., 1996. AFNI: software for analysis and visualization of functional
+magnetic resonance neuroimages. Computers and Biomedical research 29,
+162-173.
+Crossley, N.A., Mechelli, A., Scott, J., Carletti, F., Fox, P.T., McGuire, P.,
+Bullmore, E.T., 2014. The hubs of the human connectome are generally
+implicated in the anatomy of brain disorders. Brain 137, 2382-2395.
+Di Martino, A., Fair, D.A., Kelly, C., Satterthwaite, T.D., Castellanos, F.X.,
+Thomason, M.E., Craddock, R.C., Luna, B., Leventhal, B.L., Zuo, X.-N., 2014.
+Unraveling the miswired connectome: a developmental perspective. Neuron 83,
+1335-1353.
+
+Di Martino, A., Kelly, C., Grzadzinski, R., Zuo, X.-N., Mennes, M., Mairena,
+M.A., Lord, C., Castellanos, F.X., Milham, M.P., 2011. Aberrant striatal
+functional connectivity in children with autism. Biol Psychiatry 69, 847-856.
+Di Martino, A., Shehzad, Z., Kelly, C., Roy, A.K., Gee, D.G., Uddin, L.Q.,
+Gotimer, K., Klein, D.F., Castellanos, F.X., Milham, M.P., 2009. Relationship
+between cingulo-insular functional connectivity and autistic traits in neurotypical
+adults. The American journal of psychiatry 166, 891-899.
+Dosenbach, N. U., Fair, D. A., Miezin, F. M., Cohen, A. L., Wenger, K. K.,
+Dosenbach, R. A., ... & Petersen, S. E. (2007). Distinct brain networks for
+adaptive and stable task control in humans. Proceedings of the National
+Academy of Sciences, 104(26), 11073-11078.
+dos Santos Siqueira, A., Biazoli Junior, C.E., Comfort, W.E., Rohde, L.A., Sato,
+J.R., 2014. Abnormal Functional Resting-State Networks in ADHD: Graph
+Theory and Pattern Recognition Analysis of fMRI Data. BioMed research
+international 2014.
+Fair, D.A., Cohen, A.L., Dosenbach, N.U., Church, J.A., Miezin, F.M., Barch,
+D.M., Raichle, M.E., Petersen, S.E., Schlaggar, B.L., 2008. The maturing
+architecture of the brain’s default network. Proc Natl Acad Sci U S A 105, 40284032.
+Fair, D.A., Cohen, A.L., Power, J.D., Dosenbach, N.U., Church, J.A., Miezin,
+F.M., Schlaggar, B.L., Petersen, S.E., 2009. Functional brain networks develop
+from a “local to distributed” organization. PLoS Comput Biol 5, e1000381.
+Fair, D.A., Dosenbach, N.U., Church, J.A., Cohen, A.L., Brahmbhatt, S., Miezin,
+F.M., Barch, D.M., Raichle, M.E., Petersen, S.E., Schlaggar, B.L., 2007.
+Development of distinct control networks through segregation and integration.
+Proceedings of the National Academy of Sciences 104, 13507-13512.
+Fair, D.A., Posner, J., Nagel, B.J., Bathula, D., Dias, T.G.C., Mills, K.L., Blythe,
+M.S., Giwa, A., Schmitt, C.F., Nigg, J.T., 2010. Atypical default network
+connectivity in youth with attention-deficit/hyperactivity disorder. Biol Psychiatry
+68, 1084-1091.
+
+Fornito, A., Zalesky, A., Breakspear, M., 2015. The connectomics of brain
+disorders. Nature Reviews Neuroscience 16, 159-172.
+Fox MD, Snyder AZ, Vincent JL, Corbetta M, Van Essen DC, Raichle ME
+(2005). The human brain is intrinsically organized into dynamic, anticorrelated
+functional networks. Proc Natl Acad Sci U S A, 102(27):9673-8.
+Fransson, P., Åden, U., Blennow, M., Lagercrantz, H., 2011. The functional
+architecture of the infant brain as revealed by resting-state fMRI. Cereb Cortex
+21, 145-154.
+Gao, W., Zhu, H., Giovanello, K.S., Smith, J.K., Shen, D., Gilmore, J.H., Lin, W.,
+2009. Evidence on the emergence of the brain’s default network from 2-weekold to 2-year-old healthy pediatric subjects. Proceedings of the National
+Academy of Sciences 106, 6790-6795.
+Gong, G., He, Y., Concha, L., Lebel, C., Gross, D.W., Evans, A.C., Beaulieu,
+C., 2009. Mapping anatomical connectivity patterns of human cerebral cortex
+using in vivo diffusion tensor imaging tractography. Cereb Cortex 19, 524-536.
+Grayson, D.S., Ray, S., Carpenter, S., Iyer, S., Dias, T.G.C., Stevens, C., Nigg,
+J.T., Fair, D.A., 2014. Structural and functional rich club organization of the
+brain in children and adults. PLoS One 9, e88297.
+Hagmann, P., Cammoun, L., Gigandet, X., Meuli, R., Honey, C.J., Wedeen,
+V.J., Sporns, O., 2008. Mapping the structural core of human cerebral cortex.
+PLoS biology 6, e159.
+Hellyer PJ, Shanahan M, Scott G, Wise RJ, Sharp DJ, Leech R (2014). The
+control of global brain dynamics: opposing actions of frontoparietal control and
+default mode networks on attention. J Neurosci, 34(2):451-61.
+He Y, Xu T, Zhan W, Zuo X (2016). Lifespan anxiety is reflected in human
+amygdala cortical connectivity. Human Brain Mapping, In press.
+
+Horga G, Kaur T, Peterson BS (2014). Annual research review: Current
+limitations and future directions in MRI studies of child- and adult-onset
+developmental psychopathologies. J Child Psychol Psychiatry, 55(6):659-80.
+Hwang, K., Hallquist, M.N., Luna, B., 2013. The development of hub
+architecture in the human functional brain network. Cereb Cortex 23, 23802393.
+Jacobs, H.I., Van Boxtel, M.P., Heinecke, A., Gronenschild, E.H., Backes, W.H.,
+Ramakers, I.H., Jolles, J., Verhey, F.R. Functional integration of parietal lobe
+activity in early Alzheimer disease. Neurology. 2012;78:352–360
+Jenkinson, M., Beckmann, C.F., Behrens, T.E., Woolrich, M.W., Smith, S.M.,
+2012. Fsl. Neuroimage 62, 782-790.
+Khundrakpam, B.S., Reid, A., Brauer, J., Carbonell, F., Lewis, J., Ameis, S.,
+Karama, S., Lee, J., Chen, Z., Das, S., 2013. Developmental changes in
+organization of structural brain networks. Cereb Cortex 23, 2072-2085.
+Lohmann, G., Margulies, D.S., Horstmann, A., Pleger, B., Lepsien, J.,
+Goldhahn, D., Schloegl, H., Stumvoll, M., Villringer, A., Turner, R., 2010.
+Eigenvector centrality mapping for analyzing connectivity patterns in fMRI data
+of the human brain. PLoS One 5, e10232.
+Markett, S., Reuter, M., Montag, C., Voigt, G., Lachmann, B., Rudorf, S., ... &
+Weber, B. (2014). Assessing the function of the fronto‐parietal attention
+network: Insights from resting‐state fMRI and the attentional network test.
+Human brain mapping, 35(4), 1700-1709.
+Medvedev, A. V. (2014). Does the resting state connectivity have hemispheric
+asymmetry? A near-infrared spectroscopy study. Neuroimage, 85, 400-407.
+Narr, K.L., Leaver, A.M., 2015. Connectome and schizophrenia. Curr Opin
+Psychiatry 28, 229-235.
+Patel, A.X., Kundu, P., Rubinov, M., Jones, P.S., Vértes, P.E., Ersche, K.D.,
+Suckling, J., Bullmore, E.T., 2014. A wavelet method for modeling and
+
+despiking motion artifacts from resting-state fMRI time series. Neuroimage 95,
+287-304.
+Power, J.D., Barnes, K.A., Snyder, A.Z., Schlaggar, B.L., Petersen, S.E., 2012.
+Spurious but systematic correlations in functional connectivity MRI networks
+arise from subject motion. Neuroimage 59, 2142-2154.
+Power, J.D., Fair, D.A., Schlaggar, B.L., Petersen, S.E., 2010. The development
+of human functional brain networks. Neuron 67, 735-748.
+Power, J.D., Schlaggar, B.L., Lessov-Schlaggar, C.N., Petersen, S.E., 2013.
+Evidence for hubs in human functional brain networks. Neuron 79, 798-813.
+Rademacher, J., Galaburda, A., Kennedy, D., Filipek, P., Caviness, V., 1992.
+Human cerebral cortex: localization, parcellation, and morphometry with
+magnetic resonance imaging. Cognitive Neuroscience, Journal of 4, 352-374.
+Raichle, M.E., MacLeod, A.M., Snyder, A.Z., Powers, W.J., Gusnard, D.A.,
+Shulman, G.L., 2001. A default mode of brain function. Proceedings of the
+National Academy of Sciences 98, 676-682.
+Raichle, M.E., Snyder, A.Z., 2007. A default mode of brain function: a brief
+history of an evolving idea. Neuroimage 37, 1083-1090.
+Ray, S., Miller, M., Karalunas, S., Robertson, C., Grayson, D.S., Cary, R.P.,
+Hawkey, E., Painter, J.G., Kriz, D., Fombonne, E., 2014. Structural and
+functional connectivity of the human brain in autism spectrum disorders and
+attention‐ deficit/hyperactivity disorder: A rich club‐ organization study. Hum
+Brain Mapp 35, 6032-6048.
+Rubinov, M. and Sporns, O. (2010) Complex network measures of brain
+connectivity: uses and interpretations. Neuroimage, 52(3):1059-69.
+Sack, A.T., 2009. Parietal cortex and spatial cognition. Behavioural brain
+research 202, 153-161.
+
+Saenger, V. M., Barrios, F. A., Martínez-Gudiño, M. L., & Alcauter, S. (2012).
+Hemispheric asymmetries of functional connectivity and grey matter volume in
+the default mode network. Neuropsychologia, 50(7), 1308-1315.
+Salum, G.A., Gadelha, A., Pan, P.M., Moriyama, T.S., Graeff‐ Martins, A.S.,
+Tamanaha, A.C., Alvarenga, P., Krieger, F.V., Fleitlich‐ Bilyk, B., Jackowski, A.,
+2014. High risk cohort study for psychiatric disorders in childhood: rationale,
+design, methods and preliminary results. Int J Method Psychiatr Res.
+Salum, G.A., Mogg, K., Bradley, B.P., Gadelha, A., Pan, P., Tamanaha, A.C.,
+Moriyama, T., Graeff-Martins, A.S., Jarros, R.B., Polanczyk, G., do Rosario,
+M.C., Leibenluft, E., Rohde, L.A., Manfro, G.G., Pine, D.S., 2013. Threat bias in
+attention orienting: evidence of specificity in a large community-based study.
+Psychol Med 43, 733-745.
+Sato, J.R., Hoexter, M.Q., Castellanos, X.F., Rohde, L.A., 2012. Abnormal brain
+connectivity patterns in adults with ADHD: a coherence study. PLoS One 7,
+e45671.
+Sato, J.R., Salum, G., Gadelha, A., Picon, F.A., Pan, P.M., Vieira, G., Zugman,
+A., Hoexter, M.Q., Anés, M., Moura, L.M., 2014. Age effects on the Default
+Mode and Control Networks in Typically Developing Children. J Psychiatr Res.
+Sato, J.R., Salum, G.A., Gadelha, A., Vieira, G., Zugman, A., Picon, F.A., Pan,
+P.M., Hoexter, M.Q., Anés, M., Moura, L.M., 2015a. Decreased centrality of
+subcortical regions during the transition to adolescence: A functional
+connectivity study. Neuroimage 104, 44-51.
+Sato JR, Biazoli CE Jr, Salum GA, Gadelha A, Crossley N, Satterthwaite TD,
+Vieira G, Zugman A, Picon FA, Pan PM, Hoexter MQ, Anés M, Moura LM,
+Del'aquilla MA, Amaro E Jr, McGuire P, Lacerda AL, Rohde LA, Miguel EC,
+Jackowski AP, Bressan RA (2015b). Temporal stability of network centrality in
+control and default mode networks: Specific associations with externalizing
+psychopathology in children and adolescents. Hum Brain Mapp, 36(12):492637.
+
+Satterthwaite, T.D., Baker, J.T., 2015. How can studies of resting-state
+functional connectivity help us understand psychosis as a disorder of brain
+development? Curr Opin Neurobiol 30, 85-91.
+Seghier, M.L., 2013. The angular gyrus multiple functions and multiple
+subdivisions. The Neuroscientist 19, 43-61.
+Seeley, W. W., Menon, V., Schatzberg, A. F., Keller, J., Glover, G. H., Kenna,
+H., ... & Greicius, M. D. (2007). Dissociable intrinsic connectivity networks for
+salience processing and executive control. The Journal of neuroscience, 27(9),
+2349-2356.
+Singh-Curry, V., Husain, M., 2009. The functional role of the inferior parietal
+lobe in the dorsal and ventral stream dichotomy. Neuropsychologia 47, 14341448.
+Sporns, O., 2014. Towards network substrates of brain disorders. Brain 137,
+2117-2118.
+Sporns, O., Honey, C.J., Kötter, R., 2007. Identification and classification of
+hubs in brain networks. PLoS One 2, e1049-e1049.
+Spreng, R.N., Mar, R.A., Kim, A.S., 2009. The common neural basis of
+autobiographical memory, prospection, navigation, theory of mind, and the
+default mode: a quantitative meta-analysis. Journal of cognitive neuroscience
+21, 489-510.
+Supekar, K., Musen, M., Menon, V., 2009. Development of large-scale
+functional brain networks in children. PLoS biology 7, e1000157.
+Supekar, K., Uddin, L.Q., Khouzam, A., Phillips, J., Gaillard, W.D., Kenworthy,
+L.E., Yerys, B.E., Vaidya, C.J., Menon, V., 2013. Brain hyperconnectivity in
+children with autism and its links to social deficits. Cell reports 5, 738-747.
+Supekar, K., Uddin, L.Q., Prater, K., Amin, H., Greicius, M.D., Menon, V., 2010.
+Development of functional and structural connectivity within the default mode
+network in young children. Neuroimage 52, 290-301.
+
+Thaler, A., Mirelman, A., Helmich, R.C., van Nuenen, B.F., Rosenberg-Katz, K.,
+Gurevich, T., Orr-Urtreger, A., Marder, K., Bressman, S., Bloem, B.R., Giladi,
+N., Hendler, T. Neural correlates of executive functions in healthy G2019S
+LRRK2 mutation carriers. Cortex. 2013;49:2501–2511
+Tellegen, A., Briggs, P.F., 1967. Old wine in new skins: grouping Wechsler
+subtests into new scales. Journal of consulting psychology 31, 499.
+Tomasi, D., Volkow, N.D., 2014. Mapping small-world properties through
+development in the human brain: disruption in schizophrenia. PLoS One 9,
+e96176.
+Uddin, L.Q., Supekar, K., Menon, V., 2013. Reconceptualizing functional brain
+connectivity in autism from a developmental perspective. Front Hum Neurosci 7.
+Uddin, L.Q., Supekar, K.S., Ryali, S., Menon, V., 2011. Dynamic reconfiguration
+of structural and functional connectivity across core neurocognitive brain
+networks with development. The Journal of Neuroscience 31, 18578-18589.
+van den Heuvel, M.P., Sporns, O., 2013. Network hubs in the human brain.
+Trends Cogn Sci 17, 683-696.
+Vigneau, M., Beaucousin, V., Herve, P.-Y., Duffau, H., Crivello, F., Houde, O.,
+Mazoyer, B., Tzourio-Mazoyer, N., 2006. Meta-analyzing left hemisphere
+language areas: phonology, semantics, and sentence processing. Neuroimage
+30, 1414-1432.
+Wang, Y., Hamilton, A.F.d.C., 2014. Anterior medial prefrontal cortex
+implements social priming of mimicry. Social cognitive and affective
+neuroscience, nsu076.
+Weissman M.M., Wickramaratne P., Adams P., Wolk S., Verdeli H., Olfson M.
+(2000) Brief screening for family psychiatric history: the family history screen.
+Archives of General Psychiatry 57(7), 675–682.
+
+Zalesky,
+
+A.,
+
+2011. Moderating registration
+
+misalignment
+
+in
+
+voxelwise
+
+comparisons of DTI data: a performance evaluation of skeleton projection.
+Magn Reson Imaging 29, 111-125.
+Zuo, X.-N., Ehmke, R., Mennes, M., Imperati, D., Castellanos, F.X., Sporns, O.,
+Milham, M.P., 2012. Network centrality in the human functional connectome.
+Cereb Cortex 22, 1862-1875.
+Zysset, S., Huber, O., Samson, A., Ferstl, E.C., von Cramon, D.Y., 2003.
+Functional specialization within the anterior medial prefrontal cortex: a
+functional magnetic resonance imaging study with human subjects. Neurosci
+Lett 335, 183-186.
+
+Figure Legends
+Figure 1: Scatter plot and Pearson correlation analysis of the mean EVC ranks
+(of each brain region) between the two sites.
+
+Figure 2: Analysis of inter-subject variability – Box plots (across subjects) of
+the EVC ranks (within each site) of the 21 ROIs, separated by site. The ROIs
+are the brain regions with mean EVC ranks within the top 10% and for which
+this high centrality was replicated at the two sites of acquisition. The
+coordinates of these brain regions are described in Table 2.
+
+Figure 3: Brain regions with the top mean EVC scores across the two sites.
+Overlapping regions are highlighted in yellow. The anterior medial prefrontal
+cortex (superior frontal) and IPL/IPS were consistently included among the
+regions with the top centrality ranks.
+
+Figure 4: Association between EVC of the intraparietal cortex and
+psychiatric symptoms – Brain map depicting the intraparietal cortex ROI (top)
+and the significant association between its EVC rank and the symptom score
+(bottom), which was replicated across the two sites.
+
+Table 1: Demographical information in each site. The p-values comparing the
+two sites were obtained by using two-sample t-tests (unequal variances) for
+continuous variables and Pearson chi-square tests for SES, handedness and
+gender.
+Site 1
+
+Site 2
+
+341
+
+311
+
+10.81 ± 2.00
+
+10.58 ± 1.75
+
+0.107
+
+165 (48.39%) males
+
+179 (57.56%) males
+
+0.024
+
+IQ
+
+101.70 ± 16.65
+
+103.42 ± 16.69
+
+0.190
+
+handedness
+
+287 (84.16%) R
+
+269 (86.50%) R
+
+0.884
+
+56.45 ± 32.25
+
+37.67 ± 25.50
+
+<0.001
+
+N
+age (y.o., mean ±s.d.)
+Gender
+
+CBCL total
+socieconomic-status (SES)
+
+p-value
+
+0.576
+
+high
+
+94 (27.57%)
+
+95 (30.55%)
+
+medium
+
+231 (67.74%)
+
+205 (65.92%)
+
+16 (4.69%)
+
+11 (3.54%)
+
+mean F.D. pre-scrubbing
+
+0.19 ± 0.29
+
+0.12 ± 0.12
+
+<0.001
+
+mean F.D. post-scrubbing
+
+0.08 ± 0.03
+
+0.08 ± 0.03
+
+1
+
+26.94 ± 38.83
+
+16.47 ± 28.53
+
+<0.001
+
+low
+Frame Displacement (F.D)
+
+Scrubbed frames
+
+Table 2: Brain regions included in the top 10% EVC set, replicated across the
+two sites of acquisition. The regions in the top 5% and 1% EVC sets are
+highlighted on the right.
+MNI – Coordinates (center of
+mass)
+#
+
+top
+
+top
+
+voxels
+
+5%
+
+1%
+
+38.51
+
+710
+
+*
+
+*
+
+55.82
+
+-15.44
+
+713
+
+-59.87
+
+-24.24
+
+-16.54
+
+598
+
+Left Superior Frontal Cortex
+
+-18.17
+
+57.93
+
+23.89
+
+803
+
+Left Superior Frontal Cortex
+
+-5.16
+
+65.27
+
+19.25
+
+525
+
+*
+
+Right Angular
+
+47.13
+
+-65.62
+
+33.81
+
+696
+
+*
+
+Right Anterior Cingulum
+
+-1.89
+
+51.29
+
+12.15
+
+856
+
+*
+
+Right Cuneus
+
+4.68
+
+-87.43
+
+31.42
+
+453
+
+Right Fusiform
+
+29.6
+
+-63.76
+
+-13.68
+
+709
+
+Right Insula
+
+40.39
+
+20.35
+
+3.51
+
+877
+
+Right Occipital Cortex
+
+35.32
+
+-81.47
+
+16.88
+
+864
+
+Right Intraparietal Cortex
+
+34.05
+
+-75.68
+
+29.36
+
+419
+
+Right Occipital Cortex
+
+19.78
+
+-90.67
+
+26.05
+
+451
+
+Right Occipital Cortex
+
+27.57
+
+-80.26
+
+40.94
+
+441
+
+Right Orbitofrontal Cortex
+
+-10.91
+
+65.58
+
+-3.88
+
+443
+
+*
+
+Right Precentral Cortex
+
+47.16
+
+5.84
+
+20.97
+
+817
+
+*
+
+Right Superior Frontal Cortex
+
+2.67
+
+68.01
+
+9.91
+
+445
+
+*
+
+Right Superior Frontal Cortex
+
+9.2
+
+53.74
+
+5.06
+
+546
+
+*
+
+Right Superior Frontal Cortex
+
+13.62
+
+46.34
+
+27.84
+
+554
+
+Right Superior Parietal Cortex
+
+17.99
+
+-77.64
+
+49.9
+
+406
+
+Right Supramarginal
+
+63.68
+
+-24.54
+
+23.02
+
+533
+
+Brain Region
+
+X
+
+Y
+
+Z
+
+Left Angular
+
+-44.89
+
+-66.46
+
+Left Gyrus Rectus
+
+-3.38
+
+Left Inferior Temporal Cortex
+
+*
+
+*
+
+*
+
+*
+
+Table 3: Statistics of the general linear model for the 4 regions which beta
+significance were not strongly influenced (changes less than 5%) by the
+inclusion of the amount of head motion as covariate. Dependent variable: total
+CBCL score; main regressor: EVC rank; nuisance variables: gender, age and
+mean frame-displacement.
+
+Site 1
+
+Site 2
+
+Brain Region
+
+Beta
+
+p-value
+
+Beta
+
+p-value
+
+Left Superior Frontal Cortex
+
+-14.57
+
+0.03
+
+6.24
+
+0.28
+
+Right Superior Frontal Cortex
+
+7.97
+
+0.25
+
+9.97
+
+0.08
+
+Right Intraparietal Cortex
+
+-16.14
+
+0.02
+
+-12.84
+
+0.03
+
+Right Orbitofrontal
+
+-8.50
+
+0.20
+
+1.53
+
+0.78
+
+

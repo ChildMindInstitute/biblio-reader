@@ -1,0 +1,1377 @@
+Accepted Manuscript
+Title: Asymmetric Development of Dorsal and Ventral
+Attention Networks in the Human Brain
+Author: Kristafor Farrant Lucina Q. Uddin
+PII:
+DOI:
+Reference:
+
+S1878-9293(15)00026-2
+http://dx.doi.org/doi:10.1016/j.dcn.2015.02.001
+DCN 266
+
+To appear in:
+Received date:
+Revised date:
+Accepted date:
+
+30-6-2014
+26-1-2015
+4-2-2015
+
+Please cite this article as: Farrant, K., Uddin, L.Q.,Asymmetric Development of
+Dorsal and Ventral Attention Networks in the Human Brain, Developmental Cognitive
+Neuroscience (2015), http://dx.doi.org/10.1016/j.dcn.2015.02.001
+This is a PDF file of an unedited manuscript that has been accepted for publication.
+As a service to our customers we are providing this early version of the manuscript.
+The manuscript will undergo copyediting, typesetting, and review of the resulting proof
+before it is published in its final form. Please note that during the production process
+errors may be discovered which could affect the content, and all legal disclaimers that
+apply to the journal pertain.
+
+Highlights
+
+ We examine developmental changes in functional connectivity of attention networks
+ Resting state fMRI data from 30 children and 30 adults are compared
+
+ Attention network nodes show asymmetric developmental differences
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+ Children show reduced segregation of the ventral attention and salience networks
+
+1
+
+Page 1 of 21
+
+Asymmetric Development of Dorsal and Ventral Attention Networks
+
+us
+cr
+ip
+
+t
+
+in the Human Brain
+
+Kristafor Farranta and Lucina Q. Uddina, b
+a
+
+Neuroscience Program, University of Miami Miller School of Medicine, Miami, FL
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+b
+
+Department of Psychology, University of Miami, Coral Gables FL
+
+Correspondence should be addressed to:
+
+Ac
+
+Lucina Q. Uddin, Ph.D.
+University of Miami
+P.O. Box 248185-0751
+Coral Gables, FL 33124
+Email: l.uddin@miami.edu
+Phone: 305-284-3265
+
+2
+
+Page 2 of 21
+
+Abstract
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+Two neural systems for goal-directed and stimulus-driven attention have been described
+in the adult human brain; the dorsal attention network (DAN) centered in the frontal eye
+fields (FEF) and intraparietal sulcus (IPS), and the ventral attention network (VAN)
+anchored in the temporoparietal junction (TPJ) and ventral frontal cortex (VFC). Little is
+known regarding the processes governing typical development of these attention
+networks in the brain. Here we use resting state functional MRI data collected from thirty
+7-12 year-old children and thirty 18-31 year-old adults to examine two key regions of
+interest from the dorsal and ventral attention networks. We found that for the DAN nodes
+(IPS and FEF), children showed greater functional connectivity with regions within the
+network compared with adults, whereas adults showed greater functional connectivity
+between the FEF and extra-network regions including the posterior cingulate cortex. For
+the VAN nodes (TPJ and VFC), adults showed greater functional connectivity with
+regions within the network compared with children. Children showed greater functional
+connectivity between VFC and nodes of the salience network. This asymmetric pattern of
+development of attention networks may be a neural signature of the shift from overrepresentation of bottom-up attention mechanisms to greater top-down attentional
+capacities with development.
+
+Ac
+
+ce
+
+pt
+
+ed
+
+Keywords: Dorsal attention network, ventral attention network, salience network, resting
+state fMRI, typical development, functional connectivity
+
+3
+
+Page 3 of 21
+
+1. Introduction
+
+ed
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+It is well established that there are two partially segregated attention networks in the
+human brain; the so-called dorsal and ventral attention networks (Corbetta & Shulman,
+2002). The dorsal attention network (DAN) includes bilateral intraparietal sulcus (IPS)
+and the frontal eye fields (FEF), and is concerned with orientating ones focus on a
+particular task. Previous work has demonstrated that the FEF and IPS exert top-down
+influences on visual areas during visual orienting of attention (Bressler, Tang, Sylvester,
+Shulman, & Corbetta, 2008). The DAN shows sustained activation when focusing
+attention on an object (Corbetta, Patel, & Shulman, 2008), and is thought to be
+responsible for goal-directed, top-down processing (Corbetta & Shulman, 2002). The
+second network, the ventral attention network (VAN), is comprised of the
+temporoparietal junction (TPJ) and ventral frontal cortex (VFC), and responds to relevant
+external environmental stimuli. The VAN is dominant in the right hemisphere, and is
+generally activated when an unexpected event occurs and breaks ones attention from the
+current task (i.e. bottom-up processing) (for a full review of the DAN & VAN see
+(Corbetta et al., 2008)). This network’s key function is to direct attention to stimuli
+outside of the current focus of processing and is referred to as the ‘circuit breaking’
+section of the two attention networks (Shulman, d'Avossa, Tansy, & Corbetta, 2002).
+Corbetta and colleagues argue that only behaviorally relevant environmental stimuli
+trigger the VAN, and that the response of the VAN is suppressed when irrelevant
+information is presented (Corbetta et al., 2008). The VFC has been identified to be
+mainly active when reorienting is unexpected and requires cognitive control or is coupled
+to a response (Corbetta & Shulman, 2002). The two core regions of the VAN are
+typically co-activated, as well as functionally connected (Fox, Corbetta, Snyder, Vincent,
+& Raichle, 2006; He et al., 2007).
+
+Ac
+
+ce
+
+pt
+
+Another brain system termed the ‘salience network’ has also been linked with functions
+that partially overlap with functions ascribed to the VAN, including responding to
+behaviorally relevant stimuli (Seeley et al., 2007). The salience network is comprised of
+dorsal anterior cingulate, subcortical, and limbic structures, as well as bilateral anterior
+insular cortices adjacent to or overlapping the VFC node of the VAN (Uddin, 2015), and
+has been demonstrated to show within- and between-network developmental changes
+including increases in functional and structural connectivity with age (Uddin, Supekar,
+Ryali, & Menon, 2011). While some investigators see the high degree of functional and
+anatomical overlap between the VAN and salience network as evidence that they are part
+of the same system (Kucyi, Hodaie, & Davis, 2012), the majority have conceptualized
+these networks as distinct entities (Cole et al., 2013; Power et al., 2011).
+Resting state fMRI (R-fMRI) studies capitalize on the fact that large-scale neurocognitive
+networks can be reliably identified in the absence of task-related processing (Biswal,
+Yetkin, Haughton, & Hyde, 1995; Damoiseaux et al., 2006; Smith et al., 2009). Fox et al.
+(2006) were the first to use R-fMRI to examine attention networks in the human brain.
+They identified a bilateral DAN and right lateralized VAN solely on the basis of seedbased functional connectivity analyses of resting state fMRI data, thus providing
+evidence that these attention networks are intrinsically coupled in the brain.
+
+4
+
+Page 4 of 21
+
+us
+cr
+ip
+
+t
+
+The use of R-fMRI to address developmental questions allows us to avoid many of the
+issues related to task performance that can confound interpretation of developmental
+neuroimaging findings (Casey, Galvan, & Hare, 2005; Uddin, Supekar, & Menon, 2010).
+R-fMRI studies have demonstrated that over the lifespan, the long-range connections
+within the DAN become more dominant until around the age of ~30 years (Cao et al.,
+2014). Cao and colleagues found inverted U-shaped trajectories mainly within the DAN
+and language regions, which are argued to be amongst the last regions to mature (Casey,
+Giedd, & Thomas, 2000). This research is in line with previous studies which suggest
+that short-distance functional connectivity is greater in children than it is in adults
+(Dosenbach et al., 2010; Fair et al., 2009; Supekar, Musen, & Menon, 2009) and that the
+long-range connections observed in adults are enhanced throughout development (Fair et
+al., 2009; Kelly et al., 2009; Supekar et al., 2009). It is argued that the process of synaptic
+“pruning” in which the abundance of short-range connections in typically developing
+children are eliminated, generally in the pubertal stage of development, contributes to the
+prominence of long-range connectivity in adults (Huttenlocher, 1990).
+
+ed
+
+M
+
+an
+
+Though there is an abundance of literature surrounding human attention networks, there
+is surprisingly little research that focuses on the typical development of these networks
+(Konrad et al., 2005). A previous independent component analysis (ICA) study
+examining developmental differences in the dorsal attention network found stronger
+within-network connectivity in the DAN in 11-13 year-old children compared with 19-25
+year old adults (Jolles, van Buchem, Crone, & Rombouts, 2011). Seed-based approaches
+can offer complementary information to that derived from ICA, namely allowing for
+hypothesis-driven analyses of specific functional networks of interest (Uddin et al.,
+2010). To our knowledge, no previous studies have used seed-based approaches to
+explore developmental differences in functional connectivity of DAN and VAN nodes, or
+inter-network relationships.
+
+Ac
+
+ce
+
+pt
+
+Here we use R-fMRI to explore the typical development of the DAN and VAN in the
+human brain. We aimed to test the following hypotheses; 1) R-fMRI can be used to
+identify the DAN and VAN in children, and these networks have a similar topological
+organization to that observed in adults; 2) long-range functional connectivity of DAN and
+VAN nodes will be more predominant in adults than in children; and 3) between- and
+within-network functional connectivity patterns will show developmental changes.
+2. Materials and Methods
+2.1 Participants and data acquisition
+The present study included a total of 60 healthy, right-handed neurotypical individuals
+from the publically available Autism Brain Imaging Data Exchange (ABIDE;
+http://fcon_1000.projects.nitrc.org/indi/abide/) (Di Martino et al., 2014). We examined
+only data collected from the New York University Langone Medical Center (NYU) for
+consistency. All participants had a full-scale IQ score of > 80, and the groups did not
+differ significantly on IQ. The group of 60 was split into two groups of children (mean
+age: 10.2, range 7-12, 11 females) and adults (mean age: 24.2, range 18-31, 6 females)
+consisting of 30 participants each (Table 1). Participants were also carefully selected
+based on motion parameters. No participant was selected with absolute displacement >
+5
+
+Page 5 of 21
+
+t
+
+1.95mm. The range of motion parameters for the child group was 0.09-1.95mm mean
+absolute displacement (0.27  0.33). The range of motion parameters for the adult group
+was 0.15 - 0.89 mm mean absolute displacement (0.30  0.18). No group differences in
+absolute displacement were observed (p = 0.7). The NYU institutional review board
+approved all procedures for data collection and sharing. Written informed consent was
+obtained from each participant.
+
+us
+cr
+ip
+
+Inclusion as a typically developing individual (TD) was based on the absence of any
+current Axis-I disorders as determined by the Kiddie-Schedule for Affective Disorders
+and Schizophrenia-Present and Lifetime Version (KSADS-PL) administered to each child
+and his/her parent, and the Structured Clinical Interview for DSM-IV Axis 1 DisordersNon-patient Edition (SCID-I/NP) and Adult ADHD Clinical Diagnostic Scale (ACDS)
+interviews for adults.
+
+Children (n = 30)
+(standard deviation)
+[range]
+
+Age, y
+
+10.2 (1.74)
+
+19
+
+24
+
+11
+
+6
+
+116.17 (13.89)
+
+114.93 (10.09)
+
+[80-142]
+
+[91-139]
+
+Ac
+
+Full-Scale IQ
+
+24.2 (3.34)
+[18.59-31.78]
+
+ce
+
+Female
+
+ed
+
+Male
+
+Adults (n = 30)
+(standard deviation)
+[range]
+
+[7.19-12.97]
+
+pt
+
+Sex, No.
+
+M
+
+Characteristic
+
+an
+
+Table1. Participant Characteristics
+
+All subjects were scanned using a 3T Allegra, in a separate visit following the diagnostic
+assessment (typically within 3 months). The R-fMRI scans were collected using an echoplanner imaging (EPI) sequence (TR = 2000 ms; TE = 15 ms; flip angle = 90°; FOV =
+240 mm; voxel size = 3 x 3 x 4 mm; number of slices = 33, 4 mm slice thickness). The
+scan lasted for 6 minutes, which consisted of 180 volumes. Participants were asked to
+relax with their eyes open, while a white cross hair against a black background was
+projected on a screen.
+A high-resolution T1-weighted anatomical image was acquired using a magnetization
+prepared gradient echo sequence (TR = 2530 ms; TE = 3.25 ms; inversion time = 8.07
+minutes; flip angle = 7°; 128 slices; 1 volume FOV = 256 mm). All details regarding
+scanning protocols are outlined in (Di Martino et al., 2014).
+
+6
+
+Page 6 of 21
+
+2.2 Region-of-Interest (ROI) Selection
+
+us
+cr
+ip
+
+t
+
+Four ROIs were selected based on previous research conducted by Fox and colleagues
+(Fox et al., 2006). In this earlier study, four ROIs (two in the DAN and two in the VAN)
+were determined via meta-analyses. In the DAN, the ROIs were located in right
+intraparietal sulcus (IPS; 32, -56, 54) and frontal eye fields (FEF; 28, -8, 52), and in the
+VAN the ROIs were located in right temporoparietal junction (TPJ; 60, -48, 22) and
+ventral frontal cortex (VFC; 42, 20, -6). For the current study, spherical ROIs were
+created with a radius of 6mm based on these coordinates as reported by Fox et al. (2006).
+Exploratory follow-up analyses related to the salience network were conducted using a
+seed in the anterior cingulate cortex (ACC; 6, 24, 32) derived from a previous study
+(Uddin et al., 2011). All coordinates are reported in MNI standard space.
+2.3 Data preprocessing
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+Data were preprocessed using the Data Processing Assistant for Resting-state fMRI
+Advanced Edition (DPARSF-A) toolbox, which is part of the Data Processing and
+Analysis of Brain Imaging (DPABI) toolbox version 3.1, (http://rfmri.org/dpabi) (ChaoGan & Yu-Feng, 2010). The first 5 volumes were removed from each subject’s restingstate fMRI data. Data were preprocessed in series of steps including slice-timing
+correction, brain extraction of T1 images, and segmentation using SPM priors for
+cerebrospinal fluid (CSF) and white matter (WM). We used the WM and cerebral CSF
+mean time-series as nuisance regressors in the general linear model (GLM) to reduce the
+influence of physiological noise (Margulies et al., 2007). Global signal regression was
+not used (Saad et al., 2012). Additionally, we regressed out the nuisance covariates using
+the Friston 24- parameter model (Friston, Williams, Howard, Frackowiak, & Turner,
+1996) and applied a band pass filter capturing the fMRI signal between the frequencies
+0.01 to 0.08 Hz. The data were spatially smoothed with a 5mm full-width half-maximum
+Gaussian kernel. To further reduce motion-related artifacts we “scrubbed” our data using
+the cut (delete) option available in the DPABI-A toolbox using the following parameters:
+FD threshold for bad time points = 0.05, scrubbing time points before bad time points =
+1, scrubbing time points after bad time points = 2 (Power, Barnes, Snyder, Schlaggar, &
+Petersen, 2012). The data were registered to the subject’s individual anatomical space and
+then into MNI standard space.
+2.4 Individual and group-level analyses for seed-based whole-brain functional
+connectivity analyses
+For each participant, we extracted the mean time-series of each of the four attention
+network ROIs individually using the functional connectivity voxel-wise option in the
+REST toolbox version 1.8 (http://www.restfmri.net/forum/REST_V1.8). We then
+compared whole-brain functional connectivity patterns between adults and children for
+each ROI. Data were corrected for multiple comparisons using Gaussian Random Field
+Theory Multiple Comparison Correction (voxel-level p-value = .01; cluster-level p-value
+= .05, two-tailed). Two-tailed t-tests between results for the children and adult groups
+were conducted for each ROI. These analyses produced thresholded Z-score maps for
+each of the four ROIs.
+
+7
+
+Page 7 of 21
+
+2.5 Seed-to-Seed Analyses Within Networks
+
+us
+cr
+ip
+
+t
+
+In addition to the seed-based whole-brain functional connectivity analyses, which showed
+developmental differences in functional connectivity of specific DAN and VAN ROIs,
+we also conducted analyses between seed regions within the DAN and within the VAN.
+We used the same coordinates listed in section 2.2 to represent the two seeds within each
+network. Using the REST toolbox we calculated pair-wise functional connectivity
+between the seeds within the DAN (rIPS-rFEF) and within the VAN (rVFC-rTPJ). Twosample t-tests were conducted to explore group differences in within-network functional
+connectivity in the two attention networks.
+2.6 Seed-to-Seed Analyses Between Networks
+
+an
+
+To explore potential group differences in between-network functional connectivity, we
+conducted the following seed-to-seed correlation analyses of the following ROI pairs:
+rIPS-rVFC, rFEF-rTPJ, rIPS-rTPJ, rFEF-rVFC. Two-sample t-tests were conducted to
+explore group differences in between-network functional connectivity.
+3. Results
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+3.1 DAN and VAN topological organization in children and adults
+
+8
+
+Page 8 of 21
+
+t
+us
+cr
+ip
+
+M
+
+an
+
+Figure 1. Conjunction of correlation maps. (A) Voxels significantly correlated with the
+IPS (blue), FEF (purple), and both, defined as the dorsal attention network (DAN;
+purple). (B) Voxels significantly correlated with the TPJ (blue), VFC (purple), and both,
+defined as the ventral attention network (VAN; purple).
+
+Ac
+
+ce
+
+pt
+
+ed
+
+To visualize the organization of the DAN and VAN in children and adults, the wholebrain functional connectivity maps associated with each region of interest within each
+network are depicted in Figure 1. As can be seen in Figure 1A, the overlap of the
+functional connectivity map of the IPS seed (blue) and the FEF seed (purple) delineates
+the regions described in (Corbetta & Shulman, 2002) and (Fox et al., 2006) as belonging
+to the DAN. The areas of overlap (violet) include bilateral IPS, bilateral FEF, and ventral
+temporal visual areas, in both children and adults. As can be seen in Figure 2A, the
+overlap of the functional connectivity maps of the TPJ (blue) and VFC (purple)
+delineates the regions previously described as belonging to the VAN. The areas of
+overlap (violet) include middle frontal gyrus, anterior insula, VFC and TPJ, in both
+children and adults.
+3.2 Developmental differences in whole-brain functional connectivity of dorsal attention
+network nodes
+For both adults and children, IPS showed strong functional connectivity with other
+regions of the DAN including frontal eye fields and visual cortical regions. For both
+adults and children, FEF showed strong functional connectivity with the entire DAN
+including intraparietal and visual cortical regions.
+We found that for both ROIs representing the DAN (IPS and FEF), children showed
+greater functional connectivity within the network (e.g. with the IPS) than did adults.
+Adults showed greater functional connectivity of the FEF with regions outside of the
+DAN (e.g. posterior cingulate cortex, PCC) than did children (Figure 2). Table 2 lists
+coordinates of significant group differences in functional connectivity for each ROI.
+9
+
+Page 9 of 21
+
+t
+us
+cr
+ip
+an
+
+M
+
+Figure 2. Individual and group comparisons of resting state functional connectivity of
+seed ROIs IPS (A) and FEF (B). Yellow maps (first panel) show individual one sample ttest for adults. Red maps (second panel) show individual one sample t-test for children.
+Remaining panels show two-sample t-tests comparing adults with children.
+
+ed
+
+3.3 Developmental differences in whole-brain functional connectivity of ventral attention
+network nodes
+
+ce
+
+pt
+
+For both adults and children, TPJ showed strong functional connectivity with other regions of the
+VAN including VFC and middle frontal gyrus. Strong functional connectivity was also observed
+between TPJ and regions of the default mode network (posterior cingulate and medial prefrontal
+cortex). For both adults and children, VFC showed strong functional connectivity with other regions
+of the VAN including middle frontal gyrus and TPJ (Fox et al., 2006). In addition, strong functional
+connectivity was observed between VFC and the anterior cingulate cortex (ACC) and insular cortex.
+
+Ac
+
+We found that for both ROIs representing the VAN (TPJ and VFC), adults showed greater functional
+connectivity with regions within the network than children. For the VFC ROI, children showed
+greater functional connectivity than adults with the anterior insula and ACC, regions comprising the
+salience network (Seeley et al., 2007).
+
+10
+
+Page 10 of 21
+
+t
+us
+cr
+ip
+an
+
+M
+
+Figure 3. Individual and group comparisons of resting state functional connectivity of
+seed ROIs TPJ (A) and VFC (B). Yellow maps (first panel) show individual one sample
+t-test for adults. Red maps (second panel) show individual one sample t-test for children.
+Remaining panels show two-sample t-tests comparing adults with children.
+
+ed
+
+3.4 Developmental differences in within- and between-network ROI-to-ROI connections
+
+Ac
+
+ce
+
+pt
+
+To examine whether between- and within-network functional connectivity patterns show
+developmental changes, we conducted ROI-to-ROI analyses. No group differences were found for
+within DAN (IPS-FEF) or within VAN (TPJ-VFC) connections. In other words, children and adults
+did not differ on strength of functional connectivity within either of the attention networks.
+Likewise, the between-network ROI comparisons (rIPS-rVFC, rFEF-rTPJ, rIPS-rTPJ, rFEF-rVFC)
+yielded no significant group differences (Figure 4).
+
+11
+
+Page 11 of 21
+
+Figure 4. ROI-to-ROI connectivity within dorsal and ventral attention networks nodes and between
+dorsal and ventral attention network nodes.
+Table 2. Group differences in functional connectivity of DAN and VAN ROIs
+MNI
+coordinates
+
+Functional Connectivity
+
+t
+
+Contrast
+
+us
+cr
+ip
+
+Seed
+
+Cluster
+Size
+(Voxels)
+
+Zscore
+
+x
+
+y
+
+z
+
+-30
+
+-58
+
+58
+
+4.7216
+
+611
+
+24
+
+-10
+
+44
+
+5.4054
+
+492
+
+-6
+
+-40
+
+40
+
+3.7597
+
+338
+
+-40
+
+-18
+
+40
+
+3.5311
+
+332
+
+Left Superior Parietal Lobule / Superior LOC
+
+Children>Adults
+
+Right Precentral Gyrus
+
+Adults>Children
+
+Left Posterior Cingulate Gyrus
+
+Adults>Children
+
+Left Postcentral Gyrus
+
+Adults>Children
+
+Left Posterior Cingulate Gyrus
+
+-2
+
+-20
+
+40
+
+3.1041
+
+23
+
+IPS
+
+Children>Adults
+
+Right Superior LOC
+
+22
+
+-74
+
+58
+
+3.9278
+
+521
+
+TPJ
+
+Adults>Children
+
+Left Posterior Cingulate Gyrus
+
+-4
+
+-18
+
+32
+
+4.5237
+
+295
+
+VFC
+
+Children>Adults
+
+Left Thalamus
+
+0
+
+-24
+
+12
+
+4.8568
+
+1736
+
+Children>Adults
+
+Left Insular Cortex
+
+-28
+
+24
+
+6
+
+5.1591
+
+814
+
+Children>Adults
+
+Right Insular Cortex
+
+28
+
+26
+
+6
+
+4.6307
+
+551
+
+Adults>Children
+
+Right Temporal Pole
+
+34
+
+4
+
+-38
+
+3.7281
+
+332
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+Children>Adults
+
+FEF
+
+3.5 Relationship between VAN and salience network
+
+Ac
+
+On the basis of our finding that children showed greater functional connectivity of VFC
+with regions of the salience network compared with adults, we sought to further explore
+this finding using ROI-to-ROI comparisons. Upon closer inspection, we noted that the
+seed from the Fox 2006 paper corresponding to the VFC (42, 20, -6) falls within the
+anterior insular cortex, a key node of the salience network. To test whether this VFC ROI
+more accurately reflects a VAN node or a salience network node, we computed
+functional connectivity of the following: VFC-TPJ (within VAN) and VFC-ACC (within
+salience network). We reasoned that if VFC-ACC coupling was stronger than VFC-TPJ
+coupling, than the VFC node might actually be more representative of the salience
+network than of the VAN. We found that neither VFC-TPJ nor VFC-ACC comparisons
+showed significant group differences. However, as can be seen in Figure 5, the VFC ROI
+showed significantly stronger functional connectivity with ACC (a salience network
+node) than with TPJ (a VAN node) in both adults and children (p < 0.01). There was a
+
+12
+
+Page 12 of 21
+
+an
+
+us
+cr
+ip
+
+t
+
+trend suggesting greater connectivity of VFC with ACC in children compared with adults
+(p = 0.09).
+
+M
+
+Figure 5. ROI-to-ROI connectivity between VFC and VAN node (TPJ) and between VFC and
+salience network node (ACC).
+
+ed
+
+4. Discussion
+
+Ac
+
+ce
+
+pt
+
+Considerable evidence from behavioral, electrophysiological, and neuroimaging
+work suggests two anatomically separable fronto-parietal systems for attention exist
+in the human brain, 1) a dorsal attention network (DAN) involved in top-down
+orienting, and 2) a ventral attention network (VAN) for bottom-up salience detection
+(Corbetta & Shulman, 2002). While these neural systems have been well
+characterized in neuroimaging studies of adults (Corbetta et al., 2008), little is
+known about the typical development of these brain networks. Here we explored the
+functional connectivity of the dorsal and ventral attention networks in adults and
+children using seed-based functional connectivity to explore within- and betweennetwork developmental changes. The current results provide unique insights into the
+typical development of the DAN and VAN in the human brain. We find asymmetries
+in functional connectivity patterns associated with key nodes of these attention
+networks. In both children and adults, the attention networks could be identified as
+the overlap of functional connectivity maps associated with the IPS and FEF (DAN)
+and TPJ and VFC (VAN). Thus, children and adults seem to exhibit DAN and VAN
+network topology that is anchored in these key nodes and is quite similar in overall
+spatial extent. For the DAN nodes (IPS and FEF), children showed greater functional
+connectivity with regions within the network compared with adults, whereas adults
+showed greater functional connectivity between the FEF and extra-network regions
+including the posterior cingulate cortex. For the VAN, the most striking
+developmental finding was that children showed greater functional connectivity
+between VFC and nodes of the salience network (anterior insula and ACC),
+
+13
+
+Page 13 of 21
+
+suggesting reduced segregation of the VAN and salience networks in childhood
+compared with adulthood.
+4.1 Developmental studies of attention
+
+an
+
+us
+cr
+ip
+
+t
+
+Evidence from behavioral and neuroimaging studies suggests that specific attention
+processes undergo protracted periods of developmental maturation. In particular,
+children are more susceptible to interference and less able to inhibit responses than
+adults (Bunge, Dudukovic, Thomason, Vaidya, & Gabrieli, 2002). Children show
+developmental differences such that they exhibit greater activation than adults in
+anterior cingulate cortex and lateral prefrontal cortices during selective attention
+(Booth et al., 2003) and response inhibition (Casey et al., 1997). This work is in line
+with the general developmental principle that brain activation during a particular
+cognitive task tends to progress from more diffuse to more focal with age (Durston
+et al., 2006). Taken together, the findings of decreased task-related frontal activation
+with age are thought to index the maturation of cognitive strategies from childhood
+through adolescence and into adulthood (Dumontheil, Hassan, Gilbert, &
+Blakemore, 2010). The development of cognitive control processes has been the
+focus of the majority of previous investigations (Durston & Casey, 2006).
+
+ce
+
+pt
+
+ed
+
+M
+
+Surprisingly little neuroimaging work has examined developmental differences in
+the relative contributions of the DAN and VAN. A previous study conducted by
+(Konrad et al., 2005) used a task based fMRI paradigm to explore the development
+of attention networks for alerting (fronto-parietal), orienting (TPJ and VFC), and
+executive attention (anterior cingulate/lateral prefrontal) in adults and children. They
+found that children showed significantly less activation in the right mid-brain
+regions during alerting, in the right TPJ during reorienting, and in DLPFC during
+executive control. At the same time, children exhibited significantly more activation
+in superior frontal gyrus during reorienting and superior temporal gyrus during
+executive control of attention. The data presented by Konrad et al. (2005) suggest
+that there is a transition from the immature functional systems that support
+attentional functions in children to more mature systems in adults.
+4.2 Resting state fMRI and brain network development
+
+Ac
+
+Over the past ten years, resting state fMRI has emerged as a powerful
+complementary approach to examination of task-activation. A key principle that has
+emerged from this literature is that anterior-posterior long-range functional
+connectivity is slow to develop, particularly in brain networks underlying higher
+cognitive functions (Fair et al., 2008; Kelly et al., 2009; Supekar et al., 2010).
+Human brain network development appears to involve simultaneous segregation
+(decrease of short-range connections) and integration (increase of long-range
+connections) (Fair et al., 2007). A study using independent component analysis
+(ICA) found evidence for increased connectivity within the DAN in children
+compared with adults (Jolles et al., 2011), providing evidence for early segregation
+of the DAN. In the current study we also find greater within-network connectivity of
+the DAN in children, particularly in the IPS region, as revealed by group differences
+in whole-brain functional connectivity of key DAN nodes. The ROI-to-ROI
+14
+
+Page 14 of 21
+
+connectivity (IPS-FEF) corroborated these findings of greater within-DAN
+connectivity in children, though the effect was not significant.
+
+an
+
+us
+cr
+ip
+
+t
+
+For the DAN, adults showed greater functional connectivity of the FEF with regions
+outside the network including the PCC, a key hub of the default mode network (Greicius,
+Krasnow, Reiss, & Menon, 2003; Raichle et al., 2001). This increased communication
+between the DAN and the default mode network observed in adults compared with
+children might enable greater top-down attentional capacities in adulthood (Rubia, 2013).
+The ability to modulate or suppress default mode network activity has been linked with
+successful goal-directed attention and cognition (Anticevic et al., 2012).The same
+direction of effects was observed for the VAN, where we observed greater functional
+connectivity of the TPJ with PCC and the VFC with temporal pole in adults compared
+with children. Overall, it appears that adults exhibited more flexible patterns of extranetwork connections of attention network nodes compared with children. These results
+are largely consistent with previous work demonstrating increasing long-range functional
+connectivity strength with development (Uddin et al., 2010).
+4.3 Ventral attention network and salience network
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+The VFC in the VAN showed greater functional connectivity in children compared with
+adults, particularly with ACC and anterior insula. The ROI selected to represent VFC was
+centered at MNI coordinates 42, 20, -6 based on previous work (Fox et al., 2006). Upon
+closer examination, this region appears to fall within the anterior insular cortex, and is
+anatomically very close to a region located at 39, 23, -4 that has been implicated in
+playing a causal role in switching between the central executive network and the default
+mode network in adults and children (Uddin et al., 2011). A large body of work indicates
+that the insula plays a dominant role in detection of novel salient stimuli across multiple
+modalities (Crottaz-Herbette & Menon; Downar, Crawley, Mikulis, & Davis, 2000). The
+role of the insula in detection of salient stimuli and it’s inclusion in the “salience
+network” along with the anterior cingulate cortex has now been well documented (Menon
+& Uddin, 2010; Seeley et al., 2007). It is worth noting that there is still work to be done
+to distinguish whether and to what extent the salience network and the so-called
+“cingulo-opercular network” (Dosenbach, Fair, Cohen, Schlaggar, & Petersen) should be
+conceptualized as distinct entities (Uddin, 2015). To further explore the potential overlap
+of the VFC node with regions of the salience network, we conducted ROI-to-ROI
+analyses looking at VFC-TPJ and VFC-ACC connectivity to see which network (the
+VAN or the salience network) was most closely associated with this ROI. We find that in
+both adults and children, the VFC shows stronger functional connections to the salience
+network than to the VAN. We also observed a trend toward greater VFC-ACC
+connectivity in children compared with adults.
+We propose that the VAN and the salience network have overlapping nodes in the region
+surrounding the VFC and anterior insula. We speculate that in children, these two
+networks may be less segregated than in adults, and that bottom-up salience processes
+and attention to environmental stimuli may be over-represented in the child’s brain.
+Consistent with the “circuit breaker” function attributed to the VAN, it has been
+demonstrated in adults that signals in the VAN causally influence activity in the DAN
+(Sridharan, Levitin, Chafe, Berger, & Menon, 2007). Perhaps the over-connectivity in the
+15
+
+Page 15 of 21
+
+us
+cr
+ip
+
+t
+
+VAN in children compared with adults that we observe is a neural signature of the
+differential and asymmetric maturation of attention processes throughout development.
+The fact that children exhibit more widespread connectivity in the VFC region may
+explain why they are behaviorally more susceptible to interruption by environmental
+stimuli and less able to maintain activities requiring top-down attentional control (Bunge
+et al., 2002). An alternative speculation is that this VFC region may need to be
+extensively connected in childhood to ensure detection of salient environmental stimuli,
+which would be important for basic survival.
+
+pt
+
+4.4 Limitations
+
+ed
+
+M
+
+an
+
+Our results are somewhat consistent with the previous task activation study (Konrad et
+al., 2005). However, we provide evidence to suggest that the second anatomical
+component of the reorienting network, VFC, shows greater functional connectivity for
+children than in adults with regions of the salience network. We argue that the reason for
+this region showing more widespread functional connectivity in children than in adults is
+because of its anatomical location. We show that the VFC, which is anatomically very
+close to the anterior insula cortex, is significantly correlated with the ACC. The anterior
+insular cortex and ACC has been described as the core that forms the salience network,
+which is important for the facilitation and detection of environmental stimuli (Uddin,
+2015). The attention characteristics of the salience network are somewhat similar to those
+characteristics of the VAN; both are thought to be important for detection of stimuli
+outside of direct focus. The anatomical proximity of anterior insula and VFC points
+towards a linkage between the two regions and possibly the shared responsibilities of
+salience detection. We see that in children, these two salience detection systems are less
+segregated than in adults. Future work will explore the extent to which segregation
+between the VAN and salience network throughout development relates to increased
+attentional abilities using behavioral and task-based neuroimaging paradigms.
+
+Ac
+
+ce
+
+The field has not yet come to a consensus as to best practices for dealing with motion
+artifacts in resting-state fMRI data, though it is clear that such artifacts can bias results
+(Power et al., 2012; Van Dijk, Sabuncu, & Buckner, 2012). There have not yet been
+validation studies to determine the exact effects of the motion scrubbing procedure that
+has been put forth as a potential solution. We believe that the effects of motion scrubbing
+on group differences functional connectivity in developmental contexts will require
+additional methodological study.
+A limitation of the current study is that age is dichotomized, rather than continuously
+examined. We opted to examine the development of attention networks using two age
+categories in the current study for the following reasons. One was to avoid the period of
+puberty, which occurs during adolescence, and is accompanied by protracted (and not
+very well-characterized) changes in functional connectivity patterns (Blakemore, Burnett,
+& Dahl, 2010). Given the as yet unknown effects of puberty on development of attention
+networks in the brain, and the fact that in the current sample participants’ pubertal status
+was not explicitly characterized, we chose to avoid examining the adolescent age range in
+the current study. We believe that careful consideration of pubertal status is a very
+important question for future research (Uddin, Supekar, & Menon, 2013).
+
+16
+
+Page 16 of 21
+
+us
+cr
+ip
+
+t
+
+The second reason age was dichotomized was due to the sample available in the public
+dataset that was utilized in the study. As there were not a large enough number of
+subjects to examine age continuously, we chose to simplify by comparing children and
+adult groups, as several previous developmental neuroimaging studies have done (Jolles
+et al., 2011; Kelly et al., 2009; Supekar et al., 2010; Uddin et al., 2011). We believe that
+an important direction for future research will be to examine this question in larger
+datasets containing more individuals at various developmental stages in order to examine
+more complex maturational patterns.
+5. Conclusion
+
+ce
+
+Acknowledgments
+
+pt
+
+ed
+
+M
+
+an
+
+The current study demonstrates asymmetric developmental patterns of functional
+connectivity of the dorsal and ventral attention networks of the human brain. Whereas for
+the DAN nodes (IPS and FEF), children show greater functional connectivity with
+regions within the network compared with adults, and adults showed greater functional
+connectivity between with extra-network regions including nodes of the default mode
+network, for the VAN nodes (TPJ and VFC), adults showed greater functional
+connectivity with regions within the network compared with children and children
+showed greater functional connectivity between VFC and nodes of the salience network.
+We suggest that because the VFC is within close proximity of anterior insula, an
+important hub within the salience network, there may be overlap between the VAN and
+salience network at this node. This asymmetric pattern of development of attention
+networks may be a neural signature of the shift from over-representation of bottom-up
+attention mechanisms to greater top-down attentional capacities that emerge between
+childhood and adulthood. Future research should explore how alterations in development
+of these attention networks might impact developmental disorders of attention including
+attention deficit/hyperactivity disorder (ADHD) (Vaidya, 2012).
+
+Ac
+
+We gratefully acknowledge the Autism Brain Imaging Data Exchange (ABIDE;
+http://fcon_1000.projects.nitrc.org/indi/abide/) for providing the publicly available data
+used in the current work. This work was supported by a National Institute of Mental
+Health Career Development Award [K01MH092288] and a Slifka/Ritvo Innovation in
+Autism Research Award to from the International Society for Autism Research to LQU.
+
+17
+
+Page 17 of 21
+
+References
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+Anticevic, A., Cole, M. W., Murray, J. D., Corlett, P. R., Wang, X. J., & Krystal, J. H.
+(2012). The role of default network deactivation in cognition and disease. Trends
+Cogn Sci, 16(12), 584-592.
+Biswal, B., Yetkin, F. Z., Haughton, V. M., & Hyde, J. S. (1995). Functional connectivity
+in the motor cortex of resting human brain using echo-planar MRI. Magn Reson
+Med, 34(4), 537-541.
+Blakemore, S. J., Burnett, S., & Dahl, R. E. (2010). The role of puberty in the developing
+adolescent brain. Hum Brain Mapp, 31(6), 926-933.
+Booth, J. R., Burman, D. D., Meyer, J. R., Lei, Z., Trommer, B. L., Davenport, N. D., et
+al. (2003). Neural development of selective attention and response inhibition.
+Neuroimage, 20(2), 737-751.
+Bressler, S. L., Tang, W., Sylvester, C. M., Shulman, G. L., & Corbetta, M. (2008). Topdown control of human visual cortex by frontal and parietal cortex in anticipatory
+visual spatial attention. J Neurosci, 28(40), 10056-10061.
+Bunge, S. A., Dudukovic, N. M., Thomason, M. E., Vaidya, C. J., & Gabrieli, J. D.
+(2002). Immature frontal lobe contributions to cognitive control in children:
+evidence from fMRI. Neuron, 33(2), 301-311.
+Cao, M., Wang, J. H., Dai, Z. J., Cao, X. Y., Jiang, L. L., Fan, F. M., et al. (2014).
+Topological organization of the human brain functional connectome across the
+lifespan. Dev Cogn Neurosci, 7, 76-93.
+Casey, B. J., Galvan, A., & Hare, T. A. (2005). Changes in cerebral functional
+organization during cognitive development. Curr Opin Neurobiol, 15(2), 239-244.
+Casey, B. J., Giedd, J. N., & Thomas, K. M. (2000). Structural and functional brain
+development and its relation to cognitive development. Biol Psychol, 54(1-3),
+241-257.
+Casey, B. J., Trainor, R. J., Orendi, J. L., Schubert, A. B., Nystrom, L. E., Giedd, J. N., et
+al. (1997). A Developmental Functional MRI Study of Prefrontal Activation
+during Performance of a Go-No-Go Task. J Cogn Neurosci, 9(6), 835-847.
+Chao-Gan, Y., & Yu-Feng, Z. (2010). DPARSF: A MATLAB Toolbox for "Pipeline"
+Data Analysis of Resting-State fMRI. Front Syst Neurosci, 4, 13.
+Cole, M. W., Reynolds, J. R., Power, J. D., Repovs, G., Anticevic, A., & Braver, T. S.
+(2013). Multi-task connectivity reveals flexible hubs for adaptive task control. Nat
+Neurosci.
+Corbetta, M., Patel, G., & Shulman, G. L. (2008). The reorienting system of the human
+brain: from environment to theory of mind. Neuron, 58(3), 306-324.
+Corbetta, M., & Shulman, G. L. (2002). Control of goal-directed and stimulus-driven
+attention in the brain. Nat Rev Neurosci, 3(3), 201-215.
+Crottaz-Herbette, S., & Menon, V. (2006). Where and when the anterior cingulate cortex
+modulates attentional response: combined fMRI and ERP evidence. J Cogn
+Neurosci, 18(5), 766-780.
+Damoiseaux, J. S., Rombouts, S. A., Barkhof, F., Scheltens, P., Stam, C. J., Smith, S. M.,
+et al. (2006). Consistent resting-state networks across healthy subjects. Proc Natl
+Acad Sci U S A, 103(37), 13848-13853.
+
+18
+
+Page 18 of 21
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+Di Martino, A., Yan, C. G., Li, Q., Denio, E., Castellanos, F. X., Alaerts, K., et al.
+(2014). The autism brain imaging data exchange: towards a large-scale evaluation
+of the intrinsic brain architecture in autism. Mol Psychiatry, 19(6), 659-667.
+Dosenbach, N. U., Fair, D. A., Cohen, A. L., Schlaggar, B. L., & Petersen, S. E. (2008).
+A dual-networks architecture of top-down control. Trends Cogn Sci, 12(3), 99105.
+Dosenbach, N. U., Nardos, B., Cohen, A. L., Fair, D. A., Power, J. D., Church, J. A., et
+al. (2010). Prediction of individual brain maturity using fMRI. Science,
+329(5997), 1358-1361.
+Downar, J., Crawley, A. P., Mikulis, D. J., & Davis, K. D. (2000). A multimodal cortical
+network for the detection of changes in the sensory environment. Nat Neurosci,
+3(3), 277-283.
+Dumontheil, I., Hassan, B., Gilbert, S. J., & Blakemore, S. J. (2010). Development of the
+selection and manipulation of self-generated thoughts in adolescence. J Neurosci,
+30(22), 7664-7671.
+Durston, S., & Casey, B. J. (2006). What have we learned about cognitive development
+from neuroimaging? Neuropsychologia, 44(11), 2149-2157.
+Durston, S., Davidson, M. C., Tottenham, N., Galvan, A., Spicer, J., Fossella, J. A., et al.
+(2006). A shift from diffuse to focal cortical activity with development. Dev Sci,
+9(1), 1-8.
+Fair, D. A., Cohen, A. L., Dosenbach, N. U., Church, J. A., Miezin, F. M., Barch, D. M.,
+et al. (2008). The maturing architecture of the brain's default network. Proc Natl
+Acad Sci U S A, 105(10), 4028-4032.
+Fair, D. A., Cohen, A. L., Power, J. D., Dosenbach, N. U., Church, J. A., Miezin, F. M.,
+et al. (2009). Functional brain networks develop from a "local to distributed"
+organization. PLoS Comput Biol, 5(5), e1000381.
+Fair, D. A., Dosenbach, N. U., Church, J. A., Cohen, A. L., Brahmbhatt, S., Miezin, F.
+M., et al. (2007). Development of distinct control networks through segregation
+and integration. Proc Natl Acad Sci U S A, 104(33), 13507-13512.
+Fox, M. D., Corbetta, M., Snyder, A. Z., Vincent, J. L., & Raichle, M. E. (2006).
+Spontaneous neuronal activity distinguishes human dorsal and ventral attention
+systems. Proc Natl Acad Sci U S A, 103(26), 10046-10051.
+Friston, K. J., Williams, S., Howard, R., Frackowiak, R. S., & Turner, R. (1996).
+Movement-related effects in fMRI time-series. Magn Reson Med, 35(3), 346-355.
+Greicius, M. D., Krasnow, B., Reiss, A. L., & Menon, V. (2003). Functional connectivity
+in the resting brain: a network analysis of the default mode hypothesis. Proc Natl
+Acad Sci U S A, 100(1), 253-258.
+He, B. J., Snyder, A. Z., Vincent, J. L., Epstein, A., Shulman, G. L., & Corbetta, M.
+(2007). Breakdown of functional connectivity in frontoparietal networks underlies
+behavioral deficits in spatial neglect. Neuron, 53(6), 905-918.
+Huttenlocher, P. R. (1990). Morphometric study of human cerebral cortex development.
+Neuropsychologia, 28(6), 517-527.
+Jolles, D. D., van Buchem, M. A., Crone, E. A., & Rombouts, S. A. (2011). A
+comprehensive study of whole-brain functional connectivity in children and
+young adults. Cereb Cortex, 21(2), 385-391.
+
+19
+
+Page 19 of 21
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+Kelly, A. M., Di Martino, A., Uddin, L. Q., Shehzad, Z., Gee, D. G., Reiss, P. T., et al.
+(2009). Development of anterior cingulate functional connectivity from late
+childhood to early adulthood. Cereb Cortex, 19(3), 640-657.
+Konrad, K., Neufang, S., Thiel, C. M., Specht, K., Hanisch, C., Fan, J., et al. (2005).
+Development of attentional networks: an fMRI study with children and adults.
+Neuroimage, 28(2), 429-439.
+Kucyi, A., Hodaie, M., & Davis, K. D. (2012). Lateralization in intrinsic functional
+connectivity of the temporoparietal junction with salience- and attention-related
+brain networks. J Neurophysiol, 108(12), 3382-3392.
+Margulies, D. S., Kelly, A. M., Uddin, L. Q., Biswal, B. B., Castellanos, F. X., &
+Milham, M. P. (2007). Mapping the functional connectivity of anterior cingulate
+cortex. Neuroimage, 37(2), 579-588.
+Menon, V., & Uddin, L. Q. (2010). Saliency, switching, attention and control: a network
+model of insula function. Brain Struct Funct, 214(5-6), 655-667.
+Power, J. D., Barnes, K. A., Snyder, A. Z., Schlaggar, B. L., & Petersen, S. E. (2012).
+Spurious but systematic correlations in functional connectivity MRI networks
+arise from subject motion. Neuroimage, 59(3), 2142-2154.
+Power, J. D., Cohen, A. L., Nelson, S. M., Wig, G. S., Barnes, K. A., Church, J. A., et al.
+(2011). Functional network organization of the human brain. Neuron, 72(4), 665678.
+Raichle, M. E., MacLeod, A. M., Snyder, A. Z., Powers, W. J., Gusnard, D. A., &
+Shulman, G. L. (2001). A default mode of brain function. Proc Natl Acad Sci U S
+A, 98(2), 676-682.
+Rubia, K. (2013). Functional brain imaging across development. Eur Child Adolesc
+Psychiatry, 22(12), 719-731.
+Saad, Z. S., Gotts, S. J., Murphy, K., Chen, G., Jo, H. J., Martin, A., et al. (2012). Trouble
+at rest: how correlation patterns and group differences become distorted after
+global signal regression. Brain Connect, 2(1), 25-32.
+Seeley, W. W., Menon, V., Schatzberg, A. F., Keller, J., Glover, G. H., Kenna, H., et al.
+(2007). Dissociable intrinsic connectivity networks for salience processing and
+executive control. J Neurosci, 27(9), 2349-2356.
+Shulman, G. L., d'Avossa, G., Tansy, A. P., & Corbetta, M. (2002). Two attentional
+processes in the parietal lobe. Cereb Cortex, 12(11), 1124-1131.
+Smith, S. M., Fox, P. T., Miller, K. L., Glahn, D. C., Fox, P. M., Mackay, C. E., et al.
+(2009). Correspondence of the brain's functional architecture during activation
+and rest. Proc Natl Acad Sci U S A, 106(31), 13040-13045.
+Sridharan, D., Levitin, D. J., Chafe, C. H., Berger, J., & Menon, V. (2007). Neural
+dynamics of event segmentation in music: converging evidence for dissociable
+ventral and dorsal networks. Neuron, 55(3), 521-532.
+Supekar, K., Musen, M., & Menon, V. (2009). Development of large-scale functional
+brain networks in children. PLoS Biol, 7(7), e1000157.
+Supekar, K., Uddin, L. Q., Prater, K., Amin, H., Greicius, M. D., & Menon, V. (2010).
+Development of functional and structural connectivity within the default mode
+network in young children. Neuroimage, 52(1), 290-301.
+Uddin, L. Q. (2015). Salience processing and insular cortical function and dysfunction.
+Nat Rev Neurosci, 16(1), 55-61.
+
+20
+
+Page 20 of 21
+
+Ac
+
+ce
+
+pt
+
+ed
+
+M
+
+an
+
+us
+cr
+ip
+
+t
+
+Uddin, L. Q., Supekar, K., & Menon, V. (2010). Typical and atypical development of
+functional human brain networks: insights from resting-state FMRI. Front Syst
+Neurosci, 4, 21.
+Uddin, L. Q., Supekar, K., & Menon, V. (2013). Reconceptualizing functional brain
+connectivity in autism from a developmental perspective. Front Hum Neurosci, 7,
+458.
+Uddin, L. Q., Supekar, K. S., Ryali, S., & Menon, V. (2011). Dynamic reconfiguration of
+structural and functional connectivity across core neurocognitive brain networks
+with development. J Neurosci, 31(50), 18578-18589.
+Vaidya, C. J. (2012). Neurodevelopmental abnormalities in ADHD. Curr Top Behav
+Neurosci, 9, 49-66.
+Van Dijk, K. R., Sabuncu, M. R., & Buckner, R. L. (2012). The influence of head motion
+on intrinsic functional connectivity MRI. Neuroimage, 59(1), 431-438.
+
+21
+
+Page 21 of 21
+
+

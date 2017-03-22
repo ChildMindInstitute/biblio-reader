@@ -1,0 +1,3028 @@
+Research Report
+Occasional Paper
+
+Functional Magnetic
+Resonance Imaging (fMRI):
+An Invaluable Tool in
+Translational Neuroscience
+Lori A. Whitten
+December 2012
+
+RTI Press
+
+About the Author
+Lori A. Whitten, PhD, is a science
+writer in the Knowledge Translation
+and Strategic Communication
+group in RTI International’s Social,
+Statistical, and Environmental
+Sciences unit.
+
+RTI Press publication OP-0010-1212
+This PDF document was made available from www.rti.org as a public service
+of RTI International. More information about RTI Press can be found at
+http://www.rti.org/rtipress.
+RTI International is an independent, nonprofit research organization dedicated
+to improving the human condition by turning knowledge into practice. The
+RTI Press mission is to disseminate information about RTI research, analytic
+tools, and technical expertise to a national and international audience. RTI Press
+publications are peer-reviewed by at least two independent substantive experts
+and one or more Press editors.
+Suggested Citation
+
+Whitten, L. A. (2012). Functional magnetic resonance imaging (fMRI):
+An invaluable tool in translational neuroscience. RTI Press publication
+No. OP-0010-1212. Research Triangle Park, NC: RTI Press. Retrieved from
+http://www.rti.org/rtipress.
+
+This publication is part of the
+RTI Research Report series.
+Occasional Papers are scholarly
+essays on policy, methods, or other
+topics relevant to RTI areas of
+research or technical focus.
+RTI International
+3040 Cornwallis Road
+PO Box 12194
+Research Triangle Park, NC
+27709-2194 USA
+Tel:
+Fax:
+E-mail:
+Web site:
+
++1.919.541.6000
++1.919.541.5985
+rtipress@rti.org
+www.rti.org
+
+©2012 Research Triangle Institute. RTI International is a trade name of Research Triangle
+Institute.
+All rights reserved. This report is protected by copyright. Credit must be provided to the author
+and source of the document when the content is quoted. Neither the document nor partial or
+entire reproductions may be sold without prior written permission from the publisher.
+http://dx.doi.org/10.3768/rtipress.2012.op.0010.1212
+www.rti.org/rtipress
+
+Functional Magnetic Resonance
+Imaging (fMRI): An Invaluable Tool in
+Translational Neuroscience
+Lori A. Whitten
+
+Contents
+Neuroimaging: A Major Driver
+of Neuroscience Research
+Introduction
+
+2
+2
+
+A Brain With a View: Functional
+Neuroimaging
+3
+Neuroimaging: A New Driver of
+Translational Neuroscience 4
+fMRI as a Tool in the Diagnosis
+and Treatment of
+Neurobehavioral Problems 4
+Importance of Integrating fMRI
+With Other Approaches
+8
+
+Abstract
+The sophisticated methods of neuroscience—including molecular genetics,
+structural and functional neuroimaging, animal models, and experimental
+tasks that approximate real-world behaviors in human research—have yielded
+important insights about typical functioning and neurobehavioral disorders.
+Translational neuroscience endeavors to use this knowledge to improve
+the human condition by developing and improving interventions for these
+disorders. This paper reviews the literature on the contribution of functional
+magnetic resonance imaging (fMRI) and two related techniques, resting-state
+fMRI (rs-fMRI) and real-time fMRI (rt-fMRI), to the diagnosis and treatment of
+behavioral problems and psychiatric disorders. It also explains how incorporating
+neuroscience principles and techniques into research on the prevention of
+substance misuse and antisocial behavior may spur advances and innovations
+in this important area. This article argues that fMRI’s potential contribution to
+these prevention efforts has yet to be fully realized, explores new ways in which
+the technique could be adapted to that end, highlights some of the work by
+researchers in the vanguard of this effort, and notes limitations of fMRI and
+ethical concerns the technique raises.
+
+Translational Neuroscience and
+Prevention: Substance Misuse
+9
+and Antisocial Behavior
+The Complex Etiology of
+Substance Misuse and
+Antisocial Behavior
+
+10
+
+Neurobehavioral Characteristics
+Associated With Later
+Substance Misuse and
+Antisocial Behavior
+11
+fMRI Research on Substance
+Misuse and Antisocial
+Behavior, and Implications
+12
+for Prevention
+Integrating fMRI into
+Prevention Research
+
+15
+
+RTI International’s
+Transdisciplinary Science
+and Translational
+Prevention Program
+
+16
+
+fMRI Limitations and
+Neuroethics
+
+17
+
+Future Applications and
+Conclusions
+
+19
+
+References
+
+21
+
+Acknowledgments Inside back cover
+
+2
+
+Whitten, 2012
+
+Neuroimaging: A Major Driver of
+Neuroscience Research
+Introduction
+What is the final frontier of human exploration?
+Some, particularly neuroscientists, might answer
+that it is the human brain—“inner space” rather than
+outer space. During the 40 years since men walked on
+the moon, scientists have accumulated a tremendous
+wealth of knowledge about the brain, its functions,
+its relationship with behavior, and its underlying
+role in neurological and psychiatric diseases.
+Researchers trained in many different disciplines—
+including physiology, psychology, pharmacology,
+molecular biology, psychiatry, and neurology—work
+in neuroscience through a common passion to
+determine how the brain and nervous system work.
+No function or behavior appears too complex for
+neuroscience to tackle—from how children learn
+language (Kuhl, 2010) to the memory systems that
+preserve our experiences and knowledge (Squire,
+2009)—and advances continue at a breathtaking pace.
+As in all areas of biomedical research, a crucial
+challenge for neuroscientists is to translate the
+knowledge derived from scientific inquiry into
+practical tools or programs that improve people’s
+lives. Translational neuroscientists strive to develop
+interventions for neurological and psychiatric
+disorders based on the latest brain and behavior
+research. By understanding how brain structure and
+function are influenced by genes, environmental
+factors, and their interactions, translational
+neuroscientists strive to alleviate the individual and
+societal impact of neurobehavioral disorders.
+A great deal of translational neuroscience resources
+and efforts are dedicated to developing new
+pharmacotherapies to treat debilitating neurological
+and psychiatric disorders (e.g., dementia,
+neurodegenerative diseases, autism, schizophrenia,
+and depression). Other neuroscientists aim to
+translate research on brain and behavior into
+non-pharmacological treatments for psychiatric
+and neurobehavioral disorders (e.g., behavioral
+or cognitive therapies). Increasingly, biological
+factors and their reciprocal interaction with
+
+RTI Press
+
+the environment are incorporated into work on
+prevention and intervention for a wide range of
+behavioral problems (Beauchaine, Neuhaus, Brenner,
+& Gatzke-Kopp, 2008; Cicchetti & Gunnar, 2008;
+van Goozen & Fairchild, 2008; Blair & Diamond,
+2008; Fishbein & Tarter, 2009). Such work is based
+on the well-established neuroscience principle of
+brain plasticity—that is, the brain can change with
+experience and environmental influences.
+Functional neuroimaging techniques—various
+types of scans that visualize brain activity—offer a
+powerful set of tools for observing experience-related
+changes. With functional neuroimaging, researchers
+can look at the brain’s response to a particular input,
+such as a cognitive stimulus, a contextual setting
+or, in the clinical realm, a change in response to an
+intervention. For example, functional neuroimaging
+has examined the neural impact of peer observation
+on teens’ risky decisions and accidents during
+simulated driving (Chein, Albert, O’Brien, Uckert,
+& Steinberg, 2011) and of a regimen of cognitivebehavioral therapy for depression (Fu et al., 2008).
+Findings from functional neuroimaging studies
+have great potential to contribute to the diagnosis,
+treatment, and prevention of behavioral problems and
+psychiatric disorders. The prevention field, however,
+has underutilized this knowledge. Researchers
+can help overcome this research-to-practice gap
+by translating knowledge from neuroscience to
+the science and practice of prevention. Brain
+science can help generate solutions and provide
+a foundation for a non-political, non-rhetoricbased dialog on these problems. To illustrate this,
+a brief description is provided on widely used
+techniques in functional magnetic resonance
+imaging (fMRI)—including resting-state fMRI
+(rs-fMRI) and real-time fMRI (rt-fMRI)—and
+how they are contributing to translational efforts
+in the treatment of neurobehavioral problems. The
+potential contributions of fMRI to prevention of
+neurobehavioral problems are then summarized.
+To highlight the potential of this technology in
+prevention research, the use of fMRI by RTI’s
+Transdisciplinary Science and Translational
+Prevention Program, which focuses on substance
+misuse and related problems (e.g., aggression,
+
+fMRI in Translational Neuroscience
+
+violence), is reviewed in this paper. Finally, fMRI’s
+limitations and ethical issues regarding its use are
+discussed in the context of neuroimaging in research
+on neurobehavioral disorders.
+
+A Brain With a View: Functional
+Neuroimaging
+Functional neuroimaging includes a variety of
+techniques that examine how the brain is working—
+typically, to relate a change in activity in a particular
+region with specific task performances, experiences,
+or behaviors. Some methods record electrical currents
+or magnetic fields as a measure of activity in the brain
+areas just underneath the skull. Other techniques,
+such as positron emission tomography (PET) and
+functional magnetic resonance imaging (fMRI),
+examine changes in glucose utilization or blood flow,
+from which researchers infer neural activity (Raichle
+& Mintun, 2006).
+The fMRI technique, which emerged in the early
+1990s, offered significant advances over other
+methods of studying brain function. For example, the
+widely available scanning technique visualizes activity
+in all areas of the brain, not just those close to the
+surface. Unlike PET, it does not rely on radiation or a
+radiolabeled tracer. Without requiring any injection,
+it measures altered oxygenation and deoxygenation
+of hemoglobin as brain blood flow shifts to activated
+regions, a process that takes from 1 to 5 seconds.
+An increased local ratio of oxyhemoglobin to
+deoxyhemoglobin is a marker of activity, called
+blood-oxygen-level-dependent (BOLD), and fMRI
+scanners record images of this signal over time
+(Logothetis, Pauls, Augath, Trinath, & Oeltermann,
+2001; Heeger & Ress, 2002). By applying highpowered computing and statistical analyses,
+researchers use the BOLD signal to infer changes in
+neuronal activity with high spatial resolution in a
+particular brain region (Glover, 2011).
+What accounts for the dominance of the fMRI
+technique in research to understand the relationship
+between mind and body? Both the technical
+advantages mentioned above and the successful
+blending of brain scanning with relevant behavioral
+paradigms play important roles (Raichle, 2009a).
+The development of stereotaxic brain atlases for
+
+3
+
+standardization, the capability to average multiple
+brain scans, and the development of powerful
+statistical analyses have helped enable fMRI to
+produce physiological measures relevant to behavior
+and mental processes.
+Early in its development, fMRI research was
+strengthened by the involvement of behavioral
+scientists—particularly cognitive psychologists
+familiar with tasks that tapped into mental states
+(e.g., discriminating stimuli, recognition memory,
+and verbal processing). The field was thus founded on
+established experimental paradigms. These behavioral
+scientists were also familiar with techniques to
+control for practice, fluctuating attention, and other
+important factors. The technical advantages of
+fMRI and well-established behavioral tasks provide
+researchers with a unique tool to visualize what is
+happening in the brain as participants experience and
+respond to a wide range of stimuli or tasks.
+
+Event-Related (Task-Based) fMRI
+Scans taken while subjects are engaged in a task
+can enable researchers to link the activity of neural
+structures with a particular function, experience,
+or behavior. Building on behavioral studies,
+psychometrics, and other fields—and often working
+in interdisciplinary teams—researchers have been
+creative in designing fMRI tasks and protocols that
+bear on real-world thoughts and behaviors (Spiers &
+Maguire, 2007). The imaging technique has provided
+new information about uniquely human emotions
+(Takahashi et al., 2009) and has had practical
+implications regarding typical cognitive function
+(Houdé, Rossi, Lubin, & Joliot, 2010; Arsalidou &
+Taylor, 2011; Kim, 2011) and responses to people
+and social experiences (Dosch, Loenneker, Bucher,
+Martin, & Klaver, 2010; Swain, 2008; Chein et al.,
+2011; Sebastian et al., 2011).
+
+Resting-State (rs-fMRI)
+More recently, the neuroimaging field has recognized
+that the brain not only responds to events but is
+constantly active—consuming most of its energy at
+rest rather than during goal-directed tasks (Raichle,
+2010). Communication between interconnected
+structures is continuous, although individual circuits
+
+4
+
+RTI Press
+
+Whitten, 2012
+
+may be more or less active at various times. Marcus
+Raichle laid the evidentiary groundwork for rsfMRI. He showed that when individuals appear to
+be doing nothing—as in, for example, the control
+condition of a task-based fMRI experiment in which
+participants stare at a mark in the center of a screen—
+interconnected brain circuits remain active in
+synchronized patterns, which he named the defaultmode network (Raichle et al., 2001; Raichle & Snyder,
+2007). This constant communication reflects many
+highly coherent functional networks and reveals the
+brain’s functional organization (Raichle, 2009b; Deco,
+Jirsa, & McIntosh, 2011).
+Research on the default-mode network has yielded
+insights on brain development. For example, de Bie
+and colleagues (2012) found that children aged 5
+to 8 have sensory and motor networks with robust,
+adult-like functional organization but demonstrate
+immature characteristics in circuits related to
+higher-order cognitive functions. Similarly, Power
+and colleagues (2010) noted that the organizational
+characteristics of brain networks are present during
+childhood but undergo significant refinement with
+maturation. Results from rs-fMRI are complementary
+to those from structural neuroimaging—techniques
+that visualize the brain’s structures and the fiber tract
+connections between them (Damoiseaux & Greicius,
+2009)—and critical in advancing the understanding
+of neural network development (Supekar et al., 2010).
+Studies that apply rs-fMRI to healthy adult
+volunteers are helping researchers test hypotheses
+about particular functional networks (Taylor,
+Seminowicz, & Davis, 2009), sub-networks (Vogel,
+Power, Petersen, & Schlaggar, 2010), and the impact
+of specific activities (e.g., mindfulness meditation)
+on the brain’s intrinsic connectivity (Kilpatrick et
+al., 2011). Collaborative efforts to pool rs-fMRI
+brain scans into publicly accessible databases help
+overcome the problem of small-sample studies. Two
+ongoing efforts—the grassroots 1,000 Functional
+Connectomes Project (Biswal et al., 2010; http://www.
+nih.gov/news/health/jul2009/ninds-15.htm) and a
+government-initiated effort, the Human Connectome
+Project, which also includes genetic, behavioral,
+and structural imaging data, will further increase
+knowledge about the brain’s intrinsic connections
+(http://www.humanconnectomeproject.org/).
+
+Real-Time (rt-fMRI)
+Instantaneous analyses of fMRI data yield a realtime view of neural responses. Combining such
+technology with well-established neurofeedback
+techniques offers a powerful tool, called real-time
+fMRI, to teach people to control their brain activity
+(deCharms, 2007). Proponents of rt-fMRI argue that
+it can increase a person’s awareness of brain function,
+permitting him or her to change their thoughts or
+emotions (deCharms, 2008). (Preliminary evidence
+from rt-fMRI studies among healthy volunteers is
+described in the next section). This tool for teaching
+people to control activity in a specific brain region has
+therapeutic potential for pain modulation (deCharms
+et al., 2005) and perhaps as a component of treatment
+for behavioral and emotional problems (deCharms,
+2008; Linden & Fallgatter, 2009).
+
+Neuroimaging: A New Driver of
+Translational Neuroscience
+Since the 1970s, when structural neuroimaging
+demonstrated that people with schizophrenia have
+enlarged cerebral ventricles, some psychiatrists
+have encouraged incorporation of such techniques
+into their field (Linden, 2012). With the advent
+of biological psychiatry, functional neuroimaging
+research on behavioral problems exploded. Although
+functional neuroimaging has not yielded clinically
+relevant biomarkers for mental disorders, current
+studies lay the groundwork for its eventual use in the
+diagnosis, treatment, and prevention of behavioral
+problems and psychiatric disorders (Linden, 2012;
+Bigos & Weinberger, 2010; Loth, Carvalho, &
+Schumann 2011; Hasler & Northoff, 2011). Powerful
+functional neuroimaging tools are helping researchers
+understand the origins of mental disorders and
+the mechanisms of effective treatments—both
+pharmacological and behavioral (Linden, 2012;
+Carter et al., 2011).
+
+fMRI as a Tool in the Diagnosis and
+Treatment of Neurobehavioral Problems
+Of all the neuroimaging techniques, fMRI is thought
+to have the greatest potential to change psychiatric
+practice. When combined with other techniques,
+particularly structural neuroimaging, fMRI can help
+
+fMRI in Translational Neuroscience
+
+identify the pathophysiology underlying psychiatric
+disorders (Linden & Fallgatter, 2009). Much of this
+research compared brain activity patterns of patient
+populations with those of healthy controls.
+Highly prevalent disorders, including depression,
+anxiety, and attention-deficit hyperactivity (Rigucci,
+Serafini, Pompili, Kotzalidis, & Tatarelli, 2010;
+Robinson & Shergill, 2011; Casey, Ruberry, et al.,
+2011; Wilens & Spencer, 2010) are being studied
+in this manner. Pediatric psychiatry increasingly
+uses fMRI to uncover the development of disorders
+(Pavuluri & Sweeney, 2008; Hulvershorn, Cullen, &
+Anand, 2011).
+Descriptions of the pathology underlying
+neurobehavioral disorders based on structural and
+functional neuroimaging provide vital, objective
+data to improve psychiatric diagnoses. fMRI has the
+potential to provide biological indicators of disease,
+or biomarkers—critical for diagnosis in other fields
+of medicine—to psychiatry, although a great deal of
+work remains for this potential to be fully realized
+(Malhi & Lagopoulos, 2008; Linden & Fallgatter,
+2009). Such neural markers would not replace
+symptom-based diagnosis and behavioral assessments
+in psychiatry, but they would augment clinical
+decision making (Linden & Fallgatter, 2009).
+
+Task-Based fMRI
+Using task-based fMRI, researchers have identified
+specific differences in brain response between healthy
+and psychiatric populations. These differences may
+serve as neural markers to identify underlying
+pathology and, ultimately, aid diagnosis. The process
+of identifying the emotion represented on others’
+faces, for example, not only guides how individuals
+interact with others but also may serve to gauge the
+presence of a mood disorder. To map areas of the
+brain involved in this important function, researchers
+have applied meta-analysis to many functional
+neuroimaging studies investigating how healthy
+volunteers process the emotions faces display—for
+example, identifying responses to happy, fearful, and
+sad faces (Fusar-Poli et al., 2009; Sabatinelli et al.,
+2011). Such mapping of the typical neural response
+is critical for interpreting aberrant brain activity
+observed among patient populations.
+
+5
+
+For example, depressed people who have not
+undergone treatment show heightened responses
+in the amygdala (a brain structure involved in
+fear and anxiety) in response to emotional facial
+expressions (Peluso et al., 2009; Fu et al., 2008;
+Victor, Furey, Fromm, Ohman, & Drevets, 2010),
+although results are not always consistent (Townsend
+et al., 2010). With confirmatory research, such
+neural responses may ultimately comprise an fMRI
+diagnostic for depression. Current diagnostic
+methods are characterized by a great deal of overlap
+within disorders, and fMRI may contribute to better
+specification of disease subtypes (Linden, 2012).
+It may be the case that subtypes of disorders are
+characterized by different patterns of brain activity
+despite similar categorization according to behavioral
+diagnostics.
+In addition to their potential to improve diagnostic
+classification, neural markers may help predict and
+track therapeutic responses. Various studies have
+found that stronger pre-treatment activity in some
+brain areas (particularly the anterior cingulate cortex)
+are good predictors of clinical response to cognitivebehavioral therapy (Costafreda, Khanna, MouraoMiranda, & Fu, 2009; Fu et al., 2008) and treatment
+for depression (Victor et al., 2010). Such predictors
+may help clinicians tailor behavioral treatment
+or determine which patients are likely to require
+particular combinations of therapies. Investigators
+are studying many other task-based brain activity
+patterns that may serve as neural signatures to predict
+treatment response among people with depression
+(Siegle, Carter, & Thase, 2006; Masten et al., 2011;
+Forbes et al., 2010; Ritchey, Dolcos, Eddington,
+Strauman, & Cabeza, 2011) and other disorders
+(Bryant et al., 2008).
+By directly assessing improvement in brain functions
+with particular relevance to the disorder, psychiatrists
+may be able to use task-based fMRI to track progress
+in treatment. Indeed, such functional neuroimaging
+has shown that behavioral treatments change brain
+activity (Beauregard, 2009; Porto et al., 2009; Linden,
+2006). Task-based fMRI also has revealed the neural
+impact of medications. For example, Rubia and
+colleagues (2011) found that boys with attentiondeficit hyperactivity disorder (ADHD) showed
+
+6
+
+Whitten, 2012
+
+diminished activity in brain regions involved in
+monitoring one’s own performance of a task. A single
+dose of methylphenidate normalized this activity.
+
+Resting-State fMRI
+Once researchers realized that rs-fMRI can highlight
+functionally linked brain regions, they began to
+explore the concept that resting-state connectivity
+might differ between psychiatric and healthy
+populations. As with specific neural markers revealed
+by task-based fMRI, scans for functional connectivity
+also have the potential to become a biomarker of
+disease (Greicius, 2008), and researchers have shown
+dysfunction in the default-mode network in several
+psychiatric and neurological disorders (for reviews
+see Broyd et al., 2009; Zhang & Raichle, 2010).
+Among people with depression, for example, brain
+networks related to cognitive control, emotion,
+and the default-mode showed a greater functional
+connectivity to the bilateral dorsal medial prefrontal
+cortex region—an area the researchers call the
+dorsal nexus (Sheline, Price, Yan, & Mintun,
+2010)—than in people who were not depressed.
+Heightened connectivity in this area, newly linked
+with depression, may explain how the cognitive and
+affective symptoms of the disorder co-occur and feed
+off each other.
+Similarly, functional connectivity studies have
+identified some important neural network
+communication deficits that researchers may
+eventually translate into diagnostic tools and
+treatments for neurological disorders (Hampel,
+Prvulovic, Teipel, & Bokde, 2011; Yang et al., 2011).
+In people with mild cognitive impairment, for
+example, connectivity between the hippocampus—a
+brain structure central to memory—and cortical
+areas of the memory network was diminished and
+correlated with cognitive deterioration over a 3-year
+period (Wang et al., 2011). The initial rs-fMRI scan
+revealed some compensatory increased connectivity
+between the hippocampus and other areas of the
+brain, but some of this connectivity was lost as the
+disease progressed (Wang et al., 2011).
+Combining rs-fMRI and structural MRI, these
+researchers found that disrupted connectivity in
+
+RTI Press
+
+the dorsolateral prefrontal cortex, which is part of
+multiple neural circuits, was correlated with several
+measures of cognitive impairment. Moreover, patterns
+of neural deterioration indicated by structural MRI
+were generally consistent with rs-fMRI results (Liang,
+Wang, Yang, Jia, & Li, 2011). Such results highlight
+how rs-fMRI is providing knowledge about the
+etiology of brain disorders that will be useful to future
+diagnostic and treatment efforts.
+As with task-based fMRI, rs-fMRI has the potential
+to gauge therapeutic response and predict treatment
+outcome. Goveas and colleagues (2011) found that
+patients with mild Alzheimer’s disease showed
+reduced connectivity in hippocampal neural networks
+compared with healthy age-matched controls. After 3
+months of treatment with the medication donepezil,
+cognitive improvement correlated with enhanced
+network connectivity in specific regions—suggesting
+that rs-fMRI results may predict response to this
+treatment.
+A preliminary study by Negishi and colleagues
+(2011) found that epilepsy patients who had
+recurrent seizures were more likely to have functional
+connectivity distributed across the two hemispheres
+of the brain. The authors suggested that preoperative
+rs-fMRI scans, with particular attention to laterality
+of brain activity, might add to well-established
+predictors of surgery outcome.
+The rs-fMRI technique is helping researchers
+better understand other complex behaviors, laying
+groundwork for early identification of impairments
+and intervention-related improvements. For
+example, Koyama and colleagues (2011) used rsfMRI to overcome a long-standing challenge in
+reading research. Because rs-fMRI requires no
+tasks, it was unnecessary to develop equivalent
+tasks across different age groups. The rs-fMRI study
+demonstrated that reading competency, both among
+children and adults, is associated with stronger
+resting-state functional connectivity among motor
+regions and language and speech regions. It was also
+associated with a shift from the default network to
+enhanced activity in brain areas that process visual
+representations of words and language sounds
+(Koyama et al., 2011).
+
+fMRI in Translational Neuroscience
+
+Real-Time Neurofeedback
+Currently, most rt-fMRI neurofeedback studies
+involve small samples of healthy volunteers.
+Investigators identify a local neural area of interest
+related to a particular function (e.g., reacting to
+positive and negative emotional stimuli) and provide
+a means for subjects to monitor their own brain
+activity in that region (for example, a thermometer
+image, for which “temperatures” reflect strength of
+the fMRI signal relative to baseline). Participants
+then practice controlling activity in the target area
+using their own strategies or one suggested by the
+experimenters, alternating with rest periods (Caria et
+al., 2012).
+With a relatively brief training period (typically,
+under 30 minutes), and only when subjects receive
+feedback from the target area (rather than from a
+non-related comparison region), participants have
+controlled activity in brain regions that process pain
+(deCharms et al., 2005), emotion (Caria et al., 2010;
+Johnston et al, 2010), speech (Rota et al., 2011),
+and complex thoughts (McCaig et al., 2011). More
+important, voluntary control of local brain activity
+alters function and experience—reducing pain
+(deCharms et al., 2005), increasing negative ratings
+of aversive emotional stimuli (Caria et al., 2010), and
+improving identification of the particular emotional
+conveyed by tone of speech (Rota et al., 2009; Rota
+et al., 2011). Teaching participants to control neural
+responses in a localized region is also a non-invasive
+means to manipulate brain activity so researchers can
+examine the effects on behavior and perhaps draw
+causal inferences about function (Caria, Sitaram, &
+Birbaumer, 2012).
+Advances in the technology, processing, and training
+protocols that underlie rt-fMRI neurofeedback are
+occurring at a rapid pace. For example, researchers
+recently reported a new technique that reduces signal
+noise and enhances regional specificity, enabling
+them to create movies that reveal brain dynamics
+(Magland, Tjoa, & Childress, 2011). Such advances
+significantly improve the outlook for translational
+applications—including performance enhancement,
+rehabilitation, and therapy (Laconte, 2011).
+
+7
+
+Ongoing research in rt-fMRI is highly relevant to
+translation in many areas. For example, Yoo and
+colleagues (2011) used real-time monitoring of the
+parahippocampal cortex—a brain area required to
+form memories of scenes—to study learning and
+memory. Although in the early stages, such work
+may lead to ways to identify when individuals are
+most prepared to learn, based on brain responses.
+Similarly, other work using this technique is directed
+at controlling motor cortex activity, with the aim of
+improving rehabilitation regimens after brain injury
+(Berman, Horovitz, Venkataraman, & Hallett, 2011).
+Some rt-fMRI studies have examined participants’
+ability to control emotion areas in the brain, and
+this work has particular relevance for therapeutic
+applications. For example, Hamilton and colleagues
+(2011) focused on the subgenual anterior cingulate
+cortex, which is linked with emotion generation;
+hyperactivity in this structure is implicated in
+depression and other affective disorders. With rtfMRI neurofeedback training, healthy women learned
+to dampen activity in this structure (Hamilton,
+Glover, Hsu, Johnson, & Gotlib, 2011). Although
+these results are preliminary and the study did not
+involve a clinical population, the findings raise the
+intriguing possibility that neurofeedback could
+contribute to behavioral or cognitive therapies for
+depression.
+Other studies have demonstrated that subjects
+receiving rt-fMRI neurofeedback can voluntarily
+regulate the insula and amygdala, other brain regions
+that are important to emotion (Johnston, Boehm,
+Healy, Goebel, & Linden, 2010; Caria et al., 2007).
+In a major development in rt-fMRI neurofeedback
+research, McCaig and colleagues (2011) recently
+demonstrated that healthy volunteers can control
+activity of the rostrolateral area of the anterior
+prefrontal cortex—a region linked with awareness
+of one’s own behavior. The team found that subjects
+could learn to control this area, which is critical
+to complex functions and seems to monitor and
+coordinate thoughts. The demonstration that rtfMRI neurofeedback can help people control areas
+that regulate higher-order functions suggests the
+technique’s potential in cognitive remediation and
+other translational applications.
+
+8
+
+RTI Press
+
+Whitten, 2012
+
+Importance of Integrating fMRI With Other
+Approaches
+A major strength of neuroscience is its
+interdisciplinary nature and its wide range of
+experimental methods. Translating neuroscience
+research results into practical solutions requires
+integration of research approaches. The combination
+of fMRI findings with those based on other
+techniques is particularly helpful in translational
+efforts.
+
+Structural Neuroimaging
+As suggested earlier, structural neuroimaging with
+MRI is helping to map the extensive system of neural
+networks—called the human connectome—in the
+healthy brain, the developing brain, the aging brain,
+and the diseased brain (Sporns, 2011). Diffusion
+tensor imaging (DTI) techniques outline the neural
+fiber pathways connecting different regions of
+the brain and can detect how these change with
+maturation, experience, or disease (Johansen-Berg &
+Rushworth, 2009; Thomason & Thompson, 2011).
+
+Positron Emission Tomography (PET) Imaging
+Hariri (2009) points out that fMRI research provides
+complementary information to PET scans, which
+use radiolabeled tracers to visualize the activity
+of specific neurotransmitter systems. Examples of
+this synergy can be found in studies on impulsivity
+and the ability to delay of gratification, traits
+that vary among individuals from an early age.
+Variation within the normal range correlates with
+positive adult outcomes—for instance, the ability
+to delay gratification at age 4 is associated with
+greater competence as an adult (Mischel, Shoda, &
+Rodriguez, 1989; Mischel et al., 2011). In the extreme,
+impulsivity and problems delaying gratification
+increase vulnerability to addictive disorders (Bickel et
+al., 2007). Basic neuroscience research indicates that
+such individual variation, which is influenced by both
+genetics and neurobiology, strongly relates to part of
+the brain’s reward pathway called the ventral striatum
+(VS). fMRI studies find that strength of activation in
+the VS during reward-related tasks correlates with
+these characteristics. PET scanning studies have
+consistently demonstrated that the neurotransmitter
+dopamine modulates such neural responses.
+
+Imaging Genetics
+The combination of two powerful tools—genetics and
+neuroimaging—offers a significant advancement in
+translational research. In this approach, researchers
+use fMRI (or some other type of neuroimaging such
+as PET) to compare the neural activity of participants
+with different genotypes. They usually focus on a
+gene known to encode a specific neurochemical,
+transporter, enzyme, or receptor (or receptor subunit)
+in the brain that prior research has linked to a
+behavior. Imaging genetics has yielded insights into
+how genes may influence different neurobiological
+responses, particularly those that bear on
+neurobehavioral disorders, including aggression and
+depression. Such studies add value by pointing to
+specific mechanisms whereby genes influence brain
+function to affect behavior; behavior, in turn, then
+alters neurobiology and gene expression (Bigos &
+Weinberger, 2010; Loth, Carvalho, & Schumann,
+2011).
+Genetic studies combined with the neuroimaging
+studies mentioned above have identified genetic
+variants associated with individual differences
+in impulsivity and delay of gratification (Hariri,
+2009). Applying those tools to a different problem,
+Eisenberger, Way, and colleagues (2007) found that
+persons with a genetic variant (the low-expression
+allele for the monoamine oxidase-A gene [MAO-A])
+previously linked with aggression both reported
+more aggressive characteristics and responded
+to social exclusion with an exceptionally intense
+neural response in the dorsal anterior cingulate
+cortex, an area of the brain that processes emotional
+experiences.
+In other imaging research, investigators found that
+heightened amygdala response during the processing
+of negative emotional stimuli was exaggerated in
+healthy children who carry a genetic variant linked
+with depression—the short allele for the serotonin
+transporter gene (5-HTTLPR) (Fortier et al., 2010).
+Interestingly, Schardt and colleagues (2010) found
+that women who carry that allele could reduce
+amygdala reactivity to pictures that evoked fear or
+disgust through purposefully detaching themselves
+from these emotions—a finding that highlights
+the malleability of neural responses and power of
+
+fMRI in Translational Neuroscience
+
+immediate experience on the brain. Although a great
+deal of imaging genetics focuses on brain structures,
+researchers are now beginning to examine how
+gene expression patterns influence the functional
+connectivity of neural networks (Thomason, Yoo,
+Glover, & Gotlib, 2009).
+
+Psychophysiological Monitoring
+The interaction between brain and body has long
+been a subject of inquiry—first in philosophy, then
+in psychology, and now in neuroscience. The brainbody connection and its strong relationship with
+emotion and health makes this an important issue in
+translational neuroscience. Just as the brain influences
+what happens in the rest of the body, bodily responses
+can convey information about internal states back
+to the brain. Therefore, a powerful approach in
+translational neuroscience combines fMRI with
+the measurement of bodily responses, for example,
+skin conductance, heart rate, and levels of the stress
+hormone cortisol in saliva. Some researchers have
+noted that individuals who are emotionally resilient
+are able to reduce stress-related physiological
+responses through neural regulation and that
+others can improve this ability through training in
+mindfulness meditation (Davidson, 2004).
+In the study of emotional information processing,
+psychophysiological monitoring during affective
+or stressful laboratory tasks offers complementary
+findings to fMRI (Critchley, 2009). This combination
+has shed light on the biological influences of healthpromoting environmental variables, such as social
+support and psychosocial resources. For example,
+Eisenberger, Taylor, and colleagues (2007) found
+that healthy volunteers who regularly interacted
+with supportive others had diminished activity in
+emotional areas of the brain in response to a stressful
+social exclusion task, and the reduced neural activity
+was responsible for attenuated cortisol levels.
+Similarly, Taylor and colleagues (2008) found that
+individuals with psychosocial resources—including
+self-esteem, purpose in life, a sense of mastery,
+and optimism—responded to threat with smaller
+increases in amygdala activity than those with fewer
+resources. Lower amygdala activity resulted in lower
+cortisol levels among these individuals. Researchers
+are now combining rs-fMRI with psychophysiological
+
+9
+
+monitoring to examine how stress reactivity, for
+example, alters functionally connected brain networks
+(Thomason, Hamilton, & Gotlib, 2011).
+By concomitantly using fMRI and other techniques,
+researchers are obtaining a fuller picture of the
+neurobiology of complex behaviors. Functional
+neuroimaging helps describe neurobiological
+mechanisms underlying individual differences in
+brain circuit function, neurochemical signaling
+pathways, and behavioral traits. The findings provide
+valuable information about neuropsychiatric
+diseases and neurobehavioral disorders. Through
+the identification of neural markers of disorder and
+descriptions of how they interact with environmental
+factors, this research will guide the development of
+more effective and individually tailored treatments
+and preventive interventions.
+
+Translational Neuroscience and
+Prevention: Substance Misuse and
+Antisocial Behavior
+Most of the translational interest in neuroscience
+and functional neuroimaging focuses on diagnosis
+and treatment of neurobehavioral disorders rather
+than prevention and intervention with individuals
+at risk. The current prevention and intervention
+paradigm for neurobehavioral problems generally
+acknowledges the importance of both biological and
+environmental factors—and their interaction. Despite
+this recognition, most prevention and intervention
+efforts to address substance misuse and antisocial
+behavior remain focused on environmental factors
+and have not incorporated the rich research findings
+from neuroscience.
+Decades of neuroscience research indicates that
+biology plays an important role in the etiology
+of psychiatric and neurobehavioral disorders. As
+discussed below, environmental factors often exert an
+impact on biology—for example, by shaping neural
+circuits during development. Therefore, researchers
+have argued that prevention efforts must incorporate
+neurobiological methods (Beauchaine et al., 2008;
+Fishbein & Tarter, 2009; Cicchetti & Gunnar, 2008;
+van Goozen & Fairchild, 2008; Blair & Diamond,
+2008).
+
+10
+
+Whitten, 2012
+
+A critical methodological implication is that
+randomized trials of prevention interventions must
+incorporate biological measures to help identify the
+processes underlying vulnerability to neurobehavioral
+problems. From such fundamental knowledge,
+researchers may determine the mechanisms of
+behavior change and determine the extent to which
+neural plasticity can be promoted (Beauchaine et al.,
+2008; Cicchetti & Gunnar, 2008).
+Periods of development characterized by significant
+neurobiological changes and plasticity—particularly
+the pre-school years and early childhood—present
+prime opportunities for intervention because the
+brain is optimally responsive to environment and
+experience at this time. fMRI techniques may make
+it possible to determine how the brain is changed by
+preventive interventions.
+
+The Complex Etiology of Substance Misuse
+and Antisocial Behavior
+Many interacting risk factors increase the likelihood
+of substance misuse and antisocial behavior. Genes
+indirectly influence behavior through their impact
+on the brain’s structure, neurotransmitter levels, and
+the functioning of neural circuits (Hariri, 2009; Stiles
+& Jernigan, 2010). Environmental factors influence
+gene expression, thereby altering the pattern of
+protein production (e.g., neurochemicals, receptors,
+and enzymes) in the brain. A key line of inquiry
+in neuroscience is to determine how inherited and
+environmental factors interact over time to shape
+the many neural networks that underlie particular
+behaviors and neurobehavioral disorders (Stiles,
+2011).
+Of course, individual- and family-level environmental
+factors—including poverty, stress, maltreatment,
+witnessing domestic violence, neglect, parent
+substance abuse, and prenatal drug exposure—play a
+strong role in increasing the risk for substance misuse
+and antisocial behavior. Environmental factors can
+influence neurobiology by, for example, shaping the
+development of neural circuits and neurochemistry
+(Lupien, McEwen, Gunnar, & Heim, 2009; Hackman,
+Farah, & Meaney, 2010; Gianaros & Manuck, 2010).
+The cumulative effect influences neurobehavioral
+predispositions (e.g., attention deficit, novelty
+
+RTI Press
+
+seeking) during childhood and adolescence, thereby
+shifting the developmental pathway toward a higher
+likelihood of problem behaviors.
+Prenatal exposure to drugs, including alcohol,
+tobacco, and illicit drugs (Salisbury, Ponder,
+Padbury, & Lester, 2009), is a common example of
+a factor that significantly influences many brain
+circuits and increases the propensity for high-risk
+neurobehavioral characteristics (e.g., problems with
+inhibition and attention, enhanced stress reactivity).
+Many individuals who experience prenatal exposure
+to drugs also suffer early-life adversity, and Fisher and
+colleagues (2011) found that each of these risk factors
+has unique negative influences on development.
+Prenatal drug exposure predicted problems with
+difficulty controlling socially undesirable or
+restricted behavior during early childhood and into
+adolescence. These difficulties indirectly influenced
+problems with executive function (Fisher et al.,
+2011). Early adversity independently and directly
+predicted difficulties with executive functions—a
+critical set of neurocognitive abilities needed to reach
+goals including memory, attention, planning, and
+inhibiting inappropriate responses. (The importance
+of executive functions in risk for behavioral problems
+is discussed in more detail below.)
+Increased risk for behavior problems results from not
+only biologically influenced neural characteristics but
+also caregiver relationships—particularly inconsistent
+and harsh discipline during early life, lack of warmth,
+and low levels of spontaneous teaching behaviors
+(Dodge & Pettit, 2003). Researchers are now testing
+how growing up with maltreatment or a violent
+environment may alter a person’s neurotransmitter
+function, stress response, and brain circuits involved
+in learning, attention, and emotional regulation
+(Loman & Gunnar, 2010). There is support for the
+idea that such stress during childhood sensitizes
+individuals to subsequent stressors (Andersen &
+Teicher, 2009).
+The physiological basis for increased sensitivity to
+stress may be long-lasting functional and structural
+neurobiological changes associated with childhood
+maltreatment, particularly reduced volume of the
+hippocampus, a brain structure involved in mood
+and stress regulation. When researchers statistically
+
+fMRI in Translational Neuroscience
+
+controlled for trait anxiety, depression level, age,
+intelligence, education, or more recent stressful
+life events, the neurobiological characteristics
+observed among adults who were maltreated as
+children were strikingly similar to those of adults
+with depression and posttraumatic stress disorder
+(PTSD) (Dannlowski et al., 2012). fMRI indicated
+that the extent of maltreatment was associated with
+exaggerated activity of the amygdala as participants
+viewed threat-related faces. Moreover, structural
+neuroimaging revealed that individuals with greater
+levels of maltreatment showed less gray matter
+volume in the hippocampus, insula, orbitofrontal
+cortex, anterior cingulate gyrus, and caudate
+(Dannlowski et al., 2012). Some researchers propose
+that such neural adaptations may promote survival
+in a violent environment but become maladaptive in
+other contexts (Mead, Beauchaine, & Shannon, 2010).
+Living in a community with concentrated poverty,
+violence, low social cohesion, lack of safety, and
+physical disorder also increases risk for these
+problems and can interact with individual-level
+characteristics. For example, maltreatment during
+childhood increases the likelihood of later problem
+drinking, especially when individuals have grown up
+in neighborhoods characterized by physical disorder
+and chaos (Keyes et al., 2012). Broader environmental
+factors shape neurobiology further and have a
+negative effect on individuals’ neurocognitive
+function, capacity to respond to stress, and overall
+health (Lupien et al., 2009; Hackman & Farah, 2009;
+Hackman et al., 2010; Gianaros & Manuck, 2010). If
+not buffered by positive factors (e.g., protective genes,
+early intervention, warm caregiver relationships, and
+competent parenting), the interactive compounding
+of negative influences can result in a set of
+neurobehavioral characteristics that make substance
+misuse and antisocial behavior more likely (Dodge &
+Pettit, 2003; Andersen & Teicher, 2009; van Goozen
+& Fairchild, 2008; Eisenberg, Spinrad, & Eggum,
+2010; Coccaro, Sripada, Yanowitch, & Phan, 2011;
+Iacono, Malone, & McGue, 2008; Rubia, 2011). The
+next sections describe what fMRI tells us about the
+major neurobehavioral characteristics associated with
+substance misuse and antisocial behavior, and how
+research in this area may inform prevention efforts.
+
+11
+
+Neurobehavioral Characteristics Associated
+With Later Substance Misuse and Antisocial
+Behavior
+Experiencing multiple environmental risk factors
+during childhood has a cumulative neurobiological
+impact that increases the likelihood that an individual
+will experience delays in the development of
+executive functions, which are essential to success in
+life (Diamond, 2011). The neural building blocks of
+executive functioning begin developing early in life
+(Morasch & Bell, 2011) and can be detected reliably
+by standardized assessments as early as the preschool
+years (Davidson, Amso, Anderson, & Diamond,
+2006; Wiebe et al., 2011). These abilities are strongly
+related to how well individuals perform in school,
+both academically and behaviorally (Lan, Legare,
+Ponitz, Li, & Morrison, 2011; Hughes & Ensor,
+2011). Executive functions begin to emerge during
+adolescence but are not fully mature until at least the
+mid-20s (Luna, Padmanabhan, & O’Hearn, 2010).
+For the purposes of this discussion, this paper will
+describe two closely related and often intermingled
+aspects of executive functions: (1) self-control, or selfregulation—the ability to delay gratification, control
+impulses, direct attention, and inhibit inappropriate
+behaviors; and (2) emotional regulation—the ability
+to recognize emotional arousal and the behaviors
+that stem from it and apply effort to express feelings
+appropriately or modify them to achieve a longerterm goal. Self-control is central to healthy and
+productive functioning throughout life (Mischel et
+al., 1989; Mischel et al., 2011). Self-control varies
+widely across individuals; such differences are evident
+during childhood and affect adult outcomes. A recent
+longitudinal study of more than 1,000 children in
+New Zealand found that in adults, poor physical
+health, substance dependence, insufficient personal
+finances, and criminal offenses all followed a gradient
+of self-control—with poor self-regulation during
+youth associated with worse adult prospects after
+other factors were taken into account (Moffitt et al.,
+2011). Although self-control has genetic and neural
+underpinnings, environmental factors can increase
+or diminish it—suggesting that interventions can
+improve this ability (Diamond, Barnett, Thomas, &
+Munro, 2007; Blair & Diamond, 2008).
+
+12
+
+Whitten, 2012
+
+Disruption of executive functions characterizes many
+mental health, social, and educational problems
+(Heatherton & Wagner, 2011; Blair & Diamond,
+2008; Diamond, 2011). For example, impairment in
+developing executive functions during childhood
+is strongly associated with conduct disorder, which
+often precedes substance misuse and antisocial
+behavior among adults (Dodge & Pettit, 2003;
+Ellis, Weiss, & Lochman, 2009; Eisenberg et al.,
+2010; Iacono et al., 2008). During adolescence, the
+neurobehavioral characteristics of poor executive
+function, impulsivity, and problems with emotional
+control can manifest in extreme sensation-seeking
+(Castellanos-Ryan, Rubia, & Conrod, 2011) and an
+increased preference for immediate rewards rather
+than long-term benefits (Anokhin, Golosheykin,
+Grant, & Heath, 2011). This pattern increases the
+likelihood that individuals will make poor decisions—
+initiating smoking, drinking, experimenting with
+illicit drugs, early sexual behavior, and delinquent
+activity—that can derail healthy and productive
+developmental pathways (Schepis, Adinoff, & Rao,
+2008; Eisenberg et al., 2010; Iacono et al., 2008;
+Moffitt et al., 2011; Perry et al., 2011).
+Another neurobehavioral characteristic associated
+with risk for problem behavior is a hostile
+attributional style in which individuals misinterpret
+incidents as a threat to personal reputation and
+respond with aggression (Dodge, 2006). This
+disrupted social-information processing and the
+co-occurring development of a dysfunctional
+pattern of perceptions and interactions with others
+contribute to childhood conduct disorder and
+subsequent risk for aggressive and antisocial behavior
+(Dodge & Pettit, 2003; Dodge, 2006). Children
+at high risk for these problems are hypervigilant
+to threat, often misinterpret situations as hostile,
+respond with aggression, and show limited skills in
+generating competent solutions to social problems.
+The likelihood of having this trait is increased by
+life experiences—including physical abuse, harsh
+parenting, poverty and racism, and peer rejection—as
+well as biological predispositions such as impulsivity
+and poor executive functioning (Dodge & Pettit,
+2003; Ellis et al., 2009).
+Dysregulated socio-emotional processing sets up
+a situation in which children may be rebuked by
+
+RTI Press
+
+teachers, rejected by peers, and disengaged from
+school. Differences among children are often
+exaggerated by school systems, and related problems
+worsened, by labeling, expectations, and self-fulfilling
+prophesies (Dodge & Pettit, 2003).
+Interventions that address dysregulated socioemotional processing and teach children alternative
+strategies have been shown to be effective at
+improving behavioral and academic outcomes
+(Powell, Lochman, & Boxmeyer, 2007). Without
+intervention, however, behavioral problems typically
+continue and worsen when individuals bond with
+others who are also aggressive and act out. Deviant
+peers and disengagement from school become
+particularly important during the transition from
+middle school to high school and may push the
+developmental pathway further toward adolescent
+delinquency and substance misuse (Dodge & Pettit,
+2003; Gifford-Smith, Dodge, Dishion, & McCord,
+2005; Dodge, 2006; Fishbein & Tarter, 2009).
+
+fMRI Research on Substance Misuse and
+Antisocial Behavior, and Implications for
+Prevention
+Increasingly, the neurobehavioral characteristics
+associated with substance misuse and antisocial
+disorders are viewed as rooted in dysfunctional
+cortico-limbic circuitry. fMRI research indicates
+that individuals with these problems demonstrate
+disrupted neural interactions between the prefrontal
+cortex and subcortical areas of the brain (Bechara,
+2005; Sobhani & Bechara, 2011; Coccaro et al.,
+2011; Rubia, 2011). Executive functions depend on
+these circuits, that is, ones connecting the prefrontal
+cortex, the cingulate cortex (particularly the anterior
+portion), and the limbic system (Diamond, 2011).
+The inferior frontal gyrus area, in particular, has been
+linked to several types of self-control and the ability
+to inhibit impulses (Tabibnia et al., 2011).
+The prefrontal cortex is a relatively large region of
+the brain, located behind the forehead, which is
+highly interconnected with many other parts of the
+brain—including various other cortical regions and
+areas below the cortex. Engaging the prefrontal cortex
+modulates the activity of limbic regions involved in
+emotion, motivation, and monitoring bodily states.
+Functioning of the prefrontal cortex underlies key
+
+fMRI in Translational Neuroscience
+
+abilities related to behavioral health, including
+emotional regulation, delay of gratification in favor
+of long-term rewards, and the ability to inhibit
+and control behavior (Wager, Davidson, Hughes,
+Lindquist, & Ochsner, 2008; Benoit, Gilbert, &
+Burgess, 2011; Casey, Somerville et al., 2011).
+The monoamine neurotransmitters—including
+dopamine, serotonin, and norepinephrine—are major
+players in the functioning of the prefrontal cortex.
+The prefrontal cortex and neural networks underlying
+executive functions are disrupted by dysfunction
+in these neurotransmitters (Posner & Rothbart,
+2009; Robbins & Arnsten, 2009). Genes, particularly
+ones that encode proteins involved in monoamine
+transmission, and environmental factors (e.g.,
+parenting quality) are known to shape these neural
+networks, providing a physical basis for the ability to
+regulate emotions and behavior (Posner & Rothbart,
+2009; Robbins & Arnsten, 2009; Diamond, 2011).
+Among substance abusers, overactive reward and
+impulsive subcortical systems override cognitive
+control input from the prefrontal cortex so that drugs
+have strong influence on decision making (Bechara,
+2005; Diekhof, Falkai, & Gruber, 2008). The risk for
+substance misuse among adolescents is also thought
+to relate to weaker inhibitory circuits of the prefrontal
+cortex and overactive reward systems (Joseph, Liu,
+Jiang, Lynam, & Kelly, 2009; Castellanos-Ryan et al.,
+2011; Perry et al., 2011). Some have proposed that an
+imbalance of activity between the prefrontal cortex
+and limbic areas of the brain manifests itself in high
+levels of reward seeking and impulsivity, and low
+levels of inhibitory control (Schepis et al., 2008; Perry
+et al., 2011).
+Although disorders characterized by aggression
+vary in their neurobiological profiles, fMRI research
+suggests that impairments in cortico-limbic circuitry
+play a role. Dysfunctional connections between the
+orbitofrontal and ventromedial areas of the prefrontal
+cortex and the amygdala have been observed in
+fMRI studies of adolescents with conduct disorder
+and aggression (Stadler, Poustka, & Sterzer, 2010;
+Crowe & Blair, 2008). The amygdala is critical for
+the formation of associations between stimuli and
+outcomes (both positive and negative) and emotional
+expression. The orbitofrontal cortex helps process
+
+13
+
+reward and emotion, and plays an important role
+in decision making and inhibiting behavior. The
+ventromedial cortex, which is also important in
+decision making, is involved in encoding associations
+with rewards and punishments (Blair, 2008, 2010).
+Disruptions in the integrated functioning of these
+neural circuits are thought to underlie problems
+involving processing of emotional stimuli and social
+information, and exerting cognitive control over
+affective responses that characterize aggression
+and antisocial behavior (Sterzer, Stadler, Krebs,
+Kleinschmidt, & Poustka, 2005; Sterzer & Stadler,
+2009; Crowe & Blair, 2008; Blair, 2010). For example,
+individuals who display aggression that is reactive
+and impulsive show hyperactivity in the amygdala
+in response to emotionally evocative stimuli along
+with impaired functioning in prefrontal regions that
+would offset such heightened limbic activity (Blair,
+2008, 2010; Rubia, 2011). In contrast, individuals
+who display aggression that is purposeful and goaldirected (called instrumental aggression) show
+decreased activity in the amygdala and orbitofrontal
+cortex in response to emotionally provocative stimuli
+or during emotional learning tasks. This latter pattern
+of brain activity suggests disruption in the neural
+circuits that guide emotional learning and decision
+making and may explain why these individuals
+respond with aggression rather than pro-social
+actions (Crowe & Blair, 2008; Blair, 2010).
+The significant role neurobehavioral characteristics
+play in the risk for substance misuse and antisocial
+behaviors can inform preventive interventions.
+Neuroplasticity suggests that there are multiple
+opportunities to reduce these problems with available
+preventive interventions (Fishbein & Tarter, 2009;
+Dodge, 2006; Powell et al., 2007). Dodge and Pettit
+(2003) note that there are critical “switchpoints”—that
+is, developmental milestones at which intervention
+with individuals at risk are particularly helpful—that
+offer an “opportunity for re-alignment” (p. 363). If
+intervention does not occur during these critical
+times, neural connections may become so strong that
+associated behavioral problems may not be amenable
+to change (Dodge & Pettit, 2003; Dodge, 2006).
+A great deal of neuroscience literature indicates that
+interventions to boost self-control and executive
+
+14
+
+Whitten, 2012
+
+functioning, particularly during early childhood,
+might reduce a wide range of educational and
+behavioral problems—including substance misuse
+and antisocial behaviors. The need for intervention
+is also suggested by the robust observation that early
+delays in executive functioning usually become
+larger as children grow older—that is, those who
+are behind early on usually do not catch up on their
+own (Diamond, 2011). During childhood, activities
+that exercise executive functions—including play,
+physical education, music, and art—improve these
+abilities and boost academic results (Diamond et
+al., 2007; Diamond, 2011; Diamond & Lee, 2011).
+Activities that strengthen the foundations of executive
+functions (e.g., inhibitory control, working memory,
+and cognitive flexibility) during early childhood help
+build the complex ones that emerge later in life (e.g.,
+reasoning and problem solving).
+Because external factors (e.g., poverty and stress)
+have a negative impact on prefrontal cortex
+development and executive functions, universal
+preventive interventions for families and children
+of low socioeconomic status are designed to enrich
+the home or school environment. Such interventions
+improve the early indicators of executive function
+and behavioral outcomes (Eckenrode et al., 2010;
+Kitzman et al., 2010; Olds et al., 2010; Olds et al.,
+2004; Bierman, Nix, Greenberg, Blair, & Domitrovich,
+2008). Researchers who advocate the promotion of
+self-control and other executive functions note that
+many children enter school without this key ability
+(Blair & Diamond, 2008; Diamond et al., 2007).
+They argue that teacher training in this important
+area and widespread implementation of educational
+programs that augment these skills would reduce
+behavioral problems and improve academic outcomes
+(Blair, 2002; Diamond, 2010). Programs designed to
+increase school readiness during early childhood—
+for example, Head Start, and an enriched version of
+that program that is especially designed to develop
+self-regulation and language skills called Head Start
+REDI—have demonstrated beneficial effects (Welsh,
+Nix, Blair, Bierman, & Nelson, 2010; Bierman,
+Domitrovich et al., 2008), including boosting
+executive function (Bierman, Nix, et al., 2008).
+Efforts to improve these abilities are a major aspect
+of early childhood programs designed to avert or
+
+RTI Press
+
+reduce the academic achievement gaps between
+low-income children and their better-off peers
+(Diamond et al., 2007). Because individuals who start
+out with poorer executive functions tend to show
+the greatest gains from early childhood programs,
+widespread implementation of interventions that
+improve self-control among low-income children
+could help prevent school failure (Blair & Diamond,
+2008). One such intervention, called Tools of the
+Mind, strengthens self-regulation and other aspects
+of executive function and dramatically improves
+academic and behavioral outcomes (Diamond
+et al., 2007). A randomized trial of this teacherimplemented pre-school curriculum found that the
+intervention significantly reduced behavior problems
+among 3- and 4-year-olds compared with children in
+control classrooms (Barnett et al., 2008).
+Preventive interventions implemented during the
+early school years increase children’s awareness and
+control of their own behavior also improve their
+developmental trajectory. Programs in impoverished
+neighborhoods that include teacher training on
+managing classroom behavior increase children’s
+social competence and emotional self-regulation
+and reduce conduct problems relative to those
+in comparison schools (Webster-Stratton, Reid,
+& Stoolmiller, 2008). One of the most rigorously
+studied interventions (the Good Behavior Game)
+reduced rates of drug and alcohol use disorders,
+regular smoking, and antisocial behaviors into young
+adulthood (Kellam et al., 2008). A wide variety of
+other interventions—particularly those that involve
+repeated practice and a progressively increasing
+challenge—also boost development of the neural
+networks underlying executive function and improve
+self-regulation during childhood (Posner & Rothbart,
+2009; Diamond & Lee, 2011).
+Although specific exercises do boost executive
+function, Diamond and Lee (2011) note that
+broader interventions—such as curricula designed
+to emphasize emotional, social, and physical
+development—may hold the most promise for
+improving all these abilities. Indeed, an evidencebased universal intervention, Promoting Alternative
+Thinking Strategies (PATHS) Curriculum, that
+promotes social and emotional skills—including
+inhibition of impulsive behavior, awareness and
+
+fMRI in Translational Neuroscience
+
+regulation of feelings, accurate perception of the
+perspectives of others, correct identification of
+problems, and development of positive solutions and
+goals—improves verbal fluency and self-regulation
+(Riggs, Greenberg, Kusché, & Pentz, 2006). This
+teacher-led intervention helps children handle social
+tasks appropriate to their ages without aggression or
+other behavioral problems.
+To counter adolescent risk for behavioral problems,
+some have suggested exercises that strengthen the
+inhibitory circuit between the prefrontal cortex,
+anterior cingulate cortex, and limbic regions (Perry et
+al., 2011). Studies with healthy young adults suggest
+that relatively short-term training in meditation
+improved attention, boosted mood, and decreased
+stress (Tang et al., 2007). Interventions that direct
+individuals to exert effortful control of negative
+emotions may also hold promise for bolstering the
+inhibitory circuit (Drabant, McRae, Manuck, Hariri,
+& Gross, 2009). Developing the ability to imagine
+distant outcomes and desires in detail seems to orient
+healthy adults toward future-minded choices (Peters
+& Büchel, 2010; Benoit et al., 2011), and prevention
+specialists might be able to apply this information to
+boost functioning among teens at risk for behavioral
+problems. Although much more research is needed
+in this area, a combination of behavioral research on
+exercises that improve inhibition and fMRI may lay
+the groundwork for the development and refinement
+of preventive interventions for adolescents.
+
+Integrating fMRI into Prevention
+Research
+As described previously, fMRI has great potential
+to improve the diagnosis and treatment of
+neurobehavioral disorders. Transdisciplinary teams
+including prevention researchers and neuroimaging
+specialists could engage in parallel efforts, with fMRI
+technology, to help prevent substance misuse and
+antisocial behavior. Although scientists are starting
+to use information on the neurobehavioral correlates
+of substance misuse and anti-social behavior to guide
+preventive interventions, such translational research
+is in its early stages. Perhaps infusing neuroscience
+will spur advancement and innovation (Fishbein,
+2011).
+
+15
+
+For example, fMRI might provide valuable insights
+into why some individuals do not respond to some
+preventive interventions (such as those implemented
+in schools), laying the groundwork for programs
+that are tailored at the subgroup level (e.g., sensation
+seekers). Additionally, fMRI might point to the “active
+ingredient” in prevention programs and determine
+whether interventions designed to improve executive
+functions alter brain activity. Longitudinal studies
+might compare executive function and underlying
+neural activity in individuals who have participated
+in interventions that focus on developing self-control,
+attention, concentration, and problem solving (e.g.,
+Tools of the Mind, and the PATHS Curriculum) with
+that of those in control groups.
+The fMRI technique may also help improve
+prevention interventions and public health campaigns
+distributed via mass media. For example, fMRI can
+help elucidate the neural impact of public service
+announcements about substance misuse among
+smokers (Langleben et al., 2009). Findings from a
+recent neuroimaging study suggest that fMRI results
+may predict population responses to televised public
+service announcements. Among a group of heavy
+smokers with a strong intention to quit who viewed
+cessation ads, activity of the medial prefrontal
+cortex—but not self-reported perceptions—predicted
+pre-post campaign changes in the call volume activity
+of the advertised quit line. Although preliminary,
+the results raise the intriguing possibility that neural
+focus groups could test and improve public service
+announcements (Falk, Berkman, & Lieberman, 2012).
+As noted previously, the rt-fMRI technique can
+serve as a therapeutic tool to strengthen brain
+activity in a particular region. Perry and colleagues
+(2011) suggest that this tool might be used to boost
+inhibitory control among youth at risk for substance
+misuse (those with a high degree of impulsive,
+sensation-seeking traits). A recent study found
+that people with schizophrenia can use rt-fMRI
+feedback training to regulate the activity of a specific
+brain region (the anterior insula cortex), which is
+associated with changes in emotion perception (Ruiz
+et al., 2011). This finding—the first with a patient
+population—supports the incorporation of rt-fMRI
+into therapeutic interventions.
+
+16
+
+RTI Press
+
+Whitten, 2012
+
+RTI International’s Transdisciplinary Science
+and Translational Prevention Program
+In support of RTI International’s mission to improve
+the human condition by turning knowledge
+into practice, the Transdisciplinary Science and
+Translational Prevention Program applies the
+latest research advances to the complex problem
+of drug abuse. The program integrates researchers
+and facilities across RTI International to conduct
+research in neurobiology, physiology, environmental
+science, and human mental and behavioral health.
+This transdisciplinary and translational approach
+allows the program to better define what factors
+and associated personality traits make people more
+susceptible to drug abuse, as well as the factors
+that protect against these problems (personal
+communication D. Fishbein, RTI International,
+October 26, 2010).
+With this knowledge, program researchers strive to
+develop medical, psychosocial, and public health
+interventions and policies that are rooted in basic
+research, with the ultimate goal of promoting
+personalized and preventive medicine. They aim to
+determine the preventive interventions that work best
+for particular groups, why they work, and under what
+circumstances such measures are effective. This goal
+encompasses many research components—including
+the identification of the underlying pathophysiology
+of mental and behavioral disorders, mechanisms
+underlying intervention responsiveness, the extent
+to which factors associated with vulnerability
+are modifiable, and how interventions work. The
+program informs the development of novel, targeted,
+preventive interventions and policies regarding drug
+abuse and other risk behaviors.
+At the Baltimore facility of RTI’s Transdisciplinary
+Science and Translational Prevention Program,
+Diana Fishbein, PhD, and her colleagues are using
+neuroimaging techniques, neurocognitive tests, and
+other measures to advance these research goals.
+Of primary interest is the use of fMRI to measure
+the effect of prevention programs on the brain.
+In particular, the researchers are examining the
+effects of intervention on developmental pathways
+by comparing individuals who were exposed to
+
+intervention with those who were not exposed
+(personal communication with D. Eldreth, RTI
+International, July 7, 2011).
+For example, they are using fMRI to determine how
+neural functioning, along with neurocognitive factors,
+moderate different behavioral responses among
+individuals who have participated in the PATHS
+Curriculum and those who have not. They hope to
+make a similar comparison between participants
+in the Good Behavior Game and those in control
+schools. By neuroimaging participants and controls
+who are now in their early 20s, the RTI team aims
+to document neural changes that may underlie the
+benefits of this intervention. The scientists also will
+compare individuals who are doing well behaviorally
+with those who are not (personal communication
+with D. Fishbein and D. Eldreth, RTI International,
+August 17, 2011). The team is also examining
+participants’ level of neurocognitive functioning and
+whether those who show changes in these functions
+also show corresponding changes in academic and
+behavioral outcomes.
+Based on what scientists know about the
+neurobiology of substance misuse and the intended
+impact of prevention programs to improve emotional
+regulation and self-control, the RTI researchers have
+hypothesized that areas of the brain that underlie
+executive functioning will show greater maturation
+among intervention participants. Fishbein and
+colleagues are focusing on the activity of neural areas
+known from prior research to underlie performance
+of the neurocognitive tasks being used by the RTI
+team. The long-term goal is to determine whether
+preventive intervention promotes cognitive and
+emotional regulation of neural processes and, if so,
+whether these developments occur in tandem with
+improved skills.
+Although powerful fMRI techniques hold promise
+when applied to prevention science and practice,
+their expense (see the ubsequent section on fMRI
+limitations) and lack of portability constrain their use
+in prevention efforts. One way around this limitation
+is to use fMRI in foundational research to identify
+tasks, both emotion-regulatory and cognitive, that
+consistently recruit relevant brain areas. With that
+knowledge, scientists can then use those tasks to
+
+fMRI in Translational Neuroscience
+
+measure specific functions as warranted, without
+imaging, as a low-cost, easy-to-administer test battery
+reflective of underlying mechanisms of interest.
+A variety of assessments—including working
+memory tests, tests of the ability to pay attention and
+inhibit strong tendencies, and cognitive-affective
+shifting tasks—all engage the prefrontal cortex and
+may be useful measures of vulnerability (personal
+communication with D. Eldreth, RTI International,
+July 7, 2011). Once researchers identify particular
+neural signatures of non-invasive tests, these
+measures would provide more information about
+brain function than those currently in use. A wide
+range of professionals could administer these tasks in
+almost any setting (personal communication with D.
+Fishbein, RTI International, August 17, 2011).
+Neuroimaging studies also indicate that the context
+in which individuals perform tasks influences the
+underlying brain activity. Tasks involving challenges,
+choices, and decisions seem to require a social context
+to fully engage the brain. This suggests that simulation
+tasks and those that integrate virtual reality would be
+more readily transferable to preventive applications
+than two-dimensional computer tasks (personal
+communication with D. Fishbein, RTI International,
+August 17, 2011).
+The formative research to bridge brain scans,
+neurobehavioral tasks, and prevention could yield
+many advances, such as tasks that are useful in
+diagnosis, improved means to monitor changes
+during treatment to determine how well a therapy
+works, and an enhanced understanding of the
+etiology of disorders. Some of the tasks that increase
+progressively in complexity and difficulty could serve
+as part of preventive intervention by strengthening
+brain areas involved in important functions, such as
+the inhibition of impulses (personal communication
+with D. Fishbein, RTI International, August 17, 2011).
+Similarly, information on brain-task relationships
+from rt-fMRI studies could help scientists select
+activities to be included in interventions (personal
+communication with D. Eldreth, RTI International,
+July 7, 2011).
+
+17
+
+fMRI Limitations and Neuroethics
+The power of fMRI technologies and their
+tremendous potential to inform translational
+neuroscience has engendered great enthusiasm.
+However, any review of such techniques must note
+their limitations. Moreover, the strong interest
+in neuroimaging among psychiatrists and other
+behavioral scientists whose work influences the
+treatment of people with mental disorders requires
+some discussion of ethical issues.
+As with all scientific techniques, fMRI has limitations
+that researchers must be aware of as they interpret
+results. Although some argue that attempts to localize
+psychological function via functional neuroimaging
+are misguided (Miller, 2010), a more widely accepted
+caveat about fMRI is that correlations of brain activity
+patterns with behavior does not prove causality
+(Cacioppo et al., 2003; Beck, 2010). A structure’s
+activity during a task does not necessarily mean it
+is generating the observed behavior or mental state.
+Similarly, the absence of activity in another brain
+region does not imply its lack of involvement in the
+function. Moreover, knowing whether the BOLD
+signal from a particular brain area is correlated with a
+task does not explain the mental state or behavior.
+Links between behavior and a particular brain
+region revealed through fMRI, however, can guide
+researchers as they explore the function of the
+area using other methods that permit inferences
+about causality. Researchers must also correct for
+multiple comparisons in fMRI analyses, which yield
+a relatively high false positive rate and may lead to
+spurious associations (Beck, 2010). Well-designed
+studies in which researchers measure changes in
+behavior as participants control local neural activity
+via rt-fMRI may come closer to supporting causal
+inferences about brain function and behavior (Caria
+et al., 2012).
+A key element of proper interpretation of fMRI
+is the presence of an appropriate and meaningful
+comparison; BOLD signals during a task must be
+contrasted with those from a baseline or control
+condition (Cacioppo et al., 2003). Moreover, as the rsfMRI studies indicate, baseline conditions in imaging
+studies (such as looking at a hash mark in the middle
+
+18
+
+Whitten, 2012
+
+of a screen) do not translate into an absence of brain
+activity. Nevertheless, the interdisciplinary nature
+of neuroscience bolsters confidence in fMRI results
+and working hypotheses. Neuroimaging researchers
+who work with colleagues from complementary fields
+are better able to get a bearing on meaningful brainbehavior relationships and avoid oversimplification of
+complex functions (Decety & Cacioppo, 2010).
+Interdisciplinary teams have brought a new approach
+to fMRI that may help home in on causal brainbehavior relationships. Some fMRI researchers
+are using mediational analyses, an approach from
+epidemiological research, to examine multiple
+correlations (Eisenberger, Taylor, et al., 2007; Kober
+et al., 2010; Ide & Li, 2011). Such analyses help
+identify causal relationships between particular brain
+areas and behavioral results, but full explanations
+still require the convergent findings from multiple
+methods.
+Additionally, different types of experimental designs
+are expanding the inferences that can be derived from
+fMRI data. Traditionally, activity of a particular brain
+region is the dependent variable in fMRI studies. In
+a new approach, researchers measure task-related
+neural activity as a dependent variable during the
+laboratory phase of a study and then use it as an
+independent variable to predict behavior during a
+follow-up period. For example, neural responses to
+two types of smoking-cessation communications—
+messages tailored to the individual (Chua et al., 2011)
+and television advertisements from public health
+organizations (Falk, Berkman, Whalen, & Lieberman,
+2011), respectively—predicted observers’ success in
+quitting in the short term. Similarly, Berkman and
+colleagues (2011) combined fMRI and measurement
+of cigarette craving via text messaging to demonstrate
+that enhanced activity on a task that requires
+inhibitory control predicted better control over the
+desire to smoke during a quit attempt. The stronger
+research design of such studies improves confidence
+in the use of fMRI as a tool for practical applications
+(e.g., testing and improving health messages) and for
+suggesting neural mechanisms that underlie changing
+a health-related behavior.
+The relatively small number of subjects in functional
+neuroimaging studies and the use of various protocols
+
+RTI Press
+
+among investigations of the same behavior limit the
+generalization of fMRI results. Wager and colleagues
+(2009), however, argue that meta-analysis—
+examining the findings of many studies in a particular
+area of inquiry—can help evaluate the consistency
+and specificity of neural correlates linked with
+various behaviors and cognitive processes. Moreover,
+advanced analytical techniques can contribute
+to functional mapping by identifying distributed
+networks of brain structures that work together from
+patterns of co-activation. For example, investigators
+have used meta-analysis to clarify the neural
+underpinnings of cognitive functions (Arsalidou &
+Taylor, 2011; Kim, 2011).
+Rapid advancements in neuroscience, the persuasive
+power of neuroimaging technology among the public,
+and the inherent limitations of the technique naturally
+present ethical issues. Neuroethics encompasses a
+range of ethical considerations and concerns about
+all types of brain research (Cheung, 2009; Illes &
+Bird, 2006). The use of neurotechnologies, including
+fMRI, in psychiatry presents particularly complex
+ethical issues relevant to discussion of functional
+neuroimaging for translational purposes (Walter,
+Berger, & Schnell, 2009). Psychiatry, in particular, has
+always involved ethical issues because of uncertain
+diagnoses, the stigma surrounding behavioral
+problems, skepticism about treatments, and concerns
+about therapy as an attempt to change the way people
+feel, think, and behave. Cheung’s (2009) review
+points out a core issue: How should psychiatrists
+use the vastly expanded knowledge about the
+brain? Although many psychiatric researchers have
+embraced neuroimaging, they view the use of fMRI
+to make clinical decisions in this field as “a distant
+proposition” (Cheung, 2009 p. 395).
+At this time, fMRI advocates mainly see the
+technique’s potential to contribute much needed
+objective, biological information to the diagnostic
+process in psychiatry. However, fMRI does not
+pinpoint the source of pathology but rather
+provides neural correlates. Because atypical activity
+patterns in a brain scan do not imply illness in the
+absence of symptoms, brain scans would not be
+the sole diagnostic in psychiatry (Cheung, 2009).
+Furthermore, group differences between reference
+and patient populations may not apply to individuals
+
+fMRI in Translational Neuroscience
+
+(Walter et al., 2009). Any biological assay to predict
+disease and clinical outcomes must be used and
+interpreted cautiously, and the results communicated
+carefully with appropriate caveats and attention to
+confidentiality (Illes & Bird, 2006).
+However, fMRI may eventually support the
+validity of subjective diagnostic assessments and
+focused clinical descriptions of disorder subtypes.
+A biological explanation of symptoms does not
+necessarily ease the negative perceptions conveyed
+by psychiatric diagnoses and the associated stigma,
+self-stigma, and self-fulfilling prophesies (Cheung,
+2009). Although the use neuroimaging genetics
+may improve diagnostic capabilities in psychiatry,
+the ethical issues—including stigma, potential for
+discrimination, privacy, and commercialization—
+are magnified with this combination of powerful
+technologies (Tairyan & Illes, 2009). As just one
+part of diagnosis, the expense of brain scans and
+access to the technology for disadvantaged people
+raise concerns (Cheung, 2009; Illes & Raffin, 2005).
+In cases where people with psychiatric illnesses
+have committed crimes, brain imaging raises a
+challenging set of questions about the nature of selfdetermination, free will, and legal responsibility for
+actions (Cheung, 2009; Illes & Bird, 2006).
+The ethical issues of fMRI as a diagnostic tool for
+neurobehavioral problems are amplified in the
+context of child psychiatry (Illes & Raffin, 2005),
+where informed consent and the ability of the
+patient to make treatment decisions are of particular
+concern. Some express apprehension that scans might
+result in labeling, mislabeling, and self-fulfilling
+prophesies that change an individual’s life course.
+Neuroethicists also note that fMRI diagnostics may
+be eventually used to judge children’s propensity
+for behaviors rather than assess problems that have
+already emerged (Illes & Raffin, 2005), which may put
+them at risk for inappropriate interventions (Fenton,
+Meynell, & Baylis, 2009).
+A major concern is that brain scans in child
+psychiatry (e.g., as an aid in diagnosis) may lead to
+their use to make decisions regarding children in
+other arenas—for example, educational systems and
+courts (Fenton et al., 2009). Some have expressed
+apprehension that schools might one day coerce
+
+19
+
+students to get fMRI scans for placement in abilityrelated streams, for example (Illes & Raffin, 2005).
+Courts might use brain scans to decide whether youth
+are competent to stand trial as adults or receive adult
+punishments (Fenton et al., 2009). Neuroethicists
+point out that the state already has tremendous power
+over the lives of children in the education and court
+systems, and they call for extreme caution regarding
+fMRI’s potential influence on the complicated
+decisions regarding the welfare of children.
+If fMRI plays a role in the treatment of
+neurobehavioral problems, Walter and colleagues
+(2009) have concerns that brain scans may result
+in a focus on pathological mechanisms rather than
+rather than understanding the person. Another
+worrisome possibility is “treating the scan” (Cheung,
+2009 p. 395)—intervening in a way that changes
+fMRI-measured brain activity rather than addressing
+the environmental or behavioral factors related to
+patients’ problems. Mismatches between brain scans,
+symptoms, and clinical improvement would present
+a host of vexing questions for psychiatrists (Cheung,
+2009).
+Neuroethicists also point out that any therapeutic
+advances from fMRI and other technologies might
+lead to attempts to enhance normal function among
+those who can afford it, further exacerbating social
+inequalities (Racine & Illes, 2006; Cheung, 2009).
+They note that pharmaceuticals prescribed for those
+with neurobehavioral disorders (e.g., attention deficit,
+Alzheimer’s, and depression) have been obtained by
+healthy people for the purposes of life enhancement
+(e.g., exam preparation, improving memory, and
+mood elevation), akin to plastic surgery. As Illes
+and Raffin (2005) suggest, direct-to-consumer
+advertising and the current absence of regulation for
+neuroimaging may facilitate use of brain scans and
+therapeutic interventions among already advantaged
+people seeking a neurological competitive edge.
+
+Future Applications and Conclusions
+Functional magnetic resonance imaging (fMRI) is
+a powerful, non-invasive tool that visualizes brain
+activity. The related techniques of event-related (taskbased) fMRI, resting-state fMRI (rs-fMRI), and realtime fMRI (rt-fMRI) are widely used in research. This
+
+20
+
+Whitten, 2012
+
+important subfield of translational neuroscience—
+particularly when combined with other approaches—
+is contributing to the diagnosis and treatment of
+neurobehavioral problems and psychiatric disorders.
+In one important area of translational research,
+the development of biomarkers for diagnosis and
+prognosis, scientists are integrating fMRI findings
+with new technological approaches. The most
+promising new approaches, driven by advances
+in molecular biology and bioinformatics, come
+from fields where scientists are mapping the entire
+complement of an important biological entity—
+including genes (genomics), proteins (proteomics),
+or metabolites (metabalomics). These studies attempt
+to integrate all that is known about the biology of
+an entire system, including how all the components
+interact with each other and the environment to
+determine health and disease (Petrella et al., 2008).
+Although identifying the totality of these biological
+entities requires substantial groundwork, the payoff
+in terms of understanding individual vulnerability to
+diseases is expected to be enormous.
+The “-omics” findings can greatly expand the amount
+of information obtained from simple, noninvasive
+laboratory tests. Blood, urine, and saliva samples
+collected today are only analyzed for a small fraction
+of the biochemicals present (Quinones & KaddurahDaouk, 2009). Once scientists identify and validate
+the patterns of genes, proteins, and metabolites
+associated with particular diseases, then samples can
+be tested for unique profiles to aid early diagnosis.
+These -omics-based diagnostic markers may prove
+to be more efficient and cost-effective than current
+techniques, and researchers plan to incorporate them
+into the development of medications and behavioral
+interventions (Filiou & Turck, 2011: Linden, 2012).
+Current “-omics” research is laying the foundation
+for future biomarkers. Researchers are mapping
+these potential biomarkers among various patient
+populations, including those with psychiatric and
+neurological diseases (Quinones & Kaddurah-Daouk,
+2009). For example, researchers are developing both
+proteomic (Lista, Faltraco, & Hampel, 2012) and
+metabalomic (Kaddurah-Daouk et al., 2011) profiles
+of Alzheimer’s disease.
+
+RTI Press
+
+Characterization of the entire human DNA sequence
+has major implications for scientific understanding
+of the brain and neurobehavioral disorders. Almost
+two-thirds of the approximately 30,000 genes in the
+human genome are associated with brain function
+(Petrella, Mattay, & Doraiswamy, 2008). These
+genes encode for neurotransmitters, enzymes,
+neural growth factors, and other nervous system
+components.
+Given the complexity of neurobehavioral disorders,
+a large panel of biomarkers will undoubtedly be
+necessary for accurate diagnostic and prognostic use
+in psychiatry. Filiou and Turck (2011) point out the
+importance of integrating “-omics” and neuroimaging
+data in efforts to characterize psychiatric diseases and
+develop differential diagnosis in psychiatry (Linden
+& Thome, 2011; Thompson, Martin, & Wright, 2010;
+Wiedemann, 2011). By combining biomarkers—such
+as altered protein levels, brain activity patterns, and
+genetic information—scientists expect to connect
+molecular profiles with neural functioning and
+performance on particular behavioral and cognitive
+tasks. For example, “-omics” may reveal molecular
+and biochemical patterns underlying problems
+with stress regulation; the understanding of anxiety
+disorders may require that researchers connect this
+information with fMRI data showing responses to
+threatening stimuli. With a combination of these
+powerful approaches, scientists expect to map the
+biological pathways from genes to brain circuits
+and networks and then to cognitive and behavioral
+characteristics related to specific disorders.
+Historically, the prevention field has incorporated
+neither the principles of neuroscience nor its
+methods, including fMRI. Gradually, this is changing;
+some innovative prevention researchers are starting
+to translate knowledge about the neurobiology
+underlying behavior problems, discovered through
+the use of fMRI techniques, with the hope of
+improving interventions. Substance misuse and
+antisocial behavior, for example, are associated with
+particular neurobehavioral characteristics, which
+suggest specific areas for intervention. Researchers
+at RTI’s Transdisciplinary Science and Translational
+Prevention Program are ahead of the curve, having
+already begun to integrate fMRI technology into
+several of their studies.
+
+fMRI in Translational Neuroscience
+
+21
+
+References
+Andersen, S.L., & Teicher, M.H. (2009). Desperately
+driven and no brakes: Developmental stress
+exposure and subsequent risk for substance
+abuse. Neuroscience and Biobehavioral Reviews,
+33(4), 516–524.
+
+Berman, B.D., Horovitz, S.G., Venkataraman, G., &
+Hallett, M. (2011). Self-modulation of primary
+motor cortex activity with motor and motor
+imagery tasks using real-time fMRI-based
+neurofeedback. Neuroimage, 59(2), 917–925.
+
+Anokhin, A.P., Golosheykin, S., Grant, J.D., & Heath,
+A.C. (2011). Heritability of delay discounting in
+adolescence: A longitudinal twin study. Behavior
+Genetics, 41(2), 175–183.
+
+Bickel, W.K., Miller, M.L., Yi, R., Kowal, B.P.,
+Lindquist, D.M., & Pitcock, J.A. (2007).
+Behavioral and neuroeconomics of drug
+addiction: Competing neural systems and
+temporal discounting processes. Drug and Alcohol
+Dependence, 90 (Suppl 1), S85–S91.
+
+Arsalidou, M., & Taylor, M.J. (2011). Is 2+2=4? Metaanalyses of brain areas needed for numbers and
+calculations. Neuroimage, 54(3), 2382–2393.
+Barnett, W.S., Jung, K., Yarosz, D.J., Thomas, J.,
+Hornbeck, A., Stechuk, R., & Burns, S. (2008).
+Educational effects of the Tools of the Mind
+curriculum: A randomized trial. Early Childhood
+Research Quarterly, 23, 299–313.
+Beauchaine, T.P., Neuhaus, E., Brenner, S.L., &
+Gatzke-Kopp, L. (2008). Ten good reasons to
+consider biological processes in prevention
+and intervention research. Development and
+Psychopathology, 20(3), 745–774.
+Beauregard, M. (2009). Effect of mind on brain
+activity: Evidence from neuroimaging studies of
+psychotherapy and placebo effect. Nordic Journal
+of Psychiatry, 63(1), 5–16.
+Bechara, A. (2005). Decision making, impulse
+control and loss of willpower to resist drugs: A
+neurocognitive perspective. Nature Neuroscience,
+8(11), 1458–1463.
+Beck, D.M. (2010). The appeal of the brain in the
+popular press. Perspectives on Psychological
+Science, 5, 762–766.
+Benoit, R.G., Gilbert, S.J., & Burgess, P.W. (2011).
+A neural mechanism mediating the impact of
+episodic prospection on farsighted decisions.
+Journal of Neuroscience 31(18), 6771–6779.
+Berkman, E.T., Falk, E.B., & Lieberman, M.D. (2011).
+In the trenches of real-world self-control: Neural
+correlates of breaking the link between craving
+and smoking. Psychological Science, 22(4),
+498–506.
+
+Bierman, K.L., Domitrovich, C.E., Nix, R.L., Gest,
+S.D., Welsh, J.A., Greenberg, M.T., . . . Gill, S.
+(2008). Promoting academic and social-emotional
+school readiness: The Head Start REDI program.
+Child Development, 79(6), 1802–1817.
+Bierman, K.L., Nix, R.L., Greenberg, M.T., Blair, C.,
+& Domitrovich, C.E. (2008). Executive functions
+and school readiness intervention: Impact,
+moderation, and mediation in the Head Start
+REDI program. Development and Psychopathology,
+20(3), 821–843.
+Bigos, K.L., & Weinberger, D.R. (2010). Imaging
+genetics—days of future past. Neuroimage, 53(3),
+804–809.
+Biswal, B.B., Mennes, M., Zuo, X.N., Gohel, S., Kelly,
+C., Smith, S.M., . . . Milham, M.P. (2010). Toward
+discovery science of human brain function.
+Proceedings of the National Academy of Sciences,
+107(10), 4734–4739.
+Blair, C. (2002). School readiness: Integrating
+cognition and emotion in a neurobiological
+conceptualization of children’s functioning
+at school entry. American Psychologist, 57(2),
+111–127.
+Blair, C., & Diamond, A. (2008). Biological processes
+in prevention and intervention: The promotion
+of self-regulation as a means of preventing school
+failure. Development and Psychopathology, 20(3),
+899–911.
+
+22
+
+Whitten, 2012
+
+Blair, R.J. (2008). The amygdala and ventromedial
+prefrontal cortex: Functional contributions
+and dysfunction in psychopathy. Philosophical
+Transactions of the Royal Society of London, Series
+B, Biological Sciences, 363(1503), 2557–2565.
+Blair, R.J. (2010). Neuroimaging of psychopathy and
+antisocial behavior: A targeted review. Current
+Psychiatry Reports, 12(1), 76–82.
+Broyd, S.J., Demanuele, C., Debener, S., Helps, S.K.,
+James, C.J., & Sonuga-Barke, E.J. (2009). Defaultmode brain dysfunction in mental disorders: A
+systematic review. Neuroscience and Biobehavioral
+Reviews, 33(3), 279–296.
+Bryant, R.A., Felmingham, K., Kemp, A., Das, P.,
+Hughes, G., Peduto, A., & Williams, L. (2008).
+Amygdala and ventral anterior cingulate
+activation predicts treatment response to
+cognitive behaviour therapy for post-traumatic
+stress disorder. Psychological Medicine, 38(4),
+555–561.
+Cacioppo, J.T., Berntson, G.G., Lorig, T.S., Norris,
+C.J., Rickett, E., & Nusbaum, H. (2003). Just
+because you’re imaging the brain doesn’t mean
+you can stop using your head: A primer and set of
+first principles. Journal of Personality and Social
+Psychology, 85(4), 650–661.
+Caria, A., Sitaram, R., & Birbaumer, N. (2012).
+Real-time fMRI: A tool for local brain regulation.
+Neuroscientist, 18(5), 487–501.
+Caria, A., Sitaram, R., Veit, R., Begliomini, C., &
+Birbaumer, N. (2010). Volitional control of
+anterior insula activity modulates the response to
+aversive stimuli. A real-time functional magnetic
+resonance imaging study. Biological Psychiatry,
+68(5), 425–432.
+Caria, A., Veit, R., Sitaram, R., Lotze, M., Weiskopf,
+N., Grodd, W., & Birbaumer, N. (2007).
+Regulation of anterior insular cortex activity using
+real-time fMRI. Neuroimage, 35(3), 1238–1246.
+
+RTI Press
+
+Carter, C.S., Barch D.M., Bullmore, E., Breiling, J.,
+Buchanan, R.W., Butler, P., . . . Wykes, T. (2011).
+Cognitive Neuroscience Treatment Research
+to Improve Cognition in Schizophrenia II:
+Developing imaging biomarkers to enhance
+treatment development for schizophrenia and
+related disorders. Biological Psychiatry, 70(1), 7–12.
+Casey, B.J., Ruberry, E.J., Libby, V., Glatt, C.E., Hare, T.,
+Soliman, F., . . . Tottenham, N. (2011). Transitional
+and translational studies of risk for anxiety.
+Depression and Anxiety, 28(1), 18–28.
+Casey, B.J., Somerville, L.H., Gotlib, I.H., Ayduk,
+O., Franklin, N.T., Askren, M.K., . . . Shoda,
+Y. (2011). Behavioral and neural correlates of
+delay of gratification 40 years later. Proceedings
+of the National Academy of Sciences, 108(36),
+14998–15003.
+Castellanos-Ryan, N., Rubia, K., & Conrod, P.J. (2011).
+Response inhibition and reward response bias
+mediate the predictive relationships between
+impulsivity and sensation seeking and common
+and unique variance in conduct disorder and
+substance misuse. Alcoholism, Clinical and
+Experimental Research, 35(1), 140–155.
+Chein, J., Albert, D., O’Brien, L., Uckert, K., &
+Steinberg, L. (2011). Peers increase adolescent risk
+taking by enhancing activity in the brain’s reward
+circuitry. Developmental Science, 14(2), F1–F10.
+Cheung, E.H. (2009). A new ethics of psychiatry:
+Neuroethics, neuroscience, and technology.
+Journal of Psychiatric Practice, 15(5), 391–401.
+Chua, H.F., Ho, S.S., Jasinska, A.J., Polk, T.A.,
+Welsh, R.C., Liberzon, I., & Strecher, V.J. (2011).
+Self-related neural response to tailored smokingcessation messages predicts quitting. Nature
+Neuroscience, 14(4):426–427.
+Cicchetti, D., & Gunnar, M.R. (2008). Integrating
+biological measures into the design and evaluation
+of preventive interventions. Development and
+Psychopathology, 20(3), 737–743.
+Coccaro, E.F., Sripada, C.S., Yanowitch, R.N., &
+Phan, K.L. (2011). Corticolimbic function
+in impulsive aggressive behavior. Biological
+Psychiatry, 69(12), 1153–1159.
+
+fMRI in Translational Neuroscience
+
+Costafreda, S.G., Khanna, A., Mourao-Miranda, J.,
+& Fu, C.H. (2009). Neural correlates of sad faces
+predict clinical remission to cognitive behavioural
+therapy in depression. NeuroReport, 20(7),
+637–641.
+Critchley, H.D. (2009). Psychophysiology of neural,
+cognitive and affective integration: fMRI and
+autonomic indicants. International Journal of
+Psychophysiology, 73(2), 88–94.
+Crowe, S.L., & Blair, R.J. (2008). The development
+of antisocial behavior: What can we learn from
+functional neuroimaging studies? Development
+and Psychopathology, 20(4), 1145–1159.
+Damoiseaux, J.S., & Greicius, M.D. (2009). Greater
+than the sum of its parts: A review of studies
+combining structural connectivity and restingstate functional connectivity. Brain Structure and
+Function, 213(6), 525–533.
+Dannlowski, U., Stuhrmann, A., Beutelmann, V.,
+Zwanzger, P., Lenzen, T., Grotegerd, D., . . . Kugel,
+H. (2012). Limbic scars: Long-term consequences
+of childhood maltreatment revealed by functional
+and structural magnetic resonance imaging.
+Biological Psychiatry, 71(4), 286–293.
+Davidson, M.C., Amso, D., Anderson, L.C., &
+Diamond, A. (2006). Development of cognitive
+control and executive functions from 4 to 13
+years: Evidence from manipulations of memory,
+inhibition, and task switching. Neuropsychologia,
+44(11), 2037–2078.
+Davidson, R.J. (2004). Well-being and affective style:
+Neural substrates and biobehavioural correlates.
+Philosophical Transactions of the Royal Society of
+London, Series B, Biological Sciences, 359(1449),
+1395–1411.
+de Bie, H.M., Boersma, M., Adriaanse, S., Veltman, D.J.,
+Wink, A.M., Roosendaal, S.D., . . . Sanz-Arigita,
+E.J. (2012). Resting-state networks in awake fiveto eight-year-old children. Human Brain Mapping,
+33(5), 1189–1201.
+Decety, J., & Cacioppo, J. (2010). Frontiers in human
+neuroscience: The golden triangle and beyond.
+Perspectives on Psychological Science, 5, 767–771.
+
+23
+
+deCharms, R.C. (2007). Reading and controlling
+human brain activation using real-time functional
+magnetic resonance imaging. Trends in Cognitive
+Sciences, 11(11), 473–481.
+deCharms, R.C. (2008). Applications of real-time
+fMRI. Nature Reviews Neuroscience, 9(9),
+720–729.
+deCharms, R.C., Maeda, F., Glover, G.H., Ludlow, D.,
+Pauly, J.M., Soneji, D., . . . Mackey, S.C. (2005).
+Control over brain activation and pain learned
+by using real-time functional MRI. Proceedings
+of the National Academy of Sciences, 102(51),
+18626–18631.
+Deco, G., Jirsa, V.K., & McIntosh, A.R. (2011).
+Emerging concepts for the dynamical
+organization of resting-state activity in the brain.
+Nature Reviews Neuroscience, 12(1), 43–56.
+Diamond, A. & Lee, K. (2011). Interventions shown
+to aid executive function development in children
+4 to 12 years old. Science, 333(6045), 959–964.
+Diamond, A. (2010). The evidence base for improving
+school outcomes by addressing the whole child
+and by addressing skills and attitudes, not just
+content. Early Education and Development, 21(5),
+780–793.
+Diamond, A. (2011). Biological and social influences
+on cognitive control processes dependent on
+prefrontal cortex. Progress in Brain Research, 189,
+319–339.
+Diamond, A., Barnett, W.S., Thomas, J., & Munro, S.
+(2007). Preschool program improves cognitive
+control. Science, 318(5855), 1387–1388.
+Diekhof, E.K., Falkai, P., & Gruber, O. (2008).
+Functional neuroimaging of reward processing
+and decision-making: A review of aberrant
+motivational and affective processing in addiction
+and mood disorders. Brain Research Reviews,
+59(1), 164–184.
+Dodge, K.A. (2006). Translational science in action:
+Hostile attributional style and the development of
+aggressive behavior problems. Development and
+Psychopathology, 18(3), 791–814.
+
+24
+
+Whitten, 2012
+
+Dodge, K.A., & Pettit, G.S. (2003). A biopsychosocial
+model of the development of chronic conduct
+problems in adolescence. Development and
+Psychopathology, 39(2), 349–371.
+Dosch, M., Loenneker, T., Bucher, K., Martin, E., &
+Klaver, P. (2010). Learning to appreciate others:
+Neural development of cognitive perspective
+taking. Neuroimage, 50(2), 837–846.
+Drabant, E.M., McRae, K., Manuck, S.B., Hariri,
+A.R., & Gross, J.J. (2009). Individual differences
+in typical reappraisal use predict amygdala and
+prefrontal responses. Biological Psychiatry, 65(5),
+367–373.
+Eckenrode, J., Campa, M., Luckey, D.W., Henderson,
+C.R. Jr., Cole, R., Kitzman, H., . . . Olds, D. (2010).
+Long-term effects of prenatal and infancy nurse
+home visitation on the life course of youths: 19year follow-up of a randomized trial. Archives of
+Pediatric and Adolescence Medicine, 164(1), 9–15.
+Eisenberg, N., Spinrad, T.L., & Eggum, N.D. (2010).
+Emotion-related self-regulation and its relation
+to children’s maladjustment. Annual Review of
+Clinical Psychology, 6, 495–525.
+Eisenberger, N.I., Taylor, S.E., Gable, S.L., Hilmert,
+C.J., & Lieberman, M.D. (2007). Neural pathways
+link social support to attenuated neuroendocrine
+stress responses. Neuroimage, 35(4), 1601–1612.
+Eisenberger, N.I., Way, B.M., Taylor, S.E., Welch,
+W.T., & Lieberman, M.D. (2007). Understanding
+genetic risk for aggression: Clues from the brain’s
+response to social exclusion. Biological Psychiatry,
+61(9), 1100–1108.
+Ellis, M.L., Weiss, B., & Lochman, J.E. (2009).
+Executive functions in children: Associations with
+aggressive behavior and appraisal processing.
+Journal of Abnormal Child Psychology, 37(7),
+945–956.
+Falk, E.B., Berkman, E.T., & Lieberman, M.D. (2012).
+From neural responses to population behavior:
+Neural focus group predicts population-level
+media effects. Psychological Science 23(5),
+439–445.
+
+RTI Press
+
+Falk, E.B., Berkman, E.T., Whalen, D., & Lieberman,
+M.D. (2011). Neural activity during health
+messaging predicts reductions in smoking above
+and beyond self-report. Health Psychology, 30(2),
+177–185.
+Fenton, A., Meynell, L., & Baylis, F. (2009). Ethical
+challenges and interpretive difficulties with nonclinical applications of pediatric FMRI. American
+Journal of Bioethics, 9(1), 3–13.
+Filiou, M.D., & Turck, C.W. (2011). General
+overview: Biomarkers in neuroscience research.
+International Review of Neurobiology, 101, 1–17.
+Fishbein, D. (2011). Advancing the prevention of
+substance abuse via translational research. (RTI
+Press Publication No. RB-0003-1108). Research
+Triangle Park, NC: RTI Press. Retrieved from
+http://www.rti.org/pubs/rb-0003-1108-fishbein.
+pdf
+Fishbein, D., & Tarter, R. (2009). Infusing
+neuroscience into the study and prevention
+of drug misuse and co-occurring aggressive
+behavior. Substance Use and Misuse, 44(9–10),
+1204–1235.
+Fisher, P.A., Lester, B.M., DeGarmo, D.S., Lagasse, L.L.,
+Lin, H., Shankaran, S., . . . Higgins, R. (2011). The
+combined effects of prenatal drug exposure and
+early adversity on neurobehavioral disinhibition
+in childhood and adolescence. Development and
+Psychopathology, 23(3), 777–788.
+Forbes, E.E., Olino, T.M., Ryan, N.D., Birmaher, B.,
+Axelson, D., Moyles, D.L., & Dahl, R.E. (2010).
+Reward-related brain function as a predictor of
+treatment response in adolescents with major
+depressive disorder. Cognitive, Affective, and
+Behavioral Neuroscience, 10(1), 107–118.
+Fortier, E., Noreau, A., Lepore, F., Boivin, M., Pérusse,
+D., Rouleau, G.A., & Beauregard, M. (2010).
+Early impact of 5-HTTLPR polymorphism on the
+neural correlates of sadness. Neuroscience Letters,
+485(3), 261–265.
+Fu, C.H., Williams, S.C., Cleare, A.J., Scott, J.,
+Mitterschiffthaler, M.T., Walsh, N.D., . . .
+Murray, R.M. (2008). Neural responses to sad
+facial expressions in major depression following
+cognitive behavioral therapy. Biological Psychiatry,
+64(6), 505–512.
+
+fMRI in Translational Neuroscience
+
+Fusar-Poli, P., Placentino, A., Carletti, F., Landi, P.,
+Allen, P., Surguladze, S., . . . Politi, P. (2009).
+Functional atlas of emotional faces processing:
+A voxel-based meta-analysis of 105 functional
+magnetic resonance imaging studies. Journal of
+Psychiatry and Neuroscience, 34(6), 418–432.
+Gianaros, P.J., & Manuck, S.B. (2010). Neurobiological
+pathways linking socioeconomic position and
+health. Psychosomatic Medicine, 72(5), 450–461.
+Gifford-Smith, M., Dodge, K.A., Dishion, T.J., &
+McCord, J. (2005). Peer influence in children
+and adolescents: Crossing the bridge from
+developmental to intervention science. Journal of
+Abnormal Child Psychology, 33(3), 255–265.
+Glover, G.H. (2011). Overview of functional magnetic
+resonance imaging. Neurosurgery Clinics of North
+America, 22(2), 133–139.
+Goveas, J.S., Xie, C., Ward, B.D., Wu, Z., Li, W.,
+Franczak, M., . . . Li, S.J. (2011). Recovery of
+hippocampal network connectivity correlates
+with cognitive improvement in mild Alzheimer’s
+disease patients treated with donepezil assessed by
+resting-state fMRI. Journal of Magnetic Resonance
+Imaging, 34(4), 764–773.
+Greicius, M. (2008). Resting-state functional
+connectivity in neuropsychiatric disorders.
+Current Opinion in Neurology, 21(4), 424–430.
+Hackman, D.A., & Farah, M.J. (2009). Socioeconomic
+status and the developing brain. Trends in
+Cognitive Sciences, 13(2), 65–73.
+Hackman, D.A., Farah, M.J., & Meaney, M.J. (2010).
+Socioeconomic status and the brain: Mechanistic
+insights from human and animal research. Nature
+Reviews Neuroscience, 11(9), 651–659.
+Hamilton, J.P., Glover, G.H., Hsu, J.J., Johnson, R.F.,
+& Gotlib, I.H. (2011). Modulation of subgenual
+anterior cingulate cortex activity with real-time
+neurofeedback. Human Brain Mapping, 32(1),
+22–31.
+Hampel, H., Prvulovic, D., Teipel, S.J., & Bokde, A.L.
+(2011). Recent developments of functional
+magnetic resonance imaging research for drug
+development in Alzheimer’s disease. Progress in
+Neurobiology, 95(4), 570–578.
+
+25
+
+Hariri, A.R. (2009). The neurobiology of individual
+differences in complex behavioral traits. Annual
+Review of Neuroscience, 32, 225–247.
+Hasler, G., & Northoff, G. (2011). Discovering
+imaging endophenotypes for major depression.
+Molecular Psychiatry, 16(6), 604–619.
+Heatherton, T.F. & Wagner, D.D. (2011). Cognitive
+neuroscience of self-regulation failure. Trends in
+Cognitive Sciences, 15(3), 132–139.
+Heeger, D.J., & Ress, D. (2002). What does fMRI
+tell us about neuronal activity? Nature Reviews
+Neuroscience, 3(2), 142–151.
+Houdé, O., Rossi, S., Lubin, A., & Joliot M. (2010).
+Mapping numerical processing, reading, and
+executive functions in the developing brain: An
+fMRI meta-analysis of 52 studies including 842
+children. Developmental Science, 13(6), 876–885.
+Hughes, C., & Ensor, R. (2011). Individual differences
+in growth in executive function across the
+transition to school predict externalizing and
+internalizing behaviors and self-perceived
+academic success at 6 years of age. Journal of
+Experimental Child Psychology, 108(3), 663–676.
+Hulvershorn, L.A., Cullen, K., & Anand, A. (2011).
+Toward dysfunctional connectivity: A review
+of neuroimaging findings in pediatric major
+depressive disorder. Brain Imaging and Behavior,
+5(4), 307–328.
+Iacono, W.G., Malone, S.M., & McGue, M. (2008).
+Behavioral disinhibition and the development
+of early-onset addiction: Common and specific
+influences. Annual Review of Clinical Psychology,
+4, 325–348.
+Ide, J.S., & Li, C.S. (2011). Error-related functional
+connectivity of the habenula in humans. Frontiers
+in Human Neuroscience, 5, 25.
+Illes, J., & Bird, S.J. (2006). Neuroethics: A modern
+context for ethics in neuroscience. Trends in
+Neuroscience, 29(9), 511–517.
+Illes, J., & Raffin, T.A. (2005). No child left without
+a brain scan? Toward a pediatric neuroethics.
+Cerebrum, 7(3), 33–46.
+
+26
+
+RTI Press
+
+Whitten, 2012
+
+Johansen-Berg, H., & Rushworth, M.F. (2009). Using
+diffusion imaging to study human connectional
+anatomy. Annual Review of Neuroscience, 32,
+75–94.
+Johnston, S.J., Boehm, S.G., Healy, D., Goebel, R., &
+Linden, D.E. (2010). Neurofeedback: A promising
+tool for the self-regulation of emotion networks.
+Neuroimage, 9(1), 1066–1072.
+Joseph, J.E., Liu, X., Jiang, Y., Lynam, D., & Kelly, T.H.
+(2009). Neural correlates of emotional reactivity
+in sensation seeking. Psychological Science, 20(2),
+215–223.
+Kaddurah-Daouk, R., Rozen, S., Matson, W., Han, X.,
+Hulette, C.M., Burke, J.R., . . . Welsh-Bohmer,
+K.A. (2011). Metabolomic changes in autopsyconfirmed Alzheimer’s disease. Alzheimer’s &
+Dementia, 7(3), 309–317.
+Kellam, S.G., Brown, C.H., Poduska, J.M., Ialongo, N.S.,
+Wang, W., Toyinbo, P., . . . Wilcox, H.C. (2008).
+Effects of a universal classroom behavior
+management program in first and second grades
+on young adult behavioral, psychiatric, and
+social outcomes. Drug and Alcohol Dependence,
+95(Supplement 1), S5–S28.
+Keyes, K.M., McLaughlin, K.A., Koenen, K.C.,
+Goldmann, E., Uddin, M., & Galea, S. (2012).
+Child maltreatment increases sensitivity to
+adverse social contexts: Neighborhood physical
+disorder and incident binge drinking in Detroit.
+Drug and Alcohol Dependence, 122(1–2), 77–85.
+Kilpatrick, L.A., Suyenobu, B.Y., Smith, S.R., Bueller,
+J.A., Goodman, T., Creswell, J.D., . . . Naliboff,
+B.D. (2011). Impact of mindfulness-based stress
+reduction training on intrinsic brain connectivity.
+Neuroimage, 56(1), 290–298.
+Kim, H. (2011). Neural activity that predicts
+subsequent memory and forgetting: A metaanalysis of 74 fMRI studies. Neuroimage, 54(3),
+2446–2461.
+
+Kitzman, H.J., Olds, D.L., Cole, R.E., Hanks, C.A.,
+Anson, E.A., Arcoleo, K.J., . . . Holmberg, J.R.
+(2010). Enduring effects of prenatal and infancy
+home visiting by nurses on children: Follow-up of
+a randomized trial among children at age 12 years.
+Archives of Pediatric and Adolescent Medicine,
+164(5), 412–418.
+Kober, H., Mende-Siedlecki, P., Kross, E.F., Weber, J.,
+Mischel, W., Hart, C.L., & Ochsner, K.N. (2010).
+Prefrontal-striatal pathway underlies cognitive
+regulation of craving. Proceedings of the National
+Academy of Sciences 107(33), 14811–14816.
+Koyama, M.S., Di Martino, A., Zuo, X.N., Kelly, C.,
+Mennes, M., Jutagir, D.R., . . . Milham, M.P.
+(2011). Resting-state functional connectivity
+indexes reading competence in children and
+adults. Journal of Neuroscience, 31(23), 8617–
+8624.
+Kuhl, P.K. (2010). Brain mechanisms in early
+language acquisition. Neuron, 67(5), 713–727.
+Laconte, S.M. (2011). Decoding fMRI brain states in
+real-time. Neuroimage, 56(2), 440–454.
+Lan, X., Legare, C.H., Ponitz, C.C., Li, S., & Morrison, F.J.
+(2011). Investigating the links between the
+subcomponents of executive function and
+academic achievement: A cross-cultural analysis
+of Chinese and American preschoolers. Journal of
+Experimental Child Psychology, 108(3), 677–692.
+Langleben, D.D., Loughead, J.W., Ruparel, K.,
+Hakun, J.G., Busch-Winokur, S., Holloway, M.B.,
+. . . Lerman, C. (2009). Reduced prefrontal and
+temporal processing and recall of high “sensation
+value” ads. Neuroimage, 46(1), 219–225.
+Liang, P., Wang, Z., Yang, Y., Jia, X., & Li, K. (2011).
+Functional disconnection and compensation
+in mild cognitive impairment: Evidence from
+DLPFC connectivity using resting-state fMRI.
+PLoS One, 6(7), e22153. doi:10.1371/journal
+/pone.0022153
+Linden, D., & Thome, J. (2011). Modern
+neuroimaging in psychiatry: Towards the
+integration of functional and molecular
+information. World Journal of Biological
+Psychiatry, 12 (Suppl 1), 6–10.
+
+fMRI in Translational Neuroscience
+
+Linden, D.E. (2006). How psychotherapy changes
+the brain—the contribution of functional
+neuroimaging. Molecular Psychiatry, 11(6),
+528–538.
+Linden, D.E. (2012). The challenges and promise of
+neuroimaging in psychiatry. Neuron, 73(1), 8–22.
+Linden, D.E., & Fallgatter, A.J. (2009). Neuroimaging
+in psychiatry: From bench to bedside. Frontiers in
+Human Neuroscience, 3, 49.
+Lista, S., Faltraco, F., & Hampel, H. (2012, June 26).
+Blood and plasma-based proteomic biomarker
+research in Alzheimer’s disease. Progress in
+Neurobiology. Advance online publication. doi:
+10.1016/j.pneurobio.2012.06.007
+Logothetis, N.K., Pauls, J., Augath, M., Trinath, T.,
+& Oeltermann, A. (2001). Neurophysiological
+investigation of the basis of the fMRI signal.
+Nature, 412(6843), 150–157.
+Loman, M.M., & Gunnar, M.R. (2010). Early
+experience and the development of stress
+reactivity and regulation in children. Neuroscience
+and Biobehavioral Reviews, 34(6), 867–876.
+Loth, E., Carvalho, F., & Schumann, G. (2011).
+The contribution of imaging genetics to the
+development of predictive markers for addictions.
+Trends in Cognitive Sciences, 15(9), 436–446.
+Luna, B., Padmanabhan, A., & O’Hearn, K. (2010).
+What has fMRI told us about the development of
+cognitive control through adolescence? Brain and
+Cognition, 72(1), 101–113.
+Lupien, S.J., McEwen, B.S., Gunnar, M.R., & Heim, C.
+(2009). Effects of stress throughout the lifespan
+on the brain, behaviour and cognition. Nature
+Reviews Neuroscience, 10(6), 434–445.
+Magland, J.F., Tjoa, C.W., & Childress, A.R. (2011).
+Spatio-temporal activity in real time (STAR):
+Optimization of regional fMRI feedback.
+Neuroimage, 55(3), 1044–1053.
+Malhi, G.S., & Lagopoulos, J. (2008). Making sense
+of neuroimaging in psychiatry. Acta Psychiatrica
+Scandinavica, 117(2), 100–117.
+
+27
+
+Masten, C.L., Eisenberger, N.I., Borofsky, L.A.,
+McNealy, K., Pfeifer, J.H., & Dapretto, M. (2011).
+Subgenual anterior cingulate responses to peer
+rejection: A marker of adolescents’ risk for
+depression. Development and Psychopathology,
+23(1), 283–292.
+McCaig, R.G., Dixon, M., Keramatian, K., Liu, I., &
+Christoff, K. (2011). Improved modulation of
+rostrolateral prefrontal cortex using real-time
+fMRI training and meta-cognitive awareness.
+Neuroimage, 55(3), 1298–1305.
+Mead, H.K., Beauchaine, T.P., & Shannon, K.E.
+(2010). Neurobiological adaptations to
+violence across development. Development and
+Psychopathology, 22(1), 1–22.
+Miller, G.A. (2010). Mistreating psychology in the
+decades of the brain. Perspectives on Psychological
+Science, 5, 716–743.
+Mischel, W., Ayduk, O., Berman, M.G., Casey, B.J.,
+Gotlib, I.H., Jonides, J., . . . Shoda, Y. (2011).
+“Willpower” over the life span: Decomposing
+self-regulation. Social Cognitive and Affective
+Neuroscience, 6(2), 252–256.
+Mischel, W., Shoda, Y., & Rodriguez, M.I. (1989).
+Delay of gratification in children. Science,
+244(4907), 933–938.
+Moffitt, T.E., Arseneault, L., Belsky, D., Dickson, N.,
+Hancox, R.J., Harrington, H., …, Caspi, A. (2011).
+A gradient of childhood self-control predicts
+health, wealth, and public safety. Proceedings of the
+National Academy Sciences, 108(7), 2693–2698.
+Morasch, K.C. & Bell, MA. (2011). The role of
+inhibitory control in behavioral and physiological
+expressions of toddler executive function.
+Journal of Experimental Child Psychology, 108(3),
+593–606.
+Negishi, M., Martuzzi, R., Novotny, E.J., Spencer,
+D.D., & Constable, R.T. (2011). Functional MRI
+connectivity as a predictor of the surgical outcome
+of epilepsy. Epilepsia, 52(9), 1733–1740.
+
+28
+
+RTI Press
+
+Whitten, 2012
+
+Olds, D.L., Kitzman, H.J., Cole, R.E., Hanks, C.A.,
+Arcoleo, K.J., Anson, E.A., . . . Stevenson, A.J.
+(2010). Enduring effects of prenatal and infancy
+home visiting by nurses on maternal life course
+and government spending: Follow-up of a
+randomized trial among children at age 12 years.
+Archives of Pediatric and Adolescent Medicine,
+164(5), 419–424.
+Olds, D.L., Robinson, J., Pettitt, L., Luckey, D.W.,
+Holmberg, J., Ng, R.K., . . . Henderson, C.R. Jr.
+(2004). Effects of home visits by paraprofessionals
+and by nurses: Age 4 follow-up results of a
+randomized trial. Pediatrics, 114(6), 1560–1568.
+Pavuluri, M.N., & Sweeney, J.A. (2008). Integrating
+functional brain neuroimaging and developmental
+cognitive neuroscience in child psychiatry
+research. Journal of the American Academy of
+Child and Adolescent Psychiatry, 47(11), 1273–
+1288.
+
+Posner, M.I., & Rothbart, M.K. (2009). Toward a
+physical basis of attention and self-regulation.
+Physics of Life Reviews, 6(2), 103–120.
+Powell, N.R., Lochman, J.E., & Boxmeyer, C.L. (2007).
+The prevention of conduct problems. International
+Review of Psychiatry, 19(6), 597–605.
+Power, J.D., Fair, D.A., Schlaggar, B.L., & Petersen,
+S.E. (2010). The development of human functional
+brain networks. Neuron, 67(5), 735–748.
+Quinones, M.P., & Kaddurah-Daouk, R. (2009).
+Metabolomics tools for identifying biomarkers
+for neuropsychiatric diseases. Neurobiology of
+Disease, 35(2), 165–176.
+Racine, E., & Illes, J. (2006). Neuroethical
+responsibilities. Canadian Journal of Neurological
+Sciences, 33(3), 269–277.
+Raichle, M.E. (2009a). A brief history of human brain
+mapping. Trends in Neurosciences, 32(2), 118–126.
+
+Peluso, M.A., Glahn, D.C., Matsuo, K., Monkul, E.S.,
+Najt, P., Zamarripa, F., . . . Soares, J.C. (2009).
+Amygdala hyperactivation in untreated depressed
+individuals. Psychiatry Research, 173(2), 158–161.
+
+Raichle, M.E. (2009b). A paradigm shift in functional
+brain imaging. Journal of Neuroscience, 29(41),
+12729–12734.
+
+Perry, J.L., Joseph, J.E., Jiang, Y., Zimmerman, R.S.,
+Kelly, T.H., Darna, M., . . . Bardo, M.T. (2011).
+Prefrontal cortex and drug abuse vulnerability:
+Translation to prevention and treatment
+interventions. Brain Research Reviews, 65(2),
+124–149.
+
+Raichle, M.E., & Mintun, M.A. (2006). Brain
+work and brain imaging. Annual Review of
+Neuroscience, 29, 449–476.
+
+Peters, J. & Büchel, C. (2010). Episodic future
+thinking reduces reward delay discounting
+through an enhancement of prefrontalmediotemporal interactions. Neuron, 66(1),
+138–148.
+Petrella, J.R., Mattay, V.S., Doraiswamy, P.M. (2008).
+Imaging genetics of brain longevity and mental
+wellness: The next frontier? Radiology, 246(1),
+20–32.
+Porto, P.R., Oliveira, L., Mari, J., Volchan, E., Figueira,
+I., & Ventura, P. (2009). Does cognitive behavioral
+therapy change the brain? A systematic review
+of neuroimaging in anxiety disorders. Journal of
+Neuropsychiatry and Clinical Neuroscience, 21(2),
+114–125.
+
+Raichle, M.E. (2010). Two views of brain function.
+Trends in Cognitive Sciences, 14(4),180–190.
+
+Raichle, M.E., & Snyder, A.Z. (2007). A default mode
+of brain function: A brief history of an evolving
+idea. Neuroimage, 37(4), 1083–1090.
+Raichle, M.E., MacLeod, A.M., Snyder, A.Z., Powers,
+W.J., Gusnard, D.A., & Shulman, G.L. (2001). A
+default mode of brain function. Proceedings of the
+National Academy of Sciences, 98(2), 676–682.
+Riggs, N.R., Greenberg, M.T., Kusché, C.A., &
+Pentz, M.A. (2006). The mediational role of
+neurocognition in the behavioral outcomes
+of a social-emotional prevention program in
+elementary school students: Effects of the PATHS
+Curriculum. Prevention Science, 7(1), 91–102.
+Rigucci, S., Serafini, G., Pompili, M., Kotzalidis, G.D.,
+& Tatarelli, R. (2010). Anatomical and functional
+correlates in major depressive disorder: The
+contribution of neuroimaging studies. World
+Journal of Biological Psychiatry, 11(2 Pt 2), 165–180.
+
+fMRI in Translational Neuroscience
+
+Ritchey, M., Dolcos, F., Eddington, K.M., Strauman,
+T.J., & Cabeza, R. (2011). Neural correlates of
+emotional processing in depression: Changes
+with cognitive behavioral therapy and predictors
+of treatment response. Journal of Psychiatric
+Research, 45(5), 577–587.
+Robbins, T.W., & Arnsten, A.F. (2009). The
+neuropsychopharmacology of fronto-executive
+function: Monoaminergic modulation. Annual
+Review of Neuroscience, 32, 267–287.
+Robinson, B.L., & Shergill, S.S. (2011). Imaging in
+posttraumatic stress disorder. Current Opinion In
+Psychiatry, 24(1), 29–33.
+
+29
+
+Salisbury, A.L., Ponder, K.L., Padbury, J.F., & Lester,
+B.M. (2009). Fetal effects of psychoactive drugs.
+Clinical Perinatology, 36(3), 595–619.
+Schardt, D.M., Erk, S., Nüsser, C., Nöthen, M.M.,
+Cichon, S., Rietschel, M., . . . Walter, H. (2010).
+Volition diminishes genetically mediated
+amygdala hyperreactivity. Neuroimage, 53(3),
+943–951.
+Schepis, T.S., Adinoff, B., & Rao, U. (2008).
+Neurobiological processes in adolescent addictive
+disorders. American Journal on Addictions, 17(1),
+6–23.
+
+Rota, G., Handjaras, G., Sitaram, R., Birbaumer, N.,
+& Dogil, G. (2011). Reorganization of functional
+and effective connectivity during real-time fMRIBCI modulation of prosody processing. Brain and
+Language, 117(3), 123–132.
+
+Sebastian, C.L., Tan, G.C., Roiser, J.P., Viding,
+E., Dumontheil, I., & Blakemore, S.J. (2011).
+Developmental influences on the neural bases
+of responses to social rejection: Implications
+of social neuroscience for education.
+Neuroimage, 57(3), 686–694.
+
+Rota, G., Sitaram, R., Veit, R., Erb, M., Weiskopf, N.,
+Dogil, G., & Birbaumer, N. (2009). Self-regulation
+of regional cortical activity using real-time fMRI:
+The right inferior frontal gyrus and linguistic
+processing. Human Brain Mapping, 30(5),
+1605–1614.
+
+Sheline, Y.I., Price, J.L., Yan, Z., & Mintun, M.A.
+(2010). Resting-state functional MRI in
+depression unmasks increased connectivity
+between networks via the dorsal nexus.
+Proceedings of the National Academy of Sciences,
+107(24), 11020–11025.
+
+Rubia, K. (2011). “Cool” inferior frontostriatal
+dysfunction in attention-deficit/hyperactivity
+disorder versus “hot” ventromedial orbitofrontallimbic dysfunction in conduct disorder: A
+review. Biological Psychiatry, 69(12), e69–e87.
+doi:10.1016/j.biopsych.2010.09.023
+
+Siegle, G.J., Carter, C.S., & Thase, M.E. (2006).
+Use of fMRI to predict recovery from unipolar
+depression with cognitive behavior therapy.
+American Journal of Psychiatry, 163(4), 735–738.
+
+Rubia, K., Halari, R., Mohammad, A.M., Taylor, E., &
+Brammer, M. (2011). Methylphenidate normalizes
+frontocingulate underactivation during error
+processing in attention-deficit/hyperactivity
+disorder. Biological Psychiatry, 52(9), 1733–1740.
+Ruiz, S., Lee, S., Soekadar, S.R., Caria, A., Veit, R.,
+Kircher, T., . . . Sitaram, R. (2011). Acquired
+self-control of insula cortex modulates emotion
+recognition and brain network connectivity in
+schizophrenia. Human Brain Mapping. Advance
+online publication. doi: 10.1002/hbm.21427
+Sabatinelli, D., Fortune, E.E., Li, Q., Siddiqui, A.,
+Krafft, C., Oliver, W.T., . . . Jeffries, J. (2011).
+Emotional perception: Meta-analyses of face and
+natural scene processing. Neuroimage, 54(3),
+2524–2533.
+
+Sobhani, M. & Bechara, A. (2011). A somatic marker
+perspective of immoral and corrupt behavior.
+Social Neuroscience, 6(5–6), 640–652.
+Spiers, H.J., & Maguire, E.A. (2007). Decoding human
+brain activity during real-world experiences.
+Trends In Cognitive Sciences, 11(8), 356–365.
+Sporns, O. (2011). The human connectome: A
+complex network. Annals of the New York
+Academy of Sciences, 1224(1), 109–125.
+Squire, L.R. (2009). Memory and brain systems:
+1969–2009. Journal of Neuroscience, 29(41),
+12711–12716.
+Stadler, C., Poustka, F., & Sterzer, P. (2010). The
+heterogeneity of disruptive behavior disorders—
+implications for neurobiological research and
+treatment. Frontiers in Psychiatry, 1, 21.
+
+30
+
+Whitten, 2012
+
+RTI Press
+
+Sterzer, P., & Stadler, C. (2009). Neuroimaging of
+aggressive and violent behaviour in children and
+adolescents. Frontiers in Behavioral Neuroscience,
+3, 35.
+
+Taylor, K.S., Seminowicz, D.A., & Davis, K.D. (2009).
+Two systems of resting state connectivity between
+the insula and cingulate cortex. Human Brain
+Mapping, 30(9), 2731–2745.
+
+Sterzer, P., Stadler, C., Krebs, A., Kleinschmidt, A., &
+Poustka, F. (2005). Abnormal neural responses
+to emotional visual stimuli in adolescents with
+conduct disorder. Biological Psychiatry, 57(1),
+7–15.
+
+Taylor, S.E., Burklund, L.J., Eisenberger, N.I., Lehman,
+B.J., Hilmert, C.J., & Lieberman, M.D. (2008).
+Neural bases of moderation of cortisol stress
+responses by psychosocial resources. Journal of
+Personality and Social Psychology, 95(1), 197–211.
+
+Stiles, J. (2011). Brain development and the nature
+versus nurture debate. Progress in Brain Research,
+189, 3–22.
+
+Thomason, M.E., & Thompson, P.M. (2011). Diffusion
+imaging, white matter, and psychopathology.
+Annual Review of Clinical Psychology, 7, 63–85.
+
+Stiles, J., & Jernigan, T.L. (2010). The basics of brain
+development. Neuropsychology Review, 20(4),
+327–348.
+
+Thomason, M.E., Hamilton, J.P., & Gotlib, I.H. (2011).
+Stress-induced activation of the HPA axis predicts
+connectivity between subgenual cingulate and
+salience network during rest in adolescents.
+Journal of Child Psychology and Psychiatry, 52(10),
+1026–1034.
+
+Supekar, K., Uddin, L.Q., Prater, K., Amin, H.,
+Greicius, M.D., & Menon, V. (2012) Development
+of functional and structural connectivity within
+the default mode network in young children.
+Neuroimage, 52(1), 290–301.
+Swain, J.E. (2008). Baby stimuli and the parent brain:
+Functional neuroimaging of the neural substrates
+of parent-infant attachment. Psychiatry, 5(8),
+28–36.
+Tabibnia, G., Monterosso, J.R., Baicy, K., Aron, A.R.,
+Poldrack, R.A., Chakrapani, S., . . . London, E.D.
+(2011). Different forms of self-control share a
+neurocognitive substrate. Journal of Neuroscience,
+31(13), 4805–4810.
+Tairyan, K., & Illes, J. (2009). Imaging genetics and the
+power of combined technologies: A perspective
+from neuroethics. Neuroscience, 164(1), 7–15.
+Takahashi, H., Kato, M., Matsuura, M., Mobbs, D.,
+Suhara, T., & Okubo, Y. (2009). When your gain
+is my pain and your pain is my gain: Neural
+correlates of envy and schadenfreude. Science,
+323(5916), 937–939.
+Tang, Y.Y., Ma, Y., Wang, J., Fan, Y., Feng, S., Lu, Q.,
+. . . Posner, M.I. (2007). Short-term meditation
+training improves attention and self-regulation.
+Proceedings of the National Academy of Sciences,
+104(43), 17152–17156.
+
+Thomason, M.E., Yoo, D.J., Glover, G.H., & Gotlib,
+I.H. (2009). BDNF genotype modulates resting
+functional connectivity in children. Frontiers in
+Human Neuroscience, 3, 55.
+Thompson, P.M., Martin, N.G., & Wright, M.J. (2010).
+Imaging genomics. Current Opinion in Neurology,
+23(4), 368–373.
+Townsend, J.D., Eberhart, N.K., Bookheimer, S.Y.,
+Eisenberger, N.I., Foland-Ross, L.C., Cook, A.,
+. . . Altshuler, L.L. (2010). fMRI activation in
+the amygdala and the orbitofrontal cortex in
+unmedicated subjects with major depressive
+disorder. Psychiatry Research, 183(3), 209–217.
+van Goozen, S.H., & Fairchild, G. (2008). How can
+the study of biological processes help design new
+interventions for children with severe antisocial
+behavior? Development and Psychopathology,
+20(3), 941–973.
+Victor, T.A., Furey, M.L., Fromm, S.J., Ohman, A.,
+& Drevets, W.C. (2010). Relationship between
+amygdala responses to masked faces and mood
+state and treatment in major depressive disorder.
+Archives of General Psychiatry, 67(11), 1128–1138.
+
+fMRI in Translational Neuroscience
+
+Vogel, A.C., Power, J.D., Petersen, S.E., & Schlaggar,
+B.L. (2010). Development of the brain’s functional
+network architecture. Neuropsychology Review,
+20(4), 362–375.
+Wager, T.D., Davidson, M.L., Hughes, B.L., Lindquist,
+M.A., & Ochsner, K.N. (2008). Prefrontalsubcortical pathways mediating successful
+emotion regulation. Neuron, 59(6), 1037–1050.
+Wager, T.D., Lindquist, M.A., Nichols, T.E., Kober,
+H., & Van Snellenberg, J.X. (2009). Evaluating the
+consistency and specificity of neuroimaging data
+using meta-analysis. Neuroimage, 45 (1 Suppl),
+S210–S221.
+Walter, H., Berger, M., & Schnell, K. (2009).
+Neuropsychotherapy: Conceptual, empirical
+and neuroethical issues. European Archives
+of Psychiatry and Clinical Neuroscience, 259
+(Suppl 2), S173–S182.
+Wang, Z., Liang, P., Jia, X., Qi, Z., Yu, L., Yang, Y., . . .
+Li, K. (2011). Baseline and longitudinal patterns
+of hippocampal connectivity in mild cognitive
+impairment: Evidence from resting state fMRI.
+Journal of the Neurological Sciences, 309(1–2),
+79–85.
+Webster-Stratton, C., Reid, M., & Stoolmiller, M.
+(2008). Preventing conduct problems and
+improving school readiness: Evaluation of the
+Incredible Years Teacher and Child Training
+Programs in high-risk schools. Journal of Child
+Psychology and Psychiatry, 49(5), 471–488.
+
+31
+
+Welsh, J.A., Nix, R.L., Blair, C., Bierman, K.L., &
+Nelson, K.E. (2010). The development of cognitive
+skills and gains in academic school readiness for
+children from low-income families. Journal of
+Educational Psychology, 102(1), 43–53.
+Wiebe, S.A., Sheffield, T., Nelson, J.M., Clark, C.A.,
+Chevalier, N., & Espy, K.A. (2011). The structure
+of executive function in 3-year-olds. Journal of
+Experimental Child Psychology, 108(3), 436–452.
+Wiedemann, K. (2011). Biomarkers in development
+of psychotropic drugs. Dialogues in Clinical
+Neuroscience, 13(2), 225–234.
+Wilens, T.E., & Spencer, T.J. (2010). Understanding
+attention-deficit/hyperactivity disorder from
+childhood to adulthood. Postgraduate Medicine,
+122(5), 97–109.
+Yang, H., Wu, Q.Z., Guo, L.T., Li, Q.Q., Long, X.Y.,
+Huang, X.Q., . . . Gong, Q.Y. (2011). Abnormal
+spontaneous brain activity in medication-naïve
+ADHD children: A resting state fMRI study.
+Neuroscience Letters, 502(2), 89–93.
+Yoo, J.J., Hinds, O., Ofen, N., Thompson, T.W.,
+Whitfield-Gabrieli, S., Triantafyllou, C., &
+Gabrieli, J.D. (2011). When the brain is prepared
+to learn: Enhancing human learning using realtime fMRI. Neuroimage, 59(1), 846–852.
+Zhang, D., & Raichle, M.E. (2010). Disease and the
+brain’s dark energy. Nature Reviews Neurology,
+6(1), 15–28.
+
+Acknowledgments
+The author would like to thank Dr. Diana Fishbein of RTI’s Transdisciplinary
+Science and Translational Prevention Program for guidance and thoughtful
+review of the manuscript and Dr. Julie Ann Miller and Mr. Andrew Keegan for
+excellent editorial support. Development of this manuscript was supported by
+an RTI Professional Development Award.
+
+RTI International is an independent, nonprofit research organization dedicated
+to improving the human condition by turning knowledge into practice. RTI
+offers innovative research and technical solutions to governments and businesses
+worldwide in the areas of health and pharmaceuticals, education and training,
+surveys and statistics, advanced technology, international development,
+economic and social policy, energy and the environment, and laboratory and
+chemistry services.
+The RTI Press complements traditional publication outlets by providing another
+way for RTI researchers to disseminate the knowledge they generate. This PDF
+document is offered as a public service of RTI International.
+www.rti.org/rtipress
+
+RTI Press publication OP-0010-1212
+
+

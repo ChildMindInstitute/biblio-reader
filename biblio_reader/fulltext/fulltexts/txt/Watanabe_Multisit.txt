@@ -1,0 +1,836 @@
+Multisite Disease Classification with Functional
+Connectomes via Multitask Structured Sparse SVM
+Takanori Watanabe1 , Daniel Kessler2 , Clayton Scott1 , Chandra Sripada2
+1
+Department of EECS, 2 Department of Psychiatry
+University of Michigan, Ann Arbor, MI 48109, USA
+{takanori,kesslerd,clayscot,csripada}@umich.edu
+
+Abstract. There is great interest in developing imaging-based methods
+for diagnosing neuropsychiatric conditions. To this end, multiple datasharing initiatives have been launched in the neuroimaging field, where
+datasets are collected across multiple imaging sites. While this enables
+researchers to study the disorders of interest with substantial sample
+size, it also creates new challenges since the data aggregation process introduces various sources of site-specific heterogeneities. To address this
+issue, we introduce a multitask structured sparse support vector machine
+(SVM) that uses resting state functional connectomes (FCs) as the features for predicting diagnostic labels. Specifically, we employ a penalty
+that accounts for the following two-way structure that exists in a multisite FC dataset: (1) the 6-D spatial structure in the FCs captured via
+either the GraphNet, fused Lasso, or the isotropic total variation penalty,
+and (2) the inter-site structure captured via the multitask `1 {`2 -penalty.
+To solve the resulting high dimensional optimization problem, we introduce an extension to a recently proposed algorithm based on the alternating direction method. The potential utility of the proposed method
+is demonstrated on the multisite ADHD-200 dataset.
+Keywords: Multitask learning, structured sparsity, support vector machine, resting-state fMRI, alternating direction method
+
+1
+
+Introduction
+
+In this work, we are interested in a supervised classification problem, where
+the goal is to predict the diagnostic status of an individual using functional
+connectomes (FCs) derived from resting-state fMRI (rs-fMRI) [4]. Fortunately,
+with various data sharing projects emerging in the neuroimaging community [12,
+15], we have access to training data of unprecedented sample size. However, such
+community-wide collaborative efforts typically involve aggregating data from
+multiple imaging sites, which introduces several sources of systematic confounds,
+such as variability in the scanner quality, image acquisition protocol, subject
+demographics, etc. In order to effectively make use of these multisite datasets, it
+is important to train the classifiers in a way that accounts for these site-specific
+heterogeneities. To this end, we propose a classification framework that adopts
+a multitask learning (MTL) approach [5, 8, 10, 13].
+
+2
+
+T. Watanabe, D. Kessler, C. Scott, C. Sripada
+
+The idea behind MTL is to jointly train multiple tasks in order to improve
+classification performance, under the assumption that the tasks are related to
+each other in some sense. Recently, MTL methods have been successfully applied
+in brain decoding [8,13], where the participants from a multi-subject fMRI study
+are treated as the tasks. The underlying assumption here is that the brain regions
+that are activated from a stimulus will share similar patterns across different
+tasks/subjects. In contrast to these works, the method we propose in this work
+treats the sites from which the rs-fMRI scans are collected as the tasks.
+
+2
+
+Material and Methods
+
+To generate the FCs, we used the grid-based parcellation scheme adopted by
+Watanabe et al. in [16], which involves 347 nodes defined on the standard MNI
+template; Fig. 1 provides a schematic representation of this parcellation scheme.
+Each nodes represents a 15mm diameter sphere with 33 voxels, and is placed
+throughout the entire brain with a spacing of 181818mm (voxel resolution
+is 333mm). A regional time-series is assigned oneach node by spatially averaging the BOLD signals, and FCs of size p  347
+2  60, 031 are obtained by
+computing all pairwise Pearson correlations between the time-series of the nodes.
+2.1
+
+Supervised Learning and the Multitask Framework
+
+Šuppose we are given K supervised learning tasks,
+(n where for each task k  1, . . . ,
+K, we are given nk input/output pairs pxki , yik q ik1 P pRp t1uqnk . In the context of our work, xki and yik represent the FC and the diagnostic label of the i-th
+subject from the k-th site, respectively. The goal is to jointly learn K linear classifiers of the form fk pxq  signpxwk , xyq, where w1 , . . . , wK PRp are task-specific
+weight vectors obtained by solving the following optimization problem:
+arg min
+
+P
+
+nk
+K
+¸
+1 ¸
+
+
+
+
+
+w1 ,...,wK Rp k 1 nk i 1
+
+@
+
+` yik wk , xki
+
+D
+
+Rpw1 , . . . , wK q .
+
+The first term here is the pooled empirical risk of a convex margin-based loss
+` : R Ñ R and the second term R : RpK Ñ R is a penalty function that enforces
+certain kind of structure on the weight vectors. In this work, we employ the hingeloss `ptq  maxp1  t, 0q from the well known support vector machine (SVM)
+classifier, although other convex margin-based losses can
+°n be used as well.
+For brevity, we define a functional LpY k X k wk q : ik1 `pyik xwk , xki yq which
+aggregates the empirical loss from the k-th task, where X k P Rnk p denotes the design matrix for the k-th task and Y k P t1unk nk is defined as
+Y k : diagpy1k , . . . , ynk k q. Also for conciseness, let w P RpK denote the vector obtained by stacking the weight vectors twk uK
+In this work, we focus on
+k1 together.
+°K
+convex penalty functions of the form: Rpwq  γ k1 R1 pwk q λR2 pwq, where
+γ, λ ¥ 0 are hyperparameters. Thus the objective function can be written as:
+arg min
+
+P
+
+K
+¸
+1
+
+ nk
+
+w RKp k 1
+
+LpY k X k wk q
+
+γ
+
+K
+¸
+
+
+
+k 1
+
+R1 pwk q
+
+λR2 pwq .
+
+(1)
+
+Multisite Disease Classification via Multitask Structured Sparse SVM
+
+3
+
+Fig. 1: The brain parcellation scheme adopted in this work. The green regions
+represent (pseudo)-spherical nodes each encompassing 33 voxels.
+The first penalty R1 allows us to encode prior knowledge about the intra-task
+structure of the data. While various penalties such as GraphNet (GN), fused
+Lasso (FL), and isotropic total variation (TV) have been applied successfully in
+the fMRI literature [1, 6, 9, 16], these penalties by themselves do not account for
+the inter-task structure of the dataset (FL is also known as anisotropic total variation). Thus a second penalty R2 is included in (1), which allows us incorporate
+a notion of “task-relatedness” by enforcing some form of structure on w.
+For the intra-task penalty R1 , following the recent work of [16], we account for
+the 6-D spatial structure of FCs (defined by pairs of points in 3-D) by employing
+either the GN or FL penalty, which can be expressed in the following form:
+#
+
+q
+GraphNet
+if q  2
+1
+R1 pw q Cwk q 
+q
+Fused Lasso if q  1 ,
+where C denotes a 6-D finite differencing matrix. The idea behind GN and FL
+is to promote spatial contiguity by penalizing the differences among neighboring
+coordinates of the FC. Similarly, the TV penalty, which is a rotationally invariant
+counterpart of the FL penalty, can also be used to encourage spatial contiguity;
+see [9] for its closed form expression.
+k
+
+2.2
+
+Structured Sparsity with Group Variable Selection
+
+We propose to integrate the structured sparsity framework introduced in [16]
+with the popular multitask `1°
+{`p2 -penalty [5, 10]. Specifically, for the inter-task
+penalty R2 , we use R2 pwq j 1 }wj }2 , which is the so-called `1 {`2 -penalty.
+Here wj P RK is a vector formed by stacking the j-th weight vector coefficients
+across the K tasks. This penalty has the appealing group variable selection property [5, 10], which promotes learning features that are relevant across all sites,
+thereby simplifying interpretation of the selected features. At the same time,
+the actual weights associated with a given correlation can vary across site, in
+contrast to training a single classifier over a pooled dataset.
+2.3
+
+Optimization Algorithm
+
+To solve the proposed large scale optimization problem, we apply the alternating
+direction method of multipliers (ADMM) algorithm [2] introduced in [16], but
+with a minor modification. The complete algorithm is outlined in Alg. 1. We
+note that this section focuses on GN and FL, but the ADMM algorithm for TV
+differs only in line 5 of Alg. 1, but the details are omitted for lack of space.
+
+4
+
+T. Watanabe, D. Kessler, C. Scott, C. Sripada
+
+Alg. 1 ADMM for Multitask Structured Sparse SVM
+
+1: Initialize variables, assign hyperparameters λ, γ ¥ 0
+2: repeat
+3:
+for k  1, . . . , K do
+
+
+(
+4:
+wk Ð ppX k qT X k 2Ip q1 pY k X k qT v1k uk1 v2k uk2 AT v4k uk4
+ solve using matrix inversion Lemma
+
+5:
+
+v3k
+
+6:
+
+v1k
+
+7:
+8:
+9:
+10:
+11:
+
+Ð
+
+#
+
+apply Equation (3)
+r pv4k  uk3 q
+ρpγB ρI q1 C
+
+ÐProx`{pρn q Y X w
+
+r 1C
+r Ip̃ 1 C
+r 1 rv3k
+v4k Ð C
+k
+
+k
+
+k
+
+uk1
+
+k
+
+
+
+if q  1 (FL)
+if q  2 (GN)
+
+ Prox ptq :
+
+#
+
+t
+if t ¡ 1
+1
+if 1  τ ¤t ¤ 1
+t τ if t 1  τ
+ solve using FFT
+
+τ`
+
+uk3 s Awk uk4
+
+
+
+end for
+
+for j  1, . . . , p do
+v2,j Ð vsoftλ{ρ pwj
+end for
+
+u2,j q
+
+ vsoft ptq:maxp1  } } , 0q t, t P R
+τ
+t 2
+
+τ
+
+12:
+for k  1, . . . , K do
+13:
+uk1 Ð uk1 Y k X k wk  v1k
+14:
+uk2 Ð uk2 wk  v2k
+r 4k
+15:
+uk3 Ð uk3 v3k  Cv
+k
+k
+k
+16:
+u4 Ð u4 Aw  v4k
+17:
+end for
+18: until stopping criterion is met
+
+K
+
+ dual variable update
+
+To apply Alg. 1, we employ the data augmentation masking strategy that
+was proposed in [16]. In brief, the idea behind this method is that as it stands,
+the ADMM algorithm for solving the objective function (1) with the GN, FL, or
+TV penalty will require the inversion of the Laplacian matrix C T C, which is prok q
+r
+hibitively large. Thus we rewrite the GN/FL penalty as R1 pwk q}B CAw
+}q ,
+r
+where A is an augmentation matrix, C is the finite differencing matrix for the
+augmented wk , and B is a diagonal masking matrix that ensures the penalty
+k q
+r
+remains unaffected, i.e., }B CAw
+}q  }Cwk }qq . This results in a new Laplacian
+T
+r C,
+r which possesses a special structure known as block-circulant with
+matrix C
+circulant-blocks, whose matrix inverse can be evaluated efficiently via the fast
+Fourier Transform (FFT) (line 7, Alg. 1; see [16] for more details).
+Using this augmentation masking strategy, we can rewrite the objective as:
+min
+w
+
+K
+¸
+1
+
+ nk
+
+LpY k X k wk q
+
+k 1
+
+p
+K
+¸
+q
+γ ¸  r
+}wj }2 ,
+B CAwk q λ
+q k1
+j 1
+
+which can be converted into the following canonical ADMM form [2]:
+min
+k
+k
+
+K
+¸
+1
+
+twk ,v1 ,v2 ,v3k ,v4k u k1 nk
+
+Lpv1k q
+
+K
+q
+γ ¸ 
+Bv3k q
+q k1
+
+r k v k , Aw k v k
+s.t. Y k X k wk v1k , wk v2k , Cv
+4
+3
+4
+
+λ
+
+p
+¸
+
+
+
+}v2,j }2
+
+j 1
+
+@k  1, . . . , K.
+
+(2)
+
+5
+
+Multisite Disease Classification via Multitask Structured Sparse SVM
+
+It is straightforward to show that the above two problems are equivalent, and
+Alg. 1 follows from applying the standard ADMM iteration on (2). We emphasize
+that all the updates in Alg. 1 can be carried out efficiently in analytical form.
+For example, line 5 in Alg. 1 is a simple diagonal matrix inversion in the case of
+GN, and for the FL case we have the following closed form update:
+
+
+
+
+v3k s
+
+Ð
+
+#
+
+softγ {ρ
+
+
+
+
+
+
+r pv k  uk q
+C
+4
+3
+
+
+s
+
+1
+if Bs,s  0,
+
+if Bs,s
+
+(3)
+
+p  qs
+τ
+where softτ ptq:maxp1  |t| , 0q  t denotes the soft-threshold operator and rss indexes the s-th element of a vector. Finally, we note Proxτ ` ptq in line 6 is an
+r vk
+C
+4
+
+uk3
+
+elementwise update corresponding to the proximal operator of the hinge-loss.
+
+3
+
+Experiments
+
+The ADHD-200 Dataset. We used the publicly available ADHD-200 competition dataset [15], which contains rs-fMRI scans of subjects diagnosed as either
+typically developing (TD) or with ADHD. The dataset is collected across seven
+sites and consists of two parts: a training set and a validation test set (Brown site
+excluded from our study as the subject labels are not released). Analyses were
+limited to participants with: (1) MPRAGE anatomical images with consistent
+near-full brain coverage with successful registration; (2) complete phenotypic information for main phenotypic variables (diagnosis, age, handedness); (3) mean
+framewise displacement (FD) within two standard deviation (SD) of the sample
+mean; (4) full IQ within two SDs of the ADHD-200 sample mean. After applying
+these sample selection criteria, we analyzed resting state scans from 628 individuals (TD416, ADHD212) in the training set and 106 subjects (TD65,
+ADHD41) in the test set. Functional images were reconstructed, slice-time
+corrected, motion corrected, and co-registered to the MNI space using SPM8.
+Experimental Results. To assess the validity of the proposed method, we compared the performance of various SVM-based classifiers using the ADHD-200
+dataset, where resting-state FCs were produced using the parcellation scheme
+described in Sec. 2. For the intra-task penalty R1 , we compared four different
+2
+regularization schemes: Elastic-net (EN) [5] with R1 pwq  21 }w}2 , GN, FL, and
+TV. For the inter-task penalty R2 , we compared three different approaches:
+1. Pooled `1 : a single classifier is trained on the entire ADHD-200 dataset
+(R2 pwq  }w}1 with w P Rp as K  1).
+2. Single-task `1 {`1 : equivalent to training separately
+°p across sites due to the
+separability of the penalty across sites (R2 pwq  j 1 }wj }1 q.
+3. Multitask `1 {`2 : jointly train the classifiers by solving (1).
+
+The regularization parameters tλ, γ u are tuned by conducting a 5-fold crossvalidation (CV) on the training set over the following two-dimensional grid:
+λ, γ Pt213 , 212 , . . ., 23 u. The final weight vector estimate is obtained by retraining the classifiers on the entire training set using the tλ, γ u values
+that maximized the CV classification accuracy; for validation, we predicted
+
+6
+
+T. Watanabe, D. Kessler, C. Scott, C. Sripada
+
+the labels of the test set subjects using this weight vector. All methods
+were
+solved using
+ADMMwith the algorithm terminated when the condition
+
+
+w new  w old  ¤ 5103  w old  was met or the iteration count reached 400.
+2
+2
+To evaluate the quality of the classifiers, we analyzed the following set of
+performance measures for both the 5-fold CV and the validation test set results:
+–
+–
+–
+–
+–
+–
+
+Classification accuracy (ACC)
+Area under the ROC curve (AUC)
+Balanced score rate (BSR)  (sensitivity+specificity){2
+Stability score (Stab.)  a measure of feature selection stability (see [1, 14])
+P-value (PVAL) computed from binomial test.
+features|
+Sparsity level (SP%)  100  |# non-zero
+pK
+
+The AUC and BSR are analyzed since ACC by itself can be misleading when
+the dataset labels are imbalanced (ACC, AUC, and BSR are averaged across the
+tasks); the ROC curves are constructed by varying the threshold of the classifiers.
+Stability score is a measure introduced in [14] which quantifies the stability of
+the features selected across the CV folds (see [1, 14] for its precise definition).
+Classifier performance on the test set was compared to random guessing via a
+binomial test based on a binomial distribution B pp,nq with p0.5 and n109
+samples, with PVAL evaluated via an one-sided binomial test [7]; the alternative
+approach of permutation test was not pursued due to its severe computational
+cost. Finally, sparsity level is the fraction of features selected in the final model.
+Table 1 presents the classification results from the 5-fold CV and validation
+on the test-set, and Fig. 1 displays the corresponding ROC curves. These results demonstrate that training a single classifier via the “pooling” approach
+yields the worst performance in terms of accuracy, AUC, and BSR, suggesting
+that blindly aggregating the datasets across different sites can be problematic
+for accurate disease classification. Comparison between the single-task and the
+multitask approaches shows that the `1 {`2 -penalized approach yields superior
+performance in terms of AUC, although no striking difference can be observed
+in terms of accuracy and BSR.
+In addition to the performance gain with the `1 {`2 -penalty, the set of weight
+vector estimates tŵk uK
+k1 all share a common support of length p with this multitask approach. This is invaluable for interpretation, as the selected features
+can be viewed as edges that are informative across all sites. For visualization,
+we grouped the indices of this support according to the network parcellation
+scheme proposed by Yeo et al. in [17], and reshaped them into a 347347 symmetric matrix with zeroes on the diagonal. The resulting support matrices for
+the EN+`1 {`2 and the FL+`1 {`2 -penalized SVM are presented in Fig. 3 (results for GN+`1 {`2 and TV+`1 {`2 were very similar to FL+`1 {`2 ). An interesting observation here is that the support structure from the FL+`1 {`2 -penalized
+SVM shows concentrated connectivity patterns in the intra-frontoparietal (6-6)
+and the intra-default network (7-7) regions; Fig. 3 provides a brain space
+representation of these connections (figures generated using BrainNet Viewer,
+www.nitrc.org/projects/bnv/). These network regions are frequently reported
+to exhibit disrupted connectivity patterns in resting state studies of ADHD [3],
+
+Multisite Disease Classification via Multitask Structured Sparse SVM
+
+7
+
+Table 1: The classification results from the 5-fold CV and the validation test-set.
+
+EN
+GN
+FL
+TV
+EN
+GN
+FL
+TV
+EN
+GN
+FL
+TV
+
+(`1 )
+(`1 )
+(`1 )
+(`1 )
+(`1 {`1 )
+(`1 {`1 )
+(`1 {`1 )
+(`1 {`1 )
+(`1 {`2 )
+(`1 {`2 )
+(`1 {`2 )
+(`1 {`2 )
+
+CV (628 subjects)
+ACC AUC BSR Stab.
+.689 .687 .630 .277
+.704 .708 .631 .253
+.688 .720 .586 .059
+.701 .715 .620 .005
+.709 .752 .649 .276
+.713 .750 .652 .165
+.715 .750 .659 .329
+.718 .753 .661 .345
+.720 .754 .657 .217
+.720 .766 .657 .320
+.718 .766 .653 .315
+.720 .766 .658 .316
+
+ACC
+.557
+.594
+.632
+.623
+.623
+.642
+.632
+.642
+.651
+.642
+.642
+.642
+
+Test-set (128 subjects)
+
+1
+
+1
+
+0.8
+
+0.8
+
+0.6
+
+EN−pool (AUC=0.687)
+GN−pool (AUC=0.708)
+FL−pool (AUC=0.720)
+TV−pool (AUC=0.715)
+EN−MTL (AUC=0.754)
+GN−MTL (AUC=0.766)
+FL−MTL (AUC=0.766)
+TV−MTL (AUC=0.766)
+
+0.4
+0.2
+0
+0
+
+0.2
+
+0.4
+0.6
+0.8
+False Positive Rate
+
+1
+
+True Positive Rate
+
+True Positive Rate
+
+CV (628 subjects)
+
+Test-set (106 subjects)
+AUC BSR PVAL SP%
+.617 .476 .143 2.54%
+.608 .494 .032 28.88%
+.592 .530 .004 64.85%
+.608 .521 .007 90.32%
+.609 .530 .007 0.28%
+.613 .573 .002 67.14%
+.634 .547 .004 1.30%
+.654 .550 .002 1.61%
+.645 .556 .001 0.25%
+.668 .546 .002 1.03%
+.673 .546 .002 0.79%
+.672 .546 .002 0.80%
+
+0.6
+
+EN−pool (AUC=0.617)
+GN−pool (AUC=0.608)
+FL−pool (AUC=0.592)
+TV−pool (AUC=0.608)
+EN−MTL (AUC=0.645)
+GN−MTL (AUC=0.668)
+FL−MTL (AUC=0.673)
+TV−MTL (AUC=0.672)
+
+0.4
+0.2
+0
+0
+
+0.2
+
+0.4
+0.6
+0.8
+False Positive Rate
+
+1
+
+Fig. 2: Table 1 classifiers’ ROC (`1 {`1 -curves omitted to improve curve visibility).
+
+although the accuracies obtained from our classifiers are not at the level where
+the selected features can be interpreted as reliable ADHD biosignatures.
+Finally, we note that most of the accuracies reported on the validation test-set
+in Table 1 exceeded the highest result from the actual ADHD-200 competition
+(which was 61.54% [15]). However, there are two major caveats: (1) the results
+in this work cannot be directly compared with the official competition results
+due to the subject screening procedure we applied on the test set (the criteria
+such as the FD-based one is important for avoiding confounds from excessive
+head motion), and (2) the participants in the actual competition were required
+to predict the labels of 26 subjects from the Brown site, despite the fact that no
+training data were provided from this site, making it harder to predict the labels
+for these subjects. The second caveat also implies that most MTL methods,
+including the `1 {`2 -penalty employed in this work, cannot be applied since there
+are no means to train a weight vector for a task whose data are not provided. An
+alternative approach such as transfer learning [11] may be considered for this.
+
+8
+
+T. Watanabe, D. Kessler, C. Scott, C. Sripada
+
+Table 2: Network parcellation scheme of the brain proposed by Yeo et al. in [17].
+Network membership Table ( is “unlabeled”)
+1. Visual
+2. Somatomotor
+3. Dorsal Attention 4. Ventral Attention
+5. Limbic
+6. Frontoparietal 7. Default
+8. Striatum
+9. Amygdala 10. Hippocampus 11. Thalamus
+12. Cerebellum
+1
+2
+3
+4
+5
+6
+7
+8
+9
+11 10
+
+12
+×
+1
+
+2
+
+3 4 5
+
+6
+
+7
+
+8 10
+9 11
+
+12 ×
+
+(a) Multitask Elastic-net SVM result
+1
+2
+3
+4
+5
+6
+7
+8
+9
+11 10
+
+12
+×
+1
+
+2
+
+3 4 5
+
+6
+
+7
+
+8 10
+9 11
+
+12 ×
+
+(b) Multitask Fused Lasso SVM result
+
+{
+
+{
+
+Fig. 3: Weight vectors estimated from the EN+`1 `2 and FL+`1 `2 -penalized
+SVM. Left: support matrices of the selected features (rows/cols grouped by network membership). Right: brain space representation of the selected edges in the
+intra-frontoparietal (6-6: blue) and the intra-default network (7-7: red).
+
+4
+
+Conclusion
+
+We presented a multitask structured sparse SVM, a multitask extension to
+the connectome-based disease classification method introduced in [16], where
+the imaging sites are treated as tasks. Experimental results on the multisite
+ADHD-200 dataset suggest that the multitask approach using the `1 {`2 -penalty
+can provide improvement in classification performance over the naive pooling
+approach, where a single classifier is trained on the entire multisite dataset.
+In addition, the `1 {`2 -penalty achieved higher AUC scores than the single-task
+`1 {`1 -penalty, and the group variable selection property of the multitask approach gives a more interpretable model by selecting the same set of features
+across sites, which can be visualized compactly in brain space.
+
+Multisite Disease Classification via Multitask Structured Sparse SVM
+
+9
+
+References
+1. Baldassarre, L., Mourao-Miranda, J., Pontil, M.: Structured sparsity models
+for brain decoding from fMRI data. Proc. PRNI pp. 5–8 (2012)
+2. Boyd, S., Parikh, N., Chu, E., Peleato, B., Eckstein, J.: Distributed optimization and statistical learning via the alternating direction method of multipliers.
+Found. Trends Mach. Learn. 3, 1–122 (2011)
+3. Castellanos, F., Proal, E.: Large-scale brain systems in ADHD: beyond the
+prefrontalstriatal model. Trends Cogn. Sci. 16, 17 (2012)
+4. Castellanos, F.X., Martino, A.D., Craddock, R.C., Mehta, A.D., Milham, M.P.:
+Clinical applications of the functional connectome. NeuroImage 80(0), 527 –
+540 (2013)
+5. Chen, X., He, J., Lawrence, Carbonell, J.G.: Adaptive multi-task sparse learning with an application to fMRI study. In: SDM (2012)
+6. Grosenick, L., Klingenberg, B., Katovich, K., Knutson, B., Taylor, J.E.: Interpretable whole-brain prediction analysis with GraphNet. NeuroImage 72(0),
+304 – 321 (2013)
+7. Heinzle, J., Wenzel, M.A., Haynes, J.D.: Visuomotor functional network topology predicts upcoming tasks. J. Neurosci. 32(29), 9960–9968 (2012)
+8. Marquand, A., Brammer, M., Williams, S., Doyle, O.: Bayesian multi-task
+learning for decoding multi-subject neuroimaging data. NeuroImage 92(0), 298
+– 311 (2014)
+9. Michel, V., Gramfort, A., Varoquaux, G., Eger, E., Thirion, B.: Total variation
+regularization for fMRI-based prediction of behavior. IEEE Trans. Med. Imag.
+30(7), 1328–1340 (2011)
+10. Obozinski, G., Taskar, B., Jordan, M.I.: Joint covariate selection and joint
+subspace selection for multiple classification problems. Stat. Comput. 20(2),
+231–252 (2010)
+11. Pan, S.J., Yang, Q.: A survey on transfer learning. IEEE Trans. Knowl. Data
+Eng. 22(10), 1345–1359 (2010)
+12. Poline, J.B., Breeze, J.L., Ghosh, S.S., Gorgolewski, K., Halchenko, Y.O.,
+Hanke, M., Helmer, K.G., Marcus, D.S., Poldrack, R.A., Schwartz, Y., Ashburner, J., Kennedy, D.N.: Data sharing in neuroimaging research. Front. Neuroinformatics 6(9) (2012)
+13. Rao, N.S., Cox, C.R., Nowak, R.D., Rogers, T.T.: Sparse overlapping sets lasso
+for multitask learning and its application to fMRI analysis. NIPS pp. 2202–
+2210 (2013)
+14. Rasmussen, P.M., Hansen, L.K., Madsen, K.H., Churchill, N.W., Strother,
+S.C.: Model sparsity and brain pattern interpretation of classification models in neuroimaging. Pattern Recognition 45(6), 2085 – 2100 (2012)
+15. The ADHD-200 Consortium: a model to advance the translational potential of
+neuroimaging in clinical neuroscience. Front. Syst. Neurosci. 6(62) (2012)
+16. Watanabe, T., Kessler, D., Scott, C., Angstadt, M., Sripada, C.: Disease prediction based on functional connectomes using a scalable and spatially-informed
+support vector machine. NeuroImage 96(0), 183 – 202 (2014)
+17. Yeo, B., Krienen, F., Sepulcre, J., Sabuncu, M., Lashkari, D., Hollinshead, M.,
+Roffman, J., Smoller, J., Zöllei, L., Polimeni, J., Fischl, B., Liu, H., Buckner, R.:
+The organization of the human cerebral cortex estimated by intrinsic functional
+connectivity. J. Neurophysiol. 106(3), 1125–65 (2011)
+
+

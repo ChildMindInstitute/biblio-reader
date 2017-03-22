@@ -1,0 +1,565 @@
+Li
+ce
+ns
+e
+
+C
+om
+
+un
+de
+rC
+
+m
+
+o
+
+re
+
+itt
+m
+Pe
+r
+
+s
+on
+m
+C
+om
+
+e
+tiv
+
+re
+a
+
+de
+
+un
+
+ed
+
+se
+:U
+
+rs
+
+te
+
+Po
+s
+
+10
+00
+
+.F
+
+Po
+s
+
+ns
+e
+
+00
+
+ce
+
+.F
+10
+
+Li
+
+s
+
+on
+
+ns
+e
+
+m
+om
+C
+
+m
+
+re
+
+on
+s
+
+at
+iv
+
+e
+
+Li
+ce
+
+Friston KJ, et al., (2003). Neuroimage 19(4):1273-302.
+Daunizeau J, et al.,. (2009). Physica D 238(21):2089-2118.
+Raichle ME, et al., (2001). Proc Natl Acad Sci U S A. , 98(2):676-82.
+Greicius MD, et al., (2003). Proc Natl Acad Sci U S A 100(1):253-8.
+Biswal BB, et al., (2010). Proc Natl Acad Sci U S A. 107(10):4734-9.
+Calhoun VD, et al., (2001). Hum Brain Mapp 14(3):140-51.
+
+C
+
+om
+
+rC
+
+1.
+2.
+3.
+4.
+5.
+6.
+
+de
+
+e
+
+Acknowledgement
+
+re
+
+at
+iv
+
+This study was supported by a NIH grant 5R01AG032088.
+
+C
+
+un
+
+itt
+ed
+
+Pe
+r
+
+Po
+s
+00
+10
+
+e.
+F
+
+ce
+ns
+
+Li
+
+s
+on
+
+m
+om
+C
+e
+re
+at
+iv
+
+rC
+
+de
+
+un
+
+ed
+
+rm
+
+rC
+
+te
+
+rs
+
+.F
+ns
+e
+
+ce
+
+Li
+
+s
+
+on
+
+m
+
+om
+C
+e
+at
+iv
+
+• Fourier series can be used to model the low-frequency fluctuations in
+resting-state fMRI.
+• The usage of Fourier series enables the application of DCM to study
+resting-state network structures.
+• Modulations of the IPL to the MPFC and PCC are right lateralized.
+References:
+
+itt
+
+m
+
+Pe
+r
+
+se
+
+de
+un
+ed
+itt
+m
+
+Pe
+r
+
+se
+:U
+
+10
+
+s
+
+• The model with the best evidence is shown in Fig 5.
+• The connectivity from the right IPL to the MPFC and PCC were
+greater than the connectivity from the left IPL (F(1,62) = 7.251, MSE
+= 0.011, p = 0.009).
+
+re
+rC
+de
+un
+
+Pe
+
+se
+
+U
+
+s:
+
+te
+r
+
+U
+
+itt
+se
+:U
+rs
+te
+
+Po
+s
+
+00
+
+ce
+n
+
+Li
+
+Fig 5.
+
+on
+
+m
+
+om
+
+C
+
+iv
+e
+
+at
+
+itt
+ed
+
+rm
+
+• Resting-state data of 64 subjects from the 1000 Functional
+Connectomes Project was analyzed
+(http://fcon_1000.projects.nitrc.org/) (21 male, mean age 21.2 years)5.
+• 230 images were acquired for each subject using a TR of 2s. Scanning
+parameters can be found in the project website.
+• Preprocessing using SPM8 included motion correction, spatial
+normalization of the functional images via normalizing the anatomical
+image, and spatial smoothing using an 8mm Gaussian kernel.
+• Spatial independent component analysis was conducted to define the
+DMN using GIFT6.
+
+s:
+
+m
+Pe
+r
+
+Po
+s
+0
+00
+F1
+
+se
+.
+
+• Endogenous connectivity (A parameter) was manipulated to define the
+different network structures underlying the DMN (Fig 4).
+
+Conclusion
+
+Resting-state fMRI data and analysis
+
+st
+er
+
+rC
+
+m
+
+Pe
+r
+
+U
+
+te
+rs
+:
+
+10
+.F
+ns
+e
+ce
+Li
+s
+on
+
+re
+
+rC
+
+de
+un
+d
+
+itt
+e
+rm
+Pe
+
+se
+
+00
+
+Fig 4.
+
+• For a given periodic function such as lowfrequency fluctuation, it can be approximated
+by the sum of a set of sine and cosine
+periodic functions, which is called Fourier
+series (Fig 1).
+• The Fourier series (binarized) can be
+implemented in the general linear model to
+capture the low-frequency fluctuations in the
+resting-state (Fig 2).
+
+Po
+s
+
+C
+om
+rC
+
+de
+
+un
+
+ed
+
+itt
+
+Po
+st
+e
+
+• DCM models included four ROIs (the green circles in Fig 3A).
+• Eight Fourier series were set as inputs (C parameter) for all the four
+ROIs.
+
+Fourier series
+
+m
+C
+om
+e
+at
+iv
+C
+re
+er
+
+un
+d
+
+U
+
+se
+
+d
+
+e
+
+itt
+
+Pe
+rm
+
+rs
+:U
+se
+
+Dynamic causal modeling of the default mode network (DMN)
+
+• The regions whose variance can be highly captured by the Fourier
+series regressors resemble the default mode network (DMN) (Fig 3B).
+It overlapped with the DMN map obtained using an independent
+component analysis (ICA) (Fig 3A & 3C).
+
+10
+00
+
+re
+a
+
+• The four ROIs of the DMN were the medial prefrontal cortex (MPFC)
+(centered at 3, 54, -2), posterior cingulate cortex (PCC) (0, -52 26),
+left inferior parietal lobule (LIPL) (-50, -63, 32), and right IPL (RIPL)
+(48, -69, 35) (green circles in Fig 1A).
+
+rs
+
+te
+
+Po
+s
+
+00
+
+10
+
+.F
+
+ns
+e
+
+ce
+
+Li
+s
+
+on
+m
+om
+C
+
+e
+
+iv
+
+Raw and modeled time series
+
+Fig 3
+
+tiv
+
+ed
+
+:U
+
+Resting-state fMRI data and analysis (cont.)
+
+Modeling low-frequency fluctuations using Fourier Series
+
+Fig 2
+
+e
+
+rC
+
+un
+
+se
+
+00
+
+10
+
+.F
+
+ns
+e
+
+ce
+
+Li
+
+de
+
+Pe
+r
+
+Po
+s
+
+Department of Biomedical Engineering, New Jersey Institute of Technology, Newark, NJ, USA.
+
+• There is a growing interest to study brain network structures using
+dynamic causal modeling (DCM)1 in resting-state fMRI data.
+• It was suggested to model the spontaneous fluctuations as stochastic
+processes2. However, we suggest to explicitly model the lowfrequency fluctuation signals using Fourier series.
+• We aimed to use Fourier series to model the input of DCM, and study
+the network structure underlying the default mode network (DMN)3, 4.
+
+Fig 1
+
+tiv
+
+m
+
+te
+
+itt
+
+Xin Di (synge.x.d@gmail.com), Bharat B. Biswal
+
+Background
+
+s
+
+re
+a
+
+rs
+
+ed
+
+:U
+
+se
+
+Identifying the Default Mode Network Structure Using Dynamic Causal
+Modeling on Resting-state fMRI
+
+

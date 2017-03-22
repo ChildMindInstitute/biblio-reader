@@ -1,0 +1,820 @@
+Supplementary Online Content
+
+Uddin LQ, Supekar K, Lynch CJ, et al. Salience network–based classification and
+prediction of symptom severity in children with autism (published online June 26,
+2013). JAMA Psychiatry. doi:10.1001/jamapsychiatry.2013.104.
+
+eMaterial
+eReferences
+eFigure 1. Large-scale brain networks identified using independent component
+analysis (ICA): autism spectrum disorder (ASD) group. Data from 20 children
+with ASD were combined in a group ICA to identify 25 independent components
+(networks) across all participants in a data-driven manner. Ten of these
+components correspond to previously identified functional networks: salience (A),
+central executive (B), posterior default mode (C), ventral default mode (D),
+anterior default mode (E), dorsal attention (F), motor (G), visual association (H),
+primary visual (I), and frontotemporal (J). Maps are displayed at z > 2.3 (P < .01).
+eFigure 2. Large-scale brain networks identified using independent component
+analysis (ICA): typically developing (TD) group. Data from 20 TD children were
+combined in a group ICA to identify 25 independent components (networks)
+across all participants in a data-driven manner. Nine of these components
+correspond to previously identified functional networks: salience (A); central
+executive (B), posterior default mode (C), ventral default mode (D), anterior
+default mode (E), dorsal attention (F), motor (G), primary visual (H), and
+frontotemporal (I). Maps are displayed at z > 2.3 (P < .01).
+
+© 2013 American Medical Association. All rights reserved. 1
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eFigure 3. Brain network hyperconnectivity in children with autism spectrum
+disorder (ASD) scrubbed data. ASD greater than typically developing (TD)
+functional connectivity was observed in 6 of the 10 networks examined: salience
+(A), posterior default mode (B), frontotemporal (C), motor (D), visual association
+(E), and primary visual (F), even after removing individual frames with high
+motion. Group difference maps were thresholded using threshold-free cluster
+enhancement (P < .05).
+eFigure 4. Large-scale brain networks identified using independent component
+analysis (ICA): replication cohort. Data from 30 children (15 children with autism
+spectrum disorder and 15 typically developing children) were combined in a
+group ICA to identify 25 independent components (networks) across all
+participants in a data-driven manner. Thirteen of these components correspond
+to previously identified functional networks: anterior cingulate cortex salience (A),
+insula salience (B), bilateral central executive (C), right central executive (D), left
+central executive (E), posterior default mode (F), ventral default mode (G),
+anterior default mode (H), dorsal attention (I), motor (J), visual association (K),
+primary visual (L), and frontotemporal (M). Maps are displayed at z > 2.3 (P <
+.01).
+eFigure 5. Brain network hyperconnectivity in children with autism spectrum
+disorder (ASD): replication cohort. ASD greater than typically developing (TD)
+functional connectivity was observed in all of the networks examined: anterior
+cingulate cortex salience (A), insula salience (B), bilateral central executive (C),
+right central executive (D), left central executive (E), posterior default mode (F),
+© 2013 American Medical Association. All rights reserved. 2
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+central default mode (G), anterior default mode (H), dorsal attention (I), motor (J),
+visual association (K), primary visual (L), and frontotemporal (M). A few
+extranetwork voxels were observed in 2 networks: bilateral central executive (N)
+and anterior default mode (O) for the TD greater than ASD contrast. Group
+difference maps were thresholded using threshold-free cluster enhancement (P <
+.05).
+eTable. Additional Participant Demographics
+
+This supplementary material has been provided by the authors to give readers
+additional information about their work.
+
+© 2013 American Medical Association. All rights reserved. 3
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eMaterial
+Materials and Methods
+Group matching algorithm
+The TD cohort was selected by a customized matching algorithm from a larger
+sample of TD children who were part of an ongoing study at Stanford University. One of
+the co-authors (K.S.) developed an optimization method that uses the general properties
+of the experimental group in order to select a well-matched sample of TD individuals
+through the principles of genetic algorithms. For this study, the TD cohort was selected to
+be matched to the ASD group on age, full scale IQ and gender ratio as follows. Given the
+relevant criteria of the experimental group (in our case, gender ratio, age, and full-scale
+IQ mean and standard deviation of the ASD group), the algorithm randomly creates
+10,000 combinations of 20 individuals each (i.e. the size of the experimental group) and
+computes a fitness score (as intended by genetic algorithms and thereby in biological
+terms) for each of the created combinations. The fitness score is then entered into a ruler
+probability distribution to find, using crossing-over on the pairs that best matched a
+subset of participants (i.e. how well the fitness score of each of the created combinations
+matches the original criteria), the optimal TD group. This algorithm is designed to be less
+biased than most common matching criteria (i.e. one to one matching) which make the
+assumption that each individual in the experimental population is identical to their control
+subject with the only exception that the latter does not present a clinical characteristic
+(e.g. ASD).
+fMRI data preprocessing
+
+© 2013 American Medical Association. All rights reserved. 4
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+A linear shim correction was applied separately for each slice during
+reconstruction using a magnetic field map acquired automatically by the pulse sequence
+at the beginning of the scan.1 Functional MRI data were then analyzed using SPM8
+analysis software (http://www.fil.ion.ucl.ac.uk/spm). Images were realigned to correct for
+motion, corrected for errors in slice-timing, spatially transformed to standard stereotaxic
+space (based on the Montreal Neurologic Institute (MNI) coordinate system), resampled
+every 2 mm using sinc interpolation and smoothed with a 6mm full-width half-maximum
+Gaussian kernel to decrease spatial noise prior to statistical analysis. Translational
+movement in millimeters (x, y, z) and rotational motion in degrees (pitch, roll, yaw) was
+calculated based on the SPM8 parameters for motion correction of the functional images
+in each subject. In both groups, average movement was less than 0.5 mm root mean
+square (RMS), and RMS values did not differ between children with ASD and TD
+children (ASD: 0.3  0.2; TD: 0.4  0.3, p > 0.5). No subject displayed greater than 5mm
+translational motion or greater than 5 degrees rotational motion (ASD: range x = 0.58 
+0.64, range y = 0.80  0.55, range z = 1.75  1.21, range pitch =1.74  0.94, range roll =
+0.84  0.57, range yaw = 0.63  0.52; TD range x = 0.53  0.33, range y = 0.89  0.93,
+range z = 1.58  1.35, range pitch = 1.72  1.26, range roll = 0.86  0.81, range yaw =
+0.75  0.68, all p > 0.5).
+Dual regression ICA
+Independent component analysis (ICA) is a model-free, data-driven approach
+whereby four-dimensional fMRI data is decomposed into a set of independent onedimensional time series and associated three-dimensional spatial maps, which describe
+
+© 2013 American Medical Association. All rights reserved. 5
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+the temporal and spatial characteristics of the underlying signals or components.2 In the
+dual regression approach (http://www.fmrib.ox.ac.uk/analysis/dualreg/), preprocessed
+data from all participants are first entered into a group ICA to identify large-scale patterns
+of functional connectivity in the population. In the current study, we decomposed the data
+into 25 independent components and selected ten components corresponding to
+previously described functional networks, as described.
+Next, the dual-regression algorithm was applied to identify subject-specific time
+courses and spatial maps. This procedure employs a set of ICA spatial maps derived from
+the initial group ICA in a linear model fit against each individual fMRI dataset, resulting
+in matrices describing the temporal dynamics of the corresponding networks for each
+subject. The time course matrices are normalized by their variance and used in a linear
+model fit against each individual fMRI dataset. This temporal regression results in
+subject-specific spatial maps that reflect degree of synchronization (both amplitude and
+coherence across space3,4). The different synchronization maps were then collected across
+subjects into 4D files (one per original ICA map), and submitted to voxel-based statistical
+testing using nonparametric permutation testing.5 Group difference maps from this
+statistical testing were thresholded at the p < 0.05 level, as described in the text.
+Background: Sparse linear classification and regression
+In this study we used sparse logistic regression for classification and sparse linear
+regression for exploring relationships between brain networks and ASD symptom
+severity. We used the Matlab package GLMnet (http://wwwstat.stanford.edu/~tibs/glmnet-matlab) to implement these two methods. First, we used a
+
+© 2013 American Medical Association. All rights reserved. 6
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+sparse logistic regression classifier to classify children with ASD and TD children using
+network measures derived from dual regression. Next, we applied sparse linear regression
+to investigate whether measures of network connectivity predict symptom severity in
+ASD. In this study, conventional methods for classification and regression would have
+resulted in over-fitting because the predictors (number of voxels within each network)
+outnumber the available observations (number of subjects). The sparse methods that we
+used in this study overcome this problem by using regularization. Using GLMnet one can
+apply either lasso (or L1-norm) or elastic net (a combination of L1 and L2-norm)
+regularization.6 This regularization not only overcomes the problem of over-fitting but
+also provides sparse solutions, which will be useful in finding brain regions that
+discriminate between ASD and TD children in the case of classification and the brain
+regions that predict symptom severity in ASD. In the current study, we applied sparse
+methods with lasso regularization to avoid over-fitting and were not intending to identify
+specific brain regions within networks. The lasso penalty (L1-norm), which we used here
+is not suitable for identifying specific voxels in the brain in cases like ours, wherein the
+predictors outnumber the observations. In such situations, this approach has the
+following limitations7:
+(a) When the number of predictors (p) is larger than the number of observations (N),
+lasso can at most discover N predictors.
+(b) If the pairwise correlations between the predictors are high (which is generally
+true in neuroimaging data because of high spatial correlations) lasso tends to
+select only one predictor among the relevant predictors. Lasso regularization does
+
+© 2013 American Medical Association. All rights reserved. 7
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+not care which one is selected, and also the selected predictor can vary if the
+algorithm is run multiple times.
+Therefore, discovering specific brain regions within networks in these two analyses is not
+reliable using lasso regularization. However, these two limitations can be overcome by
+using elastic net regularization. Elastic net regularization is more suitable in cases where
+identifying specific brain regions is the main focus of the study. Future work will explore
+such regularization approaches.
+Network-based classification: Logistic regression with lasso regularization
+The ten components identified from each individual subject by the dual regression
+analysis served as features to be input into classification analyses. For these analyses,
+individual subject maps for each network were masked with the corresponding network
+originally derived from the group ICA (thresholded at z > 4.3, p < 0.0001). For
+classification, we used a logistic regression classifier with lasso regularization. We used
+the Matlab package GLMnet (http://www-stat.stanford.edu/~tibs/glmnet-matlab) to fit the
+classifier. We estimated the classification accuracy using a Leave-One-Out Cross
+Validation (LOOCV) procedure. In LOOCV, data are divided into N folds (here, N = 40).
+A classifier is built using N-1 folds, leaving out one sample. The left out sample is then
+classified using this classifier, and the classification accuracy is noted. The above
+procedure is repeated N times by leaving out one sample each time, and finally an
+average classification accuracy is computed on left out folds. This value is termed cross
+validation accuracy, which we report alongside sensitivity, specificity, PPV and NPV for
+each of the ten networks. Permutation tests (10,000 permutations of class labels for each
+
+© 2013 American Medical Association. All rights reserved. 8
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+network) were conducted to arrive at p-values associated with classification accuracies
+for each network.
+To test whether the classifier developed based on the current dataset could
+generalize to a novel dataset, we conducted a dual regression analysis on an independent
+dataset (ASD n = 15, TD n = 15) obtained from publicly available databases (described
+below). Using the salience network template from the original dataset, dual regression
+was performed on the independent dataset to derive features for classification analyses.
+Results
+Comparable large-scale brain networks in children with ASD and TD children examined
+separately
+In order to compare brain networks between two groups, it is necessary that the
+networks of interest should be present in both groups separately for meaningful
+comparisons to be carried out. To confirm that the ASD and TD groups each separately
+contained the networks present in the group ICA merging all datasets together (ASD +
+TD, Figure 1), we conducted separate ICA analyses of the ASD and TD groups. These
+analyses suggest that the networks are indeed comparable in ASD and TD. With the
+exception of the visual association network, which was absent in the TD group, all other
+networks of interest were observed in the ASD and TD groups separately. It is also worth
+noting that the dorsal attention network appeared slightly different in terms of spatial
+extent in the ASD and TD groups analyzed separately (eFigure 1, eFigure 2).
+Robustness of findings to motion artifacts
+It has recently been demonstrated that subject motion can induce spurious
+correlation structures in resting state fMRI.8 We applied the “data scrubbing” method
+
+© 2013 American Medical Association. All rights reserved. 9
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+proposed by Power and colleagues to ensure that motion artifacts were not contributing to
+the group differences we observed. Prior to the dual regression step, for each participant,
+volumes with framewise displacement greater than 0.5 mm and derivative variance
+greater than 0.5% of BOLD signal were identified and excluded, using the parameters
+proposed in Power et al.8 As can be seen in eFigure 3, the group difference results are
+not changed by the scrubbing procedure. Of note, in addition to the ASD > TD findings
+we originally report, the scrubbing analysis uncovers an additional ASD > TD finding in
+the dorsal attention network (albeit a very small cluster, not shown). This analysis
+confirms the robustness of our initial findings.
+Replication Analyses
+Fifteen children with ASD and 15 age-, gender-, and IQ-matched TD children
+were identified from public domain research data repositories. Specifically, children with
+ASD were identified by querying the National Database for Autism Research repository
+(NDAR; http://ndar.nih.gov) using the following query parameters: age 7-13; phenotype
+ASD; resting state fMRI data present. This query yielded 15 children with ASD (11 male,
+4 female) ranging in age from 8 to 13 years (10.38  1.34) with a full-scale IQ range of
+73 to 132 (98.6  18.8). Notably, all of the subjects identified belong to one collection
+submitted by F. Xavier Castellanos at New York University. This collection did not
+include data from TD children. To address this issue, we queried the ADHD200 dataset
+(http://fcon_1000.projects.nitrc.org/indi/adhd200/) which contains resting state fMRI data
+from TD children and children with attention-deficit/hyperactivity disorder (ADHD)
+across 8 different sites including Dr. Castellanos’ lab at NYU. The query parameters
+were: site NYU, age 7-13, phenotype TD, resting state fMRI data present. The query
+
+© 2013 American Medical Association. All rights reserved. 10
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+yielded 60 TD children. We used an in-house matching algorithm (described above,
+Group matching algorithm) to select a subset of 15 TD children such that the mean age,
+mean full-scale IQ, and gender distribution were matched to the ASD group. The
+algorithm identified a well-matched subset of 15 TD children (11 males, 4 females)
+ranging in age from 7 to 13 years (10.23  1.65) with an IQ range of 80 to 142 (107 
+18.2). Note that IQ data were available for 12 out of 15 children with ASD in this cohort,
+and ADOS and ADI data were available for 10 out of 15 (ADOS Social: 6.8 ± 1.3;
+ADOS Comm: 3.3 ± 1.5; ADI-A: 17.3 ± 5.1; ADI-B: 14 ± 2.8; ADI-C: 3.2 ± 1.3).
+Data analysis was conducted in an identical manner to that described in the main
+manuscript in terms of preprocessing and dual regression ICA. We observed 13
+components of interest in the combined group ICA of this independent dataset (eFigure
+4). Some of the components initially observed in the original dataset were shown to split
+in the replication dataset. Specifically, the salience network appeared to split into separate
+anterior cingulate and anterior insular components, while the central executive network
+could be see as separate right and left components. In all of these components, ASD > TD
+connectivity was observed (eFigure 5). A few extra-network voxels were observed in
+two networks for the TD > ASD contrast.
+Using the classifier built from the original data, we next tested whether ASD and
+TD could be discriminated in the independent dataset. For the salience network, 83%
+accuracy with 67% sensitivity and 100% specificity (PPV 100%, NPV 75%) was
+observed.
+
+© 2013 American Medical Association. All rights reserved. 11
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eReferences
+1.
+2.
+
+3.
+4.
+
+5.
+6.
+
+7.
+8.
+
+Glover GH, Law CS. Spiral-in/out BOLD fMRI for increased SNR and reduced
+susceptibility artifacts. Magn Reson Med. 2001;46(3):515-522.
+Beckmann CF, DeLuca M, Devlin JT, Smith SM. Investigations into resting-state
+connectivity using independent component analysis. Philos Trans R Soc Lond B
+Biol Sci. 2005;360(1457):1001-1013.
+Roosendaal SD, Schoonheim MM, Hulst HE, et al. Resting state networks change
+in clinically isolated syndrome. Brain. 2010;133(pt 6):1612-1621.
+Westlye ET, Lundervold A, Rootwelt H, Lundervold AJ, Westlye LT. Increased
+hippocampal default mode synchronization during rest in middle-aged and elderly
+APOE epsilon4 carriers: relationships with memory performance. J Neurosci.
+2011;31(21):7775-7783.
+Nichols TE, Holmes AP. Nonparametric permutation tests for functional
+neuroimaging: a primer with examples. Hum Brain Mapp. Jan 2002;15(1):1-25.
+Hastie T, Tibshirani R, Friedman J. The Elements of Statistical Learning: Data
+Mining, Inference, and Prediction. Vol Second Edition. New York, NY: Springer;
+2009.
+Zou H, Hastie T. Regularization and variable selection via the elastic net. J R Stat
+Soc B. 2005;67(2):301-320.
+Power JD, Barnes KA, Snyder AZ, Schlaggar BL, Petersen SE. Spurious but
+systematic correlations in functional connectivity MRI networks arise from
+subject motion. Neuroimage. 2012;59(3):2142-2154.
+
+© 2013 American Medical Association. All rights reserved. 12
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eTable. Additional Participant Demographics
+ADOSS
+
+ADOSC
+
+5
+
+2
+
+ADIA
+
+ADIB
+
+ADIC
+
+Fullscale
+IQ
+
+Current
+Medication
+Status
+
+ASD
+1
+26
+
+20
+
+6
+
+98
+
+ASD
+2
+
+Claritin,
+Benadryl for
+allergies
+
+DSM-IV
+ADHD
+Problems
+Clinical
+Range
+
+DSM-IV
+Anxiety
+Problems
+Borderline
+Clinical
+Range
+
+Normal
+Range
+
+Normal
+Range
+
+Normal
+Range
+
+Normal
+Range
+
+11
+
+7
+
+24
+
+14
+
+8
+
+94
+
+ASD
+3
+
+7
+
+2
+
+10
+
+6
+
+2
+
+111
+
+ASD
+4
+
+9
+
+4
+
+19
+
+16
+
+2
+
+137
+
+Sertraline,
+Risperidone
+
+Clinical
+Range
+
+Clinical
+Range
+
+105
+
+Zyrtec,
+Claratin for
+allergies
+
+Normal
+Range
+
+Borderline
+Clinical
+Range
+
+78
+
+Clinical
+Range
+
+Borderline
+Clinical
+Range
+
+100
+
+Normal
+Range
+
+Clinical
+Range
+
+98
+
+Normal
+Range
+
+Normal
+Range
+
+Normal
+Range
+
+Clinical
+Range
+
+Normal
+Range
+
+Borderline
+Clinical
+Range
+
+Normal
+Range
+
+Clinical
+Range
+
+ASD
+5
+7
+
+2
+
+24
+
+21
+
+6
+
+ASD
+6
+7
+
+6
+
+ASD
+7
+ASD
+8
+
+5
+
+3
+
+21
+
+22
+
+27
+
+20
+
+29
+
+23
+
+11
+
+7
+
+ASD
+9
+11
+
+5
+
+18
+
+16
+
+9
+
+112
+
+Zithromax
+10 mg/
+Lexapro 5
+mg
+
+ASD
+10
+8
+
+2
+
+23
+
+18
+
+3
+
+127
+
+ASD
+11
+
+ASD
+12
+
+Citalopram
+for social
+anxiety/
+shyness
+
+11
+
+5
+
+16
+
+10
+
+6
+
+97
+
+10
+
+5
+
+26
+
+22
+
+6
+
+141
+
+Normal
+Range
+
+Clinical
+Range
+Borderline
+Clinical
+Range
+
+ASD
+13
+ASD
+14
+
+8
+
+3
+
+25
+
+20
+
+7
+
+127
+
+Normal
+Range
+
+8
+
+2
+
+13
+
+11
+
+3
+
+124
+
+Normal
+Range
+
+Borderline
+Clinical
+
+© 2013 American Medical Association. All rights reserved. 13
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+Range
+ASD
+15
+
+ASD
+16
+
+Borderline
+Clinical
+Range
+
+Normal
+Range
+
+Normal
+Range
+
+Clinical
+Range
+
+Concerta
+and
+Methylin
+
+Clinical
+Range
+
+Borderline
+Clinical
+Range
+
+113
+
+Zyrtec
+
+Normal
+Range
+
+Borderline
+Clinical
+Range
+
+123
+
+Singulair,
+zyrtec
+
+Normal
+Range
+
+Borderline
+Clinical
+Range
+
+Tenex for
+tics
+(Tourette's)
+
+Normal
+Range
+
+Clinical
+Range
+
+4
+
+3
+
+17
+
+8
+
+6
+
+114
+
+9
+
+5
+
+21
+
+11
+
+6
+
+107
+
+ASD
+17
+10
+
+2
+
+19
+
+16
+
+10
+
+Adderall,
+Celexa,
+Risperidone,
+Invega
+
+148
+
+ASD
+18
+10
+
+4
+
+22
+
+19
+
+4
+
+ASD
+19
+6
+
+3
+
+18
+
+15
+
+4
+
+ASD
+20
+9
+
+3
+
+10
+
+10
+
+5
+
+97
+
+© 2013 American Medical Association. All rights reserved. 14
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eFigure 1.
+
+© 2013 American Medical Association. All rights reserved. 15
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eFigure 2.
+
+© 2013 American Medical Association. All rights reserved. 16
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eFigure 3.
+
+© 2013 American Medical Association. All rights reserved. 17
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eFigure 4.
+
+© 2013 American Medical Association. All rights reserved. 18
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+eFigure 5.
+
+© 2013 American Medical Association. All rights reserved. 19
+Downloaded From: http://jamanetwork.com/pdfaccess.ashx?url=/data/journals/psych/927391/ on 03/21/2017
+
+

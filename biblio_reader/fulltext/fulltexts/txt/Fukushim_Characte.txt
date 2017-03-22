@@ -1,0 +1,2592 @@
+Characterizing Spatial Patterns and Flow Dynamics in Functional
+Connectivity States and Their Changes across the Human Lifespan
+Makoto Fukushima1 , Richard F. Betzel1,2 , Ye He3 , Xi-Nian Zuo3 , Olaf Sporns1,4
+1 Department
+
+of Psychological and Brain Sciences, Indiana University, Bloomington, Indiana 47405
+of Bioengineering, University of Pennsylvania, Philadelphia, Pennsylvania 19104
+3 Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing, China
+4 Indiana University Network Science Institute, Bloomington, Indiana 47405
+
+arXiv:1511.06427v1 [q-bio.NC] 19 Nov 2015
+
+2 Department
+
+Corresponding author at: Department of Psychological and Brain Sciences, Indiana University, 1101 East
+10th Street, Bloomington, Indiana 47405.
+Email address: osporns@indiana.edu (Dr. Olaf Sporns)
+
+Abstract
+Functional connectivity (FC) measured over extended time periods of resting-state functional magnetic resonance imaging (static FC) has proven useful for characterizing individual differences in human brain function
+and dysfunction. Recent studies have shown that resting-state FC varies over time scale of tens of seconds
+(dynamic FC), exhibiting characteristic patterns of temporal variability in FC and transition dynamics of
+short-lived FC configurations, known as ”FC states.” However, fundamental properties of FC states, such as
+their network topology and the dynamics of state transitions, or dynamic FC ”flow” between states, as well as
+their relations to static FC, are relatively unexplored. Here we investigated these basic properties of FC states
+in humans and assessed how our characterization helps in uncovering individual age-related differences in
+dynamic FC across the lifespan. We found that dynamic FC was broadly classified into two characteristic FC
+states with a large propotion of weak FC (flat state) and strong FC exhibiting modular connectivity patterns
+(modular state), and other states representing their mixtures. These flat and modular FC states were largely
+constrained by the level of modularity present in static FC. Age-related differences in dynamic FC became
+evident when we focused on the dynamic flow between the flat and modular FC states in sets of subjects
+that were expressing lower levels of static FC modularity. These results contribute to our basic understanding of FC dynamics and suggest that classification of FC states can contribute to the detection of individual
+differences in dynamic brain organization.
+
+Significance Statement
+Recent studies have shown that functional couplings among brain regions vary over time, and these functional
+connectivity dynamics may offer unique opportunities for uncovering individual differences in brain function
+and dysfunction. However, many basic properties of functional connectivity dynamics have remained elusive
+so far. Here, we investigated the topology and flow dynamics of transient functional connectivity patterns or
+states, and examined their potential for detecting individual differences. We show that taking into account
+1
+
+the long-time average of functional connectivity can aid in uncovering individual differences in the incidence
+and flow of brief dynamic functional connectivity states over the human lifespan. Our study suggests that
+dynamic functional connectivity may indeed reveal significant individual variation in brain dynamics.
+
+Introduction
+The human brain can be represented as a network (Bullmore and Sporns, 2009; Sporns, 2011), in which
+structural white matter pathways support integration of information between functionally segregated regions
+and modules (van den Heuvel and Sporns, 2013). Functional modules observed in spontaneous brain activity
+(intrinsic connectivity networks; ICNs) exhibit consistent functional coupling patterns (Damoiseaux et al.,
+2006; Fox and Raichle, 2007). The functional connectivity (FC) defining these ICNs is typically measured
+as cross-correlation of fluctuations in the blood oxygenation level dependent (BOLD) signal, obtained from
+5–10 minutes of resting-state functional magnetic resonance imaging (rs-fMRI) scans (static FC). The FC
+observed with rs-fMRI has been successfully used for characterizing individual differences in brain organization, e.g., across clinical and control populations (Craddock et al., 2009; Lynall et al., 2010) or over
+development/lifespan (Zuo et al., 2010; Cao et al., 2014; Betzel et al., 2014; Chan et al., 2014).
+Recent studies have shown that resting-state FC exhibits significant variations on a time scale of tens
+of seconds (Chang and Glover, 2010; Handwerker et al., 2012; Hutchison et al., 2013b; for a review, see
+Hutchison et al., 2013a). This time-varying or dynamic FC has been characterized with temporal variability
+of FC estimated at each connection (e.g., Zalesky et al., 2014) or with transition dynamics between a small
+set of brief FC patterns, known as FC states, believed to be stable for short periods of time and reproducible
+across time and subjects (Allen et al., 2014). There is growing interest in using these features of dynamic
+FC to express individual differences in brain dynamics, which may uncover relations between temporal
+fluctuation of FC and brain function supporting behavior (Calhoun et al., 2014).
+Dynamic FC has been investigated in a variety of studies. For instance, at the level of individual connections, it was shown that temporal variability of FC is related to changes in cognitive states (Kucyi and Davis,
+2014), differs depending on the location or type of connections (Gonzalez-Castillo et al., 2014; Zalesky et
+al., 2014; Shen et al., 2015), and is to some extent constrained by static FC (Thompson and Fransson, 2015;
+Betzel et al., submitted). At the level of connectivity patterns, transient FC states are associated with consciousness level and structural brain connectivity (Barttfeld et al., 2015), neuropsychiatric disorders (Damaraju et al., 2014), development (Hutchison and Morton, 2015), and ongoing cognition (Gonzalez-Castillo et
+al., 2015). However, fundamental properties of FC states themselves, such as the topology of the states and
+the dynamics of state transitions (or ”flow” of dynamic FC between states), remain relatively unexplored.
+Importantly, previous studies have not taken into account how the static FC constrains the topological patterns and flow dynamics in FC states. Since both dynamic and static FC are estimated from identical time
+series, these spatiotemporal properties of FC states are likely partially constrained by the static FC, as is the
+case with the variability of FC at the level of individual connections. If so, then taking into account individual variations found in static FC may allow more sensitive detection of significant individual differences in
+FC state profiles.
+The present study was aimed at characterizing the spatial patterns and flow dynamics in FC states and
+their individual differences. We found that these patterns and flow were related to the static FC, and this
+2
+
+relation was then used to differentiate individual differences in properties of FC states. Using publicly
+available human lifespan rs-fMRI data (286 subjects; age range, 9.1–83.2 years), we show that dynamic
+FC can be classified into non-modular (”flat”) and modular FC states and their mixtures. We demonstrate
+that the incidence of the flat and modular FC states and the temporal flow between these FC states strongly
+depend on the level of modularity present in static FC. Finally, by taking into account the variability of static
+FC, we uncover individual differences in FC state patterns and flow across the lifespan.
+
+Materials and Methods
+Data set
+All the data analyzed in this study were from Releases 1–5 of the enhanced Nathan Kline Institute-Rockland
+Sample (NKI-RS Lite Releases: http://fcon_1000.projects.nitrc.org/indi/enhanced/
+download.html). The data were collected with the approval of the institutional review board with written
+informed consent provided by all subjects (Nooner et al., 2012).
+
+Subject cohort
+The total number of subjects in the five releases of the enhanced NKI-RS was 418. Subjects with psychiatric
+diagnoses based on the Diagnostic and Statistical Manual of Mental Disorders, Fourth Edition (DSM-IV), or
+with incomplete multimodal data were excluded from subsequent analyses. In addition, subjects with lowquality images were excluded using criteria incorporated into the Connectome Computation System pipeline
+(CCS; http://lfcd.psych.ac.cn/ccs.html; see Xu et al., 2015 for the detailed procedure of
+excluding subjects). This resulted in preprocessed rs-fMRI and diffusion MRI (dMRI) datasets from 316
+and 285 individuals, respectively. Since dynamic FC is sensitive to subject head motion (Hutchison et al.,
+2013a), we further discarded rs-fMRI data of 30 subjects by adopting a strict motion threshold; i.e., subjects
+were excluded if the temporal mean of the framewise displacement (FD; Power et al., 2012) was higher than
+0.1 mm (here FD was computed using the l2 norm of the six rotation and translation parameter differences in
+motion correction, as described by Patriat et al., 2013). The final number of subjects in the rs-fMRI dataset
+was 286 [101 males; age range, 9.1–83.2 years; median age (interquartile range: IQR), 46.0 (35.5) years]
+and the number of subjects in the dMRI dataset was 285 [96 males; age range, 8.3–83.4 years; median age
+(IQR), 47.3 (36.3) years].
+
+Image acquisition
+Imaging data were acquired using a 3 T Siemens Tim Trio scanner with a 32-channel head coil. As fast
+sampling of rs-fMRI volumes is advantageous when focusing on dynamic FC, we utilized the rs-fMRI dataset
+with the shortest repetition time (TR) of 645 ms with the following scanning parameters: echo time (TE)
+= 30 ms, flip angle = 60◦ , voxel size = 3 mm isotropic, field of view (FOV) = 222 × 222 mm2 , and 40
+slices (details of the MRI protocol are listed in http://fcon_1000.projects.nitrc.org/indi/
+enhanced/mri_protocol.html). The rs-fMRI data were collected for about 10 min (900 time points)
+in an eyes open condition. The dMRI data were acquired with TR = 2400 ms, TE = 85 ms, voxel size = 2
+
+3
+
+mm isotropic, FOV = 212 × 212 mm2 , and 64 slices. The total number of dMRI volumes was 137, which
+included 128 volumes with an effective mean b-value of 1500 s/mm2 with different gradient directions and
+9 interleaved low diffusion volumes (b0 images) with a b-value of 5 s/mm2 with the same gradient direction.
+A T1-weighted structural image was collected with TR = 1900 ms, TE = 2.52 ms, flip angle = 9◦ , voxel
+size = 1 mm isotropic, FOV = 250 × 250 mm2 , and 176 slices. This structural image was used for spatial
+registration and normalization.
+
+Image preprocessing
+The acquired images were preprocessed using the CCS pipeline, which incorporates functions of standard
+neuroimaging software: AFNI (Cox, 2012), Diffusion Toolkit (Wang et al., 2007), Freesurfer (Fischl, 2012),
+FSL (Jenkinson et al., 2012), and SPM (Ashburner, 2012). The preprocessing steps of rs-fMRI included (1)
+discarding the first volumes of 10 s, (2) removing and interpolating temporal spikes, (3) slice timing and
+motion correction, (4) 4D global mean intensity normalization, (5) co-registration between individual functional and structural images, (6) regressing out the global, white matter, and cerebrospinal fluid mean signals
+and Friston-24 motion time series (Friston et al., 1996), (7) temporal band-pass filtering (0.01–0.1 Hz), (8)
+removal of linear and quadratic trends, and (9) projection of the preprocessed 4D time series onto standard
+volumetric (MNI152) and cortical surface (fsaverage5) spaces. The dMRI preprocessing included (1) correction for eddy current distortions, (2) realignment of all images to the mean of b0 images, (3) diffusion tensor
+fitting at each voxel, (4) computation of fractional anisotropy (FA) value in each voxel, (5) deterministic
+streamline tracking using the FACT algorithm (Mori et al., 1999), and (6) co-registration between diffusion
+and structural images. Details of the preprocessing steps of rs-fMRI and dMRI are described in Xu et al.
+(2015).
+
+Cortical parcellation
+As we focus on the dynamics of FC within and between ICNs, we used a reliable functional cortical parcellation defined based on the similarity of intrinsic FC profiles in 1000 subjects (Yeo et al., 2011). The whole
+cortex was separated into 114 regions of interest (ROIs) as a subdivision of 17 network components in Yeo’s
+parcellation (Fig. 1 and Table 1; also see Betzel et al., 2014). The rs-fMRI time series from one ROI (dorsal
+prefrontal cortex in the left hemisphere, numbered 84 in Fig. 1) was discarded due to its small surface area.
+The remaining 113 ROIs were used as nodes of functional and structural networks.
+
+FC metric and dynamic FC computation
+As a metric of FC, we used the z-transformed Pearson correlation between pairs of rs-fMRI time series
+averaged within each cortical ROI. The static FC was estimated using this metric computed from the total
+duration of the time series. The dynamic FC was obtained by computing the correlation matrices with a
+sliding window approach (Cs in Fig. 2A). We used a tapered window approach with windowing parameters
+similar to those adopted in Allen et al. (2014). Specifically, the tapered window was created by convolving a
+rectangle (width = 66 TRs = 42.6 s) with a Gaussian kernel (σ = 9 TRs = 5.8 s) and was moved in steps of
+3 TRs = 1.9 s, resulting in the number of windows = 268. To assess the reproducibility of brief FC patterns,
+
+4
+
+Left hemisphere (LH)
+84 82
+Lateral
+59
+133
+29 38
+14
+61 98
+
+Control network
+(CONT)
+95
+
+54
+60 2
+37
+12
+27
+85
+74
+4
+36
+30
+45
+5
+75 100
+53
+51
+15
+97
+105
+62
+39 87 72
+55
+6
+17
+40
+83
+99
+67
+Medial
+60
+95
+24
+73
+16
+37
+71
+28
+86
+23
+110
+1
+47
+111
+30
+109
+106
+69
+46
+105
+67
+
+Right hemisphere (RH)
+90
+
+Lateral
+96
+57
+
+63
+
+64
+8
+
+112
+70
+
+49
+68
+
+LH_A_Cinga
+LH_A_IPS
+LH_A_PFCd
+LH_A_PFCl
+LH_A_PFClv
+LH_A_Temp
+RH_A_Cinga
+RH_A_IPS
+RH_A_PFCd
+RH_A_PFCl
+RH_A_Temp
+LH_B_IPL
+LH_B_PFCd
+LH_B_PFCl
+LH_B_PFClv
+LH_B_PFCmp
+LH_B_Temp
+RH_B_IPL
+RH_B_PFCld
+RH_B_PFClv
+RH_B_PFCmp
+RH_B_Temp
+LH_C_Cingp
+LH_C_pCun
+RH_C_Cingp
+RH_C_pCun
+
+LH_C_IPL
+LH_C_PHC
+LH_C_Rsp
+RH_C_IPL
+RH_C_PHC
+RH_C_Rsp
+LH_D_TempPar
+RH_D_TempPar
+
+Dorsal attention
+network (DAN)
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+
+LH_A_ParOcc
+LH_A_SPL
+LH_A_TempOcc
+RH_A_ParOcc
+RH_A_SPL
+RH_A_TempOcc
+LH_B_FEF
+LH_B_PostC
+LH_B_PrCv
+LH_B_TempOcc
+RH_B_FEF
+RH_B_PostC
+RH_B_PrCv
+RH_B_TempOcc
+
+Limbic system
+(LIM)
+
+19
+9
+
+33
+80
+19
+18
+102
+65
+91
+79
+48 31
+10
+104 81
+107 56
+20
+43
+66 52 101
+77 94
+58 11 44
+92
+22 35
+41 103
+68
+64
+90
+Medial
+96
+57
+78
+26
+21
+42
+76
+32
+93
+25
+113
+7
+88
+50
+34
+114
+89
+
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+
+45
+46
+47
+48
+49
+50
+51
+52
+
+108
+107
+
+Default mode
+network (DMN)
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+
+67
+68
+69
+70
+
+LH_A_TempPole
+RH_A_TempPole
+LH_B_OFC
+RH_B_OFC
+
+LH_A_IPL
+LH_A_PCC
+LH_A_PFCd
+LH_A_PFCm
+Saliency/ventral
+RH_A_IPL
+attention network
+RH_A_PCC
+(VAN)
+RH_A_PFCd
+RH_A_PFCm
+71 LH_A_FrMed
+RH_A_Temp
+72 LH_A_Ins
+LH_B_IPL
+73 LH_A_ParMed
+LH_B_PFCd
+74 LH_A_ParOper
+75 LH_A_PrCv
+LH_B_PFCl
+LH_B_PFCv
+76 RH_A_FrMed
+LH_B_Temp
+77 RH_A_Ins
+RH_B_AntTemp 78 RH_A_ParMed
+RH_B_PFCd
+79 RH_A_ParOper
+80 RH_A_PrC
+RH_B_PFCv
+RH_B_Temp
+81 RH_A_PrCv
+
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+
+LH_B_IPL
+LH_B_OFC
+LH_B_PFCd
+LH_B_PFCl
+LH_B_PFCmp
+LH_B_PFCv
+RH_B_Cinga
+RH_B_IPL
+RH_B_PFCd
+RH_B_PFCl
+RH_B_PFClv
+RH_B_PFCmp
+RH_B_PFCv
+
+Somato-motor
+network (SMN)
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+
+LH_A
+RH_A
+LH_B_Aud
+LH_B_Cent
+LH_B_Ins
+LH_B_S2
+RH_B_Aud
+RH_B_Cent
+RH_B_Ins
+RH_B_S2
+
+Visual network
+(VIS)
+Central
+105 LH_ExStr
+106 LH_Striate
+107 RH_ExStr
+108 RH_Striate
+Peripheral
+109 LH_ExStrInf
+110 LH_ExStrSup
+111 LH_Striate
+112 RH_ExStrInf
+113 RH_ExStrSup
+114 RH_Striate
+
+Figure 1: Cortical ROIs projected onto the left and right cortical surfaces. The numbers placed in the surfaces
+are associated with the numbered ROI names shown in the right columns (for abbreviations, see Table 1).
+The order of numbers corresponds to the order of nodes in FC matrices shown in subsequent figures.
+we computed dynamic FC also with a different windowing approach, wherein an exponential decay window
+was used (Zalesky et al., 2014) with a window width of 100 s and a step size of 1 TR.
+
+FC state extraction
+To extract brief FC patterns (i.e., FC states), we applied a k-means clustering algorithm to the windowed
+correlation matrices concatenated over all subjects [C1 , . . . , CS ] (Fig. 2B). We used the same clustering
+procedure as proposed in Allen et al. (2014) and adopted by Barttfeld et al. (2015). In this procedure, the
+concatenated dynamic FC matrix was subsampled along the time dimension before clustering to reduce
+redundancy between windows. The subsampling was performed by choosing local maxima of the time
+course of windowed FC variance. The resulting subject exemplars consisted of 5537 instances with 19.4±2.8
+(mean ± SD) windows per subject (range: 12–30). The k-means clustering was first applied to the subject
+exemplars 500 times with the l1 distance metric and random initialization. The obtained median centroids
+5
+
+Table 1: Abbreviations for cortical regions.
+Abbreviation
+
+Full name
+
+AntTemp
+Aud
+Cent
+Cinga
+Cingp
+ExStr
+ExStrInf
+ExStrSup
+FEF
+FrMed
+Ins
+IPL
+IPS
+OFC
+ParMed
+ParOcc
+ParOper
+PCC
+pCun
+PFCd
+PFCl
+PFCld
+PFClv
+PFCm
+PFCmp
+PFCv
+PHC
+PostC
+PrC
+PrCv
+Rsp
+S2
+SPL
+Striate
+Temp
+TempOcc
+TempPar
+TempPole
+
+Anterior temporal cortex
+Auditory cortex
+Central sulcus
+Anterior cingulate cortex
+Posterior cingulate cortex
+Extrastriate cortex
+Inferior extrastriate cortex
+Superior extrastriate cortex
+Frontal eye fields
+Medial frontal cortex
+Insula
+Inferior parietal lobule
+Intraparietal sulcus
+Orbitofrontal cortex
+Medial parietal cortex
+Parieto-occipital cortex
+Parietal operculum
+Posterior cingulate cortex
+Precuneus
+Dorsal prefrontal cortex
+Lateral prefrontal cortex
+Dorsolateral prefrontal cortex
+Ventrolateral prefrontal cortex
+Medial prefrontal cortex
+Posterior-medial prefrontal cortex
+Ventral prefrontal cortex
+Parahippocampal cortex
+Post-central cortex
+Pre-central cortex
+Ventral pre-central cortex
+Retrosplenial cortex
+Secondary somatosensory cortex
+Superior parietal lobule
+Striate cortex
+Temporal cortex
+Temporo-occipital cortex
+Temporo-parietal cortex
+Temporal pole
+
+with the minimum error were then used as an initial starting point for the subsequent k-means clustering
+of all subject data (268 × 286 = 76648 instances). As in a previous study (Betzel et al., 2012), we scored
+the goodness of clustering using the Dunn’s index (Dunn, 1973). The optimal number of clusters k was
+6
+
+A
+
+B
+E
+
+k-means clustering (Allen et al., 2014)
+W
+
+W
+
+C1
+
+CS
+
+K
+k-means
+
+E
+
+Centroid
+
+Initialization
+K
+
+State transition
+Dunn’s index (Dunn, 1973)
+0.03
+
+E
+
+k-means
+
+Exemplars
+
+E
+
+0.028
+
+W
+
+0.026
+Centroids
+
+C
+
+x 500
+
+2 3 4 5 6 7 8 9 10
+K
+Optimal K
+
+PCA (Leonardi et al., 2013)
+W
+
+W
+
+E C1− C1
+
+CS− CS
+
+E
+
+x CT =
+
+E
+
+U
+
+x D x UT
+
+E
+C
+
+PC
+W
+
+UT x C
+
+=
+
+W
+
+E
+
+Cs (s = 1, ..., S)
+Weights
+
+Figure 2: Workflow diagram. A, Dynamic FC computation. B, Steps of k-means clustering. C, Key
+equations of PCA. E: Number of edges; W : Number of windows; Cs : Set of a vector form of windowed
+correlation matrices (i.e., dynamic FC matrices) in each subject s; S: Number of subjects; K: Number
+of centroids in k-means clustering; Cs : A matrix that contains Cs averaged across windows; C: Cs − Cs
+concatenated from s = 1 to s = S; U: A matrix that contains eigenvectors of CCT on its columns; D: A
+diagonal matrix whose diagonal entries contain the corresponding eigenvalues.
+determined to be four by evaluating this index across values of k ranging from two to ten (see the panel in
+the lower right corner of Fig. 2B). In addition to the selected value k = 4, we also report properties of the
+FC states corresponding to the centroids obtained with k = 2, . . . , 10 in Results.
+
+PCA approach for data visualization
+To visualize the trajectory of dynamic FC in a 2D space, we applied principal component analysis (PCA)
+to the windowed correlation matrices (Fig. 2C). PCA was performed with the same decomposition steps
+as those adopted in Leonardi et al. (2013) in which they focus on fluctuations around the temporal average
+of dynamic FC. Specifically, the temporal means of Cs was subtracted from Cs individually: C = [C1 −
+C1 , . . . , CS − CS ], prior to applying PCA. The principle components (PCs) were obtained by the eigenvalue
+decomposition: CCT = UDUT , where U is a matrix containing the eigenvectors of CCT (i.e., the PCs of
+dynamic FC) in its columns and D is a diagonal matrix containing the corresponding eigenvalues (see the
+upper row of Fig. 2C). The weights of PCs were derived as UT C, representing the contributions of PCs in the
+variability of FC over time (see the lower row of Fig. 2C). The trajectory of dynamic FC in a 2D space was
+
+7
+
+visualized by plotting the weights of PCs with the first and second largest eigenvalues (ratio of an eigenvalue
+to its sum across all PCs, first: 3.76%, second: 2.29%, third: 1.76%, tenth: 0.87%).
+
+SC computation
+To examine relations between FC states and structural connectivity (SC), we quantified SC in a manner
+similar to the procedure described in Honey et al. (2009). The SC strength was first calculated by counting
+the streamlines between the cortical ROIs for each subject. To correct the potential biases of the size of ROIs
+and the deterministic tracking algorithm (Hagmann et al., 2008), the streamline count between the i, j-th
+ROIs Ni,j was weighted by the Euclidean distance between the i, j-th ROIs Li,j and the surface area of the
+i, j-th ROIs Si and Sj : Ni,j /(Li,j (Si + Sj )). The imbalance of the magnitude between SC and FC strengths
+was individually corrected by resampling the weighted streamline counts into a Gaussian distribution with a
+mean of 0.5 and an SD of 0.1 (Honey et al., 2009), maintaining the rank order across the raw and resampled
+values. We averaged the obtained SC strength across subjects and used it to investigate the similarity between
+SC and clustering centroids of FC states. When averaging SC, we set to zero all those connections for which
+no streamlines were found in more than half of subjects (density = 381/113 C2 = 0.060).
+
+FC pattern metrics
+We introduced metrics of FC patterns to this study to relate spatial connectivity patterns across FC states and
+static/dynamic FC. In particular, we focused on the modular structure of functional networks (Sporns and
+Betzel, 2016). A natural way to quantify this characteristic is by evaluating the modularity quality function
+(or simply modularity) Q (Newman and Girvan, 2004) maximized by an optimal modular partition, or its
+variant Q∗ (Rubinov and Sporns, 2011) optimized for the application to functional brain networks. However
+different sizes or numbers of optimal partitions could result in systematic biases and confounds when comparing the modularity metric between networks (Good et al., 2010). Thus as a metric of FC modular patterns,
+we used the absolute FC averaged over all edges |X|, where X is an arbitrarily FC matrix, because this metric
+is rather simple and can be shown to increase when functional brain networks become more modular. We
+mainly report results obtained with |X| after showing that Q∗ and |X| were highly correlated in our data,
+though these two metrics uncovered essentially the same relationships across FC states and static/dynamic
+FC. The metric Q∗ was computed using a function ”modularity louvain und sign” in the Brain Connectivity
+Toolbox (http://www.brain-connectivity-toolbox.net). We ran this function 100 times in
+each Q∗ computation and averaged the obtained values.
+
+FC state metrics
+The FC states were characterized according to the following three metrics: frequency, mean dwell time, and
+transition probability (Allen et al., 2014; Damaraju et al., 2014; Hutchison and Morton, 2015). Frequency
+is defined as the ratio of the number of windows classified into a particular state to the total number of
+windows. Mean dwell time is the number of consecutive windows classified into a particular state, averaged
+within each subject. We set to zero the mean dwell time of a state when no windows were assigned to
+it. We omitted the first and last segments of windows in a subject’s time series from the mean dwell time
+since the beginnings and end of these episodes fall outside of the recording period. We did not define the
+8
+
+mean dwell time of a state in a subject when all its consecutive windows overlapped with either the start
+or end windows. The transition probability is measured as the averaged proportion of states in the window
+immediately following a window with a particular state. We did not define the transition probability from a
+state to another in a subject if no windows were classified into the corresponding state.
+
+Multiple linear regression analysis
+We performed multiple linear regression analysis to assess relations among age, the metrics listed above, and
+subject motion. We used a standard multiple linear regression model: ys = β0 + βeT xe,s + βnT xn,s + εs , for
+s = 1, . . . , S, where s is a subject index, S is the number of subjects, ys is a variable of interest (a target
+variable), xe,s is a column vector of explanatory variables, xn,s is a column vector of nuisance variables, εs is
+an error term, and β0 , βe , and βn are regression parameters to the constant term, explanatory variables, and
+nuisance variables, respectively. When we investigated age-related changes in a target variable, the linear
+term or the linear and quadratic terms of age were used as explanatory variables and gender, total intracranial
+volume, and a motion variable (mean FD) were used as nuisance variables, as in Betzel et al. (2014). The
+model order of age was determined according to the Akaike information criterion (AIC). A one-sample t-test
+was performed on the regression parameter associated with the highest order age term. When we examined
+the relationship between one of the metrics and a target variable, we used only the linear term of the metric
+as an explanatory variable and performed a one-sample t-test on the corresponding regression parameter.
+At that time, we added the linear and quadratic terms of age to the nuisance variables. When testing the
+influences of subject motion, we used mean FD as a target variable with no term of nuisance variables.
+
+Age group analysis
+Age-related differences in FC states were further examined by creating age groups. For the analyses reported
+in the main part of the paper, subjects were divided into five age groups, whose boundaries were placed such
+that almost the same number of subjects belonged to each group. The age of subjects in each group ranged
+from (1) 9–21 years, (2) 21–37 years, (3) 37–50 years, (4) 50–60 years, and (5) 63–83 years. The number
+of subjects was 58 in the third group and 57 in the other groups. This age categorization was mainly used
+for reporting group-averaged FC state metrics. The age group analysis was repeated with smaller (four) and
+larger (six) numbers of groups.
+
+Categorization of age groups
+To assess age-related differences in FC states in more detail, we took into account the distribution of static
+FC pattern metrics (e.g., mean absolute static FC: |sFC|) in each age group. According to the magnitude
+of static FC pattern metrics, we categorized subjects in each age group (high/middle/low) and investigated
+lifespan changes of FC states within each category. The high, middle, and low categories contain subjects in
+the 100th–80th, 60th–40th, and 20th–0th percentiles of the static FC metric distribution in each age group
+(11 or 12 subjects were in each category when the number of age groups was five). In Results, we present
+subgroup-averaged FC state metrics across age groups. Using the categorization of age groups, we aim to
+uncover the age-related differences that vanish when the subjects are put together into a group regardless of
+their connectivity patterns in static FC.
+9
+
+Results
+FC pattern metrics
+The mean absolute FC value of a dynamic FC matrix, |dFC|, and the modularity of a dynamic FC matrix,
+Q∗dFC , varied across time (Fig. 3A). The temporal average of the mean dynamic FC, |dFC|, [mean (SD)
+across subjects, 0.419 (0.023)] was about two times larger than the mean FC of the static FC matrix, |sFC|,
+[mean (SD), 0.246 (0.029)]. In contrast, there were no large differences in magnitude between the temporal
+average of the dynamic FC modularity, Q∗dFC , [mean (SD), 0.496 (0.034)] and the modularity of the static
+FC, Q∗sFC , [mean (SD), 0.501 (0.058)]. Static and dynamic FC were strongly correlated in both of the mean
+FC and modularity metrics (|sFC|–|dFC|: p < 10−82 for the regression parameter, r = 0.85; Q∗sFC –Q∗dFC :
+p < 10−85 , r = 0.87) (Fig. 3B). The mean FC and modularity were also correlated ( |sFC|–Q∗sFC : p <
+10−21 , r = 0.56; |dFC|–Q∗dFC : mean correlation coefficient = 0.62) (Fig. 3B). No significant relationship
+was found between these metrics and age (|sFC|–Age: model order = 2, p = 0.058; Q∗sFC –Age: model
+order = 2, p = 0.13) (Fig. 3C), as well as between subject motion and age (Mean FD–Age: model order
+= 1, p = 0.15). In subsequent analyses, the mean FC was mainly used as a metric of modular FC patterns.
+Influences of subject motion on this metric were small (|sFC|–Mean FD: p = 3.3 × 10−3 , r = −0.17;
+|dFC|–FD: mean correlation coefficient = −0.069) (Fig. 3D).
+
+Properties of FC states
+Figure 4A shows the clustering centroids of the four FC states as well as randomly chosen samples of dynamic FC matrices classified into each state, and Figures 4B, C, D, E summarize their basic properties. The
+centroid of State 1 had a flat spatial pattern (Fig. 4A) and was characterized by the smallest mean FC of all
+centroids (Fig. 4B). Individual dynamic FC matrices of State 1 exhibited the lowest similarity to their corresponding centroid (Figs. 4A and C) suggesting that the flatness of the centroid may result from the averaging
+of many relatively dissimilar dynamic FC matrices. In contrast, the centroid of State 2 had a highly modular
+spatial pattern (Fig. 4A), yielding the highest mean FC of all centroids (Fig. 4B). Large positive or negative FC within or between task positive networks (e.g., dorsal attention network, saliency/ventral attention
+network, somatomotor network, visual network) and task negative networks (e.g., control network, default
+mode network) characterized the spatial patterns of the State 2 centroid as well as its dynamic FC matrices
+(Fig. 4A), resulting in high average similarity between the centroid and dynamic FC matrices (Fig. 4C). The
+flat and modular States 1 and 2 were least similar among all pairs of state centroids (Fig. 4D) suggesting that
+they represent ”extreme configurations” residing at opposite poles along a continuum, with other States (3
+and 4) representing mixtures or intermediate patterns. Comparison to the average SC showed that State 1
+exhibit the highest and State 2 the lowest similarity to SC with States 3 and 4 at intermediate levels (Fig. 4E),
+while the difference between States 2 and 4 was less evident when the similarity was computed only from
+pairs of structurally connected regions. We found essentially the same basic properties of these FC states
+when we used the alternative set of windowing parameters.
+Figure 4F presents the PCs of the dynamic FC matrices. The spatial patterns of the first PC (PC 1)
+strongly resembled the patterns in the centroid of State 2. This means that the dynamic FC matrices during
+episodes when the weight of PC 1 was positive were more modular and positioned more closely to the
+
+10
+
+A
+
+NKI-RS197236
+0.6
+
+0.4
+
+0.4
+
+0.4
+
+0.2
+
+0.2
+
+0.2
+
+0
+
+0
+
+0
+
+200
+
+400
+
+200
+
+400
+
+0.6
+
+0.6
+
+0.6
+
+0.4
+
+0.4
+
+0.4
+
+0.2
+
+0.2
+
+0.2
+
+0
+
+200
+
+0
+
+400
+Time (s)
+
+R 2 = 0.75
+
+200
+
+R 2 = 0.38
+
+0.5
+
+0
+
+400
+Time (s)
+
+C
+
+| dFC |
+| dFC |
+| sFC |
+200
+
+400
+
+Q*dFC
+Q*dFC
+Q*sFC
+200
+
+400
+Time (s)
+
+D
+
+R 2 = 0.059
+
+0.6
+
+Mean FD (mm)
+
+B
+
+NKI-RS157908
+0.6
+
+0.3
+Q*sFC
+
+| dFC |
+
+0.45
+
+| sFC |
+
+Modularity
+
+Mean FC
+
+NKI-RS117964
+0.6
+
+0.4
+
+0.25
+
+0.4
+
+R 2 = 0.030
+0.08
+
+0.04
+
+0.2
+0.2
+
+0.25 0.3
+| sFC |
+
+20
+
+0.2
+
+50
+
+0.25 0.3
+| sFC |
+
+60
+
+0.6
+Q*sFC
+
+Count
+
+80
+
+R 2 = 0.084
+
+100
+
+0.5
+
+40 60
+Age (y)
+
+Count
+
+0.25 0.3
+| sFC |
+R 2 = 0.77
+
+Q*dFC
+
+0.2
+
+0.4
+
+30
+
+0.4
+0.4
+Q*sFC
+
+0.6
+
+0
+−1
+
+0
+1
+Corr( | dFC |, Q*dFC )
+
+20
+
+40 60
+Age (y)
+
+80
+
+0
+−1
+
+0
+1
+Corr( | dFC |, FD)
+
+Figure 3: A, Time series of the mean absolute FC value |dFC| (top row) and modularity Q∗dFC (bottom row)
+in representative subjects (the title of each plot is the ID number of the enhanced NKI-RS dataset). Temporal
+averages of them (|dFC| and Q∗dFC ) are indicated by solid horizontal lines and the static mean FC and
+modularity (|sFC| and Q∗sFC ) are plotted by broken lines. B, Scatter plots of subjects in the |sFC|–|dFC|,
+Q∗sFC –Q∗dFC , and |sFC|–Q∗sFC spaces (top left, bottom left, and top right, respectively) and a histogram of
+correlation coefficients between |dFC| and Q∗dFC (bottom right; a vertical black line indicates its mean).
+Red lines are linear fitting lines and R2 is the coefficient of determination. C, Scatter plots of subjects in the
+age–|sFC| space (top) and the age–Q∗sFC space (bottom). No significant relationship was found. D, Scatter
+plots of subjects in the |sFC|–mean FD space (top) and a histogram of correlation coefficients between
+|dFC| and FD (bottom; the FD time series was convolved with the tapered window used in the dynamic FC
+computation).
+centroid of State 2 than dynamic FC matrices during episodes when the PC 1 was negative or near to zero.
+The second PC (PC 2) had a very different spatial pattern from PC 1. PC 2 included relatively large positive
+or negative entries between, e.g., control network and default mode network, which differentiated the FC
+value in the centroids of States 3 and 4.
+We also examined the properties of FC states with other numbers of clustering centroids (k = 2, . . . , 10).
+We found that the two centroids obtained with k = 2 strongly resembled the flat and modular spatial patterns
+
+11
+
+Centroid
+
+B
+
+Dynamic FC matrices
+
+State 1
+
+C
+
+0.3
+
+Correlation Coefficient
+(Centroid–Dynamic FC matrix)
+
+A
+CONT
+
+0.2
+
+0.1
+
+DAN
+LIM
+VAN
+SMN
+VIS
+
+DMN
+
+CONT
+
+DAN
+LIM
+VAN
+SMN
+VIS
+
+Mean FC
+
+DMN
+
+0
+
+State 2
+
+1
+
+2
+
+3
+
+4
+
+0.8
+
+0.4
+
+0
+
+1
+
+2
+
+State
+
+D
+
+3
+
+4
+
+State
+
+E
+
+Correlation Coefficient
+(Centroid–Centroid)
+1
+
+State
+
+State 3
+
+Correlation Coefficient
+(Centrod–SC)
+
+1
+2
+0.9
+3
+4
+
+0.8
+1
+
+2
+
+3
+
+0.2
+
+0.1
+Pairs with SC
+All pairs
+0
+
+4
+
+State
+
+1
+
+2
+
+3
+
+4
+
+State
+
+State 4
+
+1
+
+0
+
+F
+PC 1
+
+0.03
+
+0
+
+0.03
+PC 2
+
+−0.03
+
+0
+−0.03
+
+−1
+
+Figure 4: A, Clustering centroids of the FC states and randomly chosen samples of dynamic FC matrices in
+each state. The z-transformed FC values are projected back into the original space for showing. B, Mean
+absolute FC values of the centroids. An error bar indicates a 95% bootstrap confidence interval (resampling
+subjects 1000 times with replacement). C, Distribution of correlation coefficient between a centroid and a
+dynamic FC matrix in each state, together with its mean indicated by a circle. Every width of violin plot is
+individually normalized. D, Correlation coefficient between centroids across all FC states. E, Correlation
+coefficient between a centroid and SC. Correlations were computed from all pairs of regions (black) and
+only from pairs of regions with existed SC (red). F , First and second principal components (PC 1 and PC
+2).
+and these flat and modular states also appeared to be represented as discrete FC states at all the settings of k.
+The flat state was split into two flat states with k ≥ 7 but the modular state always appeared in a single state
+class. Intermediate states, such as States 3 and 4 in Figure 4A, began to appear with k ≥ 3 and their number
+increased as k increased.
+
+FC state metrics and their relation to static FC
+Figure 5A presents the state switching sequence of subjects shown in Figure 3A. The dynamics of these state
+transitions are summarized by the FC state metrics, averaged over subjects (Figs. 5B and C). The transition
+
+12
+
+3
+
+3
+
+3
+
+2
+
+2
+
+2
+
+1
+
+1
+200
+
+300
+400
+Time (s)
+
+1
+
+500
+
+100
+
+200
+
+300
+400
+Time (s)
+
+C
+
+Transition Probability
+1
+1
+
+0.3
+10
+
+−0.5
+
+2
+10−1
+3
+10
+
+−1.5
+
+Frequency
+
+State at t
+
+NKI-RS197236
+4
+
+100
+
+B
+
+NKI-RS157908
+4
+
+Mean Dwell Time (s)
+
+State
+
+NKI-RS117964
+4
+
+0.2
+0.1
+
+4
+1
+
+D
+
+0
+
+0
+
+2
+3
+4
+State at t + 1
+
+Frequency
+
+mot++
+
+0.8
+
+0.5
+
+200
+
+20
+
+1
+
+2
+3
+State
+
+500
+
+0.05
+
+0
+
+1
+
+2
+3
+State
+
+4
+
+State 4
+R 2 = 0.063
+mot−−
+
+mot−
+
+300
+400
+Time (s)
+
+0.1
+
+4
+
+State 3
+R 2 = 0.056
+
+0.4
+
+0.2
+
+0.25
+
+0.3
+
+0
+
+R 2 = 0.25
+Mean Dwell Time (s)
+
+40
+
+0
+
+4
+
+100
+
+0.8
+
+0.6
+
+0
+
+0.25
+
+0
+
+0.3
+
+0.2
+
+0.25
+
+0.3
+
+0
+
+0.2
+
+0.25
+
+0.25
+
+0
+
+0.3
+
+0.2
+
+0.2
+
+0.2
+
+0.25
+
+0.3
+
+0.2
+
+0.25 0.3
+| sFC |
+
+0
+
+0.2
+
+0
+
+0.25 0.3
+| sFC |
+
+0.3
+
+0
+
+0.2
+
+0.25
+
+0.3
+
+R 2 = 0.020
+mot++
+
+0.5
+
+0
+
+0.25
+
+100
+
+R 2 = 0.029
+1
+
+0.4
+
+0.2
+
+50
+
+40
+
+0.2
+
+0
+
+R 2 = 0.023
+mot−−
+
+80
+
+R 2 = 0.14
+
+0.4
+
+0.3
+
+R 2 = 0.062
+
+50
+
+100
+
+0
+
+0.2
+
+100
+
+200
+
+0.4
+
+0.3
+
+R 2 = 0.35
+
+R 2 = 0.37
+Transition Probability
+
+2
+3
+State
+
+State 2
+R 2 = 0.58
+
+State 1
+R 2 = 0.51
+1
+
+1
+
+500
+
+Transition Probability
+
+A
+
+1
+
+0.5
+
+0.2
+
+0.25
+| sFC |
+
+0.3
+
+0
+
+0.2
+
+0.25
+
+0.3
+
+| sFC |
+
+Figure 5: A, State switching sequence of subjects shown in Figure 3A. B, Transition probability between FC
+states, averaged across subjects. C, Frequency (left), mean dwell time (middle), and transition probability
+to other states (right), averaged across subjects. An error bar indicates a 95% bootstrap confidence interval.
+D, Scatter plots of subjects in the |sFC|–FC state metric spaces (top row: frequency, middle row: mean
+dwell time, bottom row: transition probability to other states). The red and magenta lines are linear fitting
+lines with p < 0.01 and p < 0.05, respectively. Significant correlations with mean FD were indicated by the
+text placed in each plot, mot++/mot−− (positive/negative correlation with p < 0.01) and mot− (negative
+correlation with p < 0.05).
+probability matrix (Fig. 5B) shows that the FC states never directly move from the flat state (State 1) to the
+modular state (State 2), and vice versa. This means that when traveling between the flat and modular states
+dynamic FC always passed through the intermediate states (States 3 and 4). The overall frequency of states
+
+13
+
+was the highest in State 1 (0.34) and the lowest in State 2 (0.16) (the left panel in Fig. 5C). For the mean
+dwell time, State 1 was occupied the longest (40 s) and the other states were occupied more briefly than State
+1 (25, 28, 26 s in State 2, 3, 4, respectively) (the middle panel in Fig. 5C). No large differences were found
+in the transition probability to other states, though the intermediate states had relatively higher probability
+(State 3, 0.089; State 4, 0.096) than the flat and modular states (State 1, 0.070; State 2, 0.081) (the right
+panel in Fig. 5C).
+The FC state metrics in States 1 and 2 were largely constrained by the static FC (Fig. 5D). In State 1, the
+frequency and mean dwell time negatively correlated with |sFC| (p < 10−39 , r = −0.71 and p < 10−15 ,
+r = −0.48, respectively) and the transition probability to other states positively correlated with |sFC| (p <
+10−25 , r = 0.60). The three FC state metrics in State 2 had the opposite sign of correlations with |sFC|
+(frequency: p < 10−50 , r = 0.76, mean dwell time: p < 10−24 , r = 0.58, transition probability: p < 10−7 ,
+r = −0.35). These relationships suggest that, in subjects with smaller (or larger) |sFC|, the flat (or modular)
+state more likely appeared, lasted with a longer duration, and was less transitive to other states. The metrics
+of the intermediate states were not strongly correlated with |sFC| (State 3, frequency: p = 0.96, r = 0.032,
+mean dwell time: p = 0.033, r = −0.093, transition probability: p = 0.48, r = −0.07; State 4, frequency:
+p = 3.4 × 10−4 , r = 0.21, mean dwell time: p = 0.057, r = 0.12, transition probability: p = 0.30,
+r = −0.059).
+While the frequency of the flat and modular states had a weak but significant correlation with mean FD
+(flat: p = 1.7 × 10−4 , r = 0.22; modular: p = 0.049, r = −0.12), subject motion cannot explain the
+relationship between the FC state metrics and static FC. We performed the same analysis procedures of
+k-means clustering after further decreasing the motion threshold (mean FD < 0.06 mm; number of subjects
+= 173). Once again, we obtained strong and significant correlations between |sFC| and the three FC state
+metrics in the flat and modular states, while no significant correlations between the FC state metrics and
+mean FD were found.
+The linear relationship of the FC state metrics in the flat and modular states to static FC were preserved
+after changing the FC pattern metrics from |sFC| to Q∗sFC . This indicates that these relationships were
+independent of how we quantify the modularity in the spatial patterns of static FC.
+
+FC state metrics across the lifespan
+So far, all analyses with rs-fMRI data were carried out with all the 286 subjects whose age range was 9.1–83.2
+years. We now turn to findings on age differences in the FC state metrics over the lifespan. We first examined
+these differences irrespective of the static FC in each subject, though its spatial connectivity patterns largely
+constrained the dynamics of the flat and modular states. Then we assessed the lifespan changes of the FC
+state metrics while taking into account the static FC constraints.
+Without static FC constraints
+When we put subjects together into analyses regardless of the static FC, we did not uncover clear age-related
+differences in the FC state metrics. In a regression analysis, no significant relationship was found between
+the FC state metrics and age [Fig. 6A; frequency: p = (0.12, 0.066, 0.079, 0.11) for States (1, 2, 3, 4) with
+model order = (1, 2, 2, 2); mean dwell time: p = (0.092, 0.65, 0.12, 0.36) with model order = (1, 1, 1, 1);
+
+14
+
+State 1
+
+Frequency
+
+1
+
+State 2
+
+R 2 = 0.076
+
+State 3
+
+R 2 = 0.051
+
+B
+
+State 4
+
+R 2 = 0.056
+
+0.8
+
+0.8
+0.6
+
+0.5
+
+0.4
+
+0.4
+
+R 2 = 0.018
+Frequency
+
+A
+
+0.2
+
+0.4
+
+0.3
+
+20
+
+40
+
+60
+
+80
+
+0
+
+60
+
+80
+
+R 2 = 0.024
+
+200
+
+20
+
+40
+
+60
+
+80
+
+R 2 = 0.046
+
+20
+
+40
+
+60
+
+80
+
+R 2 = 4.4 x 10−3
+100
+
+80
+
+100
+
+50
+
+40
+
+50
+
+100
+0
+
+0
+
+0
+
+0
+
+20
+
+40
+
+60
+
+80
+
+20
+
+40
+
+60
+
+80
+
+R 2 = 0.022
+
+0.4
+
+0.4
+
+0.2
+
+0.2
+
+0
+
+0
+
+1
+
+20
+
+40
+
+60
+
+80
+
+R 2 = 0.027
+
+1
+
+0.5
+
+0.5
+
+0
+
+0
+
+20
+
+40
+
+60
+
+80
+
+R 2 = 0.015
+
+40 60
+Age (y)
+
+80
+
+20
+
+40 60
+Age (y)
+
+80
+
+20
+
+40 60
+Age (y)
+
+80
+
+20
+
+40 60
+Age (y)
+
+3
+
+4
+
+5
+
+2
+
+3
+
+4
+
+5
+
+2
+3
+4
+Age Group
+
+5
+
+25
+
+0.15
+
+0.1
+
+0.05
+
+0
+1
+20
+
+2
+
+50
+
+0
+1
+
+R 2 = 0.035
+Transition Probability
+
+40
+
+0
+
+Transition Probability
+
+Mean Dwell Time (s)
+
+R 2 = 0.046
+
+20
+
+0
+
+Mean Dwell Time (s)
+
+0
+1
+0
+
+80
+State
+
+1
+
+2
+
+3
+
+4
+
+Figure 6: A, Scatter plots of subjects in the age–FC state metric spaces (top row: frequency, middle row:
+mean dwell time, bottom row: transition probability to other states). No significant relationship was found.
+B, State frequency (top), mean dwell time (middle), and transition probability to other states (bottom),
+averaged across all subjects in each age group. A shaded region indicates a 95% bootstrap confidence
+interval.
+transition probability: p = (0.053, 0.53, 0.67, 0.38) with model order = (1, 1, 1, 1)]. In the age group
+analysis, we detected some fluctuations in the FC state metrics across the lifespan (Fig. 6B), though the
+magnitude of these fluctuations was small (the leftmost column of Fig. 8). Simple and interpretable changes
+were not observed in the lifespan trajectories in the line plots, other than a small increase in the frequency
+of State 2 in the transition between the age groups 1 and 2. Age-related differences in the FC state metrics
+were again not obvious when we used alternative numbers of age groups (four and six).
+No clear age-related differences were found also in the space spanned by the first and second PCs of the
+dynamic FC matrices. The upper row of Figure 7 shows the PC embedding trajectories of the dynamic FC
+matrices and the lower row of Figure 7 illustrates the PC embedding of FC state metrics (see caption to Fig.
+7 for the manner of displaying the dynamic FC matrices and the FC state metrics in the PC space). The four
+FC states were roughly separated along the PC 1 axis (States 1–2) and PC 2 axis (States 3–4), forming four
+clusters in the PC space. No direct transition between States 1 and 2 occurs as is represented by the absence
+of line connecting these two states. The PC embedding trajectory and metrics are useful for illustrating the
+structure and dynamic relation of FC states in a compact form, whereas merely employing the PC space
+embedding did not uncover clear age-related differences in the FC state metrics.
+
+15
+
+Age Group 1
+9–21
+
+Age Group 2
+21–37
+
+Age Group 3
+37–50
+
+Age Group 4
+50–60
+
+Age Group 5
+60–83 (years)
+
+40
+
+PC 2
+
+20
+0
+−20
+−40
+−40 −20
+
+Frequency
+0 20 40
+PC 1
+
+−40 −20
+
+0 20 40
+PC 1
+
+−40 −20
+
+0 20 40
+PC 1
+
+−40 −20
+
+0 20 40
+PC 1
+
+−40 −20
+
+0 20 40
+PC 1
+0.7 0.4 0.1 0.01
+Transition Probability
+
+20
+PC 2
+
+0.16 0.10 0.04 0.004
+0
+
+Mean Dwell Time (s)
+
+−20
+−20
+
+0
+PC 1
+
+20
+
+−20
+
+0
+PC 1
+
+20
+
+−20
+State
+
+0
+PC 1
+1
+
+2
+
+20
+3
+
+−20
+4
+
+0
+PC 1
+
+20
+
+−20
+
+0
+PC 1
+
+20
+20 40 60 80
+
+Figure 7: PC embedding dynamic FC trajectory (upper row) and FC state metrics (lower row) across age
+groups. In the upper row, each dot corresponds to a dynamic FC matrix at a time window and its color
+indicates the FC state assigned to this window. In the lower low, the frequency of a state is shown as the
+size of a circle placed at the median coordinate of dots in each state. The mean dwell time is represented by
+the transparency of the inner color of a circle and the transition probability is expressed by the width of a
+line outgoing from a circle. Area of a circle and width of a line for showing the PC embedding metrics are
+proportional to the frequency and transition probability, respectively. Linear gradation is used in a colormap
+for showing the mean dwell time. Size and color legends for the metrics are same as those used in Figure 9.
+With static FC constraints
+By taking into account the metrics quantifying the level of modularity presented in static FC, we found
+specific age-related differences in FC state profiles. Figure 8 shows the FC state metrics averaged within the
+high, middle, and low categories of |sFC| in each age group, together with those averaged over all subjects in
+each group, shown in Figure 6B, with the common ranges of the vertical axes. The lifespan trajectories of the
+middle |sFC| category has profiles similar to those obtained without the static FC constraints. Interpretable
+age-related differences were found in the increase when transitioning from the age group 1 to the age group
+2 in the frequency of State 2. In the high |sFC| category, pronounced lifespan changes were observed in the
+frequency of States 3, which followed a convex profile across age. More pronounced age-related differences
+were obtained when we focused on the low |sFC| category. In this category, the mean dwell time of State 1
+monotonically decreased across age groups 1–3. The frequency of States 1 also decreased with age, though
+its lifespan trajectory did not yield a monotonic trend. The outgoing transition probability of State 2 decayed
+when entering into the age group 2 (note that the averaging of this metric was performed only with three
+subjects at the age group 1 due to zero frequency of State 2 in eight subjects). We also obtained similar
+lifespan changes similar to those described above after replacing the static FC metric |sFC| with Q∗sFC ,
+while the decrease of the State 1 frequency with age was monotonic in the low Q∗sFC category. The increase
+of outgoing transition probability of State 1 early in life in the high |sFC| category (Fig. 8) was not evident
+in the high Q∗sFC category. When we used the four and six age groups, the lifespan trajectories became more
+16
+
+Frequency
+Mean Dwell Time (s)
+
+Middle
+
+Low
+
+| sFC |
+
+| sFC |
+
+| sFC |
+
+All Subjects
+
+0.8
+
+0.8
+
+0.8
+
+0.8
+
+0.4
+
+0.4
+
+0.4
+
+0.4
+
+0
+1
+
+2
+
+3
+
+4
+
+5
+
+0
+1
+
+2
+
+3
+
+4
+
+5
+
+0
+1
+
+2
+
+3
+
+4
+
+5
+
+0
+1
+
+100
+
+100
+
+100
+
+100
+
+50
+
+50
+
+50
+
+50
+
+0
+1
+0.5
+Transition Probability
+
+High
+
+2
+
+3
+
+4
+
+5
+
+0.25
+
+0
+1
+0.5
+
+2
+
+3
+
+4
+
+5
+
+0
+1
+0.5
+
+0.25
+
+0.25
+
+2
+
+3
+
+4
+
+5
+
+0
+1
+0.5
+
+2
+
+3
+
+4
+
+5
+
+2
+
+3
+
+4
+
+5
+
+2
+3
+4
+Age Group
+
+5
+
+0.25
+
+*
+*
+
+0
+1
+
+2
+3
+4
+Age Group
+
+5
+
+0
+1
+State
+
+2
+3
+4
+Age Group
+1
+
+2
+
+3
+
+5
+
+0
+1
+
+2
+3
+4
+Age Group
+
+5
+
+0
+1
+
+4
+
+Figure 8: State frequency (top row), mean dwell time (middle row), and transition probability to other
+states (bottom row), averaged within subjects in the high, middle, and low |sFC| categories in each age
+group. A shaded region indicates a 95% bootstrap confidence interval. For reference, Figure 6B is shown
+in the rightmost column with the common vertical range. An asterisk beside a line plot indicates that the
+corresponding FC state metric was not defined in more than half of subjects placed in the age group (here,
+the transition probability out of State 2 was not defined in eight and seven subjects at the age group 1 and 4,
+respectively, in the low |sFC| category).
+and less smooth, respectively, while the age-related differences were similar to those obtained with the five
+age groups.
+The age-related differences in the FC state metrics were visualized within the PC space in Figure 9, where
+the lifespan changes are characterized by the patterns of ”flow” structure across the FC states. For individuals
+placed in the category with high |sFC|, the flow of dynamic FC among FC states mainly occurred from left
+(State 1) to right (State 2) through intermediate States 3 and 4. For individuals placed in the category with
+low |sFC|, the main direction of flow was reversed, occurring predominantly from the right (State 2) to the
+left (State 1). The magnitude of the flow (as indicated by the asymmetry of transition probabilities out of and
+in to States 1 and 2, together with the imbalance of frequencies and mean dwell times of these two states)
+decreased with age in the low |sFC| category, with the largest flow observed in the youngest age group and
+the smallest flow observed in the oldest age group. By categorizing the age groups using the information
+contained in the static FC pattern, the PC embedding captured age-related differences in the flow structure
+of dynamic FC across the FC states.
+
+17
+
+Age Group 1
+9–21
+
+Age Group 2
+21–37
+
+Age Group 3
+37–50
+
+Age Group 4
+50–60
+
+Age Group 5
+60–83 (years)
+
+High
+| sFC |
+
+PC 2
+
+20
+
+0
+
+−20
+
+Middle
+| sFC |
+
+PC 2
+
+20
+
+Frequency
+
+0
+
+0.7 0.4 0.1 0.01
+Transition Probability
+
+−20
+0.16 0.10 0.04 0.004
+
+20
+
+| sFC |
+
+PC 2
+
+Mean Dwell Time (s)
+Low
+
+*
+
+0
+
+*
+
+−20
+−20
+
+0
+PC 1
+
+20
+
+−20
+
+0
+PC 1
+
+20
+
+−20
+State
+
+0
+PC 1
+1
+
+2
+
+20
+3
+
+−20
+
+0
+PC 1
+
+20
+
+−20
+
+0
+PC 1
+
+20
+
+20 40 60 80
+
+4
+
+Figure 9: PC embedding of FC state metrics across age groups. The PC embedding metrics were averaged
+within subjects in the high, middle, and low |sFC| categories in each age group. An asterisk indicates that
+the transition probability was not defined in more than half of subjects in the corresponding age group.
+
+Discussion
+We systematically characterized spatial patterns and flow dynamics in a set of brief FC configurations, referred to as FC states, over the human lifespan. Our analyses revealed that dynamic FC was broadly classified
+into FC states with spatially flat and modular connectivity patterns as well as their mixtures, and the incidence of these flat and modular FC states and the flow between these states were strongly dependent on the
+level of modularity in static FC. The finding that the flat and modular FC states were constrained by the static
+FC enabled us to uncover lifespan changes in FC state profiles. Pronounced lifespan changes were observed
+when focusing on age-related differences within subject subgroups with relatively lower static FC modular
+metrics. These results highlighted the advantage of considering the static FC constraints when expressing
+individual differences in FC states, together with the importance of our characterization of FC states from
+the view point of their spatial patterns and flow dynamics.
+Our analyses elucidated four basic properties of the FC states. First, the flat and modular FC states were
+reproducible. Observation of these states with alternative numbers of centroids or another set of windowing
+parameters, together with previous reports on these states with rs-fMRI data in humans (Allen et al., 2014)
+and macaques (Barttfeld et al., 2015) support our focus on the flat and modular states. Second, the centroid
+of the flat FC state was most dissimilar to its corresponding instantiations in dynamic FC while the modular
+FC centroid was most similar (Figs. 4A and C). In the modular state, both the centroid and dynamic FC
+matrices had large positive/negative FC within/between task positive and negative networks, indicating that
+a rather stereotypic FC pattern of functional segregation was dominant. In the flat state, the centroid did
+not well represent its dynamic FC matrices, suggesting that the flatness may result from the averaging of
+
+18
+
+many relatively dissimilar dynamic FC matrices with a variety of FC patterns. Third, the flat and modular
+FC centroids were most similar and dissimilar to SC, respectively, (Fig. 4E), paralleling earlier results in
+macaques (Barttfeld et al., 2015). This finding is also in line with a human study showing that FC matrices
+averaged from dynamic FC being similar and dissimilar to SC exhibit low and high density of binarized
+absolute FC (Liégeois et al., 2015), though they reported higher modularity to the former case probably
+due to their use of absolute FC in modularity computation. The similarity between SC and the flat centroid
+can be explained by the averaging out of temporally variable FC into a flat centroid, wherein relatively
+high FC values were computed at stable functional connections. Shen et al. (2015) reported that SC was
+associated with such temporally stable FC during rest. In contrast, in the modular centroid, large FC values
+were computed at connections within task positive/negative networks regardless of the FC stability, resulting
+in greater dissimilarity with SC. Fourth, the dynamic flow between the flat and modular FC states most
+explained the variability of dynamic FC (Fig. 4F) and there were no direct transitions between these two
+states (Fig. 5B). These results suggested that the flow between the flat and modular states well represents
+the dynamic FC fluctuation. The major contribution of connectivity pattern switching in dynamic FC can
+be associated with significant temporal variations of efficiency in functional brain networks (Zalesky et al.,
+2014). Taken together, our findings provided new insights into spatial patterns and flow dynamics in FC
+states.
+We showed that the flat and modular FC states were largely constrained by the static FC (Fig. 5D).
+Specifically, frequency, mean dwell time, and outgoing transition probability of these states had strong linear
+relationships to the modular metrics of static FC, even with a small motion threshold realizing no significant
+motion effects on these FC state metrics. Higher frequency, longer mean dwell time, and lower outgoing
+transition probability of the flat/modular FC state were associated with less/more modular static FC. This
+property can be attributed to a large number of irregular/regular spatial patterns in dynamic FC as quantified
+by the FC state metrics, resulting in the expression of flat/modular spatial patterns in static FC. These results
+establish a link between dynamic and static FC at a network level and complement recent findings on the
+dynamic and static FC relationship at the level of individual connections (Thompson and Fransson, 2015;
+Betzel et al., submitted).
+The static FC constraints on the flat and modular FC states contributed toward uncovering lifespan
+changes in the FC state metrics. When we investigated relations of age to the FC state metrics regardless
+of the modular level of static FC, significant age differences were not found (Figs. 6 and 7). This indicates
+that age–FC state relations over development reported in Hutchison and Morton (2015), wherein FC centroids were derived from mixtures of rest and task fMRI data, may become less evident when age-related
+differences are examined across the lifespan and the FC centroids are obtained purely from rs-fMRI data.
+Age-related differences were uncovered by stratifying individuals based on their rankings (high/middle/low)
+in the modularity of static FC (Fig. 8), and most of these differences were robust with respect to the manner
+of quantifying modular FC patterns and the number of age groups ranging from four to six. Particularly, for
+individuals placed in the low modular category, pronounced lifespan changes were detected in the FC state
+metrics projected into the PC-space flow structure (Fig. 9). For individuals in the low modular category,
+where the flow from the modular to the flat FC state was dominant, the magnitude of the flow decreased
+with age. The decrease of this flow means that the flat state dominance in dynamic FC becomes less evident
+and instantiations in dynamic FC are attracted toward the modular state. Decreasing this flow early in life
+
+19
+
+is consistent with an observed trend of separating anatomically clustered regions in functional networks to
+form task positive/negative networks over development (Fair et al., 2009). Decreasing this flow late in life
+could be due to the disruption of SC in aging (Gong et al., 2009), especially for the connections between
+high-degree hubs (Zhao et al., 2015). The age-related deterioration in structural hubs could manifest as a
+stabilization or ”locking-in” of the modular state. In parallel, the organization of structural hubs might be
+crucial in transitioning among a variety of dynamic FC patterns in the flat state. Monotonic decrease of the
+flow to the modular state with age was not observed throughout the lifespan analyses. This finding suggests that the variability in the modular state was not simply redundant with an observed trend of decreased
+functional network segregation with aging (Cao et al., 2014; Betzel et al., 2014; Chan et al., 2014).
+This study has several methodological limitations. First, subject head motion is a potential confound
+of our FC state analyses. Even though we excluded high motion subjects, removed and interpolated temporal spikes, and regressed out motion parameters both in image preprocessing and regression analyses, it
+remains difficult to completely exclude potential biases due to subject motion. Second, k-means clustering
+on windowed FC matrices can produce a potential bias on the FC state switching. As adjacent windows were
+temporally overlapped, abrupt changes of FC patterns could be smoothed, so that direct transition between
+the flat and modular FC states might be missed. Third, the contribution of the first and second PCs was
+relatively low. While the FC states projected into the space spanned by these two PCs exhibited specific
+structure as described in Results, significant FC variability was not accounted for in the PC projection plots.
+Fourth, categorization of age groups reduced the number of subjects. This produced variability in the number
+of subjects when averaging transition probability out of the FC states with small frequency (Figs., 8 and 9).
+These issues have to be taken into account when interpreting the results.
+Future directions of the present study include further detailed validation of our findings on the flat and
+modular FC states. Assessing test-retest reliability using multisession data allows examining the reproducibility of the flat and modular states at the subject level. Investigating individual differences using other
+types of demographic or behavioral data can help understanding the functional roles of these states in more
+detail. Examining the properties of the flat and modular states using a computational model of FC switching
+(e.g., in Hansen et al., 2015) is also important for future work. Simulating the transitions of FC patterns
+allows exploring the static FC constraints in the absence of motion artifacts and searching model inputs that
+switch the connectivity patterns could help in understanding the mechanism of the flow dynamics.
+In conclusion, our study shows that dynamic FC was broadly classified into a set of FC states with
+spatially flat and modular connectivity patterns and their mixtures. Flow dynamics across these flat and
+modular FC states were strongly constrained by the level of modularly in static FC, and this relation was
+useful for uncovering individual differences in FC state profiles across the human lifespan.
+
+Acknowledgements
+M.F. was supported by a Uehara Memorial Foundation Postdoctoral Fellowship. R.F.B. was supported by the
+National Science Foundation/Integrative Graduate Education and Research Traineeship Training Program in
+the Dynamics of Brain-Body-Environment Systems at Indiana University (0903495). X.N.Z was supported
+by the Natural Sciences Foundation of China (81171409, 81220108014) and the Chinese Academy of Sciences Key Research Program (CAS: KSZD-EW-TZ-002). O.S. was supported by the J.S. McDonnell Foun20
+
+dation (22002082) and the National Institutes of Health (R01 AT009036-01). X.N.Z. and O.S. are members
+of the international collaboration team (under its trial stage) supported by the CAS K.C. Wong Education
+Foundation.
+
+Conflict of Interest
+The authors declare no competing financial interests.
+
+References
+Allen EA, Damaraju E, Plis SM, Erhardt EB, Eichele T, Calhoun VD (2014) Tracking whole-brain connectivity dynamics in the resting state. Cereb Cortex 24:663–676.
+Ashburner J (2012) SPM: a history. NeuroImage 62:791–800.
+Barttfeld P, Uhrig L, Sitt JD, Sigman M, Jarraya B, Dehaene S (2015) Signature of consciousness in the
+dynamics of resting-state brain activity. Proc Natl Acad Sci U S A 112:887–892.
+Betzel RF, Byrge L, He Y, Goñi J, Zuo XN, Sporns O (2014) Changes in structural and functional connectivity among resting-state networks across the human lifespan. NeuroImage 102:345–357.
+Betzel RF, Erickson MA, Abell M, O’Donnell BF, Hetrick WP, Sporns O (2012) Synchronization dynamics
+and evidence for a repertoire of network states in resting EEG. Front Comput Neurosci 6:74.
+Bullmore ET, Sporns O (2009) Complex brain networks: graph theoretical analysis of structural and functional systems. Nat Rev Neurosci 10:186–198.
+Calhoun VD, Miller R, Pearlson G, Adalı T (2014) The chronnectome: time-varying connectivity networks
+as the next frontier in fMRI data discovery. Neuron 84:262–274.
+Cao M, Wang JH, Dai ZJ, Cao XY, Jiang LL, Fan FM, Song XW, Xia MR, Shu N, Dong Q, Milham MP,
+Castellanos FX, Zuo XN, He Y (2014) Topological organization of the human brain functional connectome across the lifespan. Dev Cogn Neurosci 7:76–93.
+Chan MY, Park DC, Savalia NK, Petersen SE, Wig GS (2014) Decreased segregation of brain systems across
+the healthy adult lifespan. Proc Natl Acad Sci U S A 111:E4997–E5006.
+Chang C, Glover GH (2010) Time-frequency dynamics of resting-state brain connectivity measured with
+fMRI. NeuroImage 50:81–98.
+Cox RW (2012) AFNI: what a long strange trip it’s been. NeuroImage 62:743–747.
+Craddock RC, Holtzheimer PE, Hu XP, Mayberg HS (2009) Disease state prediction from resting state
+functional connectivity. Magn Reson Med 62:1619–1628.
+
+21
+
+Damaraju E, Allen EA, Belger A, Ford JM, McEwen S, Mathalon DH, Mueller BA, Pearlson GD, Potkin
+SG, Preda A, Turner JA, Vaidya JG, van Erp TG, Calhoun VD (2014) Dynamic functional connectivity
+analysis reveals transient states of dysconnectivity in schizophrenia. NeuroImage Clin 5:298–308.
+Damoiseaux JS, Rombouts SARB, Barkhof F, Scheltens P, Stam CJ, Smith SM, Beckmann CF (2006) Consistent resting-state networks across healthy subjects. Proc Natl Acad Sci U S A 103:13848–13853.
+Dunn JC (1973) A fuzzy relative of the ISODATA process and its use in detecting compact well-separated
+clusters. J Cybern 3:32–57.
+Fair DA, Cohen AL, Power JD, Dosenbach NUF, Church JA, Miezin FM, Schlaggar BL, Petersen SE
+(2009) Functional brain networks develop from a ”local to distributed” organization. PLoS Comput
+Biol 5:e1000381.
+Fischl B (2012) FreeSurfer. NeuroImage 62:774–781.
+Fox MD, Raichle ME (2007) Spontaneous fluctuations in brain activity observed with functional magnetic
+resonance imaging. Nat Rev Neurosci 8:700–711.
+Friston KJ, Williams S, Howard R, Frackowiak RS, Turner R (1996) Movement-related effects in fMRI
+time-series. Magn Reson Med 35:346–355.
+Gong G, Rosa-Neto P, Carbonell F, Chen ZJ, He Y, Evans AC (2009) Age- and gender-related differences in
+the cortical anatomical network. J Neurosci 29:15684–15693.
+Gonzalez-Castillo J, Handwerker DA, Robinson ME, Hoy CW, Buchanan LC, Saad ZS, Bandettini PA (2014)
+The spatial structure of resting state connectivity stability on the scale of minutes. Front Neurosci 8:138.
+Gonzalez-Castillo J, Hoy CW, Handwerker DA, Robinson ME, Buchanan LC, Saad ZS, Bandettini PA (2015)
+Tracking ongoing cognition in individuals using brief, whole-brain functional connectivity patterns. Proc
+Natl Acad Sci U S A 112:8762–8767.
+Good BH, de Montjoye YA, Clauset A (2010) Performance of modularity maximization in practical contexts.
+Phys Rev E 81:046106.
+Hagmann P, Cammoun L, Gigandet X, Meuli R, Honey CJ, Wedeen VJ, Sporns O (2008) Mapping the
+structural core of human cerebral cortex. PLoS Biol 6:e159.
+Handwerker DA, Roopchansingh V, Gonzalez-Castillo J, Bandettini PA (2012) Periodic changes in fMRI
+connectivity. NeuroImage 63:1712–1719.
+Hansen ECA, Battaglia D, Spiegler A, Deco G, Jirsa VK (2015) Functional connectivity dynamics: modeling
+the switching behavior of the resting state. NeuroImage 105:525–535.
+Honey CJ, Sporns O, Cammoun L, Gigandet X, Thiran JP, Meuli R, Hagmann P (2009) Predicting
+human resting-state functional connectivity from structural connectivity. Proc Natl Acad Sci U S
+A 106:2035–2040.
+22
+
+Hutchison RM, Morton JB (2015) Tracking the brain’s functional coupling dynamics over development. J
+Neurosci 35:6849–6859.
+Hutchison RM, Womelsdorf T, Allen EA, Bandettini PA, Calhoun VD, Corbetta M, Della Penna S, Duyn
+JH, Glover GH, Gonzalez-Castillo J, Handwerker DA, Keilholz S, Kiviniemi V, Leopold DA, de Pasquale
+F, Sporns O, Walter M, Chang C (2013a) Dynamic functional connectivity: promise, issues, and interpretations. NeuroImage 80:360–378.
+Hutchison RM, Womelsdorf T, Gati JS, Everling S, Menon RS (2013b) Resting-state networks show dynamic
+functional connectivity in awake humans and anesthetized macaques. Hum Brain Mapp 34:2154–2177.
+Jenkinson M, Beckmann CF, Behrens TEJ, Woolrich MW, Smith SM (2012) FSL. NeuroImage 62:782–790.
+Kucyi A, Davis KD (2014) Dynamic functional connectivity of the default mode network tracks daydreaming. NeuroImage 100:471–480.
+Leonardi N, Richiardi J, Gschwind M, Simioni S, Annoni JM, Schluep M, Vuilleumier P, Van De Ville D
+(2013) Principal components of functional connectivity: a new approach to study dynamic brain connectivity during rest. NeuroImage 83:937–950.
+Liégeois R, Ziegler E, Phillips C, Geurts P, Gómez F, Bahri MA, Yeo BTT, Soddu A, Vanhaudenhuyse
+A, Laureys S, Sepulchre R (2015) Cerebral functional connectivity periodically (de)synchronizes with
+anatomical constraints. Brain Struct Func http://dx.doi.org/10.1007/s00429-015-1083-y.
+Lynall ME, Bassett DS, Kerwin R, McKenna PJ, Kitzbichler M, Muller U, Bullmore ET (2010) Functional
+connectivity and brain networks in schizophrenia. J Neurosci 30:9477–9487.
+Mori S, Crain BJ, Chacko VP, Van Zijl PCM (1999) Three-dimensional tracking of axonal projections in the
+brain by magnetic resonance imaging. Ann Neurol 45:265–269.
+Newman MEJ, Girvan M (2004) Finding and evaluating community structure in networks. Phys Rev
+E 69:026113.
+Nooner KB et al. (2012) The NKI-Rockland sample: a model for accelerating the pace of discovery science
+in psychiatry. Front Neurosci 6:152.
+Patriat R, Molloy EK, Meier TB, Kirk GR, Nair VA, Meyerand ME, Prabhakaran V, Birn RM (2013) The
+effect of resting condition on resting-state fMRI reliability and consistency: a comparison between resting
+with eyes open, closed, and fixated. NeuroImage 78:463–473.
+Power JD, Barnes KA, Snyder AZ, Schlaggar BL, Petersen SE (2012) Spurious but systematic correlations
+in functional connectivity MRI networks arise from subject motion. NeuroImage 59:2142–2154.
+Rubinov M, Sporns O (2011) Weight-conserving characterization of complex functional brain networks.
+NeuroImage 56:2068–2079.
+Shen K, Hutchison RM, Bezgin G, Everling S, McIntosh AR (2015) Network structure shapes spontaneous
+functional connectivity dynamics. J Neurosci 35:5579–5588.
+23
+
+Sporns O (2011) The human connectome: a complex network. Ann N Y Acad Sci 1224:109–125.
+Sporns O, Betzel RF (2016) Modular Brain Networks. Annu Rev Psychol 67 http://dx.doi.org/10.1146/
+annurev-psych-122414-03363.
+Thompson WH, Fransson P (2015) The mean-variance relationship reveals two possible strategies for dynamic brain connectivity analysis in fMRI. Front Hum Neurosci 9:398.
+van den Heuvel MP, Sporns O (2013) An anatomical substrate for integration among functional networks in
+human cortex. J Neurosci 33:14489–14500.
+Wang R, Benner T, Sorensen AG, Wedeen VJ (2007) Diffusion Toolkit: a software package for diffusion
+imaging data processing and tractography. Proc Int Soc Magn Reson Med 15:3720.
+Xu T, Yang Z, Jiang L, Xing XX, Zuo XN (2015) A Connectome Computation System for discovery science
+of brain. Sci Bull 60:86–95.
+Yeo BTT, Krienen FM, Sepulcre J, Sabuncu MR, Lashkari D, Hollinshead M, Roffman JL, Smoller JW,
+Zollei L, Polimeni JR, Fischl B, Liu H, Buckner RL (2011) The organization of the human cerebral cortex
+estimated by intrinsic functional connectivity. J Neurophysiol 106:1125–1165.
+Zalesky A, Fornito A, Cocchi L, Gollo LL, Breakspear M (2014) Time-resolved resting-state brain networks.
+Proc Natl Acad Sci U S A 111:10341–10346.
+Zhao T, Cao M, Niu H, Zuo XN, Evans A, He Y, Dong Q, Shu N (2015) Age-related changes in the
+topological organization of the white matter structural connectome across the human lifespan. Hum Brain
+Mapp 36:3777–3792.
+Zuo XN, Kelly C, Di Martino A, Mennes M, Margulies DS, Bangaru S, Grzadzinski R, Evans AC, Zang YF,
+Castellanos FX, Milham MP (2010) Growing together and growing apart: regional and sex differences in
+the lifespan developmental trajectories of functional homotopy. J Neurosci 30:15034–15043.
+
+24
+
+

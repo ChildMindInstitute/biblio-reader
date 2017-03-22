@@ -1,0 +1,524 @@
+Local Adaptive Segmentation
+Robert Dahnke, Gabriel Ziegler, Christian Gaser
+Structural Brain Mapping Group, Department of Psychiatry
+Friedrich-Schiller-University of Jena, Germany
+
+INTRODUCTION
+
+RESULTS
+
+Segmentation of brain tissue into white matter (WM), gray matter
+(GM) and cerebrospinal fluid (CSF) is an important issue for
+studying cortical morphology and brain functions (Ashburner,
+2005). After removing the noise and inhomogeneity, a Gaussian
+mixture model allows the tissue segmentation (Ashburner, 2000).
+However, even if the nonuniformity was removed completely,
+the tissue-contrast can be very poor. GM regions with high iron
+concentration, like the motor cortex and the occipital regions
+(Haacke, 2005), often have increased intensities that lead to
+misclassifications.
+Here we present a new method that allows adaption of local
+intensity differences. Since these alterations happen relatively
+smooth within a tissue class, a region growing approach can
+be used to identify the segments more correctly. The extracted
+intensities afford corrections of the local image intensity.
+
+For validation the Collins phantom (Collins et. al. 1998) with
+different noise level and inhomogeneity was used (Table
+1). Because the phantom based on a segmentation and has
+thereby a good GM-WM contrast, the results are limited to test
+segmentation stability (Table 1). Besides this we used the IBSR2
+dataset (http://www.cma.mgh.harvard.edu/ibsr/) to compare the
+method for more realistic conditions. Further single MR scans
+without ground truth segmentation were used for visual tests.
+
+METHODS
+Input is a noise- and bias-corrected image (Figure 1a), and a brain
+mask (Dahnke et al., 2011). We start with clearly classifiable regions
+that are described by low gradients and class specific intensities
+that are estimated by a Gaussian mixture model (Figure 1b).
+Then, a region growing that aligns voxel with similar intensity is
+used to dilate each class. A maximum distance and the specific
+intensities of other classes limit the region growing (Figure 1c).
+Nevertheless, it is possible that two classes align the same voxel.
+Because most neighborhoods contain class specific voxels, a small
+overlap is unproblematic and still allows a clear separation. We
+choose a 5x5x5 voxel box neighborhood.
+After finding the major tissue segments, we can estimate the local
+intensity of each class voxel by averaging voxels of the same class
+within its neighborhood. To remove outliers only voxels within a SD
+below 80% of the maximum SD of the neighborhood are used.
+As a result, each class voxel now contains the local intensity of
+its class (Figure 1d). To transfer these values to other non-class
+voxels, i.e. to get the GM value for a WM voxel, we estimate the
+hull of each class by morphological operations and set all outer
+voxels to the median class intensity. A Laplace filter with Dirichlet
+boundary condition is used to estimate the local intensity for all
+non-class voxels within the hull (Figure 1e). To avoid hard edges
+each class image is smoothed (Figure 1f). Finally, the input image
+T is scaled by the class maps, resulting in a map TSEG, with WM=3,
+GM=2, CSF=1, and background=0 (Figure 1g). After a second noise
+correction a CSF-GM-WM tissue segmentation with a MRF filter
+is used to create the final segmentation (Figure 2).
+Calculation times with skull stripping, bias- and noise-correction
+take 4 minutes without, and 5 minutes with local adaption at
+1mm resolution.
+a) bias-corrected T1
+
+b) initial segments
+
+dataset
+method
+SPM8
+VBM8
+FSL
+our method
+
+kappa(CSF)
+0.7683±0.0326
+0.7487±0.0213
+0.7281±0.0507
+0.7491±0.0192
+
+Collins phantom
+kappa(GM)
+kappa(WM)
+0.8770±0.0471 0.9000±0.0465
+0.9172±0.0231 0.9392±0.0194
+0.8918±0.0618 0.9307±0.0469
+0.9014±0.0383 0.9362±0.0323
+
+IBSR2
+kappa(GM)
+0.7492±0.1321
+0.7870±0.0235
+0.7822±0.0538
+0.8328±0.0271
+
+a)
+
+kappa(WM)
+0.8095±0.0985
+0.8571±0.0213
+0.8655±0.0259
+0.8330±0.0366
+
+Table
+Results
+ofsegmentation
+the segmentation
+of the
+Collinswith
+phantom¹
+1, 3,
+5,0,7,20,9%
+and 0,
+Table 1:1:
+Results
+of the
+of the Collins
+phantom1
+0, 1, 3, 5,with
+7, 9%0,
+noise
+and
+40, noise
+80 % inhomogeneity,
+datasets of the IBSR2
+database
+(http://www.cma.mgh.harvard.edu/ibsr/).
+20,
+40,and
+80 real
+% inhomogeneity,
+and
+real datasets
+of the IBSR2 database.
+dataset
+
+Collins phantom
+
+IBSR2
+
+kappa(CSF)
+kappa(GM)
+kappa(WM)
+b) Young2
+Preliminary resultskappa(GM)
+on realkappa(WM)
+images
+indicate
+that
+the intensity
+SPM8
+0.7683±0.0326 0.8770±0.0471 0.9000±0.0465 0.0750±0.0422 0.7492±0.1321 0.8095±0.0985
+VBM8
+0.7487±0.0213
+0.9172±0.0231the
+0.9392±0.0194
+0.1283±0.0446 quality
+0.7870±0.0235
+0.8571±0.0213
+scaling is0.7281±0.0507
+able to improve
+segmentation
+with
+lower
+FSL
+0.8918±0.0618 0.9307±0.0469 0.1244±0.0461 0.7822±0.0538 0.8655±0.0259
+our method
+0.7491±0.0192 0.9014±0.0383 0.9362±0.0323 0.1387±0.0459 0.8328±0.0271 0.8330±0.0366
+underestimation of the GM in the motor cortex and a better
+Table 1: Results of the segmentation of the Collins phantom1 with 0, 1, 3, 5, 7, 9% noise and 0, 20, 40, 80 % inhomogeneity,
+and real datasets of the
+database (http://www.cma.mgh.harvard.edu/ibsr/).
+representation
+ofIBSR2
+subcortical
+GM (Figure 2).
+a)
+Collins (average
+T1)1
+method
+kappa(CSF)
+
+a) Collins (average T1)1
+
+b)
+
+b) Young2
+
+c)
+
+c) Aduld highres3
+
+d) Old4
+
+c) Aduld highres3
+
+d) Old4
+
+Figure
+4: Shown
+the original
+biasimage
+corrected
+the intensity
+image
+(b) and
+Figure
+4: Shown
+are theare
+original
+bias corrected
+(a), the image
+intensity(a),
+corrected
+image (b) corrected
+and the inverted
+contrast
+map
+(c)
+describescontrast
+the contrast
+between
+thedescribes
+estimated tissue
+classes. Higher
+segmentation
+errors aretissue
+expect classes.
+in regions
+thethat
+inverted
+map
+(c) that
+the contrast
+between
+the estimated
+with low contrast (red) and results have to handled more carefully than for regions with good contrast (blue).
+Higher segmentation errors are expect in regions with low contrast (red) and results have to
+handled more carefully than for regions with good contrast (blue).
+
+Figure 2: Results of our local adaptive segmentation for 4 persons (a-d). In each subfigure the top left images shows the original
+bias corrected image and its segmentation below, whereas the right side shows the intensity scaled version of the original on
+the top and its segmentation below. For all segment images (bottom of each subfigure) and the intensity scaled image (top left)
+the colors are coded in the following way: dark red is WM, yellow is GM, cyan is CSF, and dark blue is background.
+1) http://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach
+2) http://fcon_1000.projects.nitrc.org/indi/adhd200/
+
+3) http://www.spl.harvard.edu/publications/item/view/2037
+4) http://www.oasis-brains.org
+
+Figure 2: Results of our local adaptive segmentation for 4 persons (a-d). In each subfigure the top left images shows the original
+Figure
+2: Results
+local adaptive
+segmentation
+forshows
+4 persons
+(a-d).
+In version
+each subﬁ
+bias
+corrected
+image andofitsour
+segmentation
+below, whereas
+the right side
+the intensity
+scaled
+of the gure
+originalthe
+on
+the
+its segmentation
+For all segment
+(bottom
+of each and
+subfigure)
+and the intensity scaled
+image
+(top left)
+toptop
+leftandimages
+showsbelow.
+the original
+biasimages
+corrected
+image
+its segmentation
+below,
+whereas
+the colors are coded in the following way: dark red is WM, yellow is GM, cyan is CSF, and dark blue is background.
+
+the right side shows the intensity scaled version of the original on the top and its segmentation
+1) http://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach
+3) http://www.spl.harvard.edu/publications/item/view/2037
+below.
+For all segment images (bottom of each subﬁ
+gure) and the intensity scaled image (top
+2) http://fcon_1000.projects.nitrc.org/indi/adhd200/
+4) http://www.oasis-brains.org
+left) the colors are coded in the following way: dark red is WM, yellow is GM, cyan is CSF, and
+dark blue is background.
+
+Figure 3 shows the impact of the neighborhood and filter size.
+A small neighborhood and low smoothing lead to harder results,
+whereas higher values lead to smoother images with less local
+differences.
+4 neighborhood (9x9x9 box)
+
+CONCLUSIONS
+We have presented a new method that allows a local adaptive
+segmentation for varying tissue contrast and a way to appraise
+the quality of the segmentation based on the contrast between
+the tissue classes.
+Another similar idea of local adaptive segmentation is presented
+on poster 672 (Gaser et. al. 2012). Compared to the here
+described method, it use ROIs to locally equalize the histogram
+before segmentation.
+Although both methods show visual improvements and good
+preliminary quantitative results for the Collins Phantom and
+IBSR database, further evaluation is necessary for a detailed
+understanding of the local changes of the PVE for the GM/CSF
+and GM/WM boundaries and depending measures like cortical
+thickness.
+
+ACKNOWLEDGEMENTS
+
+no smoothing
+
+1 neighborhood (3x3x3 box)
+
+c) region growing
+
+kappa(CSF)
+0.0750±0.0422
+0.1283±0.0446
+0.1244±0.0461
+0.1387±0.0459
+
+Furthermore, our method allows the description of local tissue
+contrast (Figure 4) that may be able to identify special regions or to
+quantify local segmentation quality. Higher segmentation errors are
+expected in regions with low contrast (red) and results have to be
+handled more carefully than for regions with good contrast (blue).
+
+Robert Dahnke, Gabriel Ziegler, and Christian Gaser are supported
+by the German BMBF grants 01EV0709 & 01GW0740.
+
+Data
+
+g) TSEG
+
+f) filtering
+
+1)
+2)
+3)
+4)
+5)
+
+Figure 1:1:Main
+steps
+of the
+local
+adaptive
+segmentation
+algorithm.
+Initial segmentation
+and regions and
+growing
+have
+Figure
+Main
+steps
+of the
+local
+adaptive
+segmentation
+algorithm.
+Initial segmentation
+regions
+the strongest influence on the final result. Overlapping of different tissue classes is possible (i.e. in subcortical
+growing
+the strongest
+inﬂuence
+onforthe
+ﬁnal
+result.
+Overlapping
+of different
+structures),have
+but unproblematic,
+if happens
+only
+small
+areas.
+To control
+the smoothness
+of thetissue
+results,classes
+the size
+of the
+neighborhood
+the filter size
+are used (Figure
+3). The intensity ifdistance
+allows
+quantify
+the result
+of the
+is
+possible
+(i.e. in and
+subcortical
+structures),
+but unproblematic,
+happens
+only
+for small
+areas.
+To
+
+Figure 3:
+andand
+region-growing
+parameter,
+the size
+theof
+neighborhood
+for the
+Figure
+3:Besides
+Besidesthe
+theregion
+regioninitialization,
+initialization,
+region-growing
+parameter,
+theofsize
+the neighborhood
+class intensity estimation and the smoothing size influences the results. Small neighborhoods (left) and low smoofor
+the
+class
+estimation
+andthat
+thestrongly
+smoothing
+sizeoninﬂ
+uences
+the segments.
+results. Small
+neighborhoods
+thing
+(top)
+leadintensity
+to very hard
+boundaries
+depend
+the
+estimated
+Higher
+neighborhoods
+and higher
+smoothing
+(bottom)
+reduces
+sensitivity
+a little bit, butthat
+helps
+to increase
+the stability.
+(left)
+and low
+smoothing
+(top)
+lead local
+to very
+hard boundaries
+strongly
+depend
+on the estimated
+
+control the smoothness of the results, the size of the neighborhood and the ﬁlter size are used
+(Figure 3). The intensity distance allows quantify the result of the segmentation (Figure 4).
+
+segments. Higher neighborhoods and higher smoothing (bottom) reduces local sensitivity a little
+bit, but helps to increase the stability.
+
+E-mail: robert.dahnke@uni-jena.de
+
+http://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach
+http://fcon_1000.projects.nitrc.org/indi/adhd200/
+http://www.spl.harvard.edu/publications/item/view/2037
+http://www.oasis-brains.org
+http://www.cma.mgh.harvard.edu/ibsr/
+
+REFERENCES
+
+6 mm Gaussian smoothing
+
+e) completing of non-class voxels via Laplace-smoothing
+
+3 mm Gaussian smoothing
+
+d) value estimation of in-class voxels in the neighborhood
+
+Dahnke, R. et. al. (2011),‘.Partitioning of the brain using graph-cut’, HBM2011.
+Ashburner, J. (2000), ‘Voxel-based morphometry-the methods’,
+NeuroImage, 11(6 Pt 1), 805–821.
+Ashburner et al. (2005), ‘Unified segmentation’, Neuroimage vol. 26 (3) pp. 839-851.
+Collins, D.L. et. al. (1998),’Design and construction of a realistic brain
+phantom’, IEEE trans Med Imaging 17, 463-468.
+Gaser et al. (2012), ‘Local Histogram Equalization to Improve
+Segmenation Quality of Low Contrast Structures’, HBM 2012
+Haacke et al. (2005), ‘Imaging iron stores in the brain using magnetic resonance
+imaging’, Magnetic Resonance Imageing Volume 23, Issue 1, January 2005, Pages 1–25.
+Halle M, Talos I-F, Jakab M, Farough S, Meier D, Wald L, Fischl B, Kikinis R
+(2011). Multi-modality MRI-based Atlas of the Brain.
+
+PDF of the poster is available at: http://dbm.neuro.uni-jena.de/HBM2012/Dahnke02.pdf
+
+

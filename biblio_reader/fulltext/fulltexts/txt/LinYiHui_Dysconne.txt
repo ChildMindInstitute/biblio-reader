@@ -1,0 +1,78 @@
+Dysconnection of functional network in Schizophrenia: a
+ROI-based model approach
+Yi-Hui Lin (林宜慧) , Jiun-Yan Huang(黃俊燕)
+Department of Bioinformatics, Chung Hua University, Hsin Chu 30012, Taiwan, R.O.C
+
+Introduction
+Schizophrenia is a mental disorder, the core symptoms include hallucinations,
+delusions and nonsense. It is generally believed that structure of functional network
+concerns with the illness of Schizophrenia. In the previous study, the disconnection and
+abrupted small world property of functional network was found in Schizophrenia
+patients[1].
+To estimate the brain functional network, the popular approach is using fMRI to
+collect the time course data. Two brain regions will be functionally linked if their
+correlation coefficient between time course data is higher than a given threshold,
+otherwise it is functionally disconnected. However, the node definition for the
+functional network is pivotal to the study of functional network structure. Usually, there
+are two ways to define nodes, one is model-based method. Several regions of
+interest(ROIs) are selected as definition of nodes, the structure of functional network
+depends on which ROIs are selected. The alternative is model free method, one uses
+clustering, Independent component analysis(ICA), and etc. to parcellate whole brain
+into several synchronous regions. The synchronous regions are defined as nodes in
+functional network. The short coming of model free method is the results depends on
+external stimuli of the brain.
+Here, we adopt two ROI-based models of functional network, and systematic
+compare the consistency of the results for the three models.
+
+Methods and Results
+Two ROI-based models with 10,22 and 160 ROIs respectively were adopted in this
+study[1,2,3]. The time series fMRI data of Schizophrenia patients and healthy control
+was downloaded from the COBRE dataset in International Neuroimaging data-sharing
+Initiative(INDI, http://fcon_1000.projects.nitrc.org/). The COBRE dataset contains 72
+patients with Schizophrenia and 75 healthy controls,and ages ranging from 18 to 65 in
+each group (TR:2s,TE:29ms,matrix size:64x64, 33slices)[4].
+The preprocessing of fMRI data was done by SPM8(Statistical Parametric Mapping,
+http://www.fil.ion.ucl.ac.uk/spm/). The preprocess arranges in order of smooth, slice
+timing correction, head movement correction, and normalization to MNI template. After
+preprocessing step, we use REST(Resting State fMRI data analysis Toolkit,
+
+http://www.nitrc.org/projects/rest) to calculate the brain’s functional network. The
+functional networks for Schizophrenia and Healthy control were compared by t test
+after Fisher’s Z transformation. The P value was adjusted by Bonferroni correction and
+False Discovery Rate(FDR).
+In addition, the calculation of a network characteristics, including degree, clustering
+coefficient,betweenness,etc.,to prove that the network link changes.
+
+Discussion
+The disconnectivity of functional network for several ROIs was found in
+schizophrenia. The disconnections in middle and superior left temporal and right
+posterior cingulum were also found. The mainly missing and few rewiring of
+connections cause the abruption of functional network in Schizophrenia.
+
+Figure 1. (a) The adjacency matrix between 10 ROIs for healthy controls.(b)The Pvalue of the adjacency matrix for healthy controls.(c) The adjacency matrix between 10
+ROIs for Schizophrenia patients.(d) The P-value of the adjacency matrix in
+Schizophrenia.
+
+References
+1
+
+Irina R.,Guillermo C.,Benjamin T., et al. (2013) Schizophrenia as a Network Disease: Disruption of
+Emergent Brain Function in Patients with Auditory Hallucinations.PLoS ONE 8(1):e50625
+
+2
+
+Plaze M, Bartrs-Faz D, Martinot J, et al. (2006) Left superior temporal gyrus activation during
+sentence perception negatively correlates with auditory hallucination severity in schizophrenia
+patients. Schizophrenia Research 87, 109–115.
+
+3
+
+Nico U. F. Dosenbach, Binyam N., Alexander L. Cohen, Damien A. Fair, et al.(2010) Prediction of
+Individual Brain Maturity Using fMRI. Published 10 September 2010, Science 329, 1358.
+
+4
+
+International Neuroimaging data-sharing Initiative, COBRE dataset.
+( http://fcon_1000.projects.nitrc.org/indi/retro/cobre.html)
+
+

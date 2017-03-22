@@ -1,0 +1,227 @@
+4/13/2016
+
+Frontiers | Standardizing Metadata in Brain Imaging
+
+Search for articles, people, events and more.
+
+EVENT ABSTRACT
+
+23
+
+Arno Klein
+
+Back to Event
+
+Standardizing Metadata in Brain Imaging
+David B. Keator1*, Jean‑Baptiste Poline2, B N. Nichols3, Satrajit S. Ghosh4, Camille Maumet5, Krzysztof J.
+Gorgolewski6, Tibor Auer7, Cameron Craddock8, Gang Chen9, Guillaume Flandin10, Yaroslav O. Halchenko11,
+Michael Hanke12, Christian Haselgrove13, Karl Helmer14, Mark Jenkinson15, Arno Klein16, Linda Lanyon17,
+Daniel Marcus18, Daniel Margulies19, Frank Michel20, Thomas E. Nichols5, Russell A. Poldrack6, Richard
+Reynolds9, Ziad Saad9, Tanya Schmah21, Jason Steﬀener22, Jessica A. Turner23, John D. Van Horn24, Samir
+Das25 and David N. Kennedy13
+1
+
+University of California, Irvine, Psychiatry and Human Behavior, USA
+
+2
+
+University of California, Berkley, USA
+
+3
+
+SRI International, USA
+
+4
+
+Massachusetts Institute of Technology, McGovern Institute for Brain Research, USA
+
+5
+
+University of Warwick, United Kingdom
+
+6
+
+Stanford University, Psychology, USA
+
+7
+
+University of Cambridge, United Kingdom
+
+8
+
+Child Mind Institute, USA
+
+9
+
+National Institute of Mental Health, Scientiﬁc and Statistics Computing Core, USA
+
+10
+
+UCL Institute of Neurology, Wellcome Trust Centre for Neuroimaging, United Kingdom
+
+11
+
+Dartmouth College, Psychology and Brain Sciences, USA
+
+12
+
+Otto‑von‑Guericke University, Institute of Psychology II, Germany
+
+13
+
+University of Massachusetts, Psychiatry, USA
+
+14
+
+Massachusetts General Hospital, Radiology, USA
+
+15
+
+University of Oxford, United Kingdom
+
+16
+
+Sage Bionetworks, USA
+
+17
+
+International Neuroinformatics Coordinating Facility, Sweden
+
+18
+
+Washington University School of Medicine, Radiology, USA
+
+19
+
+Max Planck Institute, Germany
+
+20
+
+University Nice de Sophia‑Antipolis, France
+
+21
+
+University of Toronto, Canada
+
+22
+
+Columbia University, neurology, USA
+
+23
+
+Georgia State University, Psychology and Neuroscience, USA
+
+24
+
+University of Southern California, Keck School of Medicine, USA
+
+25
+
+Montreal Neurological Institute, Canada
+
+Introduction: In neuroimaging open data sharing is not a common practice [1]. While publishing a paper in many disciplines requires
+that data be made public, in human brain imaging there is no general agreement that data should be shared, and there is a lack of
+community standard for data sharing. However, the neuroimaging community increasingly recognizes that sharing raw and processed
+data is critical for reproducible research, enabling meta-analyses and allowing for serendipitous discoveries.
+In light of this challenge, the Neuroimaging and Data Sharing Task Force (NIDASH-TF) formed by the International
+Neuroinformatics Coordinating Facility’s (INCF) Program on Standards for Data Sharing [10] supports the development of standards
+and tools that will have a community-wide impact on the prevalence of neuroimaging data sharing. In this abstract we report on work
+to facilitate the sharing of neuroimaging metadata and analysis results.
+Methods: The Neuroimaging Data Model Working Group (NIDM WG), a sub-group formed to design a metadata model for
+neuroimaging, holds weekly calls with participating members from the international community and organizes INCF-hosted yearly
+meetings. The NIDASH-TF wiki [10] is the primary resource for disseminating information and contains weekly minutes,
+publications, and links to products. NIDASH code is available in the GitHub repository (github.com/incf-nidash). The Google Group
+incf-datasharing [11] hosts an email list on data sharing issues, reaching out to a wider community. The NIDASH-TF meets several
+times a year to review progress on projects (eg [16]) that will make data sharing easier and fruitful for the scientific community.
+Results & Discussion: The NIDM WG has developed DICOM [6,7] and neuroimaging [2,7] terminologies, and the Neuroimaging Data
+Model (NIDM) [2,5]. NIDM is a neuroimaging-specific extension of the PROV Data Model (PROV-DM; [18]) to facilitate sharing of
+semantically meaningful neuroimaging provenance and derived data. Using these tools, we have developed novel applications to
+demonstrate federating data across relational databases and spreadsheets [4], visualizing FreeSurfer segmentations [12] across a large
+http://www.frontiersin.org/MyFrontiers/Events/AbstractDetails.aspx?ABS_DOI=10.3389/conf.fnins.2015.91.00004
+
+1/3
+
+4/13/2016
+
+Frontiers | Standardizing Metadata in Brain Imaging
+
+cohort [3], and modeling SPM and FSL statistical results [8], and have started to model results from AFNI. Further, we have
+developed detailed specifications of the core NIDM standard and “object models”, specifying the recommended minimal set of
+entities, agents, and activities to describe datasets, workflows, and derived data. The SPM and FSL statistical analysis object model
+specifications [14] and examples are available online [15]. Under the auspices of NIDASH, C. Gorgolewski and colleagues have also
+developed a website for sharing raw statistical maps (NeuroVault.org) which uses NIDM [9].
+The INCF task force meetings have encouraged adoption of these resources in various outside projects. We are linking this work with
+projects that are providing and hosting data, developing lexicons, and generating derived data for different purposes (e.g. data
+mining). The group includes developers and is in close contact with projects that plan to use these resources, or may do so in the
+future (e.g., Neurosynth, Neurovault, Brainspell), as well as with developers of integration platforms (e.g. NeuroDebian). Recently, we
+have worked with R. Poldrack and colleagues on the new version of the OpenfMRI specifications and will be describing this standard
+in the NIDM-experiment model [17].
+Conclusions: The immediate goals of the NIDASH NIDM working group are to 1) refine existing terminologies and object models, 2)
+continue working with software developers to incorporate NIDM into their software, 3) create similar models for related tools such as
+multivariate models so that common aspects across software packages can be identified, and 4) facilitate broad and expanded use of
+the NIDM standard for data querying and data exchange, fostering applications such as meta-analyses.
+Standardization within communities are always challenging. The task force has adopted cultural practices of open source software
+development to carry out the specification of standards for brain imaging data sharing.
+
+Acknowledgements
+We would like to acknowledge the work of all the INCF task force members as well as of many other colleagues who have helped the
+task force. We are particularly indebted to Mathew Abrams, Linda Lanyon, Roman Valls Guimera and Sean Hill for their support at
+the INCF. Further we acknowledge the long-standing support of DDWG activities by the BIRN coordinating center (NIH 1 U24
+RR025736-01), and the Wellcome Trust for support of CM & TEN.
+
+References
+[1] Poline J.B., Breeze J., Ghosh S., Gorgolewski K., Halchenko Y., Hanke M., Haselgrove C., Helmer K., Keator D.B., Marcus D., Poldrack R., Schwartz Y., Ashburner
+A., Kennedy D. Data sharing in neuroimaging research. Frontiers in Neuroinformatics. 2012; 6:9.
+[2] Keator D.B., Helmer K., Steffener J., Turner J.A., Van Erp T.G.M., Gadde S., Ashish N., Burns G.A., Nichols B.N. Towards structured sharing of raw and derived
+neuroimaging data across existing resources. Neuroimage. 2013 Nov 15;82:647-61
+[3] Nichols B.N., Stoner R., Keator D.B., Turner J., Helmer K.G., Ashish N., Steffener J., Grabowski T.J., Ghosh S. There’s an app for that: a semantic data
+provenance framework for reproducible brain imaging. Abstract and poster presentation at Organization of Human Brain Mapping, Seattle, WA. 2013.
+[4] Nichols B.N., Steffener J., Haselgrove C., Keator D.B., Stoner R., Poline J.B., Ghosh S. Mapping Neuroimaging Resources into the NIDASH Data Model for
+Federated Information Retrieval. Abstract and poster presentation at Neuroinformatics 2013, Stockholm, Sweden. 2013.
+[5] Ghosh S., Nichols B. N., Gadde S., Steffener J., Keator D. XCEDE-DM: A neuroimaging extension to the W3C provenance data model. Abstract and poster
+presentation at Neuro-Informatics Congress. Munich, Germany 2012.
+[6] K.G. Helmer, S. Ghosh, B.N. Nichols, D. Keator, T. Nichols, J. Turner. Poster presentation at the International Neuroinformatics Coordinating Facility
+Neuroscience 2012, Munich, Germany,
+2012.
+[7] K.G. Helmer, S. Ghosh, D. Keator, C. Maumet, B.N. Nichols, T. Nichols, J.B. Poline, J. Steffener, J. Turner, W. Wong, M. Martone. The Addition of Neuroimaging
+Acquisition, Processing and Analysis Terms to Neurolex. Accepted abstract to Organization of Human Brain Mapping, Hamburg, Germany. 2014.
+[8] C. Maumet, T. Nichols, B.N. Nichols, G. Flandin, J. Turner, K.G. Helmer,J. Steffener, J.B. Poline, S. Ghosh, D. Keator. Standardized reporting of neuroimaging
+results with NIDM in SPM, FSL and AFNI. Submitted abstract to Organization of Human Brain Mapping, Honolulu, Hawaii. 2015.
+[9] Gorgolewski, K.J., Varoquaux, G., Rivera, G., Schwarz, Y., Ghosh, S.S., Maumet, C., Sochat, V.V., Nichols, T.E., Poldrack, R.A., Poline, J.-B., et al. (2015).
+NeuroVault.org: a web-based repository for collecting and sharing unthresholded statistical maps of the human brain. Frontiers in Neuroinformatics 9.
+[10] http://www.incf.org/core/programs/datasharing
+[11] wiki.incf.org/mediawiki/index.php/Neuroimaging_Task_Force
+[12] http://groups.google.com/d/forum/incf-datasharing
+
+http://www.frontiersin.org/MyFrontiers/Events/AbstractDetails.aspx?ABS_DOI=10.3389/conf.fnins.2015.91.00004
+
+2/3
+
+4/13/2016
+
+Frontiers | Standardizing Metadata in Brain Imaging
+
+[13] surfer.nmr.mgh.harvard.edu
+[14] http://nidm.nidash.org
+[15] https://github.com/incf-nidash/nidm/tree/master/nidm/nidm-results
+[16] http://datasharing.incf.org/ni/One_Click_Prototype
+[17] https://openfmri.org/ and http://fcon_1000.projects.nitrc.org/
+[18] http://www.w3.org/TR/prov-dm/
+
+Keywords: NIDM, Neuroimaging, neuroinformatics, provenance, metadata Conference: Neuroinformatics 2015, Cairns, Australia, 20 Aug ‑ 22 Aug, 2015.
+Presentation Type: Poster, to be considered for oral presentation Topic: General neuroinformatics
+Citation: Keator DB, Poline J, Nichols BN, Ghosh SS, Maumet C, Gorgolewski KJ, Auer T, Craddock C, Chen G, Flandin G, Halchenko YO, Hanke M, Haselgrove C,
+Helmer K, Jenkinson M, Klein A, Lanyon L, Marcus D, Margulies D, Michel F, Nichols TE, Poldrack RA, Reynolds R, Saad Z, Schmah T, Steﬀener J, Turner JA, Van
+Horn JD, Das S and Kennedy DN (2015). Standardizing Metadata in Brain Imaging. Front. Neurosci. Conference Abstract: Neuroinformatics 2015. doi:
+10.3389/conf.fnins.2015.91.00004
+Received: 20 Apr 2015; Published Online: 05 Aug 2015.
+* Correspondence: Mr. David B Keator, University of California, Irvine, Psychiatry and Human Behavior, Irvine, CA, 92697, USA, dbkeator@uci.edu
+
+Back to top
+© 2007 ‑ 2016 Frontiers Media S.A. All Rights Reserved
+
+http://www.frontiersin.org/MyFrontiers/Events/AbstractDetails.aspx?ABS_DOI=10.3389/conf.fnins.2015.91.00004
+
+3/3
+
+
