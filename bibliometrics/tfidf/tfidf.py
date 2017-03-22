@@ -286,7 +286,6 @@ if __name__ == "__main__":
     for entry in synSet:
         kv = entry.split(',')
         synDict[kv[0]] = kv[1]
-    exit
         
     # Stopwords
     stopwords = readWordList('data/stopwords.txt')
@@ -370,7 +369,7 @@ if __name__ == "__main__":
     coords.reverse()
     
     print(("\t".join(["term", "tf", "df", "score", "x", "y"])))
-    with open('data/generated_terms.txt', 'w') as gt:
+    with open('../../outputs/generated_terms.txt', 'w') as gt:
         for k, v in coords:
             print(("\t".join([labels[k], str(tf[k]), str(df[k]), str(v), str(x[
                   k]), str(y[k])])))

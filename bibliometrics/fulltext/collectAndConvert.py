@@ -14,6 +14,7 @@ Author:
 
 import convertToText, os, pandas as pd, re, urllib
 
+
 def main():
     # make in and out dirs if they don't already exist
     for subdir in ['pdf', 'txt']:
@@ -21,7 +22,7 @@ def main():
             os.makedirs(os.path.join('fulltexts', subdir))
     
     # get the list of pdf files to work with
-    with open('../../FCP_2015.csv', 'r', encoding='utf-8') as f:
+    with open('../../inputs/FCP_DATA.csv', 'r', encoding='utf-8') as f:
         data = pd.read_csv(f)
 
     # get the pdfs
@@ -41,7 +42,6 @@ def main():
                 except Exception as e:
                     print('\t'.join([str(e), os.path.basename(file), pdf]))
                     next
-                
     
     # convert the pdfs to txts
     convertToText.walkAndText(os.path.abspath(os.path.join('fulltexts', 'pdf')
