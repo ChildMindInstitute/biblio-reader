@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-with open('FCP_DATA.csv', 'r') as f:
+with open('../outputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 
