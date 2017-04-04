@@ -1,15 +1,18 @@
 import pandas as pd
 import unidecode
 import urllib.request as urllib
-import urllib.error as urlerror
 import xml.etree.ElementTree as etree
 import re
-import webbrowser
 from bs4 import BeautifulSoup
 pd.options.mode.chained_assignment = None
 
 with open('inputs/FCP_DATA_wIDS.csv', 'r') as f:
     data = pd.read_csv(f)
+
+
+fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
+       'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
+       'Consortium for Reproducibility and Reliability']
 
 
 def safeint(x):
@@ -39,15 +42,13 @@ def joindata(row):
 
 
 def get_id(url):
-    res = []
     try:
         xml = urllib.urlopen(url).read()
     except:
-        return res
+        return None
     for idlist in etree.fromstring(xml).findall('IdList'):
         for id in idlist:
-            res.append(int(id.text))
-    return res
+            return int(id.text)
 
 
 def change_id(id):
@@ -64,6 +65,7 @@ def get_ids(file=None, full_text=True):
     data['PMCIDS'] = ids
     data['PMCIDS'] = data['PMCIDS'].apply(change_id).fillna(0.0).astype(int)
     fulldata = data[data['PMCIDS'] != 0]
+    fulldata['index'] = list(range(0, len(fulldata['index'])))
     fulldata.reset_index(inplace=True)
     if full_text:
         fulldata['Full'] = fulldata['PMCIDS'].apply(lambda x: 'https://eutils.ncbi.nlm.nih' +
@@ -77,35 +79,20 @@ def get_key_paragraphs(keywords):
     if fulldata['Full'] is None:
         return
     excerpts = []
-    keywords = map(lambda x: re.compile(x), keywords)
+    keywords = re.compile("(" + '|'.join(keywords) + ")")
     for link in fulldata['Full']:
         try:
             html = urllib.urlopen(link).read()
-        except urlerror:
+        except:
+            excerpts.append(['N/A'])
             continue
         soup = BeautifulSoup(html, 'html.parser')
         excerpts.append(soup.find_all(string=keywords))
     fulldata['Excerpts'] = excerpts
 
+fulldata['index'] = list(range(0, len(fulldata['index'])))
 
 
-
-
-data['PMCIDS'] = data['PMCIDS'].apply(change_id)
-data['PMCIDS'] = data['PMCIDS'].fillna(0.0).astype(int)
-
-fulldata = data[data['PMCIDS'] != 0]
-
-fulldata.reset_index(inplace=True)
-del fulldata['Unnamed: 0']
-
-fulldata['Full'] = fulldata['PMCIDS'].apply(lambda x: 'https://eutils.ncbi.nlm.nih' +
-                                                      '.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=' +
-                                                      str(x) + '&cmd=prlinks&retmode=ref')
 with open('outputs/FCP_DATA_wIDS.csv', 'w') as f:
     f.write(fulldata.to_csv(index=False))
 
-
-fcp = """"fcon_1000.projects.nitrc.org" OR "Rockland Sample" OR "1000 Functional Connectomes Project" OR "International Neuroimaging Data-Sharing Initiative" OR "Autism Brain Imaging Data Exchange" OR ADHD-200 OR "Consortium for Reproducibility and Reliability”""".replace('"', '')
-
-get_key_paragraphs(fcp.split(' OR '))
