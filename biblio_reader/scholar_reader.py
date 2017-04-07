@@ -1,8 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
+import urllib.request as urllib
 
 
-with open('../outputs/FCP_DATA.csv', 'r') as f:
+with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 
@@ -49,4 +50,5 @@ def year_sum_graph(column):
     df.plot.bar()
     plt.savefig('Citations_sum.png', bbox_inches='tight')
 
-value_count_graph(data['Journal'], xcount=20)
+for row in data.iterrows():
+    s = ''.join(row[1].apply(lambda x: str(x)))

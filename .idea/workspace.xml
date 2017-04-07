@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1066b712-8790-4740-8a5f-a97451a6d5f3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/biblio_reader/pdf_writer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pdfs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/mapSource/count_aff_by_country.py" afterPath="$PROJECT_DIR$/biblio_reader/mapSource/count_aff_by_country.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/mapSource/fetch_pubmed_affiliations.py" afterPath="$PROJECT_DIR$/biblio_reader/mapSource/fetch_pubmed_affiliations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/scholar_reader.py" afterPath="$PROJECT_DIR$/biblio_reader/scholar_reader.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intersection.py" afterPath="$PROJECT_DIR$/intersection.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,32 +23,36 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pub_med.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="unlinks" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/unlinks">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2071">
+              <caret line="747" column="79" lean-forward="false" selection-start-line="747" selection-start-column="79" selection-end-line="747" selection-end-column="79" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pub_med.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="180">
+              <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="pdf_writer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_writer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FCP_DATA_wIDS.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outputs/FCP_DATA_wIDS.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12435">
-              <caret line="829" column="965" lean-forward="false" selection-start-line="829" selection-start-column="965" selection-end-line="829" selection-end-column="965" />
-              <folding />
+            <state relative-caret-position="478">
+              <caret line="61" column="42" lean-forward="true" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,8 +60,50 @@
       <file leaf-file-name="scholar_reader.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biblio_reader/scholar_reader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="88">
+              <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdfs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pdfs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="79689" lean-forward="false" selection-start-line="0" selection-start-column="79689" selection-end-line="0" selection-end-column="79689" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FCP_DATA.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-9615">
+              <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="collectAndConvert.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="convertToText.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,11 +112,21 @@
       <file leaf-file-name="intersection.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/intersection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+            <state relative-caret-position="150">
+              <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="1000FCP2014.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inputs/1000FCP2014.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="1532" column="40" lean-forward="false" selection-start-line="1532" selection-start-column="40" selection-end-line="1532" selection-end-column="100" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,8 +142,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>send_q</find>
-      <find>num_citations</find>
       <find>split</find>
       <find>print</find>
       <find>print(</find>
@@ -110,6 +170,8 @@
       <find>cookies</find>
       <find>craw</find>
       <find>crawler software</find>
+      <find>nan</find>
+      <find>.loc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,18 +200,23 @@
         <option value="$PROJECT_DIR$/pub_med.py" />
         <option value="$PROJECT_DIR$/outputs/FCP_DATA_IDS" />
         <option value="$PROJECT_DIR$/outputs/FCP_DATA_wIDS" />
-        <option value="$PROJECT_DIR$/unlinks" />
-        <option value="$PROJECT_DIR$/biblio_reader/scholar_reader.py" />
         <option value="$PROJECT_DIR$/outputs/FCP_DATA_wIDS.csv" />
-        <option value="$PROJECT_DIR$/biblio_reader/pub_med.py" />
         <option value="$PROJECT_DIR$/inputs/FCP_DATA_wIDS.csv" />
-        <option value="$PROJECT_DIR$/intersection.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/biblio_reader/mapSource/count_aff_by_country.py" />
+        <option value="$PROJECT_DIR$/biblio_reader/mapSource/fetch_pubmed_affiliations.py" />
+        <option value="$PROJECT_DIR$/unlinks" />
+        <option value="$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py" />
+        <option value="$PROJECT_DIR$/biblio_reader/scholar_reader.py" />
+        <option value="$PROJECT_DIR$/pdfs" />
+        <option value="$PROJECT_DIR$/biblio_reader/pub_med.py" />
+        <option value="$PROJECT_DIR$/biblio_reader/pdf_writer.py" />
+        <option value="$PROJECT_DIR$/intersection.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="52" />
+    <option name="y" value="23" />
     <option name="width" value="1920" />
     <option name="height" value="977" />
   </component>
@@ -193,38 +260,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 3.6.0 (~/anaconda/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scholar.py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="&lt; Python 3.6.0 (~/anaconda/bin/python) &gt;" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Sphinx-1.5.1-py3.6.egg" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scholar.py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="scholar.py" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -239,7 +274,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="outputs" />
+              <option name="myItemId" value="inputs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -257,6 +292,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scholar.py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scholar.py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblio_reader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tfidf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scholar.py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scholar.py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="biblio_reader" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fulltext" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -264,7 +335,6 @@
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -279,57 +349,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.intersection">
-    <configuration default="false" name="collectAndConvert" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bibliometrics/fulltext" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="scholar.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bibliometrics/fulltext/collectAndConvert.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="tfidf" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/bibliometrics/tfidf" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="scholar.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/bibliometrics/tfidf/tfidf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="tfidf (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tfidf" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="scholar.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tfidf/tfidf.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="pub_med" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -360,6 +379,57 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="scholar.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intersection.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="count_aff_by_country" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/biblio_reader/mapSource" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="scholar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/biblio_reader/mapSource/count_aff_by_country.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="scholar_reader" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/biblio_reader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="scholar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/biblio_reader/scholar_reader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="pdf_writer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/biblio_reader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="scholar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/biblio_reader/pdf_writer.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -499,19 +569,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.collectAndConvert" />
-      <item index="1" class="java.lang.String" itemvalue="Python.tfidf" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tfidf (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.pub_med" />
-      <item index="4" class="java.lang.String" itemvalue="Python.intersection" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pub_med" />
+      <item index="1" class="java.lang.String" itemvalue="Python.intersection" />
+      <item index="2" class="java.lang.String" itemvalue="Python.count_aff_by_country" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scholar_reader" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pdf_writer" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.intersection" />
-        <item index="1" class="java.lang.String" itemvalue="Python.pub_med" />
-        <item index="2" class="java.lang.String" itemvalue="Python.tfidf (1)" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tfidf" />
-        <item index="4" class="java.lang.String" itemvalue="Python.collectAndConvert" />
+        <item index="1" class="java.lang.String" itemvalue="Python.pdf_writer" />
+        <item index="2" class="java.lang.String" itemvalue="Python.scholar_reader" />
+        <item index="3" class="java.lang.String" itemvalue="Python.count_aff_by_country" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pub_med" />
       </list>
     </recent_temporary>
   </component>
@@ -529,26 +599,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="52" width="1920" height="977" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="23" width="1920" height="977" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34361234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39784947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33548388" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39784947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -559,15 +629,15 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33688286" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34361234" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38065028" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39883834" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39784947" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -578,42 +648,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/miniconda2/envs/Python3.5/lib/python3.5/urllib/request.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="8460">
-          <caret line="589" column="0" lean-forward="false" selection-start-line="589" selection-start-column="0" selection-end-line="589" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/miniconda2/envs/Python3.5/lib/python3.5/site-packages/pandas/core/frame.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3855">
-          <caret line="344" column="0" lean-forward="false" selection-start-line="344" selection-start-column="0" selection-end-line="344" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/first.csv" />
-    <entry file="file://$USER_HOME$/miniconda2/envs/Python3.5/lib/python3.5/site-packages/pandas/indexes/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16796">
-          <caret line="2133" column="0" lean-forward="false" selection-start-line="2133" selection-start-column="0" selection-end-line="2133" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/miniconda2/envs/Python3.5/lib/python3.5/site-packages/pandas/core/internals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="4246" column="0" lean-forward="false" selection-start-line="4246" selection-start-column="0" selection-end-line="4246" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/miniconda2/envs/Python3.5/lib/python3.5/site-packages/bibtexparser/bparser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="117" column="0" lean-forward="false" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/miniconda2/envs/Python3.5/lib/python3.5/site-packages/bibtexparser/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -651,13 +685,6 @@
     <entry file="file://$PROJECT_DIR$/bibliometrics/rawData/tmp/cmi_library.bib" />
     <entry file="file://$PROJECT_DIR$/bibliometrics/graphs/bagging/bag_pageranks.py" />
     <entry file="file://$PROJECT_DIR$/bibliometrics/graphs/community.py" />
-    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/textmining/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -759,6 +786,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-10769">
           <caret line="645" column="0" lean-forward="false" selection-start-line="645" selection-start-column="0" selection-end-line="645" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -777,87 +805,158 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="38" column="24" lean-forward="false" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/core/series.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="2799" column="0" lean-forward="false" selection-start-line="2799" selection-start-column="0" selection-end-line="2799" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/unlinks">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1395">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12255">
-          <caret line="31" column="3" lean-forward="false" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA_wIDS.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8470">
-          <caret line="751" column="954" lean-forward="false" selection-start-line="751" selection-start-column="954" selection-end-line="751" selection-end-column="954" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/outputs/FCP_DATA_wIDS.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12435">
+        <state relative-caret-position="102000">
           <caret line="829" column="965" lean-forward="false" selection-start-line="829" selection-start-column="965" selection-end-line="829" selection-end-column="965" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/1000FCP2014.xml">
+    <entry file="file://$PROJECT_DIR$/biblio_reader/mapSource/countries.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="38" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/intersection.py">
+    <entry file="file://$PROJECT_DIR$/biblio_reader/mapSource/country_counts.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="68" lean-forward="false" selection-start-line="15" selection-start-column="68" selection-end-line="15" selection-end-column="68" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/mapSource/count_aff_by_country.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/mapSource/fetch_pubmed_affiliations.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1005">
+          <caret line="67" column="21" lean-forward="true" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#22#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA_wIDS.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="1" column="853" lean-forward="false" selection-start-line="1" selection-start-column="853" selection-end-line="1" selection-end-column="959" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="60">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/scholar_reader.py">
+    <entry file="file://$PROJECT_DIR$/unlinks">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="2071">
+          <caret line="747" column="79" lean-forward="false" selection-start-line="747" selection-start-column="79" selection-end-line="747" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="30" column="22" lean-forward="false" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9615">
+          <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pdfs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="79689" lean-forward="false" selection-start-line="0" selection-start-column="79689" selection-end-line="0" selection-end-column="79689" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        <state relative-caret-position="180">
+          <caret line="37" column="61" lean-forward="false" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/scholar_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_writer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="478">
+          <caret line="61" column="42" lean-forward="true" selection-start-line="61" selection-start-column="42" selection-end-line="61" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/intersection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/1000FCP2014.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="1532" column="40" lean-forward="false" selection-start-line="1532" selection-start-column="40" selection-end-line="1532" selection-end-column="100" />
           <folding />
         </state>
       </provider>

@@ -1,4 +1,3 @@
-import sys
 from collections import Counter
 import operator
 
@@ -8,7 +7,8 @@ for line in open('countries.txt', 'r').readlines():
 	line = line.replace('"', '').lower()
 	countries.append(line)
 countrySet = set(countries)
-	
+
+
 def getCountryCounts():
 	counts = Counter()
 	for line in open('../data/cmi_library.bib', 'r').readlines():
@@ -31,14 +31,21 @@ def getCountryCounts():
 						country = pot
 						break
 			if country not in countrySet:
-				print "Couldn't figure out", country
+				print("Couldn't figure out", country)
 			counts[country] += 1
 			
 	return counts
 	
 	
 def getAffiliationCounts(): 
-	corrections = [("jersey", "united states"), ("georgia", "united states"), ("belgique", "belgium"), ("hunan", "china"), ("chongqing", "china"), ("stockholm", "sweden"), ("frankfurt", "germany"), ("dallas", "united states"), ("nashville", "united states"), ("michigan", "united states"), ("baltimore", "united states"), ("philadelphia", "united states"), ("new haven", "united states"), ("iran", "iran (islamic republic of)"), ("washington", "united states"), ("tokyo", "japan"), ("kyoto", "japan"), ("deutschland", "germany"), ("korea", "korea, republic of"), (", uk", "united kingdom"), ("england", "united kingdom"), ("new york", "united states"), ("usa", "united states"), ("cambridge", "united kingdom")]
+    corrections = [("jersey", "united states"), ("georgia", "united states"), ("belgique", "belgium"),
+				   ("hunan", "china"), ("chongqing", "china"), ("stockholm", "sweden"), ("frankfurt", "germany"),
+				   ("dallas", "united states"), ("nashville", "united states"), ("michigan", "united states"),
+				   ("baltimore", "united states"), ("philadelphia", "united states"), ("new haven", "united states"),
+				   ("iran", "iran (islamic republic of)"), ("washington", "united states"), ("tokyo", "japan"),
+				   ("kyoto", "japan"), ("deutschland", "germany"), ("korea", "korea, republic of"),
+				   (", uk", "united kingdom"), ("england", "united kingdom"), ("new york", "united states"),
+				   ("usa", "united states"), ("cambridge", "united kingdom")]
 	removes = set(["jordan", "jersey", "georgia"])
 	counts = Counter()
 	lines = open('affiliations.txt', 'r').readlines()
@@ -63,15 +70,15 @@ def getAffiliationCounts():
 			
 counts = getAffiliationCounts()
 
-print "count"
+print("count")
 covered = set()
 for country in countries:
 	covered.add(country)
-	print counts[country]
+	print(counts[country])
 	
 for country in counts.keys():
 	if not country in covered:
-		print "I have a count for", country, "but nowhere to put it"
+		print("I have a count for", country, "but nowhere to put it")
   
 sorted_x = sorted(counts.iteritems(), key=operator.itemgetter(1))
 total = 0
