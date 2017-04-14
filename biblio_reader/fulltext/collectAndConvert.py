@@ -41,7 +41,7 @@ def main():
                         ofile.write(pdffile.read())
                 except Exception as e:
                     print('\t'.join([str(e), os.path.basename(file), pdf]))
-                    next
+                    continue
     
     # convert the pdfs to txts
     convertToText.walkAndText(os.path.abspath(os.path.join('fulltexts', 'pdf')

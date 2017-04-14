@@ -6,7 +6,7 @@ import re
 from bs4 import BeautifulSoup
 pd.options.mode.chained_assignment = None
 
-with open('inputs/FCP_DATA_wIDS.csv', 'r') as f:
+with open('inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 

@@ -50,5 +50,4 @@ def year_sum_graph(column):
     df.plot.bar()
     plt.savefig('Citations_sum.png', bbox_inches='tight')
 
-for row in data.iterrows():
-    s = ''.join(row[1].apply(lambda x: str(x)))
+
