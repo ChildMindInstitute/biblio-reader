@@ -3,6 +3,7 @@ import os
 import urllib.request as urllib
 import urllib.parse as urlparse
 from bs4 import BeautifulSoup as bs
+import PyPDF2
 
 
 with open('../inputs/FCP_DATA.csv', 'r') as f:
@@ -156,6 +157,13 @@ def citeseer_open(data):
             print(e, key, link)
 
 
-print(len(no_pdfs))
-print(*sorted(no_pdfs.items()), sep='\n')
-
+def find_corrupted(pdf_directory):
+    res = []
+    for path, dirs, files in os.walk(pdf_directory):
+        for file in files:
+            full_file = '/'.join([path, file])
+            try:
+                PyPDF2.PdfFileReader(full_file)
+            except:
+                res.append(int(file.replace('.pdf', '')))
+    return res
