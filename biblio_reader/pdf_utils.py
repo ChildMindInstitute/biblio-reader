@@ -167,3 +167,5 @@ def find_corrupted(pdf_directory):
             except:
                 res.append(int(file.replace('.pdf', '')))
     return res
+
+print(len(pdfs))

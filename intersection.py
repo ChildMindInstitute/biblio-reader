@@ -9,11 +9,17 @@ root = tree.getroot()
 sente = []
 for name in root.findall(".//{http://www.thirdstreetsoftware.com/SenteXML-1.0}characteristic[@name='articleTitle']"):
     sente.append(str(name.text).lower())
-
+"""
 titles = 0
 for article in sente:
     if article in data['Title'].apply(lambda x: x.lower()):
         print(article)
         titles += 1
 print(titles)
+"""
+
+authors = 0
+for author in root.findall(".//{http://www.thirdstreetsoftware.com/SenteXML-1.0}authors"):
+    authors +=1
+    print(authors, ' '.join(author.itertext()).strip().split('\n'))
 
