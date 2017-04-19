@@ -18,8 +18,16 @@ for article in sente:
 print(titles)
 """
 
-authors = 0
+authors = []
 for author in root.findall(".//{http://www.thirdstreetsoftware.com/SenteXML-1.0}authors"):
-    authors +=1
-    print(authors, ' '.join(author.itertext()).strip().split('\n'))
+    authors.append(' '.join(author.itertext()).strip().split('\n'))
 
+sentezip = zip(sente, authors)
+
+def make_dataframe(zip):
+    list = []
+    for sente, authors in zip:
+        list.append([sente, authors])
+    return pd.DataFrame(data=list, columns=['sente', 'authors'])
+
+make_dataframe(sentezip).to_csv(path_or_buf='outputs/intersections.csv')
