@@ -10,20 +10,10 @@ with open('../inputs/FCP_DATA.csv', 'r') as f:
 
 dict_data = dict(zip(data['i'], data['URL']))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
-pdfs = []
-pdfs += [int(pdf.replace('.pdf', '')) for pdf in (os.listdir('../unlink_pdfs') + os.listdir('../linked_pdfs'))] + \
+pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../pdfs')] + \
         [key for key, value in valid_data.items() if 'books.google' in value]
 no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
 data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
-
-
-def print_unlinks(unlink_data):
-    for row in unlink_data.iterrows():
-        row = row[1]
-        if 'pdf' not in str(row['URL']):
-            print(row['i'])
-            print(row['URL'])
-            print(row['PMC_LINKS'])
 
 
 def pdfopener(data):
@@ -169,9 +159,3 @@ def citeseer_open(data):
 print(len(no_pdfs))
 print(*sorted(no_pdfs.items()), sep='\n')
 
-"""
-
-print(*[(key, 'http://' + urlparse.urlparse(value).netloc + '.ezproxy.neu.edu' +
-         urlparse.urlparse(value).path.replace('full', 'pdf')) for key, value in valid_no_pdfs.items()
-        if 'nature' in value], sep='\n')
-"""
