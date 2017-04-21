@@ -1,1175 +1,0 @@
-Ghent University
-Faculty of Psychology and Educational Sciences
-Second Master Theoretical and Experimental Psychology
-Year: 2014-2015
-Second semester exam period
-
-MAPPING BRAIN NETWORKS AND THEIR DYSFUNCTION IN AUTISM: A
-FUNCTIONAL CONNECTIVITY ANALYSIS
-Laure Dombrecht
-Student number: 01000280
-
-Masterproef II
-Promoter: Daniele Marinazzo
-Mentor: Roma Siugzdaite
-Department: Data-Analysis
-19-05-2015
-
-1	  
-	  
-
-Foreword
-This master thesis was written as a completion to the Master of Science in
-Psychology: theoretical and experimental psychology. Working on this master thesis for
-two years has been both exciting and interesting. I learned a lot about Autism and
-resting-state fMRI analysis, and about my own future goals and research interests.
-Overall I am very grateful to all the people that have supported me throughout this
-project, without whom this would not have been possible.
-First and foremost, I would like to thank my mentor Roma Siugzdaite for guiding me
-through the entire process, teaching me the ropes of resting-state fMRI analysis and
-being available for brainstorming through both years of my master thesis.
-Additionally I want to thank my mother Christel Snauwaert for assistance in
-constructing all fMRI images of this master thesis in Photoshop.
-Furthermore, I would like to thank my promoter Daniele Marinazzo for setting up
-this interesting research topic and assisting me in shaping the actual research question.
-I would also like to thank my parents, Paul Dombrecht and Christel Snauwaert, for
-providing me with the best opportunities in life, pushing me to be the best that I can be,
-supporting my hopes and dreams and providing both emotional and financial support
-throughout my entire education. Without their guidance in both good and stressful
-times, I would not be the person that I am today.
-And last but not least, I would like to thank my friends and peers for their support,
-for being someone to bounce ideas off of and discuss further options, and for being a
-shoulder to cry on in times when stress gets the best of me.
-
-Laure,
-April 30th, 2015.
-
-2	  
-	  
-
-Abstract
-Neural connectivity could be a possible explanatory framework for autism spectrum
-disorder (ASD). ASD is a common developmental disorder that is characterized by
-impaired social interaction, impaired communication, restricted interests, and repetitive
-behaviors. Two seemingly contradictory connectivity theories about etiology of ASD,
-namely the underconnectivity theory and the hyperconnectivity theory, could possibly
-be integrated in a more mixed and nuanced perspective. In the current study the publicly
-available dataset ABIDE is used to investigate the functional and structural connectivity
-patterns of young children (< 12 years old) with severe and mild ASD compared to
-matched controls. Independent Component Analysis (ICA) of functional data revealed
-within-network hyperconnectivity between the dorsal DMN and the left anterior insula
-as a possible biomarker for milder forms of autism, and within-network
-hypoconnectivity of the auditory network with the right superior parietal lobule as
-possible indication for more severe forms of autism. Additionally, Source-Based
-Morphometry (SBM) revealed structural abnormalities in a gray-matter network that
-consists mainly of left frontal areas with connections to the temporal and parietal lobe in
-both severity groups compared to healthy controls. Whilst our findings in functional
-connectivity could be used to differentiate between mild and severe forms of autism,
-our findings in structural connectivity point towards a more unified abnormality that is
-consistent across all degrees of ASD severity.
-
-3	  
-	  
-
-Table of Content
-Foreword …………………………………………………………………………….. 1
-Abstract ……………………………………………………………………………… 2
-Table of Content …………………………………………………………………….. 3
-Introduction …………………………………………………………………………. 5
-Current Study ………………………………………………………………………. 11
-Method ……………………………………………………………………………….12
-Participants ……………………………………………………………………..12
-Preprocessing ………………………………………………………………….. 13
-Preprocessing of anatomical data ……………………………………….. 13
-Preprocessing of functional data ………………………………………....13
-Postprocessing ………………………………………………………………….15
-Independent component analysis of functional data ……………………..15
-Source-based Morphometry analysis of anatomical data ……………….. 15
-Results ………………………………………………………………………………. 16
-Group analysis of functional data ……………………………………………... 16
-Group analysis of anatomical data …………………………………………….. 17
-Discussion …………………………………………………………………………… 18
-Functional connectivity ………………………………………………………...19
-Structural connectivity ………………………………………………………… 21
-Conclusion …………………………………………………………………………... 23
-Limitations of the study …………………………………………………………….24
-Nederlandstalige Samenvatting …………………………………………………….25
-References …………………………………………………………………………... 26
-Appendix 1 ………………………………………………………………………….. 36
-Appendix 2 ………………………………………………………………………….. 40
-
-4	  
-	  
-
-Appendix 3 ………………………………………………………………………….. 42
-Appendix 4 ………………………………………………………………………….. 43
-
-5	  
-	  
-
-Autism spectrum disorder (ASD) is clinically described as a ‘triad’ of several
-deficits: impaired social interaction, impaired communication, restricted interests, and
-repetitive behaviors (Belmonte et al., 2004). In eight-year-old children it has a
-prevalence of 1 in 88 (Baio, 2012). Geschwind and Levitt (2007) described ASD as a
-very broad syndrome instead of just one single disorder that is why they referred to it as
-‘the autisms’. The autism spectrum includes Asperger’s syndrome, Pervasive
-Developmental Disorder-Not Otherwise Specified, Rett’s disorder and Childhood
-Disintegrative Disorder. The diagnosis of autism is made when six symptoms are
-present over the domain of the triad: impairment of social interaction, communication
-and repetitive behavior, interests and activities (Gotham, Bishop & Lord, 2011).
-Impairment of social interaction includes a lack of spontaneous seeking to share with
-others and a lack of social or emotional reciprocity. Impairment of communication
-(verbal and nonverbal) includes using stereotyped, repetitive language and difficulty in
-initiating or sustaining a conversation with others. The restricted, repetitive behavior
-involves inflexibility and sticking to (non-functional) routines or rituals (MacKenzie,
-2008).
-Abnormal neural connectivity can be used as an explanatory framework for the many
-faces of ASD (Belmonte et al., 2004). ASD was considered to be a ‘developmental
-disconnection syndrome’ (Geschwind and Levitt, 2007). Therefore recent research on
-etiology of ASD focusses on discovering neurological connectivity biomarkers that can
-serve as a diagnostic tool that indicates ASD. Consequently investigating brain
-connectivity in autism can help in understanding and treating children and adults with
-ASD.
-Brain connectivity consists of anatomical connectivity or structural connectivity,
-functional connectivity and effective connectivity. In structural connectivity, anatomical
-patterns of units in a nervous system are investigated where in functional connectivity
-statistical dependencies between signals in different regions are calculated (like crosscorrelations or coherence). Causal interactions are investigated within effective
-connectivity research (Sporns, 2007). In order to understand human functioning you
-need to know the elements and interconnections of the networks in the brain. A
-comprehensive understanding of the structural connections in combination with
-
-6	  
-	  
-
-functional connectivity lies at the base of increased insight in how functional brain
-states emerge (Sporns et al., 2005). Various types of neuroimaging techniques have
-indicated associations between major psychiatric disorders and abnormalities of brain
-function and brain structure (Savitz et al., 2013). A lot of psychiatric disorders (like
-depression, schizophrenia and autism) are known to have abnormal functioning of the
-default mode network (DMN), which is one of the networks that are found to be
-correlated and more active during rest. During rest the mind is free to wander. The
-DMN is associated to self-referential mental activity, stimulus-independent thought,
-monitoring somesthesic and vegetative information, inner speech, planning of future
-activities,
-
-creativity,
-
-self-awareness
-
-etc.
-
-(Callard
-
-and
-
-Margulies,
-
-2014).
-
-Neuropsychiatric disorders influence these important aspects of human experience; they
-alter (or are caused by alteration of) DMN functioning (Whitfield-Gabrieli & Ford,
-2012). This reveals the importance of resting-state fMRI in comprehension of
-psychopathology.
-Publicly available datasets of functional MRI scan sessions on patients with ASD
-boost connectivity research in ASD. Earlier studies had often consisted of small sample
-sizes, but datasets such as the ‘1000 functional connectome project’ (Biswal et al.,
-2010) improved this shortcoming. The 1000 functional connectome project is freely
-available at www.nitrc.org/projects/fcon_1000/ and consists mainly of data from
-healthy subjects. The Human Connectome Project (HCP) is another publicly available
-dataset that focusses on characterization of brain connectivity and function and their
-variability in healthy adults (Van Essen et al., 2012). Other publically available datasets
-are more focused on patients with certain types of pathology, examples are the ‘Autism
-Brain Imaging Data Exchange (ABIDE)’ (Di Martino et al., 2013), the ‘Alzheimer’s
-Disease Neuroimaging Initiative (ADNI)’ (Jack et al., 2008) and the ‘Collaborative
-Informatics and Neuroimaging Suite (COINS)’. COINS (http://coins.mrn.org) consists
-of data from over 300 studies which is over 19,000 MRI, MEG, and EEG scan sessions
-together with more than 180,000 clinical assessments (Scott et al., 2011). The advantage
-of this very large source of information is that the data can be reorganized and used for
-many different problems and research questions. Second you can also take a lot of
-covariates such as handedness, ASD severity, intelligence etc. into account while
-analyzing your research questions.
-
-7	  
-	  
-
-We often use phenotypic measures to determine the severity of autism features in
-neuroscience. Two of the most commonly used measures are the Autism Diagnostic
-Observation Schedule (ADOS) and the Autism Diagnostic Interview-Revised (ADI-R)
-scales (Gotham et al., 2009). Their scores indicate that the patient had a higher number
-of items that represent core deficits and/or greater severity. Both scales are often used as
-an indication of severity, but the raw ADOS scores for example where not developed
-for comparison across individuals or time, and the raw scores are not normalized (de
-Bildt et al., 2011). So Gotham et al. developed a calibrated severity score for ADOS
-based on percentiles of raw total scores of each ADOS diagnostic classification
-(Gotham et al., 2009). Characteristic variables like chronological age and verbal IQ
-have less influence on the calibrated severity scores than on the raw ADOS scores. That
-is why we use these calibrated ADOS Gotham scores in our current research. The
-severity scores have a 10-point metric, a score of 1-3 indicates a nonspectrum ADOS
-classification, a score of 4-5 indicates an ASD classification and a score of 6-10
-indicates an autism classification (Gotham et al., 2009; de Bildt et al., 2010).
-One of the earliest indications of autism is macrocephaly (a head circumference
-above the 97th percentile), a large head size that was still within the normal range was
-even more common. This macrocephaly is not present at birth and there is no
-relationship with autism severity (Lainhart et al., 1997). More specifically, overgrowth
-in occipitofrontal circumference in children with ASD occurs during the second half of
-the first year of life (Webb et al., 2007). Macrocephaly in primary school children with
-autism (7-11 years old) is found to be a possible biomarker of abnormal neural
-connectivity (White, O’Reilly and Frith, 2009). So macrocephaly in ASD is not
-restricted to young infants. Other evidence that points out the role of network
-dysfunctions in autism is the increased cerebral white matter volume and increased
-cortical gray matter volume seen on structural MRI scans in very young children with
-autism. These increases cannot be seen in older children with autism (Minshew and
-Keller, 2010). These results support the developmental perspective of autism, which
-will be discussed further on.
-Support for the importance of looking at cortical neurons as the unit of dysfunction
-in autism can also be found in the postmortem study of Courchesne et al. (2011) where
-
-8	  
-	  
-
-a higher neuron count was found in the prefrontal cortex of children with autism
-compared to controls. The excess in neurons was higher in the dorsolateral prefrontal
-cortex than in the medial prefrontal cortex. A connection with clinical symptoms can be
-found in the bilateral enlargement of the amygdala and the hippocampus in children
-with ASD (Sparks et al., 2002). Since the amygdala is important for responses to
-emotional stimuli, which for example is important for our interactions with others,
-people with autism usually have more problems in understanding emotional
-expressions. This could be a potential region of interest in our current study.
-The findings of macrocephaly are inconsistent with the under-connectivity theories
-of autism. A lot of studies reported a weaker functional connectivity between brain
-areas during the execution of cognitive tasks in patients with ASD (Supekar et al.,
-2013). This phenomenon of underconnectivity is found during language comprehension
-tasks (Just et al., 2004), social processing (Koshino et al., 2008), visuospatial processing
-(Damarla et al., 2010), viewing faces (Khan et al., 2013), high-level inhibition
-(Solomon et al., 2009) and during many more task performances (for a review: Kana et
-al., 2011). Since a balance between specialization and integration in the brain is critical
-for functioning, this weaker functional connectivity could be a crucial cause for ASD.
-This convergence of evidence lead to the “underconnectivity theory” proposed by Just
-and colleagues (2012). The underconnectivity theory states that the disruption of interregional connective circuitry could lie at the origin of dysfunctions in autism. Especially
-tasks that are particularly dependent on integration of frontal and more posterior cortical
-regions are impaired (mostly more complex cognitive tasks). The focus of the theory
-lies on reduced frontal-posterior synchronization of activation during cognitive tasks,
-this causes an increase in reliance on posterior regions when frontal cortex involvement
-is required (Just et al., 2012). But empirical evidence that was inconsistent with this
-theory leads to a comparison study of Müller and colleagues (2011). Underconnectivity
-is mainly a conclusion of task-driven research in specific regions of interest without the
-use of low-pass filtering. Underconnectivity could thus be a result of specific
-methodological choices.
-Contrary to the underconnectivity theory, the hyperconnectivity theory relates
-dysfunctions in ASD to patterns of hyperconnectivity in the brain. Findings of
-
-9	  
-	  
-
-macrocephaly in humans in combination with hyperconnectivity in animal autism
-models (Testa-Silva et al., 2012) were at the base of the hyperconnectivity theory. Di
-Martino and colleagues (2011) tried to reconcile these findings with human
-neuroimaging studies on ASD. They found excessive functional connectivity in the
-striatal-cortical circuits. Supekar and colleagues (2013) examined functional
-connectivity with a whole-brain analysis in a cohort study on school-age children (7-13
-years old). Widespread functional brain hyperconnectivity was found at the whole-brain
-level but also at the level of major functional networks (between both proximal and
-distant anatomical regions).
-These two seemingly contradictory theories might be reconcilable with a more
-developmental perspective. Since a normal brain development shows a transition from
-over-connectivity to pruning, which rewires the connectivity at neural and at system
-level (evidence from resting state fMRI, Supekar et al., 2009) a similar or contradictory
-development could also be possible in ASD. The contradictory results in whole-brain
-functional connectivity in autism neuroimaging research could result from differences
-between children and adults. Studies of children under the age of 12 find evidence for
-the hyperconnectivity theory, studies based on data from adolescents and adults give an
-indication of functional underconnectivity (Uddin, Supekar & Menon, 2013). From this
-we can expect hyperconnectivity in our sample of ASD children under the age of 12.
-Additionally, several studies have discovered mixed results when examining
-functional connectivity in children with ASD. Doyle-Thomas and colleagues (2015)
-found that, depending on the region, connections between the posterior cingulate cortex
-(PCC) and the default mode network regions showed either stronger or weaker
-connectivity in children with ASD. However, they also showed a decreased functional
-connectivity pattern between the PCC and medial prefrontal cortex with age, which is in
-line with our developmental perspective. These patterns of mixed increased and
-decreased functional connectivity in ASD can also be found in an adult sample
-(Hahamy, Behrmann & Malach, 2015). Their findings could point towards a new
-characteristic of ASD, namely idiosyncratic distortions of the functional connectivity
-pattern compared to the typical template (Hahamy, Behrmann & Malach, 2015).
-Interestingly their findings also point out the relation between the magnitude of these
-
-10	  
-	  
-
-idiosyncratic distortions and behavioral symptoms of ASD. ASD severity could thus be
-a determining factor in the distortions of the functional connectivity pattern. According
-to a review of Anderson (2014) three additional studies found signs of mixed functional
-connectivity during rest in autism, all of which focused on adults or adolescents with
-ASD. It would therefore be interesting to replicate findings of mixed functional
-connectivity found in more recent studies in our current study.
-Within resting-state there are different methods to examine functional connectivity.
-A couple of studies on children under the age of 12 used seed-based methods to look at
-resting-state data. Seed-based analysis uses a bivariate measure (like correlation or
-coherence) between the time-series of different seeds (brain regions of interest) in order
-to look for areas that exhibit a high level of connectivity to your target seed
-(Neuroimaging in Python team, 2009). Hyper-connectivity was found in different
-studies: (a) hyper-connectivity of the striatum with the insula and the superior temporal
-gyrus (Di Martino et al., 2011) and (b) hyper-connectivity within the default mode
-network (Lynch et al., 2013). Washington and colleagues (2013) on the other hand
-found hypo-connectivity in the intermodal default mode network, also with seed-based
-methods. In contrast to seed-based functional connectivity you can also use independent
-component analysis (ICA). With ICA the fMRI signal is decomposed into independent
-component maps, where active voxels in every map are mostly non-overlapping. With
-every component map comes an associated component activation waveform. So in short
-ICA separates the fMRI signal in spatially independent maps of activity (McKeown et
-al., 1997). You have functional connectivity within one map. In our age group (12 and
-under) the ICA method also leads to findings of hyper-connectivity: (a) hyperconnectivity within the salience, default mode, fronto-temporal, motor and visual
-networks (Uddin, Supekar, Lynch et al., 2013) and (b) hyper-connectivity within default
-mode, visual and motor networks (Washington et al., 2013). We can again conclude that
-we will most likely find hyper-connectivity within our sample. But based on these
-studies a large hiatus appears, namely the absence of whole-brain analyses on children
-under the age of 12 with ASD. This will be the focus of the current study. We use ICA
-to look at the entire brain, separated into different neural networks. One of these
-networks is the default mode network, which seems to be an important network in ASD.
-
-11	  
-	  
-
-Aside from functional connectivity, structural connectivity can give further insight
-into how the brain is structured anatomically. Are the brains of patients with ASD
-simply wired in a different, and possibly malignant fashion? Previous research on these
-structural anomalies in ASD up until now has been inconsistent (Valk et al., 2015).
-However, literature based on univariate analysis techniques such as voxel-based
-morphometry (VBM) have shown repeated findings of structural differences in frontal
-lobe, precuneus, hippocampus, parahippocampal, amygdala, cerebellum and brain stem
-(Grecucci et al., 2015, under review). Additionally, Ecker and colleagues (2010)
-provided a predictive classification model of adult ASD by using structural scans in a
-whole-brain classification approach with a support vector machine (SVM). Applying
-SVM to gray matter structural MRI scans provided a correct classification of adults with
-ASD with a specificity of 86.0% and a sensitivity of 88.0%. The most important
-anatomical differences were found in middle frontal gyrus, inferior frontal gyrus,
-precentral gyrus, the temporal lobe, posterior cingulate gyrus, precuneus, medial
-occipital gyrus, hippocampal gyrus, fusiform gyrus, insular cortex, amygdala, and
-cerebellar cortex. Based on these previous findings we can pose that structural
-anomalies do play a role in the symptomatology of ASD. However, aside from findings
-of macrocephaly, overgrowth in occipitofrontal circumference and increased cortical
-gray matter volume in young children; not much is know about the structural anomalies
-of ASD in younger children. Which is why we will focus on structural connectivity of
-ASD in children under the age of 12 in order to fill this gap. Additionally we will zoom
-in on the relationship between these structural connectivity differences and autism
-severity.
-We will use Source-based Morphometry (SBM) in order to examine these structural
-connectivity patterns. SBM applies the multivariate technique of Independent
-Component Analysis (ICA) to anatomical data (Kašpárek et al., 2010). This multivariate
-technique is proven to be more powerful than the univariate VBM (Xu et al., 2009).
-Additionally, univariate approaches are known to have issues with correctly
-characterizing the inherently multivariate brain morphology (Friston & Ashburner,
-2004).
-Current Study
-
-12	  
-	  
-
-The present study focusses on children under the age of 12. This is a very interesting
-age because previous findings show that for example the difference in brain size
-between children with ASD and normal controls disappears by the time they reach
-adolescence (Schumann et al., 2004). So it is important to study the effects of ASD
-closer to their onset because in adulthood compensatory mechanisms might have
-already taken place (Amaral, 2011).
-From previous evidence we can conclude that a developmental framework is
-probably the best starting point. In this developmental framework hyper-connectivity is
-assumed to arise in children before the age of 12, after a puberty period this
-connectivity-pattern shifts to hypo-connectivity or under-connectivity (Uddin, Supekar
-& Menon, 2013). So we can expect patterns of hyper-connectivity within our restingstate fMRI sample. We used ICA to separate the signals from different networks within
-the brain and we will look at the entire brain as a whole. Based on previous research, we
-expect differences in the default mode, salience, fronto-temporal, motor and visual
-networks but we can’t forget the striatum, the insula, the amygdala and the superior
-temporal gyrus. We will try to replicate previous findings and look for the other, yet
-unknown differences in resting-state functional connectivity and structural connectivity
-in children with ASD.
-Method
-Participants
-Datasets from 28 children with ASD and 28 healthy controls from the COINS
-database (http://coins.mrn.org) were included in this study. Each dataset consists of a
-resting fMRI acquisition; all images were obtained with additional informed consent
-(Nielsen et al., 2013). For more information about the data acquisition, see
-http://coins.mrn.org. Inclusion criteria were age (12 or under), absence of comorbidity
-and availability of handedness, sex and IQ-scores. Control subjects were matched to
-participants with ASD based on age, handedness and IQ-score. All participants and
-controls were males. All patients had the DSM IV diagnose of autism without other
-comorbid disorders. Participants in the control group were between eight and twelve
-years old (mean = 10.6, SD = 1.24), participants in the ASD group were also between
-
-13	  
-	  
-
-eight and twelve years old (mean = 10.7, SD =1.22). The ASD group was divided into
-the severe ASD group and the mild ASD group based on their ADOS Gotham severity
-scores (mild: score between 3 and 6, severe: score between 8 and 10). Both groups
-differed significantly on ADOS Gotham Social Affect sub scores (t = -7.3491,
-p<0.001), ADOS Gotham Restricted and Repetitive Behaviors sub scores (t = -5.636,
-p<0.001) and ADOS Gotham Total score (t= -9.5019, p<0.001). For more detailed
-subject characteristics, see Table 1.
-Preprocessing
-Preprocessing of anatomical data.
-Preprocessing of our anatomical images is done using FSL and the VBM8 toolbox in
-SPM (an fMRI data analysis software package called ‘Statistical Parametric Mapping’
-that is used in combination with Matlab). During preprocessing of the anatomical data,
-the following sequence of analysis steps was executed:
-(1) Brain extraction and robust center estimation in FSL: Segmenting the anatomical
-head images into brain and non-brain. This was automatically carried out using
-FSL Brain extraction tool (BET, Smith; 2002).
-(2) Normalization and segmentation in VBM8: anatomical images of every subject
-are spatially normalized by warping them onto the MNI template. Afterwards all
-normalized images are segmented into gray matter, white matter and CSF.
-(3) Spatial smoothing in SPM: anatomical images are smoothed across their
-neighboring voxels in order to reduce noise in the data. The normalized gray
-matter images were smoothed with 8-mm full width at half-maximum (FWHM)
-Gaussian kernel.
-Preprocessing of functional data.
-
-14	  
-	  
-
-Preprocessing the resting state fMRI data was done using AFNI (an fMRI analysis
-software package called ‘Analysis of Functional NeuroImages’) in combination with
-FSL (another fMRI data analysis package called ‘FMRIB Software Library’). Before
-preprocessing all anatomical brain images were skull-stripped (as explained in
-preprocessing of anatomical images) in AFNI for more precise coregistration of images.
-During preprocessing of the functional data the following sequence of analysis was
-executed:
-(1) Reorient the functional images into an FSL friendly space was done in AFNI.
-Files were reoriented to fit an RPI orientation, which means voxels are
-organized from Right to left to store a row, rows are ordered from Posterior to
-anterior to store a slice and slices are ordered from Inferior to superior to store a
-volume. Keep in mind that all preprocessing steps were done for each subject
-individually.
-(2) Realignment is necessary because our subjects do not lie perfectly still during
-the fMRI acquisition session. The realignment lines up each functional image
-with the previous one so that each voxel always samples the same region
-without blurring. Spatial alignment is executed, which is essentially a rigid body
-registration and correction per functional image. Acceptable movement is up to
-6mm (Ashburner et al., 2013). Please note that we have to take the age of our
-subjects into consideration, since this study only focuses on children, which tend
-to move more than adults during scanning sessions.
-(3) Coregistration, done in FSL: This procedure attempts to align both the
-functional and structural data per individual. Coregistration is a critical step
-because it combines the high spatial resolution of our structural image in order
-to improve the spatial localization in the low spatial resolution functional
-images.
-(4) Removing head movement, white matter and cerebrospinal fluid (CSF) signals
-from functional images was performed in AFNI. This procedure removes noise
-and unwanted signals from our functional data in order to focus on grey matter
-signals.
-(5) Normalization in FSL: The focus of this study is comparing groups, not
-individuals. So we need to be able to compare the signal changes across groups
-
-15	  
-	  
-
-of individuals. Since there is a large variation between individual brains (even
-for major landmarks) we need to warp the images of every individual onto the
-same reference space (a template), this is called spatial normalization. The
-template that is used in this study is the MNI template (Montreal Neurological
-Institute template). Each individual subject’s images are warped into the
-standard space based on the MNI template.
-Post-processing analysis
-Independent Component Analysis of functional data.
-The preprocessed functional data were analyzed using the Group ICA of the GIFT
-toolbox to determine spatially independent and temporally coherent networks (Ashby,
-2011). The minimum description length (MDL) principle was used to estimate a number
-of independent components. Independent component (IC) estimation was executed by
-using the Infomax algorithm, which is a neural network algorithm that tries to minimize
-the mutual information in our networks in order to identify natural grouping and
-maximally independent sources (Bell and Sejnowski, 1995). This was repeated 20 times
-in ICASSO in order to ensure maximum stability of our components (Himberg et al.,
-2004). GIFT identified 20 reliable independent components, an overview of these
-components can be found in Appendix 1. Only components of interest were selected for
-further group analysis.
-Source-based Morphometry analysis of anatomical data.
-SBM was also executed using the GIFT toolbox. MDL was used to estimate the
-number of independent components in our preprocessed anatomical MRI data. Nine
-different independent components were identified. The Infomax algorithm was used to
-perform a group ICA; ICA was repeated 20 times in ICASSO. The components were
-then clustered to ensure the reliability and consistence of our results. All of our resulting
-9 components were deemed reliable (Iq>0.96), which indicates a stable ICA
-decomposition.
-During SBM each gray matter volume is converted into a vector, which leaves us
-with a matrix where the 56 rows represent our 56 subjects (28 controls, 14 ASD mild
-
-16	  
-	  
-
-and 14 ASD severe) and each column indicates a voxel. ICA decomposes this matrix in
-a “mixing matrix” and a “source matrix”. The mixing matrix consists of 56 rows (each
-row representing a subject) and 9 columns that represent our independent components.
-This mixing matrix thus represents how much one given subject expresses each of the
-components. The source matrix represents the relationship between our independent
-components and the voxels. For the visualization of our grey matter volume
-components, the source matrix is reshaped to a 3D image which is scaled to unit
-standard deviations (Z maps) and thresholded at Z>2.5. An overview of our components
-can be found in Appendix 2. The mixing matrix will be used to compute our group
-differences.
-Results
-Group analysis of functional data.
-ICA extracted 20 independent components (for an overview see Appendix 1) based
-on our functional data. These 20 components represent group components across all of
-the subjects in our four groups. Independent components of each subject were then
-entered into a one-way ANOVA where we contrasted the ASD-mild and ASD-severe
-groups with their respective control groups; additionally we contrasted the ASD-mild
-group with the ASD-severe group. Age and motion during the scan were used as
-covariates. It is important to note that both of our ASD groups reported a lot more
-movement than the control groups. Mean motion estimates for the mild and severe ASD
-group were mean = 5.03 (SD = 10.10) and mean = 9.73 (SD = 24.08) respectively,
-means for the mild and severe control group were mean = 0.39 (SD = 0.58) and mean =
-0.12 (SD = 0.17) respectively. Group results were corrected for multiple comparisons
-by using the family-wise error-rate (FWER). Group differences were found in
-component 1 and 17. Anatomical labels of regions in these components were obtained
-through the WFU PickAtlas (Tzourio-Mazoyer et al., 2002) and can be found in Table
-2. Component 1 represents the dorsal DMN and component 17 represents the auditory
-network. Contrast maps of these two components revealed differences in activation of
-the left anterior insula (part of component 1, peak t-value = 6.04) between the Controlmild and the DSM-mild group, and the right superior parietal lobule (part of component
-
-17	  
-	  
-
-17, peak t-value = 6.20) between the control-severe and the DSM-severe group.
-Contrast maps of these two components can be found in Appendix 3.
-Group analysis of anatomical data.
-We extracted 9 independent components with the SBM procedure (see Appendix 2).
-The mixing matrix obtained after the SBM procedure was used to verify differences in
-the expression of these components across our four groups. A MANOVA was
-performed with our four groups (Control-mild, Control-severe, ASD-mild and ASDsevere) as independent variable and the weights on each of our 9 independent
-components (found in the mixing matrix) as dependent variables. Differences between
-groups were found in component 5 (F(3,52) = 3.99; p = 0.012) and 8 (F(3,52) = 5.034; p
-= 0.004). However, component 5 did not survive our threshold (Z>2.5), which leaves us
-with differences in component 8. Anatomical labels of regions in component 8 were
-obtained through the WFU PickAtlas (Tzourio-Mazoyer et al., 2002). Component 8
-
-18	  
-	  
-
-consists mainly of frontal areas such as the Inferior and Middle Frontal Gyrus, the
-Precentral Gyrus, the Sub-Gyral, Anterior Cingulate, the Medial Frontal Gyrus, the
-Superior Frontal Gyrus, the Postcentral Gyrus and the Cingulate Gyrus (See Appendix
-4). All gray-matter regions represented in component 8 are presented in Table 3. After
-the MANOVA, a Least Significant Differences (LSD) post-hoc test was performed.
-This group-wise comparison will uncover which group differences drove these
-significant results. Significant differences in the structural pattern of component 8 were
-found between both our control groups and both ASD groups. The Control-mild group
-showed significant differences (p = 0.009) from the ASD-mild group. Similarly, our
-Control-severe group was significantly different (p = 0.008) from the ASD-severe group
-(mean = 0.42, SD = 0.89). No significant differences were found between both ASD
-severity groups. Correlations between the loading coefficients of component 8 and our
-measures of ASD severity were not significant.
-In summary we found small clusters that differ between our four groups. One as a
-marker for DSM-mild which indicates hyperconnectivity of the left anterior insula with
-the dorsal DMN (component 1), and one as a marker for DSM-severe which indicates
-hypoconnectivity of the right superior parietal lobule with the auditory network
-(component 17). From anatomical group-analysis we found an anatomical component
-mainly consisting of left frontal areas that differs between ASD-mild and matched
-controls, and ASD-severe and matched controls. But this significant difference didn’t
-correlate with severity scores, which indicates that the brain structure in component 8 is
-different but does not predict severity.
-Discussion
-This study aimed to assess functional and structural connectivity in children with
-mild and severe Autism Spectrum Disorder compared to matched healthy controls.
-
-19	  
-	  
-
-Resting state scans and clinical assessments from children with ASD under the age of
-12 and matched healthy controls were obtained from the ABIDE database. Functional
-and anatomical images were pre- and post-processed before group analysis. Functional
-connectivity was examined by means of ICA and structural connectivity was assessed
-by means of SBM. Results showed two possible biomarkers for functional connectivity
-and one for structural connectivity. Implications of these results will be discussed in
-further detail.
-Functional connectivity
-ICA of functional data revealed hyperconnectivity of the left anterior insula with the
-dorsal DMN in children with mild ASD compared to matched healthy controls.
-Previous studies have shown that atypical within-network functional connectivity of the
-DMN and the insula could be a possible brain marker for children with ASD (Bos et al.,
-2014; Nomi and Uddin, 2015). Within-network hyper-connectivity between the DMN
-and the insula has previously been found in an ASD sample of both children and
-adolescents by using a linear correlation approach (Bos et al. 2014). These withinnetwork functional connectivity differences seem to disappear later in life (Nomi and
-Uddin, 2015). The atypical within-network functional connections of the DMN and the
-insula could, based on previous research, be a potential biomarker for ASD. However,
-our findings suggest that this might not be the end of the story since we found this
-specific hyperconnectivity of the left anterior insula with the dorsal DMN only in
-children under the age of 12 with a mild form of ASD. This could indicate a specific
-biomarker for milder forms of autism. Consequentially, this could lead to earlier
-detection of ASD severity, which could in turn be beneficial towards earlier and more
-specific treatments for each individual child with ASD. This hypothesis needs further
-research that focuses on connectivity measures applied specifically to the insula within
-the dorsal DMN. Additionally, the role of the left anterior insula within this DMN
-should be studies more extensively. Even though we know the specific functions of the
-DMN as a whole (self-referential mental activity, stimulus-independent thought,
-monitoring somesthesic and vegetative information, inner speech, planning of future
-activities, creativity, self-awareness etc.; Callard and Margulies, 2014), our current
-
-20	  
-	  
-
-findings point towards a possible role of the left anterior insula within this network as
-an underlying cause of disability within mild forms of autism.
-Additionally, ICA of functional data showed hypoconnectivity of the right superior
-parietal lobule within the auditory network in children with severe ASD compared to
-matched healthy controls. The auditory network is a network that can easily be defined
-during resting state fMRI because it represents spontaneous BOLD fluctuations that are
-common to the whole brain particularly well (Fox et al., 2008). However, no studies
-have found abnormal functional connectivity within the auditory network during resting
-state in ASD. There does seem to be evidence supporting the hypothesis that the social
-and language impairment, which are key symptoms of ASD, could be related to
-abnormalities in the auditory network (Russo, 2008). Furthermore, abnormal cortical
-auditory processing has also been connected to language impairments in children with
-autism (Boddaert et al., 2004). The superior parietal lobule on the other hand is found to
-be activated in healthy controls, but not in adults with ASD, during execution of a
-theory of mind task (Baron-Cohen et al., 1999). As a conclusion we can hypothesize
-that the auditory network and more specifically the right superior parietal lobule plays
-an important role in social interaction. The within-network hypoconnectivity of the
-auditory network with the right superior parietal lobule in severe autism compared to
-healthy controls could possibly underlie the deficits in social interaction. Additional
-research is needed to further support this hypothesis, specifically within resting state
-fMRI.
-As a conclusion, we can state that ICA of functional connectivity in mild and severe
-ASD compared to healthy controls revealed two possible biomarkers for different levels
-of severity in ASD. First of all, within-network hyperconnectivity between the dorsal
-DMN and the left anterior insula could point towards milder forms of ASD. Behavioral
-implications of this abnormality however is not yet known and needs further research.
-Within-network hypoconnectivity of the auditory network with the right superior
-parietal lobule on the other hand could point towards more severe cases of ASD. This
-abnormal functional connectivity pattern could point towards difficulties in social
-interactions occurring in people with ASD. Taken together, both findings seem to
-indicate the possibility of hemispheric differences in mild versus severe autism. This
-
-21	  
-	  
-
-could be an interesting hypothesis towards further research onto functional connectivity
-patterns in autism.
-Structural connectivity
-Lastly, multivariate morphometric network analysis by means of SBM of anatomical
-data revealed differences in the anatomical structure of component 8, which mainly
-consisted of left frontal areas, between both ASD-mild and matched controls, and ASDsevere and matched controls. For future convenience we will call this gray matter
-network of component 8 the Frontal – Cingulate network, named after its main
-components. This Frontal – Cingulate network, which is centered in the frontal lobe
-with some connections to the temporal lobe (Sub Gyral) and the parietal lobe
-(Postcentral Gyrus), showed an abnormal expression in both severity groups compared
-to matched controls. Regions include the Inferior and Middle Frontal Gyrus, the
-Precentral Gyrus, the Sub-Gyral, Anterior Cingulate, the Medial Frontal Gyrus, the
-Superior Frontal Gyrus, the Postcentral Gyrus and the Cingulate Gyrus. This replicates
-some of these regions found in the whole-brain classification study of Ecker and
-colleagues (2010) namely the middle frontal gyrus, the inferior frontal gyrus and the
-precentral gyrus.
-There is evidence from previous research that suggests that the frontal lobe plays a
-very important role in a social cognition network that relates to the social deficits
-known in autism (Baron-Cohen et al., 1999). In this previous study, deficits in the left
-dorsolateral prefrontal cortex (Brodmann area 44, 45 and 46) and the left medial frontal
-cortex (Brodmann area 9) were found while executing a theory of mind task in ASD.
-These Brodmann areas are also represented in the Frontal – Cingulate network in the
-following regions: the Inferior and Middle Frontal Gyrus, the Precentral Gyrus, the
-Medial Frontal Gyrus and the Superior Frontal Gyrus (for a detailed overview of the
-Brodmann areas in the Frontal – Cingulate network see Table 3). A number of structural
-neuroimaging studies have found frontal lobe abnormalities in patients with autism
-(Carper and Courchesne, 2000, 2005; Herbert et al., 2003; Salmond et al., 2003;
-Sundaram et al., 2008). These abnormalities in prefrontal cortical regions are known to
-be correlated with deficits in social cognition, executive functioning and language in
-patients with ASD (Sundaram et al., 2008). This accumulating evidence that supports
-
-22	  
-	  
-
-our findings leads us to believe that abnormalities in frontal lobe gray matter might be a
-core mechanism that underlies deficits in social functioning in ASD.
-Additionally, abnormalities in the structural Frontal – Cingulate network include the
-Pre and Postcentral Gyrus. These regions correspond to the motor cortex and the
-somatosensory cortex, which is important for proprioceptive feedback during
-movement. Increased gray matter in both the Pre and Postcentral Gyrus has previously
-been shown in children with ASD (Bonilha et al., 2008). Motor impairments such as
-hypotonia and motor apraxia are categorized as associated symptoms to ASD,
-especially in young children (Ming, Brimacombe and Wagner, 2007). Even though
-motor impairment is considered an associated symptom, recent studies show that it
-could still prove to be useful in the diagnostic process of ASD (Torres et al., 2013). Our
-findings could thus reflect the underlying mechanisms of the occurrence of these
-associated motor symptoms in ASD.
-The Frontal – Cingulate network also contains the Anterior Cingulate and Cingulate
-Gyrus, which is part of the limbic system. Structural brain differences in both structures,
-which replicate previous findings (Hyde et al. 2010), represent key symptoms of ASD.
-The cingulate cortices play a role in linking the perception of socially relevant stimuli to
-motivation, emotion and cognition (Adolphs, 2001). The cingulate gyrus is proven to be
-a socially relevant brain area that is known to be atypical in ASD (Hyde et al., 2010).
-The anterior cingulate gyrus on the other hand is known for its involvement in repetitive
-behavior (Whiteside, Port and Abramowitz, 2004; Hyde et al., 2010). Both social
-deficits and repetitive behavior are key factors in the symptomatology of ASD, it is
-therefor unsurprising that their underlying neural mechanisms show structural
-abnormalities compared to healthy controls.
-Lastly, the Frontal – Cingulate network includes the Sub Gyral, which is part of the
-temporal lobe. Previous studies have indicated reduced white matter volume in the left
-Sub Gyral in young children with ASD (Bonilha et al., 2008) and greater bilateral
-activity of the Sub Gyral during imitation in older children with ASD (Williams et al.,
-2006). Furthermore, our findings of abnormalities in the Sub-Gyral in ASD replicate
-findings in a recent study by Grecucci and colleagues (2015, under review). Difficulties
-with imitation might be one of the primary deficits in ASD (Rogers, 1999), which could
-
-23	  
-	  
-
-be due to underlying structural abnormalities in the Sub Gyral. Future research into this
-connection between imitation difficulties and structural Sub Gyral abnormalities in
-ASD is needed to further substantiate this hypothesis.
-As a conclusion, we can pose that our structural connectivity analysis revealed
-structural abnormalities in regions that are linked to social deficits, theory of mind,
-executive functioning, language, motor impairment, repetitive behavior and imitation.
-All of these have been linked to impairments in ASD which leads us to believe that an
-atypical structural network as found in the Frontal – Cingulate network might prove to
-be a core source of impairment. The Frontal – Cingulate network tends to have a
-negative expression in children with both mild and severe ASD compared to matched
-controls. This results in less gray matter volume in the regions observed in the Frontal –
-Cingulate network. However, changes in intra-connectivity are also a viable explanation
-for this different structural expression pattern in ASD. Further research focusing on
-connectivity methods applied to these areas is needed to further support this hypothesis.
-Conclusion
-In this study we examined possible biomarkers of ASD by means of functional and
-structural connectivity analysis of resting state fMRI. We can conclude that functional
-and structural connectivity analysis of resting state fMRI data in children with mild and
-severe autism reveals abnormalities compared to matched healthy controls. We found
-two possible biomarkers by means of ICA and one by means of SBM. Within-network
-hyperconnectivity between the dorsal DMN and the left anterior insula might be a
-possible biomarker for milder forms of autism whilst within-network hypoconnectivity
-of the auditory network with the right superior parietal lobule might indicate more
-severe forms of autism. Additionally, we found structural abnormalities in a gray-matter
-network (the Frontal – Cingulate network) that mainly consists of left frontal areas with
-connections to the temporal and parietal lobe in both severity groups compared to
-healthy controls. Whilst our findings in functional connectivity could be used to
-differentiate between mild and severe forms of autism, our findings in structural
-connectivity point towards a more unified abnormality that is consistent across all
-degrees of ASD severity.
-
-24	  
-	  
-
-Limitations of the study
-First of all we only used male participants in our study, which limits our
-generalizability. This is somewhat countered by the fact that the male-to-female ratio of
-prevalence in autism is 3.3:1, which indicates higher prevalence in males (Baird et al.,
-2006).
-Another issue is the high amount of movement within both ASD groups compared to
-the healthy controls. Even though we included the motion estimation as a covariate in
-our analysis, the movement estimations are much higher than the normally accepted
-threshold.
-Lastly, we have a small sample size of 14 subjects per group which means that we
-should consider our results as preliminary. Future research should focus on replicating
-our findings before actual conclusions can be drawn.
-
-25	  
-	  
-
-Nederlandstalige samenvatting
-Neuronale connectiviteit zou mogelijks een verklarend framework kunnen bieden voor
-autisme spectrum stoornissen. Autisme spectrum stoornis is een veelvoorkomende
-ontwikkelingsstoornis die gekarakteriseerd wordt door verstoorde sociale interactie,
-verstoorde communicatie, beperkte interesses en repetitief gedrag. Twee ogenschijnlijk
-contradictorische theorieën over de etiologie van autisme spectrum stoornissen, de
-onder-connectiviteitstheorie en de hyper-connectiviteitstheorie, kunnen mogelijks
-geïntegreerd worden in een meer gemengd en genuanceerd perspectief. In de huidige
-studie wordt gebruik gemaakt van een publiek beschikbare dataset genaamd ABIDE. Er
-wordt onderzoek gedaan naar de functionele en structurele connectiviteitspatronen van
-jonge kinderen (< 12 jaar oud) met ernstig en milde vormen van autisme. Beide groepen
-worden vergeleken met gezonde gematchte controle groepen. Independent Component
-Analysis (ICA) van functionele data vertoonde binnen-netwerk hyperconnectiviteit
-tussen het dorsale Default Mode Netwerk (DMN) en de linker anterieure insula als een
-mogelijke biomarker voor mildere vormen van autisme, en binnen-netwerk onderconnectiviteit van het auditieve netwerk met de rechter superieure pariëtale lobule als
-mogelijke indicatie voor ernstigere vormen van autisme. Verder vertoonde de SourceBased Morphometry (SBM) analyse structurele abnormaliteiten in een grijze-stof
-netwerk dat voornamelijk bestaat uit linker frontale gebieden met connecties naar de
-temporale en pariëtale lob in beide autisme groepen vergeleken met de controle
-groepen. Terwijl onze bevindingen met betrekking tot functionele connectiviteit
-mogelijks zouden kunnen differentiëren tussen milde en ernstigere vormen van autisme,
-tonen onze bevindingen in structurele connectiviteit net een algemene abnormaliteit
-over alle gradaties van autisme binnen onze studie.
-
-26	  
-	  
-
-References
-Adolphs, R. (2001). The neurobiology of social cognition. Current opinion in
-neurobiology, 11(2), 231-239.
-Anderson, J. S. (2014). Cortical underconnectivity hypothesis in autism: evidence
-from functional connectivity MRI. In Comprehensive Guide to Autism(pp.
-1457-1471). Springer New York.
-Amaral, D. G. (2011). The promise and the pitfalls of autism research: an
-introductory note for new autism researchers. Brain research, 1380, 3-9.
-Ashburner, J., Barnes, G., Chen, C., Daunizeau, J., Flandin, G., Friston, K., … &
-Phillips, C. (2013). SPM manual. Retrieved on the 15th of May 2014, from
-http://www.fil.ion.ucl.ac.uk/spm/doc/manual.pdf
-Ashby, F. G. (2011). Statistical analysis of fMRI data. MIT press.
-Baio, J. (2012). Prevalence of autism spectrum disorders – Autism and
-developmental disabilities monitoring network, 14 sites, United States, 2008.
-Surveillance Summaries, 61:3, 1-19.
-Baird, G., Simonoff, E., Pickles, A., Chandler, S., Loucas, T., Meldrum, D., &
-Charman, T. (2006). Prevalence of disorders of the autism spectrum in a
-population cohort of children in South Thames: the Special Needs and
-Autism Project (SNAP). The lancet, 368(9531), 210-215.
-Baron‐Cohen, S., Ring, H. A., Wheelwright, S., Bullmore, E. T., Brammer, M. J.,
-Simmons, A., & Williams, S. C. (1999). Social intelligence in the normal
-and autistic brain: an fMRI study. European Journal of Neuroscience, 11(6),
-1891-1898.
-Bell, A. J., & Sejnowski, T. J. (1995). An information-maximization approach to
-blind separation and blind deconvolution. Neural computation, 7(6), 11291159.
-
-27	  
-	  
-
-Belmonte, M. K., Allen, G., Beckel-Mitchener, A., Boulanger, L. M., Carper, R. A.,
-& Webb, S. J. (2004). Autism and abnormal development of brain
-connectivity. The Journal of Neuroscience, 24:42, 9228-9231.
-Biswal, B. B., Mennes, M., Zuo, X. N., Gohel, S., Kelly, C., Smith, S. M., ... &
-Windischberger, C. (2010). Toward discovery science of human brain
-function. Proceedings of the National Academy of Sciences, 107:10, 47344739.
-Boddaert, N., Chabane, N., Belin, P., Bourgeois, M., Royer, V., Barthelemy, C., ...
-& Zilbovicius, M. (2004). Perception of complex sounds in autism: abnormal
-auditory
-
-cortical
-
-processing
-
-in
-
-children. American
-
-Journal
-
-of
-
-Psychiatry,161(11), 2117-2120.
-Bonilha, L., Cendes, F., Rorden, C., Eckert, M., Dalgalarrondo, P., Li, L. M., &
-Steiner, C. E. (2008). Gray and white matter imbalance–Typical structural
-abnormality underlying classic autism?. Brain and Development, 30(6), 396401.
-Bos, D. J., van Raalten, T. R., Oranje, B., Smits, A. R., Kobussen, N. A., van Belle,
-J., ... & Durston, S. (2014). Developmental differences in higher-order
-resting-state
-
-networks
-
-in
-
-Autism
-
-Spectrum
-
-Disorder. NeuroImage:
-
-Clinical, 4, 820-827.
-Callard, F., & Margulies, D. S. (2014). What we talk about when we talk about the
-default mode network. Frontiers in human neuroscience, 8.
-Carper, R. A., & Courchesne, E. (2000). Inverse correlation between frontal lobe
-and cerebellum sizes in children with autism. Brain, 123(4), 836-844.
-Carper, R. A., & Courchesne, E. (2005). Localized enlargement of the frontal cortex
-in early autism. Biological psychiatry, 57(2), 126-133.
-Courchesne, E., Mouton, P. R., Calhoun, M. E., Semendeferi, K., Ahrens-Barbeau,
-C., Hallet, M. J., Barnes, C. C., & Pierce, K. (2011). Neuron number and size
-in prefrontal cortex of children with autism. Jama, 306:18, 2001-2010.
-
-28	  
-	  
-
-Damarla, S. R., Keller, T. A., Kana, R. K., Cherkassky, V. L., Williams, D. L.,
-Minshew, N. J., & Just, M. A. (2010). Cortical underconnectivity coupled
-with preserved visuospatial cognition in autism: evidence from an fMRI
-study of an embedded figures task. Autism Research, 3:5, 273-279.
-de Bildt, A., Oosterling, I. J., van Lang, N. D., Sytema, S., Minderaa, R. B., van
-Engeland, H., Roos, S., Buitelaar, J. K., van der Gaag, R., & de Jonge, M. V.
-(2011). Standardized ADOS scores: measuring severity of autism spectrum
-disorders in a Dutch sample. Journal of autism and developmental disorders,
-41:3, 311-319.
-Di Martino, A., Kelly, C., Grzadzinski, R., Zuo, X. N., Mennes, M., Mairena, M. A.,
-Lord, C., Castellanos, X. C., & Milham, M. P. (2011). Aberrant striatal
-functional connectivity in children with autism. Biological psychiatry, 69:9,
-847-856.
-Di Martino, A., Yan, C. G., Li, Q., Denio, E., Castellanos, F. X., Alaerts, K., ... &
-Milham, M. P. (2013). The autism brain imaging data exchange: towards a
-large-scale evaluation of the intrinsic brain architecture in autism. Molecular
-psychiatry.
-Doyle‐Thomas, K. A., Lee, W., Foster, N. E., Tryfon, A., Ouimet, T., Hyde, K. L.,
-... & Anagnostou, E. (2015). Atypical functional brain connectivity during
-rest in autism spectrum disorders. Annals of neurology.
-Ecker, C., Rocha-Rego, V., Johnston, P., Mourao-Miranda, J., Marquand, A., Daly,
-E. M., ... & MRC AIMS Consortium. (2010). Investigating the predictive
-value of whole-brain structural MR scans in autism: a pattern classification
-approach. Neuroimage, 49(1), 44-56.
-Fox, M. D., Zhang, D., Snyder, A. Z., & Raichle, M. E. (2009). The global signal
-and observed anticorrelated resting state brain networks. Journal of
-neurophysiology, 101(6), 3270-3283.
-Friston, K. J., & Ashburner, J. (2004). Generative and recognition models for
-neuroanatomy. Neuroimage, 23(1), 21-24.
-
-29	  
-	  
-
-Geschwind, D. H., & Levitt, P. (2007). Autism spectrum disorders: developmental
-disconnection syndromes. Current opinion in neurobiology, 17, 103-111.
-Gotham, K., Bishop, S. L., & Lord, C. (2011). Diagnosis of autism spectrum
-disorders. In Amaral, D. G., Dawson, G., & Geschwind, D. H. (ed.), Autism
-Spectrum Disorders. (pp. 30-43). New York: Oxford University Press.
-Gotham, K., Pickles, A., & Lord, C. (2009). Standardizing ADOS scores for a
-measure of severity in autism spectrum disorders. Journal of autism and
-developmental disorders, 39:5, 693-705.
-Grecucci, A., Rubicondo, D., Siugzdaite, R., Surian, L., & Remo, J. (2015).
-Uncovering the social deficits in the autistic brain. A Source-Based
-Morphometric study. Manuscript sumbitted for publication.
-Hahamy, A., Behrmann, M., & Malach, R. (2015). The idiosyncratic brain:
-distortion of spontaneous connectivity patterns in autism spectrum disorder.
-Nature neuroscience.
-Herbert, M. R., Ziegler, D. A., Deutsch, C. K., O’brien, L. M., Lange, N.,
-Bakardjiev, A., ... & Caviness, V. S. (2003). Dissociations of cerebral cortex,
-subcortical and cerebral white matter volumes in autistic boys. Brain, 126(5),
-1182-1192.
-Himberg, J., Hyvärinen, A., & Esposito, F. (2004). Validating the independent
-components of neuroimaging time series via clustering and visualization.
-Neuroimage, 22(3), 1214-1222.
-Hyde, K. L., Samson, F., Evans, A. C., & Mottron, L. (2010). Neuroanatomical
-differences in brain areas implicated in perceptual and other core features of
-autism
-
-revealed
-
-by
-
-cortical
-
-thickness
-
-analysis
-
-and
-
-voxel‐based
-
-morphometry.Human brain mapping, 31(4), 556-566.
-Jack, C. R., Bernstein, M. A., Fox, N. C., Thompson, P., Alexander, G., Harvey, D.,
-... & Weiner, M. W. (2008). The Alzheimer's disease neuroimaging initiative
-
-30	  
-	  
-
-(ADNI): MRI methods. Journal of Magnetic Resonance Imaging, 27:4, 685691.
-Just, M. A., Cherkassky, V. L., Keller, T. A., & Minshew, N. J. (2004). Cortical
-activation and synchronization during sentence comprehension in highfunctioning autism: evidence of underconnectivity. Brain, 127:8, 1811-1821.
-Just, M. A., Keller, T. A., Malave, V. L., Kana, R. K., & Varma, S. (2012). Autism
-as a neural systems disorder: a theory of frontal-posterior underconnectivity.
-Neuroscience & Biobehavioral Reviews, 36:4, 1292-1313.
-Kana, R. K., Libero, L. E., & Moore, M. S. (2011). Disrupted cortical connectivity
-theory as an explanatory model for autism spectrum disorders. Physics of life
-reviews, 8:4, 410-437.
-Kašpárek, T., Mareček, R., Schwarz, D., Přikryl, R., Vaníček, J., Mikl, M., &
-Češková, E. (2010). Source-­‐‑based morphometry of gray matter volume in
-men with first-­‐‑episode schizophrenia. Human brain mapping, 31(2), 300-310
-Khan, S., Gramfort, A., Shetty, N. R., Kitzbichler, M. G., Ganesan, S., Moran, J. M.,
-... & Kenet, T. (2013). Local and long-range functional connectivity is
-reduced in concert in autism spectrum disorders. Proceedings of the National
-Academy of Sciences, 110:8, 3107-3112.
-Koshino, H., Kana, R. K., Keller, T. A., Cherkassky, V. L., Minshew, N. J., & Just,
-M. A. (2008). fMRI investigation of working memory for faces in autism:
-visual coding and underconnectivity with frontal areas. Cerebral Cortex,
-18:2, 289-300.
-Lainhart, J. E., Piven, J., Wzorek, M., Landa, R., Santangelo, S. L., Coon, H., &
-Folstein, S. E. (1997). Macrocephaly in children and adults with autism.
-Journal of the American Academy of Child & Adolescent Psychiatry, 36:2,
-282-290.
-Lynch, C. J., Uddin, L. Q., Supekar, K., Khouzam, A., Phillips, J., & Menon, V.
-(2013). Default mode network in childhood autism: posteromedial cortex
-
-31	  
-	  
-
-heterogeneity and relationship with social deficits. Biological psychiatry,
-74:3, 212-219.
-MacKenzie, H. (2008). Reaching and teaching the child with autism spectrum
-disorder. London: Jessica Kingsley Publishers.
-McKeown, M. J., Makeig, S., Brown, G. G., Jung, T. P., Kindermann, S. S., Bell, A.
-J., & Sejnowski, T. J. (1997). Analysis of fMRI data by blind separation into
-independent spatial components (No. NHRC-REPT-97-42). NAVAL
-HEALTH RESEARCH CENTER SAN DIEGO CA.
-Ming, X., Brimacombe, M., & Wagner, G. C. (2007). Prevalence of motor
-impairment in autism spectrum disorders. Brain and Development, 29(9),
-565-570.
-Minshew, N. J., & Keller, T. A. (2010). The nature of brain dysfunction in autism:
-functional brain imaging studies. Current opinion in neurology, 23:2, 124.
-Müller, R. A., Shih, P., Keehn, B., Deyoe, J. R., Leyden, K. M., & Shukla, D. K.
-(2011). Underconnected, but how? A survey of functional connectivity MRI
-studies in autism spectrum disorders. Cerebral Cortex, 21:10, 2233-2243.
-Neuroimaging in Python team. (2009). Seed correlation/coherence with fMRI data.
-Retrieved
-
-on
-
-the
-
-15th
-
-of
-
-May
-
-2014,
-
-from
-
-http://nipy.org/nitime/examples/seed_analysis.html
-Nielsen, J. A., Zielinski, B. A., Fletcher, P. T., Alexander, A. L., Lange, N., Bigler,
-E. D., Lainhart, J. E., & Anderson, J. S. (2013). Multisite functional
-connectivity MRI classification of autism: ABIDE results. Frontiers in
-human neuroscience, 7.
-Nomi, J. S., & Uddin, L. Q. (2015). Developmental changes in large-scale network
-connectivity in autism. NeuroImage: Clinical, 7, 732-741.
-Rogers, S. J. (1999). An examination of the imitation deficit in autism.
-
-32	  
-	  
-
-Russo, N. M. (2008). A Key to Understanding Social Communication Deficits in
-Autism Spectrum Disorders: Neural Processing of Sound and Speech
-Intonation. ProQuest.
-Salmond, C. H., De Haan, M., Friston, K. J., Gadian, D. G., & Vargha-Khadem, F.
-(2003). Investigating individual differences in brain abnormalities in
-autism.Philosophical Transactions of the Royal Society B: Biological
-Sciences,358(1430), 405-413.
-Savitz, J. B., Rauch, S. L., & Drevets, W. C. (2013). Clinical application of brain
-imaging for the diagnosis of mood disorders: the current state of play.
-Molecular psychiatry, 18:5, 528-539.
-Schumann, C. M., Hamstra, J., Goodlin-Jones, B. L., Lotspeich, L. J., Kwon, H.,
-Buonocore, M. H., Lammers, C. R., Reiss, A. L., & Amaral, D. G. (2004).
-The amygdala is enlarged in children but not adolescents with autism; the
-hippocampus is enlarged at all ages. The Journal of Neuroscience, 24:28,
-6392-6401.
-Scott, A., Courtney, W., Wood, D., de la Garza, R., Lane, S., King, M., Wang, R.,
-Roberts, J., Turner, J. A., & Calhoun, V. D. (2011). COINS: An innovative
-informatics and neuroimaging tool suite built for large heterogeneous
-datasets. Frontiers in Neuroinformatics, 5, 33.
-Smith, S. M. (2002). Fast robust automated brain extraction. Human brain
-mapping, 17(3), 143-155.
-Solomon, M., Ozonoff, S. J., Ursu, S., Ravizza, S., Cummings, N., Ly, S., & Carter,
-C. S. (2009). The neural substrates of cognitive control deficits in autism
-spectrum disorders. Neuropsychologia, 47:12, 2515-2526.
-Sparks, B. F., Friedman, S. D., Shaw, D. W., Aylward, E. H., Echelard, D., Artru, A.
-A., Maravilla, K. R., Giedd, J. N., Munson, J., Dawson, G., & Dager, S. R.
-(2002). Brain structural abnormalities in young children with autism
-spectrum disorder. Neurology, 59:2, 184-192.
-
-33	  
-	  
-
-Sporns, O. (2007). Brain connectivity. Retrieved on 15th of May 2014, from
-http://scholarpedia.org/article/Brain_connectivity
-Sporns, O., Tononi, G., & Kötter, R. (2005). The human connectome: a structural
-description of the human brain. PLoS computational biology, 1:4, e42.
-Sundaram, S. K., Kumar, A., Makki, M. I., Behen, M. E., Chugani, H. T., &
-Chugani, D. C. (2008). Diffusion tensor imaging of frontal lobe in autism
-spectrum disorder. Cerebral cortex, 18(11), 2659-2665.
-Supekar, K., Musen, M., & Menon, V. (2009). Development of large-scale
-functional brain networks in children. PLoS biology, 7:7, e1000157.
-Supekar, K., Uddin, L. Q., Khouzam, A., Phillips, J., Gaillard, W. D., Kenworthy, L.
-E., Yerys, B. E., Vaidya, C. J., & Menon, V. (2013). Brain
-Hyperconnectivity in Children with Autism and its Links to Social Deficits.
-Cell reports, 5:3, 738-747.
-Testa-Silva, G., Loebel, A., Giugliano, M., de Kock, C. P., Mansvelder, H. D., &
-Meredith, R. M. (2012). Hyperconnectivity and slow synapses during early
-development of medial prefrontal cortex in a mouse model for mental
-retardation and autism. Cerebral Cortex, 22:6, 1333-1342.
-Torres, E. B., Isenhower, R. W., Yanovich, P., Rehrig, G., Stigler, K., Nurnberger,
-J., & José, J. V. (2013). Strategies to develop putative biomarkers to
-characterize the female phenotype with autism spectrum disorders. Journal
-of neurophysiology, 110(7), 1646-1662.
-Tzourio-Mazoyer, N., Landeau, B., Papathanassiou, D., Crivello, F., Etard, O.,
-Delcroix, N., ... & Joliot, M. (2002). Automated anatomical labeling of
-activations in SPM using a macroscopic anatomical parcellation of the MNI
-MRI single-subject brain. Neuroimage, 15(1), 273-289.
-Uddin, L. Q., Supekar, K., Lynch, C. J., Khouzam, A., Phillips, J., Feinstein, C.,
-Ryali, S., & Menon, V. (2013). Salience Network–Based Classification and
-
-34	  
-	  
-
-Prediction of Symptom Severity in Children With Autism. JAMA psychiatry,
-70:8, 869-879.
-Uddin, L. Q., Supekar, K., & Menon, V. (2013). Reconceptualizing functional brain
-connectivity in autism from a developmental perspective. Frontiers in
-human neuroscience, 7, 458.
-Valk, S. L., Di Martino, A., Milham, M. P., & Bernhardt, B. C. (2015). Multicenter
-mapping of structural network alterations in autism. Human brain mapping.
-Van Essen, D. C., Ugurbil, K., Auerbach, E., Barch, D., Behrens, T. E. J., Bucholz,
-R., ... & Yacoub, E. (2012). The Human Connectome Project: a data
-acquisition perspective. Neuroimage, 62:4, 2222-2231.
-Washington, S. D., Gordon, E. M., Brar, J., Warburton, S., Sawyer, A. T., Wolfe,
-A., Mease-Ference, E. R., Girton, L., Hailu, A., Mbwana, J., Gaillard, W. D.,
-Kalbfleisch, M. L., & VanMeter, J. W. (2013). Dysmaturation of the default
-mode network in autism. Human brain mapping, 35, 1284-1296.
-Webb, S. J., Nalty, T., Munson, J., Brock, C., Abbott, R., & Dawson, G. (2007).
-Rate of head circumference growth as a function of autism diagnosis and
-history of autistic regression. Journal of Child Neurology, 22:10, 1182-1190.
-White, S., O’Reilly, H., & Frith, U. (2009). Big heads, small details and autism.
-Neuropsychologia, 47:5, 1274-1281.
-Whitfield-Gabrieli, S., & Ford, J. M. (2012). Default mode network activity and
-connectivity in psychopathology. Annual review of clinical psychology, 8,
-49-76.
-Whiteside, S. P., Port, J. D., & Abramowitz, J. S. (2004). A meta–analysis of
-functional neuroimaging in obsessive–compulsive disorder. Psychiatry
-Research: Neuroimaging, 132(1), 69-79.
-Williams, J. H., Waiter, G. D., Gilchrist, A., Perrett, D. I., Murray, A. D., & Whiten,
-A. (2006). Neural mechanisms of imitation and ‘mirror neuron’functioning
-in autistic spectrum disorder. Neuropsychologia, 44(4), 610-621.
-
-35	  
-	  
-
-Xu, L., Groth, K. M., Pearlson, G., Schretlen, D. J., & Calhoun, V. D. (2009).
-Source-­‐‑based morphometry: The use of independent component analysis to
-identify gray matter differences with application to schizophrenia. Human
-brain mapping, 30(3), 711-724.
-Zhou, D., Thompson, W. K., & Siegle, G. (2009). MATLAB toolbox for functional
-connectivity. Neuroimage, 47(4), 1590-1607.
-
-36	  
-	  
-
-Appendix 1
-Overview of the 20 independent components of our functional data.
-
-37	  
-	  
-
-38	  
-	  
-
-39	  
-	  
-
-40	  
-	  
-
-Appendix 2
-Overview of the 9 components of our anatomical data. Note that component 5 did
-not survive Z>2.5 thresholding and is therefor not included in the overview.
-
-41	  
-	  
-
-42	  
-	  
-
-Appendix 3
-Contrast maps of functional component 1 and 17. Only functional components 1 and
-17 showed differences across our four groups. Contrasts resulting from the ANOVA of
-these components are shown. Coordinates of component 1: x = -33, y = 24, z = -6; peak
-t-value = 6.04 in the left anterior insula (voxel size = 1) which is part of the dorsal DMN
-(component 1). Coordinates of component 17: x = 39, y = -42, z = 54; peak t-value =
-6.20 in the right superior parietal lobule (voxel size = 3) within the auditory network
-(component 17).
-
-43	  
-	  
-
-Appendix 4
-Layout of SBM component 8 (Frontal – Cingulate network). Only our eight’
-component shows differences in the loading coefficient between our control groups and
-the ASD groups. Regions included: Inferior and Middle Frontal Gyrus, the Precentral
-Sulcus, the Sub-Gyral, Anterior Cingulate, the Medial Frontal Gyrus, the Superior
-Frontal Gyrus, the Postcentral Gyrus and the Cingulate Gyrus (see Table 2).
-
-

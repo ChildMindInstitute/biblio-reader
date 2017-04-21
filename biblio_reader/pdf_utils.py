@@ -1,17 +1,18 @@
-import pandas as pd
-import os
-import urllib.request as urllib
-import urllib.parse as urlparse
-from bs4 import BeautifulSoup as bs
 import PyPDF2
+import os
+import pandas as pd
+import urllib.parse as urlparse
+import urllib.request as urllib
+from bs4 import BeautifulSoup as bs
 
+from biblio_reader.text_tools import convertToText
 
 with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 dict_data = dict(zip(data['i'], data['URL']))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
-pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../pdfs')] + \
+pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs')] + \
         [key for key, value in valid_data.items() if 'books.google' in value]
 no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
 data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
@@ -168,4 +169,4 @@ def find_corrupted(pdf_directory):
                 res.append(int(file.replace('.pdf', '')))
     return res
 
-print(len(pdfs))
+convertToText.walkAndText('../inputs/pdfs', '../outputs/txts')
