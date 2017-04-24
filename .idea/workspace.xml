@@ -2,264 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1066b712-8790-4740-8a5f-a97451a6d5f3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ARSLANKO_FUNCTION.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/AlmeidaJ_AMultidi.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Arsiwall_HoangLe.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/AurichNK_CORRELAT.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Blackmon_NeuroIma.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/BosDJ_KingsRes.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Botteron_Consensu.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/BrownJes_Multimod.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/CaoMiao_Developm.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/CieslikE_Differen.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ClewettD_Agerelat.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ColbyJoh_Developm.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/CuiWJ_Miningto.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DUNEUROD_RESEAURE.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DahnkeRo_Localada.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Danserea_Statisti.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DeLaIgle_BrainCon.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Deviatio_Anoteonm.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DeySoumy_Automati.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DeySoumy_OUTLINEO.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DiXin_Identify.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/DiezIbai_Quantifi.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Dombrech_MAPPINGB.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/EspanaAl_Similitu.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/EstebanS_Imagepro.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Findling_RecentPu.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Fukushim_Characte.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/GarciaGa_Function.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/GenonSar_Examinin.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Ghiassia_Learning.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Grindrod_Departme.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/HakerHel_Computat.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/HammerRu_NeuroIma.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Harrison_Utilizin.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/HeuerKat_Browsing.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Hotehama_Suddenon.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/HuangChu_Theeffec.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/HuangDeS_Intellig.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Huntenbu_Evaluati.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/IIDAKATe_Restings.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/JakabAnd_DEBRECEN.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/JensenPe_Protecti.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/JoH_Symmetry.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KANGSinu_MultiSca.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Kalinich_Introduc.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KandelBe_Largesca.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Katsnels_Noisypat.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KeatorDa_Standard.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KennedyD_Braincon.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KerrWesl_Thefutur.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KrawiecK_Wspomaga.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/KupkaMic_Transkra.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LaiMingC_InvitedT.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LevmanaJ_NeuroIma.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LiSun_Abnormal.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LiWeiwei_LinkPred.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LiZhiqia_ANovelFe.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LinYiHui_Dysconne.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LiskaA_CanMouse.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/LlopPame_LilianaF.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Lombardo_Enhancin.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Lyzinski_Seededgr.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/MJHJSH_Towarddi.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Matteson_Webbased.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/MattiaDe_SubjectG.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Mazefsky_Socialco.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/McGonigl_Automate.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/MilhamMi_CONNECTI.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/MontoyaC_KMeansCl.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/MorenoDo_Multimod.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/NarayanM_Mixedeff.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Novikova_NDARAmod.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/NovotnyE_Function.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/OostingD_Function.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Pappaian_Anabnorm.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Petralia_Structur.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/PressRTI_Function.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Professo_RussellG.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/PuriBasa_Prostagl.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Rajagopa_AnAlgori.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/RenShaog_AScalabl.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ReusAles_Generati.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/RiedlVal_Intrinsi.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/RomeroRo_Thechall.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/RoncalWi_MRIGraph.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/RubiaKat_Brainabn.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/RuppertD_Webbased.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/SalonF_FinalPro.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/SatoJrJR_KingsRes.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Schaefer_Restings.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Schwartz_PyXNATaP.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Shattuck_BrainSui.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ShineJam_Dynamicf.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/SinglaMi_KernelSe.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/SuhaimiN_Studieso.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Sullivan_Impaired.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/SwansonJ_JMSwanso.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/TanKeanM_Replicat.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/TangYunf_Measurin.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/TomsonSt_MarkovNe.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/UddinKri_Asymmetr.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/UddinLQ_Suppleme.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Venkatar_NeuroIma.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/VinetteS_Developm.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/WangXunH_Abnormal.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Watanabe_Multisit.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Watanabe_Scalable.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/Woodward_Thalamoc.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/WrightJe_Autismge.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/WuGuoRon_Retrievi.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/WuYingNi_2Nonnega.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/XuTing_Intrinsi.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/YanChaog_PRNaprep.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/YangMich_Function.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/YangXue_RobustSt.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/YeoThoma_Theorgan.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ZhengJun_Toappear.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/ZhouXQ_ISDN2014.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/vanElstL_Autismas.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/左西年_人脑功能连接组方.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/王秀_基于多模态神经影.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/pdf/谭颖_基于小波变换与S.pdf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/ARSLANKO_FUNCTION.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Arsiwall_HoangLe.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/AurichNK_CORRELAT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Blackmon_NeuroIma.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/BosDJ_KingsRes.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Botteron_Consensu.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/CaoMiao_Developm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/CieslikE_Differen.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/ClewettD_Agerelat.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/CuiWJ_Miningto.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DUNEUROD_RESEAURE.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DahnkeRo_Localada.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Danserea_Statisti.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DeLaIgle_BrainCon.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Deviatio_Anoteonm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DeySoumy_Automati.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DeySoumy_OUTLINEO.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DiXin_Identify.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/DiezIbai_Quantifi.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Dombrech_MAPPINGB.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/EspanaAl_Similitu.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/EstebanS_Imagepro.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Findling_RecentPu.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Fukushim_Characte.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/GarciaGa_Function.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/GenonSar_Examinin.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Ghiassia_Learning.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Grindrod_Departme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/HakerHel_Computat.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/HammerRu_NeuroIma.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/HeuerKat_Browsing.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/HuangChu_Theeffec.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Huntenbu_Evaluati.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/IIDAKATe_Restings.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/JakabAnd_DEBRECEN.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/JensenPe_Protecti.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/JoH_Symmetry.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KANGSinu_MultiSca.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Kalinich_Introduc.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KandelBe_Largesca.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Katsnels_Noisypat.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KeatorDa_Standard.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KennedyD_Braincon.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KerrWesl_Thefutur.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KrawiecK_Wspomaga.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/KupkaMic_Transkra.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LaiMingC_InvitedT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LevmanaJ_NeuroIma.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LiSun_Abnormal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LiZhiqia_ANovelFe.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LinYiHui_Dysconne.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LiskaA_CanMouse.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/LlopPame_LilianaF.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Lombardo_Enhancin.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Lyzinski_Seededgr.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/MJHJSH_Towarddi.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Matteson_Webbased.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/MattiaDe_SubjectG.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Mazefsky_Socialco.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/McGonigl_Automate.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/MilhamMi_CONNECTI.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/MontoyaC_KMeansCl.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/MorenoDo_Multimod.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/NarayanM_Mixedeff.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Novikova_NDARAmod.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/NovotnyE_Function.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Pappaian_Anabnorm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Petralia_Structur.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/PressRTI_Function.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Professo_RussellG.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/PuriBasa_Prostagl.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/RenShaog_AScalabl.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/ReusAles_Generati.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/RiedlVal_Intrinsi.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/RomeroRo_Thechall.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/RoncalWi_MRIGraph.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/RubiaKat_Brainabn.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/RuppertD_Webbased.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/SalonF_FinalPro.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/SatoJrJR_KingsRes.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Schaefer_Restings.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Schwartz_PyXNATaP.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Shattuck_BrainSui.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/ShineJam_Dynamicf.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/SinglaMi_KernelSe.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/SuhaimiN_Studieso.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Sullivan_Impaired.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/TanKeanM_Replicat.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/TangYunf_Measurin.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/TomsonSt_MarkovNe.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/UddinKri_Asymmetr.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/UddinLQ_Suppleme.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Venkatar_NeuroIma.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/VinetteS_Developm.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/WangXunH_Abnormal.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Watanabe_Multisit.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Watanabe_Scalable.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/Woodward_Thalamoc.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/WrightJe_Autismge.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/WuGuoRon_Retrievi.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/WuYingNi_2Nonnega.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/XuTing_Intrinsi.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/YanChaog_PRNaprep.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/YangMich_Function.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/YangXue_RobustSt.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/YeoThoma_Theorgan.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/ZhengJun_Toappear.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/ZhouXQ_ISDN2014.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/vanElstL_Autismas.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/左西年_人脑功能连接组方.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/王秀_基于多模态神经影.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/biblio_reader/fulltext/fulltexts/txt/谭颖_基于小波变换与S.txt" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/README.md" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/data/cogAtlas.csv" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/cogAtlas.csv" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/data/extraStopwords.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/extraStopwords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/data/generated_terms.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/generated_terms.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/data/pubBrainLexicon.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/pubBrainLexicon.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/data/searchedTerms.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/searchedTerms.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/data/stopwords.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/stopwords.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/tfidf.py" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/tfidf.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/ngram_list.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/ngram_list.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/syn_dict.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/syn_dict.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/tfidf_out.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/tfidf_out.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/tfidf_processed.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/tfidf_processed.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/top100_v2.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/top100_v2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/topCogAtlas.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/topCogAtlas.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/topImaging.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/topImaging.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/topPubBrain.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/topPubBrain.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/top_tf.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/top_tf.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/biblio_reader/tfidf/working/top_tfidf.txt" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/top_tfidf.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/pdf_utils.py" afterPath="$PROJECT_DIR$/biblio_reader/pdf_utils.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/pub_med.py" afterPath="$PROJECT_DIR$/biblio_reader/pub_med.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py" afterPath="$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -274,86 +19,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pub_med.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-639">
-              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tfidf.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/tfidf.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-399">
-              <caret line="314" column="29" lean-forward="true" selection-start-line="314" selection-start-column="29" selection-end-line="314" selection-end-column="29" />
-              <folding>
-                <element signature="e#215#269#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="12.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outputs/txts/12.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pdf_utils.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_utils.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="171" column="60" lean-forward="false" selection-start-line="171" selection-start-column="60" selection-end-line="171" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="1000FCP2014.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/inputs/1000FCP2014.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="117">
-              <caret line="1192" column="22" lean-forward="false" selection-start-line="1192" selection-start-column="22" selection-end-line="1192" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="intersection.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/intersection.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FCP_DATA.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3525">
-              <caret line="13" column="82" lean-forward="true" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="convertToText.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="40" />
+            <state relative-caret-position="255">
+              <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pdf_utils.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_utils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -369,10 +52,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>def as</find>
-      <find>csv</find>
-      <find>to_csv</find>
-      <find>filename</find>
       <find>termfre</find>
       <find>freqsli</find>
       <find>defaul</find>
@@ -399,6 +78,10 @@
       <find>effect of resting-state functional</find>
       <find>wiley</find>
       <find>getlist</find>
+      <find>1000</find>
+      <find>caveats and</find>
+      <find>yeo</find>
+      <find>1000 functional con</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -443,10 +126,11 @@
         <option value="$PROJECT_DIR$/outputs/intersections.csv" />
         <option value="$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py" />
         <option value="$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py" />
-        <option value="$PROJECT_DIR$/biblio_reader/pdf_utils.py" />
         <option value="$PROJECT_DIR$/outputs/txts/1497.txt" />
         <option value="$PROJECT_DIR$/biblio_reader/pub_med.py" />
         <option value="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/tfidf.py" />
+        <option value="$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py" />
+        <option value="$PROJECT_DIR$/biblio_reader/pdf_utils.py" />
       </list>
     </option>
   </component>
@@ -485,6 +169,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -535,6 +220,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="inputs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pdfs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scholar.py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scholar.py" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="biblio_reader" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -554,34 +257,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="text_tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scholar.py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="scholar.py" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="biblio_reader" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="text_tools" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tfidf" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -590,19 +270,19 @@
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/biblio_reader/text_tools" />
-      <recent name="$PROJECT_DIR$/inputs" />
-      <recent name="$PROJECT_DIR$/pdfs" />
-      <recent name="$PROJECT_DIR$/unlink_pdfs" />
-      <recent name="$PROJECT_DIR$/linked_pdfs" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/inputs" />
       <recent name="$PROJECT_DIR$/outputs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/inputs/pdfs" />
+      <recent name="$PROJECT_DIR$/biblio_reader/text_tools" />
+      <recent name="$PROJECT_DIR$/inputs" />
+      <recent name="$PROJECT_DIR$/pdfs" />
+      <recent name="$PROJECT_DIR$/unlink_pdfs" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.tfidf">
+  <component name="RunManager" selected="Python.unlinks">
     <configuration default="false" name="intersection" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -831,8 +511,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.tfidf" />
-        <item index="1" class="java.lang.String" itemvalue="Python.unlinks" />
+        <item index="0" class="java.lang.String" itemvalue="Python.unlinks" />
+        <item index="1" class="java.lang.String" itemvalue="Python.tfidf" />
         <item index="2" class="java.lang.String" itemvalue="Python.intersection" />
         <item index="3" class="java.lang.String" itemvalue="Python.pdf_writer" />
         <item index="4" class="java.lang.String" itemvalue="Python.scholar_reader" />
@@ -869,9 +549,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20729166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -921,54 +601,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pubmed.py" />
-    <entry file="file://$PROJECT_DIR$/sdfsdf.py" />
-    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/stopwords.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/data/extraStopwords.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/syn_dict.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="34" column="21" lean-forward="false" selection-start-line="34" selection-start-column="21" selection-end-line="34" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/working/ngram_list.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="78" lean-forward="false" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Citations_sum.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/io/parsers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10769">
-          <caret line="645" column="0" lean-forward="false" selection-start-line="645" selection-start-column="0" selection-end-line="645" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/core/series.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="2799" column="0" lean-forward="false" selection-start-line="2799" selection-start-column="0" selection-end-line="2799" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1003,13 +639,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA_IDS" />
     <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA_wIDS.csv" />
-    <entry file="file://$PROJECT_DIR$/biblio_reader/scholar_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outputs/FCP_DATA_PDFS.csv" />
     <entry file="file://$USER_HOME$/anaconda/lib/python3.6/urllib/request.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1038,35 +667,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pyPdf/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pyPdf/__init__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="6" lean-forward="false" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/FCP_2014.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9954">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/FCP_2014.csv" />
     <entry file="file://$PROJECT_DIR$/outputs/unlinkables.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,22 +699,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/first">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3825">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py.bak">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/first" />
+    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py.bak" />
     <entry file="file://$PROJECT_DIR$/scholar.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5370">
@@ -1110,20 +709,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="30" column="32" lean-forward="true" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py" />
     <entry file="file://$PROJECT_DIR$/intersection.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
           <folding>
-            <element signature="e#0#37#0" expanded="true" />
+            <element signature="e#0#37#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1136,19 +728,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_utils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="171" column="60" lean-forward="false" selection-start-line="171" selection-start-column="60" selection-end-line="171" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/outputs/txts/1192.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-555">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1156,7 +739,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1554">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1164,57 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-22554">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/56.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1920">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-639">
-          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/tfidf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-399">
-          <caret line="314" column="29" lean-forward="true" selection-start-line="314" selection-start-column="29" selection-end-line="314" selection-end-column="29" />
-          <folding>
-            <element signature="e#215#269#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/12.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1238,7 +769,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1247,6 +777,137 @@
         <state relative-caret-position="-3525">
           <caret line="13" column="82" lean-forward="true" selection-start-line="13" selection-start-column="82" selection-end-line="13" selection-end-column="82" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/scholar_reader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13725">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/tfidf/tfidf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="314" column="27" lean-forward="true" selection-start-line="314" selection-start-column="27" selection-end-line="314" selection-end-column="27" />
+          <folding>
+            <element signature="e#215#269#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_monkey_qt.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="97" column="0" lean-forward="true" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/key_paragraph_dict">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30120">
+          <caret line="0" column="407567" lean-forward="false" selection-start-line="0" selection-start-column="407567" selection-end-line="0" selection-end-column="407567" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/generated_terms.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/15.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="41" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1284">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/56.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="25" lean-forward="true" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/0.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="3276" column="84" lean-forward="false" selection-start-line="3276" selection-start-column="83" selection-end-line="3276" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/1557.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="193" column="0" lean-forward="true" selection-start-line="193" selection-start-column="0" selection-end-line="193" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

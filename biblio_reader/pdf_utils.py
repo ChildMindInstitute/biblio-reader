@@ -1,6 +1,7 @@
 import PyPDF2
 import os
 import pandas as pd
+import re
 import urllib.parse as urlparse
 import urllib.request as urllib
 from bs4 import BeautifulSoup as bs
@@ -10,13 +11,16 @@ from biblio_reader.text_tools import convertToText
 with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
+fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
+       'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
+       'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000', ' INDI ']
 dict_data = dict(zip(data['i'], data['URL']))
+dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
-pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs')] + \
+pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')] + \
         [key for key, value in valid_data.items() if 'books.google' in value]
 no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
 data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
-
 
 def pdfopener(data):
     for row in data.iterrows():
@@ -169,4 +173,26 @@ def find_corrupted(pdf_directory):
                 res.append(int(file.replace('.pdf', '')))
     return res
 
-convertToText.walkAndText('../inputs/pdfs', '../outputs/txts')
+
+def find_paragraphs(txt_directory, terms):
+    res = {}
+    terms = list(map((lambda x: x.lower()), terms))
+    for path, dirs, files in os.walk(txt_directory):
+        for file in files:
+            full_file = '/'.join([path, file])
+            with open(full_file, 'r') as f:
+                text = f.read()
+            paragraphs = re.split(r'[ \t\r\f\v]*\n[ \t\r\f\v]*\n[ \t\r\f\v]*', text)
+            paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
+            key_paragraphs = []
+            for term in terms:
+                key_paragraphs += [paragraph for paragraph in paragraphs
+                                   if term in paragraph and paragraph not in key_paragraphs]
+            res[int(file.replace('.txt', ''))] = key_paragraphs
+    return res
+
+
+paragraph_dict = find_paragraphs('../outputs/txts', fcp)
+empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
+print(*[(key, value) for key, value in dict_titles.items() if key in empty_paragraphs], sep='\n')
+print(len(empty_paragraphs))

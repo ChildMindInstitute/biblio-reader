@@ -1,8 +1,5 @@
 import os, threading, subprocess
 
-inDir = "/home/files/pdf/"
-outDir = "/home/files/txt/"
-
 
 class Command(object):
     def __init__(self, cmd):
@@ -44,8 +41,3 @@ def walkAndText(rootDir, outDir):
                 else:
                     command = Command("pdftotext %s %s" % (f, path))
                     command.run(10)
-
-
-if __name__ == "__main__":
-    walkAndText(inDir, outDir)
-
