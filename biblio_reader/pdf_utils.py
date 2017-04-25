@@ -6,14 +6,14 @@ import urllib.parse as urlparse
 import urllib.request as urllib
 from bs4 import BeautifulSoup as bs
 
-from biblio_reader.text_tools import convertToText
 
 with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
        'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
-       'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000', ' INDI ']
+       'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000',
+       'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC']
 dict_data = dict(zip(data['i'], data['URL']))
 dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
@@ -186,13 +186,21 @@ def find_paragraphs(txt_directory, terms):
             paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
             key_paragraphs = []
             for term in terms:
+                re_term = term.replace(' ', '[\s]*')
                 key_paragraphs += [paragraph for paragraph in paragraphs
-                                   if term in paragraph and paragraph not in key_paragraphs]
+                                   if re.search(re_term, paragraph) and paragraph not in key_paragraphs]
+                key_paragraphs = [paragraph.replace(term, '@@@@' + term) for paragraph in key_paragraphs]
             res[int(file.replace('.txt', ''))] = key_paragraphs
     return res
 
 
+
 paragraph_dict = find_paragraphs('../outputs/txts', fcp)
+
+#print(*['\n\nNEXT PARAGRAPH:\n\n'.join(paragraph) for paragraph in paragraph_dict.values()][:7], sep='\n\n=========\n\n')
+
+print(paragraph_dict[2000])
+
 empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
-print(*[(key, value) for key, value in dict_titles.items() if key in empty_paragraphs], sep='\n')
+#print(*[(key, value) for key, value in dict_titles.items() if key in empty_paragraphs], sep='\n')
 print(len(empty_paragraphs))
