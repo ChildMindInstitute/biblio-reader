@@ -1,10 +1,9 @@
-import PyPDF2
-import os
+import PyPDF2, os, re
 import pandas as pd
-import re
 import urllib.parse as urlparse
 import urllib.request as urllib
 from bs4 import BeautifulSoup as bs
+
 
 
 with open('../inputs/FCP_DATA.csv', 'r') as f:
@@ -17,10 +16,10 @@ fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Conne
 dict_data = dict(zip(data['i'], data['URL']))
 dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
-pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')] + \
-        [key for key, value in valid_data.items() if 'books.google' in value]
+pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')]
 no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
 data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
+
 
 def pdfopener(data):
     for row in data.iterrows():
@@ -115,6 +114,7 @@ def plos_open(data):
                 except Exception as e:
                     print(e, key, pdf)
 
+
 def liebert_open(data):
     for key in data:
         link = data[key]
@@ -137,6 +137,7 @@ def liebert_open(data):
                 except Exception as e:
                     print(e, key, pdf)
 
+
 def frontiers_open(data):
     for key in data:
         link = data[key]
@@ -150,6 +151,7 @@ def frontiers_open(data):
                 f.write(pdf_file)
         except Exception as e:
             print(e, key, pdf)
+
 
 def citeseer_open(data):
     for key in data:
@@ -186,21 +188,15 @@ def find_paragraphs(txt_directory, terms):
             paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
             key_paragraphs = []
             for term in terms:
-                re_term = term.replace(' ', '[\s]*')
+                term = term.replace(' ', '[\s]*')
                 key_paragraphs += [paragraph for paragraph in paragraphs
-                                   if re.search(re_term, paragraph) and paragraph not in key_paragraphs]
+                                   if re.search(term, paragraph) and paragraph not in key_paragraphs]
                 key_paragraphs = [paragraph.replace(term, '@@@@' + term) for paragraph in key_paragraphs]
             res[int(file.replace('.txt', ''))] = key_paragraphs
     return res
 
 
-
 paragraph_dict = find_paragraphs('../outputs/txts', fcp)
-
-#print(*['\n\nNEXT PARAGRAPH:\n\n'.join(paragraph) for paragraph in paragraph_dict.values()][:7], sep='\n\n=========\n\n')
-
-print(paragraph_dict[2000])
-
 empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
-#print(*[(key, value) for key, value in dict_titles.items() if key in empty_paragraphs], sep='\n')
-print(len(empty_paragraphs))
+bad_data = list(no_pdfs.keys()) + empty_paragraphs
+data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
