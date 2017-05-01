@@ -1073,14 +1073,12 @@ class ScholarQuerier(object):
         if err_msg is None:
             err_msg = 'request failed'
 
-
         try:
             ScholarUtils.log('info', 'requesting %s' % unquote(url))
 
             req = Request(url=url, headers={'User-Agent': ScholarConf.USER_AGENT})
             hdl = self.opener.open(req)
             html = hdl.read()
-
 
             ScholarUtils.log('debug', log_msg)
             ScholarUtils.log('debug', '>>>>' + '-'*68)
