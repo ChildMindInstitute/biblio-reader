@@ -1114,7 +1114,7 @@ def txt(querier, with_globals):
             if item[0] is not None:
                 print(fmt % (item[1], item[0]))
         if len(items) > 0:
-            print
+            print()
 
     articles = querier.articles
     for art in articles:
@@ -1128,7 +1128,7 @@ def csv(querier, filename):
         return
     for art in querier.articles:
         artlist.append(art.getlist(0))
-    df = pandas.DataFrame(data=artlist, columns= querier.articles[0].getlist(1))
+    df = pandas.DataFrame(data=artlist, columns=querier.articles[0].getlist(1))
     csvfile = filename + '.csv'
     df.to_csv(path_or_buf=csvfile)
 
