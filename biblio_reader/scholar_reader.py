@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import urllib.request as urllib
+import os, csv
 
 
 with open('../inputs/FCP_DATA.csv', 'r') as f:
@@ -51,3 +51,23 @@ def year_sum_graph(column):
     plt.savefig('Citations_sum.png', bbox_inches='tight')
 
 
+def checker_directory(directory):
+    checks = {}
+    for check in os.listdir(directory):
+        full_path = '/'.join([directory, check])
+        with open(full_path, 'r') as f:
+            reader = list(csv.reader(f))
+            for rows in reader[1:]:
+                k = int(rows[0])
+                v = (check, rows[1].replace(' and ', '').upper())
+                if k not in checks:
+                    checks[k] = [v]
+                else:
+                    checks[k].append(v)
+    return checks
+
+"""
+checker = checker_directory('../inputs/Article_Checks')
+double_checked = {key: check for key, check in checker.items() if len(check) > 1}
+"""
+print(len([year for year in data['Year'] if year == 2016]))

@@ -176,7 +176,7 @@ def find_corrupted(pdf_directory):
     return res
 
 
-def find_paragraphs(txt_directory, terms):
+def find_paragraphs(txt_directory, terms, outfile=None):
     res = {}
     terms = list(map((lambda x: x.lower()), terms))
     for path, dirs, files in os.walk(txt_directory):
@@ -188,12 +188,18 @@ def find_paragraphs(txt_directory, terms):
             paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
             key_paragraphs = []
             for term in terms:
-                term = term.replace(' ', '[\s]*')
+                re_term = term.replace(' ', '[\s]*')
                 key_paragraphs += [paragraph for paragraph in paragraphs
-                                   if re.search(term, paragraph) and paragraph not in key_paragraphs]
-                key_paragraphs = [paragraph.replace(term, '@@@@' + term) for paragraph in key_paragraphs]
+                                   if re.search(re_term, paragraph) and paragraph not in key_paragraphs]
+            for term in terms:
+                re_term = term.replace(' ', '[\s]*')
+                key_paragraphs = [str(re.sub(re_term, '@@@@' + term, paragraph)) for paragraph in key_paragraphs]
             res[int(file.replace('.txt', ''))] = key_paragraphs
-    return res
+    if outfile:
+        with open(outfile, 'w') as f:
+            f.write(str(res))
+    else:
+        return res
 
 
 paragraph_dict = find_paragraphs('../outputs/txts', fcp)
