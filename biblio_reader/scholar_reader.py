@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import os, csv
 
-
 with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
@@ -66,8 +65,32 @@ def checker_directory(directory):
                     checks[k].append(v)
     return checks
 
-"""
-checker = checker_directory('../inputs/Article_Checks')
-double_checked = {key: check for key, check in checker.items() if len(check) > 1}
-"""
-print(len([year for year in data['Year'] if year == 2016]))
+
+def categorize_journals(dict, keywords, category, type='Journal'):
+    data_journals = data.dropna(subset=[type])
+    for keyword in keywords:
+        dict.update({row[1]['i']: category for row in data_journals.iterrows() if keyword in row[1][type].lower()})
+
+
+other = ['arxiv', 'biorxiv', 'proceedings', 'advances in child development', 'using secondary datasets',
+         '2 center for mind', 'under construct', 'bridging the gap before and after']
+
+journals = ['journal', 'plos', 'ieee', 'human brain mapping', 'frontiers', 'molecular', 'nature', 'neuro',
+            'brain', 'biological psychiatry', 'autism', 'scientific', 'cortex', 'trends', 'jama', 'giga', 'bmc',
+            'cell', 'chinese', 'phil. trans.', 'peerj', 'clinical trials', 'psychological', 'radiology', ]
+
+journal_urls = ['nature', 'sciencedirect', 'wiley', 'springer', 'ncbi', 'journal']
+other_urls = ['books', 'proceedings', 'ieeexplore', 'preprint', 'crcnetbase', 'patents']
+t_urls = ['gradworks', 'academia', 'thesis', 'dissertation']
+
+journal_categories = {}
+categorize_journals(journal_categories, other, 'Other')
+categorize_journals(journal_categories, journals, 'Journal')
+categorize_journals(journal_categories, journal_urls, 'Journal', type='URL')
+categorize_journals(journal_categories, other_urls, 'Other', type='URL')
+categorize_journals(journal_categories, t_urls, 'Thesis/Dissertation', type='URL')
+journal_categories.update({i: 'Unknown' for i in range(0, 1560) if i not in journal_categories})
+
+print(*sorted(journal_categories.items()), sep='\n')
+data['Journal Category'] = journal_categories.values()
+data.to_csv(path_or_buf='../inputs/FCP_DATA.csv', index=False)

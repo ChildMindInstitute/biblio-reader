@@ -4,8 +4,6 @@ import urllib.parse as urlparse
 import urllib.request as urllib
 from bs4 import BeautifulSoup as bs
 
-
-
 with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
@@ -19,7 +17,7 @@ valid_data = {key: value for key, value in dict_data.items() if not isinstance(v
 pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')]
 no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
 data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
-
+print(len(pdfs))
 
 def pdfopener(data):
     for row in data.iterrows():
