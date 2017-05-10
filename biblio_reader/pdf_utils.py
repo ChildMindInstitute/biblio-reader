@@ -3,14 +3,14 @@ import pandas as pd
 import urllib.parse as urlparse
 import urllib.request as urllib
 from bs4 import BeautifulSoup as bs
-
+from biblio_reader.text_tools import convertToText
 with open('../inputs/FCP_DATA.csv', 'r') as f:
     data = pd.read_csv(f)
 
 fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
        'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
        'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000',
-       'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC']
+       'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC', 'ABIDE', 'Di Martino']
 dict_data = dict(zip(data['i'], data['URL']))
 dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
@@ -196,11 +196,15 @@ def find_paragraphs(txt_directory, terms, outfile=None):
     if outfile:
         with open(outfile, 'w') as f:
             f.write(str(res))
-    else:
-        return res
+    return res
 
-
-paragraph_dict = find_paragraphs('../outputs/txts', fcp)
+paragraph_dict = find_paragraphs('../outputs/txts', fcp, outfile='../outputs/paragraphs.txt')
 empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
-bad_data = list(no_pdfs.keys()) + empty_paragraphs
+bad_data = list(no_pdfs) + empty_paragraphs
 data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
+
+
+print([i for i in range(0, 1560) if i not in paragraph_dict and i not in bad_data])
+
+
+#print(*data[data['i'].isin(bad_data)]['i'], sep='\n')

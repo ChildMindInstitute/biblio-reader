@@ -73,14 +73,14 @@ def categorize_journals(dict, keywords, category, type='Journal'):
 
 
 other = ['arxiv', 'biorxiv', 'proceedings', 'advances in child development', 'using secondary datasets',
-         '2 center for mind', 'under construct', 'bridging the gap before and after']
+         '2 center for mind', 'under construct', 'bridging the gap before and after', 'autism imaging and devices']
 
 journals = ['journal', 'plos', 'ieee', 'human brain mapping', 'frontiers', 'molecular', 'nature', 'neuro',
             'brain', 'biological psychiatry', 'autism', 'scientific', 'cortex', 'trends', 'jama', 'giga', 'bmc',
             'cell', 'chinese', 'phil. trans.', 'peerj', 'clinical trials', 'psychological', 'radiology', ]
 
 journal_urls = ['nature', 'sciencedirect', 'wiley', 'springer', 'ncbi', 'journal']
-other_urls = ['books', 'proceedings', 'ieeexplore', 'preprint', 'crcnetbase', 'patents']
+other_urls = ['proceedings', 'ieeexplore', 'preprint', 'crcnetbase', 'patents']
 t_urls = ['gradworks', 'academia', 'thesis', 'dissertation']
 
 journal_categories = {}
@@ -91,6 +91,8 @@ categorize_journals(journal_categories, other_urls, 'Other', type='URL')
 categorize_journals(journal_categories, t_urls, 'Thesis/Dissertation', type='URL')
 journal_categories.update({i: 'Unknown' for i in range(0, 1560) if i not in journal_categories})
 
+#print(*sorted([(key, data.iloc[key]['Journal'], data.iloc[key]['URL']) for key, category in journal_categories.items() if category == 'Other']), sep='\n')
+data['Journal Category'] = [journal for key, journal in sorted(journal_categories.items())]
+
 print(*sorted(journal_categories.items()), sep='\n')
-data['Journal Category'] = journal_categories.values()
 data.to_csv(path_or_buf='../inputs/FCP_DATA.csv', index=False)
