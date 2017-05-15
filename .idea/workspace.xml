@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1066b712-8790-4740-8a5f-a97451a6d5f3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/list_gen.py" afterPath="$PROJECT_DIR$/biblio_reader/list_gen.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/outputs/Citations_sum.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/outputs/Journals_by_year.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/outputs/journalstat.csv" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/pdf_utils.py" afterPath="$PROJECT_DIR$/biblio_reader/pdf_utils.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/biblio_reader/pub_med.py" afterPath="$PROJECT_DIR$/biblio_reader/pub_med.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/inputs/FCP_DATA.csv" afterPath="$PROJECT_DIR$/inputs/FCP_DATA.csv" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,8 +27,8 @@
       <file leaf-file-name="pdf_utils.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_utils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+            <state relative-caret-position="3135">
+              <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -29,21 +36,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="anirudh.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/anirudh.txt">
+      <file leaf-file-name="intersection.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/intersection.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_gen.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="list_gen.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biblio_reader/list_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+            <state relative-caret-position="601">
+              <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
               <folding>
                 <element signature="e#0#46#0" expanded="true" />
               </folding>
@@ -54,8 +63,40 @@
       <file leaf-file-name="scholar.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scholar.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="14130">
+            <state relative-caret-position="151">
               <caret line="1249" column="44" lean-forward="false" selection-start-line="1249" selection-start-column="44" selection-end-line="1249" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pub_med.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="631">
+              <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/outputs/bibs/2.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="615">
+              <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -72,7 +113,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>wiley</find>
       <find>getlist</find>
       <find>caveats and</find>
       <find>yeo</find>
@@ -102,6 +142,7 @@
       <find>michael</find>
       <find>bonhwang</find>
       <find>ARTICLE NO 52:</find>
+      <find>ArticleT</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,9 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/csvreader.py" />
-        <option value="$PROJECT_DIR$/scholar_reader.py" />
-        <option value="$PROJECT_DIR$/bibliometrics/graphs/bagging/bag_pageranks.py" />
         <option value="$PROJECT_DIR$/bibliometrics/graphs/community.py" />
         <option value="$PROJECT_DIR$/bibliometrics/fulltext/collectAndConvert.py" />
         <option value="$USER_HOME$/anaconda/lib/python3.6/site-packages/textmining/__init__.py" />
@@ -143,7 +181,6 @@
         <option value="$PROJECT_DIR$/biblio_reader/fulltext/collectAndConvert.py" />
         <option value="$PROJECT_DIR$/biblio_reader/fulltext/convertToText.py" />
         <option value="$PROJECT_DIR$/outputs/txts/1497.txt" />
-        <option value="$PROJECT_DIR$/biblio_reader/pub_med.py" />
         <option value="$PROJECT_DIR$/biblio_reader/text_tools/tfidf/tfidf.py" />
         <option value="$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py" />
         <option value="$PROJECT_DIR$/outputs/txts/1392.txt" />
@@ -155,19 +192,22 @@
         <option value="$PROJECT_DIR$/outputs/Assignments/helen.txt" />
         <option value="$PROJECT_DIR$/outputs/Assignments/jon.txt" />
         <option value="$PROJECT_DIR$/inputs/anirudh" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/inputs/Article_Checks/michael.csv" />
         <option value="$PROJECT_DIR$/outputs/Assignments/michael.txt" />
-        <option value="$PROJECT_DIR$/biblio_reader/pdf_utils.py" />
         <option value="$PROJECT_DIR$/biblio_reader/scholar_reader.py" />
         <option value="$PROJECT_DIR$/biblio_reader/list_gen.py" />
+        <option value="$PROJECT_DIR$/outputs/PMCIDS.txt" />
+        <option value="$PROJECT_DIR$/inputs/FCP_variables.py" />
+        <option value="$PROJECT_DIR$/outputs/bibs/2.xml" />
+        <option value="$PROJECT_DIR$/biblio_reader/pdf_utils.py" />
+        <option value="$PROJECT_DIR$/biblio_reader/pub_med.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="998" />
-    <option name="height" value="974" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -200,6 +240,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -256,44 +297,27 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/outputs/Assignments/New" />
-      <recent name="$PROJECT_DIR$/inputs/Article_Checks" />
-      <recent name="$PROJECT_DIR$/outputs" />
-      <recent name="$PROJECT_DIR$/inputs/pdfs" />
-      <recent name="$PROJECT_DIR$/biblio_reader/text_tools" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/inputs" />
       <recent name="$PROJECT_DIR$/outputs" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/outputs/stats" />
+      <recent name="$PROJECT_DIR$/outputs/Assignments/New" />
+      <recent name="$PROJECT_DIR$/inputs/Article_Checks" />
+      <recent name="$PROJECT_DIR$/outputs" />
+      <recent name="$PROJECT_DIR$/inputs/pdfs" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.list_gen">
-    <configuration default="false" name="intersection" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="scholar.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/intersection.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.pub_med">
     <configuration default="false" name="unlinks" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -358,6 +382,23 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="scholar.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/biblio_reader/scholar_reader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="pub_med" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/biblio_reader" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="scholar.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/biblio_reader/pub_med.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -497,19 +538,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.intersection" />
-      <item index="1" class="java.lang.String" itemvalue="Python.unlinks" />
-      <item index="2" class="java.lang.String" itemvalue="Python.tfidf" />
-      <item index="3" class="java.lang.String" itemvalue="Python.list_gen" />
-      <item index="4" class="java.lang.String" itemvalue="Python.scholar_reader" />
+      <item index="0" class="java.lang.String" itemvalue="Python.unlinks" />
+      <item index="1" class="java.lang.String" itemvalue="Python.tfidf" />
+      <item index="2" class="java.lang.String" itemvalue="Python.list_gen" />
+      <item index="3" class="java.lang.String" itemvalue="Python.scholar_reader" />
+      <item index="4" class="java.lang.String" itemvalue="Python.pub_med" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.list_gen" />
+        <item index="0" class="java.lang.String" itemvalue="Python.pub_med" />
         <item index="1" class="java.lang.String" itemvalue="Python.unlinks" />
-        <item index="2" class="java.lang.String" itemvalue="Python.scholar_reader" />
-        <item index="3" class="java.lang.String" itemvalue="Python.tfidf" />
-        <item index="4" class="java.lang.String" itemvalue="Python.intersection" />
+        <item index="2" class="java.lang.String" itemvalue="Python.list_gen" />
+        <item index="3" class="java.lang.String" itemvalue="Python.scholar_reader" />
+        <item index="4" class="java.lang.String" itemvalue="Python.tfidf" />
       </list>
     </recent_temporary>
   </component>
@@ -542,15 +583,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="998" height="974" extended-state="0" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26252505" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32929516" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33480662" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26040658" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -591,59 +632,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="Created a full functioning FCP Data file" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/outputs/txts/56.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/3.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1557.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1407.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1392.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1059.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5235">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1003.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/1074.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/0.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="1408" column="5" lean-forward="false" selection-start-line="1408" selection-start-column="5" selection-end-line="1408" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/txts/2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="346" column="1" lean-forward="false" selection-start-line="332" selection-start-column="0" selection-end-line="346" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/0.txt" />
+    <entry file="file://$PROJECT_DIR$/outputs/txts/2.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/txts/2000" />
-    <entry file="file://$PROJECT_DIR$/outputs/txts/2000.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/txts/2000.txt" />
     <entry file="file://$PROJECT_DIR$/biblio_reader/__init__.py" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/helen" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/anirudh" />
@@ -651,50 +649,19 @@
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/jon" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/test.txt" />
     <entry file="file://$PROJECT_DIR$/inputs/anirudh" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/bonhwang.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/bonhwang.csv" />
     <entry file="file://$PROJECT_DIR$/outputs/key_paragraph_dict" />
     <entry file="file://$PROJECT_DIR$/biblio_reader/999.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/jon.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/jon.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/helen_new.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/jon_new.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/bonhwang_new.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/helen_new.txt.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/bonhwang_new.txt.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/bonhwang.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/bonhwang.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/michael_new.txt" />
     <entry file="file://$PROJECT_DIR$/outputs/Assignments/anirudh_new.txt" />
-    <entry file="file://$PROJECT_DIR$/outputs/unlinkables.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="60" column="586" lean-forward="false" selection-start-line="60" selection-start-column="586" selection-end-line="60" selection-end-column="586" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/unlinkables.csv" />
     <entry file="file://$PROJECT_DIR$/biblio_reader/text_tools/convertToText.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
@@ -702,29 +669,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/paragraphs.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="0" column="1209107" lean-forward="false" selection-start-line="0" selection-start-column="1209103" selection-end-line="0" selection-end-column="1209107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-458">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3291">
-          <caret line="1303" column="72" lean-forward="false" selection-start-line="1303" selection-start-column="72" selection-end-line="1303" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/paragraphs.txt" />
     <entry file="file://$PROJECT_DIR$/biblio_reader/scholar_reader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="772">
@@ -733,31 +678,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/helen.txt">
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/helen.txt" />
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/michael.txt" />
+    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/helen.csv" />
+    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/anirudh.csv" />
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/anirudh_reassignment.txt" />
+    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/michael.csv" />
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/michael_reassignment.txt" />
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/helen_reassignment.txt" />
+    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/anirudh.txt" />
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="715">
+          <caret line="3053" column="0" lean-forward="false" selection-start-line="3053" selection-start-column="0" selection-end-line="3053" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python3.6/site-packages/pandas/types/cast.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="670">
+          <caret line="530" column="0" lean-forward="false" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/PMCIDS.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="6" lean-forward="false" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inputs/FCP_variables.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="27861" column="6" lean-forward="false" selection-start-line="27861" selection-start-column="6" selection-end-line="27861" selection-end-column="6" />
+          <caret line="1" column="30" lean-forward="false" selection-start-line="1" selection-start-column="30" selection-end-line="1" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/michael.txt">
+    <entry file="file://$PROJECT_DIR$/inputs/FCP_DATA.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="2419" column="40" lean-forward="false" selection-start-line="2419" selection-start-column="40" selection-end-line="2419" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="10" column="128" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/helen.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5301">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/anirudh.csv">
+    <entry file="file://$PROJECT_DIR$/outputs/bibs/1559.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -765,71 +735,83 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/anirudh_reassignment.txt">
+    <entry file="file://$PROJECT_DIR$/outputs/bibs/0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="62" lean-forward="true" selection-start-line="28" selection-start-column="62" selection-end-line="28" selection-end-column="62" />
+        <state relative-caret-position="-17048">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/bibs/1499.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/outputs/bibs/2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="11" lean-forward="true" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biblio_reader/pdf_utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="63" lean-forward="false" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+        <state relative-caret-position="3135">
+          <caret line="209" column="0" lean-forward="false" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inputs/Article_Checks/michael.csv">
+    <entry file="file://$PROJECT_DIR$/intersection.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="42" column="5" lean-forward="false" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/michael_reassignment.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="47" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/helen_reassignment.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scholar.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14130">
-          <caret line="1249" column="44" lean-forward="false" selection-start-line="1249" selection-start-column="44" selection-end-line="1249" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/outputs/Assignments/New/anirudh.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/biblio_reader/list_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="147" column="0" lean-forward="true" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
+        <state relative-caret-position="601">
+          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
           <folding>
             <element signature="e#0#46#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scholar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="1249" column="44" lean-forward="false" selection-start-line="1249" selection-start-column="44" selection-end-line="1249" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/biblio_reader/pub_med.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="631">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>

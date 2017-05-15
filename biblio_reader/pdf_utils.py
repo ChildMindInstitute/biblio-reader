@@ -16,7 +16,6 @@ dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
 valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
 pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')]
 no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
-data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
 print(len(pdfs))
 
 def pdfopener(data):
@@ -198,6 +197,8 @@ def find_paragraphs(txt_directory, terms, outfile=None):
             f.write(str(res))
     return res
 
+
+convertToText.walkAndText('../inputs/pdfs', '../outputs/txts')
 paragraph_dict = find_paragraphs('../outputs/txts', fcp, outfile='../outputs/paragraphs.txt')
 empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
 bad_data = list(no_pdfs) + empty_paragraphs
@@ -206,5 +207,3 @@ data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', 
 
 print([i for i in range(0, 1560) if i not in paragraph_dict and i not in bad_data])
 
-
-#print(*data[data['i'].isin(bad_data)]['i'], sep='\n')
