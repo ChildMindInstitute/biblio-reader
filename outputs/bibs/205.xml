@@ -1,0 +1,492 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24361664</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>12</Month>
+            <Day>02</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>07</Month>
+            <Day>16</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>102 Pt 1</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Nov</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Non-negative matrix factorization of multimodal MRI, fMRI and phenotypic data reveals differential changes in default mode subnetworks in ADHD.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>207-19</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2013.12.015</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(13)01219-6</ELocationID>
+            <Abstract>
+                <AbstractText>In the multimodal neuroimaging framework, data on a single subject are collected from inherently different sources such as functional MRI, structural MRI, behavioral and/or phenotypic information. The information each source provides is not independent; a subset of features from each modality maps to one or more common latent dimensions, which can be interpreted using generative models. These latent dimensions, or &quot;topics,&quot; provide a sparse summary of the generative process behind the features for each individual. Topic modeling, an unsupervised generative model, has been used to map seemingly disparate features to a common domain. We use Non-Negative Matrix Factorization (NMF) to infer the latent structure of multimodal ADHD data containing fMRI, MRI, phenotypic and behavioral measurements. We compare four different NMF algorithms and find that the sparsest decomposition is also the most differentiating between ADHD and healthy patients. We identify dimensions that map to interpretable, recognizable dimensions such as motion, default mode network activity, and other such features of the input data. For example, structural and functional graph theory features related to default mode subnetworks clustered with the ADHD-Inattentive diagnosis. Structural measurements of the default mode network (DMN) regions such as the posterior cingulate, precuneus, and parahippocampal regions were all related to the ADHD-Inattentive diagnosis. Ventral DMN subnetworks may have more functional connections in ADHD-I, while dorsal DMN may have less. ADHD topics are dependent upon diagnostic site, suggesting diagnostic differences across geographic locations. We assess our findings in light of the ADHD-200 classification competition, and contrast our unsupervised, nominated topics with previously published supervised learning methods. Finally, we demonstrate the validity of these latent variables as biomarkers by using them for classification of ADHD in 730 patients. Cumulatively, this manuscript addresses how multimodal data in ADHD can be interpreted by latent dimensions.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Anderson</LastName>
+                    <ForeName>Ariana</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Biobehavioral Sciences, University of California, Los Angeles, United States. Electronic address: ariana82@ucla.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Douglas</LastName>
+                    <ForeName>Pamela K</ForeName>
+                    <Initials>PK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Biobehavioral Sciences, University of California, Los Angeles, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kerr</LastName>
+                    <ForeName>Wesley T</ForeName>
+                    <Initials>WT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Biobehavioral Sciences, University of California, Los Angeles, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Haynes</LastName>
+                    <ForeName>Virginia S</ForeName>
+                    <Initials>VS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Global Health Outcomes, Eli Lilly and Company, Indianapolis, IN, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yuille</LastName>
+                    <ForeName>Alan L</ForeName>
+                    <Initials>AL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Statistics, University of California, Los Angeles, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xie</LastName>
+                    <ForeName>Jianwen</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Statistics, University of California, Los Angeles, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wu</LastName>
+                    <ForeName>Ying Nian</ForeName>
+                    <Initials>YN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Statistics, University of California, Los Angeles, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brown</LastName>
+                    <ForeName>Jesse A</ForeName>
+                    <Initials>JA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Memory and Aging Center, Department of Neurology, University of California, San Francisco, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cohen</LastName>
+                    <ForeName>Mark S</ForeName>
+                    <Initials>MS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry Neurology, University of California, Los Angeles, United States; Department of Radiology, University of California, Los Angeles, United States; California Nanosystems Institute (CNSI), University of California, Los Angeles, United States; Department of Psychology, University of California, Los Angeles, United States; Department of Bioengineering, University of California, Los Angeles, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R33 DA026109</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R90 DA023422</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>T90 DA022768</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R33DA026109</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>19</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Nov 18;29(46):14496-505</RefSource>
+                <PMID Version="1">19923283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2008;4(7):e1000029</RefSource>
+                <PMID Version="1">18654623</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Comput. 2002 Apr;14(4):889-918</RefSource>
+                <PMID Version="1">11936966</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Feb 10;106(6):1942-7</RefSource>
+                <PMID Version="1">19171889</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Sep 28;6:69</RefSource>
+                <PMID Version="1">23060754</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Dec;63(4):1775-81</RefSource>
+                <PMID Version="1">22960086</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jun 15;56(4):2068-79</RefSource>
+                <PMID Version="1">21459148</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1999 Oct 21;401(6755):788-91</RefSource>
+                <PMID Version="1">10548103</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Nanobioscience. 2005 Sep;4(3):228-34</RefSource>
+                <PMID Version="1">16220686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Psychiatry. 2008;8:51</RefSource>
+                <PMID Version="1">18590567</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2012 Feb 28;201(2):120-7</RefSource>
+                <PMID Version="1">22424873</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Topogr. 2010 Jun;23(2):150-8</RefSource>
+                <PMID Version="1">20052528</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Jan 20;106(3):697-702</RefSource>
+                <PMID Version="1">19139392</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2001 Sep;14(3):709-22</RefSource>
+                <PMID Version="1">11506543</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Aug 1;57(3):839-55</RefSource>
+                <PMID Version="1">21640835</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Nov 15;28(3):529-43</RefSource>
+                <PMID Version="1">16099178</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2007;31(7):977-86</RefSource>
+                <PMID Version="1">17445893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Nov 15;82:683-91</RefSource>
+                <PMID Version="1">23123682</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Pharmacogenomics. 2012 Mar;13(4):365-8</RefSource>
+                <PMID Version="1">22379991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2010 Dec 15;68(12):1084-91</RefSource>
+                <PMID Version="1">20728873</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Comput. 2007 Oct;19(10):2756-79</RefSource>
+                <PMID Version="1">17716011</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2007 Jun 15;23(12):1495-502</RefSource>
+                <PMID Version="1">17483501</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):774-81</RefSource>
+                <PMID Version="1">22248573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Aug 16;6:59</RefSource>
+                <PMID Version="1">22912605</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 Apr;24(4):935-44</RefSource>
+                <PMID Version="1">23242198</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 1996 Mar;35(3):334-42</RefSource>
+                <PMID Version="1">8714322</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2012 Mar 1;71(5):443-50</RefSource>
+                <PMID Version="1">22153589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2004 Mar 30;101(13):4637-42</RefSource>
+                <PMID Version="1">15070770</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Oct 08;6:70</RefSource>
+                <PMID Version="1">23060755</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):1123-34</RefSource>
+                <PMID Version="1">20083208</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Netw. 2000 May-Jun;13(4-5):411-30</RefSource>
+                <PMID Version="1">10946390</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):177-94</RefSource>
+                <PMID Version="1">17070708</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Sep 03;6:63</RefSource>
+                <PMID Version="1">22969710</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2009 Feb 15;25(4):545-7</RefSource>
+                <PMID Version="1">19131367</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Psychophysiol. 2009 Jul;73(1):53-61</RefSource>
+                <PMID Version="1">19223007</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Jul;22(3):1023-34</RefSource>
+                <PMID Version="1">15219575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Aug 30;6:61</RefSource>
+                <PMID Version="1">22969709</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Mar;35(3):346-55</RefSource>
+                <PMID Version="1">8699946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 Jan;22(1):158-65</RefSource>
+                <PMID Version="1">21616982</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2008 Mar 30;169(1):249-54</RefSource>
+                <PMID Version="1">18190970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Jan 16;98(2):676-82</RefSource>
+                <PMID Version="1">11209064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2008 Mar;1124:1-38</RefSource>
+                <PMID Version="1">18400922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2009 Jun 1;1273:114-28</RefSource>
+                <PMID Version="1">19281801</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Mar;45(1 Suppl):S163-72</RefSource>
+                <PMID Version="1">19059344</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2008 Feb 1;63(3):332-7</RefSource>
+                <PMID Version="1">17888409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur J Paediatr Neurol. 2012 Sep;16(5):422-33</RefSource>
+                <PMID Version="1">22306277</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 1998 Jan;3(1):38-41</RefSource>
+                <PMID Version="1">9491811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Comput Comput Assist Interv. 2005;8(Pt 2):468-75</RefSource>
+                <PMID Version="1">16685993</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2012 Oct;169(10):1038-55</RefSource>
+                <PMID Version="1">22983386</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Aug 06;6:58</RefSource>
+                <PMID Version="1">22888314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Psychiatry. 2012 Jan 25;3:2</RefSource>
+                <PMID Version="1">22291667</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000465" MajorTopicYN="N">Algorithms</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001289" MajorTopicYN="N">Attention Deficit Disorder with Hyperactivity</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+                <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="Y">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D064847" MajorTopicYN="Y">Multimodal Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D059906" MajorTopicYN="Y">Neuroimaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010641" MajorTopicYN="N">Phenotype</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS551998</OtherID>
+        <OtherID Source="NLM">PMC4063903</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD</Keyword>
+            <Keyword MajorTopicYN="N">Attention deficit</Keyword>
+            <Keyword MajorTopicYN="N">Biomarkers</Keyword>
+            <Keyword MajorTopicYN="N">Default mode</Keyword>
+            <Keyword MajorTopicYN="N">Latent variables</Keyword>
+            <Keyword MajorTopicYN="N">MRI</Keyword>
+            <Keyword MajorTopicYN="N">Machine learning</Keyword>
+            <Keyword MajorTopicYN="N">Multimodal data</Keyword>
+            <Keyword MajorTopicYN="N">NMF</Keyword>
+            <Keyword MajorTopicYN="N">Phenotype</Keyword>
+            <Keyword MajorTopicYN="N">Sparsity</Keyword>
+            <Keyword MajorTopicYN="N">Topic modeling</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>09</Month>
+                <Day>06</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>7</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24361664</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(13)01219-6</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2013.12.015</ArticleId>
+            <ArticleId IdType="pmc">PMC4063903</ArticleId>
+            <ArticleId IdType="mid">NIHMS551998</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

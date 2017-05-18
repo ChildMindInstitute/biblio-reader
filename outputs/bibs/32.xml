@@ -1,0 +1,159 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22248579</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>07</Month>
+            <Day>03</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>11</Month>
+            <Day>19</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>11</Month>
+            <Day>22</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>62</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Aug</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The future of FMRI connectivity.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1257-66</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2012.01.022</ELocationID>
+            <Abstract>
+                <AbstractText>&quot;FMRI connectivity&quot; encompasses many areas of research, including resting-state networks, biophysical modelling of task-FMRI data and bottom-up simulation of multiple individual neurons interacting with each other. In this brief paper I discuss several outstanding areas that I believe will see exciting developments in the next few years, in particular concentrating on how I think the currently separate approaches will increasingly need to take advantage of each others' respective complementarities.</AbstractText>
+                <CopyrightInformation>Copyright © 2012 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Smith</LastName>
+                    <ForeName>Stephen M</ForeName>
+                    <Initials>SM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Oxford University Centre for Functional MRI of the Brain, UK. steve@fmrib.ox.ac.uk</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>G0700399</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>01</Month>
+                <Day>10</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="Y">Nerve Net</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2011</Year>
+                <Month>09</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2011</Year>
+                <Month>11</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>01</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>1</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>1</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>12</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22248579</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(12)00039-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2012.01.022</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

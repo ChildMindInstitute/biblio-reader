@@ -1,0 +1,169 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26005099</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>11</Month>
+            <Day>07</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>08</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>11</Month>
+            <Day>07</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2158-0022</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>5</Volume>
+                    <Issue>9</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Nov</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Brain connectivity</Title>
+                <ISOAbbreviation>Brain Connect</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Estimating Large-Scale Network Convergence in the Human Functional Connectome.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>565-74</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1089/brain.2015.0348</ELocationID>
+            <Abstract>
+                <AbstractText>The study of resting-state networks provides an informative paradigm for understanding the functional architecture of the human brain. Although investigating specialized resting-state networks has led to significant advances in our understanding of brain organization, the manner in which information is integrated across these networks remains unclear. Here, we have developed and validated a data-driven methodology for describing the topography of resting-state network convergence in the human brain. Our results demonstrate the importance of an ensemble of cortical and subcortical regions in supporting the convergence of multiple resting-state networks, including the rostral anterior cingulate, precuneus, posterior cingulate cortex, posterior parietal cortex, dorsal prefrontal cortex, along with the caudate head, anterior claustrum, and posterior thalamus. In addition, we have demonstrated a significant correlation between voxel-wise network convergence and global brain connectivity, emphasizing the importance of resting-state network convergence in facilitating global brain communication. Finally, we examined the convergence of systems within each of the individual resting-state networks in the brain, revealing the heterogeneity by which individual resting-state networks balance the competing demands of specialized processing against the integration of information. Together, our results suggest that the convergence of resting-state networks represents an important organizational principle underpinning systems-level integration in the human brain.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Bell</LastName>
+                    <ForeName>Peter T</ForeName>
+                    <Initials>PT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Brain and Mind Research Institute, The University of Sydney , Camperdown, New South Wales, Australia .</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shine</LastName>
+                    <ForeName>James M</ForeName>
+                    <Initials>JM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Brain and Mind Research Institute, The University of Sydney , Camperdown, New South Wales, Australia .</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>2 Department of Psychology, Stanford University , Stanford, California.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>08</Month>
+                <Day>03</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Brain Connect</MedlineTA>
+            <NlmUniqueID>101550313</NlmUniqueID>
+            <ISSNLinking>2158-0014</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="N">Rest</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">connectivity</Keyword>
+            <Keyword MajorTopicYN="N">cortex</Keyword>
+            <Keyword MajorTopicYN="N">integration</Keyword>
+            <Keyword MajorTopicYN="N">network</Keyword>
+            <Keyword MajorTopicYN="N">resting-state</Keyword>
+            <Keyword MajorTopicYN="N">segregation</Keyword>
+            <Keyword MajorTopicYN="N">subcortex</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>8</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26005099</ArticleId>
+            <ArticleId IdType="doi">10.1089/brain.2015.0348</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

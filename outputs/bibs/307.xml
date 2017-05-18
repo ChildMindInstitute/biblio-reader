@@ -1,0 +1,405 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22174905</PMID>
+        <DateCreated>
+            <Year>2011</Year>
+            <Month>12</Month>
+            <Day>16</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>04</Month>
+            <Day>23</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1932-6203</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <Issue>12</Issue>
+                    <PubDate>
+                        <Year>2011</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PloS one</Title>
+                <ISOAbbreviation>PLoS ONE</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Resting-state brain organization revealed by functional covariance networks.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e28817</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0028817</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Brain network studies using techniques of intrinsic connectivity network based on fMRI time series (TS-ICN) and structural covariance network (SCN) have mapped out functional and structural organization of human brain at respective time scales. However, there lacks a meso-time-scale network to bridge the ICN and SCN and get insights of brain functional organization.</AbstractText>
+                <AbstractText Label="METHODOLOGY AND PRINCIPAL FINDINGS" NlmCategory="RESULTS">We proposed a functional covariance network (FCN) method by measuring the covariance of amplitude of low-frequency fluctuations (ALFF) in BOLD signals across subjects, and compared the patterns of ALFF-FCNs with the TS-ICNs and SCNs by mapping the brain networks of default network, task-positive network and sensory networks. We demonstrated large overlap among FCNs, ICNs and SCNs and modular nature in FCNs and ICNs by using conjunctional analysis. Most interestingly, FCN analysis showed a network dichotomy consisting of anti-correlated high-level cognitive system and low-level perceptive system, which is a novel finding different from the ICN dichotomy consisting of the default-mode network and the task-positive network.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">The current study proposed an ALFF-FCN approach to measure the interregional correlation of brain activity responding to short periods of state, and revealed novel organization patterns of resting-state brain activity from an intermediate time scale.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Zhiqiang</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Imaging, Jinling Hospital, Nanjing University School of Medicine, Nanjing, Jiangsu Province, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liao</LastName>
+                    <ForeName>Wei</ForeName>
+                    <Initials>W</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zuo</LastName>
+                    <ForeName>Xi-Nian</ForeName>
+                    <Initials>XN</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Zhengge</ForeName>
+                    <Initials>Z</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yuan</LastName>
+                    <ForeName>Cuiping</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiao</LastName>
+                    <ForeName>Qing</ForeName>
+                    <Initials>Q</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Huafu</ForeName>
+                    <Initials>H</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Biswal</LastName>
+                    <ForeName>Bharat B</ForeName>
+                    <Initials>BB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lu</LastName>
+                    <ForeName>Guangming</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Yijun</ForeName>
+                    <Initials>Y</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2011</Year>
+                <Month>12</Month>
+                <Day>13</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PLoS One</MedlineTA>
+            <NlmUniqueID>101285081</NlmUniqueID>
+            <ISSNLinking>1932-6203</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 15;49(2):1750-9</RefSource>
+                <PMID Version="1">19796692</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2005 Sep 7;25(36):8303-10</RefSource>
+                <PMID Version="1">16148238</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Aug 7;104(32):13170-5</RefSource>
+                <PMID Version="1">17670949</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2009;4(4):e5226</RefSource>
+                <PMID Version="1">19381298</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Bull. 2010 Apr 5;81(6):565-73</RefSource>
+                <PMID Version="1">20003916</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Dec;31(12):1851-61</RefSource>
+                <PMID Version="1">20225278</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2005 Jan;28(8):827-36</RefSource>
+                <PMID Version="1">15642624</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2011 Jun;105(6):2753-63</RefSource>
+                <PMID Version="1">21430278</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2007 Sep 1;62(5):429-37</RefSource>
+                <PMID Version="1">17210143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2004 Aug;14(8):892-902</RefSource>
+                <PMID Version="1">15084494</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2010 Dec 08;4:200</RefSource>
+                <PMID Version="1">21151783</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1998 Feb;7(2):119-32</RefSource>
+                <PMID Version="1">9558644</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2008 Mar 11;105(10):4028-32</RefSource>
+                <PMID Version="1">18322013</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2010 Jan;103(1):297-321</RefSource>
+                <PMID Version="1">19889849</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 May 1;50(4):1690-701</RefSource>
+                <PMID Version="1">20079856</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1408-16</RefSource>
+                <PMID Version="1">19442749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1993 Jan;13(1):5-14</RefSource>
+                <PMID Version="1">8417010</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 Sep;26(1):15-29</RefSource>
+                <PMID Version="1">15852468</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 15;49(2):1432-45</RefSource>
+                <PMID Version="1">19782143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 May 15;36(1):144-52</RefSource>
+                <PMID Version="1">17434757</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2009 Dec;253(3):797-804</RefSource>
+                <PMID Version="1">19789220</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Feb 1;44(3):893-905</RefSource>
+                <PMID Version="1">18976716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1984 Dec;4(4):484-99</RefSource>
+                <PMID Version="1">6501442</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2003 Jul;19(3):183-96</RefSource>
+                <PMID Version="1">12811734</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2004 Mar 30;101(13):4637-42</RefSource>
+                <PMID Version="1">15070770</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Apr;17(4):766-77</RefSource>
+                <PMID Version="1">16699080</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2004 Mar 12;303(5664):1634-40</RefSource>
+                <PMID Version="1">15016991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Jul;29(7):858-67</RefSource>
+                <PMID Version="1">18454447</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2009;4(5):e5743</RefSource>
+                <PMID Version="1">19492040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurol. 2010 Jan;6(1):15-28</RefSource>
+                <PMID Version="1">20057496</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Oct;17(10):2407-19</RefSource>
+                <PMID Version="1">17204824</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Sep 8;106(36):15412-7</RefSource>
+                <PMID Version="1">19720989</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2009 Apr 16;62(1):42-52</RefSource>
+                <PMID Version="1">19376066</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2009 Jun;101(6):3270-83</RefSource>
+                <PMID Version="1">19339462</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jul 1;36(3):684-90</RefSource>
+                <PMID Version="1">17499519</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 Jun 17;4:19</RefSource>
+                <PMID Version="1">20592951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Oct 19;107(42):18191-6</RefSource>
+                <PMID Version="1">20921389</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Jan 16;98(2):676-82</RefSource>
+                <PMID Version="1">11209064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 14;4:13</RefSource>
+                <PMID Version="1">20577591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Am. 2010 Mar;302(3):44-9</RefSource>
+                <PMID Version="1">20184182</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2003 Jan 7;100(1):253-8</RefSource>
+                <PMID Version="1">12506194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur J Nucl Med Mol Imaging. 2008 Sep;35(9):1681-91</RefSource>
+                <PMID Version="1">18491089</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2008 Jul 15;172(1):137-41</RefSource>
+                <PMID Version="1">18501969</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2007 Feb;28(2):284-95</RefSource>
+                <PMID Version="1">16469419</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Jun;19(2 Pt 1):466-70</RefSource>
+                <PMID Version="1">12814595</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="Y">Brain Mapping</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016000" MajorTopicYN="N">Cluster Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="N">Rest</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC3236756</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2011</Year>
+                <Month>06</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2011</Year>
+                <Month>11</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2011</Year>
+                <Month>12</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2011</Year>
+                <Month>12</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>4</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22174905</ArticleId>
+            <ArticleId IdType="doi">10.1371/journal.pone.0028817</ArticleId>
+            <ArticleId IdType="pii">PONE-D-11-09840</ArticleId>
+            <ArticleId IdType="pmc">PMC3236756</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

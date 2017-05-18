@@ -1,0 +1,335 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24103922</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>10</Month>
+            <Day>09</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>10</Month>
+            <Day>15</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2045-2322</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>3</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Oct</Month>
+                        <Day>09</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Scientific reports</Title>
+                <ISOAbbreviation>Sci Rep</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The increase of the functional entropy of the human brain with age.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>2853</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1038/srep02853</ELocationID>
+            <Abstract>
+                <AbstractText>We use entropy to characterize intrinsic ageing properties of the human brain. Analysis of fMRI data from a large dataset of individuals, using resting state BOLD signals, demonstrated that a functional entropy associated with brain activity increases with age. During an average lifespan, the entropy, which was calculated from a population of individuals, increased by approximately 0.1 bits, due to correlations in BOLD activity becoming more widely distributed. We attribute this to the number of excitatory neurons and the excitatory conductance decreasing with age. Incorporating these properties into a computational model leads to quantitatively similar results to the fMRI data. Our dataset involved males and females and we found significant differences between them. The entropy of males at birth was lower than that of females. However, the entropies of the two sexes increase at different rates, and intersect at approximately 50 years; after this age, males have a larger entropy.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Yao</LastName>
+                    <ForeName>Y</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1] Centre for Computational Systems Biology, Fudan University, Shanghai 200433, PRC [2] Department of Computer Science, University of Warwick, Coventry CV4 7AL, UK [3].</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lu</LastName>
+                    <ForeName>W L</ForeName>
+                    <Initials>WL</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xu</LastName>
+                    <ForeName>B</ForeName>
+                    <Initials>B</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>C B</ForeName>
+                    <Initials>CB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lin</LastName>
+                    <ForeName>C P</ForeName>
+                    <Initials>CP</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Waxman</LastName>
+                    <ForeName>D</ForeName>
+                    <Initials>D</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Feng</LastName>
+                    <ForeName>J F</ForeName>
+                    <Initials>JF</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D003160">Comparative Study</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>10</Month>
+                <Day>09</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Sci Rep</MedlineTA>
+            <NlmUniqueID>101563288</NlmUniqueID>
+            <ISSNLinking>2045-2322</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):782-90</RefSource>
+                <PMID Version="1">21979382</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acta Psychiatr Scand Suppl. 1999;395:68-79</RefSource>
+                <PMID Version="1">10225335</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Biol Chem. 2004 Oct 15;279(42):43382-5</RefSource>
+                <PMID Version="1">15331597</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Nov 10;30(45):15034-43</RefSource>
+                <PMID Version="1">21068309</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 1993 Jul-Aug;14(4):287-93</RefSource>
+                <PMID Version="1">8367010</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Aug;19(4):1273-302</RefSource>
+                <PMID Version="1">12948688</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Sci Med. 2008 Apr;66(8):1733-49</RefSource>
+                <PMID Version="1">18316146</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 1;54(1):313-27</RefSource>
+                <PMID Version="1">20656036</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1992 May-Jun;2(3):259-67</RefSource>
+                <PMID Version="1">1511224</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Genet. 2006 Jun;7(6):436-48</RefSource>
+                <PMID Version="1">16708071</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1997 Oct 17;278(5337):412-9</RefSource>
+                <PMID Version="1">9334292</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2001 Oct;22(9):1680-5</RefSource>
+                <PMID Version="1">11673161</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2005 Jan;17(1):84-96</RefSource>
+                <PMID Version="1">15701241</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Aging Knowledge Environ. 2004 Apr 21;2004(16):pe16</RefSource>
+                <PMID Version="1">15103055</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Exp Gerontol. 2010 Apr;45(4):269-78</RefSource>
+                <PMID Version="1">20034554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Postgrad Med J. 2006 Apr;82(966):239-41</RefSource>
+                <PMID Version="1">16597809</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 Mar 7;32(10):3366-75</RefSource>
+                <PMID Version="1">22399758</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Genet. 2007 Dec;3(12):e220</RefSource>
+                <PMID Version="1">18085826</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Feb 21;7:42</RefSource>
+                <PMID Version="1">23439846</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Psychol. 2009;60:173-96</RefSource>
+                <PMID Version="1">19035823</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Aging. 2002 Mar;17(1):85-100</RefSource>
+                <PMID Version="1">11931290</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2008 Jan 15;70(3):200-9</RefSource>
+                <PMID Version="1">17761549</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biochim Biophys Acta. 2009 Oct;1790(10):970-9</RefSource>
+                <PMID Version="1">19345720</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Learn Mem. 2004 Nov;82(3):171-7</RefSource>
+                <PMID Version="1">15464402</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Cell. 2003 Aug;5(2):197-203</RefSource>
+                <PMID Version="1">12919672</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Gerontol A Biol Sci Med Sci. 2005 Apr;60(4):510-4</RefSource>
+                <PMID Version="1">15933393</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jan;15(1):273-89</RefSource>
+                <PMID Version="1">11771995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Microsc Res Tech. 1998 Oct 1;43(1):8-15</RefSource>
+                <PMID Version="1">9829453</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 14;4:13</RefSource>
+                <PMID Version="1">20577591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Jan 2;28(1):91-9</RefSource>
+                <PMID Version="1">18171926</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 May;18(5):1201-9</RefSource>
+                <PMID Version="1">17925295</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroendocrinol. 2009 Jul;30(2):239-58</RefSource>
+                <PMID Version="1">19427328</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000367" MajorTopicYN="N">Age Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000375" MajorTopicYN="N">Aging</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D019277" MajorTopicYN="Y">Entropy</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009474" MajorTopicYN="N">Neurons</DescriptorName>
+                <QualifierName UI="Q000166" MajorTopicYN="N">cytology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC3793229</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>05</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>09</Month>
+                <Day>10</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>10</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>10</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24103922</ArticleId>
+            <ArticleId IdType="pii">srep02853</ArticleId>
+            <ArticleId IdType="doi">10.1038/srep02853</ArticleId>
+            <ArticleId IdType="pmc">PMC3793229</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

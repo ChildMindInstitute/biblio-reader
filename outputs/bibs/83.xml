@@ -1,0 +1,165 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">23583357</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>07</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>02</Month>
+            <Day>05</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2013</Year>
+            <Month>07</Month>
+            <Day>22</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>80</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Oct</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Learning and comparing functional connectomes across subjects.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>405-15</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2013.04.007</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(13)00334-0</ELocationID>
+            <Abstract>
+                <AbstractText>Functional connectomes capture brain interactions via synchronized fluctuations in the functional magnetic resonance imaging signal. If measured during rest, they map the intrinsic functional architecture of the brain. With task-driven experiments they represent integration mechanisms between specialized brain areas. Analyzing their variability across subjects and conditions can reveal markers of brain pathologies and mechanisms underlying cognition. Methods of estimating functional connectomes from the imaging signal have undergone rapid developments and the literature is full of diverse strategies for comparing them. This review aims to clarify links across functional-connectivity methods as well as to expose different steps to perform a group study of functional connectomes.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Varoquaux</LastName>
+                    <ForeName>Gaël</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Parietal project-team, INRIA Saclay-île de France, France. gael.varoquaux@inria.fr</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Craddock</LastName>
+                    <ForeName>R Cameron</ForeName>
+                    <Initials>RC</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>11</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="N">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008953" MajorTopicYN="N">Models, Anatomic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="N">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Connectome</Keyword>
+            <Keyword MajorTopicYN="N">Effective connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Group study</Keyword>
+            <Keyword MajorTopicYN="N">Resting-state</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>01</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>03</Month>
+                <Day>26</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>4</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>4</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23583357</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(13)00334-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2013.04.007</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

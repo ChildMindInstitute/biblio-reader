@@ -1,0 +1,180 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25641208</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>04</Month>
+            <Day>15</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>12</Month>
+            <Day>31</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>04</Month>
+            <Day>15</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1097-0193</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>36</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Human brain mapping</Title>
+                <ISOAbbreviation>Hum Brain Mapp</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Convergence and divergence across construction methods for human brain white matter networks: an assessment based on individual differences.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1995-2013</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1002/hbm.22751</ELocationID>
+            <Abstract>
+                <AbstractText>Using diffusion MRI, a number of studies have investigated the properties of whole-brain white matter (WM) networks with differing network construction methods (node/edge definition). However, how the construction methods affect individual differences of WM networks and, particularly, if distinct methods can provide convergent or divergent patterns of individual differences remain largely unknown. Here, we applied 10 frequently used methods to construct whole-brain WM networks in a healthy young adult population (57 subjects), which involves two node definitions (low-resolution and high-resolution) and five edge definitions (binary, FA weighted, fiber-density weighted, length-corrected fiber-density weighted, and connectivity-probability weighted). For these WM networks, individual differences were systematically analyzed in three network aspects: (1) a spatial pattern of WM connections, (2) a spatial pattern of nodal efficiency, and (3) network global and local efficiencies. Intriguingly, we found that some of the network construction methods converged in terms of individual difference patterns, but diverged with other methods. Furthermore, the convergence/divergence between methods differed among network properties that were adopted to assess individual differences. Particularly, high-resolution WM networks with differing edge definitions showed convergent individual differences in the spatial pattern of both WM connections and nodal efficiency. For the network global and local efficiencies, low-resolution and high-resolution WM networks for most edge definitions consistently exhibited a highly convergent pattern in individual differences. Finally, the test-retest analysis revealed a decent temporal reproducibility for the patterns of between-method convergence/divergence. Together, the results of the present study demonstrated a measure-dependent effect of network construction methods on the individual difference of WM network properties.</AbstractText>
+                <CopyrightInformation>© 2015 Wiley Periodicals, Inc.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhong</LastName>
+                    <ForeName>Suyu</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; IDG/McGovern Institute for Brain Research, Beijing Normal University, Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>He</LastName>
+                    <ForeName>Yong</ForeName>
+                    <Initials>Y</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gong</LastName>
+                    <ForeName>Gaolang</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D003160">Comparative Study</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Hum Brain Mapp</MedlineTA>
+            <NlmUniqueID>9419065</NlmUniqueID>
+            <ISSNLinking>1065-9471</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016000" MajorTopicYN="N">Cluster Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D038524" MajorTopicYN="N">Diffusion Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="N">anatomy &amp; histology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015203" MajorTopicYN="N">Reproducibility of Results</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066127" MajorTopicYN="N">White Matter</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">connectome</Keyword>
+            <Keyword MajorTopicYN="N">diffusion MRI</Keyword>
+            <Keyword MajorTopicYN="N">graph theory</Keyword>
+            <Keyword MajorTopicYN="N">individual difference</Keyword>
+            <Keyword MajorTopicYN="N">inter-subject variability</Keyword>
+            <Keyword MajorTopicYN="N">test-retest</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>10</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>13</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>2</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>2</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25641208</ArticleId>
+            <ArticleId IdType="doi">10.1002/hbm.22751</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

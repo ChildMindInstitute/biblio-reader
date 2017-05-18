@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">28327935</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>05</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">2047-217X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <Issue>5</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>May</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>GigaScience</Title>
+                <ISOAbbreviation>Gigascience</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Science in the cloud (SIC): A use case in MRI connectomics.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1-10</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1093/gigascience/gix013</ELocationID>
+            <Abstract>
+                <AbstractText>Modern technologies are enabling scientists to collect extraordinary amounts of complex and sophisticated data across a huge range of scales like never before. With this onslaught of data, we can allow the focal point to shift from data collection to data analysis. Unfortunately, lack of standardized sharing mechanisms and practices often make reproducing or extending scientific results very difficult. With the creation of data organization structures and tools that drastically improve code portability, we now have the opportunity to design such a framework for communicating extensible scientific discoveries. Our proposed solution leverages these existing technologies and standards, and provides an accessible and extensible model for reproducible research, called 'science in the cloud' (SIC). Exploiting scientific containers, cloud computing, and cloud data services, we show the capability to compute in the cloud and run a web service that enables intimate interaction with the tools and data presented. We hope this model will inspire the community to produce reproducible and, importantly, extensible results that will enable us to collectively accelerate the rate at which scientific breakthroughs are discovered, replicated, and extended.</AbstractText>
+                <CopyrightInformation>© The Author 2017. Published by Oxford University Press.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Kiar</LastName>
+                    <ForeName>Gregory</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Imaging Science, Johns Hopkins University, Baltimore, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gorgolewski</LastName>
+                    <ForeName>Krzysztof J</ForeName>
+                    <Initials>KJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Stanford University, Stanford, CA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kleissas</LastName>
+                    <ForeName>Dean</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Johns Hopkins University Applied Physics Lab, Columbia, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Roncal</LastName>
+                    <ForeName>William Gray</ForeName>
+                    <Initials>WG</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Johns Hopkins University Applied Physics Lab, Columbia, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Computer Science, Johns Hopkins University, Baltimore, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Litt</LastName>
+                    <ForeName>Brian</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Bioengineering, University of Pennsylvania, Philadelphia, PA, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurology, Hospital of the University of Pennsylvania, Philadelphia, PA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wandell</LastName>
+                    <ForeName>Brian</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Stanford University, Stanford, CA, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognitive and Neurobiological Imaging, Stanford University, Stanford, CA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Poldrack</LastName>
+                    <ForeName>Russel A</ForeName>
+                    <Initials>RA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Stanford University, Stanford, CA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wiener</LastName>
+                    <ForeName>Martin</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, George Mason University, Fairfax, VA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vogelstein</LastName>
+                    <ForeName>R Jacob</ForeName>
+                    <Initials>RJ</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Burns</LastName>
+                    <ForeName>Randal</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Computer Science, Johns Hopkins University, Baltimore, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vogelstein</LastName>
+                    <ForeName>Joshua T</ForeName>
+                    <Initials>JT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biomedical Engineering, Johns Hopkins University, Baltimore, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Imaging Science, Johns Hopkins University, Baltimore, MD, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Gigascience</MedlineTA>
+            <NlmUniqueID>101596872</NlmUniqueID>
+            <ISSNLinking>2047-217X</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Cloud Computing</Keyword>
+            <Keyword MajorTopicYN="N">Connectomics</Keyword>
+            <Keyword MajorTopicYN="N">MRI</Keyword>
+            <Keyword MajorTopicYN="N">Reproducibility</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>3</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28327935</ArticleId>
+            <ArticleId IdType="pii">3062833</ArticleId>
+            <ArticleId IdType="doi">10.1093/gigascience/gix013</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

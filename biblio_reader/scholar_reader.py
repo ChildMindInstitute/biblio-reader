@@ -1,10 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import os, csv
-
-with open('../inputs/FCP_DATA.csv', 'r') as f:
-    data = pd.read_csv(f)
-
+import manager
 
 def countstats(series, path=None, row_limit=None):
     stat = series.dropna().apply(lambda x: str(x).casefold()).value_counts()
@@ -16,7 +12,7 @@ def countstats(series, path=None, row_limit=None):
         return stat
 
 
-def citations_per_year(sort=False):
+def citations_per_year(data, sort=False):
     data['CPY'] = data['Citations'] / (2018 - data['Year'])
     if sort:
         data.sort_values('CPY', inplace=True, ascending=False)
@@ -37,11 +33,11 @@ def value_count_graph(series, xcount=10):
     plt.savefig('Journals_by_year.png', bbox_inches='tight')
 
 
-def count_item_year(column, item):
+def count_item_year(data, column, item):
     return data.loc[data[column].apply(lambda x:str(x).casefold()) == item]['Year'].value_counts()
 
 
-def year_sum_graph(column):
+def year_sum_graph(data, column):
     df = data.groupby('Year').sum()[column]
     plt.figure()
     plt.ylabel(column)
@@ -50,20 +46,6 @@ def year_sum_graph(column):
     plt.savefig('Citations_sum.png', bbox_inches='tight')
 
 
-def checker_directory(directory):
-    checks = {}
-    for check in os.listdir(directory):
-        full_path = '/'.join([directory, check])
-        with open(full_path, 'r') as f:
-            reader = list(csv.reader(f))
-            for rows in reader[1:]:
-                k = int(rows[0])
-                v = (check, rows[1].replace(' and ', '').upper())
-                if k not in checks:
-                    checks[k] = [v]
-                else:
-                    checks[k].append(v)
-    return checks
 
 
 def categorize_journals(dict, keywords, category, type='Journal'):

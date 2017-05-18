@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">26208373</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>07</Month>
+            <Day>24</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>01</Month>
+            <Day>23</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2168-2208</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>20</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>IEEE journal of biomedical and health informatics</Title>
+                <ISOAbbreviation>IEEE J Biomed Health Inform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>On the Influence of Confounding Factors in Multisite Brain Morphometry Studies of Developmental Pathologies: Application to Autism Spectrum Disorder.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>810-817</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1109/JBHI.2015.2460012</ELocationID>
+            <Abstract>
+                <AbstractText>Pooling data acquired on different MR scanners is a commonly used practice to increase the statistical power of studies based on MRI-derived measurements. Such studies are very appealing since they should make it possible to detect more subtle effects related to pathologies. However, the influence of confounds introduced by scanner-related variations remains unclear. When studying brain morphometry descriptors, it is crucial to investigate whether scanner-induced errors can exceed the effect of the disease itself. More specifically, in the context of developmental pathologies such as autism spectrum disorders (ASD), it is essential to evaluate the influence of the scanner on age-related effects. In this paper, we studied a dataset composed of 159 anatomical MR images pooled from three different scanners, including 75 ASD patients and 84 healthy controls. We quantitatively assessed the effects of the age, pathology, and scanner factors on cortical thickness measurements. Our results indicate that scan pooling from different sites would be less fruitful in some cortical regions than in others. Although the effect of age is consistent across scanners, the interaction between the age and scanner factors is important and significant in some specific cortical areas.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Auzias</LastName>
+                    <ForeName>G</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Takerkart</LastName>
+                    <ForeName>S</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Deruelle</LastName>
+                    <ForeName>C</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>07</Month>
+                <Day>22</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>IEEE J Biomed Health Inform</MedlineTA>
+            <NlmUniqueID>101604520</NlmUniqueID>
+            <ISSNLinking>2168-2194</ISSNLinking>
+        </MedlineJournalInfo>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>7</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26208373</ArticleId>
+            <ArticleId IdType="doi">10.1109/JBHI.2015.2460012</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

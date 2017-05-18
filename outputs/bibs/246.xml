@@ -1,0 +1,322 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">22888314</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>08</Month>
+            <Day>13</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>10</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1662-5137</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2012</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in systems neuroscience</Title>
+                <ISOAbbreviation>Front Syst Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Individual classification of ADHD patients by integrating multiscale neuroimaging markers and advanced pattern recognition techniques.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>58</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnsys.2012.00058</ELocationID>
+            <Abstract>
+                <AbstractText>Accurate classification or prediction of the brain state across individual subject, i.e., healthy, or with brain disorders, is generally a more difficult task than merely finding group differences. The former must be approached with highly informative and sensitive biomarkers as well as effective pattern classification/feature selection approaches. In this paper, we propose a systematic methodology to discriminate attention deficit hyperactivity disorder (ADHD) patients from healthy controls on the individual level. Multiple neuroimaging markers that are proved to be sensitive features are identified, which include multiscale characteristics extracted from blood oxygenation level dependent (BOLD) signals, such as regional homogeneity (ReHo) and amplitude of low-frequency fluctuations. Functional connectivity derived from Pearson, partial, and spatial correlation is also utilized to reflect the abnormal patterns of functional integration, or, dysconnectivity syndromes in the brain. These neuroimaging markers are calculated on either voxel or regional level. Advanced feature selection approach is then designed, including a brain-wise association study (BWAS). Using identified features and proper feature integration, a support vector machine (SVM) classifier can achieve a cross-validated classification accuracy of 76.15% across individuals from a large dataset consisting of 141 healthy controls and 98 ADHD patients, with the sensitivity being 63.27% and the specificity being 85.11%. Our results show that the most discriminative features for classification are primarily associated with the frontal and cerebellar regions. The proposed methodology is expected to improve clinical diagnosis and evaluation of treatment for ADHD patient, and to have wider applications in diagnosis of general neuropsychiatric disorders.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Cheng</LastName>
+                    <ForeName>Wei</ForeName>
+                    <Initials>W</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Computational Systems Biology, Fudan University Shanghai, P.R. China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ji</LastName>
+                    <ForeName>Xiaoxi</ForeName>
+                    <Initials>X</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Jie</ForeName>
+                    <Initials>J</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Feng</LastName>
+                    <ForeName>Jianfeng</ForeName>
+                    <Initials>J</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>08</Month>
+                <Day>06</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Syst Neurosci</MedlineTA>
+            <NlmUniqueID>101477946</NlmUniqueID>
+            <ISSNLinking>1662-5137</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2013 Jan;18(1):101-11</RefSource>
+                <PMID Version="1">21968929</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Dec 19;103(51):19518-23</RefSource>
+                <PMID Version="1">17159150</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Aug 15;57(4):1422-9</RefSource>
+                <PMID Version="1">21645623</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 1998 Nov 1;18(21):8990-9001</RefSource>
+                <PMID Version="1">9787004</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 Apr;68(4):361-8</RefSource>
+                <PMID Version="1">21135315</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 2006 May 29;400(1-2):39-43</RefSource>
+                <PMID Version="1">16510242</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Mar 1;40(1):110-20</RefSource>
+                <PMID Version="1">18191584</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2011 Jul 15;199(1):129-39</RefSource>
+                <PMID Version="1">21570425</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 May;22(1):394-400</RefSource>
+                <PMID Version="1">15110032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Psychiatry. 2004;65 Suppl 3:3-7</RefSource>
+                <PMID Version="1">15046528</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2009 Nov 15;66(10):972-7</RefSource>
+                <PMID Version="1">19576573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(5):e36733</RefSource>
+                <PMID Version="1">22615802</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2006 Mar;10(3):117-23</RefSource>
+                <PMID Version="1">16460990</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Neurosci. 1990;13:25-42</RefSource>
+                <PMID Version="1">2183676</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2005 Nov 23;48(4):535-8</RefSource>
+                <PMID Version="1">16301170</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Psychol Rev. 2006 Aug;26(4):433-44</RefSource>
+                <PMID Version="1">16480802</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Int Neuropsychol Soc. 2011 Nov;17(6):1047-57</RefSource>
+                <PMID Version="1">21923979</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 Jun 1;57(11):1263-72</RefSource>
+                <PMID Version="1">15949998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1997 Mar 28;275(5308):1940-3</RefSource>
+                <PMID Version="1">9072973</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2010 Mar;49(3):229-38</RefSource>
+                <PMID Version="1">20410712</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2006 Jul;63(7):795-807</RefSource>
+                <PMID Version="1">16818869</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2007 Apr;164(4):647-55</RefSource>
+                <PMID Version="1">17403979</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2006 Jun;163(6):1044-51</RefSource>
+                <PMID Version="1">16741205</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2012 Mar 1;71(5):443-50</RefSource>
+                <PMID Version="1">22153589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2000 Oct;23(10):475-83</RefSource>
+                <PMID Version="1">11006464</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Apr 1;55(3):856-67</RefSource>
+                <PMID Version="1">21236349</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Feb;30(2):638-49</RefSource>
+                <PMID Version="1">18219621</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2006 May;63(5):540-9</RefSource>
+                <PMID Version="1">16651511</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2009;10:122</RefSource>
+                <PMID Version="1">19393071</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Comput Neurosci. 2011;5:5</RefSource>
+                <PMID Version="1">21369354</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2011 Jun 15;69(12):e69-87</RefSource>
+                <PMID Version="1">21094938</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurol. 2010 Jan;6(1):15-28</RefSource>
+                <PMID Version="1">20057496</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2006 Oct;47(10):1051-62</RefSource>
+                <PMID Version="1">17073984</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2006 Nov 24;314(5803):1249-50</RefSource>
+                <PMID Version="1">17124311</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 Mar 1;57(5):448-55</RefSource>
+                <PMID Version="1">15737658</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jan;15(1):273-89</RefSource>
+                <PMID Version="1">11771995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroreport. 2012 Mar 28;23(5):265-9</RefSource>
+                <PMID Version="1">22158134</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Mar;11(3):228-42</RefSource>
+                <PMID Version="1">10694465</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2002 Oct 15;52(8):785-94</RefSource>
+                <PMID Version="1">12372650</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Jun 27;103(26):10046-51</RefSource>
+                <PMID Version="1">16788060</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Biomed Res. 1996 Jun;29(3):162-73</RefSource>
+                <PMID Version="1">8812068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2008 Jul 15;172(1):137-41</RefSource>
+                <PMID Version="1">18501969</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2007 May 3;447(7140):83-6</RefSource>
+                <PMID Version="1">17476267</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2008 Nov;47(11):1233-51</RefSource>
+                <PMID Version="1">18833009</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2008 Jan;47(1):68-75</RefSource>
+                <PMID Version="1">18174827</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC3412279</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD</Keyword>
+            <Keyword MajorTopicYN="N">BWAS</Keyword>
+            <Keyword MajorTopicYN="N">ReHo</Keyword>
+            <Keyword MajorTopicYN="N">fALFF</Keyword>
+            <Keyword MajorTopicYN="N">functional brain networks</Keyword>
+            <Keyword MajorTopicYN="N">pattern classification</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>03</Month>
+                <Day>31</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>07</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22888314</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnsys.2012.00058</ArticleId>
+            <ArticleId IdType="pmc">PMC3412279</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

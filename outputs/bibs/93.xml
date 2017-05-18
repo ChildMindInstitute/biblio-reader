@@ -1,0 +1,549 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26427642</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>11</Month>
+            <Day>20</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>06</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>124</Volume>
+                    <Issue>Pt A</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Jan</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Generative models of the human connectome.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1054-64</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2015.09.041</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(15)00856-3</ELocationID>
+            <Abstract>
+                <AbstractText>The human connectome represents a network map of the brain's wiring diagram and the pattern into which its connections are organized is thought to play an important role in cognitive function. The generative rules that shape the topology of the human connectome remain incompletely understood. Earlier work in model organisms has suggested that wiring rules based on geometric relationships (distance) can account for many but likely not all topological features. Here we systematically explore a family of generative models of the human connectome that yield synthetic networks designed according to different wiring rules combining geometric and a broad range of topological factors. We find that a combination of geometric constraints with a homophilic attachment mechanism can create synthetic networks that closely match many topological characteristics of individual human connectomes, including features that were not included in the optimization of the generative model itself. We use these models to investigate a lifespan dataset and show that, with age, the model parameters undergo progressive changes, suggesting a rebalancing of the generative factors underlying the connectome across the lifespan.</AbstractText>
+                <CopyrightInformation>Copyright © 2015 The Authors. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Betzel</LastName>
+                    <ForeName>Richard F</ForeName>
+                    <Initials>RF</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Indiana University, Psychological and Brain Sciences, Bloomington IN, 47405, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Avena-Koenigsberger</LastName>
+                    <ForeName>Andrea</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Indiana University, Psychological and Brain Sciences, Bloomington IN, 47405, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Goñi</LastName>
+                    <ForeName>Joaquín</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Indiana University, Psychological and Brain Sciences, Bloomington IN, 47405, USA; Indiana University, Network Science Institute, Bloomington IN 47405, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>He</LastName>
+                    <ForeName>Ye</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>de Reus</LastName>
+                    <ForeName>Marcel A</ForeName>
+                    <Initials>MA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brain Center Rudolf Magnus, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Griffa</LastName>
+                    <ForeName>Alessandra</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, University Hospital Center and University of Lausanne, Lausanne, Switzerland; Signal Processing Lab 5 (LTS5), École Polytechnique Fédérale de Lausanne, Lausanne, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vértes</LastName>
+                    <ForeName>Petra E</ForeName>
+                    <Initials>PE</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Behavioural and Clinical Neuroscience Institute, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mišic</LastName>
+                    <ForeName>Bratislav</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Indiana University, Psychological and Brain Sciences, Bloomington IN, 47405, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Thiran</LastName>
+                    <ForeName>Jean-Philippe</ForeName>
+                    <Initials>JP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, University Hospital Center and University of Lausanne, Lausanne, Switzerland; Signal Processing Lab 5 (LTS5), École Polytechnique Fédérale de Lausanne, Lausanne, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hagmann</LastName>
+                    <ForeName>Patric</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, University Hospital Center and University of Lausanne, Lausanne, Switzerland; Signal Processing Lab 5 (LTS5), École Polytechnique Fédérale de Lausanne, Lausanne, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van den Heuvel</LastName>
+                    <ForeName>Martijn</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brain Center Rudolf Magnus, Department of Psychiatry, University Medical Center Utrecht, Utrecht, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zuo</LastName>
+                    <ForeName>Xi-Nian</ForeName>
+                    <Initials>XN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bullmore</LastName>
+                    <ForeName>Edward T</ForeName>
+                    <Initials>ET</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Behavioural and Clinical Neuroscience Institute, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sporns</LastName>
+                    <ForeName>Olaf</ForeName>
+                    <Initials>O</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Indiana University, Psychological and Brain Sciences, Bloomington IN, 47405, USA; Indiana University, Network Science Institute, Bloomington IN 47405, USA. Electronic address: osporns@indiana.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>G0001354</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P30 AG10133</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>093875</GrantID>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>MR/K020706/1</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>G1000183</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U54 MH091657</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>09</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Nov 15;102 Pt 2:345-57</RefSource>
+                <PMID Version="1">25109530</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013;8(3):e58070</RefSource>
+                <PMID Version="1">23505455</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2014 Oct 5;369(1653). pii: 20130530. doi: 10.1098/rstb.2013.0530</RefSource>
+                <PMID Version="1">25180308</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2013 Oct 2;80(1):184-97</RefSource>
+                <PMID Version="1">24094111</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Dec;19(12):3001-10</RefSource>
+                <PMID Version="1">19435708</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1999 Oct 15;286(5439):509-12</RefSource>
+                <PMID Version="1">10521342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:105-24</RefSource>
+                <PMID Version="1">23668970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 May;17(5):652-60</RefSource>
+                <PMID Version="1">24686784</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2012 Jan 30;203(2):386-97</RefSource>
+                <PMID Version="1">22001222</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2014 Nov 18;111(46):16580-5</RefSource>
+                <PMID Version="1">25368200</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 May 7;110(19):7880-5</RefSource>
+                <PMID Version="1">23610428</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Syst Biol. 2007;1:16</RefSource>
+                <PMID Version="1">17408506</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2014 Mar;10(3):e1003491</RefSource>
+                <PMID Version="1">24675546</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2014 Jan 14;111(2):833-8</RefSource>
+                <PMID Version="1">24379387</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Rep. 2014;4:6284</RefSource>
+                <PMID Version="1">25190000</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Nov 2;31(44):15775-86</RefSource>
+                <PMID Version="1">22049421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2003 Sep 26;301(5641):1870-4</RefSource>
+                <PMID Version="1">14512617</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2002 Nov 11;89(20):208701</RefSource>
+                <PMID Version="1">12443515</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2015 Jun;25(6):1477-89</RefSource>
+                <PMID Version="1">24343892</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2014 Mar;4(2):112-30</RefSource>
+                <PMID Version="1">24437717</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 15;53(1):1-15</RefSource>
+                <PMID Version="1">20547229</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Apr 9;110(15):6169-74</RefSource>
+                <PMID Version="1">23530246</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(12):e48121</RefSource>
+                <PMID Version="1">23272041</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2009 Mar;10(3):186-98</RefSource>
+                <PMID Version="1">19190637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):1059-69</RefSource>
+                <PMID Version="1">19819337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2014 Apr;10(4):e1003557</RefSource>
+                <PMID Version="1">24699277</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2015 Jun 17;86(6):1518-29</RefSource>
+                <PMID Version="1">26087168</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2013 Dec;17(12):683-96</RefSource>
+                <PMID Version="1">24231140</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2010 Sep;29(9):1626-35</RefSource>
+                <PMID Version="1">20304721</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2006 Jul 21;2(7):e95</RefSource>
+                <PMID Version="1">16848638</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Mar 1;102(9):3192-7</RefSource>
+                <PMID Version="1">15728374</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2012 May;13(5):336-49</RefSource>
+                <PMID Version="1">22498897</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Feb;69(2 Pt 2):026113</RefSource>
+                <PMID Version="1">14995526</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2002 Jul;66(1 Pt 2):016121</RefSource>
+                <PMID Version="1">12241440</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Mar;69(3 Pt 2):036103</RefSource>
+                <PMID Version="1">15089357</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 1;62(4):2222-31</RefSource>
+                <PMID Version="1">22366334</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2014 Aug 21;8:647</RefSource>
+                <PMID Version="1">25191259</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2013;3(4):423-37</RefSource>
+                <PMID Version="1">23802922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2011 Jul 1;107(1):018102</RefSource>
+                <PMID Version="1">21797575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Apr 1;89:45-56</RefSource>
+                <PMID Version="1">24287438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell. 2015 Jul 2;162(1):120-33</RefSource>
+                <PMID Version="1">26119341</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Biol Sci. 1991 Aug 22;245(1313):151-8</RefSource>
+                <PMID Version="1">1682939</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2014 Nov 18;111(46):16574-9</RefSource>
+                <PMID Version="1">25368179</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2004 Jan 27;101(4):1081-6</RefSource>
+                <PMID Version="1">14722353</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Apr 10;109(15):5868-73</RefSource>
+                <PMID Version="1">22467830</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Cogn Neurosci. 2014 Jan;7:76-93</RefSource>
+                <PMID Version="1">24333927</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):970-83</RefSource>
+                <PMID Version="1">20035887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Cybern. 2015 Apr;109(2):275-86</RefSource>
+                <PMID Version="1">25633181</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1998 Jun 4;393(6684):440-2</RefSource>
+                <PMID Version="1">9623998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2016 Jan 1;124(Pt A):379-93</RefSource>
+                <PMID Version="1">26364864</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2010 Apr;6(4):e1000748</RefSource>
+                <PMID Version="1">20421990</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2015 Aug 11;112(32):10032-7</RefSource>
+                <PMID Version="1">26216962</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000369" MajorTopicYN="N">Aged, 80 and over</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000375" MajorTopicYN="N">Aging</DescriptorName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000465" MajorTopicYN="N">Algorithms</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016571" MajorTopicYN="N">Neural Networks (Computer)</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4655950</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Connectome</Keyword>
+            <Keyword MajorTopicYN="N">Generative models</Keyword>
+            <Keyword MajorTopicYN="N">Graph theory</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>06</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2015</Year>
+                <Month>09</Month>
+                <Day>17</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>09</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26427642</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(15)00856-3</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2015.09.041</ArticleId>
+            <ArticleId IdType="pmc">PMC4655950</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

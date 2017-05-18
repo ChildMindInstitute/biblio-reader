@@ -1,0 +1,276 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">24795856</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>05</Month>
+            <Day>05</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>05</Month>
+            <Day>05</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>2</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PeerJ</Title>
+                <ISOAbbreviation>PeerJ</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Association between in-scanner head motion with cerebral white matter microstructure: a multiband diffusion-weighted MRI study.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e366</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.7717/peerj.366</ELocationID>
+            <Abstract>
+                <AbstractText>Diffusion-weighted Magnetic Resonance Imaging (DW-MRI) has emerged as the most popular neuroimaging technique used to depict the biological microstructural properties of human brain white matter. However, like other MRI techniques, traditional DW-MRI data remains subject to head motion artifacts during scanning. For example, previous studies have indicated that, with traditional DW-MRI data, head motion artifacts significantly affect the evaluation of diffusion metrics. Actually, DW-MRI data scanned with higher sampling rate are important for accurately evaluating diffusion metrics because it allows for full-brain coverage through the acquisition of multiple slices simultaneously and more gradient directions. Here, we employed a publicly available multiband DW-MRI dataset to investigate the association between motion and diffusion metrics with the standard pipeline, tract-based spatial statistics (TBSS). The diffusion metrics used in this study included not only the commonly used metrics (i.e., FA and MD) in DW-MRI studies, but also newly proposed inter-voxel metric, local diffusion homogeneity (LDH). We found that the motion effects in FA and MD seems to be mitigated to some extent, but the effect on MD still exists. Furthermore, the effect in LDH is much more pronounced. These results indicate that researchers shall be cautious when conducting data analysis and interpretation. Finally, the motion-diffusion association is discussed.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Kong</LastName>
+                    <ForeName>Xiang-Zhen</ForeName>
+                    <Initials>XZ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; IDG/McGovern Institute for Brain Research, Beijing Normal University , Beijing , China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>04</Month>
+                <Day>24</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PeerJ</MedlineTA>
+            <NlmUniqueID>101603425</NlmUniqueID>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 1;44(1):83-98</RefSource>
+                <PMID Version="1">18501637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Oct;17(2):825-41</RefSource>
+                <PMID Version="1">12377157</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Mar;60(1):623-32</RefSource>
+                <PMID Version="1">22233733</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Aug 22;5:13</RefSource>
+                <PMID Version="1">21897815</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013 Jun 11;8(6):e66366</RefSource>
+                <PMID Version="1">23776665</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S208-19</RefSource>
+                <PMID Version="1">15501092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Nov 10;30(45):15034-43</RefSource>
+                <PMID Version="1">21068309</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Affect Disord. 2012 Jul;139(2):149-53</RefSource>
+                <PMID Version="1">22497877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2010 May;63(5):1144-53</RefSource>
+                <PMID Version="1">20432285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Mar;88:79-90</RefSource>
+                <PMID Version="1">24269273</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosurgery. 2011 Feb;68(2):496-505</RefSource>
+                <PMID Version="1">21135713</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Dec 26;7:910</RefSource>
+                <PMID Version="1">24421764</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 1999;7(1):38-48</RefSource>
+                <PMID Version="1">9882089</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Pharmacol. 2013 Sep 18;4:117</RefSource>
+                <PMID Version="1">24065920</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Nov 15;82:683-91</RefSource>
+                <PMID Version="1">23123682</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 Aug;22(8):1862-75</RefSource>
+                <PMID Version="1">21968567</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 15;49(2):1432-45</RefSource>
+                <PMID Version="1">19782143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 Jan;35(1):1-13</RefSource>
+                <PMID Version="1">22847906</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2003 Jun;4(6):469-80</RefSource>
+                <PMID Version="1">12778119</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Mar;19(3):524-36</RefSource>
+                <PMID Version="1">18567609</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Aug 1;76:183-201</RefSource>
+                <PMID Version="1">23499792</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2001 Apr;13(4):534-46</RefSource>
+                <PMID Version="1">11276097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2010 Aug;23(4):351-8</RefSource>
+                <PMID Version="1">20581685</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2011 May;65(5):1260-8</RefSource>
+                <PMID Version="1">21294154</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 15;31(4):1487-505</RefSource>
+                <PMID Version="1">16624579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Protoc. 2007;2(3):499-503</RefSource>
+                <PMID Version="1">17406613</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1994 Mar;31(3):283-91</RefSource>
+                <PMID Version="1">8057799</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2014 Jan 30;221(1):63-8</RefSource>
+                <PMID Version="1">24231056</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2003 May 15;53(10):871-8</RefSource>
+                <PMID Version="1">12742674</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Aug;30(8):2641-55</RefSource>
+                <PMID Version="1">19086023</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Bull. 1979 Mar;86(2):420-8</RefSource>
+                <PMID Version="1">18839484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2014 Nov 30;237:103-7</RefSource>
+                <PMID Version="1">25220868</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jul 15;36(4):1123-38</RefSource>
+                <PMID Version="1">17532649</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2012 Oct;5(5):289-313</RefSource>
+                <PMID Version="1">22786754</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Mar;35(3):346-55</RefSource>
+                <PMID Version="1">8699946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PeerJ. 2014 Apr 24;2:e366</RefSource>
+                <PMID Version="1">24795856</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Jan;33(1):50-62</RefSource>
+                <PMID Version="1">21391258</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4006224</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Diffusion MRI</Keyword>
+            <Keyword MajorTopicYN="N">Head motion</Keyword>
+            <Keyword MajorTopicYN="N">Microstructure</Keyword>
+            <Keyword MajorTopicYN="N">White matter</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>01</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>04</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>5</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>5</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>5</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24795856</ArticleId>
+            <ArticleId IdType="doi">10.7717/peerj.366</ArticleId>
+            <ArticleId IdType="pii">366</ArticleId>
+            <ArticleId IdType="pmc">PMC4006224</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,151 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27166430</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>07</Month>
+            <Day>04</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>07</Month>
+            <Day>04</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1879-0771</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>52</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Sep</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Computerized medical imaging and graphics : the official journal of the Computerized Medical Imaging Society</Title>
+                <ISOAbbreviation>Comput Med Imaging Graph</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Network-based classification of ADHD patients using discriminative subnetwork selection and graph kernel PCA.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>82-8</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.compmedimag.2016.04.004</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S0895-6111(16)30035-0</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Attention Deficit Hyperactivity Disorder (ADHD) is one of the most prevalent behavioral disorders in childhood and adolescence. Recently, network-based diagnosis of ADHD has attracted great attentions due to the fact that ADHD disease is related to not only individual brain regions but also the connections among them, while existing methods are hard to discover disorder patterns related with several brain regions.</AbstractText>
+                <AbstractText Label="NEW METHOD" NlmCategory="METHODS">To overcome this drawback, a discriminative subnetwork selection method is proposed to directly mine those frequent and discriminative subnetworks from the whole brain networks of ADHD and normal control (NC) groups. Then, the graph kernel principal component (PCA) is applied to extract features from those discriminative subnetworks. Finally, support vector machine (SVM) is adopted for classification of ADHD and NC subjects.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">We evaluate the performances of our proposed method using the ADHD200 dataset, which contains 118 ADHD patients and 98 normal controls. The experimental results show that our proposed method can achieve a very high accuracy of 94.91% for ADHD vs. NC classification. Moreover, our proposed method can also discover the discriminative subnetworks as well as the discriminative brain regions, which are helpful for enhancing our understanding of ADHD disease.</AbstractText>
+                <AbstractText Label="COMPARISON WITH EXISTING METHOD(S)" NlmCategory="CONCLUSIONS">The accuracy of our proposed method is 9.20% higher than those of the state-of-the-art methods.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">A lot of experiments in ADHD200 dataset show that, our proposed method can improve the performance significantly comparing to the state-of-the-art methods.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 Elsevier Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Du</LastName>
+                    <ForeName>Junqiang</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>College of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Lipeng</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>College of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jie</LastName>
+                    <ForeName>Biao</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>College of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Daoqiang</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>College of Computer Science and Technology, Nanjing University of Aeronautics and Astronautics, Nanjing 210016, China. Electronic address: dqzhang@nuaa.edu.cn.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>04</Month>
+                <Day>23</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Comput Med Imaging Graph</MedlineTA>
+            <NlmUniqueID>8806104</NlmUniqueID>
+            <ISSNLinking>0895-6111</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD</Keyword>
+            <Keyword MajorTopicYN="N">Classification</Keyword>
+            <Keyword MajorTopicYN="N">Discriminative subnetwork</Keyword>
+            <Keyword MajorTopicYN="N">FMRI</Keyword>
+            <Keyword MajorTopicYN="N">Graph kernel PCA</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>03</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>04</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27166430</ArticleId>
+            <ArticleId IdType="pii">S0895-6111(16)30035-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.compmedimag.2016.04.004</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

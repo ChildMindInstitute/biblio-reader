@@ -1,0 +1,183 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22594994</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>05</Month>
+            <Day>18</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>01</Month>
+            <Day>24</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>02</Month>
+            <Day>25</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1471-2105</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>13 Suppl 7</Volume>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>May</Month>
+                        <Day>08</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>BMC bioinformatics</Title>
+                <ISOAbbreviation>BMC Bioinformatics</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Introduction: Advanced intelligent computing theories and their applications in bioinformatics.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>I1</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1186/1471-2105-13-S7-I1</ELocationID>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Gromiha</LastName>
+                    <ForeName>M Michael</ForeName>
+                    <Initials>MM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Huang</LastName>
+                    <ForeName>De-Shuang</ForeName>
+                    <Initials>DS</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D054711">Introductory Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>05</Month>
+                <Day>08</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>BMC Bioinformatics</MedlineTA>
+            <NlmUniqueID>100965194</NlmUniqueID>
+            <ISSNLinking>1471-2105</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D011506">Proteins</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S1</RefSource>
+                <PMID Version="1">22594995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S10</RefSource>
+                <PMID Version="1">22594996</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S11</RefSource>
+                <PMID Version="1">22594997</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S12</RefSource>
+                <PMID Version="1">22594998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S2</RefSource>
+                <PMID Version="1">22594999</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S9</RefSource>
+                <PMID Version="1">22595006</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S4</RefSource>
+                <PMID Version="1">22595001</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S5</RefSource>
+                <PMID Version="1">22595002</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S6</RefSource>
+                <PMID Version="1">22595003</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S7</RefSource>
+                <PMID Version="1">22595004</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S8</RefSource>
+                <PMID Version="1">22595005</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2012;13 Suppl 7:S3</RefSource>
+                <PMID Version="1">22595000</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000465" MajorTopicYN="N">Algorithms</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001185" MajorTopicYN="Y">Artificial Intelligence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D019295" MajorTopicYN="N">Computational Biology</DescriptorName>
+                <QualifierName UI="Q000295" MajorTopicYN="N">instrumentation</QualifierName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020869" MajorTopicYN="N">Gene Expression Profiling</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011506" MajorTopicYN="N">Proteins</DescriptorName>
+                <QualifierName UI="Q000737" MajorTopicYN="N">chemistry</QualifierName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC3348015</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>5</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>5</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>1</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22594994</ArticleId>
+            <ArticleId IdType="pii">1471-2105-13-S7-I1</ArticleId>
+            <ArticleId IdType="doi">10.1186/1471-2105-13-S7-I1</ArticleId>
+            <ArticleId IdType="pmc">PMC3348015</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

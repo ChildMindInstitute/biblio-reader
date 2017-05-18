@@ -1,7 +1,6 @@
 import pandas as pd
-import unidecode
+import unidecode, os, numpy
 import xml.etree.ElementTree as etree
-import os
 from Bio import Entrez
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
@@ -40,23 +39,39 @@ def get_ids(file=None):
             ids.append(int(idlist[0]))
         else:
             ids.append(0)
-    data['PMCIDS'] = ids
+    data['PMCID'] = ids
     if file:
         data.to_csv('../inputs/FCP_DATA.csv')
     return ids
 
 
 def write_bib(directory):
-    id_dict = {i: int(pmcid) for i, pmcid in dict(zip(data['i'], data['PMCIDS'])).items() if int(pmcid) != 0}
+    id_dict = {i: int(pmcid) for i, pmcid in dict(zip(data['i'], data['PMCID'])).items() if int(pmcid) != 0}
     for i, pmcid in id_dict.items():
         bib = Entrez.efetch(db='pubmed', id=pmcid, retmode="xml", rettype="full")
         with open('/'.join([directory, str(i) + '.xml']), 'w') as f:
             f.write(bib.read())
 
 
-for bib in os.listdir('../outputs/bibs'):
-    root = etree.parse(open('../outputs/bibs/' + bib)).getroot()
-    title = root.findall('.//ArticleTitle')[0].text.lower()
-    title2 = data.iloc[int(bib.replace('.xml', ''))]['Title'].lower() + '.'
-    if title2 != title:
-        print(bib.replace('.xml', ''), title, title2)
+def parse_bib(directory):
+    bibs = {}
+    for bib in os.listdir(directory):
+        root = etree.parse(open('/'.join([directory, bib]))).getroot()
+        authors = ''
+        for auth in root.findall('.//Author'):
+            fore = auth.find('ForeName')
+            last = auth.find('LastName')
+            if fore is not None and last is not None:
+                authors += ' '.join([fore.text, last.text, '&'])
+        affiliations = ' && '.join(set([aff.text for aff in root.findall('.//Affiliation')]))
+        qualifiers = ' & '.join(set([qual.text for qual in root.findall('.//MeshHeading/QualifierName')]).union(set([
+            key.text for key in root.findall('.//KeywordList/Keyword')])))
+        bibs[int(bib.replace('.xml', ''))] = (authors, affiliations, qualifiers)
+    bibs.update({i: (None, numpy.NaN, numpy.NaN) for i in range(0, 1560) if i not in bibs.keys()})
+    return {key: bib for key, bib in sorted(bibs.items())}
+
+
+
+
+data = data[data.columns[5:]]
+data.to_csv('../inputs/FCP_DATA.csv', index=False)

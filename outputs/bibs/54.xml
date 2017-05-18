@@ -1,0 +1,427 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">23747458</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>11</Month>
+            <Day>01</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>12</Month>
+            <Day>18</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>83</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Dec</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The effect of scan length on the reliability of resting-state fMRI connectivity estimates.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>550-8</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2013.05.099</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(13)00601-0</ELocationID>
+            <Abstract>
+                <AbstractText>There has been an increasing use of functional magnetic resonance imaging (fMRI) by the neuroscience community to examine differences in functional connectivity between normal control groups and populations of interest. Understanding the reliability of these functional connections is essential to the study of neurological development and degenerate neuropathological conditions. To date, most research assessing the reliability with which resting-state functional connectivity characterizes the brain's functional networks has been on scans between 3 and 11 min in length. In our present study, we examine the test-retest reliability and similarity of resting-state functional connectivity for scans ranging in length from 3 to 27 min as well as for time series acquired during the same length of time but excluding half the time points via sampling every second image. Our results show that reliability and similarity can be greatly improved by increasing the scan lengths from 5 min up to 13 min, and that both the increase in the number of volumes as well as the increase in the length of time over which these volumes was acquired drove this increase in reliability. This improvement in reliability due to scan length is much greater for scans acquired during the same session. Gains in intersession reliability began to diminish after 9-12 min, while improvements in intrasession reliability plateaued around 12-16 min. Consequently, new techniques that improve reliability across sessions will be important for the interpretation of longitudinal fMRI studies.</AbstractText>
+                <CopyrightInformation>Copyright © 2013. Published by Elsevier Inc.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Birn</LastName>
+                    <ForeName>Rasmus M</ForeName>
+                    <Initials>RM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, University of Wisconsin-Madison, Madison, WI, USA; Department of Medical Physics, University of Wisconsin-Madison, Madison, WI, USA; Neurosciences Training Program, University of Wisconsin-Madison, Madison, WI, USA. Electronic address: rbirn@wisc.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Molloy</LastName>
+                    <ForeName>Erin K</ForeName>
+                    <Initials>EK</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Patriat</LastName>
+                    <ForeName>Rémi</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Parker</LastName>
+                    <ForeName>Taurean</ForeName>
+                    <Initials>T</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Meier</LastName>
+                    <ForeName>Timothy B</ForeName>
+                    <Initials>TB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kirk</LastName>
+                    <ForeName>Gregory R</ForeName>
+                    <Initials>GR</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Nair</LastName>
+                    <ForeName>Veena A</ForeName>
+                    <Initials>VA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Meyerand</LastName>
+                    <ForeName>M Elizabeth</ForeName>
+                    <Initials>ME</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Prabhakaran</LastName>
+                    <ForeName>Vivek</ForeName>
+                    <Initials>V</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>RC1 MH090912</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>KL2 RR025012</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 TR000427</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>T32 GM007507</GrantID>
+                    <Acronym>GM</Acronym>
+                    <Agency>NIGMS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 RR025011</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K23 NS086852</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>RC1MH090912</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>06</Month>
+                <Day>06</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1404-12</RefSource>
+                <PMID Version="1">21888983</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Feb 15;39(4):1877-85</RefSource>
+                <PMID Version="1">18083565</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Mar;60(1):623-32</RefSource>
+                <PMID Version="1">22233733</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2008 Sep;11(9):1100-8</RefSource>
+                <PMID Version="1">19160509</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S208-19</RefSource>
+                <PMID Version="1">15501092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Mar;45(1 Suppl):S173-86</RefSource>
+                <PMID Version="1">19059349</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2007 Jan 19;315(5810):393-5</RefSource>
+                <PMID Version="1">17234951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2001 Aug;22(7):1326-33</RefSource>
+                <PMID Version="1">11498421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 15;65:374-86</RefSource>
+                <PMID Version="1">23085497</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 1;49(1):401-14</RefSource>
+                <PMID Version="1">19646533</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2012 Nov 06;6:301</RefSource>
+                <PMID Version="1">23133413</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2010 Jan;103(1):297-321</RefSource>
+                <PMID Version="1">19889849</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1408-16</RefSource>
+                <PMID Version="1">19442749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Mar 1;55(1):165-75</RefSource>
+                <PMID Version="1">21134471</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2010 Sep 10;329(5997):1358-61</RefSource>
+                <PMID Version="1">20829489</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Mar;60(1):601-13</RefSource>
+                <PMID Version="1">22227886</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2011 Mar;32(3):548-55</RefSource>
+                <PMID Version="1">21273356</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Feb 1;44(3):839-48</RefSource>
+                <PMID Version="1">18976717</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2001 Jan;20(1):45-57</RefSource>
+                <PMID Version="1">11293691</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Bull. 1979 Mar;86(2):420-8</RefSource>
+                <PMID Version="1">18839484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2009;4(5):e5743</RefSource>
+                <PMID Version="1">19492040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Jul;44(1):162-7</RefSource>
+                <PMID Version="1">10893535</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Sep;78:463-73</RefSource>
+                <PMID Version="1">23597935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Aug;33(8):1914-28</RefSource>
+                <PMID Version="1">21769991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Mar;35(3):346-55</RefSource>
+                <PMID Version="1">8699946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Oct;19(10):2209-29</RefSource>
+                <PMID Version="1">19221144</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2008;3(3):e1794</RefSource>
+                <PMID Version="1">18350136</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Biomed Res. 1996 Jun;29(3):162-73</RefSource>
+                <PMID Version="1">8812068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2012 Aug;36(2):344-54</RefSource>
+                <PMID Version="1">22535702</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):864-70</RefSource>
+                <PMID Version="1">22245341</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2008 Aug;100(2):922-31</RefSource>
+                <PMID Version="1">18509068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007089" MajorTopicYN="N">Image Enhancement</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007090" MajorTopicYN="N">Image Interpretation, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016247" MajorTopicYN="N">Information Storage and Retrieval</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015203" MajorTopicYN="N">Reproducibility of Results</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="N">Rest</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D018401" MajorTopicYN="N">Sample Size</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012680" MajorTopicYN="N">Sensitivity and Specificity</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012815" MajorTopicYN="N">Signal Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS594029</OtherID>
+        <OtherID Source="NLM">PMC4104183</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Reliability</Keyword>
+            <Keyword MajorTopicYN="N">Resting-state</Keyword>
+            <Keyword MajorTopicYN="N">Scan duration</Keyword>
+            <Keyword MajorTopicYN="N">Scan length</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>26</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>05</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>6</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>6</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23747458</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(13)00601-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2013.05.099</ArticleId>
+            <ArticleId IdType="pmc">PMC4104183</ArticleId>
+            <ArticleId IdType="mid">NIHMS594029</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

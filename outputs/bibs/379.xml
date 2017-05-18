@@ -1,0 +1,678 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">27161151</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>05</Month>
+            <Day>10</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2041-1723</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>7</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>May</Month>
+                        <Day>10</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Nature communications</Title>
+                <ISOAbbreviation>Nat Commun</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Altered mGluR5-Homer scaffolds and corticostriatal connectivity in a Shank3 complete knockout model of autism.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>11459</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1038/ncomms11459</ELocationID>
+            <Abstract>
+                <AbstractText>Human neuroimaging studies suggest that aberrant neural connectivity underlies behavioural deficits in autism spectrum disorders (ASDs), but the molecular and neural circuit mechanisms underlying ASDs remain elusive. Here, we describe a complete knockout mouse model of the autism-associated Shank3 gene, with a deletion of exons 4-22 (Δe4-22). Both mGluR5-Homer scaffolds and mGluR5-mediated signalling are selectively altered in striatal neurons. These changes are associated with perturbed function at striatal synapses, abnormal brain morphology, aberrant structural connectivity and ASD-like behaviour. In vivo recording reveals that the cortico-striatal-thalamic circuit is tonically hyperactive in mutants, but becomes hypoactive during social behaviour. Manipulation of mGluR5 activity attenuates excessive grooming and instrumental learning differentially, and rescues impaired striatal synaptic plasticity in Δe4-22(-/-) mice. These findings show that deficiency of Shank3 can impair mGluR5-Homer scaffolding, resulting in cortico-striatal circuit abnormalities that underlie deficits in learning and ASD-like behaviours. These data suggest causal links between genetic, molecular, and circuit mechanisms underlying the pathophysiology of ASDs.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Xiaoming</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pediatrics, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bey</LastName>
+                    <ForeName>Alexandra L</ForeName>
+                    <Initials>AL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Katz</LastName>
+                    <ForeName>Brittany M</ForeName>
+                    <Initials>BM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Behavioral Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Badea</LastName>
+                    <ForeName>Alexandra</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kim</LastName>
+                    <ForeName>Namsoo</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>David</LastName>
+                    <ForeName>Lisa K</ForeName>
+                    <Initials>LK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Duffney</LastName>
+                    <ForeName>Lara J</ForeName>
+                    <Initials>LJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pediatrics, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kumar</LastName>
+                    <ForeName>Sunil</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Behavioral Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mague</LastName>
+                    <ForeName>Stephen D</ForeName>
+                    <Initials>SD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hulbert</LastName>
+                    <ForeName>Samuel W</ForeName>
+                    <Initials>SW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dutta</LastName>
+                    <ForeName>Nisha</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cell Biology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hayrapetyan</LastName>
+                    <ForeName>Volodya</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yu</LastName>
+                    <ForeName>Chunxiu</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gaidis</LastName>
+                    <ForeName>Erin</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhao</LastName>
+                    <ForeName>Shengli</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ding</LastName>
+                    <ForeName>Jin-Dong</ForeName>
+                    <Initials>JD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Ophthalmology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xu</LastName>
+                    <ForeName>Qiong</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pediatrics, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child Health Care, The Children's Hospital of Fudan University, 399 Wanyuan Road, Shanghai 201102, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chung</LastName>
+                    <ForeName>Leeyup</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pediatrics, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Rodriguiz</LastName>
+                    <ForeName>Ramona M</ForeName>
+                    <Initials>RM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Behavioral Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Fan</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Weinberg</LastName>
+                    <ForeName>Richard J</ForeName>
+                    <Initials>RJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cell Biology and Physiology, The University of North Carolina at Chapel Hill, North Carolina 27599, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wetsel</LastName>
+                    <ForeName>William C</ForeName>
+                    <Initials>WC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Behavioral Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cell Biology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Duke Institute for Brain Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dzirasa</LastName>
+                    <ForeName>Kafui</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Behavioral Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Duke Institute for Brain Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yin</LastName>
+                    <ForeName>Henry</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology and Neuroscience, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Duke Institute for Brain Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiang</LastName>
+                    <ForeName>Yong-Hui</ForeName>
+                    <Initials>YH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Pediatrics, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurobiology, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Duke Institute for Brain Sciences, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>University Program in Genetics and Genomics, Duke University, Durham, North Carolina 27710, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>P41 EB015897</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 MH104316</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH098114</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 HD077197</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K01 AG041211</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R25 GM089569</GrantID>
+                    <Acronym>GM</Acronym>
+                    <Agency>NIGMS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K12 HD043494</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 AA021074</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>T32 GM007171</GrantID>
+                    <Acronym>GM</Acronym>
+                    <Agency>NIGMS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 NS039444</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>05</Month>
+                <Day>10</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Nat Commun</MedlineTA>
+            <NlmUniqueID>101528555</NlmUniqueID>
+            <ISSNLinking>2041-1723</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Oct 18;76(2):325-37</RefSource>
+                <PMID Version="1">23083736</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Dis. 2012 Mar;45(3):1101-10</RefSource>
+                <PMID Version="1">22198573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Hum Genet. 2014 May 1;94(5):677-94</RefSource>
+                <PMID Version="1">24768552</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2011 Apr 28;472(7344):437-42</RefSource>
+                <PMID Version="1">21423165</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Genet. 2014 Jul;133(7):847-59</RefSource>
+                <PMID Version="1">24481935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cell Biol. 1980 Sep;86(3):831-45</RefSource>
+                <PMID Version="1">7410481</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Nov 3;30(44):14610-8</RefSource>
+                <PMID Version="1">21048118</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2005 May 4;25(18):4587-92</RefSource>
+                <PMID Version="1">15872106</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Life Rev. 2011 Dec;8(4):410-37</RefSource>
+                <PMID Version="1">22018722</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Biol. 1972 Dec;7(6):805-14</RefSource>
+                <PMID Version="1">4655399</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Apr 12;74(1):49-56</RefSource>
+                <PMID Version="1">22500629</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 2001 Sep 10;438(1):12-31</RefSource>
+                <PMID Version="1">11503150</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Protoc Pharmacol. 2014;66:5.66.1-26</RefSource>
+                <PMID Version="1">25181011</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Autism. 2010 Dec 17;1(1):15</RefSource>
+                <PMID Version="1">21167025</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Toxicol Pathol. 2011 Jan;39(1):85-91</RefSource>
+                <PMID Version="1">21119052</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Learn Mem. 2004 Jul-Aug;11(4):459-63</RefSource>
+                <PMID Version="1">15286184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2005 Sep 28;25(39):8908-16</RefSource>
+                <PMID Version="1">16192381</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Genet. 2006 May;36(3):377-86</RefSource>
+                <PMID Version="1">16514474</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2011 Jan 30;195(1):36-46</RefSource>
+                <PMID Version="1">21115042</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2010 Apr;23(2):124-30</RefSource>
+                <PMID Version="1">20154614</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2012 Jun 14;486(7402):256-60</RefSource>
+                <PMID Version="1">22699619</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Nov 20;33(47):18448-68</RefSource>
+                <PMID Version="1">24259569</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2013 Nov;16(11):1530-6</RefSource>
+                <PMID Version="1">23584741</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2007 Jan;39(1):25-7</RefSource>
+                <PMID Version="1">17173049</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2006 Nov 15;26(46):11811-20</RefSource>
+                <PMID Version="1">17108154</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2004 Aug;127(Pt 8):1811-21</RefSource>
+                <PMID Version="1">15215213</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2014 Nov 13;515(7526):209-15</RefSource>
+                <PMID Version="1">25363760</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Jan 9;28(2):543-7</RefSource>
+                <PMID Version="1">18184796</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur J Neurosci. 2008 Oct;28(8):1437-48</RefSource>
+                <PMID Version="1">18793321</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 May 9;32(19):6525-41</RefSource>
+                <PMID Version="1">22573675</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2002 May 28;99(11):7746-50</RefSource>
+                <PMID Version="1">12032354</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Cell Neurosci. 2015 Mar 19;9:94</RefSource>
+                <PMID Version="1">25852484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Aug 07;7:458</RefSource>
+                <PMID Version="1">23966925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 1999 Jul;23(3):583-92</RefSource>
+                <PMID Version="1">10433269</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2013 Apr 10;78(1):8-27</RefSource>
+                <PMID Version="1">23583105</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genomics. 2005 Dec;86(6):753-8</RefSource>
+                <PMID Version="1">16257172</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Methods Mol Biol. 2011;768:343-63</RefSource>
+                <PMID Version="1">21805253</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2001 Nov;86(5):2405-12</RefSource>
+                <PMID Version="1">11698530</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2016 Jan 6;89(1):147-62</RefSource>
+                <PMID Version="1">26687841</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2015 Feb;30:92-9</RefSource>
+                <PMID Version="1">25464374</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Genet. 2014 Sep;10(9):e1004580</RefSource>
+                <PMID Version="1">25188300</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell Rep. 2013 Nov 14;5(3):738-47</RefSource>
+                <PMID Version="1">24210821</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2005 Dec;3(12):e386</RefSource>
+                <PMID Version="1">16248680</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell. 2009 Apr 3;137(1):159-71</RefSource>
+                <PMID Version="1">19345194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2011 Jan;35(3):356-65</RefSource>
+                <PMID Version="1">20153769</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Brain Res. 2004 Jan 5;148(1-2):185-98</RefSource>
+                <PMID Version="1">14684259</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Autism. 2013 Jun 11;4(1):18</RefSource>
+                <PMID Version="1">23758760</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2007 Feb;17(1):103-11</RefSource>
+                <PMID Version="1">17275283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2000 Nov 15;20(22):RC107</RefSource>
+                <PMID Version="1">11069976</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Mol Genet. 2011 Aug 1;20(15):3093-108</RefSource>
+                <PMID Version="1">21558424</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2012 Jun 14;486(7402):261-5</RefSource>
+                <PMID Version="1">22699620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Neurosci. 2004;27:697-722</RefSource>
+                <PMID Version="1">15217348</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell Rep. 2013 Nov 14;5(3):567-72</RefSource>
+                <PMID Version="1">24210815</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Autism. 2014 Apr 25;5:30</RefSource>
+                <PMID Version="1">25071925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Jun 29;31(26):9563-73</RefSource>
+                <PMID Version="1">21715621</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Hum Genet. 2007 Dec;81(6):1289-97</RefSource>
+                <PMID Version="1">17999366</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2012 Mar;15(3):431-40, S1</RefSource>
+                <PMID Version="1">22267161</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2001 Mar;27(3):286-91</RefSource>
+                <PMID Version="1">11242110</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2007 Aug 1;27(31):8161-5</RefSource>
+                <PMID Version="1">17670959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2015 Jul 1;35(26):9648-65</RefSource>
+                <PMID Version="1">26134648</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 1;50(2):465-71</RefSource>
+                <PMID Version="1">20034583</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell Rep. 2015 Jun 9;11(9):1400-13</RefSource>
+                <PMID Version="1">26027926</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2010 Aug;104(2):1047-51</RefSource>
+                <PMID Version="1">20554840</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell. 2011 Sep 30;147(1):235-46</RefSource>
+                <PMID Version="1">21962519</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2009 Mar;12(3):333-41</RefSource>
+                <PMID Version="1">19198605</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genome Res. 2003 Mar;13(3):476-84</RefSource>
+                <PMID Version="1">12618378</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Brain Res. 2009 Jul 19;201(1):179-91</RefSource>
+                <PMID Version="1">19428632</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Feb 19;110(8):3107-12</RefSource>
+                <PMID Version="1">23319621</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2015 Feb;18(2):182-4</RefSource>
+                <PMID Version="1">25581360</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4866051</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>03</Month>
+                <Day>29</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27161151</ArticleId>
+            <ArticleId IdType="pii">ncomms11459</ArticleId>
+            <ArticleId IdType="doi">10.1038/ncomms11459</ArticleId>
+            <ArticleId IdType="pmc">PMC4866051</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

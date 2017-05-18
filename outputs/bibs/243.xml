@@ -1,0 +1,162 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">23571422</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>07</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>02</Month>
+            <Day>05</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2013</Year>
+            <Month>07</Month>
+            <Day>22</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>80</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Oct</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Brainnetome: a new -ome to understand the brain and its disorders.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>263-72</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2013.04.002</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(13)00318-2</ELocationID>
+            <Abstract>
+                <AbstractText>The human brain can be studied as a hierarchy of complex networks on different temporal and spatial scales. On each scale, from gene, protein, synapse, neuron and microcircuit, to area, pathway and the whole brain, many advances have been made with the development of related techniques. Brain network studies on different temporal and spatial scales are booming. However, such studies have focused on single levels, and can only reflect limited aspects of how the brain is formed and how it works. Therefore, it is increasingly urgent to integrate a variety of techniques, methods and models, and to merge fragmented findings into a uniform research framework or platform. To this end, we have proposed the concept of the brainnetome and several related programs/projects have been launched in China. In this paper, we offer a brief review on the methodologies of the brainnetome, which include techniques on different scales, the brainnetome atlas, and methods of brain network analysis. We then take Alzheimer's disease and schizophrenia as examples to show how the brainnetome can be studied in neurological and psychiatric disorders. We also review the studies of how risk genes for brain diseases affect the brain networks. Finally, we summarize the challenges for the brainnetome, and what actions and measures have been taken to address these challenges in China. It is envisioned that the brainnetome will open new avenues and some long-standing issues may be solved by combining the brainnetome with other &quot;omes&quot;.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Jiang</LastName>
+                    <ForeName>Tianzi</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences, Beijing, 100190, China. jiangtz@nlpr.ia.ac.cn</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>06</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001927" MajorTopicYN="N">Brain Diseases</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055442" MajorTopicYN="Y">Metabolome</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008953" MajorTopicYN="N">Models, Anatomic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="N">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Brain connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Brain network</Keyword>
+            <Keyword MajorTopicYN="N">Brainnetome</Keyword>
+            <Keyword MajorTopicYN="N">Connectome</Keyword>
+            <Keyword MajorTopicYN="N">Neuroimaging</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>01</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>03</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>4</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23571422</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(13)00318-2</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2013.04.002</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,113 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">26353378</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>09</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1557-9964</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Sep</Month>
+                        <Day>03</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>IEEE/ACM transactions on computational biology and bioinformatics</Title>
+                <ISOAbbreviation>IEEE/ACM Trans Comput Biol Bioinform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Complex network measures in Autism Spectrum Disorders.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn/>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Recent studies have suggested abnormal brain network organization in subjects with Autism Spectrum Disorders (ASD). Here we applied spectral clustering algorithm, diverse centrality measures (betweenness (BC), clustering (CC), eigenvector (EC), and degree (DC)), and also the network entropy (NE) to identify brain sub-systems associated with ASD. We have found that BC increases in the following ASD clusters: in the somatomotor, default-mode, cerebellar, and fronto-parietal. On the other hand, CC, EC, and DC decrease in the somatomotor, default-mode, and cerebellar clusters. Additionally, NE decreases in ASD in the cerebellar cluster. These findings reinforce the hypothesis of under-connectivity in ASD and suggest that the difference in the network organization is more prominent in the cerebellar system. The cerebellar cluster presents reduced NE in ASD, which relates to a more regular organization of the networks. These results might be important to improve current understanding about the etiological processes and the development of potential tools supporting diagnosis and therapeutic interventions.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sato</LastName>
+                    <ForeName>Joao Ricardo</ForeName>
+                    <Initials>JR</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vidal</LastName>
+                    <ForeName>Maciel</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>de Siqueira Santos</LastName>
+                    <ForeName>Suzana</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Massirer</LastName>
+                    <ForeName>Katlin Brauer</ForeName>
+                    <Initials>KB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fujita</LastName>
+                    <ForeName>Andre</ForeName>
+                    <Initials>A</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>09</Month>
+                <Day>03</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>IEEE/ACM Trans Comput Biol Bioinform</MedlineTA>
+            <NlmUniqueID>101196755</NlmUniqueID>
+            <ISSNLinking>1545-5963</ISSNLinking>
+        </MedlineJournalInfo>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26353378</ArticleId>
+            <ArticleId IdType="doi">10.1109/TCBB.2015.2476787</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

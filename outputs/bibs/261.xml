@@ -1,0 +1,286 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">26834533</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>02</Month>
+            <Day>02</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>02</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Print">1662-4548</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>10</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroscience</Title>
+                <ISOAbbreviation>Front Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>When the Single Matters more than the Group (II): Addressing the Problem of High False Positive Rates in Single Case Voxel Based Morphometry Using Non-parametric Statistics.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>6</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnins.2016.00006</ELocationID>
+            <Abstract>
+                <AbstractText>In recent years, an increasing number of studies have used Voxel Based Morphometry (VBM) to compare a single patient with a psychiatric or neurological condition of interest against a group of healthy controls. However, the validity of this approach critically relies on the assumption that the single patient is drawn from a hypothetical population with a normal distribution and variance equal to that of the control group. In a previous investigation, we demonstrated that family-wise false positive error rate (i.e., the proportion of statistical comparisons yielding at least one false positive) in single case VBM are much higher than expected (Scarpazza et al., 2013). Here, we examine whether the use of non-parametric statistics, which does not rely on the assumptions of normal distribution and equal variance, would enable the investigation of single subjects with good control of false positive risk. We empirically estimated false positive rates (FPRs) in single case non-parametric VBM, by performing 400 statistical comparisons between a single disease-free individual and a group of 100 disease-free controls. The impact of smoothing (4, 8, and 12 mm) and type of pre-processing (Modulated, Unmodulated) was also examined, as these factors have been found to influence FPRs in previous investigations using parametric statistics. The 400 statistical comparisons were repeated using two independent, freely available data sets in order to maximize the generalizability of the results. We found that the family-wise error rate was 5% for increases and 3.6% for decreases in one data set; and 5.6% for increases and 6.3% for decreases in the other data set (5% nominal). Further, these results were not dependent on the level of smoothing and modulation. Therefore, the present study provides empirical evidence that single case VBM studies with non-parametric statistics are not susceptible to high false positive rates. The critical implication of this finding is that VBM can be used to characterize neuroanatomical alterations in individual subjects as long as non-parametric statistics are employed.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Scarpazza</LastName>
+                    <ForeName>Cristina</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychosis Studies, Institute of Psychiatry, Psychology and Neuroscience, King's College London London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Nichols</LastName>
+                    <ForeName>Thomas E</ForeName>
+                    <Initials>TE</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Statistics, University of WarwickCoventry, UK; Warwick Manufacturing Group, University of WarwickCoventry, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Seramondi</LastName>
+                    <ForeName>Donato</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Human and Social Sciences, University of Bergamo Bergamo, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Maumet</LastName>
+                    <ForeName>Camille</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Warwick Manufacturing Group, University of Warwick Coventry, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sartori</LastName>
+                    <ForeName>Giuseppe</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of Padua Padova, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mechelli</LastName>
+                    <ForeName>Andrea</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychosis Studies, Institute of Psychiatry, Psychology and Neuroscience, King's College London London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>G1100574</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>25</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neurosci</MedlineTA>
+            <NlmUniqueID>101478481</NlmUniqueID>
+            <ISSNLinking>1662-453X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2015 May;52:49-55</RefSource>
+                <PMID Version="1">25701614</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Hum Evol. 1997 Apr;32(4):375-88</RefSource>
+                <PMID Version="1">9085187</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2009 Oct 15;461(7266):983-6</RefSource>
+                <PMID Version="1">19829380</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Brain Funct. 2012 Sep 01;8:46</RefSource>
+                <PMID Version="1">22938624</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Apr 1;45(2):333-41</RefSource>
+                <PMID Version="1">19146961</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2005 Dec;162(12):2233-45</RefSource>
+                <PMID Version="1">16330585</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2001 Jul;14(1 Pt 1):21-36</RefSource>
+                <PMID Version="1">11525331</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1992 Nov;12 (6):900-18</RefSource>
+                <PMID Version="1">1400644</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2007 Oct;28(10):1075-88</RefSource>
+                <PMID Version="1">17266105</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bipolar Disord. 2012 Mar;14(2):135-45</RefSource>
+                <PMID Version="1">22420589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Feb;36(2):757-63</RefSource>
+                <PMID Version="1">22192882</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 15;38(1):95-113</RefSource>
+                <PMID Version="1">17761438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 Aug;68(8):773-80</RefSource>
+                <PMID Version="1">21464342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2009 Mar;30(3):539-43</RefSource>
+                <PMID Version="1">19074546</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Apr 15;70:175-88</RefSource>
+                <PMID Version="1">23291189</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2010 Sep 17;329(5998):1541-3</RefSource>
+                <PMID Version="1">20847276</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Oct;17(2):1027-30</RefSource>
+                <PMID Version="1">12377176</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Top Magn Reson Imaging. 2005 Dec;16(6):409-25</RefSource>
+                <PMID Version="1">17088691</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2002 Jan;15(1):1-25</RefSource>
+                <PMID Version="1">11747097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychol. 2000 Oct;54(1-3):241-57</RefSource>
+                <PMID Version="1">11035225</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2011 Apr;35(5):1175-85</RefSource>
+                <PMID Version="1">21168439</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 May 15;92:381-97</RefSource>
+                <PMID Version="1">24530839</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 15;44(2):319-27</RefSource>
+                <PMID Version="1">18929669</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychother Psychosom. 2009;78(5):320-1</RefSource>
+                <PMID Version="1">19628961</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2011 Oct;32(10):1733-41</RefSource>
+                <PMID Version="1">20005012</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Mar;35(1):121-30</RefSource>
+                <PMID Version="1">17222566</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jun;11(6 Pt 1):805-21</RefSource>
+                <PMID Version="1">10860804</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2001 Dec;14(6):1238-43</RefSource>
+                <PMID Version="1">11707080</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4724722</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">false positives</Keyword>
+            <Keyword MajorTopicYN="N">magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">neuroimaging</Keyword>
+            <Keyword MajorTopicYN="N">non-parametric statistics</Keyword>
+            <Keyword MajorTopicYN="N">single case study</Keyword>
+            <Keyword MajorTopicYN="N">voxel based morphometry</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>2</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>2</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>2</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26834533</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnins.2016.00006</ArticleId>
+            <ArticleId IdType="pmc">PMC4724722</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,310 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">27601975</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>07</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>07</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Print">1662-4548</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>10</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroscience</Title>
+                <ISOAbbreviation>Front Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The Voxel-Wise Functional Connectome Can Be Efficiently Derived from Co-activations in a Sparse Spatio-Temporal Point-Process.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>381</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnins.2016.00381</ELocationID>
+            <Abstract>
+                <AbstractText>Large efforts are currently under way to systematically map functional connectivity between all pairs of millimeter-scale brain regions based on large neuroimaging databases. The exploratory unraveling of this &quot;functional connectome&quot; based on functional Magnetic Resonance Imaging (fMRI) can benefit from a better understanding of the contributors to resting state functional connectivity. In this work, we introduce a sparse representation of fMRI data in the form of a discrete point-process encoding high-amplitude events in the blood oxygenation level-dependent (BOLD) signal and we show it contains sufficient information for the estimation of functional connectivity between all pairs of voxels. We validate this method by replicating results obtained with standard whole-brain voxel-wise linear correlation matrices in two datasets. In the first one (n = 71), we study the changes in node strength (a measure of network centrality) during deep sleep. The second is a large database (n = 1147) of subjects in which we look at the age-related reorganization of the voxel-wise network of functional connections. In both cases it is shown that the proposed method compares well with standard techniques, despite requiring only data on the order of 1% of the original BOLD signal time series. Furthermore, we establish that the point-process approach does not reduce (and in one case increases) classification accuracy compared to standard linear correlations. Our results show how large fMRI datasets can be drastically simplified to include only the timings of large-amplitude events, while still allowing the recovery of all pair-wise interactions between voxels. The practical importance of this dimensionality reduction is manifest in the increasing number of collaborative efforts aiming to study large cohorts of healthy subjects as well as patients suffering from brain disease. Our method also suggests that the electrophysiological signals underlying the dynamics of fMRI time series consist of all-or-none temporally localized events, analogous to the avalanches of neural activity observed in recordings of local field potentials (LFP), an observation of potentially high neurobiological relevance.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Tagliazucchi</LastName>
+                    <ForeName>Enzo</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Medical Psychology, Christian-Albrechts UniversityKiel, Germany; Department of Neurology and Brain Imaging Center, Goethe University Frankfurt am MainGermany; Department of Sleep and Cognition, Netherlands Institute for NeuroscienceAmsterdam, Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Siniatchkin</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Medical Psychology, Christian-Albrechts University Kiel, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Laufs</LastName>
+                    <ForeName>Helmut</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurology and Brain Imaging Center, Goethe University Frankfurt am MainGermany; Department of Neurology, University Hospital Schleswig-Holstein, Christian-Albrechts-University KielKiel, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chialvo</LastName>
+                    <ForeName>Dante R</ForeName>
+                    <Initials>DR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Consejo Nacional de Investigaciones Científicas y Tecnológicas (CONICET)Buenos Aires, Argentina; Center for Multidisciplinary Complex Systems Studies and Brain Sciences (CEMSC3), Escuela de Ciencia y Tecnología, Universidad Nacional de San MartínBuenos Aires, Argentina.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>08</Month>
+                <Day>23</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neurosci</MedlineTA>
+            <NlmUniqueID>101478481</NlmUniqueID>
+            <ISSNLinking>1662-453X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2010 Jan 12;8(1):e1000278</RefSource>
+                <PMID Version="1">20084093</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2005 Sep;15(9):1332-42</RefSource>
+                <PMID Version="1">15635061</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 May;24(5):1332-50</RefSource>
+                <PMID Version="1">23329729</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:62-79</RefSource>
+                <PMID Version="1">23684880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Physiol. 2012 Feb 08;3:15</RefSource>
+                <PMID Version="1">22347863</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 2011 Jan 20;488(2):158-63</RefSource>
+                <PMID Version="1">21078369</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2004 Sep;8(9):418-25</RefSource>
+                <PMID Version="1">15350243</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2014 May 7;82(3):695-708</RefSource>
+                <PMID Version="1">24811386</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2014 Aug;137(Pt 8):2382-95</RefSource>
+                <PMID Version="1">25057133</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 Nov;35(11):5442-56</RefSource>
+                <PMID Version="1">24989126</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2013 Dec 04;7:101</RefSource>
+                <PMID Version="1">24550788</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2002 May;20(4):305-17</RefSource>
+                <PMID Version="1">12165349</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Sep 17;110(38):15419-24</RefSource>
+                <PMID Version="1">24003146</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 May;30(5):1511-23</RefSource>
+                <PMID Version="1">18649353</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2002 Nov;26(7):819-25</RefSource>
+                <PMID Version="1">12470693</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2015 May 1;111:476-88</RefSource>
+                <PMID Version="1">25662866</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2013 Jun;34(6):1319-29</RefSource>
+                <PMID Version="1">22331588</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:144-68</RefSource>
+                <PMID Version="1">23702415</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2011 Apr;1224:109-25</RefSource>
+                <PMID Version="1">21251014</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Dec 11;109(50):20608-13</RefSource>
+                <PMID Version="1">23185007</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2003 Dec 3;23(35):11167-77</RefSource>
+                <PMID Version="1">14657176</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2005 Jan 14;94(1):018102</RefSource>
+                <PMID Version="1">15698136</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2010 May;31(5):839-52</RefSource>
+                <PMID Version="1">18674847</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2013 Apr;17(3):365-74</RefSource>
+                <PMID Version="1">23422254</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1998 Oct;8(3):229-39</RefSource>
+                <PMID Version="1">9758737</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Mar 12;110(11):4392-7</RefSource>
+                <PMID Version="1">23440216</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014 Jun 30;9(6):e100012</RefSource>
+                <PMID Version="1">24979748</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2013 May 10;340(6133):687-8</RefSource>
+                <PMID Version="1">23661744</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Apr 17;33(16):7079-90</RefSource>
+                <PMID Version="1">23595765</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 15;63(1):63-72</RefSource>
+                <PMID Version="1">22743197</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2013 Sep;34(9):2154-77</RefSource>
+                <PMID Version="1">22438275</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 Jun 17;4:19</RefSource>
+                <PMID Version="1">20592951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 May;35(5):1981-96</RefSource>
+                <PMID Version="1">23861343</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):970-83</RefSource>
+                <PMID Version="1">20035887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2001 Jul 12;412(6843):150-7</RefSource>
+                <PMID Version="1">11449264</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Feb 11;29(6):1860-73</RefSource>
+                <PMID Version="1">19211893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2005 May 29;360(1457):1001-13</RefSource>
+                <PMID Version="1">16087444</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2012 Mar;16(3):181-8</RefSource>
+                <PMID Version="1">22341211</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2012 Dec 28;6:339</RefSource>
+                <PMID Version="1">23293596</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4994538</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">dimensionality reduction</Keyword>
+            <Keyword MajorTopicYN="N">functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">functional connectome</Keyword>
+            <Keyword MajorTopicYN="N">point process</Keyword>
+            <Keyword MajorTopicYN="N">resting state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>06</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>08</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27601975</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnins.2016.00381</ArticleId>
+            <ArticleId IdType="pmc">PMC4994538</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

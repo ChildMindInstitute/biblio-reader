@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24042040</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>11</Month>
+            <Day>15</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>02</Month>
+            <Day>23</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2013</Year>
+            <Month>11</Month>
+            <Day>15</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1873-7544</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>254</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Dec</Month>
+                        <Day>19</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Neuroscience</Title>
+                <ISOAbbreviation>Neuroscience</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Investigating univariate temporal patterns for intrinsic connectivity networks based on complexity and low-frequency oscillation: a test-retest reliability study.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>404-26</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroscience.2013.09.009</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S0306-4522(13)00780-X</ELocationID>
+            <Abstract>
+                <AbstractText>Intrinsic connectivity networks (ICNs) are composed of spatial components and time courses. The spatial components of ICNs were discovered with moderate-to-high reliability. So far as we know, few studies focused on the reliability of the temporal patterns for ICNs based their individual time courses. The goals of this study were twofold: to investigate the test-retest reliability of temporal patterns for ICNs, and to analyze these informative univariate metrics. Additionally, a correlation analysis was performed to enhance interpretability. Our study included three datasets: (a) short- and long-term scans, (b) multi-band echo-planar imaging (mEPI), and (c) eyes open or closed. Using dual regression, we obtained the time courses of ICNs for each subject. To produce temporal patterns for ICNs, we applied two categories of univariate metrics: network-wise complexity and network-wise low-frequency oscillation. Furthermore, we validated the test-retest reliability for each metric. The network-wise temporal patterns for most ICNs (especially for default mode network, DMN) exhibited moderate-to-high reliability and reproducibility under different scan conditions. Network-wise complexity for DMN exhibited fair reliability (ICC&lt;0.5) based on eyes-closed sessions. Specially, our results supported that mEPI could be a useful method with high reliability and reproducibility. In addition, these temporal patterns were with physiological meanings, and certain temporal patterns were correlated to the node strength of the corresponding ICN. Overall, network-wise temporal patterns of ICNs were reliable and informative and could be complementary to spatial patterns of ICNs for further study.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 IBRO. Published by Elsevier Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>X</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Biological Science and Medical Engineering, Southeast University, Nanjing 210096, China; Key Laboratory of Child Development and Learning Science (Ministry of Education), Southeast University, Nanjing 210096, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiao</LastName>
+                    <ForeName>Y</ForeName>
+                    <Initials>Y</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tang</LastName>
+                    <ForeName>T</ForeName>
+                    <Initials>T</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>H</ForeName>
+                    <Initials>H</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lu</LastName>
+                    <ForeName>Z</ForeName>
+                    <Initials>Z</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>09</Month>
+                <Day>13</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroscience</MedlineTA>
+            <NlmUniqueID>7605074</NlmUniqueID>
+            <ISSNLinking>0306-4522</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001683" MajorTopicYN="N">Biological Clocks</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000592" MajorTopicYN="Y">standards</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000592" MajorTopicYN="Y">standards</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015203" MajorTopicYN="N">Reproducibility of Results</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013997" MajorTopicYN="N">Time Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ALFF</Keyword>
+            <Keyword MajorTopicYN="N">Amplitude of Low-Frequency Fluctuations</Keyword>
+            <Keyword MajorTopicYN="N">CCC</Keyword>
+            <Keyword MajorTopicYN="N">DE</Keyword>
+            <Keyword MajorTopicYN="N">DMN</Keyword>
+            <Keyword MajorTopicYN="N">EPI</Keyword>
+            <Keyword MajorTopicYN="N">ICA</Keyword>
+            <Keyword MajorTopicYN="N">ICC</Keyword>
+            <Keyword MajorTopicYN="N">ICNs</Keyword>
+            <Keyword MajorTopicYN="N">ICs</Keyword>
+            <Keyword MajorTopicYN="N">MPRAGE</Keyword>
+            <Keyword MajorTopicYN="N">NIRS</Keyword>
+            <Keyword MajorTopicYN="N">RE</Keyword>
+            <Keyword MajorTopicYN="N">Renyi entropy</Keyword>
+            <Keyword MajorTopicYN="N">Repetition Time</Keyword>
+            <Keyword MajorTopicYN="N">SE</Keyword>
+            <Keyword MajorTopicYN="N">TE</Keyword>
+            <Keyword MajorTopicYN="N">TR</Keyword>
+            <Keyword MajorTopicYN="N">Tsallis entropy</Keyword>
+            <Keyword MajorTopicYN="N">WE</Keyword>
+            <Keyword MajorTopicYN="N">complexity estimators</Keyword>
+            <Keyword MajorTopicYN="N">concordance correlation coefficient</Keyword>
+            <Keyword MajorTopicYN="N">default mode network</Keyword>
+            <Keyword MajorTopicYN="N">differential entropy</Keyword>
+            <Keyword MajorTopicYN="N">echo-planar imaging</Keyword>
+            <Keyword MajorTopicYN="N">fALFF</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+            <Keyword MajorTopicYN="N">fractional ALFF</Keyword>
+            <Keyword MajorTopicYN="N">functional magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">independent component analysis</Keyword>
+            <Keyword MajorTopicYN="N">independent components</Keyword>
+            <Keyword MajorTopicYN="N">interclass correlations</Keyword>
+            <Keyword MajorTopicYN="N">intrinsic connectivity networks</Keyword>
+            <Keyword MajorTopicYN="N">low-frequency oscillation</Keyword>
+            <Keyword MajorTopicYN="N">mEPI</Keyword>
+            <Keyword MajorTopicYN="N">magnetization-prepared rapid acquisition with gradient echo</Keyword>
+            <Keyword MajorTopicYN="N">multi-band EPI</Keyword>
+            <Keyword MajorTopicYN="N">near infrared spectroscopy</Keyword>
+            <Keyword MajorTopicYN="N">resting state fMRI</Keyword>
+            <Keyword MajorTopicYN="N">sample entropy</Keyword>
+            <Keyword MajorTopicYN="N">test–retest reliability</Keyword>
+            <Keyword MajorTopicYN="N">wavelet entropy</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>06</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>08</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>09</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>9</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>9</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>2</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24042040</ArticleId>
+            <ArticleId IdType="pii">S0306-4522(13)00780-X</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroscience.2013.09.009</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

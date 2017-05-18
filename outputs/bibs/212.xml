@@ -1,0 +1,168 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25243989</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>01</Month>
+            <Day>24</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>24</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>01</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1973-8102</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>63</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Feb</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cortex; a journal devoted to the study of the nervous system and behavior</Title>
+                <ISOAbbreviation>Cortex</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Resting state functional magnetic resonance imaging and neural network classified autism and control.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>55-67</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.cortex.2014.08.011</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S0010-9452(14)00264-0</ELocationID>
+            <Abstract>
+                <AbstractText>Although the neurodevelopmental and genetic underpinnings of autism spectrum disorder (ASD) have been investigated, the etiology of the disorder has remained elusive, and clinical diagnosis continues to rely on symptom-based criteria. In this study, to classify both control subjects and a large sample of patients with ASD, we used resting state functional magnetic resonance imaging (rs-fMRI) and a neural network. Imaging data from 312 subjects with ASD and 328 subjects with typical development was downloaded from the multi-center research project. Only subjects under 20 years of age were included in this analysis. Correlation matrices computed from rs-fMRI time-series data were entered into a probabilistic neural network (PNN) for classification. The PNN classified the two groups with approximately 90% accuracy (sensitivity = 92%, specificity = 87%). The accuracy of classification did not differ among the institutes, or with respect to experimental and imaging conditions, sex, handedness, or intellectual level. Medication status and degree of head movement did not affect accuracy values. The present study indicates that an intrinsic connectivity matrix produced from rs-fMRI data could yield a possible biomarker of ASD. These results support the view that altered network connectivity within the brain contributes to the neurobiology of ASD.</AbstractText>
+                <CopyrightInformation>Copyright © 2014 Elsevier Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Iidaka</LastName>
+                    <ForeName>Tetsuya</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Graduate School of Medicine, Nagoya University, Nagoya, Aichi, Japan. Electronic address: iidaka@med.nagoya-u.ac.jp.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>08</Month>
+                <Day>28</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Italy</Country>
+            <MedlineTA>Cortex</MedlineTA>
+            <NlmUniqueID>0100725</NlmUniqueID>
+            <ISSNLinking>0010-9452</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001321" MajorTopicYN="N">Autistic Disorder</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="Y">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="N">Rest</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Brain imaging</Keyword>
+            <Keyword MajorTopicYN="N">Classifier</Keyword>
+            <Keyword MajorTopicYN="N">Developmental disorder</Keyword>
+            <Keyword MajorTopicYN="N">Diagnosis</Keyword>
+            <Keyword MajorTopicYN="N">Machine learning</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>02</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2014</Year>
+                <Month>06</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>08</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>9</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>9</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25243989</ArticleId>
+            <ArticleId IdType="pii">S0010-9452(14)00264-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.cortex.2014.08.011</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

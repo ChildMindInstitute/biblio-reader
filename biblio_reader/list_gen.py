@@ -1,12 +1,12 @@
-import random, os, csv, ast, collections, math
+import random, os, csv, ast, collections, math, manager
 import pandas as pd
 
-with open('../inputs/FCP_DATA.csv', 'r') as f, open('../outputs/paragraphs.txt', 'r') as p, \
+with open('../outputs/paragraphs.txt', 'r') as p, \
         open('../outputs/unlinkables.csv', 'r') as u:
-    data = pd.read_csv(f)
     paragraphs = ast.literal_eval(p.read())
     bad_data = pd.read_csv(u)
 
+data = manager.data
 paragraphs = {key: value for key, value in paragraphs.items() if key not in [int(i) for i in bad_data['i']]}
 
 
@@ -19,19 +19,28 @@ def checker_directory(directory):
         with open(full_path, 'r') as f:
             reader = list(csv.reader(f))
             for rows in reader[1:]:
-                k = int(rows[0])
-                v = (check, rows[1].replace(' and ', '').upper())
-                if k not in checks:
-                    checks[k] = [v]
-                else:
-                    checks[k].append(v)
+                if rows[1] != '':
+                    k = int(rows[0])
+                    v = (check, rows[1].replace(' and ', '').upper())
+                    if k not in checks:
+                        checks[k] = [v]
+                    elif len(checks[k]) < 2:
+                        checks[k].append(v)
     return checks
-double_checked = [(key, check) for key, check in checker_directory('../inputs/Article_Checks').items() if len(check) == 2]
+
+
+
+
+double_checked = [(key, check) for key, check in
+                  checker_directory('../inputs/validity_checks').items() if len(check) == 2]
+print([i for i in range(0, 1560) if i not in [k[0] for k in double_checked]])
+print(len(double_checked))
 conflicts = [(key, check) for key, check in sorted(double_checked) if check[0][1] != check[1][1]]
+conflicts_m = [(key, check) for key, check in conflicts if 'michael' in check[0][0] or 'michael' in check[1][0]]
+conflicts_mj = [(key, check) for key, check in conflicts_m if 'jon' in check[0][0]]
+conflicts_m = [(key, check) for key, check in conflicts_m if (key, check) not in conflicts_mj]
+conflicts_no_m = [(key, check) for key, check in conflicts if not ('michael' in check[0][0] or 'michael' in check[1][0])]
 
-
-assign = list(data['i'])
-assign_copy = list(assign)
 
 
 class Member(object):
@@ -50,14 +59,14 @@ class Member(object):
 
     def __str__(self):
         return self.name + '\n\n\n' + ','.join([str(article) for article in sorted(self.articles)]) + '\n\n\n' + \
-           '\n\n'.join(['ARTICLE NO ' + str(key) + ': ' + str(data.iloc[key]['Title']) +
-                        '\n' + str(data.iloc[key]['Authors']) + '\nPublication Type: ' +
-                        data.iloc[key]['Journal Category'] + '\n\n' + '\n\n'.join(paragraph)
+           '\n\n'.join(['ARTICLE NO ' + str(key) + ': ' + str(manager.iloc[key]['Title']) +
+                        '\n' + str(manager.iloc[key]['Authors']) + '\nPublication Type: ' +
+                        manager.iloc[key]['Journal Category'] + '\n\n' + '\n\n'.join(paragraph)
                         for key, paragraph in sorted(paragraphs.items()) if key in self.articles]) + \
            '\n\n\n\nThese numbers have no paragraphs:\n\n\n' + \
-           '\n\n'.join(['ARTICLE NO ' + str(article) + ': ' + str(data.iloc[article]['Title']) +
-                        '\n' + str(data.iloc[article]['Authors']) + '\n' + str(data.iloc[article]['URL']) +
-                        '\nPublication Type: ' + data.iloc[article]['Journal Category'] for
+           '\n\n'.join(['ARTICLE NO ' + str(article) + ': ' + str(manager.iloc[article]['Title']) +
+                        '\n' + str(manager.iloc[article]['Authors']) + '\n' + str(manager.iloc[article]['URL']) +
+                        '\nPublication Type: ' + manager.iloc[article]['Journal Category'] for
                         article in self.articles if article in sorted(list(bad_data['i']))])
 
     def assign(self, assign, length):
@@ -70,7 +79,7 @@ class Member(object):
 
 
 class Assignment(object):
-    def __init__(self, members=None, dir='../outputs/Assignments'):
+    def __init__(self, members=None, dir='../outputs/checker_assigns'):
         if members is None:
             self.members = [Member(member.replace('.txt', ''), dir) for member in os.listdir(dir) if
                             '.txt' in member]
@@ -144,8 +153,9 @@ class Assignment(object):
                       len(member.written))
 
 
-assignment = Assignment(members=['miaslkdjf', 'asdjfiaskdl', 'dfsdfsdfsasdfasdcdasd', 'ewrfs', 'dsf', 'a', 'werwerwerwer', 'wer', 'werr'])
-
-assignment.assign(assign)
-assignment.double()
-assignment.test([1, 2])
+assignment = Assignment(members=['conflicts_m', 'conflicts_h', 'conflicts_j'])
+assignment[0].articles = [key for key, check in conflicts_no_m]
+assignment[1].articles = [key for key, check in conflicts_mj]
+assignment[2].articles = [key for key, check in conflicts_m]
+assignment.test()
+assignment.write()

@@ -1,0 +1,196 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">28094820</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>01</Month>
+            <Day>17</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>09</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>09</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1689-0035</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>76</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Acta neurobiologiae experimentalis</Title>
+                <ISOAbbreviation>Acta Neurobiol Exp (Wars)</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The effect of network template from normal subjects in the detection of network impairment.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>294-303</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>This study aimed to provide a simple way to approach group differences by independent component analysis when researching functional connectivity changes of resting-state network in brain disorders. We used baseline resting state functional magnetic resonance imaging from the Alzheimer's disease neuroimaging initiative dataset and performed independent component analysis based on different kinds of subject selection, by including two downloaded templates and single-subject independent component analysis method. All conditions were used to calculate the functional connectivity of the default mode network, and to test group differences and evaluate correlation with cognitive measurements and hippocampal volume. The default mode network functional connectivity results most fitting clinical evaluations were from templates based on young healthy subjects and the worst results were from heterogeneous or more severe disease groups or single-subject independent component analysis method. Using independent component analysis network maps derived from normal young subjects to extract all individual functional connectivities provides significant correlations with clinical evaluations.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Chun-Chao</LastName>
+                    <ForeName>Huang</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Neuroscience, National Yang-Ming University, Taipei, Taiwan; Department of Radiology, MacKay Memorial Hospital, Taipei, Taiwan; Department of Medicine, MacKay Medical College, Taipei, Taiwan; Mackay Junior College of Medicine, Nursing, and Management, Taipei, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shang-Hua</LastName>
+                    <ForeName>Lin</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Neuroscience, National Yang-Ming University, Taipei, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ching-Po</LastName>
+                    <ForeName>Lin</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Neuroscience, National Yang-Ming University, Taipei, Taiwan; Department of Biomedical Imaging and Radiological Sciences, National Yang-Ming University, Taipei, Taiwan; Brain Research Center, National Yang-Ming University, Taipei, Taiwan, cplin@ym.edu.tw.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Disease Neuroimaging Initiative</LastName>
+                    <ForeName>The Alzheimer's</ForeName>
+                    <Initials>TA</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Poland</Country>
+            <MedlineTA>Acta Neurobiol Exp (Wars)</MedlineTA>
+            <NlmUniqueID>1246675</NlmUniqueID>
+            <ISSNLinking>0065-1400</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>S88TT14065</RegistryNumber>
+                <NameOfSubstance UI="D010100">Oxygen</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000369" MajorTopicYN="N">Aged, 80 and over</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000375" MajorTopicYN="N">Aging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000544" MajorTopicYN="N">Alzheimer Disease</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001321" MajorTopicYN="N">Autistic Disorder</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D060825" MajorTopicYN="N">Cognitive Dysfunction</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009483" MajorTopicYN="N">Neuropsychological Tests</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010100" MajorTopicYN="N">Oxygen</DescriptorName>
+                <QualifierName UI="Q000097" MajorTopicYN="N">blood</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D025341" MajorTopicYN="N">Principal Component Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="N">Rest</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28094820</ArticleId>
+            <ArticleId IdType="pii">7628</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

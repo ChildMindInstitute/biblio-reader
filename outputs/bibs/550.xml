@@ -1,0 +1,345 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22400627</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>03</Month>
+            <Day>09</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>05</Month>
+            <Day>23</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1550-2376</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>85</Volume>
+                    <Issue>1 Pt 2</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Jan</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Physical review. E, Statistical, nonlinear, and soft matter physics</Title>
+                <ISOAbbreviation>Phys Rev E Stat Nonlin Soft Matter Phys</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Modularity-based graph partitioning using conditional expected models.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>016109</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Modularity-based partitioning methods divide networks into modules by comparing their structure against random networks conditioned to have the same number of nodes, edges, and degree distribution. We propose a novel way to measure modularity and divide graphs, based on conditional probabilities of the edge strength of random networks. We provide closed-form solutions for the expected strength of an edge when it is conditioned on the degrees of the two neighboring nodes, or alternatively on the degrees of all nodes comprising the network. We analytically compute the expected network under the assumptions of Gaussian and Bernoulli distributions. When the Gaussian distribution assumption is violated, we prove that our expression is the best linear unbiased estimator. Finally, we investigate the performance of our conditional expected model in partitioning simulated and real-world networks.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Chang</LastName>
+                    <ForeName>Yu-Teng</ForeName>
+                    <Initials>YT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Electrical Engineering, Signal and Image Processing Institute, University of Southern California, Los Angeles, California 90089, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Leahy</LastName>
+                    <ForeName>Richard M</ForeName>
+                    <Initials>RM</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pantazis</LastName>
+                    <ForeName>Dimitrios</ForeName>
+                    <Initials>D</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>5R01EB000473</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 EB000473</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P41 RR013642</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P41 RR013642,</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 EB002010</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>01</Month>
+                <Day>12</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Phys Rev E Stat Nonlin Soft Matter Phys</MedlineTA>
+            <NlmUniqueID>101136452</NlmUniqueID>
+            <ISSNLinking>1539-3755</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Nov;70(5 Pt 2):056131</RefSource>
+                <PMID Version="1">15600716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2005 Aug;72(2 Pt 2):027104</RefSource>
+                <PMID Version="1">16196754</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Public Health. 1999 Jun;89(6):825-33</RefSource>
+                <PMID Version="1">10358670</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Pattern Anal Mach Intell. 2006 Jan;28(1):119-34</RefSource>
+                <PMID Version="1">16402624</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Artif Life. 2011 Winter;17(1):33-50</RefSource>
+                <PMID Version="1">21087148</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jun 15;56(4):2068-79</RefSource>
+                <PMID Version="1">21459148</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2009 Oct 30;3:37</RefSource>
+                <PMID Version="1">19949480</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2004 Mar 2;101(9):2658-63</RefSource>
+                <PMID Version="1">14981240</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2010 Apr;81(4 Pt 2):046106</RefSource>
+                <PMID Version="1">20481785</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2002 May 3;296(5569):910-3</RefSource>
+                <PMID Version="1">11988575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2009 May;5(5):e1000381</RefSource>
+                <PMID Version="1">19412534</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2006 Sep;74(3 Pt 2):036104</RefSource>
+                <PMID Version="1">17025705</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2005 Feb 24;433(7028):895-900</RefSource>
+                <PMID Version="1">15729348</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(2):e16605</RefSource>
+                <PMID Version="1">21311770</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Comput. 2004 Dec;16(12):2483-506</RefSource>
+                <PMID Version="1">15516271</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2009 Jul;80(1 Pt 2):016114</RefSource>
+                <PMID Version="1">19658781</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2008 Oct;78(4 Pt 2):046110</RefSource>
+                <PMID Version="1">18999496</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2002 Jun 11;99(12):7821-6</RefSource>
+                <PMID Version="1">12060727</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2006 Jul;74(1 Pt 2):016110</RefSource>
+                <PMID Version="1">16907154</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Biotechnol. 2003 May;21(5):195-8</RefSource>
+                <PMID Version="1">12727379</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Pattern Anal Mach Intell. 2010 Jun;32(6):988-95</RefSource>
+                <PMID Version="1">20431126</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Dec 15;106(50):21068-73</RefSource>
+                <PMID Version="1">19934050</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Jun;69(6 Pt 2):066133</RefSource>
+                <PMID Version="1">15244693</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrika. 1951 Jun;38(1-2):219-47</RefSource>
+                <PMID Version="1">14848124</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Feb;69(2 Pt 2):026113</RefSource>
+                <PMID Version="1">14995526</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010;5(12):e14248</RefSource>
+                <PMID Version="1">21170390</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Biol. 2009 Feb;16(2):229-39</RefSource>
+                <PMID Version="1">19183003</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Biotechnol. 2006 Apr;24(4):427-33</RefSource>
+                <PMID Version="1">16601728</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Pattern Anal Mach Intell. 2004 Sep;26(9):1124-37</RefSource>
+                <PMID Version="1">15742889</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Jan 2;104(1):36-41</RefSource>
+                <PMID Version="1">17190818</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Dec;70(6 Pt 2):066111</RefSource>
+                <PMID Version="1">15697438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1999 Dec 2;402(6761 Suppl):C47-52</RefSource>
+                <PMID Version="1">10591225</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2005 Apr;71(4 Pt 2):046101</RefSource>
+                <PMID Version="1">15903720</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2010 Nov;82(5 Pt 2):056113</RefSource>
+                <PMID Version="1">21230551</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Jun 6;103(23):8577-82</RefSource>
+                <PMID Version="1">16723398</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2009 Sep;80(3 Pt 2):036111</RefSource>
+                <PMID Version="1">19905184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2008 Apr;77(4 Pt 2):046112</RefSource>
+                <PMID Version="1">18517695</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Pattern Anal Mach Intell. 2004 Apr;26(4):434-48</RefSource>
+                <PMID Version="1">15382649</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Feb 1;44(3):715-23</RefSource>
+                <PMID Version="1">19027073</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D003196" MajorTopicYN="Y">Computer Graphics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016014" MajorTopicYN="N">Linear Models</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008962" MajorTopicYN="Y">Models, Theoretical</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016011" MajorTopicYN="N">Normal Distribution</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS539926</OtherID>
+        <OtherID Source="NLM">PMC3880576</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2011</Year>
+                <Month>05</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2011</Year>
+                <Month>10</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>3</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>3</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>5</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22400627</ArticleId>
+            <ArticleId IdType="pmc">PMC3880576</ArticleId>
+            <ArticleId IdType="mid">NIHMS539926</ArticleId>
+            <ArticleId IdType="doi">10.1103/PhysRevE.85.016109</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

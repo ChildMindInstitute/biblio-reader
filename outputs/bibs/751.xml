@@ -1,0 +1,346 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26505141</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>02</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2017</Year>
+            <Month>01</Month>
+            <Day>12</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1488-2434</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>41</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of psychiatry &amp; neuroscience : JPN</Title>
+                <ISOAbbreviation>J Psychiatry Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Identification of segregated regions in the functional brain connectome of autistic patients by a combination of fuzzy spectral clustering and entropy analysis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>124-32</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Several neuroimaging studies support the model of abnormal development of brain connectivity in patients with autism-spectrum disorders (ASD). In this study, we aimed to test the hypothesis of reduced functional network segregation in autistic patients compared with controls.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">Functional MRI data from children acquired under a resting-state protocol (Autism Brain Imaging Data Exchange [ABIDE]) were submitted to both fuzzy spectral clustering (FSC) with entropy analysis and graph modularity analysis.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">We included data from 814 children in our analysis. We identified 5 regions of interest comprising the motor, temporal and occipitotemporal cortices with increased entropy (p &lt; 0.05) in the clustering structure (i.e., more segregation in the controls). Moreover, we noticed a statistically reduced modularity (p &lt; 0.001) in the autistic patients compared with the controls. Significantly reduced eigenvector centrality values (p &lt; 0.05) in the patients were observed in the same regions that were identified in the FSC analysis.</AbstractText>
+                <AbstractText Label="LIMITATIONS" NlmCategory="CONCLUSIONS">There is considerable heterogeneity in the fMRI acquisition protocols among the sites that contributed to the ABIDE data set (e.g., scanner type, pulse sequence, duration of scan and resting-state protocol). Moreover, the sites differed in many variables related to sample characterization (e.g., age, IQ and ASD diagnostic criteria). Therefore, we cannot rule out the possibility that additional differences in functional network organization would be found in a more homogeneous data sample of individuals with ASD.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">Our results suggest that the organization of the whole-brain functional network in patients with ASD is different from that observed in controls, which implies a reduced modularity of the brain functional networks involved in sensorimotor, social, affective and cognitive processing.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sato</LastName>
+                    <ForeName>João Ricardo</ForeName>
+                    <Initials>JR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>: From the Center of Mathematics, Computation, and Cognition, Universidade Federal do ABC, Santo André, SP, Brazil (Sato, Balardin); and the Department of Computer Science, Institute of Mathematics and Statistics, University of São Paulo, São Paulo, SP, Brazil (Vidal, Fujita).</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Balardin</LastName>
+                    <ForeName>Joana</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>: From the Center of Mathematics, Computation, and Cognition, Universidade Federal do ABC, Santo André, SP, Brazil (Sato, Balardin); and the Department of Computer Science, Institute of Mathematics and Statistics, University of São Paulo, São Paulo, SP, Brazil (Vidal, Fujita).</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vidal</LastName>
+                    <ForeName>Maciel Calebe</ForeName>
+                    <Initials>MC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>: From the Center of Mathematics, Computation, and Cognition, Universidade Federal do ABC, Santo André, SP, Brazil (Sato, Balardin); and the Department of Computer Science, Institute of Mathematics and Statistics, University of São Paulo, São Paulo, SP, Brazil (Vidal, Fujita).</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fujita</LastName>
+                    <ForeName>André</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>: From the Center of Mathematics, Computation, and Cognition, Universidade Federal do ABC, Santo André, SP, Brazil (Sato, Balardin); and the Department of Computer Science, Institute of Mathematics and Statistics, University of São Paulo, São Paulo, SP, Brazil (Vidal, Fujita).</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016448">Multicenter Study</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Canada</Country>
+            <MedlineTA>J Psychiatry Neurosci</MedlineTA>
+            <NlmUniqueID>9107859</NlmUniqueID>
+            <ISSNLinking>1180-4882</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Aug 27;7:482</RefSource>
+                <PMID Version="1">23986678</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Aug 15;77:44-51</RefSource>
+                <PMID Version="1">23571416</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 Dec 12;32(50):17933-4</RefSource>
+                <PMID Version="1">23238709</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Aug 14;104(33):13507-12</RefSource>
+                <PMID Version="1">17679691</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2009 Oct 30;3:37</RefSource>
+                <PMID Version="1">19949480</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2011 Aug 1;70(3):270-7</RefSource>
+                <PMID Version="1">21601832</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Jan;36(1):604-25</RefSource>
+                <PMID Version="1">21963441</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 May 1;57(9):991-8</RefSource>
+                <PMID Version="1">15860339</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 21;4:21</RefSource>
+                <PMID Version="1">20577585</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2006 Jul;29(7):359-66</RefSource>
+                <PMID Version="1">16806505</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Cogn. 2011 Feb;75(1):18-28</RefSource>
+                <PMID Version="1">21055864</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Apr;36(4):1292-313</RefSource>
+                <PMID Version="1">22353426</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Cogn Brain Res. 2003 Oct;17(3):651-64</RefSource>
+                <PMID Version="1">14561452</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2009 Mar;10(3):186-98</RefSource>
+                <PMID Version="1">19190637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Aug 07;7:458</RefSource>
+                <PMID Version="1">23966925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):1059-69</RefSource>
+                <PMID Version="1">19819337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Sep 10;28(37):9239-48</RefSource>
+                <PMID Version="1">18784304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2011 Jan;35(3):894-902</RefSource>
+                <PMID Version="1">20974171</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet Neurol. 2013 Dec;12(12):1189-99</RefSource>
+                <PMID Version="1">24120645</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Feb;69(2 Pt 2):026113</RefSource>
+                <PMID Version="1">14995526</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2012 Feb;69(2):195-209</RefSource>
+                <PMID Version="1">22310506</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dialogues Clin Neurosci. 2013 Sep;15(3):247-62</RefSource>
+                <PMID Version="1">24174898</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2007 Feb;17(1):103-11</RefSource>
+                <PMID Version="1">17275283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscientist. 2011 Aug;17(4):437-48</RefSource>
+                <PMID Version="1">21467306</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Can J Psychol. 1951 Jun;5(2):68-76</RefSource>
+                <PMID Version="1">14848771</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2008;3(4):e2001</RefSource>
+                <PMID Version="1">18431486</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychopharmacology. 2015 Jan;40(1):171-89</RefSource>
+                <PMID Version="1">25011468</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Neurosci. 2004;27:169-92</RefSource>
+                <PMID Version="1">15217330</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Dec;70(6 Pt 2):066111</RefSource>
+                <PMID Version="1">15697438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Aug;33(8):1914-28</RefSource>
+                <PMID Version="1">21769991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2011 Jun;52(6):631-44</RefSource>
+                <PMID Version="1">21244421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1994 May 24;91(11):5033-7</RefSource>
+                <PMID Version="1">8197179</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013;8(5):e63131</RefSource>
+                <PMID Version="1">23675456</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2004 Oct 20;24(42):9228-31</RefSource>
+                <PMID Version="1">15496656</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage Clin. 2012 Nov 16;2:79-94</RefSource>
+                <PMID Version="1">24179761</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Novartis Found Symp. 2003;251:149-66; discussion 166-76, 281-97</RefSource>
+                <PMID Version="1">14521192</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 May;22(5):1025-37</RefSource>
+                <PMID Version="1">21784971</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014;9(4):e94115</RefSource>
+                <PMID Version="1">24714805</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2008 Mar;31(3):137-45</RefSource>
+                <PMID Version="1">18258309</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000465" MajorTopicYN="N">Algorithms</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001321" MajorTopicYN="N">Autistic Disorder</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016000" MajorTopicYN="N">Cluster Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066264" MajorTopicYN="N">Datasets as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D017143" MajorTopicYN="N">Fuzzy Logic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020407" MajorTopicYN="N">Internet</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="N">Rest</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4764481</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26505141</ArticleId>
+            <ArticleId IdType="pii">10.1503/jpn.140364</ArticleId>
+            <ArticleId IdType="pmc">PMC4764481</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,338 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25761828</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>03</Month>
+            <Day>08</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>13</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1931-7565</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>10</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Brain imaging and behavior</Title>
+                <ISOAbbreviation>Brain Imaging Behav</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Multi-task feature selection via supervised canonical graph matching for diagnosis of autism spectrum disorder.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>33-40</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s11682-015-9360-1</ELocationID>
+            <Abstract>
+                <AbstractText>In this paper, we propose a novel framework for ASD diagnosis using structural magnetic resonance imaging (MRI). Our method deals explicitly with the distributional differences of gray matter (GM) and white matter (WM) features extracted from MR images. We project linearly the GM and WM features onto a canonical space where their correlations are mutually maximized. In this canonical space, features that are highly correlated with the class labels are selected for ASD diagnosis. In addition, graph matching is employed to preserve the geometrical relationships between samples when projected onto the canonical space. Our evaluations based on a public ASD dataset show that the proposed method outperforms all competing methods on all clinically important measures in differentiating ASD patients from healthy individuals.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Liye</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Life Science, Beijing Institute of Technology, Beijing, 100081, China.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>IDEA Lab, Department of Radiology and Biomedical Research Imaging Center (BRIC), University of North Carolina at Chapel Hill, Chapel Hill, NC, 27599, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wee</LastName>
+                    <ForeName>Chong-Yaw</ForeName>
+                    <Initials>CY</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IDEA Lab, Department of Radiology and Biomedical Research Imaging Center (BRIC), University of North Carolina at Chapel Hill, Chapel Hill, NC, 27599, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tang</LastName>
+                    <ForeName>Xiaoying</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Life Science, Beijing Institute of Technology, Beijing, 100081, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yap</LastName>
+                    <ForeName>Pew-Thian</ForeName>
+                    <Initials>PT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IDEA Lab, Department of Radiology and Biomedical Research Imaging Center (BRIC), University of North Carolina at Chapel Hill, Chapel Hill, NC, 27599, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shen</LastName>
+                    <ForeName>Dinggang</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IDEA Lab, Department of Radiology and Biomedical Research Imaging Center (BRIC), University of North Carolina at Chapel Hill, Chapel Hill, NC, 27599, USA. dgshen@med.unc.edu.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Brain and Cognitive Engineering, Korea University, Seoul, Republic of Korea. dgshen@med.unc.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 EB008374</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 EB006733</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 AG041721</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>EB008374</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>MH100217</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>AG042599</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 AG042599</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>EB009634</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 EB009634</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>AG041721</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>EB006733</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH100217</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D023361">Validation Studies</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Brain Imaging Behav</MedlineTA>
+            <NlmUniqueID>101300405</NlmUniqueID>
+            <ISSNLinking>1931-7557</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Comput. 2004 Dec;16(12):2639-64</RefSource>
+                <PMID Version="1">15516276</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 1979 Mar;9(1):11-29</RefSource>
+                <PMID Version="1">155684</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jan 1;84:466-75</RefSource>
+                <PMID Version="1">24045077</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Assist Tomogr. 1989 Jul-Aug;13(4):588-93</RefSource>
+                <PMID Version="1">2745775</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Comput Comput Assist Interv. 2011;14(Pt 3):635-42</RefSource>
+                <PMID Version="1">22003753</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2009 Sep;66(9):947-56</RefSource>
+                <PMID Version="1">19736351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):895-907</RefSource>
+                <PMID Version="1">21992749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(3):e33182</RefSource>
+                <PMID Version="1">22457741</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2007 Feb;17(1):103-11</RefSource>
+                <PMID Version="1">17275283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Comput Comput Assist Interv. 2013;16(Pt 1):275-83</RefSource>
+                <PMID Version="1">24505676</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Bull. 2003 Oct 15;61(6):557-69</RefSource>
+                <PMID Version="1">14519452</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2014 Mar;219(2):641-56</RefSource>
+                <PMID Version="1">23468090</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Sep;23(1):364-9</RefSource>
+                <PMID Version="1">15325384</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 Jul;35(7):3414-30</RefSource>
+                <PMID Version="1">25050428</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2002 Nov;21(11):1421-39</RefSource>
+                <PMID Version="1">12575879</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2008 Mar;31(3):137-45</RefSource>
+                <PMID Version="1">18258309</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000067877" MajorTopicYN="N">Autism Spectrum Disorder</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+                <QualifierName UI="Q000000981" MajorTopicYN="Y">diagnostic imaging</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="Y">diagnostic imaging</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066264" MajorTopicYN="N">Datasets as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066128" MajorTopicYN="N">Gray Matter</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007090" MajorTopicYN="N">Image Interpretation, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012372" MajorTopicYN="N">ROC Curve</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D060388" MajorTopicYN="N">Support Vector Machine</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066127" MajorTopicYN="N">White Matter</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS749489</OtherID>
+        <OtherID Source="NLM">PMC4714957</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Diagnosis of autism spectrum disorder</Keyword>
+            <Keyword MajorTopicYN="N">Magnetic resonance imaging (MRI)</Keyword>
+            <Keyword MajorTopicYN="N">Multi-task feature selection</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>3</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>3</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>15</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25761828</ArticleId>
+            <ArticleId IdType="doi">10.1007/s11682-015-9360-1</ArticleId>
+            <ArticleId IdType="pii">10.1007/s11682-015-9360-1</ArticleId>
+            <ArticleId IdType="pmc">PMC4714957</ArticleId>
+            <ArticleId IdType="mid">NIHMS749489</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

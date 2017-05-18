@@ -1,0 +1,195 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26123379</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>08</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>06</Month>
+            <Day>06</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>119</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Oct</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Brain networks underlying bistable perception.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>229-34</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2015.06.053</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(15)00558-3</ELocationID>
+            <Abstract>
+                <AbstractText>Bistable stimuli, such as the Necker Cube, demonstrate that experience can change in the absence of changes in the environment. Such phenomena can be used to assess stimulus-independent aspects of conscious experience. The current study used resting state functional magnetic resonance imaging (rs-fMRI) to index stimulus-independent changes in neural activity to understand the neural architecture that determines dominance durations during bistable perception (using binocular rivalry and Necker cube stimuli). Anterior regions of the Superior Parietal Lobule (SPL) exhibited robust connectivity with regions of primary sensorimotor cortex. The strength of this region's connectivity with the striatum predicted shorter dominance durations during binocular rivalry, whereas its connectivity to pre-motor cortex predicted longer dominance durations for the Necker Cube. Posterior regions of the SPL, on the other hand, were coupled to associative cortex in the temporal and frontal lobes. The posterior SPL's connectivity to the temporal lobe predicted longer dominance during binocular rivalry. In conjunction with prior work, these data suggest that the anterior SPL contributes to perceptual rivalry through the inhibition of incongruent bottom up information, whereas the posterior SPL influences rivalry by supporting the current interpretation of a bistable stimulus. Our data suggests that the functional connectivity of the SPL with regions of sensory, motor, and associative cortex allows it to regulate the interpretation of the environment that forms the focus of conscious attention at a specific moment in time.</AbstractText>
+                <CopyrightInformation>Copyright © 2015. Published by Elsevier Inc.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Baker</LastName>
+                    <ForeName>Daniel H</ForeName>
+                    <Initials>DH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of York, UK. Electronic address: daniel.baker@york.ac.uk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Karapanagiotidis</LastName>
+                    <ForeName>Theodoros</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of York, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Coggan</LastName>
+                    <ForeName>David D</ForeName>
+                    <Initials>DD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of York, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wailes-Newson</LastName>
+                    <ForeName>Kirstie</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of York, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Smallwood</LastName>
+                    <ForeName>Jonathan</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of York, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>06</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010775" MajorTopicYN="N">Photic Stimulation</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066191" MajorTopicYN="N">Sensorimotor Cortex</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015348" MajorTopicYN="N">Vision, Binocular</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D014796" MajorTopicYN="N">Visual Perception</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Bistable perception</Keyword>
+            <Keyword MajorTopicYN="N">Connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Parietal cortex</Keyword>
+            <Keyword MajorTopicYN="N">Resting state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>05</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2015</Year>
+                <Month>06</Month>
+                <Day>10</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>06</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>7</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>7</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>9</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26123379</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(15)00558-3</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2015.06.053</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

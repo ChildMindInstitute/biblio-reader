@@ -1,0 +1,340 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27402343</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>07</Month>
+            <Day>12</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>10</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1741-0444</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>55</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Apr</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Medical &amp; biological engineering &amp; computing</Title>
+                <ISOAbbreviation>Med Biol Eng Comput</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Assessing the mean strength and variations of the time-to-time fluctuations of resting-state brain activity.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>631-640</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s11517-016-1544-3</ELocationID>
+            <Abstract>
+                <AbstractText>The time-to-time fluctuations (TTFs) of resting-state brain activity as captured by resting-state fMRI (rsfMRI) have been repeatedly shown to be informative of functional brain structures and disease-related alterations. TTFs can be characterized by the mean and the range of successive difference. The former can be measured with the mean squared successive difference (MSSD), which is mathematically similar to standard deviation; the latter can be calculated by the variability of the successive difference (VSD). The purpose of this study was to evaluate both the resting state-MSSD and VSD of rsfMRI regarding their test-retest stability, sensitivity to brain state change, as well as their biological meanings. We hypothesized that MSSD and VSD are reliable in resting brain; both measures are sensitive to brain state changes such as eyes-open compared to eyes-closed condition; both are predictive of age. These hypotheses were tested with three rsfMRI datasets and proven true, suggesting both MSSD and VSD as reliable and useful tools for resting-state studies.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Zhengjun</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Perelman School of Medicine, University of Pennsylvania, 3900 Chestnut St, Philadelphia, PA, 19104, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zang</LastName>
+                    <ForeName>Yu-Feng</ForeName>
+                    <Initials>YF</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Institutes of Neurological Science, Hangzhou Normal University, Hangzhou, 310005, Zhejiang Province, China.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments, Hangzhou, 310005, Zhejiang Province, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ding</LastName>
+                    <ForeName>Jianping</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Affiliated Hospital, Hangzhou Normal University, 126 Wenzhou Rd, Building 7, MRI Room, Hangzhou, 310015, Zhejiang Province, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Ze</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Institutes of Neurological Science, Hangzhou Normal University, Hangzhou, 310005, Zhejiang Province, China. redhatw@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments, Hangzhou, 310005, Zhejiang Province, China. redhatw@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Affiliated Hospital, Hangzhou Normal University, 126 Wenzhou Rd, Building 7, MRI Room, Hangzhou, 310015, Zhejiang Province, China. redhatw@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R56 DA036556</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>11</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Med Biol Eng Comput</MedlineTA>
+            <NlmUniqueID>7704869</NlmUniqueID>
+            <ISSNLinking>0140-0118</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Ment Defic. 1981 Sep;86(2):127-37</RefSource>
+                <PMID Version="1">7315877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014 Mar 21;9(3):e89948</RefSource>
+                <PMID Version="1">24657999</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Cogn Affect Neurosci. 2009 Dec;4(4):417-22</RefSource>
+                <PMID Version="1">20042432</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Biol Eng Comput. 1990 Nov;28(6):509-24</RefSource>
+                <PMID Version="1">2287173</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):782-90</RefSource>
+                <PMID Version="1">21979382</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(9):e44556</RefSource>
+                <PMID Version="1">23028560</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Mar;25(1):141-58</RefSource>
+                <PMID Version="1">15734351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 May;22(1):394-400</RefSource>
+                <PMID Version="1">15110032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Comput. 2006 Jun;18(6):1349-79</RefSource>
+                <PMID Version="1">16764507</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2008 Apr;9(4):292-303</RefSource>
+                <PMID Version="1">18319728</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Biomed Eng. 2011 Nov;58(11):3206-14</RefSource>
+                <PMID Version="1">21859598</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med Sci. 2016;15(2):178-86</RefSource>
+                <PMID Version="1">26701695</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Cogn Affect Neurosci. 2009 Dec;4(4):423-8</RefSource>
+                <PMID Version="1">20035017</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2008 May;26(4):490-503</RefSource>
+                <PMID Version="1">18060720</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 Sep;26(1):15-29</RefSource>
+                <PMID Version="1">15852468</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 15;49(2):1432-45</RefSource>
+                <PMID Version="1">19782143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA. 1992 Apr 1;267(13):1806-9</RefSource>
+                <PMID Version="1">1482430</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2011 Jun 20;12 (7):415-26</RefSource>
+                <PMID Version="1">21685932</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2015 Mar 27;10(3):e0121757</RefSource>
+                <PMID Version="1">25816237</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Aging Knowledge Environ. 2004 Apr 21;2004(16):pe16</RefSource>
+                <PMID Version="1">15103055</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2013 Oct;11(4):469-76</RefSource>
+                <PMID Version="1">23836389</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):743-7</RefSource>
+                <PMID Version="1">21889996</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Nov 6;109(45):18571-6</RefSource>
+                <PMID Version="1">23090991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Biol Eng Comput. 2008 Oct;46(10):977-84</RefSource>
+                <PMID Version="1">18414913</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Apr 7;30(14):4914-21</RefSource>
+                <PMID Version="1">20371811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Jan 5;31(1):55-63</RefSource>
+                <PMID Version="1">21209189</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2014 Jul 08;8:503</RefSource>
+                <PMID Version="1">25071530</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Brain Res. 2011;193:259-76</RefSource>
+                <PMID Version="1">21854968</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(5):e38131</RefSource>
+                <PMID Version="1">22666461</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2013 Feb;34(2):428-38</RefSource>
+                <PMID Version="1">22683008</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 2001 Oct;21(10):1133-45</RefSource>
+                <PMID Version="1">11598490</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Bull. 1979 Mar;86(2):420-8</RefSource>
+                <PMID Version="1">18839484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Jan 16;98 (2):676-82</RefSource>
+                <PMID Version="1">11209064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 Aug;18(8):1856-64</RefSource>
+                <PMID Version="1">18063564</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2008 Mar;1124:1-38</RefSource>
+                <PMID Version="1">18400922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Feb 1;29(3):1000-6</RefSource>
+                <PMID Version="1">16139527</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2013 Jul;38(1):36-45</RefSource>
+                <PMID Version="1">23225622</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Oct;19(10):2209-29</RefSource>
+                <PMID Version="1">19221144</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Exp Neuropsychol. 2001 Oct;23(5):695-700</RefSource>
+                <PMID Version="1">11778646</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Sep 28;31(39):13786-95</RefSource>
+                <PMID Version="1">21957241</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2012 Aug;36(2):344-54</RefSource>
+                <PMID Version="1">22535702</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Fluctuation</Keyword>
+            <Keyword MajorTopicYN="N">Resting-state fMRI</Keyword>
+            <Keyword MajorTopicYN="N">Variation</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>03</Month>
+                <Day>10</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pmc-release">
+                <Year>2018</Year>
+                <Month>04</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>7</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>7</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>7</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27402343</ArticleId>
+            <ArticleId IdType="doi">10.1007/s11517-016-1544-3</ArticleId>
+            <ArticleId IdType="pii">10.1007/s11517-016-1544-3</ArticleId>
+            <ArticleId IdType="pmc">PMC5226933</ArticleId>
+            <ArticleId IdType="mid">NIHMS802401</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

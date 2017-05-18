@@ -1,0 +1,307 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">28187889</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>11</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>11</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>11</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1872-7565</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>139</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Feb</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Computer methods and programs in biomedicine</Title>
+                <ISOAbbreviation>Comput Methods Programs Biomed</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>GIFT-Cloud: A data sharing and collaboration platform for medical imaging research.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>181-190</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0169-2607(16)30654-X</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.cmpb.2016.11.004</ELocationID>
+            <Abstract>
+                <AbstractText Label="OBJECTIVES" NlmCategory="OBJECTIVE">Clinical imaging data are essential for developing research software for computer-aided diagnosis, treatment planning and image-guided surgery, yet existing systems are poorly suited for data sharing between healthcare and academia: research systems rarely provide an integrated approach for data exchange with clinicians; hospital systems are focused towards clinical patient care with limited access for external researchers; and safe haven environments are not well suited to algorithm development. We have established GIFT-Cloud, a data and medical image sharing platform, to meet the needs of GIFT-Surg, an international research collaboration that is developing novel imaging methods for fetal surgery. GIFT-Cloud also has general applicability to other areas of imaging research.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">GIFT-Cloud builds upon well-established cross-platform technologies. The Server provides secure anonymised data storage, direct web-based data access and a REST API for integrating external software. The Uploader provides automated on-site anonymisation, encryption and data upload. Gateways provide a seamless process for uploading medical data from clinical systems to the research server.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">GIFT-Cloud has been implemented in a multi-centre study for fetal medicine research. We present a case study of placental segmentation for pre-operative surgical planning, showing how GIFT-Cloud underpins the research and integrates with the clinical workflow.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">GIFT-Cloud simplifies the transfer of imaging data from clinical to research institutions, facilitating the development and validation of medical research software and the sharing of results back to the clinical partners. GIFT-Cloud supports collaboration between multiple healthcare and research institutions while satisfying the demands of patient confidentiality, data security and data ownership.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 The Authors. Published by Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Doel</LastName>
+                    <ForeName>Tom</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Translational Imaging Group, Centre for Medical Imaging Computing, University College London, London, UK. Electronic address: t.doel@ucl.ac.uk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shakir</LastName>
+                    <ForeName>Dzhoshkun I</ForeName>
+                    <Initials>DI</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Translational Imaging Group, Centre for Medical Imaging Computing, University College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pratt</LastName>
+                    <ForeName>Rosalind</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Translational Imaging Group, Centre for Medical Imaging Computing, University College London, London, UK; Institute for Women's Health, University College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Aertsen</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Imaging &amp; Pathology, UZ Leuven, Leuven, Belgium.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Moggridge</LastName>
+                    <ForeName>James</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Physics, UCL Hospitals, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bellon</LastName>
+                    <ForeName>Erwin</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Imaging &amp; Pathology, UZ Leuven, Leuven, Belgium; Department of Information Technology, UZ Leuven, Leuven, Belgium.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>David</LastName>
+                    <ForeName>Anna L</ForeName>
+                    <Initials>AL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Women's Health, University College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Deprest</LastName>
+                    <ForeName>Jan</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Women's Health, University College London, London, UK; Department of Obstetrics, UZ Leuven, Leuven, Belgium.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Vercauteren</LastName>
+                    <ForeName>Tom</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Translational Imaging Group, Centre for Medical Imaging Computing, University College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ourselin</LastName>
+                    <ForeName>Sébastien</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Translational Imaging Group, Centre for Medical Imaging Computing, University College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>10</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Ireland</Country>
+            <MedlineTA>Comput Methods Programs Biomed</MedlineTA>
+            <NlmUniqueID>8506513</NlmUniqueID>
+            <ISSNLinking>0169-2607</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2007 Spring;5(1):11-34</RefSource>
+                <PMID Version="1">17426351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2010 Dec;8(4):231-49</RefSource>
+                <PMID Version="1">20567938</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Digit Imaging. 2013 Dec;26(6):1045-57</RefSource>
+                <PMID Version="1">23884657</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Dec 23;5:33</RefSource>
+                <PMID Version="1">22275896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Digit Imaging. 2012 Oct;25(5):635-45</RefSource>
+                <PMID Version="1">22349992</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Radiol. 2015 Dec;25(12):3685-95</RefSource>
+                <PMID Version="1">26037716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prenat Diagn. 2015 Dec;35(12 ):1159-66</RefSource>
+                <PMID Version="1">26235960</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2015 Feb 25;10(2):e0118053</RefSource>
+                <PMID Version="1">25714752</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2016 Jan 1;124(Pt B):1097-101</RefSource>
+                <PMID Version="1">25988229</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Inform Assoc. 2011 Jul-Aug;18(4):416-22</RefSource>
+                <PMID Version="1">21515543</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Digit Imaging. 2012 Feb;25(1):14-24</RefSource>
+                <PMID Version="1">22038512</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2016 Dec;34:137-147</RefSource>
+                <PMID Version="1">27179367</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc SPIE Int Soc Opt Eng. 2013 Mar 29;8674:null</RefSource>
+                <PMID Version="1">24386548</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prenat Diagn. 2010 Jul;30(7):653-67</RefSource>
+                <PMID Version="1">20572114</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJR Am J Roentgenol. 2014 Dec;203(6):W658-64</RefSource>
+                <PMID Version="1">25415732</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Jan 20;5:37</RefSource>
+                <PMID Version="1">22319489</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur J Radiol. 2011 May;78(2):199-204</RefSource>
+                <PMID Version="1">20566253</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prenat Diagn. 2013 Feb;33(2):109-15</RefSource>
+                <PMID Version="1">23280487</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acad Radiol. 2008 Mar;15(3):390-5</RefSource>
+                <PMID Version="1">18280936</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000067917" MajorTopicYN="Y">Cloud Computing</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016494" MajorTopicYN="N">Computer Security</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003299" MajorTopicYN="Y">Cooperative Behavior</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003952" MajorTopicYN="Y">Diagnostic Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006739" MajorTopicYN="N">Hospital Administration</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D033181" MajorTopicYN="Y">Information Dissemination</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D014495" MajorTopicYN="N">Universities</DescriptorName>
+                <QualifierName UI="Q000458" MajorTopicYN="N">organization &amp; administration</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Anonymisation</Keyword>
+            <Keyword MajorTopicYN="N">Biomedical research</Keyword>
+            <Keyword MajorTopicYN="N">Cross-disciplinary research</Keyword>
+            <Keyword MajorTopicYN="N">Data sharing</Keyword>
+            <Keyword MajorTopicYN="N">Deidentification</Keyword>
+            <Keyword MajorTopicYN="N">Fetal surgery</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>06</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28187889</ArticleId>
+            <ArticleId IdType="pii">S0169-2607(16)30654-X</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.cmpb.2016.11.004</ArticleId>
+            <ArticleId IdType="pmc">PMC5312116</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

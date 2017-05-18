@@ -1,0 +1,386 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22405733</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>05</Month>
+            <Day>02</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>08</Month>
+            <Day>24</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>61</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>May</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>A clustering-based method to detect functional connectivity differences.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>56-61</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2012.02.064</ELocationID>
+            <Abstract>
+                <AbstractText>Recently, resting-state functional magnetic resonance imaging (R-fMRI) has emerged as a powerful tool for investigating functional brain organization changes in a variety of neurological and psychiatric disorders. However, the current techniques may need further development to better define the reference brain networks for quantifying the functional connectivity differences between normal and diseased subject groups. In this study, we introduced a new clustering-based method that can clearly define the reference clusters. By employing group difference information to guide the clustering, the voxels within the reference clusters will have homogeneous functional connectivity changes above predefined levels. This method identified functional clusters that were significantly different between the amnestic mild cognitively impaired (aMCI) and age-matched cognitively normal (CN) subjects. The results indicated that the distribution of the clusters and their functionally disconnected regions resembled the altered memory network regions previously identified in task fMRI studies. In conclusion, the new clustering method provides an advanced approach for studying functional brain organization changes associated with brain diseases.</AbstractText>
+                <CopyrightInformation>Copyright © 2012 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Gang</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biophysics, Medical College of Wisconsin, Milwaukee, WI 53226, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ward</LastName>
+                    <ForeName>B Douglas</ForeName>
+                    <Initials>BD</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xie</LastName>
+                    <ForeName>Chunming</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Wenjun</ForeName>
+                    <Initials>W</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Guangyu</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Goveas</LastName>
+                    <ForeName>Joseph S</ForeName>
+                    <Initials>JS</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Antuono</LastName>
+                    <ForeName>Piero G</ForeName>
+                    <Initials>PG</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Shi-Jiang</ForeName>
+                    <Initials>SJ</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 AG020279-10</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>1UL1RR031973</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 DA010214-15</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 AG020279</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 DA10214</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 AG20279</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 DA010214</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 RR031973</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 RR031973-02S1</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>03</Month>
+                <Day>03</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2011 Apr;259(1):213-21</RefSource>
+                <PMID Version="1">21248238</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 1;44(1):83-98</RefSource>
+                <PMID Version="1">18501637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 1;37(4):1091-6; discussion 1097-9</RefSource>
+                <PMID Version="1">17368915</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Brain Res. 2011 Jan 20;216(2):639-46</RefSource>
+                <PMID Version="1">20851718</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Brain Res. 2011 Jun 1;219(2):205-12</RefSource>
+                <PMID Version="1">21238490</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2011 Apr;259(1):17-9</RefSource>
+                <PMID Version="1">21436093</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 May 1;50(4):1690-701</RefSource>
+                <PMID Version="1">20079856</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1408-16</RefSource>
+                <PMID Version="1">19442749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Jun;33(6):1352-63</RefSource>
+                <PMID Version="1">21618660</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1448-59</RefSource>
+                <PMID Version="1">19446646</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2012 Dec;68(6):1828-35</RefSource>
+                <PMID Version="1">22334332</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>MAGMA. 2010 Dec;23(5-6):289-307</RefSource>
+                <PMID Version="1">20972883</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 15;31(4):1536-48</RefSource>
+                <PMID Version="1">16632379</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Apr 2;60(2):1083-91</RefSource>
+                <PMID Version="1">22245641</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2010 Nov 22;4:219</RefSource>
+                <PMID Version="1">21152340</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Feb 1;49(3):2375-86</RefSource>
+                <PMID Version="1">19837176</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Jul;44(1):162-7</RefSource>
+                <PMID Version="1">10893535</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2009 Jun;101(6):3270-83</RefSource>
+                <PMID Version="1">19339462</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2011 Sep;106(3):1125-65</RefSource>
+                <PMID Version="1">21653723</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 Jun 17;4:19</RefSource>
+                <PMID Version="1">20592951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jul 1;57(1):198-205</RefSource>
+                <PMID Version="1">21524704</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Int Neuropsychol Soc. 2009 May;15(3):372-82</RefSource>
+                <PMID Version="1">19402923</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Oct 19;31(42):15154-62</RefSource>
+                <PMID Version="1">22016549</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2007 May 3;447(7140):83-6</RefSource>
+                <PMID Version="1">17476267</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2011 Nov;106(5):2322-45</RefSource>
+                <PMID Version="1">21795627</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001519" MajorTopicYN="N">Behavior</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016000" MajorTopicYN="N">Cluster Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D060825" MajorTopicYN="N">Cognitive Dysfunction</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003627" MajorTopicYN="N">Data Interpretation, Statistical</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005189" MajorTopicYN="N">False Positive Reactions</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011939" MajorTopicYN="N">Mental Recall</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009483" MajorTopicYN="N">Neuropsychological Tests</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS361220</OtherID>
+        <OtherID Source="NLM">PMC3342474</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2011</Year>
+                <Month>11</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2012</Year>
+                <Month>02</Month>
+                <Day>17</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>02</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>3</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>3</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22405733</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(12)00242-X</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2012.02.064</ArticleId>
+            <ArticleId IdType="pmc">PMC3342474</ArticleId>
+            <ArticleId IdType="mid">NIHMS361220</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,1196 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25977800</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>05</Month>
+            <Day>15</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>12</Month>
+            <Day>08</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>16</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>1</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Scientific data</Title>
+                <ISOAbbreviation>Sci Data</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>An open science resource for establishing reliability and reproducibility in functional connectomics.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>140049</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1038/sdata.2014.49</ELocationID>
+            <Abstract>
+                <AbstractText>Efforts to identify meaningful functional imaging-based biomarkers are limited by the ability to reliably characterize inter-individual differences in human brain function. Although a growing number of connectomics-based measures are reported to have moderate to high test-retest reliability, the variability in data acquisition, experimental designs, and analytic methods precludes the ability to generalize results. The Consortium for Reliability and Reproducibility (CoRR) is working to address this challenge and establish test-retest reliability as a minimum standard for methods development in functional connectomics. Specifically, CoRR has aggregated 1,629 typical individuals' resting state fMRI (rfMRI) data (5,093 rfMRI scans) from 18 international sites, and is openly sharing them via the International Data-sharing Neuroimaging Initiative (INDI). To allow researchers to generate various estimates of reliability and reproducibility, a variety of data acquisition procedures and experimental designs are included. Similarly, to enable users to assess the impact of commonly encountered artifacts (for example, motion) on characterizations of inter-individual variation, datasets of varying quality are included.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zuo</LastName>
+                    <ForeName>Xi-Nian</ForeName>
+                    <Initials>XN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Anderson</LastName>
+                    <ForeName>Jeffrey S</ForeName>
+                    <Initials>JS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Neuroradiology, University of Utah , Salt Lake City, Utah 84132, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bellec</LastName>
+                    <ForeName>Pierre</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Unité de neuroimagerie fonctionnelle, Centre de recherche de l'institut universitaire de gériatrie de Montréal, Université de Montréal , Montreal, Quebec, Canada H3W 1W5.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Birn</LastName>
+                    <ForeName>Rasmus M</ForeName>
+                    <Initials>RM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, University of Wisconsin-Madison , Madison, Wisconsin 53719, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Biswal</LastName>
+                    <ForeName>Bharat B</ForeName>
+                    <Initials>BB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biomedical Engineering, New Jersey Institute of Technology , Newark, New Jersey 07102, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Blautzik</LastName>
+                    <ForeName>Janusch</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Clinical Radiology, Ludwig-Maximilians-University , 80336 Munich, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Breitner</LastName>
+                    <ForeName>John C S</ForeName>
+                    <Initials>JC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Studies on Prevention of Alzheimer's Disease, Department of Psychiatry, Douglas Institute, McGill University Faculty of Medicine , Montreal, Quebec, Canada H4H 1R3.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Buckner</LastName>
+                    <ForeName>Randy L</ForeName>
+                    <Initials>RL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Harvard University , Cambridge, Massachussetts 02138, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Calhoun</LastName>
+                    <ForeName>Vince D</ForeName>
+                    <Initials>VD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Mind Research Network , Albuquerque, New Mexico 87106, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Castellanos</LastName>
+                    <ForeName>F Xavier</ForeName>
+                    <Initials>FX</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Phyllis Green and Randolph Cōwen Institute for Pediatric Neuroscience, the Child Study Center at NYU Langone Medical Center , New York, New York 10016, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Antao</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Bing</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Hangzhou Normal University, Gongshu , Hangzhou, Zhejiang 311121, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Jiangtao</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Xu</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Colcombe</LastName>
+                    <ForeName>Stanley J</ForeName>
+                    <Initials>SJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Courtney</LastName>
+                    <ForeName>William</ForeName>
+                    <Initials>W</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Mind Research Network , Albuquerque, New Mexico 87106, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Craddock</LastName>
+                    <ForeName>R Cameron</ForeName>
+                    <Initials>RC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Di Martino</LastName>
+                    <ForeName>Adriana</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Phyllis Green and Randolph Cōwen Institute for Pediatric Neuroscience, the Child Study Center at NYU Langone Medical Center , New York, New York 10016, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dong</LastName>
+                    <ForeName>Hao-Ming</ForeName>
+                    <Initials>HM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fu</LastName>
+                    <ForeName>Xiaolan</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; State Key Laboratory of Brain and Cognitive Science, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gong</LastName>
+                    <ForeName>Qiyong</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Huaxi MR Research Center (HMRRC), Department of Radiology, West China Hospital of Sichuan University, Wuhou , Chengdu, Sichuan 610041, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gorgolewski</LastName>
+                    <ForeName>Krzysztof J</ForeName>
+                    <Initials>KJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Max Planck Research Group for Neuroanatomy &amp; Connectivity, Max Planck Institute for Human Cognitive and Brain Sciences , 04103 Leipzig, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Han</LastName>
+                    <ForeName>Ying</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurology, Xuanwu Hospital, Capital Medical University , Xicheng, Beijing 100053, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>He</LastName>
+                    <ForeName>Ye</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>He</LastName>
+                    <ForeName>Yong</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University , Haidian, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ho</LastName>
+                    <ForeName>Erica</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Holmes</LastName>
+                    <ForeName>Avram</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Yale University , New Haven, Connecticut 06511, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hou</LastName>
+                    <ForeName>Xiao-Hui</ForeName>
+                    <Initials>XH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Huckins</LastName>
+                    <ForeName>Jeremy</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychological and Brain Sciences, Center for Cognitive Neuroscience, Dartmouth College , Hanover, New Hampshire 03755, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiang</LastName>
+                    <ForeName>Tianzi</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center and National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences , Haidian, Beijing 100190, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiang</LastName>
+                    <ForeName>Yi</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kelley</LastName>
+                    <ForeName>William</ForeName>
+                    <Initials>W</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychological and Brain Sciences, Center for Cognitive Neuroscience, Dartmouth College , Hanover, New Hampshire 03755, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kelly</LastName>
+                    <ForeName>Clare</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Phyllis Green and Randolph Cōwen Institute for Pediatric Neuroscience, the Child Study Center at NYU Langone Medical Center , New York, New York 10016, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>King</LastName>
+                    <ForeName>Margaret</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Mind Research Network , Albuquerque, New Mexico 87106, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>LaConte</LastName>
+                    <ForeName>Stephen M</ForeName>
+                    <Initials>SM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Virginia Tech Carilion Research Institute , Roanoke, Virginia 24016, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lainhart</LastName>
+                    <ForeName>Janet E</ForeName>
+                    <Initials>JE</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, University of Wisconsin-Madison , Madison, Wisconsin 53719, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lei</LastName>
+                    <ForeName>Xu</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Hui-Jie</ForeName>
+                    <Initials>HJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Kaiming</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Huaxi MR Research Center (HMRRC), Department of Radiology, West China Hospital of Sichuan University, Wuhou , Chengdu, Sichuan 610041, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Kuncheng</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, Xuanwu Hospital, Capital Medical University , Xicheng, Beijing 100053, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lin</LastName>
+                    <ForeName>Qixiang</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University , Haidian, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Dongqiang</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Hangzhou Normal University, Gongshu , Hangzhou, Zhejiang 311121, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Jia</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University , Haidian, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Xun</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Yijun</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lu</LastName>
+                    <ForeName>Guangming</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Imaging, Jinling Hospital, School of Medicine, Nanjing University, Xuanwu , Nanjing, Jiangsu 210002, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lu</LastName>
+                    <ForeName>Jie</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, Xuanwu Hospital, Capital Medical University , Xicheng, Beijing 100053, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Luna</LastName>
+                    <ForeName>Beatriz</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, School of Medicine, University of Pittsburgh , Pittsburgh, Pennsylvania 15213, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Luo</LastName>
+                    <ForeName>Jing</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Beijing Key Laboratory of Learning and Cognition, Department of Psychology, Capital Normal University , Haidian, Beijing 100048, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lurie</LastName>
+                    <ForeName>Daniel</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mao</LastName>
+                    <ForeName>Ying</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurosurgery, Huashan Hospital, Fudan University , Jingan, Shanghai 200040, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Margulies</LastName>
+                    <ForeName>Daniel S</ForeName>
+                    <Initials>DS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Max Planck Research Group for Neuroanatomy &amp; Connectivity, Max Planck Institute for Human Cognitive and Brain Sciences , 04103 Leipzig, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mayer</LastName>
+                    <ForeName>Andrew R</ForeName>
+                    <Initials>AR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Mind Research Network , Albuquerque, New Mexico 87106, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Meindl</LastName>
+                    <ForeName>Thomas</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Clinical Radiology, Ludwig-Maximilians-University , 80336 Munich, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Meyerand</LastName>
+                    <ForeName>Mary E</ForeName>
+                    <Initials>ME</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biomedical Engineering, University of Wisconsin-Madison , Madison, Wisconsin 53705, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Nan</LastName>
+                    <ForeName>Weizhi</ForeName>
+                    <Initials>W</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Nielsen</LastName>
+                    <ForeName>Jared A</ForeName>
+                    <Initials>JA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Neuroradiology, University of Utah , Salt Lake City, Utah 84132, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>O'Connor</LastName>
+                    <ForeName>David</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Paulsen</LastName>
+                    <ForeName>David</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, School of Medicine, University of Pittsburgh , Pittsburgh, Pennsylvania 15213, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Prabhakaran</LastName>
+                    <ForeName>Vivek</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, University of Wisconsin-Madison , Madison, Wisconsin 53705, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Qi</LastName>
+                    <ForeName>Zhigang</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, Xuanwu Hospital, Capital Medical University , Xicheng, Beijing 100053, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Qiu</LastName>
+                    <ForeName>Jiang</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shao</LastName>
+                    <ForeName>Chunhong</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Huashan Hospital, Fudan University , Jingan, Shanghai 200021, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shehzad</LastName>
+                    <ForeName>Zarrar</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tang</LastName>
+                    <ForeName>Weijun</ForeName>
+                    <Initials>W</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, Huashan Hospital, Fudan University , Jingan, Shanghai 200040, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Villringer</LastName>
+                    <ForeName>Arno</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences , Leipzig 04103, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Huiling</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Renmin Hospital of Wuhan University , Wuhan, Hubei 430060, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Kai</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wei</LastName>
+                    <ForeName>Dongtao</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wei</LastName>
+                    <ForeName>Gao-Xia</ForeName>
+                    <Initials>GX</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Weng</LastName>
+                    <ForeName>Xu-Chu</ForeName>
+                    <Initials>XC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Hangzhou Normal University, Gongshu , Hangzhou, Zhejiang 311121, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wu</LastName>
+                    <ForeName>Xuehai</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurosurgery, Huashan Hospital, Fudan University , Jingan, Shanghai 200040, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xu</LastName>
+                    <ForeName>Ting</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yang</LastName>
+                    <ForeName>Ning</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yang</LastName>
+                    <ForeName>Zhi</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zang</LastName>
+                    <ForeName>Yu-Feng</ForeName>
+                    <Initials>YF</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Hangzhou Normal University, Gongshu , Hangzhou, Zhejiang 311121, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Lei</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Qinglin</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Faculty of Psychology, Southwest University , Beibei, Chongqing 400715, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Zhe</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Zhiqiang</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Imaging, Jinling Hospital, School of Medicine, Nanjing University, Xuanwu , Nanjing, Jiangsu 210002, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhao</LastName>
+                    <ForeName>Ke</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhen</LastName>
+                    <ForeName>Zonglei</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning and IDG/McGovern Institute for Brain Research, Beijing Normal University , Haidian, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhou</LastName>
+                    <ForeName>Yuan</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhu</LastName>
+                    <ForeName>Xing-Ting</ForeName>
+                    <Initials>XT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science and Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences , Chaoyang, Beijing 100101, China ; University of Chinese Academy of Sciences , Shijingshan, Beijing 100049, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Milham</LastName>
+                    <ForeName>Michael P</ForeName>
+                    <Initials>MP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research , Orangeburg, New York 10962, USA ; Center for the Developing Brain, Child Mind Institute , New York, New York 10022, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 DA040487</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K08 MH092697</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R24 HD050836</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH080243</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 MH084126</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH081218</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K01 MH099232</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 NS064464</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 DA022582</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH083246</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH094639</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D064886">Dataset</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>09</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Sci Data</MedlineTA>
+            <NlmUniqueID>101640192</NlmUniqueID>
+            <ISSNLinking>2052-4463</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2007 Jan;25(1):35-46</RefSource>
+                <PMID Version="1">17222713</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2012 Jul;36(1):39-54</RefSource>
+                <PMID Version="1">22314879</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2015 Sep;220(5):2485-507</RefSource>
+                <PMID Version="1">24903825</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Jan;18(1):10-27</RefSource>
+                <PMID Version="1">12507440</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):782-90</RefSource>
+                <PMID Version="1">21979382</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Mar;33(3):609-27</RefSource>
+                <PMID Version="1">21455942</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 15;63(1):403-14</RefSource>
+                <PMID Version="1">22789741</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Nov 10;30(45):15034-43</RefSource>
+                <PMID Version="1">21068309</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Appl Math. 2013 May 21;2013:null</RefSource>
+                <PMID Version="1">24415902</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014;9(1):e85880</RefSource>
+                <PMID Version="1">24475058</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 May;17(5):652-60</RefSource>
+                <PMID Version="1">24686784</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1299-314</RefSource>
+                <PMID Version="1">21871573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Aug;29(8):958-72</RefSource>
+                <PMID Version="1">17636563</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Apr 15;90:449-68</RefSource>
+                <PMID Version="1">24389422</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 May;22(1):394-400</RefSource>
+                <PMID Version="1">15110032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 15;65:374-86</RefSource>
+                <PMID Version="1">23085497</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(2):e31147</RefSource>
+                <PMID Version="1">22383999</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(12):e49847</RefSource>
+                <PMID Version="1">23227153</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:527-40</RefSource>
+                <PMID Version="1">23631991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Dec 26;7:910</RefSource>
+                <PMID Version="1">24421764</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2014 Jul;32(6):771-80</RefSource>
+                <PMID Version="1">24602825</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2010 Jan;103(1):297-321</RefSource>
+                <PMID Version="1">19889849</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2011 May;21(5):1134-46</RefSource>
+                <PMID Version="1">20943668</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2014 Apr 22;111(16):6058-62</RefSource>
+                <PMID Version="1">24711399</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):791-800</RefSource>
+                <PMID Version="1">22023741</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:246-62</RefSource>
+                <PMID Version="1">23631983</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2012 Dec;17(12):1174-9</RefSource>
+                <PMID Version="1">22869033</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Mar 1;55(1):165-75</RefSource>
+                <PMID Version="1">21134471</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Dec 23;5:33</RefSource>
+                <PMID Version="1">22275896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Nov 15;82:683-91</RefSource>
+                <PMID Version="1">23123682</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013;8(7):e68910</RefSource>
+                <PMID Version="1">23861951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Apr 03;6:7</RefSource>
+                <PMID Version="1">22493575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 Aug;22(8):1862-75</RefSource>
+                <PMID Version="1">21968567</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Nov 15;82:306-25</RefSource>
+                <PMID Version="1">23727534</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 15;49(2):1432-45</RefSource>
+                <PMID Version="1">19782143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jul 1;94:396-407</RefSource>
+                <PMID Version="1">24345387</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Aug 1;76:183-201</RefSource>
+                <PMID Version="1">23499792</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2001 Nov;14(3):140-51</RefSource>
+                <PMID Version="1">11559959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(3):e32766</RefSource>
+                <PMID Version="1">22412922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Dec;83:969-82</RefSource>
+                <PMID Version="1">23899725</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):774-81</RefSource>
+                <PMID Version="1">22248573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2011 Mar 10;471(7337):170-2</RefSource>
+                <PMID Version="1">21390119</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 1;37(4):1286-300</RefSource>
+                <PMID Version="1">17689982</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):1059-69</RefSource>
+                <PMID Version="1">19819337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Jun;29(6):711-25</RefSource>
+                <PMID Version="1">17598162</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):743-7</RefSource>
+                <PMID Version="1">21889996</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2014 Sep;45:100-18</RefSource>
+                <PMID Version="1">24875392</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc IEEE Int Symp Biomed Imaging. 2012;:22-26</RefSource>
+                <PMID Version="1">23595508</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2009 Jul 9;460(7252):202-7</RefSource>
+                <PMID Version="1">19587761</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2010 Feb 25;65(4):550-62</RefSource>
+                <PMID Version="1">20188659</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2013;3(4):339-52</RefSource>
+                <PMID Version="1">23705677</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(9):e25031</RefSource>
+                <PMID Version="1">21949842</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jan 1;84:320-41</RefSource>
+                <PMID Version="1">23994314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Data. 2015;2:140054</RefSource>
+                <PMID Version="1">25977805</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2013 Dec;17(12):666-82</RefSource>
+                <PMID Version="1">24238796</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jul 16;61(4):1471-83</RefSource>
+                <PMID Version="1">22446491</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2011 Sep;106(3):1125-65</RefSource>
+                <PMID Version="1">21653723</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Digit Imaging. 2006 Jun;19(2):140-7</RefSource>
+                <PMID Version="1">16598643</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 14;4:13</RefSource>
+                <PMID Version="1">20577591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Dec;83:550-8</RefSource>
+                <PMID Version="1">23747458</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2003 Jan 7;100(1):253-8</RefSource>
+                <PMID Version="1">12506194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(10):e26703</RefSource>
+                <PMID Version="1">22066005</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2009 Aug;62(2):365-72</RefSource>
+                <PMID Version="1">19526493</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2013 Jul;16(7):832-7</RefSource>
+                <PMID Version="1">23799476</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Jun 21;74(6):970-4</RefSource>
+                <PMID Version="1">22726828</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jul 15;95:232-47</RefSource>
+                <PMID Version="1">24657355</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2013;3(5):523-35</RefSource>
+                <PMID Version="1">23980912</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2012;2(3):125-41</RefSource>
+                <PMID Version="1">22642651</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2008 Jul 15;172(1):137-41</RefSource>
+                <PMID Version="1">18501969</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2005 May 29;360(1457):1001-13</RefSource>
+                <PMID Version="1">16087444</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Apr;15(4):747-71</RefSource>
+                <PMID Version="1">11906218</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2012 Mar;16(3):181-8</RefSource>
+                <PMID Version="1">22341211</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Jan 26;73(2):214-8</RefSource>
+                <PMID Version="1">22284177</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="Y">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066264" MajorTopicYN="N">Datasets as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015203" MajorTopicYN="N">Reproducibility of Results</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4421932</OtherID>
+        <GeneralNote Owner="NLM">Original DateCompleted: 20150515</GeneralNote>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>06</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>10</Month>
+                <Day>14</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>1</Month>
+                <Day>1</Day>
+                <Hour>0</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>1</Month>
+                <Day>1</Day>
+                <Hour>0</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25977800</ArticleId>
+            <ArticleId IdType="doi">10.1038/sdata.2014.49</ArticleId>
+            <ArticleId IdType="pmc">PMC4421932</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

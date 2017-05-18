@@ -205,5 +205,5 @@ bad_data = list(no_pdfs) + empty_paragraphs
 data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
 
 
-print([i for i in range(0, 1560) if i not in paragraph_dict and i not in bad_data])
+print(len(pdfs))
 

@@ -1,0 +1,269 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27397632</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>07</Month>
+            <Day>11</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1097-0258</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>35</Volume>
+                    <Issue>27</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Nov</Month>
+                        <Day>30</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Statistics in medicine</Title>
+                <ISOAbbreviation>Stat Med</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Edgewise and subgraph-level tests for brain networks.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>4994-5008</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1002/sim.7039</ELocationID>
+            <Abstract>
+                <AbstractText>Resting-state functional magnetic resonance image is a useful technique for investigating brain functional connectivity at rest. In this work, we develop flexible regression models and methods for determining differences in resting-state functional connectivity as a function of age, gender, drug intervention, or neuropsychiatric disorders. We propose two complementary methods for identifying changes of edges and subgraphs. (i) For detecting changes of edges, we select the optimal model at each edge and then conduct contrast tests to identify the effects of the important variables while controlling the familywise error rate. (ii) We adopt the network-based statistics method to improve power by incorporating the graph topological structure. Both methods have wide applications for low signal-to-noise ratio data. We propose stability criteria for the choice of threshold in the network-based statistics procedure and utilize efficient massive parallel procedure to speed up the estimation and inference procedure. Results from our simulation studies show that the thresholds chosen by the proposed stability criteria outperform the Bonferroni threshold. To demonstrate applicability, we use both methods in the context of the Oxytocin and Aging Study to determine effects of age, gender, and drug treatment on resting-state functional connectivity, as well as in the context of the Autism Brain Imaging Data Exchange Study to determine effects of autism spectrum disorder on functional connectivity at rest. Copyright © 2016 John Wiley &amp; Sons, Ltd.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 John Wiley &amp; Sons, Ltd.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Chen</LastName>
+                    <ForeName>Huaihou</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of Florida, Gainesville, FL, U.S.A.. huaihouchen@ufl.edu.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognitive Aging and Memory (CAM), Institute on Aging, McKnight Brain Institute, Department of Aging Geriatric Research, University of Florida, Gainesville, FL, U.S.A.. huaihouchen@ufl.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhao</LastName>
+                    <ForeName>Bingxin</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of Florida, Gainesville, FL, U.S.A.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Porges</LastName>
+                    <ForeName>Eric C</ForeName>
+                    <Initials>EC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognitive Aging and Memory (CAM), Institute on Aging, McKnight Brain Institute, Department of Aging Geriatric Research, University of Florida, Gainesville, FL, U.S.A.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cohen</LastName>
+                    <ForeName>Ronald A</ForeName>
+                    <Initials>RA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognitive Aging and Memory (CAM), Institute on Aging, McKnight Brain Institute, Department of Aging Geriatric Research, University of Florida, Gainesville, FL, U.S.A.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ebner</LastName>
+                    <ForeName>Natalie C</ForeName>
+                    <Initials>NC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognitive Aging and Memory (CAM), Institute on Aging, McKnight Brain Institute, Department of Aging Geriatric Research, University of Florida, Gainesville, FL, U.S.A.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, University of Florida, Gainesville, FL, U.S.A.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>KL2 TR001429</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P30 AG028740</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>11</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Stat Med</MedlineTA>
+            <NlmUniqueID>8215016</NlmUniqueID>
+            <ISSNLinking>0277-6715</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 1998 Jun;121 ( Pt 6):1013-52</RefSource>
+                <PMID Version="1">9648540</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Nov 10;30(45):15034-43</RefSource>
+                <PMID Version="1">21068309</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2015 May 1;111:454-63</RefSource>
+                <PMID Version="1">25585020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1998 Jun;8(4):372-84</RefSource>
+                <PMID Version="1">9651132</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Nov 1;101:681-94</RefSource>
+                <PMID Version="1">25086298</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2016 Apr 12;10:108</RefSource>
+                <PMID Version="1">27147940</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA. 2014 May 7;311(17):1727-8</RefSource>
+                <PMID Version="1">24794359</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Dec;53(4):1197-207</RefSource>
+                <PMID Version="1">20600983</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Stat Assoc. 2014 Oct;109(508):1683-1696</RefSource>
+                <PMID Version="1">25642006</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2002 Jan;15(1):1-25</RefSource>
+                <PMID Version="1">11747097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychoneuroendocrinology. 2016 Jul;69:50-9</RefSource>
+                <PMID Version="1">27032063</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Cogn. 2000 Mar;42(2):183-200</RefSource>
+                <PMID Version="1">10744919</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Graph Stat. 2014 Jan 1;23(1):232-248</RefSource>
+                <PMID Version="1">24683303</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013 Jul 04;8(7):e68910</RefSource>
+                <PMID Version="1">23861951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Adv Neural Inf Process Syst. 2010 Dec 31;24(2):1432-1440</RefSource>
+                <PMID Version="1">25152607</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2000 Jul;10(3):120-31</RefSource>
+                <PMID Version="1">10912591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2012;2(3):125-41</RefSource>
+                <PMID Version="1">22642651</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 May;22(5):1025-37</RefSource>
+                <PMID Version="1">21784971</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2010 Jun;66(2):636-43</RefSource>
+                <PMID Version="1">19673867</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">graphical structure</Keyword>
+            <Keyword MajorTopicYN="N">network-based statistics</Keyword>
+            <Keyword MajorTopicYN="N">resting-state brain functional connectivity</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>11</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>05</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>06</Month>
+                <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pmc-release">
+                <Year>2017</Year>
+                <Month>11</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>7</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27397632</ArticleId>
+            <ArticleId IdType="doi">10.1002/sim.7039</ArticleId>
+            <ArticleId IdType="pmc">PMC5096985</ArticleId>
+            <ArticleId IdType="mid">NIHMS799651</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

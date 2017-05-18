@@ -1,0 +1,717 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26788282</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>01</Month>
+            <Day>20</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>04</Month>
+            <Day>19</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>7</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Molecular autism</Title>
+                <ISOAbbreviation>Mol Autism</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The effect of gender on the neuroanatomy of children with autism spectrum disorders: a support vector machine case-control study.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>5</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1186/s13229-015-0067-3</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Genetic, hormonal, and environmental factors contribute since infancy to sexual dimorphism in regional brain structures of subjects with typical development. However, the neuroanatomical differences between male and female children with autism spectrum disorders (ASD) are an intriguing and still poorly investigated issue. This study aims to evaluate whether the brain of young children with ASD exhibits sex-related structural differences and if a correlation exists between clinical ASD features and neuroanatomical underpinnings.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">A total of 152 structural MRI scans were analysed. Specifically, 76 young children with ASD (38 males and 38 females; 2-7 years of age; mean = 53 months, standard deviation = 17 months) were evaluated employing a support vector machine (SVM)-based analysis of the grey matter (GM). Group comparisons consisted of 76 age-, gender- and non-verbal-intelligence quotient-matched children with typical development or idiopathic developmental delay without autism.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">For both genders combined, SVM showed a significantly increased GM volume in young children with ASD with respect to control subjects, predominantly in the bilateral superior frontal gyrus (Brodmann area -BA- 10), bilateral precuneus (BA 31), bilateral superior temporal gyrus (BA 20/22), whereas less GM in patients with ASD was found in right inferior temporal gyrus (BA 37). For the within gender comparisons (i.e., females with ASD vs. controls and males with ASD vs. controls), two overlapping regions in bilateral precuneus (BA 31) and left superior frontal gyrus (BA 9/10) were detected. Sex-by-group analyses revealed in males with ASD compared to matched controls two male-specific regions of increased GM volume (left middle occipital gyrus-BA 19-and right superior temporal gyrus-BA 22). Comparisons in females with and without ASD demonstrated increased GM volumes predominantly in the bilateral frontal regions. Additional regions of significantly increased GM volume in the right anterior cingulate cortex (BA 32) and right cerebellum were typical only of females with ASD.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Despite the specific behavioural correlates of sex-dimorphism in ASD, brain morphology as yet remains unclear and requires future dedicated investigations. This study provides evidence of structural brain gender differences in young children with ASD that possibly contribute to the different phenotypic disease manifestations in males and females.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Retico</LastName>
+                    <ForeName>Alessandra</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Istituto Nazionale di Fisica Nucleare, Pisa Division, Largo B. Pontecorvo 3, 56127 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Giuliano</LastName>
+                    <ForeName>Alessia</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Istituto Nazionale di Fisica Nucleare, Pisa Division, Largo B. Pontecorvo 3, 56127 Pisa, Italy ; University of Pisa, Department of Physics, Largo B. Pontecorvo 3, 56127 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tancredi</LastName>
+                    <ForeName>Raffaella</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cosenza</LastName>
+                    <ForeName>Angela</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Apicella</LastName>
+                    <ForeName>Fabio</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Narzisi</LastName>
+                    <ForeName>Antonio</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Biagi</LastName>
+                    <ForeName>Laura</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tosetti</LastName>
+                    <ForeName>Michela</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Muratori</LastName>
+                    <ForeName>Filippo</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy ; University of Pisa, Department of Clinical and Experimental Medicine, Via Savi 10, 56126 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Calderoni</LastName>
+                    <ForeName>Sara</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>IRCCS Stella Maris Foundation, viale del Tirreno 331, 56018 Pisa, Italy.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D003160">Comparative Study</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>19</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Mol Autism</MedlineTA>
+            <NlmUniqueID>101534222</NlmUniqueID>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2012 Jun;5(3):160-79</RefSource>
+                <PMID Version="1">22495912</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Med Child Neurol. 2007 May;49(5):361-6</RefSource>
+                <PMID Version="1">17489810</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage Clin. 2012 Oct 31;2:111-9</RefSource>
+                <PMID Version="1">24179764</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2000 Jun;30(3):205-23</RefSource>
+                <PMID Version="1">11055457</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014;9(7):e102251</RefSource>
+                <PMID Version="1">25029203</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Dir Psychol Sci. 2007 Oct 1;16(5):269-274</RefSource>
+                <PMID Version="1">19343102</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Hum Genet. 2012 May 4;90(5):879-87</RefSource>
+                <PMID Version="1">22503632</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2012 Mar;135(Pt 3):949-60</RefSource>
+                <PMID Version="1">22350062</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 1981 Oct;5(2):129-37</RefSource>
+                <PMID Version="1">6945608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2012 Aug;51(8):788-97</RefSource>
+                <PMID Version="1">22840550</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Jun;31(6):835-7</RefSource>
+                <PMID Version="1">20496374</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Aug 1;57(3):918-27</RefSource>
+                <PMID Version="1">21609768</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Sep 15;58(2):469-80</RefSource>
+                <PMID Version="1">21718788</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Coll Radiol. 2006 Jun;3(6):413-22</RefSource>
+                <PMID Version="1">17412096</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neuroimaging. 2015 Nov-Dec;25(6):866-74</RefSource>
+                <PMID Version="1">26214066</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 1;49(1):44-56</RefSource>
+                <PMID Version="1">19683584</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2003 Feb;7(2):77-83</RefSource>
+                <PMID Version="1">12584026</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 1999 Oct;2(10):861-3</RefSource>
+                <PMID Version="1">10491603</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1209-17</RefSource>
+                <PMID Version="1">21864688</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 1998 Jun;121 ( Pt 6):1013-52</RefSource>
+                <PMID Version="1">9648540</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Aug;16(4):1038-51</RefSource>
+                <PMID Version="1">12202091</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2013 May;14(5):365-76</RefSource>
+                <PMID Version="1">23571845</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Nov 19;28(47):12176-82</RefSource>
+                <PMID Version="1">19020011</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2012 Jan;33(1):83-9</RefSource>
+                <PMID Version="1">22173769</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2015 Mar;20(3):369-76</RefSource>
+                <PMID Version="1">24888361</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cerebellum. 2012 Sep;11(3):777-807</RefSource>
+                <PMID Version="1">22370873</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2012 Jun;169(6):601-8</RefSource>
+                <PMID Version="1">22684595</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2000 Jun;83(6):3575-7</RefSource>
+                <PMID Version="1">10848573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Funct Neurol. 2014 Oct-Dec;29(4):231-9</RefSource>
+                <PMID Version="1">25764253</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2005 Dec;62(12):1366-76</RefSource>
+                <PMID Version="1">16330725</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Psychiatry. 1983 Apr;142:373-8</RefSource>
+                <PMID Version="1">6850175</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Res Dev Disabil. 2013 Jan;34(1):413-22</RefSource>
+                <PMID Version="1">23023300</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2009 Nov 15;66(10):942-9</RefSource>
+                <PMID Version="1">19726029</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2008 Mar;131(Pt 3):681-9</RefSource>
+                <PMID Version="1">18202106</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1999 Aug 3;96(16):9379-84</RefSource>
+                <PMID Version="1">10430951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Autism. 2014 Feb 24;5(1):17</RefSource>
+                <PMID Version="1">24564936</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Cogn Brain Res. 2000 Jun;9(3):227-38</RefSource>
+                <PMID Version="1">10808134</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acta Neuropathol. 2006 Sep;112(3):287-303</RefSource>
+                <PMID Version="1">16819561</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 Jan 11;32(2):674-80</RefSource>
+                <PMID Version="1">22238103</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Oct 30;7:733</RefSource>
+                <PMID Version="1">24198778</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>N Engl J Med. 2014 Mar 27;370(13):1209-19</RefSource>
+                <PMID Version="1">24670167</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2009 Jan;39(1):135-41</RefSource>
+                <PMID Version="1">18629624</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Oct 15;43(1):44-58</RefSource>
+                <PMID Version="1">18672070</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2009 Dec;39(12):1715-22</RefSource>
+                <PMID Version="1">19582563</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2009 Jan;39(1):188-93</RefSource>
+                <PMID Version="1">18594959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2004 Sep 22;24(38):8223-31</RefSource>
+                <PMID Version="1">15385605</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2002 Jun 1;6(6):248-254</RefSource>
+                <PMID Version="1">12039606</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 1;50(2):589-99</RefSource>
+                <PMID Version="1">20026220</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Vision Res. 2009 Nov;49(22):2705-39</RefSource>
+                <PMID Version="1">19682485</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2006 Mar;129(Pt 3):564-83</RefSource>
+                <PMID Version="1">16399806</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Disabil Health J. 2010 Apr;3(2):107-16</RefSource>
+                <PMID Version="1">21122776</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 Mar;68(3):295-305</RefSource>
+                <PMID Version="1">21041609</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2000 Jun;4(6):215-222</RefSource>
+                <PMID Version="1">10827444</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2010 Nov 11;1360:205-12</RefSource>
+                <PMID Version="1">20833154</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2013 Sep;136(Pt 9):2799-815</RefSource>
+                <PMID Version="1">23935125</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Dec 13;6:178</RefSource>
+                <PMID Version="1">23248579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2013 Sep;136(Pt 9):2825-35</RefSource>
+                <PMID Version="1">23838695</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Jan;21(1):46-57</RefSource>
+                <PMID Version="1">14741641</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jun;61(2):457-63</RefSource>
+                <PMID Version="1">22094642</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 15;38(1):95-113</RefSource>
+                <PMID Version="1">17761438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Aug 07;7:458</RefSource>
+                <PMID Version="1">23966925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2012 Jan;42(1):48-59</RefSource>
+                <PMID Version="1">21442362</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Apr;36(4):1140-52</RefSource>
+                <PMID Version="1">22305994</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2007 Oct 25;56(2):399-413</RefSource>
+                <PMID Version="1">17964254</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Oct 1;58(3):793-804</RefSource>
+                <PMID Version="1">21723950</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2002 Jul 23;59(2):184-92</RefSource>
+                <PMID Version="1">12136055</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2008;32(1):123-42</RefSource>
+                <PMID Version="1">17706781</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2011 Nov 1;70(9):833-41</RefSource>
+                <PMID Version="1">21890111</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1013-22</RefSource>
+                <PMID Version="1">21896334</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Aug 1;52(1):290-301</RefSource>
+                <PMID Version="1">20385244</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2009 Apr 30;172(1):61-7</RefSource>
+                <PMID Version="1">19243924</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2001 Jul 24;57(2):245-54</RefSource>
+                <PMID Version="1">11468308</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2011 Jun 23;70(6):1218-25</RefSource>
+                <PMID Version="1">21689606</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2014 Mar;44(3):627-35</RefSource>
+                <PMID Version="1">23989936</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Mar 24;30(12):4419-27</RefSource>
+                <PMID Version="1">20335478</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 1993 Dec;23(4):579-91</RefSource>
+                <PMID Version="1">8106301</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2005 Nov 4;310(5749):819-23</RefSource>
+                <PMID Version="1">16272115</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2015 Jan;54(1):11-24</RefSource>
+                <PMID Version="1">25524786</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2003 Feb 28;358(1430):345-60</RefSource>
+                <PMID Version="1">12639332</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Res Dev Disabil. 2011 Mar-Apr;32(2):768-73</RefSource>
+                <PMID Version="1">21208775</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Child Adolesc Psychiatry. 2000 Sep;9(3):180-5</RefSource>
+                <PMID Version="1">11095040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2007 Jan;37(1):86-97</RefSource>
+                <PMID Version="1">17216333</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2014 Jul;44(7):1633-40</RefSource>
+                <PMID Version="1">24419870</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 15;44(2):489-501</RefSource>
+                <PMID Version="1">18835452</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 May;68(5):467-76</RefSource>
+                <PMID Version="1">21536976</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2014 Feb;39:34-50</RefSource>
+                <PMID Version="1">24374381</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2014 Mar;53(3):329-40.e1-3</RefSource>
+                <PMID Version="1">24565360</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Psychopathol. 2002 Spring;14(2):239-51</RefSource>
+                <PMID Version="1">12030690</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 1999 Jul;122 ( Pt 7):1317-25</RefSource>
+                <PMID Version="1">10388797</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2015 Apr;51:263-75</RefSource>
+                <PMID Version="1">25660957</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2007 Apr;46(4):515-23</RefSource>
+                <PMID Version="1">17420687</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Aug 11;30(32):10612-23</RefSource>
+                <PMID Version="1">20702694</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2009 May;39(5):693-705</RefSource>
+                <PMID Version="1">19082876</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cognition. 1985 Oct;21(1):37-46</RefSource>
+                <PMID Version="1">2934210</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2011 Jun;52(6):631-44</RefSource>
+                <PMID Version="1">21244421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Dec;28(4):980-95</RefSource>
+                <PMID Version="1">16275139</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2011 Jun;9(6):e1001081</RefSource>
+                <PMID Version="1">21695109</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Jan 16;98(2):676-82</RefSource>
+                <PMID Version="1">11209064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2012 Dec;42(12):2585-96</RefSource>
+                <PMID Version="1">22453928</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Psychiatry. 2008 Jun;23(4):289-99</RefSource>
+                <PMID Version="1">17765485</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2004 Oct 20;24(42):9228-31</RefSource>
+                <PMID Version="1">15496656</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2009 Mar;21(3):489-510</RefSource>
+                <PMID Version="1">18510452</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropathol Appl Neurobiol. 2016 Feb;42(2):115-34</RefSource>
+                <PMID Version="1">25630827</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2016 Apr;26(4):1440-52</RefSource>
+                <PMID Version="1">25316335</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2000 Apr;57(4):331-40</RefSource>
+                <PMID Version="1">10768694</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neuropathol Exp Neurol. 2014 Sep;73(9):891-902</RefSource>
+                <PMID Version="1">25101703</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2013 Dec;6(6):596-604</RefSource>
+                <PMID Version="1">23873852</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2011 Dec 13;108(50):20195-200</RefSource>
+                <PMID Version="1">22123952</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2008 Mar;31(3):137-45</RefSource>
+                <PMID Version="1">18258309</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2011 Dec;134(Pt 12):3742-54</RefSource>
+                <PMID Version="1">22006979</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jun;11(6 Pt 1):805-21</RefSource>
+                <PMID Version="1">10860804</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2012 Aug;5(4):267-76</RefSource>
+                <PMID Version="1">22628087</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D019540" MajorTopicYN="N">Area Under Curve</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000067877" MajorTopicYN="N">Autism Spectrum Disorder</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002555" MajorTopicYN="N">Cerebrospinal Fluid</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002675" MajorTopicYN="N">Child, Preschool</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066128" MajorTopicYN="N">Gray Matter</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007223" MajorTopicYN="N">Infant</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007360" MajorTopicYN="N">Intelligence</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D059906" MajorTopicYN="N">Neuroimaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009929" MajorTopicYN="N">Organ Size</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010641" MajorTopicYN="N">Phenotype</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012107" MajorTopicYN="N">Research Design</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012720" MajorTopicYN="N">Severity of Illness Index</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012727" MajorTopicYN="Y">Sex Characteristics</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D060388" MajorTopicYN="N">Support Vector Machine</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066127" MajorTopicYN="N">White Matter</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="N">pathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4717545</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Autism spectrum disorders</Keyword>
+            <Keyword MajorTopicYN="N">Gender differences</Keyword>
+            <Keyword MajorTopicYN="N">Structural MRI</Keyword>
+            <Keyword MajorTopicYN="N">Support vector machine</Keyword>
+            <Keyword MajorTopicYN="N">Young children</Keyword>
+        </KeywordList>
+        <GeneralNote Owner="NLM">Original DateCompleted: 20160120</GeneralNote>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>07</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>12</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26788282</ArticleId>
+            <ArticleId IdType="doi">10.1186/s13229-015-0067-3</ArticleId>
+            <ArticleId IdType="pii">67</ArticleId>
+            <ArticleId IdType="pmc">PMC4717545</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

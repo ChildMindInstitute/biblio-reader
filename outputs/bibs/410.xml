@@ -1,0 +1,427 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25386919</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>11</Month>
+            <Day>12</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>05</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1932-6203</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>9</Volume>
+                    <Issue>11</Issue>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PloS one</Title>
+                <ISOAbbreviation>PLoS ONE</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Connectotyping: model based fingerprinting of the functional connectome.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e111048</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0111048</ELocationID>
+            <Abstract>
+                <AbstractText>A better characterization of how an individual's brain is functionally organized will likely bring dramatic advances to many fields of study. Here we show a model-based approach toward characterizing resting state functional connectivity MRI (rs-fcMRI) that is capable of identifying a so-called &quot;connectotype&quot;, or functional fingerprint in individual participants. The approach rests on a simple linear model that proposes the activity of a given brain region can be described by the weighted sum of its functional neighboring regions. The resulting coefficients correspond to a personalized model-based connectivity matrix that is capable of predicting the timeseries of each subject. Importantly, the model itself is subject specific and has the ability to predict an individual at a later date using a limited number of non-sequential frames. While we show that there is a significant amount of shared variance between models across subjects, the model's ability to discriminate an individual is driven by unique connections in higher order control regions in frontal and parietal cortices. Furthermore, we show that the connectotype is present in non-human primates as well, highlighting the translational potential of the approach.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Miranda-Dominguez</LastName>
+                    <ForeName>Oscar</ForeName>
+                    <Initials>O</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mills</LastName>
+                    <ForeName>Brian D</ForeName>
+                    <Initials>BD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Carpenter</LastName>
+                    <ForeName>Samuel D</ForeName>
+                    <Initials>SD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Grant</LastName>
+                    <ForeName>Kathleen A</ForeName>
+                    <Initials>KA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America; Division of Neuroscience, Oregon National Primate Research Center, Beaverton, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kroenke</LastName>
+                    <ForeName>Christopher D</ForeName>
+                    <Initials>CD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America; Advanced Imaging Research Center, Oregon Health and Science University, Portland, Oregon, United States of America; Division of Neuroscience, Oregon National Primate Research Center, Beaverton, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Nigg</LastName>
+                    <ForeName>Joel T</ForeName>
+                    <Initials>JT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Oregon Health &amp; Science University, Portland, Oregon, United States of America; Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fair</LastName>
+                    <ForeName>Damien A</ForeName>
+                    <Initials>DA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Behavioral Neuroscience, Oregon Health &amp; Science University, Portland, Oregon, United States of America; Advanced Imaging Research Center, Oregon Health and Science University, Portland, Oregon, United States of America; Department of Psychiatry, Oregon Health &amp; Science University, Portland, Oregon, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>U01 AA013510</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>T32 DA007262</GrantID>
+                    <Acronym>DA</Acronym>
+                    <Agency>NIDA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>AA109431</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH096773</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>K99/R00 MH091238</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH099064</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>AA13510</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P60 AA010760</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>1R01MH86654</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>11</Month>
+                <Day>11</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PLoS One</MedlineTA>
+            <NlmUniqueID>101285081</NlmUniqueID>
+            <ISSNLinking>1932-6203</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2006 Feb;7(2):153-60</RefSource>
+                <PMID Version="1">16429124</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2013 Feb 04;6:80</RefSource>
+                <PMID Version="1">23382713</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Apr 24;109(17):6769-74</RefSource>
+                <PMID Version="1">22474392</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1991 Jan-Feb;1(1):1-47</RefSource>
+                <PMID Version="1">1822724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2003 Jun 1;23(11):4689-99</RefSource>
+                <PMID Version="1">12805308</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2004 Jul;8(7):315-24</RefSource>
+                <PMID Version="1">15242691</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 Jan;24(1):17-36</RefSource>
+                <PMID Version="1">23010748</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2013 Feb 6;77(3):586-95</RefSource>
+                <PMID Version="1">23395382</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 15;59(4):3852-61</RefSource>
+                <PMID Version="1">22155039</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jul 15;75:165-75</RefSource>
+                <PMID Version="1">23501054</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Aug;19(4):1273-302</RefSource>
+                <PMID Version="1">12948688</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Biol. 2006 Nov 7;16(21):R910-4</RefSource>
+                <PMID Version="1">17084684</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Feb 1;49(3):2163-77</RefSource>
+                <PMID Version="1">19896537</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Nov 15;82:127-36</RefSource>
+                <PMID Version="1">23707580</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S97-107</RefSource>
+                <PMID Version="1">15501104</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2010 Sep 10;329(5997):1358-61</RefSource>
+                <PMID Version="1">20829489</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2009 Feb 17;7(2):e33</RefSource>
+                <PMID Version="1">19226186</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 15;49(2):1432-45</RefSource>
+                <PMID Version="1">19782143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Sep 12;103(37):13848-53</RefSource>
+                <PMID Version="1">16945915</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2014 Apr 16;34(16):5552-63</RefSource>
+                <PMID Version="1">24741045</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 2000 Dec 4;428(1):112-37</RefSource>
+                <PMID Version="1">11058227</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 15;63(1):310-9</RefSource>
+                <PMID Version="1">22732562</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2004 Nov;16(9):1505-16</RefSource>
+                <PMID Version="1">15601515</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 1992 Sep;49(9):728-38</RefSource>
+                <PMID Version="1">1514878</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2007 Oct 25;56(2):209-25</RefSource>
+                <PMID Version="1">17964241</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 1978 Jul;35(7):837-44</RefSource>
+                <PMID Version="1">678037</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1999 May;9(5):526-33</RefSource>
+                <PMID Version="1">10329292</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Feb 15;29(4):1359-67</RefSource>
+                <PMID Version="1">16260155</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Aug;33(8):1914-28</RefSource>
+                <PMID Version="1">21769991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Behav Evol. 2011;77(2):67-78</RefSource>
+                <PMID Version="1">21335939</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Sep 05;6:62</RefSource>
+                <PMID Version="1">22973200</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2005 May 29;360(1457):1001-13</RefSource>
+                <PMID Version="1">16087444</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 1;64:240-56</RefSource>
+                <PMID Version="1">22926292</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000465" MajorTopicYN="N">Algorithms</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005625" MajorTopicYN="N">Frontal Lobe</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008252" MajorTopicYN="N">Macaca fascicularis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008962" MajorTopicYN="N">Models, Theoretical</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010296" MajorTopicYN="N">Parietal Lobe</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4227655</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>03</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>09</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>11</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>11</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25386919</ArticleId>
+            <ArticleId IdType="doi">10.1371/journal.pone.0111048</ArticleId>
+            <ArticleId IdType="pii">PONE-D-14-09413</ArticleId>
+            <ArticleId IdType="pmc">PMC4227655</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

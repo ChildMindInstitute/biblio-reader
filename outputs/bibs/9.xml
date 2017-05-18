@@ -1,0 +1,384 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">21769991</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>07</Month>
+            <Day>18</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>11</Month>
+            <Day>19</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>25</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1097-0193</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>33</Volume>
+                    <Issue>8</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Aug</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Human brain mapping</Title>
+                <ISOAbbreviation>Hum Brain Mapp</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>A whole brain fMRI atlas generated via spatially constrained spectral clustering.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1914-28</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1002/hbm.21333</ELocationID>
+            <Abstract>
+                <AbstractText>Connectivity analyses and computational modeling of human brain function from fMRI data frequently require the specification of regions of interests (ROIs). Several analyses have relied on atlases derived from anatomical or cyto-architectonic boundaries to specify these ROIs, yet the suitability of atlases for resting state functional connectivity (FC) studies has yet to be established. This article introduces a data-driven method for generating an ROI atlas by parcellating whole brain resting-state fMRI data into spatially coherent regions of homogeneous FC. Several clustering statistics are used to compare methodological trade-offs as well as determine an adequate number of clusters. Additionally, we evaluate the suitability of the parcellation atlas against four ROI atlases (Talairach and Tournoux, Harvard-Oxford, Eickoff-Zilles, and Automatic Anatomical Labeling) and a random parcellation approach. The evaluated anatomical atlases exhibit poor ROI homogeneity and do not accurately reproduce FC patterns present at the voxel scale. In general, the proposed functional and random parcellations perform equivalently for most of the metrics evaluated. ROI size and hence the number of ROIs in a parcellation had the greatest impact on their suitability for FC analysis. With 200 or fewer ROIs, the resulting parcellations consist of ROIs with anatomic homology, and thus offer increased interpretability. Parcellation results containing higher numbers of ROIs (600 or 1,000) most accurately represent FC patterns present at the voxel scale and are preferable when interpretability can be sacrificed for accuracy. The resulting atlases and clustering software have been made publicly available at: http://www.nitrc.org/projects/cluster_roi/.</AbstractText>
+                <CopyrightInformation>Copyright © 2011 Wiley Periodicals, Inc.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Craddock</LastName>
+                    <ForeName>R Cameron</ForeName>
+                    <Initials>RC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neuroscience, Baylor College of Medicine, Houston, Texas, USA. cameron.craddock@vt.edu</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>James</LastName>
+                    <ForeName>G Andrew</ForeName>
+                    <Initials>GA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Holtzheimer</LastName>
+                    <ForeName>Paul E</ForeName>
+                    <Initials>PE</Initials>
+                    <Suffix>3rd</Suffix>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hu</LastName>
+                    <ForeName>Xiaoping P</ForeName>
+                    <Initials>XP</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mayberg</LastName>
+                    <ForeName>Helen S</ForeName>
+                    <Initials>HS</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>K23 MH077869</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P50 MH077083</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 EB002009</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH073719</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2011</Year>
+                <Month>07</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Hum Brain Mapp</MedlineTA>
+            <NlmUniqueID>9419065</NlmUniqueID>
+            <ISSNLinking>1065-9471</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2000 Jul;10(3):120-31</RefSource>
+                <PMID Version="1">10912591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 15;54(2):875-91</RefSource>
+                <PMID Version="1">20817103</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jan;15(1):273-89</RefSource>
+                <PMID Version="1">11771995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Sep;20(1):455-65</RefSource>
+                <PMID Version="1">14527606</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2003 Dec;20(4):220-6</RefSource>
+                <PMID Version="1">14673805</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 May;22(1):394-400</RefSource>
+                <PMID Version="1">15110032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Biomed Res. 1996 Jun;29(3):162-73</RefSource>
+                <PMID Version="1">8812068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 1997 Jan;120 ( Pt 1):141-57</RefSource>
+                <PMID Version="1">9055804</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 1997 Nov-Dec;7(6):1094-101</RefSource>
+                <PMID Version="1">9400854</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 1998;6(3):160-88</RefSource>
+                <PMID Version="1">9673671</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1999 Mar;9(3):298-310</RefSource>
+                <PMID Version="1">10075900</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1999 May;41(5):939-46</RefSource>
+                <PMID Version="1">10332877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 May 1;25(4):1325-35</RefSource>
+                <PMID Version="1">15850749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Jul 1;26(3):839-51</RefSource>
+                <PMID Version="1">15955494</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jan 1;29(1):54-66</RefSource>
+                <PMID Version="1">16099175</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Feb 15;29(4):1231-43</RefSource>
+                <PMID Version="1">16246590</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 May 1;30(4):1077-87</RefSource>
+                <PMID Version="1">16635579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2006 Aug;27(8):678-93</RefSource>
+                <PMID Version="1">16281292</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Nov 1;33(2):599-608</RefSource>
+                <PMID Version="1">16952467</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 15;37(2):579-88</RefSource>
+                <PMID Version="1">17604651</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2007 Sep 19;27(38):10259-69</RefSource>
+                <PMID Version="1">17881532</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2008;3(4):e2001</RefSource>
+                <PMID Version="1">18431486</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 May 15;41(1):45-57</RefSource>
+                <PMID Version="1">18367410</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Jan 28;29(4):1175-90</RefSource>
+                <PMID Version="1">19176826</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 May 1;45(4):1117-25</RefSource>
+                <PMID Version="1">19146962</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 May;30(5):1511-23</RefSource>
+                <PMID Version="1">18649353</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2009 Aug;22(4):331-9</RefSource>
+                <PMID Version="1">19512925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Aug;30(8):2336-55</RefSource>
+                <PMID Version="1">19034899</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Oct;19(10):2209-29</RefSource>
+                <PMID Version="1">19221144</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Nov 24;106(47):20069-74</RefSource>
+                <PMID Version="1">19903877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2009 Dec;62(6):1619-28</RefSource>
+                <PMID Version="1">19859933</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):970-83</RefSource>
+                <PMID Version="1">20035887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):1027-35</RefSource>
+                <PMID Version="1">20060479</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur J Neurosci. 2010 Aug;32(3):383-98</RefSource>
+                <PMID Version="1">20662902</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 2010 Sep;30(9):1551-7</RefSource>
+                <PMID Version="1">20571517</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2010 Sep 10;329(5997):1358-61</RefSource>
+                <PMID Version="1">20829489</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2001 Aug;22(7):1326-33</RefSource>
+                <PMID Version="1">11498421</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000716" MajorTopicYN="Y">Anatomy, Artistic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001271" MajorTopicYN="Y">Atlases as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016000" MajorTopicYN="N">Cluster Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007090" MajorTopicYN="N">Image Interpretation, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012984" MajorTopicYN="N">Software</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS518288</OtherID>
+        <OtherID Source="NLM">PMC3838923</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2010</Year>
+                <Month>07</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2011</Year>
+                <Month>03</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2011</Year>
+                <Month>03</Month>
+                <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2011</Year>
+                <Month>7</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2011</Year>
+                <Month>7</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>12</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">21769991</ArticleId>
+            <ArticleId IdType="doi">10.1002/hbm.21333</ArticleId>
+            <ArticleId IdType="pmc">PMC3838923</ArticleId>
+            <ArticleId IdType="mid">NIHMS518288</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

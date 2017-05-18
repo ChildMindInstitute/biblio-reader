@@ -1,0 +1,741 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26732133</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>02</Month>
+            <Day>19</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>15</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>01</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1469-7610</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>57</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of child psychology and psychiatry, and allied disciplines</Title>
+                <ISOAbbreviation>J Child Psychol Psychiatry</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Annual Research Review: Discovery science strategies in studies of the pathophysiology of child and adolescent psychiatric disorders--promises and limitations.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>421-39</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1111/jcpp.12503</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Psychiatric science remains descriptive, with a categorical nosology intended to enhance interobserver reliability. Increased awareness of the mismatch between categorical classifications and the complexity of biological systems drives the search for novel frameworks including discovery science in Big Data. In this review, we provide an overview of incipient approaches, primarily focused on classically categorical diagnoses such as schizophrenia (SZ), autism spectrum disorder (ASD), and attention-deficit/hyperactivity disorder (ADHD), but also reference convincing, if focal, advances in cancer biology, to describe the challenges of Big Data and discovery science, and outline approaches being formulated to overcome existing obstacles.</AbstractText>
+                <AbstractText Label="FINDINGS" NlmCategory="RESULTS">A paradigm shift from categorical diagnoses to a domain/structure-based nosology and from linear causal chains to complex causal network models of brain-behavior relationship is ongoing. This (r)evolution involves appreciating the complexity, dimensionality, and heterogeneity of neuropsychiatric data collected from multiple sources ('broad' data) along with data obtained at multiple levels of analysis, ranging from genes to molecules, cells, circuits, and behaviors ('deep' data). Both of these types of Big Data landscapes require the use and development of robust and powerful informatics and statistical approaches. Thus, we describe Big Data analysis pipelines and the promise and potential limitations in using Big Data approaches to study psychiatric disorders.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">We highlight key resources available for psychopathological studies and call for the application and development of Big Data approaches to dissect the causes and mechanisms of neuropsychiatric disorders and identify corresponding biomarkers for early diagnosis.</AbstractText>
+                <CopyrightInformation>© 2016 Association for Child and Adolescent Mental Health.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhao</LastName>
+                    <ForeName>Yihong</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child and Adolescent Psychiatry, The Child Study Center at NYU Langone Medical Center, New York, NY, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Castellanos</LastName>
+                    <ForeName>F Xavier</ForeName>
+                    <Initials>FX</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child and Adolescent Psychiatry, The Child Study Center at NYU Langone Medical Center, New York, NY, USA.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan S. Kline Institute for Psychiatric Research, Orangeburg, NY, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>U01 MH099059</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 AA023800</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 TR001445</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>KL2 TR000053</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21-AA023800</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U01MH099059</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1TR000038</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01MH094639</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH094639</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 TR000038</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>06</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>J Child Psychol Psychiatry</MedlineTA>
+            <NlmUniqueID>0375361</NlmUniqueID>
+            <ISSNLinking>0021-9630</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="CommentIn">
+                <RefSource>J Child Psychol Psychiatry. 2016 Mar;57(3):440-2</RefSource>
+                <PMID Version="1">26889901</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2006;2:267-90</RefSource>
+                <PMID Version="1">17716071</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2009 Oct 15;461(7266):908-15</RefSource>
+                <PMID Version="1">19829370</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2010 Nov;15(11):1053-66</RefSource>
+                <PMID Version="1">20157310</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 Jun 1;57(11):1324-35</RefSource>
+                <PMID Version="1">15950005</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurol. 2014 Feb;10(2):74-81</RefSource>
+                <PMID Version="1">24468882</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2010 Aug;167(8):899-914</RefSource>
+                <PMID Version="1">20439386</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 Jun;72(6):541-51</RefSource>
+                <PMID Version="1">25738424</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genome Biol. 2013;14(8):R94</RefSource>
+                <PMID Version="1">24000956</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Nov;17(11):1448-54</RefSource>
+                <PMID Version="1">25349911</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2013 Sep;45(9):984-94</RefSource>
+                <PMID Version="1">23933821</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2014 Dec;37(12):733-41</RefSource>
+                <PMID Version="1">25216981</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2002 Aug;3(8):617-28</RefSource>
+                <PMID Version="1">12154363</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2010 Dec;15(12):1126-7</RefSource>
+                <PMID Version="1">20351721</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014;9(4):e95875</RefSource>
+                <PMID Version="1">24776767</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2008 Feb;1(1):4-17</RefSource>
+                <PMID Version="1">19360646</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2012 May;44(5):545-51</RefSource>
+                <PMID Version="1">22504421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genet Epidemiol. 2010 Feb;34(2):188-93</RefSource>
+                <PMID Version="1">19810025</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2013;9:91-121</RefSource>
+                <PMID Version="1">23537483</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2013 Nov;14(11):810-4</RefSource>
+                <PMID Version="1">24135697</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Jun;17(6):791-800</RefSource>
+                <PMID Version="1">24866045</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2012 Jan 1;71(1):6-14</RefSource>
+                <PMID Version="1">21982424</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biochim Biophys Acta. 2015 Aug;1856(1):73-85</RefSource>
+                <PMID Version="1">26071880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1999 Oct 21;401(6755):788-91</RefSource>
+                <PMID Version="1">10548103</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2013 Sep 15;74(6):458-66</RefSource>
+                <PMID Version="1">23746539</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2014 Jul 24;511(7510):421-7</RefSource>
+                <PMID Version="1">25056061</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2013 Aug 9;341(6146):1237905</RefSource>
+                <PMID Version="1">23828890</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Natl Sci Rev. 2014 Jun;1(2):293-314</RefSource>
+                <PMID Version="1">25419469</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Stat. 2014 Jun 1;42(3):872-917</RefSource>
+                <PMID Version="1">25580040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2014 Mar;71(3):255-64</RefSource>
+                <PMID Version="1">24402055</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Med. 2011 Jul;41(7):1551-61</RefSource>
+                <PMID Version="1">21078228</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Genet. 2007 Jan;37(1):51-60</RefSource>
+                <PMID Version="1">16988798</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Res. 2016 Jan;102:56-66</RefSource>
+                <PMID Version="1">25150398</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2011 Jan;37(1):14-20</RefSource>
+                <PMID Version="1">21149852</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2010 Jul 30;183(1):59-68</RefSource>
+                <PMID Version="1">20553873</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dialogues Clin Neurosci. 2012 Mar;14(1):29-37</RefSource>
+                <PMID Version="1">22577302</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2015 Mar;56(3):296-8</RefSource>
+                <PMID Version="1">25714739</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2014 Apr;171(4):395-7</RefSource>
+                <PMID Version="1">24687194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2015 Apr 9;520(7546):224-9</RefSource>
+                <PMID Version="1">25607358</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Nov;17(11):1491-9</RefSource>
+                <PMID Version="1">25349915</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Child Adolesc Psychiatry. 2010 Mar;19(3):281-95</RefSource>
+                <PMID Version="1">20148275</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 Jun 1;57(11):1313-23</RefSource>
+                <PMID Version="1">15950004</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Med. 2007 Feb;37(2):163-80</RefSource>
+                <PMID Version="1">16978446</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet. 2009 Jan 17;373(9659):234-9</RefSource>
+                <PMID Version="1">19150704</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Med Genet B Neuropsychiatr Genet. 2010 Dec 5;153B(8):1373-90</RefSource>
+                <PMID Version="1">20886543</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 1997 Jun;36(6):737-44</RefSource>
+                <PMID Version="1">9183127</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2003 Apr;160(4):636-45</RefSource>
+                <PMID Version="1">12668349</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2012 Dec;15(12):1723-8</RefSource>
+                <PMID Version="1">23143521</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Hum Genet. 2011 Nov 11;89(5):607-18</RefSource>
+                <PMID Version="1">22077970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Med Genet B Neuropsychiatr Genet. 2014 Mar;165B(2):122-30</RefSource>
+                <PMID Version="1">24464604</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2014 Dec 3;84(5):892-905</RefSource>
+                <PMID Version="1">25475184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2011 Nov;16(11):1070-1</RefSource>
+                <PMID Version="1">21519340</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Nov;17(11):1442-7</RefSource>
+                <PMID Version="1">25349910</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Med Genet B Neuropsychiatr Genet. 2015 Mar;168B(2):89-96</RefSource>
+                <PMID Version="1">25656223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2014 Feb 13;506(7487):179-84</RefSource>
+                <PMID Version="1">24463507</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2014 Oct;55(10):1092-101</RefSource>
+                <PMID Version="1">24828285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Imaging Behav. 2014 Jun;8(2):153-82</RefSource>
+                <PMID Version="1">24399358</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychophysiology. 2014 Dec;51(12):1331-2</RefSource>
+                <PMID Version="1">25387716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Arch Psychiatry Clin Neurosci. 2014 Jun;264(4):333-43</RefSource>
+                <PMID Version="1">24173295</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Nov;17(11):1510-7</RefSource>
+                <PMID Version="1">25349916</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mamm Genome. 2014 Feb;25(1-2):23-31</RefSource>
+                <PMID Version="1">24085332</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2013;9:177-213</RefSource>
+                <PMID Version="1">23297790</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Psychiatry Rep. 2014 Nov;16(11):502</RefSource>
+                <PMID Version="1">25200985</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet. 2013 Apr 20;381(9875):1371-9</RefSource>
+                <PMID Version="1">23453885</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet Neurol. 2013 Apr;12(4):406-14</RefSource>
+                <PMID Version="1">23518333</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Child Adolesc Psychiatry. 2005 May;14(3):138-44</RefSource>
+                <PMID Version="1">15959659</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2015 Mar;20(3):289-97</RefSource>
+                <PMID Version="1">25600112</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Genet. 2014 Aug 26;5:280</RefSource>
+                <PMID Version="1">25206360</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2014 Jul;55(7):737-40</RefSource>
+                <PMID Version="1">24946896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Psychiatry. 2014 Aug 04;5:53</RefSource>
+                <PMID Version="1">25136320</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genes Brain Behav. 2014 Mar;13(3):276-85</RefSource>
+                <PMID Version="1">24373520</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2014 May 13;111(19):E2066-75</RefSource>
+                <PMID Version="1">24778245</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Feb;17(2):215-22</RefSource>
+                <PMID Version="1">24362762</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Mutat. 2002 Jun;19(6):575-606</RefSource>
+                <PMID Version="1">12007216</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Apr 05;6:9</RefSource>
+                <PMID Version="1">22493576</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2009 Nov 15;25(22):2906-12</RefSource>
+                <PMID Version="1">19759197</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2015 Apr 2;520(7545):51-6</RefSource>
+                <PMID Version="1">25807484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2008 Jul;32(5):957-71</RefSource>
+                <PMID Version="1">18462797</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Nov 15;102 Pt 1:207-19</RefSource>
+                <PMID Version="1">24361664</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Netw. 2000 May-Jun;13(4-5):411-30</RefSource>
+                <PMID Version="1">10946390</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2015 Feb;18(2):191-8</RefSource>
+                <PMID Version="1">25531569</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2011 Oct;14(10):1345-51</RefSource>
+                <PMID Version="1">21874013</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2013 Jun 13;498(7453):232-5</RefSource>
+                <PMID Version="1">23698362</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2002 Apr;3(4):314-8</RefSource>
+                <PMID Version="1">11967562</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2015 Mar;56(3):278-95</RefSource>
+                <PMID Version="1">25677560</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Cell Neurosci. 2014 Dec 08;8:414</RefSource>
+                <PMID Version="1">25538564</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2014 Jul 24;511(7510):412-3</RefSource>
+                <PMID Version="1">25056056</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2012 May;44(5):552-61</RefSource>
+                <PMID Version="1">22504417</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2012 May;44(5):532-8</RefSource>
+                <PMID Version="1">22504419</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Rev Bras Psiquiatr. 2006 Jun;28(2):91-2</RefSource>
+                <PMID Version="1">16810389</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2011 Sep;15(9):395-400</RefSource>
+                <PMID Version="1">21831694</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Med. 1995 Jan;25(1):63-77</RefSource>
+                <PMID Version="1">7792363</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bipolar Disord. 2014 Aug;16(5):531-47</RefSource>
+                <PMID Version="1">24330342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genome Biol. 2012;13(6):R43</RefSource>
+                <PMID Version="1">22703893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Neurophysiol. 2001 Nov;112(11):2098-105</RefSource>
+                <PMID Version="1">11682348</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Dec 24;6:187</RefSource>
+                <PMID Version="1">23269912</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Med. 2013;11:126</RefSource>
+                <PMID Version="1">23672542</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2014 Jun 27;344(6191):1492-6</RefSource>
+                <PMID Version="1">24970081</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2014 Feb 13;506(7487):185-90</RefSource>
+                <PMID Version="1">24463508</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Gigascience. 2015 Mar 25;4:13</RefSource>
+                <PMID Version="1">25810900</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Hum Genet. 2014 Jul 3;95(1):5-23</RefSource>
+                <PMID Version="1">24995866</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2010 Sep;67(9):939-45</RefSource>
+                <PMID Version="1">20819988</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genes Brain Behav. 2011 Mar;10(2):149-57</RefSource>
+                <PMID Version="1">21040458</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2014 Sep 17;83(6):1246-8</RefSource>
+                <PMID Version="1">25233305</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genes Brain Behav. 2014 Jan;13(1):13-24</RefSource>
+                <PMID Version="1">24320616</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2015 Feb 1;172(2):139-53</RefSource>
+                <PMID Version="1">25219520</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2009 Aug 6;460(7256):748-52</RefSource>
+                <PMID Version="1">19571811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2008 Sep 25;59(6):882-901</RefSource>
+                <PMID Version="1">18817729</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2013;9:61-89</RefSource>
+                <PMID Version="1">23394226</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Nov;17(11):1500-9</RefSource>
+                <PMID Version="1">25151264</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2012 May;44(5):539-44</RefSource>
+                <PMID Version="1">22504418</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1994 Jun 17;264(5166):1733-9</RefSource>
+                <PMID Version="1">8209254</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2013 Dec;54(12):1356-65</RefSource>
+                <PMID Version="1">24127638</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2013 Jun;37(5):831-45</RefSource>
+                <PMID Version="1">23567520</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell. 2014 Aug 14;158(4):929-44</RefSource>
+                <PMID Version="1">25109877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2011 Mar;168(3):253-6</RefSource>
+                <PMID Version="1">21285144</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2015 Mar 03;9:100</RefSource>
+                <PMID Version="1">25784871</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Sep 11;98(19):10869-74</RefSource>
+                <PMID Version="1">11553815</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Transl Med. 2011 Aug 10;3(95):95ra75</RefSource>
+                <PMID Version="1">21832240</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2015 Feb;20(1):72-6</RefSource>
+                <PMID Version="1">25385368</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 Nov;17(11):1440-1</RefSource>
+                <PMID Version="1">25349909</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2013 Oct;45(10):1238-43</RefSource>
+                <PMID Version="1">24013639</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):668-75</RefSource>
+                <PMID Version="1">23732877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet. 2013 Apr 20;381(9875):1339-41</RefSource>
+                <PMID Version="1">23453886</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Jan 26;73(2):214-8</RefSource>
+                <PMID Version="1">22284177</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000296" MajorTopicYN="N">Adolescent Psychiatry</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D035843" MajorTopicYN="N">Biomedical Research</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002665" MajorTopicYN="N">Child Psychiatry</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020022" MajorTopicYN="N">Genetic Predisposition to Disease</DescriptorName>
+                <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001523" MajorTopicYN="N">Mental Disorders</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName>
+                <QualifierName UI="Q000235" MajorTopicYN="N">genetics</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS740799 [Available on 03/01/17]</OtherID>
+        <OtherID Source="NLM">PMC4760897 [Available on 03/01/17]</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Big Data</Keyword>
+            <Keyword MajorTopicYN="N">Neuropsychiatric disorders</Keyword>
+            <Keyword MajorTopicYN="N">brain image</Keyword>
+            <Keyword MajorTopicYN="N">classification</Keyword>
+            <Keyword MajorTopicYN="N">endophenotype</Keyword>
+            <Keyword MajorTopicYN="N">genetics</Keyword>
+            <Keyword MajorTopicYN="N">inference</Keyword>
+            <Keyword MajorTopicYN="N">psychopathology</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>11</Month>
+                <Day>17</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pmc-release">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26732133</ArticleId>
+            <ArticleId IdType="doi">10.1111/jcpp.12503</ArticleId>
+            <ArticleId IdType="pmc">PMC4760897</ArticleId>
+            <ArticleId IdType="mid">NIHMS740799</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

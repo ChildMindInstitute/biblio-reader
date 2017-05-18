@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">28065836</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>01</Month>
+            <Day>09</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1872-678X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>278</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Feb</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of neuroscience methods</Title>
+                <ISOAbbreviation>J. Neurosci. Methods</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Learning effective connectivity from fMRI using autoregressive hidden Markov model with missing data.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>87-100</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0165-0270(16)30314-4</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.jneumeth.2016.12.019</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Effective connectivity (EC) analysis of neuronal groups using fMRI delivers insights about functional-integration. However, fMRI signal has low-temporal resolution due to down-sampling and indirectly measures underlying neuronal activity.</AbstractText>
+                <AbstractText Label="NEW METHOD" NlmCategory="UNASSIGNED">The aim is to address above issues for more reliable EC estimates. This paper proposes use of autoregressive hidden Markov model with missing data (AR-HMM-md) in dynamically multi-linked (DML) framework for learning EC using multiple fMRI time series. In our recent work (Dang et al., 2016), we have shown how AR-HMM-md for modelling single fMRI time series outperforms the existing methods. AR-HMM-md models unobserved neuronal activity and lost data over time as variables and estimates their values by joint optimization given fMRI observation sequence.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">The effectiveness in learning EC is shown using simulated experiments. Also the effects of sampling and noise are studied on EC. Moreover, classification-experiments are performed for Attention-Deficit/Hyperactivity Disorder subjects and age-matched controls for performance evaluation of real data. Using Bayesian model selection, we see that the proposed model converged to higher log-likelihood and demonstrated that group-classification can be performed with higher cross-validation accuracy of above 94% using distinctive network EC which characterizes patients vs.</AbstractText>
+                <AbstractText Label="CONTROLS" NlmCategory="METHODS">The full data EC obtained from DML-AR-HMM-md is more consistent with previous literature than the classical multivariate Granger causality method.</AbstractText>
+                <AbstractText Label="COMPARISON" NlmCategory="UNASSIGNED">The proposed architecture leads to reliable estimates of EC than the existing latent models.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">This framework overcomes the disadvantage of low-temporal resolution and improves cross-validation accuracy significantly due to presence of missing data variables and autoregressive process.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Dang</LastName>
+                    <ForeName>Shilpa</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Electrical Engineering Department, Indian Institute of Technology Delhi, New Delhi 110016, India. Electronic address: shilpadrd@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chaudhury</LastName>
+                    <ForeName>Santanu</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Electrical Engineering Department, Indian Institute of Technology Delhi, New Delhi 110016, India; Director, Central Electronics Engineering Research Institute, Pilani 333031, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lall</LastName>
+                    <ForeName>Brejesh</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Electrical Engineering Department, Indian Institute of Technology Delhi, New Delhi 110016, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Roy</LastName>
+                    <ForeName>Prasun Kumar</ForeName>
+                    <Initials>PK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>National Brain Research Centre, Gurgaon, Haryana 122051, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>01</Month>
+                <Day>05</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>J Neurosci Methods</MedlineTA>
+            <NlmUniqueID>7905558</NlmUniqueID>
+            <ISSNLinking>0165-0270</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Attention-deficit/hyperactivity disorder</Keyword>
+            <Keyword MajorTopicYN="N">Autoregressive hidden markov model</Keyword>
+            <Keyword MajorTopicYN="N">Dynamically multi-linked</Keyword>
+            <Keyword MajorTopicYN="N">Effective connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Missing data</Keyword>
+            <Keyword MajorTopicYN="N">Resting-state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>21</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>26</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>10</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28065836</ArticleId>
+            <ArticleId IdType="pii">S0165-0270(16)30314-4</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.jneumeth.2016.12.019</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

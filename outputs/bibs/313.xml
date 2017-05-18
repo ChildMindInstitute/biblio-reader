@@ -1,0 +1,172 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">23162439</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>11</Month>
+            <Day>19</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>11</Month>
+            <Day>20</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2013</Year>
+            <Month>08</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1662-5137</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2012</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in systems neuroscience</Title>
+                <ISOAbbreviation>Front Syst Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Kernel Principal Component Analysis for dimensionality reduction in fMRI-based diagnosis of ADHD.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>74</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnsys.2012.00074</ELocationID>
+            <Abstract>
+                <AbstractText>This study explored various feature extraction methods for use in automated diagnosis of Attention-Deficit Hyperactivity Disorder (ADHD) from functional Magnetic Resonance Image (fMRI) data. Each participant's data consisted of a resting state fMRI scan as well as phenotypic data (age, gender, handedness, IQ, and site of scanning) from the ADHD-200 dataset. We used machine learning techniques to produce support vector machine (SVM) classifiers that attempted to differentiate between (1) all ADHD patients vs. healthy controls and (2) ADHD combined (ADHD-c) type vs. ADHD inattentive (ADHD-i) type vs. controls. In different tests, we used only the phenotypic data, only the imaging data, or else both the phenotypic and imaging data. For feature extraction on fMRI data, we tested the Fast Fourier Transform (FFT), different variants of Principal Component Analysis (PCA), and combinations of FFT and PCA. PCA variants included PCA over time (PCA-t), PCA over space and time (PCA-st), and kernelized PCA (kPCA-st). Baseline chance accuracy was 64.2% produced by guessing healthy control (the majority class) for all participants. Using only phenotypic data produced 72.9% accuracy on two class diagnosis and 66.8% on three class diagnosis. Diagnosis using only imaging data did not perform as well as phenotypic-only approaches. Using both phenotypic and imaging data with combined FFT and kPCA-st feature extraction yielded accuracies of 76.0% on two class diagnosis and 68.6% on three class diagnosis-better than phenotypic-only approaches. Our results demonstrate the potential of using FFT and kPCA-st with resting-state fMRI data as well as phenotypic data for automated diagnosis of ADHD. These results are encouraging given known challenges of learning ADHD diagnostic classifiers using the ADHD-200 dataset (see Brown et al., 2012).</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sidhu</LastName>
+                    <ForeName>Gagan S</ForeName>
+                    <Initials>GS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Computing Science, University of Alberta Edmonton, AB, Canada ; Alberta Innovates Center for Machine Learning, University of Alberta Edmonton, AB, Canada ; General Analytics Inc. Edmonton, AB, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Asgarian</LastName>
+                    <ForeName>Nasimeh</ForeName>
+                    <Initials>N</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Greiner</LastName>
+                    <ForeName>Russell</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brown</LastName>
+                    <ForeName>Matthew R G</ForeName>
+                    <Initials>MR</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>09</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Syst Neurosci</MedlineTA>
+            <NlmUniqueID>101477946</NlmUniqueID>
+            <ISSNLinking>1662-5137</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 1999 Jul;17(6):795-815</RefSource>
+                <PMID Version="1">10402587</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2002 Aug 30;118(2):115-28</RefSource>
+                <PMID Version="1">12204303</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012;6:69</RefSource>
+                <PMID Version="1">23060754</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychology. 2011 Mar;25(2):147-58</RefSource>
+                <PMID Version="1">21381822</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Sep 15;58(2):588-94</RefSource>
+                <PMID Version="1">21757015</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2003 Oct 10;302(5643):290-2</RefSource>
+                <PMID Version="1">14551436</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC3494168</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD</Keyword>
+            <Keyword MajorTopicYN="N">FFT</Keyword>
+            <Keyword MajorTopicYN="N">PCA</Keyword>
+            <Keyword MajorTopicYN="N">classifier</Keyword>
+            <Keyword MajorTopicYN="N">diagnosis</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+            <Keyword MajorTopicYN="N">kernel methods</Keyword>
+            <Keyword MajorTopicYN="N">machine learning</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>05</Month>
+                <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>10</Month>
+                <Day>10</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23162439</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnsys.2012.00074</ArticleId>
+            <ArticleId IdType="pmc">PMC3494168</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

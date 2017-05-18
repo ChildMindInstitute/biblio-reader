@@ -1,0 +1,476 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26802781</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>01</Month>
+            <Day>24</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1527-5418</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>55</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Feb</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of the American Academy of Child and Adolescent Psychiatry</Title>
+                <ISOAbbreviation>J Am Acad Child Adolesc Psychiatry</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Mode of Anisotropy Reveals Global Diffusion Alterations in Attention-Deficit/Hyperactivity Disorder.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>137-45</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.jaac.2015.11.011</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S0890-8567(15)00757-1</ELocationID>
+            <Abstract>
+                <AbstractText Label="OBJECTIVE" NlmCategory="OBJECTIVE">Diffusion tensor imaging (DTI) can identify structural connectivity alterations in attention-deficit/hyperactivity disorder (ADHD). Most ADHD DTI studies have concentrated on regional differences in fractional anisotropy (FA) despite its limited sensitivity to complex white matter architecture and increasing evidence of global brain differences in ADHD. Here, we examine multiple DTI metrics in separate samples of children and adults with and without ADHD with a principal focus on global between-group differences.</AbstractText>
+                <AbstractText Label="METHOD" NlmCategory="METHODS">Two samples: adults with ADHD (n = 42) and without (n = 65) and children with ADHD (n = 82) and without (n = 80) were separately group matched for age, sex, and head motion. Five DTI metrics (FA, axial diffusivity, radial diffusivity, mean diffusivity, and mode of anisotropy) were analyzed via tract-based spatial statistics. Group analyses tested for diagnostic differences at the global (averaged across the entire white matter skeleton) and regional level for each metric.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">Robust global group differences in diffusion indices were found in adults, with the largest effect size for mode of anisotropy (MA; Cohen's d = 1.45). Global MA also differed significantly between groups in the pediatric sample (d = 0.68). In both samples, global MA increased classification accuracy compared to the model with clinical Conners' ADHD ratings alone. Regional diagnostic differences did not survive familywise correction for multiple comparisons.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">Global DTI metrics, particularly the mode of anisotropy, which is sensitive to crossing fibers, capture connectivity abnormalities in ADHD across both pediatric and adult samples. These findings highlight potential diffuse white matter microarchitecture differences in ADHD.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 American Academy of Child and Adolescent Psychiatry. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Yoncheva</LastName>
+                    <ForeName>Yuliya N</ForeName>
+                    <Initials>YN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Somandepalli</LastName>
+                    <ForeName>Krishna</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Reiss</LastName>
+                    <ForeName>Philip T</ForeName>
+                    <Initials>PT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York; Nathan Kline Institute for Psychiatric Research, Orangeburg, NY.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kelly</LastName>
+                    <ForeName>Clare</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York; Nathan Kline Institute for Psychiatric Research, Orangeburg, NY; Institute of Neuroscience, Trinity College Dublin, Ireland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Di Martino</LastName>
+                    <ForeName>Adriana</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lazar</LastName>
+                    <ForeName>Mariana</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhou</LastName>
+                    <ForeName>Juan</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognitive Neuroscience, Duke-National University of Singapore Graduate Medical School, Singapore.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Milham</LastName>
+                    <ForeName>Michael P</ForeName>
+                    <Initials>MP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan Kline Institute for Psychiatric Research, Orangeburg, NY; Child Mind Institute, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Castellanos</LastName>
+                    <ForeName>F Xavier</ForeName>
+                    <Initials>FX</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>New York University, New York; Nathan Kline Institute for Psychiatric Research, Orangeburg, NY. Electronic address: castef01@nyumc.org.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>T32 MH067763</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH091140</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>T32MH067763</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH081218</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH095836</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01HD065282</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 HD065282</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01MH083246</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01MH091140</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01MH081218</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH083246</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>11</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Am Acad Child Adolesc Psychiatry</MedlineTA>
+            <NlmUniqueID>8704565</NlmUniqueID>
+            <ISSNLinking>0890-8567</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 1;44(1):83-98</RefSource>
+                <PMID Version="1">18501637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage Clin. 2015;7:155-69</RefSource>
+                <PMID Version="1">25610777</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2002 Jun;6(2):93-108</RefSource>
+                <PMID Version="1">12044998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S208-19</RefSource>
+                <PMID Version="1">15501092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Med. 2013 Apr 30;32(9):1467-82</RefSource>
+                <PMID Version="1">23296397</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Oct 15;100:358-69</RefSource>
+                <PMID Version="1">24945661</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Jun;17(6):1364-75</RefSource>
+                <PMID Version="1">16920883</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Mar;88:79-90</RefSource>
+                <PMID Version="1">24269273</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2015 Jul 15;78(2):126-34</RefSource>
+                <PMID Version="1">25850620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:527-40</RefSource>
+                <PMID Version="1">23631991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neuropsychopharmacol Biol Psychiatry. 2015 Dec 3;63:14-22</RefSource>
+                <PMID Version="1">25956761</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson B. 1996 Jun;111(3):209-19</RefSource>
+                <PMID Version="1">8661285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Psychol Rev. 2006 Aug;26(4):433-44</RefSource>
+                <PMID Version="1">16480802</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Dec;63(4):1833-40</RefSource>
+                <PMID Version="1">22842214</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>World J Biol Psychiatry. 2015 Jan;16(1):31-44</RefSource>
+                <PMID Version="1">25224883</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Imaging Behav. 2014 Jun;8(2):153-82</RefSource>
+                <PMID Version="1">24399358</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2014 Oct 15;76(8):656-63</RefSource>
+                <PMID Version="1">24503470</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 Nov;68(11):1122-34</RefSource>
+                <PMID Version="1">22065528</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jun;73:239-54</RefSource>
+                <PMID Version="1">22846632</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2007 Nov;164(11):1729-36</RefSource>
+                <PMID Version="1">17974939</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 1997 Jul;36(7):980-8</RefSource>
+                <PMID Version="1">9204677</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 15;31(4):1487-505</RefSource>
+                <PMID Version="1">16624579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Apr;36(4):1093-106</RefSource>
+                <PMID Version="1">22305957</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2006 Jan;55(1):136-46</RefSource>
+                <PMID Version="1">16342267</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 May;72(5):490-9</RefSource>
+                <PMID Version="1">25785435</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2013 Nov;34(11):2747-66</RefSource>
+                <PMID Version="1">22611035</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2011 Jun 15;69(12):1168-77</RefSource>
+                <PMID Version="1">21546000</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 1;62(4):2222-31</RefSource>
+                <PMID Version="1">22366334</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2006 May;63(5):540-9</RefSource>
+                <PMID Version="1">16651511</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2009 Oct;48(10):979-81</RefSource>
+                <PMID Version="1">20854767</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2014 Jul;53(7):790-9.e3</RefSource>
+                <PMID Version="1">24954828</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Jun;31(6):904-16</RefSource>
+                <PMID Version="1">20496381</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2014 Nov;44(11):2742-54</RefSource>
+                <PMID Version="1">24827086</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2012 Jan;16(1):17-26</RefSource>
+                <PMID Version="1">22169776</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Apr 1;55(3):880-90</RefSource>
+                <PMID Version="1">21182970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Jan 30;33(5):2147-55</RefSource>
+                <PMID Version="1">23365250</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2015 Dec;56(12):1289-97</RefSource>
+                <PMID Version="1">25581343</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2007 Nov;26(11):1483-99</RefSource>
+                <PMID Version="1">18041264</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2014 Jun;35(6):1364-74</RefSource>
+                <PMID Version="1">24411290</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016880" MajorTopicYN="N">Anisotropy</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001289" MajorTopicYN="N">Attention Deficit Disorder with Hyperactivity</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016022" MajorTopicYN="N">Case-Control Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D056324" MajorTopicYN="N">Diffusion Tensor Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066127" MajorTopicYN="N">White Matter</DescriptorName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS747789 [Available on 02/01/17]</OtherID>
+        <OtherID Source="NLM">PMC4760693 [Available on 02/01/17]</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD</Keyword>
+            <Keyword MajorTopicYN="N">DTI</Keyword>
+            <Keyword MajorTopicYN="N">adults</Keyword>
+            <Keyword MajorTopicYN="N">biomarkers</Keyword>
+            <Keyword MajorTopicYN="N">fractional anisotropy</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>05</Month>
+                <Day>21</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2015</Year>
+                <Month>11</Month>
+                <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>11</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26802781</ArticleId>
+            <ArticleId IdType="pii">S0890-8567(15)00757-1</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.jaac.2015.11.011</ArticleId>
+            <ArticleId IdType="pmc">PMC4760693</ArticleId>
+            <ArticleId IdType="mid">NIHMS747789</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

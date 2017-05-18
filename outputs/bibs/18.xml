@@ -1,0 +1,658 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22433046</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>03</Month>
+            <Day>21</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>01</Month>
+            <Day>24</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2158-0022</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>1</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2011</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Brain connectivity</Title>
+                <ISOAbbreviation>Brain Connect</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Tractography: where do we go from here?</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>169-83</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1089/brain.2011.0033</ELocationID>
+            <Abstract>
+                <AbstractText>Diffusion tractography offers enormous potential for the study of human brain anatomy. However, as a method to study brain connectivity, tractography suffers from limitations, as it is indirect, inaccurate, and difficult to quantify. Despite these limitations, appropriate use of tractography can be a powerful means to address certain questions. In addition, while some of tractography's limitations are fundamental, others could be alleviated by methodological and technological advances. This article provides an overview of diffusion magnetic resonance tractography methods with a focus on how future advances might address challenges in measuring brain connectivity. Parts of this review are somewhat provocative, in the hope that they may trigger discussions possibly lacking in a field where the apparent simplicity of the methods (compared to their functional magnetic resonance imaging counterparts) can hide some fundamental issues that ultimately hinder the interpretation of findings, and cast doubt as to what tractography can really teach us about human brain anatomy.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Jbabdi</LastName>
+                    <ForeName>Saad</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>FMRIB Centre, University of Oxford, United Kingdom. saad@fmrib.ox.ac.uk</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Johansen-Berg</LastName>
+                    <ForeName>Heidi</ForeName>
+                    <Initials>H</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>090955</GrantID>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>G0800578</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2011</Year>
+                <Month>08</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Brain Connect</MedlineTA>
+            <NlmUniqueID>101550313</NlmUniqueID>
+            <ISSNLinking>2158-0014</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Apr;17(4):816-25</RefSource>
+                <PMID Version="1">16707738</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2002 Oct;48(4):577-82</RefSource>
+                <PMID Version="1">12353272</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2008 Dec;60(6):1276-83</RefSource>
+                <PMID Version="1">19030160</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):204-11</RefSource>
+                <PMID Version="1">17023184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010;5(12):e15710</RefSource>
+                <PMID Version="1">21187930</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2008 Aug;60(2):439-48</RefSource>
+                <PMID Version="1">18666109</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Jan;19(1):72-8</RefSource>
+                <PMID Version="1">18403396</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Aug 15;42(2):710-6</RefSource>
+                <PMID Version="1">18565766</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Aug 15;27(2):357-67</RefSource>
+                <PMID Version="1">15921931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 1992 Dec 11;598(1-2):143-53</RefSource>
+                <PMID Version="1">1486477</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2004 Dec;14(12):1302-9</RefSource>
+                <PMID Version="1">15166103</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Feb 1;49(3):2444-56</RefSource>
+                <PMID Version="1">19818861</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1991 Jan-Feb;1(1):1-47</RefSource>
+                <PMID Version="1">1822724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Apr 15;45(3):832-44</RefSource>
+                <PMID Version="1">19154790</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2006 May;24(4):515-25</RefSource>
+                <PMID Version="1">16677958</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jun;46(2):530-41</RefSource>
+                <PMID Version="1">19385018</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Mar;30(1):220-7</RefSource>
+                <PMID Version="1">16271482</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2002 May;21(5):505-12</RefSource>
+                <PMID Version="1">12071621</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2005 May 29;360(1457):881-91</RefSource>
+                <PMID Version="1">16087433</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 Feb;24(2):92-8</RefSource>
+                <PMID Version="1">15455461</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1999 Jul;42(1):37-41</RefSource>
+                <PMID Version="1">10398948</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2000 Jan 29;355(1393):71-89</RefSource>
+                <PMID Version="1">10703045</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jun 1;56(3):1301-15</RefSource>
+                <PMID Version="1">21316474</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 1;37(4):1267-77</RefSource>
+                <PMID Version="1">17706434</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2004 Jan;230(1):77-87</RefSource>
+                <PMID Version="1">14645885</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2006 Jul;56(1):104-17</RefSource>
+                <PMID Version="1">16755539</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Jun;41(2):448-61</RefSource>
+                <PMID Version="1">18407524</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2003 Nov;50(5):1077-88</RefSource>
+                <PMID Version="1">14587019</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2002 Aug;3(8):606-16</RefSource>
+                <PMID Version="1">12154362</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2006 Mar;27(3):230-8</RefSource>
+                <PMID Version="1">16082656</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Jun;43(6):921</RefSource>
+                <PMID Version="1">10861892</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2010 Jul;64(1):9-14</RefSource>
+                <PMID Version="1">20577977</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Comput Comput Assist Interv. 2010;13(Pt 1):183-90</RefSource>
+                <PMID Version="1">20879230</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2006 Oct;16(10):1418-30</RefSource>
+                <PMID Version="1">16306320</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 15;37(2):474-88</RefSource>
+                <PMID Version="1">17596967</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jun 1;56(3):1259-66</RefSource>
+                <PMID Version="1">21354314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Nov 5;28(45):11435-44</RefSource>
+                <PMID Version="1">18987180</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2008 Dec;60(6):1372-87</RefSource>
+                <PMID Version="1">19025904</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Nov;23(3):1176-85</RefSource>
+                <PMID Version="1">15528117</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 1;52(4):1190-201</RefSource>
+                <PMID Version="1">20483378</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2004 Nov;52(5):965-78</RefSource>
+                <PMID Version="1">15508168</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2011;1(1):13-36</RefSource>
+                <PMID Version="1">22432952</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Oct;44(4):625-32</RefSource>
+                <PMID Version="1">11025519</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cortex. 2008 Sep;44(8):1105-32</RefSource>
+                <PMID Version="1">18619589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2010 Aug;23(4):351-8</RefSource>
+                <PMID Version="1">20581685</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2009 May;132(Pt 5):1210-20</RefSource>
+                <PMID Version="1">19403788</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2009 Feb;28(2):269-86</RefSource>
+                <PMID Version="1">19188114</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Oct 1;27(4):862-71</RefSource>
+                <PMID Version="1">15978841</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 15;54(2):875-91</RefSource>
+                <PMID Version="1">20817103</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):144-55</RefSource>
+                <PMID Version="1">17070705</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2006 Aug;19(4):379-85</RefSource>
+                <PMID Version="1">16914977</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 Jun;18(6):1374-83</RefSource>
+                <PMID Version="1">17928332</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2007 Sep 19;27(38):10259-69</RefSource>
+                <PMID Version="1">17881532</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2005 Jan;57(1):8-16</RefSource>
+                <PMID Version="1">15597383</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Jan 12;31(2):618-23</RefSource>
+                <PMID Version="1">21228170</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Dec;53(4):1233-43</RefSource>
+                <PMID Version="1">20643215</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 May 1;56(1):220-34</RefSource>
+                <PMID Version="1">21256221</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2011 Apr;1224:109-25</RefSource>
+                <PMID Version="1">21251014</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 1;37(1):116-29</RefSource>
+                <PMID Version="1">17543543</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2007 Mar;130(Pt 3):630-53</RefSource>
+                <PMID Version="1">17293361</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 15;31(4):1487-505</RefSource>
+                <PMID Version="1">16624579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Oct 1;42(4):1366-80</RefSource>
+                <PMID Version="1">18603006</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 1;49(1):249-56</RefSource>
+                <PMID Version="1">19712743</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Protoc. 2007;2(3):499-503</RefSource>
+                <PMID Version="1">17406613</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Jan 28;29(4):1175-90</RefSource>
+                <PMID Version="1">19176826</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Sep;17(1):77-94</RefSource>
+                <PMID Version="1">12482069</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2004 Sep 7;101(36):13335-40</RefSource>
+                <PMID Version="1">15340158</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Inf Process Med Imaging. 2003 Jul;18:684-95</RefSource>
+                <PMID Version="1">15344498</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2005 Dec;54(6):1377-86</RefSource>
+                <PMID Version="1">16247738</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 15;54(2):955-62</RefSource>
+                <PMID Version="1">20854913</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosurg. 2005 Dec;103(6):1030-4</RefSource>
+                <PMID Version="1">16381189</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Aug 1;52(1):20-31</RefSource>
+                <PMID Version="1">20362683</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2007 Nov;26(11):1555-61</RefSource>
+                <PMID Version="1">18041270</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2007 Sep;58(3):497-510</RefSource>
+                <PMID Version="1">17763358</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Mar;45(1 Suppl):S133-42</RefSource>
+                <PMID Version="1">19059345</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Jan 1;39(1):62-79</RefSource>
+                <PMID Version="1">17919935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscientist. 2010 Dec;16(6):634-49</RefSource>
+                <PMID Version="1">20360600</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Jul 15;41(4):1267-77</RefSource>
+                <PMID Version="1">18495497</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2008 Jun;59(6):1347-54</RefSource>
+                <PMID Version="1">18506799</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2005 May;53(5):1143-9</RefSource>
+                <PMID Version="1">15844149</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Dec;17(12):2760-8</RefSource>
+                <PMID Version="1">17307759</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2011 Mar;32(3):461-79</RefSource>
+                <PMID Version="1">21319270</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Jan 1;39(1):215-22</RefSource>
+                <PMID Version="1">17911030</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2010 May;214(4):361-73</RefSource>
+                <PMID Version="1">20127357</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1999 Sep;42(3):515-25</RefSource>
+                <PMID Version="1">10467296</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Nov;20(3):1591-600</RefSource>
+                <PMID Version="1">14642470</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2011 Oct;30(10):1829-40</RefSource>
+                <PMID Version="1">21571607</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2011 Jun;65(6):1532-56</RefSource>
+                <PMID Version="1">21469191</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2007;2(7):e597</RefSource>
+                <PMID Version="1">17611629</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2007 Mar;130(Pt 3):602-5</RefSource>
+                <PMID Version="1">17322561</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Feb 10;106(6):2035-40</RefSource>
+                <PMID Version="1">19188601</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 May 1;30(4):1112-20</RefSource>
+                <PMID Version="1">16473021</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1999 Aug 31;96(18):10422-7</RefSource>
+                <PMID Version="1">10468624</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson B. 1994 Mar;103(3):247-54</RefSource>
+                <PMID Version="1">8019776</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2008 Dec;249(3):855-64</RefSource>
+                <PMID Version="1">19011185</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2005 Jan;15(1):31-9</RefSource>
+                <PMID Version="1">15238447</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med Sci. 2009;8(4):165-74</RefSource>
+                <PMID Version="1">20035125</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 May 15;41(1):58-68</RefSource>
+                <PMID Version="1">18367409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Oct 1;42(4):1329-39</RefSource>
+                <PMID Version="1">18619548</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2003 Dec 4;40(5):885-95</RefSource>
+                <PMID Version="1">14659088</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2010 Aug;64(2):554-66</RefSource>
+                <PMID Version="1">20535807</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet Neurol. 2008 Aug;7(8):715-27</RefSource>
+                <PMID Version="1">18635020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):766-76</RefSource>
+                <PMID Version="1">20116438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 15;53(1):132-8</RefSource>
+                <PMID Version="1">20587369</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2011 Aug;15(4):414-25</RefSource>
+                <PMID Version="1">21376655</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2012 Mar;33(3):488-498.e2</RefSource>
+                <PMID Version="1">20594616</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 15;37(2):530-8</RefSource>
+                <PMID Version="1">17604650</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2008 Oct;60(4):953-63</RefSource>
+                <PMID Version="1">18816816</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2007 Nov;26(11):1562-75</RefSource>
+                <PMID Version="1">18041271</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2005 May 29;360(1457):893-902</RefSource>
+                <PMID Version="1">16087434</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Oct;20(2):1140-53</RefSource>
+                <PMID Version="1">14568483</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2004 Apr;55(4):522-9</RefSource>
+                <PMID Version="1">15048891</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2005 Sep;1(4):e42</RefSource>
+                <PMID Version="1">16201007</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 May 1;35(4):1459-72</RefSource>
+                <PMID Version="1">17379540</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1628-38</RefSource>
+                <PMID Version="1">19523523</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroreport. 2005 Oct 17;16(15):1701-5</RefSource>
+                <PMID Version="1">16189481</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2003 Jul;6(7):750-7</RefSource>
+                <PMID Version="1">12808459</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Apr 1;55(3):1054-62</RefSource>
+                <PMID Version="1">21232611</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jan 1;49(1):32-43</RefSource>
+                <PMID Version="1">19699804</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Biomed Imaging. 2008;2008:320195</RefSource>
+                <PMID Version="1">18299703</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 1997 Apr 15;17(8):2859-68</RefSource>
+                <PMID Version="1">9092607</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D056324" MajorTopicYN="N">Diffusion Tensor Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000378" MajorTopicYN="N">metabolism</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">EMS48834</OtherID>
+        <OtherID Source="NLM">PMC3677805</OtherID>
+        <CoiStatement>Author Disclosure Statement No competing financial interests exist.</CoiStatement>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>3</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2011</Year>
+                <Month>1</Month>
+                <Day>1</Day>
+                <Hour>0</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>1</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22433046</ArticleId>
+            <ArticleId IdType="doi">10.1089/brain.2011.0033</ArticleId>
+            <ArticleId IdType="pmc">PMC3677805</ArticleId>
+            <ArticleId IdType="mid">EMS48834</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

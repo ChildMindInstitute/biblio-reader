@@ -1,0 +1,645 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22659444</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>07</Month>
+            <Day>30</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>12</Month>
+            <Day>10</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>62</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Sep</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Investigating function and connectivity of morphometric findings--exemplified on cerebellar atrophy in spinocerebellar ataxia 17 (SCA17).</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1354-66</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2012.05.058</ELocationID>
+            <Abstract>
+                <AbstractText>Spinocerebellar ataxia type 17 (SCA17) is a rare autosomal dominant neurodegenerative disorder characterized by progressive cerebellar ataxia but also a broad spectrum of other neuropsychiatric signs. As anatomical and structural studies have shown severe cerebellar atrophy in SCA17 and a differentiation of the human cerebellum into an anterior sensorimotor and posterior cognitive/emotional partition has been implicated, we aimed at investigating functional connectivity patterns of two cerebellar clusters of atrophy revealed by a morphometric analysis in SCA17 patients. In particular, voxel-based morphometry (VBM) revealed a large cluster of atrophy in SCA17 in the bilateral anterior cerebellum (lobule V) and another one in the left posterior cerebellum (lobules IX, VIIb, VIIIA, VIIIB). These two cerebellar clusters were used as seeds for functional connectivity analyses using task-based meta-analytic connectivity modeling (MACM) and task-free resting state connectivity analysis. Results demonstrated first consistent functional connectivity throughout the cerebellum itself; the anterior cerebellar seed showed stronger connectivity to lobules V, VI and to some extent I-IV, and the posterior cerebellar seed to the posterior lobules VI-IX. Importantly, the cerebellar anterior seed also showed consistently stronger functional connectivity than the posterior one with pre- and motor areas as well as the primary somatosensory cortex. In turn, task-based task-independent functional connectivity analyses revealed that the cerebellar posterior seed was linked with fronto-temporo-parietal areas as well as partly the insula and the thalamus, i.e., brain regions implicated in cognitive and affective processes. Functional characterization of experiments activating either cerebellar seed further corroborated this notion, revealing mainly motor-related functions for the anterior cluster and predominantly cognitive functions were associated for the posterior one. The differential functional connectivity of the cerebellar anterior and posterior cluster highlights the manifold connections and dichotomy of the human cerebellum, providing additional valuable information about probably disrupted cerebellar-cerebral connections and reflecting the brunt of motor but also the broad spectrum of neuropsychiatric deficits in SCA17.</AbstractText>
+                <CopyrightInformation>Copyright © 2012 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Reetz</LastName>
+                    <ForeName>Kathrin</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurology, RWTH Aachen University, Pauwelsstrasse 30, D-52074 Aachen, Germany. kreetz@ukaachen.de</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dogan</LastName>
+                    <ForeName>Imis</ForeName>
+                    <Initials>I</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Rolfs</LastName>
+                    <ForeName>Arndt</ForeName>
+                    <Initials>A</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Binkofski</LastName>
+                    <ForeName>Ferdinand</ForeName>
+                    <Initials>F</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schulz</LastName>
+                    <ForeName>Jörg B</ForeName>
+                    <Initials>JB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Laird</LastName>
+                    <ForeName>Angela R</ForeName>
+                    <Initials>AR</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fox</LastName>
+                    <ForeName>Peter T</ForeName>
+                    <Initials>PT</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Eickhoff</LastName>
+                    <ForeName>Simon B</ForeName>
+                    <Initials>SB</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 MH074457</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01-MH074457-01A1</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>05</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <SupplMeshList>
+            <SupplMeshName Type="Disease" UI="C564616">Spinocerebellar Ataxia 17</SupplMeshName>
+        </SupplMeshList>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 Apr;18(4):846-67</RefSource>
+                <PMID Version="1">17644831</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Nov 18;29(46):14496-505</RefSource>
+                <PMID Version="1">19923283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jul;16(3 Pt 1):765-80</RefSource>
+                <PMID Version="1">12169260</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int Rev Neurobiol. 1997;41:489-513</RefSource>
+                <PMID Version="1">9378605</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Res Notes. 2011 Sep 09;4:349</RefSource>
+                <PMID Version="1">21906305</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Jan;33(1):1-13</RefSource>
+                <PMID Version="1">21305667</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2007 Oct;28(10):1045-59</RefSource>
+                <PMID Version="1">17266106</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Jan 20;106(3):918-23</RefSource>
+                <PMID Version="1">19139417</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2005 Nov;8(11):1491-3</RefSource>
+                <PMID Version="1">16205719</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2001 Jan 15;21(2):700-12</RefSource>
+                <PMID Version="1">11160449</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurol Sci. 2003 Oct;24(3):166-7</RefSource>
+                <PMID Version="1">14598069</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 1;37(1):90-101</RefSource>
+                <PMID Version="1">17560126</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):1148-67</RefSource>
+                <PMID Version="1">20056149</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1994 Oct 21;266(5184):458-61</RefSource>
+                <PMID Version="1">7939688</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1999 Jul;10(1):63-83</RefSource>
+                <PMID Version="1">10385582</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Feb 27;28(9):2252-60</RefSource>
+                <PMID Version="1">18305258</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 May 4;107(18):8452-6</RefSource>
+                <PMID Version="1">20404184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Sep;30(9):2907-26</RefSource>
+                <PMID Version="1">19172646</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Adv Anat Embryol Cell Biol. 2004;174:I-VIII, 1-89</RefSource>
+                <PMID Version="1">14750415</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Arch Psychiatry Clin Neurosci. 2011 Nov;261 Suppl 2:S166-71</RefSource>
+                <PMID Version="1">21909731</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1420-8</RefSource>
+                <PMID Version="1">21889994</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jun;11(6 Pt 1):684-96</RefSource>
+                <PMID Version="1">10860796</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Mar;60(1):162-9</RefSource>
+                <PMID Version="1">22209784</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2010 Jun;214(5-6):519-34</RefSource>
+                <PMID Version="1">20512376</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1996 Aug 29;382(6594):805-7</RefSource>
+                <PMID Version="1">8752272</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 1996;4(3):174-98</RefSource>
+                <PMID Version="1">20408197</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2001 Jun;13(2):55-73</RefSource>
+                <PMID Version="1">11346886</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin EEG Neurosci. 2011 Apr;42(2):107-21</RefSource>
+                <PMID Version="1">21675600</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jul 1;36(3):511-21</RefSource>
+                <PMID Version="1">17499520</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(2):e30920</RefSource>
+                <PMID Version="1">22319593</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int Rev Neurobiol. 1997;41:433-40</RefSource>
+                <PMID Version="1">9378601</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cerebellum. 2011 Sep;10(3):600-10</RefSource>
+                <PMID Version="1">21503592</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Jul;19(3):1233-9</RefSource>
+                <PMID Version="1">12880848</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 May 1;60(4):2389-98</RefSource>
+                <PMID Version="1">22387170</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 May 5;30(18):6409-21</RefSource>
+                <PMID Version="1">20445067</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Oct 15;33(1):127-38</RefSource>
+                <PMID Version="1">16904911</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2006 Mar;129(Pt 3):564-83</RefSource>
+                <PMID Version="1">16399806</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Anat Embryol (Berl). 2005 Dec;210(5-6):343-52</RefSource>
+                <PMID Version="1">16208455</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2005 Sep 14;25(37):8402-6</RefSource>
+                <PMID Version="1">16162922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Oct;19(10):2485-97</RefSource>
+                <PMID Version="1">19592571</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2003 Sep;54(3):367-75</RefSource>
+                <PMID Version="1">12953269</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Neurol. 2004 Aug;61(8):1314-20</RefSource>
+                <PMID Version="1">15313853</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Cogn Brain Res. 2005 Sep;25(1):348-58</RefSource>
+                <PMID Version="1">16081255</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mov Disord. 2005 Nov;20(11):1521-3</RefSource>
+                <PMID Version="1">16037935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2011 Sep;216(3):275-88</RefSource>
+                <PMID Version="1">21461742</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mov Disord. 2004 Feb;19(2):217-20</RefSource>
+                <PMID Version="1">14978680</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jun 15;56(4):2238-48</RefSource>
+                <PMID Version="1">21473922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurol. 2003 Feb;250(2):207-11</RefSource>
+                <PMID Version="1">12574952</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2006 Sep;129(Pt 9):2341-52</RefSource>
+                <PMID Version="1">16760196</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 2006 Mar 1;495(1):53-69</RefSource>
+                <PMID Version="1">16432904</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2012 Jan;217(1):115-25</RefSource>
+                <PMID Version="1">21667303</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Jul 1;29(26):8586-94</RefSource>
+                <PMID Version="1">19571149</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2008 Aug;212(6):481-95</RefSource>
+                <PMID Version="1">18651173</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cerebellum. 2007;6(3):159-62</RefSource>
+                <PMID Version="1">17786810</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Mar;30(1):36-51</RefSource>
+                <PMID Version="1">16253526</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2000 May;123 ( Pt 5):1041-50</RefSource>
+                <PMID Version="1">10775548</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 May 15;46(1):39-46</RefSource>
+                <PMID Version="1">19457380</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Behav Evol. 1998;52(6):308-14</RefSource>
+                <PMID Version="1">9807015</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Feb;31(2):173-84</RefSource>
+                <PMID Version="1">19603407</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2004 Feb;55(2):281-6</RefSource>
+                <PMID Version="1">14755733</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 1997 Jan 1;17(1):438-58</RefSource>
+                <PMID Version="1">8987769</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 May 25;31(21):7910-9</RefSource>
+                <PMID Version="1">21613505</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Mol Genet. 1999 Oct;8(11):2047-53</RefSource>
+                <PMID Version="1">10484774</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2007 Oct;130(Pt 10):2646-60</RefSource>
+                <PMID Version="1">17872929</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2011 Dec;134(Pt 12):3672-86</RefSource>
+                <PMID Version="1">22036960</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1999 Sep 20;412(2):319-41</RefSource>
+                <PMID Version="1">10441759</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Mol Genet. 2001 Jul 1;10(14):1441-8</RefSource>
+                <PMID Version="1">11448935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2003 Nov 25;61(10):1441-3</RefSource>
+                <PMID Version="1">14638975</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int Rev Neurobiol. 1997;41:31-60</RefSource>
+                <PMID Version="1">9378595</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2003 Sep 10;23(23):8432-44</RefSource>
+                <PMID Version="1">12968006</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2009 Jul 09;3:23</RefSource>
+                <PMID Version="1">19636392</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Hum Evol. 2003 Apr;44(4):401-29</RefSource>
+                <PMID Version="1">12727461</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2005 Dec;15(6):638-44</RefSource>
+                <PMID Version="1">16271465</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurol. 2004 Jul;251(7):896-7</RefSource>
+                <PMID Version="1">15258801</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 1998 Apr;121 ( Pt 4):561-79</RefSource>
+                <PMID Version="1">9577385</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cerebellum. 2010 Jun;9(2):210-7</RefSource>
+                <PMID Version="1">20016963</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 15;44(2):489-501</RefSource>
+                <PMID Version="1">18835452</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2006 Feb;16(2):254-67</RefSource>
+                <PMID Version="1">15888607</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 May 1;25(4):1325-35</RefSource>
+                <PMID Version="1">15850749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Parkinsonism Relat Disord. 2003 Aug;9(6):317-20</RefSource>
+                <PMID Version="1">12853230</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Mar;60(1):830-46</RefSource>
+                <PMID Version="1">22178808</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011 Jan 19;6(1):e15125</RefSource>
+                <PMID Version="1">21311576</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2349-61</RefSource>
+                <PMID Version="1">21963913</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2004 Dec 14;63(11):2132-5</RefSource>
+                <PMID Version="1">15596762</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2010 Jun;20(6):1448-61</RefSource>
+                <PMID Version="1">19822572</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Jan 16;98 (2):676-82</RefSource>
+                <PMID Version="1">11209064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Jul 1;26(3):839-51</RefSource>
+                <PMID Version="1">15955494</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Jul 15;41(4):1382-94</RefSource>
+                <PMID Version="1">18486490</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Neurosci. 1986 Aug;100(4):443-54</RefSource>
+                <PMID Version="1">3741598</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2010 Apr;20(4):953-65</RefSource>
+                <PMID Version="1">19684249</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Apr 28;106(17):7209-14</RefSource>
+                <PMID Version="1">19357304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Hum Evol. 2003 Jan;44(1):3-10</RefSource>
+                <PMID Version="1">12604300</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur J Hum Genet. 2001 Mar;9(3):160-4</RefSource>
+                <PMID Version="1">11313753</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2003 Jan 7;100(1):253-8</RefSource>
+                <PMID Version="1">12506194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jan;11(1):66-84</RefSource>
+                <PMID Version="1">10686118</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neuropsychiatry Clin Neurosci. 2004 Summer;16(3):367-78</RefSource>
+                <PMID Version="1">15377747</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1560-70</RefSource>
+                <PMID Version="1">21907811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans A Math Phys Eng Sci. 2009 Jun 13;367(1896):2399-421</RefSource>
+                <PMID Version="1">19414462</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Apr 15;25(3):653-60</RefSource>
+                <PMID Version="1">15808966</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2003 Jan;89(1):634-9</RefSource>
+                <PMID Version="1">12522208</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2006 Feb;129(Pt 2):306-20</RefSource>
+                <PMID Version="1">16317024</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2003 Jul;6(7):750-7</RefSource>
+                <PMID Version="1">12808459</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1951 Aug;95(1):1-16</RefSource>
+                <PMID Version="1">14873815</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2011 Nov;106(5):2322-45</RefSource>
+                <PMID Version="1">21795627</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001284" MajorTopicYN="N">Atrophy</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002531" MajorTopicYN="N">Cerebellum</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007090" MajorTopicYN="N">Image Interpretation, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D020754" MajorTopicYN="N">Spinocerebellar Ataxias</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS765327</OtherID>
+        <OtherID Source="NLM">PMC4801477</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>04</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2012</Year>
+                <Month>05</Month>
+                <Day>07</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>05</Month>
+                <Day>22</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>6</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>6</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>12</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22659444</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(12)00546-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2012.05.058</ArticleId>
+            <ArticleId IdType="pmc">PMC4801477</ArticleId>
+            <ArticleId IdType="mid">NIHMS765327</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

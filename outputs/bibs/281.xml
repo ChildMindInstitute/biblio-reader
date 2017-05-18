@@ -1,0 +1,298 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">23133413</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>11</Month>
+            <Day>07</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>11</Month>
+            <Day>08</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>02</Month>
+            <Day>11</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1662-5161</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2012</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in human neuroscience</Title>
+                <ISOAbbreviation>Front Hum Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Fully exploratory network independent component analysis of the 1000 functional connectomes database.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>301</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnhum.2012.00301</ELocationID>
+            <Abstract>
+                <AbstractText>The 1000 Functional Connectomes Project is a collection of resting-state fMRI datasets from more than 1000 subjects acquired in more than 30 independent studies from around the globe. This large, heterogeneous sample of resting-state data offers the unique opportunity to study the consistencies of resting-state networks at both subject and study level. In extension to the seminal paper by Biswal et al. (2010), where a repeated temporal concatenation group independent component analysis (ICA) approach on reduced subsets (using 20 as a pre-specified number of components) was used due to computational resource limitations, we herein apply Fully Exploratory Network ICA (FENICA) to 1000 single-subject independent component analyses. This, along with the possibility of using datasets of different lengths without truncation, enabled us to benefit from the full dataset available, thereby obtaining 16 networks consistent over the whole group of 1000 subjects. Furthermore, we demonstrated that the most consistent among these networks at both subject and study level matched networks most often reported in the literature, and found additional components emerging in prefrontal and parietal areas. Finally, we identified the influence of scan duration on the number of components as a source of heterogeneity between studies.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Kalcher</LastName>
+                    <ForeName>Klaudius</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>MR Centre of Excellence, Center for Medical Physics and Biomedical Engineering, Medical University of Vienna Vienna, Austria ; Department of Statistics and Probability Theory, Vienna University of Technology Vienna, Austria.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Huf</LastName>
+                    <ForeName>Wolfgang</ForeName>
+                    <Initials>W</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Boubela</LastName>
+                    <ForeName>Roland N</ForeName>
+                    <Initials>RN</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Filzmoser</LastName>
+                    <ForeName>Peter</ForeName>
+                    <Initials>P</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pezawas</LastName>
+                    <ForeName>Lukas</ForeName>
+                    <Initials>L</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Biswal</LastName>
+                    <ForeName>Bharat</ForeName>
+                    <Initials>B</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kasper</LastName>
+                    <ForeName>Siegfried</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Moser</LastName>
+                    <ForeName>Ewald</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Windischberger</LastName>
+                    <ForeName>Christian</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>06</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Hum Neurosci</MedlineTA>
+            <NlmUniqueID>101477954</NlmUniqueID>
+            <ISSNLinking>1662-5161</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>World J Biol Psychiatry. 2011 Apr;12(3):188-200</RefSource>
+                <PMID Version="1">21375365</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Neurosci. 2009;10:137</RefSource>
+                <PMID Version="1">19930640</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2011;5:2</RefSource>
+                <PMID Version="1">21442040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 2011 Jul 1;498(1):57-62</RefSource>
+                <PMID Version="1">21575682</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2011 Oct 4;108(40):16783-8</RefSource>
+                <PMID Version="1">21930901</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 15;59(4):4141-59</RefSource>
+                <PMID Version="1">22019879</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>MAGMA. 2012 Aug;25(4):313-20</RefSource>
+                <PMID Version="1">22086306</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Feb 21;109(8):3131-6</RefSource>
+                <PMID Version="1">22323591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Biomed Res. 1996 Jun;29(3):162-73</RefSource>
+                <PMID Version="1">8812068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2001 Nov;14(3):140-51</RefSource>
+                <PMID Version="1">11559959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2002 Mar;3(3):201-15</RefSource>
+                <PMID Version="1">11994752</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Jul;22(3):1214-22</RefSource>
+                <PMID Version="1">15219593</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S208-19</RefSource>
+                <PMID Version="1">15501092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Feb 15;29(4):1359-67</RefSource>
+                <PMID Version="1">16260155</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Sep 12;103(37):13848-53</RefSource>
+                <PMID Version="1">16945915</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 1;37(4):1083-90; discussion 1097-9</RefSource>
+                <PMID Version="1">17719799</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Dec;29(12):1450-61</RefSource>
+                <PMID Version="1">17990304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2008 Mar;1124:1-38</RefSource>
+                <PMID Version="1">18400922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Jul;29(7):740-50</RefSource>
+                <PMID Version="1">18438886</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1408-16</RefSource>
+                <PMID Version="1">19442749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 May 15;56(2):616-26</RefSource>
+                <PMID Version="1">20541019</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2010 Oct 15;192(2):207-13</RefSource>
+                <PMID Version="1">20688104</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>MAGMA. 2010 Dec;23(5-6):289-307</RefSource>
+                <PMID Version="1">20972883</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>MAGMA. 2010 Dec;23(5-6):275-7</RefSource>
+                <PMID Version="1">21136136</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Apr 15;55(4):1686-93</RefSource>
+                <PMID Version="1">21238596</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Mar 2;31(9):3217-24</RefSource>
+                <PMID Version="1">21368033</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Aug;31(8):1207-16</RefSource>
+                <PMID Version="1">20063361</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Aug;29(8):875-93</RefSource>
+                <PMID Version="1">18058813</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2011 Sep;66(3):644-57</RefSource>
+                <PMID Version="1">21394769</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC3490136</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ICA</Keyword>
+            <Keyword MajorTopicYN="N">default-mode network</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+            <Keyword MajorTopicYN="N">magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">resting-state</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>07</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>10</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>11</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23133413</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnhum.2012.00301</ArticleId>
+            <ArticleId IdType="pmc">PMC3490136</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

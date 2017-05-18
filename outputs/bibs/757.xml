@@ -1,0 +1,349 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">27112129</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2045-2322</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Apr</Month>
+                        <Day>26</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Scientific reports</Title>
+                <ISOAbbreviation>Sci Rep</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Scaling in topological properties of brain networks.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>24926</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1038/srep24926</ELocationID>
+            <Abstract>
+                <AbstractText>The organization in brain networks shows highly modular features with weak inter-modular interaction. The topology of the networks involves emergence of modules and sub-modules at different levels of constitution governed by fractal laws that are signatures of self-organization in complex networks. The modular organization, in terms of modular mass, inter-modular, and intra-modular interaction, also obeys fractal nature. The parameters which characterize topological properties of brain networks follow one parameter scaling theory in all levels of network structure, which reveals the self-similar rules governing the network structure. Further, the calculated fractal dimensions of brain networks of different species are found to decrease when one goes from lower to higher level species which implicates the more ordered and self-organized topography at higher level species. The sparsely distributed hubs in brain networks may be most influencing nodes but their absence may not cause network breakdown, and centrality parameters characterizing them also follow one parameter scaling law indicating self-similar roles of these hubs at different levels of organization in brain networks. The local-community-paradigm decomposition plot and calculated local-community-paradigm-correlation co-efficient of brain networks also shows the evidence for self-organization in these networks.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Singh</LastName>
+                    <ForeName>Soibam Shyamchand</ForeName>
+                    <Initials>SS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Interdisciplinary Research in Basic Sciences, Jamia Millia Islamia, New Delhi-110025, India.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>School of Computational and Integrative Sciences, Jawaharlal Nehru University, New Delhi-110067, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Khundrakpam</LastName>
+                    <ForeName>Budhachandra</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McConnell Brain Imaging Center, Montreal Neurological Institute, McGill University, Montreal, QC H3A 2B4, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Reid</LastName>
+                    <ForeName>Andrew T</ForeName>
+                    <Initials>AT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Neuroscience and Medicine (INM-1), Research Centre Jülich, Jülich, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lewis</LastName>
+                    <ForeName>John D</ForeName>
+                    <Initials>JD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McConnell Brain Imaging Center, Montreal Neurological Institute, McGill University, Montreal, QC H3A 2B4, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Evans</LastName>
+                    <ForeName>Alan C</ForeName>
+                    <Initials>AC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McConnell Brain Imaging Center, Montreal Neurological Institute, McGill University, Montreal, QC H3A 2B4, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ishrat</LastName>
+                    <ForeName>Romana</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Interdisciplinary Research in Basic Sciences, Jamia Millia Islamia, New Delhi-110025, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sharma</LastName>
+                    <ForeName>B Indrajit</ForeName>
+                    <Initials>BI</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Physics, Assam University, Silchar-788011, Assam, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Singh</LastName>
+                    <ForeName>R K Brojen</ForeName>
+                    <Initials>RK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Computational and Integrative Sciences, Jawaharlal Nehru University, New Delhi-110067, India.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>04</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Sci Rep</MedlineTA>
+            <NlmUniqueID>101563288</NlmUniqueID>
+            <ISSNLinking>2045-2322</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2005 Jan 27;433(7024):392-5</RefSource>
+                <PMID Version="1">15674285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Protoc. 2012 Apr;7(4):670-85</RefSource>
+                <PMID Version="1">22422314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Feb 21;109(8):2825-30</RefSource>
+                <PMID Version="1">22308319</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1999 Apr-May;9(3):277-99</RefSource>
+                <PMID Version="1">10355908</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 1999 Oct 15;286(5439):509-12</RefSource>
+                <PMID Version="1">10521342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biosystems. 2015 Jan;127:67-72</RefSource>
+                <PMID Version="1">25451770</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Genet. 2004 Feb;5(2):101-13</RefSource>
+                <PMID Version="1">14735121</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2002 Aug 30;297(5586):1551-5</RefSource>
+                <PMID Version="1">12202830</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2010 Dec 08;4:200</RefSource>
+                <PMID Version="1">21151783</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Biol Sci. 1993 Apr 22;252(1333):13-8</RefSource>
+                <PMID Version="1">8389046</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 Jun;24(6):1529-39</RefSource>
+                <PMID Version="1">23349223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2010 Jan 15;104(2):025701</RefSource>
+                <PMID Version="1">20366610</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2014 Mar;18(3):114-5</RefSource>
+                <PMID Version="1">24268289</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2002 May 3;296(5569):910-3</RefSource>
+                <PMID Version="1">11988575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IET Syst Biol. 2007 Mar;1(2):89-119</RefSource>
+                <PMID Version="1">17441552</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2014 Jan 30;8:4</RefSource>
+                <PMID Version="1">24523693</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Physica A. 2011 Oct 1;390(20):3608-3613</RefSource>
+                <PMID Version="1">21808445</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 1986 Nov 12;314(1165):1-340</RefSource>
+                <PMID Version="1">22462104</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2006 Sep;74(3 Pt 2):036104</RefSource>
+                <PMID Version="1">17025705</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Rep. 2013;3:1613</RefSource>
+                <PMID Version="1">23563395</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2013 Aug 21;79(4):798-813</RefSource>
+                <PMID Version="1">23972601</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Rep. 2014;4:4312</RefSource>
+                <PMID Version="1">24621482</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscientist. 2006 Dec;12(6):512-23</RefSource>
+                <PMID Version="1">17079517</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2006 Jan 4;26(1):63-72</RefSource>
+                <PMID Version="1">16399673</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):144-55</RefSource>
+                <PMID Version="1">17070705</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2006 Jul 21;2(7):e95</RefSource>
+                <PMID Version="1">16848638</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2001 Dec 17;87(25):258701</RefSource>
+                <PMID Version="1">11736611</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2011 Apr;1224:109-25</RefSource>
+                <PMID Version="1">21251014</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2004 Feb;69(2 Pt 2):026113</RefSource>
+                <PMID Version="1">14995526</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010;5(8):e12200</RefSource>
+                <PMID Version="1">20808943</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2016 Jan 15;125:311-31</RefSource>
+                <PMID Version="1">26515902</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Oct;17(10):2407-19</RefSource>
+                <PMID Version="1">17204824</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2003 Feb;67(2 Pt 2):026112</RefSource>
+                <PMID Version="1">12636753</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2007;2(7):e597</RefSource>
+                <PMID Version="1">17611629</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2015 Nov;92(5):052809</RefSource>
+                <PMID Version="1">26651746</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 1;50(2):499-508</RefSource>
+                <PMID Version="1">20026219</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1994 May 24;91(11):5033-7</RefSource>
+                <PMID Version="1">8197179</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2004;2(2):145-62</RefSource>
+                <PMID Version="1">15319512</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2007 Feb 2;3(2):e17</RefSource>
+                <PMID Version="1">17274684</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2007;2(10):e1049</RefSource>
+                <PMID Version="1">17940613</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2010 Apr;6(4):e1000748</RefSource>
+                <PMID Version="1">20421990</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010;5(4):e10232</RefSource>
+                <PMID Version="1">20436911</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2008 Jan 15;24(2):282-4</RefSource>
+                <PMID Version="1">18006545</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4845066</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>06</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>04</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27112129</ArticleId>
+            <ArticleId IdType="pii">srep24926</ArticleId>
+            <ArticleId IdType="doi">10.1038/srep24926</ArticleId>
+            <ArticleId IdType="pmc">PMC4845066</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

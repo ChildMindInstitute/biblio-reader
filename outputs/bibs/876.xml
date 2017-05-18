@@ -1,0 +1,102 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">28035569</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>30</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>31</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0065-2598</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>957</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Advances in experimental medicine and biology</Title>
+                <ISOAbbreviation>Adv. Exp. Med. Biol.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Rethinking the Study of Volition for Clinical Use.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>229-254</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/978-3-319-47313-0_13</ELocationID>
+            <Abstract>
+                <AbstractText>Volition, the acquired voluntary control of our actions (at will), requires from birth to development and beyond a proper balance across multiple layers of the nervous systems. These levels range from the autonomic, to the automatic, to the voluntary control level, providing as well taxonomy with phylogenetic order of appearance in evolution. In the past few decades of movement research at the behavioral and systems levels, there has been a paucity of studies focusing on the possible contributions of involuntary movements to volitional control. Moreover, the work focusing on voluntary behavior has given us a valuable body of knowledge about constrained and highly over practiced activities while work involving unrestrained, naturalistic behaviors remains scarce. Perhaps in making theoretical assumptions about our data acquisition and analyses without properly empirically verifying, these assumptions have left us with a somewhat skewed notion of how we think the brain may be realizing the neural control of bodily motions; a notion that does not exactly correspond to the outcome of the extant empirical work assessing unrestrained movements as the nervous system acquires them and modifies skillful behaviors on demand. This chapter takes advantage of new technological advances and new analytics to invite rethinking some of the problems that we study in movement science by enforcing somewhat oversimplified assumptions on the data that we model, acquire, and analyze. I show that by relaxing our a priori assumptions of normality, linearity and stationarity in data from biophysical rhythms of the nervous systems, we would gain better insights into the motor phenomena. Further, we would shy away from a &quot;self-fulfilling prophesy&quot; paradigm with a tendency to a priori handcraft the outcome of our inquiry. The new lens to study natural movements and their control includes as well involuntary motions that take place largely beneath deliberate awareness. I present examples of solutions amenable to the habilitation and rehabilitation of volition in patient populations and discuss a new vision for movement science in light of making a seamless transition from volitional to intentional control of actions and thoughts.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Torres</LastName>
+                    <ForeName>Elizabeth B</ForeName>
+                    <Initials>EB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Cognitive Science, Neuroscience, Biomedical Engineering, Computational Biomedical Imaging and Modeling, Rutgers University, Building: Psychology 113/116; CBIM (Lab), 152 Frelinghuysen Road, Piscataway, New Jersey, 08854-8020, USA. ebtorres@rci.rutgers.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Adv Exp Med Biol</MedlineTA>
+            <NlmUniqueID>0121103</NlmUniqueID>
+            <ISSNLinking>0065-2598</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Afference</Keyword>
+            <Keyword MajorTopicYN="N">Autism</Keyword>
+            <Keyword MajorTopicYN="N">Bayesian</Keyword>
+            <Keyword MajorTopicYN="N">Motor noise</Keyword>
+            <Keyword MajorTopicYN="N">Nonlinear dynamics</Keyword>
+            <Keyword MajorTopicYN="N">Obstacle avoidance</Keyword>
+            <Keyword MajorTopicYN="N">Speed</Keyword>
+            <Keyword MajorTopicYN="N">Voluntary</Keyword>
+            <Keyword MajorTopicYN="N">Wearable sensor</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28035569</ArticleId>
+            <ArticleId IdType="doi">10.1007/978-3-319-47313-0_13</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

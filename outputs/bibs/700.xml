@@ -1,0 +1,249 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">25165444</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>08</Month>
+            <Day>28</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>08</Month>
+            <Day>28</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>8</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroinformatics</Title>
+                <ISOAbbreviation>Front Neuroinform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Increasing the reliability of data analysis of functional magnetic resonance imaging by applying a new blockwise permutation method.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>72</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fninf.2014.00072</ELocationID>
+            <Abstract>
+                <AbstractText>A recent paper by Eklund et al. (2012) showed that up to 70% false positive results may occur when analyzing functional magnetic resonance imaging (fMRI) data using the statistical parametric mapping (SPM) software, which may mainly be caused by insufficient compensation for the temporal correlation between successive scans. Here, we show that a blockwise permutation method can be an effective alternative to the standard correction method for the correlated residuals in the general linear model, assuming an AR(1)-model as used in SPM for analyzing fMRI data. The blockwise permutation approach including a random shift developed by our group (Adolf et al., 2011) accounts for the temporal correlation structure of the data without having to provide a specific definition of the underlying autocorrelation model. 1465 publicly accessible resting-state data sets were re-analyzed, and the results were compared with those of Eklund et al. (2012). It was found that with the new permutation method the nominal familywise error rate for the detection of activated voxels could be maintained approximately under even the most critical conditions in which Eklund et al. found the largest deviations from the nominal error level. Thus, the method presented here can serve as a tool to ameliorate the quality and reliability of fMRI data analyses.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Adolf</LastName>
+                    <ForeName>Daniela</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Biometry and Medical Informatics, Otto von Guericke University Magdeburg Magdeburg, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Weston</LastName>
+                    <ForeName>Snezhana</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Biometry and Medical Informatics, Otto von Guericke University Magdeburg Magdeburg, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Baecke</LastName>
+                    <ForeName>Sebastian</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Biometry and Medical Informatics, Otto von Guericke University Magdeburg Magdeburg, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Luchtmann</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neurosurgery, Otto von Guericke University Magdeburg Magdeburg, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bernarding</LastName>
+                    <ForeName>Johannes</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Biometry and Medical Informatics, Otto von Guericke University Magdeburg Magdeburg, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kropf</LastName>
+                    <ForeName>Siegfried</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Biometry and Medical Informatics, Otto von Guericke University Magdeburg Magdeburg, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>08</Month>
+                <Day>13</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neuroinform</MedlineTA>
+            <NlmUniqueID>101477957</NlmUniqueID>
+            <ISSNLinking>1662-5196</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 May 1;71:10-8</RefSource>
+                <PMID Version="1">23296182</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Apr 15;25(3):859-67</RefSource>
+                <PMID Version="1">15808986</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Apr 02;7:118</RefSource>
+                <PMID Version="1">23565090</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 16;59(2):1772-82</RefSource>
+                <PMID Version="1">21907810</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Jan 16;33(3):863-9</RefSource>
+                <PMID Version="1">23325225</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2009 May;5(5):e1000381</RefSource>
+                <PMID Version="1">19412534</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Exp Brain Res. 2009 Jul;196(3):453-8</RefSource>
+                <PMID Version="1">19471910</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jul 2;61(3):565-78</RefSource>
+                <PMID Version="1">22507229</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2001 Feb;12(2):61-78</RefSource>
+                <PMID Version="1">11169871</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Nov 20;104(47):18760-5</RefSource>
+                <PMID Version="1">18003904</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychopharmacology. 2013 Oct;38(11):2197-208</RefSource>
+                <PMID Version="1">23670589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Apr 15;70:175-88</RefSource>
+                <PMID Version="1">23291189</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Apr 1;40(2):728-37</RefSource>
+                <PMID Version="1">18261930</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Aug;12(2):196-208</RefSource>
+                <PMID Version="1">10913325</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2002 Jan;15(1):1-25</RefSource>
+                <PMID Version="1">11747097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 May 1;71:19-29</RefSource>
+                <PMID Version="1">23313780</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1999 May;9(5):526-33</RefSource>
+                <PMID Version="1">10329292</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Apr;15(4):870-8</RefSource>
+                <PMID Version="1">11906227</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Apr;30(4):1257-70</RefSource>
+                <PMID Version="1">18571794</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 15;54(2):992-1000</RefSource>
+                <PMID Version="1">20849959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2008 Jan 1;24(1):78-85</RefSource>
+                <PMID Version="1">18024976</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4131278</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">SPM analysis</Keyword>
+            <Keyword MajorTopicYN="N">autocorrelation</Keyword>
+            <Keyword MajorTopicYN="N">blockwise permutation including a random shift</Keyword>
+            <Keyword MajorTopicYN="N">familywise error rate</Keyword>
+            <Keyword MajorTopicYN="N">functional MRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>04</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>07</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>8</Month>
+                <Day>29</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>8</Month>
+                <Day>29</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>8</Month>
+                <Day>29</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25165444</ArticleId>
+            <ArticleId IdType="doi">10.3389/fninf.2014.00072</ArticleId>
+            <ArticleId IdType="pmc">PMC4131278</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

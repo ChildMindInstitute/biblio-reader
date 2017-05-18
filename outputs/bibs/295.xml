@@ -1,0 +1,456 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24788815</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>05</Month>
+            <Day>05</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>01</Month>
+            <Day>22</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1932-6203</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>9</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PloS one</Title>
+                <ISOAbbreviation>PLoS ONE</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Mapping small-world properties through development in the human brain: disruption in schizophrenia.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e96176</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0096176</ELocationID>
+            <Abstract>
+                <AbstractText>Evidence from imaging studies suggests that the human brain has a small-world network topology that might be disrupted in certain brain disorders. However, current methodology is based on global graph theory measures, such as clustering, C, characteristic path length, L, and small-worldness, S, that lack spatial specificity and are insufficient to identify regional brain abnormalities. Here we propose novel ultra-fast methodology for mapping local properties of brain network topology such as local C, L and S (lC, lL and lS) in the human brain at 3-mm isotropic resolution from 'resting-state' magnetic resonance imaging data. Test-retest datasets from 40 healthy children/adolescents were used to demonstrate the overall good reliability of the measures across sessions and computational parameters (intraclass correlation &gt; 0.5 for lC and lL) and their low variability across subjects (&lt; 29%). Whereas regions with high local functional connectivity density (lFCD; local degree) in posterior parietal and occipital cortices demonstrated high lC and short lL, subcortical regions (globus pallidus, thalamus, hippocampus and amygdala), cerebellum (lobes and vermis), cingulum and temporal cortex also had high, lS, demonstrating stronger small-world topology than other hubs. Children/adolescents had stronger lFCD, higher lC and longer lL in most cortical regions and thalamus than 74 healthy adults, consistent with pruning of functional connectivity during maturation. In contrast, lFCD, lC and lL were weaker in thalamus and midbrain, and lL was shorter in frontal cortical regions and cerebellum for 69 schizophrenia patients than for 74 healthy controls, suggesting exaggerated pruning of connectivity in schizophrenia. Follow up correlation analyses for seeds in thalamus and midbrain uncovered lower positive connectivity of these regions in thalamus, putamen, cerebellum and frontal cortex (cingulum, orbitofrontal, inferior frontal) and lower negative connectivity in auditory, visual, motor, premotor and somatosensory cortices for schizophrenia patients than for controls, consistent with prior findings of thalamic disconnection in schizophrenia.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Tomasi</LastName>
+                    <ForeName>Dardo</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>National Institute on Alcohol Abuse and Alcoholism, Bethesda, Maryland, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Volkow</LastName>
+                    <ForeName>Nora D</ForeName>
+                    <Initials>ND</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>National Institute on Alcohol Abuse and Alcoholism, Bethesda, Maryland, United States of America; National Institute on Drug Abuse, Bethesda, Maryland, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>2R01AA09481</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>04</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PLoS One</MedlineTA>
+            <NlmUniqueID>101285081</NlmUniqueID>
+            <ISSNLinking>1932-6203</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2002 Feb 15;114(1):39-50</RefSource>
+                <PMID Version="1">11864808</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2005 Jun;62(6):593-602</RefSource>
+                <PMID Version="1">15939837</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Aug;30(8):2356-66</RefSource>
+                <PMID Version="1">19172655</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acta Psychiatr Scand Suppl. 1999;395:68-79</RefSource>
+                <PMID Version="1">10225335</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Dec 19;103(51):19518-23</RefSource>
+                <PMID Version="1">17159150</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2008;3(4):e0002051</RefSource>
+                <PMID Version="1">18446219</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2010 May;133(Pt 5):1494-504</RefSource>
+                <PMID Version="1">20237131</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Nov 15;43(3):528-39</RefSource>
+                <PMID Version="1">18786642</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Aug 14;104(33):13507-12</RefSource>
+                <PMID Version="1">17679691</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2007 Mar;164(3):450-7</RefSource>
+                <PMID Version="1">17329470</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2004 Nov;2(11):e369</RefSource>
+                <PMID Version="1">15510229</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2004 Sep;8(9):418-25</RefSource>
+                <PMID Version="1">15350243</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2012 Oct;169(10):1092-9</RefSource>
+                <PMID Version="1">23032387</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Aug 1;57(3):908-17</RefSource>
+                <PMID Version="1">21609769</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Nov 15;28(3):635-62</RefSource>
+                <PMID Version="1">16172003</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2000 Mar 20;84(12):2758-61</RefSource>
+                <PMID Version="1">11017318</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Jul 14;30(28):9477-87</RefSource>
+                <PMID Version="1">20631176</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Mar;31(3):424-37</RefSource>
+                <PMID Version="1">19777578</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Jan 27;106(4):1279-84</RefSource>
+                <PMID Version="1">19164577</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Apr;33(4):849-60</RefSource>
+                <PMID Version="1">21425398</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2009 May;5(5):e1000381</RefSource>
+                <PMID Version="1">19412534</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2013 Jul;147(2-3):331-8</RefSource>
+                <PMID Version="1">23672819</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychopharmacology. 2014 Mar;39(4):1020-30</RefSource>
+                <PMID Version="1">24165885</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 1998;24(1):153-61</RefSource>
+                <PMID Version="1">9502553</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2009 Mar;108(1-3):3-10</RefSource>
+                <PMID Version="1">19128945</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 1984 Mar;41(3):293-300</RefSource>
+                <PMID Version="1">6608333</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1997 Oct 20;387(2):167-78</RefSource>
+                <PMID Version="1">9336221</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2009 Mar;10(3):186-98</RefSource>
+                <PMID Version="1">19190637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscientist. 2006 Dec;12(6):512-23</RefSource>
+                <PMID Version="1">17079517</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2006 Jan 4;26(1):63-72</RefSource>
+                <PMID Version="1">16399673</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):1059-69</RefSource>
+                <PMID Version="1">19819337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychopharmacology. 2012 Jan;37(2):499-507</RefSource>
+                <PMID Version="1">21956440</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 Apr;24(4):935-44</RefSource>
+                <PMID Version="1">23242198</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2008 Dec;9(12):947-57</RefSource>
+                <PMID Version="1">19002191</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Sep 10;28(37):9239-48</RefSource>
+                <PMID Version="1">18784304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 1988 Jan-Feb;1(1):47-53</RefSource>
+                <PMID Version="1">3154506</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2001 Jun;158(6):955-8</RefSource>
+                <PMID Version="1">11384907</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2013 Aug;70(8):783-92</RefSource>
+                <PMID Version="1">23739835</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2012 Mar 1;71(5):443-50</RefSource>
+                <PMID Version="1">22153589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 Dec 15;58(12):921-9</RefSource>
+                <PMID Version="1">16043134</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Jul 10;109(28):11372-7</RefSource>
+                <PMID Version="1">22711833</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Mar;19(3):640-57</RefSource>
+                <PMID Version="1">18653667</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 Dec;68(12):1207-17</RefSource>
+                <PMID Version="1">21810628</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Feb 1;34(3):1171-81</RefSource>
+                <PMID Version="1">17157035</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2011 Feb;21(2):385-91</RefSource>
+                <PMID Version="1">20542991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2007 Jul;33(4):1004-12</RefSource>
+                <PMID Version="1">17556752</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 1;62(4):2296-314</RefSource>
+                <PMID Version="1">22387165</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2008 Apr;131(Pt 4):945-61</RefSource>
+                <PMID Version="1">18299296</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2009 Jul;7(7):e1000157</RefSource>
+                <PMID Version="1">19621066</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Psychiatry. 2013 Mar;26(2):172-87</RefSource>
+                <PMID Version="1">23324948</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Rev. 2008 Mar;28(1):78-106</RefSource>
+                <PMID Version="1">18509515</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 1986 Feb;43(2):114-24</RefSource>
+                <PMID Version="1">3947207</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 May 25;107(21):9885-90</RefSource>
+                <PMID Version="1">20457896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2010 Jul 1;68(1):61-9</RefSource>
+                <PMID Version="1">20497901</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Sep 05;7:402</RefSource>
+                <PMID Version="1">24046733</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Psychiatry Neurosci. 2012 Feb;37(2):75-7</RefSource>
+                <PMID Version="1">22339991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jan;15(1):273-89</RefSource>
+                <PMID Version="1">11771995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2011 Feb;21(2):330-7</RefSource>
+                <PMID Version="1">20530219</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2012 May;17(5):471, 549-58</RefSource>
+                <PMID Version="1">21727896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2010 Aug;67(8):783-92</RefSource>
+                <PMID Version="1">20679586</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2000 Feb;10(2):127-41</RefSource>
+                <PMID Version="1">10667981</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2009 Jan 30;176(2):263-9</RefSource>
+                <PMID Version="1">18834906</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2007 Feb 2;3(2):e17</RefSource>
+                <PMID Version="1">17274684</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Psychiatry. 2009 Oct;70(10):1432-8</RefSource>
+                <PMID Version="1">19538905</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Feb 1;29(3):1000-6</RefSource>
+                <PMID Version="1">16139527</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2000 Jan 29;355(1393):91-110</RefSource>
+                <PMID Version="1">10703046</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1998 Jun 4;393(6684):440-2</RefSource>
+                <PMID Version="1">9623998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Jan 10;5:103</RefSource>
+                <PMID Version="1">22275887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Feb 11;29(6):1860-73</RefSource>
+                <PMID Version="1">19211893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1986 Aug;6(4):441-6</RefSource>
+                <PMID Version="1">3488322</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Top Med Chem. 2012;12(21):2415-25</RefSource>
+                <PMID Version="1">23279180</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Aug 13;110(33):13642-7</RefSource>
+                <PMID Version="1">23898179</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012559" MajorTopicYN="N">Schizophrenia</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4005771</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>01</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>04</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>5</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>5</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>1</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24788815</ArticleId>
+            <ArticleId IdType="doi">10.1371/journal.pone.0096176</ArticleId>
+            <ArticleId IdType="pii">PONE-D-14-00226</ArticleId>
+            <ArticleId IdType="pmc">PMC4005771</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

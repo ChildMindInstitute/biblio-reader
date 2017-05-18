@@ -1,0 +1,808 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">23702418</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>07</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>02</Month>
+            <Day>05</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>80</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                        <Month>Oct</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Advances in diffusion MRI acquisition and processing in the Human Connectome Project.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>125-43</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2013.05.057</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(13)00551-X</ELocationID>
+            <Abstract>
+                <AbstractText>The Human Connectome Project (HCP) is a collaborative 5-year effort to map human brain connections and their variability in healthy adults. A consortium of HCP investigators will study a population of 1200 healthy adults using multiple imaging modalities, along with extensive behavioral and genetic data. In this overview, we focus on diffusion MRI (dMRI) and the structural connectivity aspect of the project. We present recent advances in acquisition and processing that allow us to obtain very high-quality in-vivo MRI data, whilst enabling scanning of a very large number of subjects. These advances result from 2 years of intensive efforts in optimising many aspects of data acquisition and processing during the piloting phase of the project. The data quality and methods described here are representative of the datasets and processing pipelines that will be made freely available to the community at quarterly intervals, beginning in 2013.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sotiropoulos</LastName>
+                    <ForeName>Stamatios N</ForeName>
+                    <Initials>SN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Functional Magnetic Resonance Imaging of the Brain, University of Oxford, Oxford, UK. stam@fmrib.ox.ac.uk</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jbabdi</LastName>
+                    <ForeName>Saad</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xu</LastName>
+                    <ForeName>Junqian</ForeName>
+                    <Initials>J</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Andersson</LastName>
+                    <ForeName>Jesper L</ForeName>
+                    <Initials>JL</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Moeller</LastName>
+                    <ForeName>Steen</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Auerbach</LastName>
+                    <ForeName>Edward J</ForeName>
+                    <Initials>EJ</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Glasser</LastName>
+                    <ForeName>Matthew F</ForeName>
+                    <Initials>MF</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hernandez</LastName>
+                    <ForeName>Moises</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sapiro</LastName>
+                    <ForeName>Guillermo</ForeName>
+                    <Initials>G</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jenkinson</LastName>
+                    <ForeName>Mark</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Feinberg</LastName>
+                    <ForeName>David A</ForeName>
+                    <Initials>DA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yacoub</LastName>
+                    <ForeName>Essa</ForeName>
+                    <Initials>E</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lenglet</LastName>
+                    <ForeName>Christophe</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Van Essen</LastName>
+                    <ForeName>David C</ForeName>
+                    <Initials>DC</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ugurbil</LastName>
+                    <ForeName>Kamil</ForeName>
+                    <Initials>K</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Behrens</LastName>
+                    <ForeName>Timothy E J</ForeName>
+                    <Initials>TE</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <CollectiveName>WU-Minn HCP Consortium</CollectiveName>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>P41 EB015894</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>F30 MH097312</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>1U54MH091657-01</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>098369</GrantID>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH060974</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P30 NS076408</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>S10 RR022984</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>1S10RR022984-01A1</GrantID>
+                    <Acronym>RR</Acronym>
+                    <Agency>NCRR NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH60974</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U54 MH091657</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P30 NS057091</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>090955</GrantID>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>G0800578</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>05</Month>
+                <Day>20</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2012 Feb;22(1):144-53</RefSource>
+                <PMID Version="1">21908183</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2002 Oct;48(4):577-82</RefSource>
+                <PMID Version="1">12353272</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010;5(12):e15710</RefSource>
+                <PMID Version="1">21187930</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2005 Nov;23(9):899-905</RefSource>
+                <PMID Version="1">16310105</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jul 1;57(1):167-81</RefSource>
+                <PMID Version="1">21473920</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Jun 27;5:4</RefSource>
+                <PMID Version="1">21743807</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:62-79</RefSource>
+                <PMID Version="1">23684880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S208-19</RefSource>
+                <PMID Version="1">15501092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:105-24</RefSource>
+                <PMID Version="1">23668970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1982 Nov 20;212(1):23-37</RefSource>
+                <PMID Version="1">7174906</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Jul 13;31(28):10392-402</RefSource>
+                <PMID Version="1">21753016</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2013 Dec;70(6):1682-9</RefSource>
+                <PMID Version="1">23401137</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:220-33</RefSource>
+                <PMID Version="1">23707579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Biomed Eng. 2007 Mar;54(3):462-72</RefSource>
+                <PMID Version="1">17355058</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2010 May;63(5):1144-53</RefSource>
+                <PMID Version="1">20432285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2003 Nov;50(5):1077-88</RefSource>
+                <PMID Version="1">14587019</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2013 Jun;32(6):969-82</RefSource>
+                <PMID Version="1">23362247</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2010 Jul;64(1):9-14</RefSource>
+                <PMID Version="1">20577977</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Feb 13;33(7):3190-201</RefSource>
+                <PMID Version="1">23407972</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jul 1;46(3):775-85</RefSource>
+                <PMID Version="1">19344686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 1999 Apr;9(4):531-8</RefSource>
+                <PMID Version="1">10232510</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 15;37(2):474-88</RefSource>
+                <PMID Version="1">17596967</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Nov;23(3):1176-85</RefSource>
+                <PMID Version="1">15528117</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cortex. 2012 Jan;48(1):15-25</RefSource>
+                <PMID Version="1">21345429</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jul 1;36(3):617-29</RefSource>
+                <PMID Version="1">17481920</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:80-104</RefSource>
+                <PMID Version="1">23702417</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2012 Dec;68(6):1846-55</RefSource>
+                <PMID Version="1">22334356</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 15;63(1):1-10</RefSource>
+                <PMID Version="1">22759994</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Oct;44(4):625-32</RefSource>
+                <PMID Version="1">11025519</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cortex. 2008 Sep;44(8):1105-32</RefSource>
+                <PMID Version="1">18619589</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2005 Nov;54(5):1194-206</RefSource>
+                <PMID Version="1">16161109</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1998 Nov;40(5):754-62</RefSource>
+                <PMID Version="1">9797160</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 15;37(2):579-88</RefSource>
+                <PMID Version="1">17604651</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Inf Process Med Imaging. 2005;19:76-87</RefSource>
+                <PMID Version="1">17354686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):144-55</RefSource>
+                <PMID Version="1">17070705</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Aug;33(8):1894-913</RefSource>
+                <PMID Version="1">21928316</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2011;1(3):169-83</RefSource>
+                <PMID Version="1">22433046</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:144-68</RefSource>
+                <PMID Version="1">23702415</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2012 May;67(5):1210-24</RefSource>
+                <PMID Version="1">21858868</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2284-97</RefSource>
+                <PMID Version="1">22008372</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Inf Process Med Imaging. 2003 Jul;18:684-95</RefSource>
+                <PMID Version="1">15344498</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2005 Dec;54(6):1377-86</RefSource>
+                <PMID Version="1">16247738</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2001 Feb;13(2):313-7</RefSource>
+                <PMID Version="1">11169840</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Apr 2;60(2):1412-25</RefSource>
+                <PMID Version="1">22270351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Oct 1;62(4):2222-31</RefSource>
+                <PMID Version="1">22366334</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Dec;36(6):960-4</RefSource>
+                <PMID Version="1">8946363</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Oct;20(2):870-88</RefSource>
+                <PMID Version="1">14568458</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2007 Sep;58(3):497-510</RefSource>
+                <PMID Version="1">17763358</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2013 Aug;70(2):358-69</RefSource>
+                <PMID Version="1">22936599</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Aug 1;27(1):48-58</RefSource>
+                <PMID Version="1">15979342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 1;31(3):1086-103</RefSource>
+                <PMID Version="1">16546404</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2011 Apr;32(4):544-63</RefSource>
+                <PMID Version="1">20945352</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2003 Sep;50(3):560-9</RefSource>
+                <PMID Version="1">12939764</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosurgery. 2008 Jun;62(6 Suppl 3):989-1026; discussion 1026-8</RefSource>
+                <PMID Version="1">18695585</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1999 Aug 31;96(18):10422-7</RefSource>
+                <PMID Version="1">10468624</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:234-45</RefSource>
+                <PMID Version="1">23711537</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2006 May;55(5):1075-82</RefSource>
+                <PMID Version="1">16538604</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2004 Dec;52(6):1358-72</RefSource>
+                <PMID Version="1">15562495</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1982 Nov 20;212(1):38-52</RefSource>
+                <PMID Version="1">7174907</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2010 Aug;64(2):554-66</RefSource>
+                <PMID Version="1">20535807</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1998 Mar;39(3):417-28</RefSource>
+                <PMID Version="1">9498598</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 1;52(4):1374-89</RefSource>
+                <PMID Version="1">20580932</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 1999 Feb;45(2):265-9</RefSource>
+                <PMID Version="1">9989633</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013;8(4):e61892</RefSource>
+                <PMID Version="1">23658616</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1993 Jul;30(1):51-9</RefSource>
+                <PMID Version="1">8371675</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 1988 Aug;168(2):493-5</RefSource>
+                <PMID Version="1">3393670</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jul 16;61(4):1000-16</RefSource>
+                <PMID Version="1">22484410</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1997 Nov;38(5):852-7</RefSource>
+                <PMID Version="1">9358462</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:202-19</RefSource>
+                <PMID Version="1">23707591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Apr 2;60(2):967-78</RefSource>
+                <PMID Version="1">22245337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 May 1;35(4):1459-72</RefSource>
+                <PMID Version="1">17379540</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2005 Dec;54(6):1439-47</RefSource>
+                <PMID Version="1">16261576</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D056324" MajorTopicYN="N">Diffusion Tensor Imaging</DescriptorName>
+                <QualifierName UI="Q000639" MajorTopicYN="Y">trends</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008953" MajorTopicYN="Y">Models, Anatomic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="N">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS483085</OtherID>
+        <OtherID Source="NLM">PMC3720790</OtherID>
+        <InvestigatorList>
+            <Investigator ValidYN="Y">
+                <LastName>Van Essen</LastName>
+                <ForeName>David</ForeName>
+                <Initials>D</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Ugurbil</LastName>
+                <ForeName>Kamil</ForeName>
+                <Initials>K</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Barch</LastName>
+                <ForeName>Deanna</ForeName>
+                <Initials>D</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Beckmann</LastName>
+                <ForeName>Christian</ForeName>
+                <Initials>C</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Behrens</LastName>
+                <ForeName>Tim</ForeName>
+                <Initials>T</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Bjork</LastName>
+                <ForeName>James</ForeName>
+                <Initials>J</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Bucholz</LastName>
+                <ForeName>Richard</ForeName>
+                <Initials>R</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Corbetta</LastName>
+                <ForeName>Maurizio</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Della Penna</LastName>
+                <ForeName>Stefania</ForeName>
+                <Initials>S</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Fries</LastName>
+                <ForeName>Pascal</ForeName>
+                <Initials>P</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Garwood</LastName>
+                <ForeName>Michael</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Goate</LastName>
+                <ForeName>Alison</ForeName>
+                <Initials>A</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Green</LastName>
+                <ForeName>Len</ForeName>
+                <Initials>L</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Harel</LastName>
+                <ForeName>Noam</ForeName>
+                <Initials>N</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Heath</LastName>
+                <ForeName>Andrew</ForeName>
+                <Initials>A</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Jenkinson</LastName>
+                <ForeName>Mark</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Johansen-Berg</LastName>
+                <ForeName>Heidi</ForeName>
+                <Initials>H</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Larson-Prior</LastName>
+                <ForeName>Linda</ForeName>
+                <Initials>L</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Lenglet</LastName>
+                <ForeName>Christophe</ForeName>
+                <Initials>C</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Marcus</LastName>
+                <ForeName>Daniel</ForeName>
+                <Initials>D</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Miller</LastName>
+                <ForeName>Karla</ForeName>
+                <Initials>K</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Nichols</LastName>
+                <ForeName>Thomas</ForeName>
+                <Initials>T</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Oostenveld</LastName>
+                <ForeName>Robert</ForeName>
+                <Initials>R</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Perlmutter</LastName>
+                <ForeName>Joel</ForeName>
+                <Initials>J</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Petersen</LastName>
+                <ForeName>Steve</ForeName>
+                <Initials>S</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Pizzella</LastName>
+                <ForeName>Vitorrio</ForeName>
+                <Initials>V</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Prior</LastName>
+                <ForeName>Fred</ForeName>
+                <Initials>F</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Province</LastName>
+                <ForeName>Mike</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Raichle</LastName>
+                <ForeName>Marc</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Romani</LastName>
+                <ForeName>Gian Luca</ForeName>
+                <Initials>GL</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Roskos</LastName>
+                <ForeName>P Tyler</ForeName>
+                <Initials>PT</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Sapiro</LastName>
+                <ForeName>Guillermo</ForeName>
+                <Initials>G</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Schlaggar</LastName>
+                <ForeName>Brad</ForeName>
+                <Initials>B</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Shimony</LastName>
+                <ForeName>Joshua</ForeName>
+                <Initials>J</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Smith</LastName>
+                <ForeName>Stephen</ForeName>
+                <Initials>S</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Snyder</LastName>
+                <ForeName>Avi</ForeName>
+                <Initials>A</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Sporns</LastName>
+                <ForeName>Olaf</ForeName>
+                <Initials>O</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Woolrich</LastName>
+                <ForeName>Mark</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Yacoub</LastName>
+                <ForeName>Essa</ForeName>
+                <Initials>E</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Zacks</LastName>
+                <ForeName>Jeff</ForeName>
+                <Initials>J</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Feinberg</LastName>
+                <ForeName>David</ForeName>
+                <Initials>D</Initials>
+            </Investigator>
+        </InvestigatorList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>01</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>04</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>05</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>5</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>5</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23702418</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(13)00551-X</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2013.05.057</ArticleId>
+            <ArticleId IdType="pmc">PMC3720790</ArticleId>
+            <ArticleId IdType="mid">NIHMS483085</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

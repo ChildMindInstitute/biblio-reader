@@ -1,0 +1,488 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27088054</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>04</Month>
+            <Day>29</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">2162-3279</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Apr</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Brain and behavior</Title>
+                <ISOAbbreviation>Brain Behav</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Single-subject morphological brain networks: connectivity mapping, topological characterization and test-retest reliability.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e00448</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1002/brb3.448</ELocationID>
+            <Abstract>
+                <AbstractText Label="INTRODUCTION" NlmCategory="BACKGROUND">Structural MRI has long been used to characterize local morphological features of the human brain. Coordination patterns of the local morphological features among regions, however, are not well understood. Here, we constructed individual-level morphological brain networks and systematically examined their topological organization and long-term test-retest reliability under different analytical schemes of spatial smoothing, brain parcellation, and network type.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">This study included 57 healthy participants and all participants completed two MRI scan sessions. Individual morphological brain networks were constructed by estimating interregional similarity in the distribution of regional gray matter volume in terms of the Kullback-Leibler divergence measure. Graph-based global and nodal network measures were then calculated, followed by the statistical comparison and intra-class correlation analysis.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">The morphological brain networks were highly reproducible between sessions with significantly larger similarities for interhemispheric connections linking bilaterally homotopic regions. Further graph-based analyses revealed that the morphological brain networks exhibited nonrandom topological organization of small-worldness, high parallel efficiency and modular architecture regardless of the analytical choices of spatial smoothing, brain parcellation and network type. Moreover, several paralimbic and association regions were consistently revealed to be potential hubs. Nonetheless, the three studied factors particularly spatial smoothing significantly affected quantitative characterization of morphological brain networks. Further examination of long-term reliability revealed that all the examined network topological properties showed fair to excellent reliability irrespective of the analytical strategies, but performing spatial smoothing significantly improved reliability. Interestingly, nodal centralities were positively correlated with their reliabilities, and nodal degree and efficiency outperformed nodal betweenness with respect to reliability.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Our findings support single-subject morphological network analysis as a meaningful and reliable method to characterize structural organization of the human brain; this method thus opens a new avenue toward understanding the substrate of intersubject variability in behavior and function and establishing morphological network biomarkers in brain disorders.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Hao</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of PsychologyHangzhou Normal UniversityHangzhou311121China; Zhejiang Key Laboratory for Research in Assessment of Cognitive ImpairmentsHangzhou311121China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jin</LastName>
+                    <ForeName>Xiaoqing</ForeName>
+                    <Initials>X</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Acupuncture and Moxibustion Zhejiang Hospital Hangzhou 310030 China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Ye</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of PsychologyHangzhou Normal UniversityHangzhou311121China; Zhejiang Key Laboratory for Research in Assessment of Cognitive ImpairmentsHangzhou311121China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Jinhui</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of PsychologyHangzhou Normal UniversityHangzhou311121China; Zhejiang Key Laboratory for Research in Assessment of Cognitive ImpairmentsHangzhou311121China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>03</Month>
+                <Day>03</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Brain Behav</MedlineTA>
+            <NlmUniqueID>101570837</NlmUniqueID>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 Oct;18(10):2374-81</RefSource>
+                <PMID Version="1">18267952</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2015 Apr;31:164-72</RefSource>
+                <PMID Version="1">25460073</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2009;4(4):e5226</RefSource>
+                <PMID Version="1">19381298</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2005 Sep;15(9):1332-42</RefSource>
+                <PMID Version="1">15635061</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:53-61</RefSource>
+                <PMID Version="1">23528922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2013;9:91-121</RefSource>
+                <PMID Version="1">23537483</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 Jun 17;4:22</RefSource>
+                <PMID Version="1">20592949</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2015;10(11):e0141840</RefSource>
+                <PMID Version="1">26536598</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1998 Jun;8(4):372-84</RefSource>
+                <PMID Version="1">9651132</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2014 May;17(5):652-60</RefSource>
+                <PMID Version="1">24686784</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2004 Sep;8(9):418-25</RefSource>
+                <PMID Version="1">15350243</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2014 Aug;137(Pt 8):2382-95</RefSource>
+                <PMID Version="1">25057133</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Feb 1;39(3):1064-80</RefSource>
+                <PMID Version="1">18037310</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2012 Nov;141(2-3):109-18</RefSource>
+                <PMID Version="1">22981811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2015 Mar;56(3):299-320</RefSource>
+                <PMID Version="1">25441756</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscientist. 2015 Jun;21(3):290-305</RefSource>
+                <PMID Version="1">24962094</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Nov 2;31(44):15775-86</RefSource>
+                <PMID Version="1">22049421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2002 May 3;296(5569):910-3</RefSource>
+                <PMID Version="1">11988575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(7):e21935</RefSource>
+                <PMID Version="1">21818280</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(7):e21976</RefSource>
+                <PMID Version="1">21818285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 May;30(5):1511-23</RefSource>
+                <PMID Version="1">18649353</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:397-404</RefSource>
+                <PMID Version="1">23558097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 Jul;22(7):1530-41</RefSource>
+                <PMID Version="1">21878484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2014 Oct;15(10):683-95</RefSource>
+                <PMID Version="1">25186238</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Pattern Anal Mach Intell. 2006 Jun;28(6):917-29</RefSource>
+                <PMID Version="1">16724586</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2009 Dec;132(Pt 12):3366-79</RefSource>
+                <PMID Version="1">19439423</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2009 Mar;19(3):524-36</RefSource>
+                <PMID Version="1">18567609</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(3):e32766</RefSource>
+                <PMID Version="1">22412922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2015 Jun 30;9:386</RefSource>
+                <PMID Version="1">26175682</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 15;38(1):95-113</RefSource>
+                <PMID Version="1">17761438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2009 Mar;10(3):186-98</RefSource>
+                <PMID Version="1">19190637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2006 Jan 4;26(1):63-72</RefSource>
+                <PMID Version="1">16399673</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Sep;52(3):1059-69</RefSource>
+                <PMID Version="1">19819337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 1;31(3):968-80</RefSource>
+                <PMID Version="1">16530430</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2013 Dec;17(12):683-96</RefSource>
+                <PMID Version="1">24231140</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Feb 1;54(3):1862-71</RefSource>
+                <PMID Version="1">20650319</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Sep 10;28(37):9239-48</RefSource>
+                <PMID Version="1">18784304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Feb 13;33(7):2889-99</RefSource>
+                <PMID Version="1">23407947</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Feb 1;86:231-43</RefSource>
+                <PMID Version="1">24096127</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2015 Feb 17;9:59</RefSource>
+                <PMID Version="1">25741265</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2012 May;13(5):336-49</RefSource>
+                <PMID Version="1">22498897</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J R Soc Interface. 2015 Feb 6;12(103). pii: 20140881. doi: 10.1098/rsif.2014.0881</RefSource>
+                <PMID Version="1">25540237</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Behav. 2016 Mar 03;6(4):e00448</RefSource>
+                <PMID Version="1">27088054</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jul 1;36(3):645-60</RefSource>
+                <PMID Version="1">17466539</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Dec;83:901-11</RefSource>
+                <PMID Version="1">23886985</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1999 Jan;9(1):18-45</RefSource>
+                <PMID Version="1">9918726</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Bull. 1979 Mar;86(2):420-8</RefSource>
+                <PMID Version="1">18839484</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2010 Aug;23(4):341-50</RefSource>
+                <PMID Version="1">20581686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Mar;33(3):552-68</RefSource>
+                <PMID Version="1">21391279</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2014 Nov 30;237:103-7</RefSource>
+                <PMID Version="1">25220868</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:489-504</RefSource>
+                <PMID Version="1">23711536</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Methods. 2013 Jun;10(6):524-39</RefSource>
+                <PMID Version="1">23722212</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Apr 30;28(18):4756-66</RefSource>
+                <PMID Version="1">18448652</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 May 25;107(21):9885-90</RefSource>
+                <PMID Version="1">20457896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Feb 15;49(4):3132-48</RefSource>
+                <PMID Version="1">19909818</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Oct;17(10):2407-19</RefSource>
+                <PMID Version="1">17204824</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2013 Dec;17(12):603-5</RefSource>
+                <PMID Version="1">24080424</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jan;15(1):273-89</RefSource>
+                <PMID Version="1">11771995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2007;2(7):e597</RefSource>
+                <PMID Version="1">17611629</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2009 Apr 16;62(1):42-52</RefSource>
+                <PMID Version="1">19376066</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Neuropsychopharmacol. 2015 May;25(5):733-48</RefSource>
+                <PMID Version="1">24726580</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Anat Embryol (Berl). 2005 Dec;210(5-6):411-7</RefSource>
+                <PMID Version="1">16175385</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Oct 19;107(42):18191-6</RefSource>
+                <PMID Version="1">20921389</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 15;54(2):1262-79</RefSource>
+                <PMID Version="1">20850551</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2013 Dec 24;7:37</RefSource>
+                <PMID Version="1">24399963</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2011;7:113-40</RefSource>
+                <PMID Version="1">21128784</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):970-83</RefSource>
+                <PMID Version="1">20035887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 May 1;50(4):1497-510</RefSource>
+                <PMID Version="1">20083210</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 May 1;56(1):235-45</RefSource>
+                <PMID Version="1">21238595</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2012 May;33(5):899-913</RefSource>
+                <PMID Version="1">20724031</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1998 Jun 4;393(6684):440-2</RefSource>
+                <PMID Version="1">9623998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 1;52(4):1302-13</RefSource>
+                <PMID Version="1">20553893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2014 Jul 2;83(1):238-51</RefSource>
+                <PMID Version="1">24991964</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2013 May;14(5):322-36</RefSource>
+                <PMID Version="1">23531697</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2005 Sep;1(4):e42</RefSource>
+                <PMID Version="1">16201007</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Feb 11;29(6):1860-73</RefSource>
+                <PMID Version="1">19211893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1997 Jan 23;385(6614):313-8</RefSource>
+                <PMID Version="1">9002514</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2012 Mar;16(3):181-8</RefSource>
+                <PMID Version="1">22341211</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Feb 1;44(3):715-23</RefSource>
+                <PMID Version="1">19027073</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2004 Jan;14(1):11-22</RefSource>
+                <PMID Version="1">14654453</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 1997 Apr 15;17(8):2859-68</RefSource>
+                <PMID Version="1">9092607</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4782249</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Brain network</Keyword>
+            <Keyword MajorTopicYN="N">gray matter volume</Keyword>
+            <Keyword MajorTopicYN="N">hub</Keyword>
+            <Keyword MajorTopicYN="N">reliability</Keyword>
+            <Keyword MajorTopicYN="N">structural MRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>07</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>22</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27088054</ArticleId>
+            <ArticleId IdType="doi">10.1002/brb3.448</ArticleId>
+            <ArticleId IdType="pii">BRB3448</ArticleId>
+            <ArticleId IdType="pmc">PMC4782249</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

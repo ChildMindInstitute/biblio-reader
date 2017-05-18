@@ -1,0 +1,436 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24748378</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>04</Month>
+            <Day>21</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>05</Month>
+            <Day>29</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1932-6203</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>9</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PloS one</Title>
+                <ISOAbbreviation>PLoS ONE</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>A robust classifier to distinguish noise from fMRI independent components.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e95493</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0095493</ELocationID>
+            <Abstract>
+                <AbstractText>Analyzing Functional Magnetic Resonance Imaging (fMRI) of resting brains to determine the spatial location and activity of intrinsic brain networks--a novel and burgeoning research field--is limited by the lack of ground truth and the tendency of analyses to overfit the data. Independent Component Analysis (ICA) is commonly used to separate the data into signal and Gaussian noise components, and then map these components on to spatial networks. Identifying noise from this data, however, is a tedious process that has proven hard to automate, particularly when data from different institutions, subjects, and scanners is used. Here we present an automated method to delineate noisy independent components in ICA using a data-driven infrastructure that queries a database of 246 spatial and temporal features to discover a computational signature of different types of noise. We evaluated the performance of our method to detect noisy components from healthy control fMRI (sensitivity = 0.91, specificity = 0.82, cross validation accuracy (CVA) = 0.87, area under the curve (AUC) = 0.93), and demonstrate its generalizability by showing equivalent performance on (1) an age- and scanner-matched cohort of schizophrenia patients from the same institution (sensitivity = 0.89, specificity = 0.83, CVA = 0.86), (2) an age-matched cohort on an equivalent scanner from a different institution (sensitivity = 0.88, specificity = 0.88, CVA = 0.88), and (3) an age-matched cohort on a different scanner from a different institution (sensitivity = 0.72, specificity = 0.92, CVA = 0.79). We additionally compare our approach with a recently published method. Our results suggest that our method is robust to noise variations due to population as well as scanner differences, thereby making it well suited to the goal of automatically distinguishing noise from functional networks to enable investigation of human brain function.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sochat</LastName>
+                    <ForeName>Vanessa</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Stanford Graduate Fellow, Graduate Program in Biomedical Informatics, Stanford University School of Medicine, Stanford, California, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Supekar</LastName>
+                    <ForeName>Kaustubh</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry &amp; Behavioral Sciences, Stanford University School of Medicine, Stanford, California, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bustillo</LastName>
+                    <ForeName>Juan</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>The Mind Research Network, Albuquerque, New Mexico, United States of America; Department of Psychiatry, University of New Mexico, Albuquerque, New Mexico, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Calhoun</LastName>
+                    <ForeName>Vince</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>The Mind Research Network, Albuquerque, New Mexico, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Turner</LastName>
+                    <ForeName>Jessica A</ForeName>
+                    <Initials>JA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>The Mind Research Network, Albuquerque, New Mexico, United States of America; Georgia State University, Department of Psychology and Neuroscience Institute, Atlanta, Georgia, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Rubin</LastName>
+                    <ForeName>Daniel L</ForeName>
+                    <Initials>DL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, Stanford University School of Medicine, Stanford, California, United States of America.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>P20-GM-103472</GrantID>
+                    <Acronym>GM</Acronym>
+                    <Agency>NIGMS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01-MH-084898</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U01-CA-142555</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>04</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PLoS One</MedlineTA>
+            <NlmUniqueID>101285081</NlmUniqueID>
+            <ISSNLinking>1932-6203</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2007 Jan;25(1):35-46</RefSource>
+                <PMID Version="1">17222713</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2013 Aug;70(8):869-79</RefSource>
+                <PMID Version="1">23803651</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 1998;6(3):160-88</RefSource>
+                <PMID Version="1">9673671</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neural Comput. 1995 Nov;7(6):1129-59</RefSource>
+                <PMID Version="1">7584893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2010 Jun 15;189(2):233-45</RefSource>
+                <PMID Version="1">20381530</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2003 Oct;13(5):620-9</RefSource>
+                <PMID Version="1">14630228</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Mar 27;6:10</RefSource>
+                <PMID Version="1">22470337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 May;35(5):2253-64</RefSource>
+                <PMID Version="1">23798337</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S208-19</RefSource>
+                <PMID Version="1">15501092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Jul 16;110(29):12060-5</RefSource>
+                <PMID Version="1">23776244</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Stat Softw. 2010;33(1):1-22</RefSource>
+                <PMID Version="1">20808728</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2010 Apr;14(4):180-90</RefSource>
+                <PMID Version="1">20206576</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Apr 15;90:449-68</RefSource>
+                <PMID Version="1">24389422</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Rev Biomed Eng. 2012;5:60-73</RefSource>
+                <PMID Version="1">23231989</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2012 Oct;10(4):331-9</RefSource>
+                <PMID Version="1">22622767</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2013 May 20;7:72</RefSource>
+                <PMID Version="1">23730268</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2010 Jun;14(6):277-90</RefSource>
+                <PMID Version="1">20493761</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2012 Nov;16(11):559-72</RefSource>
+                <PMID Version="1">23047070</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 21;4:21</RefSource>
+                <PMID Version="1">20577585</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Feb 1;39(3):1227-45</RefSource>
+                <PMID Version="1">18042495</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biom J. 2010 Feb;52(1):70-84</RefSource>
+                <PMID Version="1">19937997</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2013 Jan;143(1):165-71</RefSource>
+                <PMID Version="1">23182443</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Sep 12;103(37):13848-53</RefSource>
+                <PMID Version="1">16945915</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 May 15;46(1):73-86</RefSource>
+                <PMID Version="1">19457398</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Jul;29(7):740-50</RefSource>
+                <PMID Version="1">18438886</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2001 Nov;14(3):140-51</RefSource>
+                <PMID Version="1">11559959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2004 Feb;23(2):137-52</RefSource>
+                <PMID Version="1">14964560</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Psychiatry Neurosci. 2011 Nov;36(6):402-11</RefSource>
+                <PMID Version="1">21406160</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2011 Feb 04;5:2</RefSource>
+                <PMID Version="1">21442040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(6):e39731</RefSource>
+                <PMID Version="1">22761880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Can Assoc Radiol J. 1998 Oct;49(5):320-9</RefSource>
+                <PMID Version="1">9803232</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurol. 2003 Apr;16(2):143-6</RefSource>
+                <PMID Version="1">12644740</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Jul 10;7:343</RefSource>
+                <PMID Version="1">23847511</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):177-94</RefSource>
+                <PMID Version="1">17070708</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2009 Jul;7(7):e1000157</RefSource>
+                <PMID Version="1">19621066</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Jul;29(7):828-38</RefSource>
+                <PMID Version="1">18438867</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2006 Nov 24;314(5803):1249-50</RefSource>
+                <PMID Version="1">17124311</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):891-901</RefSource>
+                <PMID Version="1">22369997</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2009 Aug 17;3:17</RefSource>
+                <PMID Version="1">19738925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jan 1;29(1):54-66</RefSource>
+                <PMID Version="1">16099175</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jan;15(1):273-89</RefSource>
+                <PMID Version="1">11771995</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Nov;17(3):1521-37</RefSource>
+                <PMID Version="1">12414291</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2012 Mar 31;201(3):253-5</RefSource>
+                <PMID Version="1">22541511</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Mar;35(3):346-55</RefSource>
+                <PMID Version="1">8699946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Twin Res Hum Genet. 2012 Jun;15(3):324-35</RefSource>
+                <PMID Version="1">22856368</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Sep;62(3):1912-23</RefSource>
+                <PMID Version="1">22634861</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2003 Jan 7;100(1):253-8</RefSource>
+                <PMID Version="1">12506194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Sep 05;6:62</RefSource>
+                <PMID Version="1">22973200</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 May 23;7:214</RefSource>
+                <PMID Version="1">23734119</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000465" MajorTopicYN="N">Algorithms</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="Y">Brain Mapping</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D066264" MajorTopicYN="N">Datasets as Topic</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="Y">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000592" MajorTopicYN="N">standards</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D025341" MajorTopicYN="N">Principal Component Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012372" MajorTopicYN="N">ROC Curve</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012044" MajorTopicYN="N">Regression Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015203" MajorTopicYN="N">Reproducibility of Results</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC3991682</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>01</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>03</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>4</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>4</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24748378</ArticleId>
+            <ArticleId IdType="doi">10.1371/journal.pone.0095493</ArticleId>
+            <ArticleId IdType="pii">PONE-D-14-00807</ArticleId>
+            <ArticleId IdType="pmc">PMC3991682</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

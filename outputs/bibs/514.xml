@@ -1,0 +1,455 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27667698</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>26</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1873-2402</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>81</Volume>
+                    <Issue>6</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Mar</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Biological psychiatry</Title>
+                <ISOAbbreviation>Biol. Psychiatry</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Data-Driven Phenotypic Categorization for Neurobiological Analyses: Beyond DSM-5 Labels.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>484-494</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0006-3223(16)32586-0</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.biopsych.2016.06.027</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Data-driven approaches can capture behavioral and biological variation currently unaccounted for by contemporary diagnostic categories, thereby enhancing the ability of neurobiological studies to characterize brain-behavior relationships.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">A community-ascertained sample of individuals (N = 347, 18-59 years of age) completed a battery of behavioral measures, psychiatric assessment, and resting-state functional magnetic resonance imaging in a cross-sectional design. Bootstrap-based exploratory factor analysis was applied to 49 phenotypic subscales from 10 measures. Hybrid hierarchical clustering was applied to resultant factor scores to identify nested groups. Adjacent groups were compared via independent samples t tests and chi-square tests of factor scores, syndrome scores, and psychiatric prevalence. Multivariate distance matrix regression examined functional connectome differences between adjacent groups.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">Reduction yielded six factors, which explained 77.8% and 65.4% of the variance in exploratory and constrained exploratory models, respectively. Hybrid hierarchical clustering of these six factors identified two, four, and eight nested groups (i.e., phenotypic communities). At the highest clustering level, the algorithm differentiated functionally adaptive and maladaptive groups. At the middle clustering level, groups were separated by problem type (maladaptive groups; internalizing vs. externalizing problems) and behavioral type (adaptive groups; sensation-seeking vs. extraverted/emotionally stable). Unique phenotypic profiles were also evident at the lowest clustering level. Group comparisons exhibited significant differences in intrinsic functional connectivity at the highest clustering level in somatomotor, thalamic, basal ganglia, and limbic networks.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Data-driven approaches for identifying homogenous subgroups, spanning typical function to dysfunction, not only yielded clinically meaningful groups, but also captured behavioral and neurobiological variation among healthy individuals.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 Society of Biological Psychiatry. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Van Dam</LastName>
+                    <ForeName>Nicholas T</ForeName>
+                    <Initials>NT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute; Departments of Psychiatry and Neuroscience, Icahn School of Medicine at Mount Sinai; Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>O'Connor</LastName>
+                    <ForeName>David</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute; Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Marcelle</LastName>
+                    <ForeName>Enitan T</ForeName>
+                    <Initials>ET</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute; Department of Psychology, University of California, Berkeley, Berkeley.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ho</LastName>
+                    <ForeName>Erica J</ForeName>
+                    <Initials>EJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cameron Craddock</LastName>
+                    <ForeName>R</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute; Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tobe</LastName>
+                    <ForeName>Russell H</ForeName>
+                    <Initials>RH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gabbay</LastName>
+                    <ForeName>Vilma</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Departments of Psychiatry and Neuroscience, Icahn School of Medicine at Mount Sinai.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hudziak</LastName>
+                    <ForeName>James J</ForeName>
+                    <Initials>JJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>The Child Study Center at NYU Langone Medical Center, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xavier Castellanos</LastName>
+                    <ForeName>F</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>The Child Study Center at NYU Langone Medical Center, New York; Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Leventhal</LastName>
+                    <ForeName>Bennett L</ForeName>
+                    <Initials>BL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York; Department of Psychiatry, University of California, San Francisco, San Francisco, California.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Milham</LastName>
+                    <ForeName>Michael P</ForeName>
+                    <Initials>MP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute; Center for Biomedical Imaging and Neuromodulation, Nathan Kline Institute, Orangeburg, New York; Department of Psychiatry, University of Vermont, Burlington, Vermont. Electronic address: michael.milham@childmind.org.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 MH081218</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH083246</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH094639</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 MH084126</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>19</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Biol Psychiatry</MedlineTA>
+            <NlmUniqueID>0213264</NlmUniqueID>
+            <ISSNLinking>0006-3223</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Psychiatr Res. 2004 Jan;38(1):17-25</RefSource>
+                <PMID Version="1">14690767</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 15;48(1):63-72</RefSource>
+                <PMID Version="1">19573611</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Jun 21;74(6):990-1004</RefSource>
+                <PMID Version="1">22726830</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Oct;17(2):825-41</RefSource>
+                <PMID Version="1">12377157</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Apr 24;109(17):6769-74</RefSource>
+                <PMID Version="1">22474392</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Aug 22;5:13</RefSource>
+                <PMID Version="1">21897815</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Jul 23;110(30):12253-8</RefSource>
+                <PMID Version="1">23836637</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 1;37(1):90-101</RefSource>
+                <PMID Version="1">17560126</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2013;9:91-121</RefSource>
+                <PMID Version="1">23537483</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2013 Nov;14(11):810-4</RefSource>
+                <PMID Version="1">24135697</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychometrika. 1965 Jun;30:179-85</RefSource>
+                <PMID Version="1">14306381</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2016 Apr;37(4):1459-73</RefSource>
+                <PMID Version="1">26800659</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 May 1;91:412-9</RefSource>
+                <PMID Version="1">24412399</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Med. 2013 May 14;11:126</RefSource>
+                <PMID Version="1">23672542</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2014 Apr;171(4):395-7</RefSource>
+                <PMID Version="1">24687194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2016 Jul;26(7):3249-59</RefSource>
+                <PMID Version="1">26223259</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2013 Jun;52(6):628-41.e13</RefSource>
+                <PMID Version="1">23702452</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2014 Sep;71(9):1015-24</RefSource>
+                <PMID Version="1">25006969</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2012 Dec;17(12):1174-9</RefSource>
+                <PMID Version="1">22869033</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Behav Res Methods. 2007 May;39(2):318-25</RefSource>
+                <PMID Version="1">17695360</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2013 Nov;17(11):565-73</RefSource>
+                <PMID Version="1">24126130</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2011 Feb 11;331(6018):708-12</RefSource>
+                <PMID Version="1">21311009</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Med. 2013 Sep 12;11:201</RefSource>
+                <PMID Version="1">24228940</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Abnorm Psychol. 2005 Nov;114(4):494-504</RefSource>
+                <PMID Version="1">16351373</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Abnorm Psychol. 2005 Nov;114(4):560-4</RefSource>
+                <PMID Version="1">16351379</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2015 May 1;348(6234):499-500</RefSource>
+                <PMID Version="1">25931539</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Ment Health. 2010 Aug;19(4):337-51</RefSource>
+                <PMID Version="1">20636114</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>World Psychiatry. 2014 Oct;13(3):211-23</RefSource>
+                <PMID Version="1">25273285</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychologia. 1971 Mar;9(1):97-113</RefSource>
+                <PMID Version="1">5146491</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2012 Jul 18;13(8):556-71</RefSource>
+                <PMID Version="1">22805909</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2016 Apr 1;173(4):373-84</RefSource>
+                <PMID Version="1">26651391</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2008 Feb;12(1):26-41</RefSource>
+                <PMID Version="1">17659998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2015 Jul;16(7):419-29</RefSource>
+                <PMID Version="1">26016744</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Bull. 2004 Nov;130(6):887-919</RefSource>
+                <PMID Version="1">15535742</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2010 Feb 25;65(4):550-62</RefSource>
+                <PMID Version="1">20188659</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 Dec;72(12):1159-60</RefSource>
+                <PMID Version="1">26559005</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychol. 2010 Dec;85(3):499-503</RefSource>
+                <PMID Version="1">20833223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Dec;83:991-1001</RefSource>
+                <PMID Version="1">23899722</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2014 Apr;18(4):211-7</RefSource>
+                <PMID Version="1">24612993</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2002 Aug;3(8):655-66</RefSource>
+                <PMID Version="1">12154366</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Feb 1;54(3):2503-13</RefSource>
+                <PMID Version="1">20946960</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biostatistics. 2006 Apr;7(2):286-301</RefSource>
+                <PMID Version="1">16301308</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Methods Psychiatr Res. 2007;16 Suppl 1:S16-23</RefSource>
+                <PMID Version="1">17623391</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Rep. 2014 Jul 03;4:5549</RefSource>
+                <PMID Version="1">24989351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Methods Med Res. 2006 Jun;15(3):213-34</RefSource>
+                <PMID Version="1">16768297</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 Dec;72(12):1161-2</RefSource>
+                <PMID Version="1">26558844</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Methods. 2001 Dec;6(4):430-50</RefSource>
+                <PMID Version="1">11778682</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Clin Psychol. 2010;6:155-79</RefSource>
+                <PMID Version="1">17716032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 Dec;72(12):1163-4</RefSource>
+                <PMID Version="1">26559143</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2010 Jun;66(2):636-43</RefSource>
+                <PMID Version="1">19673867</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Hierarchical clustering</Keyword>
+            <Keyword MajorTopicYN="N">Multivariate distance matrix regression</Keyword>
+            <Keyword MajorTopicYN="N">Phenotypes</Keyword>
+            <Keyword MajorTopicYN="N">Psychopathology</Keyword>
+            <Keyword MajorTopicYN="N">RDoC</Keyword>
+            <Keyword MajorTopicYN="N">Resting state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>01</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>06</Month>
+                <Day>29</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>06</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pmc-release">
+                <Year>2018</Year>
+                <Month>03</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27667698</ArticleId>
+            <ArticleId IdType="pii">S0006-3223(16)32586-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.biopsych.2016.06.027</ArticleId>
+            <ArticleId IdType="pmc">PMC5402759</ArticleId>
+            <ArticleId IdType="mid">NIHMS818778</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

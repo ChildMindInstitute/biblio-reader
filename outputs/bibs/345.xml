@@ -1,0 +1,181 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">22931854</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>10</Month>
+            <Day>26</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>04</Month>
+            <Day>04</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2013</Year>
+            <Month>04</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1475-2719</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>71</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Nov</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>The Proceedings of the Nutrition Society</Title>
+                <ISOAbbreviation>Proc Nutr Soc</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Food-induced brain responses and eating behaviour.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>511-20</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1017/S0029665112000808</ELocationID>
+            <Abstract>
+                <AbstractText>The brain governs food intake behaviour by integrating many different internal and external state and trait-related signals. Understanding how the decisions to start and to stop eating are made is crucial to our understanding of (maladaptive patterns of) eating behaviour. Here, we aim to (1) review the current state of the field of 'nutritional neuroscience' with a focus on the interplay between food-induced brain responses and eating behaviour and (2) highlight research needs and techniques that could be used to address these. The brain responses associated with sensory stimulation (sight, olfaction and taste), gastric distension, gut hormone administration and food consumption are the subject of increasing investigation. Nevertheless, only few studies have examined relations between brain responses and eating behaviour. However, the neural circuits underlying eating behaviour are to a large extent generic, including reward, self-control, learning and decision-making circuitry. These limbic and prefrontal circuits interact with the hypothalamus, a key homeostatic area. Target areas for further elucidating the regulation of food intake are: (eating) habit and food preference formation and modification, the neural correlates of self-control, nutrient sensing and dietary learning, and the regulation of body adiposity. Moreover, to foster significant progress, data from multiple studies need to be integrated. This requires standardisation of (neuroimaging) measures, data sharing and the application and development of existing advanced analysis and modelling techniques to nutritional neuroscience data. In the next 20 years, nutritional neuroscience will have to prove its potential for providing insights that can be used to tackle detrimental eating behaviour.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Smeets</LastName>
+                    <ForeName>Paul A M</ForeName>
+                    <Initials>PA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Image Sciences Institute, University Medical Center Utrecht, Heidelberglaan 100, 3584 CX, Utrecht, The Netherlands. p.smeets@umcutrecht.nl</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Charbonnier</LastName>
+                    <ForeName>Lisette</ForeName>
+                    <Initials>L</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Meer</LastName>
+                    <ForeName>Floor</ForeName>
+                    <Initials>F</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van der Laan</LastName>
+                    <ForeName>Laura N</ForeName>
+                    <Initials>LN</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Spetter</LastName>
+                    <ForeName>Maartje S</ForeName>
+                    <Initials>MS</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>08</Month>
+                <Day>29</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Proc Nutr Soc</MedlineTA>
+            <NlmUniqueID>7505881</NlmUniqueID>
+            <ISSNLinking>0029-6651</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001069" MajorTopicYN="N">Appetite Regulation</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D004032" MajorTopicYN="N">Diet</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D004435" MajorTopicYN="N">Eating</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002149" MajorTopicYN="N">Energy Intake</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005247" MajorTopicYN="N">Feeding Behavior</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005518" MajorTopicYN="N">Food Preferences</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006706" MajorTopicYN="N">Homeostasis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006963" MajorTopicYN="N">Hyperphagia</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007858" MajorTopicYN="N">Learning</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009765" MajorTopicYN="N">Obesity</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012677" MajorTopicYN="N">Sensation</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>8</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>4</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22931854</ArticleId>
+            <ArticleId IdType="pii">S0029665112000808</ArticleId>
+            <ArticleId IdType="doi">10.1017/S0029665112000808</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,508 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">27814962</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>11</Month>
+            <Day>05</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>27</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1573-2517</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Oct</Month>
+                        <Day>26</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of affective disorders</Title>
+                <ISOAbbreviation>J Affect Disord</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Neural complexity as a potential translational biomarker for psychosis.</ArticleTitle>
+            <ELocationID EIdType="pii" ValidYN="Y">S0165-0327(16)30799-6</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.jad.2016.10.016</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">The adaptability of the human brain to the constantly changing environment is reduced in patients with psychotic disorders, leading to impaired cognitive functions. Brain signal complexity, which may reflect adaptability, can be readily quantified via resting-state functional magnetic resonance imaging (fMRI) signals. We hypothesized that resting-state brain signal complexity is altered in psychotic disorders, and is correlated with cognitive impairment.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">We assessed 156 healthy controls (HC) and 330 probands, including 125 patients with psychotic bipolar disorder (BP), 107 patients with schizophrenia (SZ), 98 patients with schizoaffective disorder (SAD) and 230 of their unaffected first-degree relatives (76 BPR, 79 SADR, and 75 SZR) from four sites of the Bipolar-Schizophrenia Network on Intermediate Phenotypes (B-SNIP) consortium. Using multi-scale entropy analysis, we determined whether patients and/or relatives had pathologic differences in complexity of resting-state fMRI signals toward regularity (reduced entropy in all time scales), or toward uncorrelated randomness (increased entropy in fine time scales that decays as the time scale increases) and how these complexity differences might be associated with cognitive impairment.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">Compared to HC subjects, proband groups showed either decreased complexity toward regularity or toward randomness. SZ probands showed decreased complexity toward regular signal in hypothalamus, and BP probands in left inferior occipital, right precentral and left superior parietal regions, whereas no brain region with decreased complexity toward regularity was found in SAD probands. All proband groups showed significantly increased brain signal randomness in dorsal and ventral prefrontal cortex (PFC), and unaffected relatives showed no complexity differences in PFC regions. SZ had the largest area of involvement in both dorsal and ventral PFC. BP and SAD probands shared increased brain signal randomness in ventral medial PFC, BP and SZ probands shared increased brain signal randomness in ventral lateral PFC, whereas SAD and SZ probands shared increased brain signal randomness in dorsal medial PFC. Only SZ showed increased brain signal randomness in dorsal lateral PFC. The increased brain signal randomness in dorsal or ventral PFC was weakly associated with reduced cognitive performance in psychotic probands.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">These observations support the loss of brain complexity hypothesis in psychotic probands. Furthermore, we found significant differences as well as overlaps of pathologic brain signal complexity between psychotic probands by DSM diagnoses, thus suggesting a biological approach to categorizing psychosis based on functional neuroimaging data.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Hager</LastName>
+                    <ForeName>Brandon</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Massachusetts Mental Health Center, Boston, MA, USA; Division of Public Psychiatry, Beth Israel Deaconess Medical Center/Department of Psychiatry, Harvard Medical School, Boston, MA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yang</LastName>
+                    <ForeName>Albert C</ForeName>
+                    <Initials>AC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Division of Interdisciplinary Medicine and Biotechnology, Beth Israel Deaconess Medical Center/Harvard Medical School, Boston, MA, USA; Department of Psychiatry, Taipei Veterans General Hospital/School of Medicine, National Yang-Ming University, Taipei, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brady</LastName>
+                    <ForeName>Roscoe</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Massachusetts Mental Health Center, Boston, MA, USA; Division of Public Psychiatry, Beth Israel Deaconess Medical Center/Department of Psychiatry, Harvard Medical School, Boston, MA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Meda</LastName>
+                    <ForeName>Shashwath</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Departments of Psychiatry and Neuroscience, Yale University School of Medicine, New Haven, and the Institute of Living, Hartford Hospital, Hartford, CT, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Clementz</LastName>
+                    <ForeName>Brett</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Departments of Psychology and Neuroscience, Bio-Imaging Research Center, University of Georgia, Athens, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pearlson</LastName>
+                    <ForeName>Godfrey D</ForeName>
+                    <Initials>GD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Departments of Psychiatry and Neuroscience, Yale University School of Medicine, New Haven, and the Institute of Living, Hartford Hospital, Hartford, CT, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sweeney</LastName>
+                    <ForeName>John A</ForeName>
+                    <Initials>JA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry and Behavioral Neuroscience, University of Cincinnati School of Medicine, Cincinnati, OH, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Tamminga</LastName>
+                    <ForeName>Carol</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, University of Texas Southwestern Medical Center, Dallas, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Keshavan</LastName>
+                    <ForeName>Matcheri</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Massachusetts Mental Health Center, Boston, MA, USA; Division of Public Psychiatry, Beth Israel Deaconess Medical Center/Department of Psychiatry, Harvard Medical School, Boston, MA, USA. Electronic address: mkeshava@bidmc.harvard.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 MH077945</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH078113</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>J Affect Disord</MedlineTA>
+            <NlmUniqueID>7906073</NlmUniqueID>
+            <ISSNLinking>0165-0327</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2009 Aug;166(8):863-74</RefSource>
+                <PMID Version="1">19411370</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Jun 17;29(24):7631-2</RefSource>
+                <PMID Version="1">19535573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1991 Mar 15;88(6):2297-301</RefSource>
+                <PMID Version="1">11607165</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2013 Nov;170(11):1263-74</RefSource>
+                <PMID Version="1">23846857</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 1996 May;153(5):714-7</RefSource>
+                <PMID Version="1">8615422</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev Lett. 2002 Aug 5;89(6):068102</RefSource>
+                <PMID Version="1">12190613</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2004 Jun 15;55(12):1163-70</RefSource>
+                <PMID Version="1">15184035</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Apr 2;60(2):1528-37</RefSource>
+                <PMID Version="1">22261371</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin EEG Neurosci. 2010 Oct;41(4):203-10</RefSource>
+                <PMID Version="1">21077572</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:62-79</RefSource>
+                <PMID Version="1">23684880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2008 Dec 17;28(51):14000-5</RefSource>
+                <PMID Version="1">19091989</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Affect Disord. 2013 Sep 5;150(2):601-9</RefSource>
+                <PMID Version="1">23489402</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2015 Feb;45(2):444-60</RefSource>
+                <PMID Version="1">23963593</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Apr 15;90:449-68</RefSource>
+                <PMID Version="1">24389422</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neuropsychopharmacol Biol Psychiatry. 2013 Dec 2;47:52-61</RefSource>
+                <PMID Version="1">23954738</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2013 Sep 15;74(6):458-66</RefSource>
+                <PMID Version="1">23746539</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 Jul;24(7):1806-17</RefSource>
+                <PMID Version="1">23395850</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Neurophysiol. 2011 Dec;122(12):2375-83</RefSource>
+                <PMID Version="1">21641861</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Physiol Heart Circ Physiol. 2000 Jun;278(6):H2039-49</RefSource>
+                <PMID Version="1">10843903</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Psychiatry. 2013 Aug 08;4:87</RefSource>
+                <PMID Version="1">23964248</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2014 Apr;171(4):395-7</RefSource>
+                <PMID Version="1">24687194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Rev E Stat Nonlin Soft Matter Phys. 2005 Feb;71(2 Pt 1):021906</RefSource>
+                <PMID Version="1">15783351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2004 Jun 1;68(2-3):283-97</RefSource>
+                <PMID Version="1">15099610</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 Jul;35(7):3238-48</RefSource>
+                <PMID Version="1">24193893</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Europhys Lett. 2007 Mar;77:68008</RefSource>
+                <PMID Version="1">17710211</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet. 2009 Jan 17;373(9659):234-9</RefSource>
+                <PMID Version="1">19150704</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 May;25(1):60-9</RefSource>
+                <PMID Version="1">15846819</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2004 Dec 1;71(2-3):263-72</RefSource>
+                <PMID Version="1">15474897</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2196-207</RefSource>
+                <PMID Version="1">22008374</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychopathology. 1991;24(4):185-98</RefSource>
+                <PMID Version="1">1661431</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2003 Jan 1;53(1):3-11</RefSource>
+                <PMID Version="1">12513940</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2014 Jun 10;8:409</RefSource>
+                <PMID Version="1">24959130</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2013 Dec 30;214(3):341-8</RefSource>
+                <PMID Version="1">24183857</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2013 Nov;170(11):1275-84</RefSource>
+                <PMID Version="1">23771174</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Apr 27;31(17):6405-13</RefSource>
+                <PMID Version="1">21525281</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cortex. 2013 May;49(5):1195-205</RefSource>
+                <PMID Version="1">22789779</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2008 Jul;102(1-3):108-15</RefSource>
+                <PMID Version="1">18495435</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neuropsychopharmacol Biol Psychiatry. 2013 Aug 1;45:267-76</RefSource>
+                <PMID Version="1">22507763</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2004 Mar 15;55(6):578-87</RefSource>
+                <PMID Version="1">15013826</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2002 Feb 19;99 Suppl 1:2466-72</RefSource>
+                <PMID Version="1">11875196</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2015 Aug;166(1-3):310-5</RefSource>
+                <PMID Version="1">26008884</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Neurophysiol. 2009 Mar;120(3):476-83</RefSource>
+                <PMID Version="1">19231279</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2016 Apr 1;173(4):373-84</RefSource>
+                <PMID Version="1">26651391</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Physiol Meas. 2006 Nov;27(11):1091-106</RefSource>
+                <PMID Version="1">17028404</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2015 Jun;36(6):2174-86</RefSource>
+                <PMID Version="1">25664834</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2008 Mar;165(3):378-84</RefSource>
+                <PMID Version="1">18198268</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2012 Aug;135(Pt 8):2399-408</RefSource>
+                <PMID Version="1">22734128</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2007 Apr 19;446(7138):908-11</RefSource>
+                <PMID Version="1">17377536</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Cogn Affect Neurosci. 2012 Nov;7(8):871-80</RefSource>
+                <PMID Version="1">22021651</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2009 Jul 9;460(7252):202-7</RefSource>
+                <PMID Version="1">19587761</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014 May 13;9(5):e95146</RefSource>
+                <PMID Version="1">24824731</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 1995 Nov;52(11):947-59</RefSource>
+                <PMID Version="1">7487343</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2013 Feb;34(2):428-38</RefSource>
+                <PMID Version="1">22683008</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurobiol Aging. 2002 Jan-Feb;23(1):23-6</RefSource>
+                <PMID Version="1">11755014</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neuropsychopharmacol Biol Psychiatry. 2013 Aug 1;45:253-7</RefSource>
+                <PMID Version="1">23089053</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2004 Apr 15;55(8):859-67</RefSource>
+                <PMID Version="1">15050868</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Neurophysiol. 2011 Nov;122(11):2227-35</RefSource>
+                <PMID Version="1">21592856</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Psychopharmacol. 2012 May;26(5):636-43</RefSource>
+                <PMID Version="1">21708836</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Med. 2011 Feb 22;9:18</RefSource>
+                <PMID Version="1">21342500</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Imaging Behav. 2014 Jun;8(2):284-91</RefSource>
+                <PMID Version="1">24242271</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Biol Eng Comput. 2010 Aug;48(8):773-81</RefSource>
+                <PMID Version="1">20490940</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Methods Programs Biomed. 2013 Aug;111(2):459-70</RefSource>
+                <PMID Version="1">23639753</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2013 Oct;23(10):2457-66</RefSource>
+                <PMID Version="1">22879354</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 14;4:13</RefSource>
+                <PMID Version="1">20577591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2001 Sep 14;293(5537):2105-8</RefSource>
+                <PMID Version="1">11557895</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2014 May;40(3):653-64</RefSource>
+                <PMID Version="1">23778975</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2012 May 15;71(10):881-9</RefSource>
+                <PMID Version="1">22401986</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Psychiatry. 2009 Dec;195(6):475-82</RefSource>
+                <PMID Version="1">19949193</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 May 15;51(1):173-82</RefSource>
+                <PMID Version="1">20149880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 2006 Apr 10-17;397(1-2):93-8</RefSource>
+                <PMID Version="1">16442730</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2004 May 1;68(1):65-73</RefSource>
+                <PMID Version="1">15037340</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Neurophysiol. 2010 Sep;121(9):1438-46</RefSource>
+                <PMID Version="1">20400371</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neuropsychopharmacol Biol Psychiatry. 2013 Aug 1;45:258-66</RefSource>
+                <PMID Version="1">22579532</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroreport. 2005 Feb 8;16(2):187-91</RefSource>
+                <PMID Version="1">15671875</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Multiscale entropy</Keyword>
+            <Keyword MajorTopicYN="N">Neural complexity</Keyword>
+            <Keyword MajorTopicYN="N">Psychosis</Keyword>
+            <Keyword MajorTopicYN="N">Schizophrenia, schizoaffective disorder, psychotic bipolar disorder</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>05</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pmc-release">
+                <Year>2018</Year>
+                <Month>04</Month>
+                <Day>26</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27814962</ArticleId>
+            <ArticleId IdType="pii">S0165-0327(16)30799-6</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.jad.2016.10.016</ArticleId>
+            <ArticleId IdType="pmc">PMC5406267</ArticleId>
+            <ArticleId IdType="mid">NIHMS827666</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

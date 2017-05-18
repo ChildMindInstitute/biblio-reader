@@ -1,0 +1,387 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">27044997</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>04</Month>
+            <Day>05</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>05</Month>
+            <Day>23</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">1364-503X</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>374</Volume>
+                    <Issue>2067</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>May</Month>
+                        <Day>13</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Philosophical transactions. Series A, Mathematical, physical, and engineering sciences</Title>
+                <ISOAbbreviation>Philos Trans A Math Phys Eng Sci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Sensitivity of the resting-state haemodynamic response function estimation to autonomic nervous system fluctuations.</ArticleTitle>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1098/rsta.2015.0190</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">20150190</ELocationID>
+            <Abstract>
+                <AbstractText>The haemodynamic response function (HRF) is a key component of the blood oxygen level-dependent (BOLD) signal, providing the mapping between neural activity and the signal measured with functional magnetic resonance imaging (fMRI). Most of the time the HRF is associated with task-based fMRI protocols, in which its onset is explicitly included in the design matrix. On the other hand, the HRF also mediates the relationship between spontaneous neural activity and the BOLD signal in resting-state protocols, in which no explicit stimulus is taken into account. It has been shown that resting-state brain dynamics can be characterized by looking at sparse BOLD 'events', which can be retrieved by point process analysis. These events can be then used to retrieve the HRF at rest. Crucially, cardiac activity can also induce changes in the BOLD signal, thus affecting both the number of these events and the estimation of the haemodynamic response. In this study, we compare the resting-state haemodynamic response retrieved by means of a point process analysis, taking the cardiac fluctuations into account. We find that the resting-state HRF estimation is significantly modulated in the brainstem and surrounding cortical areas. From the analysis of two high-quality datasets with different temporal and spatial resolution, and through the investigation of intersubject correlation, we suggest that spontaneous point process response durations are associated with the mean interbeat interval and low-frequency power of heart rate variability in the brainstem.</AbstractText>
+                <CopyrightInformation>© 2016 The Author(s).</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Wu</LastName>
+                    <ForeName>Guo-Rong</ForeName>
+                    <Initials>GR</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0003-4918-3955</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Cognition and Personality, Faculty of Psychology, Southwest University, Chongqing 400715, China Department of Data Analysis, Faculty of Psychology and Educational Sciences, Ghent University, Ghent 9000, Belgium gronwu@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Marinazzo</LastName>
+                    <ForeName>Daniele</ForeName>
+                    <Initials>D</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-9803-0122</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Data Analysis, Faculty of Psychology and Educational Sciences, Ghent University, Ghent 9000, Belgium.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Philos Trans A Math Phys Eng Sci</MedlineTA>
+            <NlmUniqueID>101133385</NlmUniqueID>
+            <ISSNLinking>1364-503X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Conf Proc IEEE Eng Med Biol Soc. 2015;2015:6050-3</RefSource>
+                <PMID Version="1">26737671</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Apr 1;40(2):644-54</RefSource>
+                <PMID Version="1">18234517</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Aug 7;104(32):13170-5</RefSource>
+                <PMID Version="1">17670949</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Oct 04;7:623</RefSource>
+                <PMID Version="1">24109446</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Aug 15;42(2):582-90</RefSource>
+                <PMID Version="1">18583155</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Physiol. 2012 Feb 08;3:15</RefSource>
+                <PMID Version="1">22347863</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Appl Math. 2013 May 21;2013:null</RefSource>
+                <PMID Version="1">24415902</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Aug 1;42(1):169-77</RefSource>
+                <PMID Version="1">18524629</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2010 Apr;14(4):180-90</RefSource>
+                <PMID Version="1">20206576</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>News Physiol Sci. 1999 Aug;14:155-161</RefSource>
+                <PMID Version="1">11390842</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2011 Dec;29(10):1338-45</RefSource>
+                <PMID Version="1">21543181</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 1;44(1):213-22</RefSource>
+                <PMID Version="1">18778779</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 30;107(13):6040-5</RefSource>
+                <PMID Version="1">20304792</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:349-59</RefSource>
+                <PMID Version="1">23571418</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hypertension. 2007 Jan;49(1):134-40</RefSource>
+                <PMID Version="1">17101844</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):791-800</RefSource>
+                <PMID Version="1">22023741</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2014 Sep;4(7):511-22</RefSource>
+                <PMID Version="1">25112809</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 2005 Dec 5;493(1):154-66</RefSource>
+                <PMID Version="1">16254997</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Mar;68:93-104</RefSource>
+                <PMID Version="1">23246859</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Respir Crit Care Med. 2002 Apr 15;165(8):1041-7</RefSource>
+                <PMID Version="1">11956042</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2003 Oct;126(Pt 10):2139-52</RefSource>
+                <PMID Version="1">12821513</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:360-78</RefSource>
+                <PMID Version="1">23707587</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 Aug 15;32(33):11176-86</RefSource>
+                <PMID Version="1">22895703</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2014 Jul;272(1):29-49</RefSource>
+                <PMID Version="1">24956047</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acta Radiol. 1993 Jul;34(4):321-8</RefSource>
+                <PMID Version="1">8318291</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2008 Dec;28(6):1337-44</RefSource>
+                <PMID Version="1">19025940</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2013 Jun;34(6):1319-29</RefSource>
+                <PMID Version="1">22331588</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 Mar 7;32(10):3366-75</RefSource>
+                <PMID Version="1">22399758</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Feb 1;44(3):857-69</RefSource>
+                <PMID Version="1">18951982</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013;8(4):e62708</RefSource>
+                <PMID Version="1">23658643</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1990 Dec;87(24):9868-72</RefSource>
+                <PMID Version="1">2124706</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2007 Aug;28(8):764-84</RefSource>
+                <PMID Version="1">17094118</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Coll Cardiol. 1998 Mar 1;31(3):593-601</RefSource>
+                <PMID Version="1">9502641</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Brain Res Rev. 1996 Oct;22(3):229-44</RefSource>
+                <PMID Version="1">8957561</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2000 Dec;19(12):1188-201</RefSource>
+                <PMID Version="1">11212367</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 15;31(4):1536-48</RefSource>
+                <PMID Version="1">16632379</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2013 Apr;17(3):365-74</RefSource>
+                <PMID Version="1">23422254</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jan 1;84:320-41</RefSource>
+                <PMID Version="1">23994314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2013 Mar 12;110(11):4392-7</RefSource>
+                <PMID Version="1">23440216</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Dec 1;106(48):20510-4</RefSource>
+                <PMID Version="1">19918078</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2003 May 15;23(10):3963-71</RefSource>
+                <PMID Version="1">12764080</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Jun 19;33(25):10503-11</RefSource>
+                <PMID Version="1">23785162</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2004 Jan;22(1):9-13</RefSource>
+                <PMID Version="1">14972388</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Nov 1;38(2):306-20</RefSource>
+                <PMID Version="1">17869543</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Circulation. 1996 Mar 1;93(5):1043-65</RefSource>
+                <PMID Version="1">8598068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Data. 2015;2:140054</RefSource>
+                <PMID Version="1">25977805</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Jul;44(1):162-7</RefSource>
+                <PMID Version="1">10893535</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 1;31(3):1104-15</RefSource>
+                <PMID Version="1">16533609</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2008 Jun 12;453(7197):869-78</RefSource>
+                <PMID Version="1">18548064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jan 1;54(1):369-79</RefSource>
+                <PMID Version="1">20682354</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Feb;36(2):747-56</RefSource>
+                <PMID Version="1">22178086</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Soc Hypertens. 2010 Jul-Aug;4(4):174-82</RefSource>
+                <PMID Version="1">20655502</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Sep 15;58(2):339-61</RefSource>
+                <PMID Version="1">21477655</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am Heart J. 1997 Feb;133(2):153-61</RefSource>
+                <PMID Version="1">9023160</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 May 1;40(4):1567-74</RefSource>
+                <PMID Version="1">18343159</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Biomed Res. 1996 Jun;29(3):162-73</RefSource>
+                <PMID Version="1">8812068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2001 Oct;46(4):631-7</RefSource>
+                <PMID Version="1">11590638</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):864-70</RefSource>
+                <PMID Version="1">22245341</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2007 Sep;28(9):846-59</RefSource>
+                <PMID Version="1">17094119</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biomed Sci Instrum. 2006;42:434-9</RefSource>
+                <PMID Version="1">16817647</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2014 May 7;34(19):6573-82</RefSource>
+                <PMID Version="1">24806682</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D006439" MajorTopicYN="Y">Hemodynamics</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4822449 [Available on 05/13/17]</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">cardiac fluctuations</Keyword>
+            <Keyword MajorTopicYN="N">functional magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">haemodynamic response</Keyword>
+            <Keyword MajorTopicYN="N">point process</Keyword>
+            <Keyword MajorTopicYN="N">resting state</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>02</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27044997</ArticleId>
+            <ArticleId IdType="pii">rsta.2015.0190</ArticleId>
+            <ArticleId IdType="doi">10.1098/rsta.2015.0190</ArticleId>
+            <ArticleId IdType="pmc">PMC4822449</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

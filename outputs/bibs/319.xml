@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">21406628</PMID>
+        <DateCreated>
+            <Year>2011</Year>
+            <Month>04</Month>
+            <Day>19</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2011</Year>
+            <Month>07</Month>
+            <Day>26</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2014</Year>
+            <Month>07</Month>
+            <Day>30</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1527-1315</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>259</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2011</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Radiology</Title>
+                <ISOAbbreviation>Radiology</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Effect of resting-state functional MR imaging duration on stability of graph theory metrics of brain network connectivity.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>516-24</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1148/radiol.11101708</ELocationID>
+            <Abstract>
+                <AbstractText Label="PURPOSE" NlmCategory="OBJECTIVE">To investigate the effect of resting-state (RS) functional magnetic resonance (MR) imaging blood oxygen level-dependent (BOLD) signal acquisition duration on stability of computed graph theory metrics of brain network connectivity.</AbstractText>
+                <AbstractText Label="MATERIALS AND METHODS" NlmCategory="METHODS">An institutional ethics committee approved this study, and informed consent was obtained. BOLD signal (7.5 minutes worth) was obtained from 30 subjects and truncated into 30-second time bins that ranged from 1.5 to 7.5 minutes. A binarized adjacency matrix for each subject and acquisition duration was generated at network costs between 0.1 and 0.5, where network cost is defined as the ratio of the number of edges (connections) in a network to the maximum possible number of edges. Measures of correlation coefficient stability associated with functional connectivity matrices (correlation coefficient standard deviation [SD] and correlation threshold) and associated graph theory metrics (small worldness, local efficiency, and global efficiency) were computed for each subject at each BOLD signal acquisition duration. Computations were implemented with a 15-node 30-core computer cluster to enable analysis of the approximately 2000 resulting brain networks. Analysis of variance and posthoc analyses were conducted to identify differences between time bins for each measure.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">Small worldness, local efficiency, and global efficiency stabilized after 2 minutes of BOLD signal acquisition, whereas correlation coefficient data from functional connectivity matrices (correlation coefficient SD and cost-associated threshold) stabilized after 5 minutes of BOLD signal acquisition.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">Graph theory metrics of brain network connectivity (small worldness, local efficiency, and global efficiency) may be accurately computed from as little as 1.5-2.0 minutes of RS functional MR imaging BOLD signal. As such, implementation of these methods in the context of time-constrained clinical imaging protocols may be feasible and cost-effective.</AbstractText>
+                <AbstractText Label="SUPPLEMENTAL MATERIAL" NlmCategory="BACKGROUND">http://radiology.rsna.org/lookup/suppl/doi:10.1148/radiol.11101708/-/DC1.</AbstractText>
+                <CopyrightInformation>RSNA, 2011</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Whitlow</LastName>
+                    <ForeName>Christopher T</ForeName>
+                    <Initials>CT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Advanced NeuroScience Imaging Research Laboratory, Division of Radiologic Sciences, Department of Radiology, Wake Forest University School of Medicine, Medical Center Blvd, Winston-Salem, NC 27157-1088, USA. cwhitlow@wfubmc.edu</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Casanova</LastName>
+                    <ForeName>Ramon</ForeName>
+                    <Initials>R</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Maldjian</LastName>
+                    <ForeName>Joseph A</ForeName>
+                    <Initials>JA</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2011</Year>
+                <Month>03</Month>
+                <Day>15</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Radiology</MedlineTA>
+            <NlmUniqueID>0401260</NlmUniqueID>
+            <ISSNLinking>0033-8419</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>AIM</CitationSubset>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="CommentIn">
+                <RefSource>Radiology. 2011 May;259(2):317-20</RefSource>
+                <PMID Version="1">21502388</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000704" MajorTopicYN="N">Analysis of Variance</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001927" MajorTopicYN="N">Brain Diseases</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007089" MajorTopicYN="N">Image Enhancement</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007090" MajorTopicYN="N">Image Interpretation, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008959" MajorTopicYN="Y">Models, Neurological</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012016" MajorTopicYN="N">Reference Values</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2011</Year>
+                <Month>3</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2011</Year>
+                <Month>3</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2011</Year>
+                <Month>7</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">21406628</ArticleId>
+            <ArticleId IdType="pii">radiol.11101708</ArticleId>
+            <ArticleId IdType="doi">10.1148/radiol.11101708</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

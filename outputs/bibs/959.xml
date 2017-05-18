@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">28501079</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>14</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>14</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1548-5609</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>24</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>May</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Advances in chronic kidney disease</Title>
+                <ISOAbbreviation>Adv Chronic Kidney Dis</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Functional Magnetic Resonance Imaging of the Kidneys-With and Without Gadolinium-Based Contrast.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>162-168</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S1548-5595(17)30059-9</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1053/j.ackd.2017.03.006</ELocationID>
+            <Abstract>
+                <AbstractText>Assessment of renal function with magnetic resonance imaging (MRI) has been actively explored in the past decade. In this review, we introduce the principle of MRI and review recent progress of MRI methods (contrast enhanced and noncontrast) in assessing renal function. Contrast-enhanced MRI using ultra-low dose of gadolinium-based agent has been validated for measuring single-kidney glomerular filtration rate and renal plasma flow accurately. For routine functional test, contrast-enhanced MRI may not replace the simple serum-creatinine method. However, for patients with renal diseases, it is often worthy to perform MRI to accurately monitor renal function, particularly for the diseased kidney. As contrast-enhanced MRI is already an established clinical tool for characterizing renal structural abnormalities, including renal mass and ureteral obstruction, it is possible to adapt the clinical MRI protocol to measure single-kidney glomerular filtration rate and renal plasma flow, as demonstrated by recent studies. What makes MRI unique is the promise of its noncontrast methods. These methods include arterial spin labeling for tissue perfusion, blood oxygen-level dependent for blood and tissue oxygenation, and diffusion-weighted imaging for water diffusion. For each method, we reviewed recent findings and summarized challenges.</AbstractText>
+                <CopyrightInformation>Copyright © 2017 National Kidney Foundation, Inc. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Jeff L</ForeName>
+                    <Initials>JL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology and Imaging Sciences, University of Utah, 729 Arapeen Drive, Salt Lake City, UT 84108. Electronic address: Lei.Zhang@hsc.utah.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Adv Chronic Kidney Dis</MedlineTA>
+            <NlmUniqueID>101209214</NlmUniqueID>
+            <ISSNLinking>1548-5595</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Diffusion coefficient</Keyword>
+            <Keyword MajorTopicYN="N">Glomerular filtration rat</Keyword>
+            <Keyword MajorTopicYN="N">Magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">Tissue oxygenation</Keyword>
+            <Keyword MajorTopicYN="N">Tissue perfusion</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>5</Month>
+                <Day>15</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28501079</ArticleId>
+            <ArticleId IdType="pii">S1548-5595(17)30059-9</ArticleId>
+            <ArticleId IdType="doi">10.1053/j.ackd.2017.03.006</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

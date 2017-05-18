@@ -1,0 +1,190 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">28191550</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>13</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>21</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>9900</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Oct</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Medical image computing and computer-assisted intervention : MICCAI ... International Conference on Medical Image Computing and Computer-Assisted Intervention</Title>
+                <ISOAbbreviation>Med Image Comput Comput Assist Interv</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Mapping Lifetime Brain Volumetry with Covariate-Adjusted Restricted Cubic Spline Regression from Cross-sectional Multi-site MRI.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>81-88</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/978-3-319-46720-7_10</ELocationID>
+            <Abstract>
+                <AbstractText>Understanding brain volumetry is essential to understand neurodevelopment and disease. Historically, age-related changes have been studied in detail for specific age ranges (e.g., early childhood, teen, young adults, elderly, etc.) or more sparsely sampled for wider considerations of lifetime aging. Recent advancements in data sharing and robust processing have made available considerable quantities of brain images from normal, healthy volunteers. However, existing analysis approaches have had difficulty addressing (1) complex volumetric developments on the large cohort across the life time (e.g., beyond cubic age trends), (2) accounting for confound effects, and (3) maintaining an analysis framework consistent with the general linear model (GLM) approach pervasive in neuroscience. To address these challenges, we propose to use covariate-adjusted restricted cubic spline (C-RCS) regression within a multi-site cross-sectional framework. This model allows for flexible consideration of non-linear age-associated patterns while accounting for traditional covariates and interaction effects. As a demonstration of this approach on lifetime brain aging, we derive normative volumetric trajectories and 95% confidence intervals from 5111 healthy patients from 64 sites while accounting for confounding sex, intracranial volume and field strength effects. The volumetric results are shown to be consistent with traditional studies that have explored more limited age ranges using single-site analyses. This work represents the first integration of C-RCS with neuroimaging and the derivation of structural covariance networks (SCNs) from a large study of multi-site, cross-sectional data.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Huo</LastName>
+                    <ForeName>Yuankai</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Electrical Engineering, Vanderbilt University, Nashville, TN, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Aboud</LastName>
+                    <ForeName>Katherine</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Special Education, Vanderbilt University, Nashville, TN, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kang</LastName>
+                    <ForeName>Hakmook</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, Vanderbilt University, Nashville, TN, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cutting</LastName>
+                    <ForeName>Laurie E</ForeName>
+                    <Initials>LE</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Special Education, Vanderbilt University, Nashville, TN, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Landman</LastName>
+                    <ForeName>Bennett A</ForeName>
+                    <Initials>BA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Electrical Engineering, Vanderbilt University, Nashville, TN, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 EB006136</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 EY024036</GrantID>
+                    <Acronym>EY</Acronym>
+                    <Agency>NEI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 NS064534</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U54 HD083211</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R03 EB012461</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 NS095291</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>02</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Med Image Comput Comput Assist Interv</MedlineTA>
+            <NlmUniqueID>101249582</NlmUniqueID>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Med. 1989 May;8(5):551-61</RefSource>
+                <PMID Version="1">2657958</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Aug;33(8):1987-2002</RefSource>
+                <PMID Version="1">21915942</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2008 Feb;12(1):26-41</RefSource>
+                <PMID Version="1">17659998</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc SPIE Int Soc Opt Eng. 2014 Mar 21;9034:90341E</RefSource>
+                <PMID Version="1">24817809</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Sep;17(1):479-89</RefSource>
+                <PMID Version="1">12482100</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28191550</ArticleId>
+            <ArticleId IdType="doi">10.1007/978-3-319-46720-7_10</ArticleId>
+            <ArticleId IdType="pmc">PMC5302120</ArticleId>
+            <ArticleId IdType="mid">NIHMS826509</ArticleId>
+        </ArticleIdList>
+        <?nihms?>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

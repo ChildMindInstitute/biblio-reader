@@ -1,0 +1,285 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">27330652</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>06</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Print">1932-6157</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>9</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Jun</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>The annals of applied statistics</Title>
+                <ISOAbbreviation>Ann Appl Stat</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>WAVELET-DOMAIN REGRESSION AND PREDICTIVE INFERENCE IN PSYCHIATRIC NEUROIMAGING.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1076-1101</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>An increasingly important goal of psychiatry is the use of brain imaging data to develop predictive models. Here we present two contributions to statistical methodology for this purpose. First, we propose and compare a set of wavelet-domain procedures for fitting generalized linear models with scalar responses and image predictors: sparse variants of principal component regression and of partial least squares, and the elastic net. Second, we consider assessing the contribution of image predictors over and above available scalar predictors, in particular via permutation tests and an extension of the idea of confounding to the case of functional or image predictors. Using the proposed methods, we assess whether maps of a spontaneous brain activity measure, derived from functional magnetic resonance imaging, can meaningfully predict presence or absence of attention deficit/hyperactivity disorder (ADHD). Our results shed light on the role of confounding in the surprising outcome of the recent ADHD-200 Global Competition, which challenged researchers to develop algorithms for automated image-based diagnosis of the disorder.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Reiss</LastName>
+                    <ForeName>Philip T</ForeName>
+                    <Initials>PT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>;</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Huo</LastName>
+                    <ForeName>Lan</ForeName>
+                    <Initials>L</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhao</LastName>
+                    <ForeName>Yihong</ForeName>
+                    <Initials>Y</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kelly</LastName>
+                    <ForeName>Clare</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ogden</LastName>
+                    <ForeName>R Todd</ForeName>
+                    <Initials>RT</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 EB009744</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH095836</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>07</Month>
+                <Day>20</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Ann Appl Stat</MedlineTA>
+            <NlmUniqueID>101479511</NlmUniqueID>
+            <ISSNLinking>1932-6157</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Appl Stat. 2011 Jan 1;5(2A):894-923</RefSource>
+                <PMID Version="1">22408711</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Sep 28;6:69</RefSource>
+                <PMID Version="1">23060754</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Stat Softw. 2010;33(1):1-22</RefSource>
+                <PMID Version="1">20808728</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2002 Jan;18(1):39-50</RefSource>
+                <PMID Version="1">11836210</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 1;37(4):1205-17</RefSource>
+                <PMID Version="1">17689101</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biostatistics. 2004 Jul;5(3):427-43</RefSource>
+                <PMID Version="1">15208204</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Graph Stat. 2007;16(4):946-967</RefSource>
+                <PMID Version="1">18633453</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 May 15;72:304-21</RefSource>
+                <PMID Version="1">23298747</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2012 Dec;17(12):1174-9</RefSource>
+                <PMID Version="1">22869033</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2009 Dec;62(6):1619-28</RefSource>
+                <PMID Version="1">19859933</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2012 Dec;31(12):2290-306</RefSource>
+                <PMID Version="1">23008245</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2012 Dec;68(4):1260-8</RefSource>
+                <PMID Version="1">22670567</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Graph Stat. 2012 Jul 1;21(3):600-617</RefSource>
+                <PMID Version="1">23794794</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 1998 Apr;17(2):142-54</RefSource>
+                <PMID Version="1">9688147</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biostatistics. 2010 Jul;11(3):432-52</RefSource>
+                <PMID Version="1">20156988</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):811-5</RefSource>
+                <PMID Version="1">22521256</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Inf Process Med Imaging. 2003 Jul;18:330-41</RefSource>
+                <PMID Version="1">15344469</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Graph Stat. 2011 Dec 1;20(4):830-851</RefSource>
+                <PMID Version="1">22368438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comput Graph Stat. 2014 Jan 1;23(1):46-64</RefSource>
+                <PMID Version="1">24729670</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J R Stat Soc Series B Stat Methodol. 2010 Jan;72(1):3-25</RefSource>
+                <PMID Version="1">20107611</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 2011 Sep 15;502(2):89-93</RefSource>
+                <PMID Version="1">21810451</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2010 Jun;66(2):463-73</RefSource>
+                <PMID Version="1">19508236</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2012 Nov;31(11):2062-72</RefSource>
+                <PMID Version="1">22752119</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2010 Mar;66(1):61-9</RefSource>
+                <PMID Version="1">19432766</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2009 Dec 1;66(11):1055-60</RefSource>
+                <PMID Version="1">19729150</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Med. 2005 Mar 15;24(5):693-708</RefSource>
+                <PMID Version="1">15515134</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Aug 30;6:61</RefSource>
+                <PMID Version="1">22969709</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biostatistics. 2009 Jul;10(3):515-34</RefSource>
+                <PMID Version="1">19377034</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Dec;83:210-23</RefSource>
+                <PMID Version="1">23792220</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Sep 05;6:62</RefSource>
+                <PMID Version="1">22973200</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Appl Stat. 2014 Jun;8(2):1045-1064</RefSource>
+                <PMID Version="1">26082826</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2008 Jul 15;172(1):137-41</RefSource>
+                <PMID Version="1">18501969</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Stat Assoc. 2009 Jun 1;104(486):682-693</RefSource>
+                <PMID Version="1">20617121</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Stat Assoc. 2013;108(502):540-552</RefSource>
+                <PMID Version="1">24791032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Jan 26;73(2):214-8</RefSource>
+                <PMID Version="1">22284177</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD-200</Keyword>
+            <Keyword MajorTopicYN="N">elastic net</Keyword>
+            <Keyword MajorTopicYN="N">functional confounding</Keyword>
+            <Keyword MajorTopicYN="N">functional magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">functional regression</Keyword>
+            <Keyword MajorTopicYN="N">sparse partial least squares</Keyword>
+            <Keyword MajorTopicYN="N">sparse principal component regression</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27330652</ArticleId>
+            <ArticleId IdType="doi">10.1214/15-AOAS829</ArticleId>
+            <ArticleId IdType="pmc">PMC4912166</ArticleId>
+            <ArticleId IdType="mid">NIHMS764916</ArticleId>
+        </ArticleIdList>
+        <?nihms?>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,184 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">28032396</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>29</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>26</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1440-1819</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>71</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Apr</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Psychiatry and clinical neurosciences</Title>
+                <ISOAbbreviation>Psychiatry Clin. Neurosci.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Computational neuroscience approach to biomarkers and treatments for mental disorders.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>215-237</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1111/pcn.12502</ELocationID>
+            <Abstract>
+                <AbstractText>Psychiatry research has long experienced a stagnation stemming from a lack of understanding of the neurobiological underpinnings of phenomenologically defined mental disorders. Recently, the application of computational neuroscience to psychiatry research has shown great promise in establishing a link between phenomenological and pathophysiological aspects of mental disorders, thereby recasting current nosology in more biologically meaningful dimensions. In this review, we highlight recent investigations into computational neuroscience that have undertaken either theory- or data-driven approaches to quantitatively delineate the mechanisms of mental disorders. The theory-driven approach, including reinforcement learning models, plays an integrative role in this process by enabling correspondence between behavior and disorder-specific alterations at multiple levels of brain organization, ranging from molecules to cells to circuits. Previous studies have explicated a plethora of defining symptoms of mental disorders, including anhedonia, inattention, and poor executive function. The data-driven approach, on the other hand, is an emerging field in computational neuroscience seeking to identify disorder-specific features among high-dimensional big data. Remarkably, various machine-learning techniques have been applied to neuroimaging data, and the extracted disorder-specific features have been used for automatic case-control classification. For many disorders, the reported accuracies have reached 90% or more. However, we note that rigorous tests on independent cohorts are critically required to translate this research into clinical applications. Finally, we discuss the utility of the disorder-specific features found by the data-driven approach to psychiatric therapies, including neurofeedback. Such developments will allow simultaneous diagnosis and treatment of mental disorders using neuroimaging, thereby establishing 'theranostics' for the first time in clinical psychiatry.</AbstractText>
+                <CopyrightInformation>© 2016 The Authors. Psychiatry and Clinical Neurosciences © 2016 Japanese Society of Psychiatry and Neurology.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Yahata</LastName>
+                    <ForeName>Noriaki</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Youth Mental Health, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Molecular Imaging and Theranostics, National Institute of Radiological Sciences, National Institutes for Quantum and Radiological Science and Technology, Chiba, Japan.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>ATR Brain Information Communication Research Laboratory Group, Kyoto, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kasai</LastName>
+                    <ForeName>Kiyoto</ForeName>
+                    <Initials>K</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neuropsychiatry, Graduate School of Medicine, The University of Tokyo, Tokyo, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kawato</LastName>
+                    <ForeName>Mitsuo</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>ATR Brain Information Communication Research Laboratory Group, Kyoto, Japan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>03</Month>
+                <Day>27</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Australia</Country>
+            <MedlineTA>Psychiatry Clin Neurosci</MedlineTA>
+            <NlmUniqueID>9513551</NlmUniqueID>
+            <ISSNLinking>1323-1316</ISSNLinking>
+        </MedlineJournalInfo>
+        <ChemicalList>
+            <Chemical>
+                <RegistryNumber>0</RegistryNumber>
+                <NameOfSubstance UI="D015415">Biomarkers</NameOfSubstance>
+            </Chemical>
+        </ChemicalList>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D015415" MajorTopicYN="Y">Biomarkers</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D019295" MajorTopicYN="Y">Computational Biology</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001523" MajorTopicYN="N">Mental Disorders</DescriptorName>
+                <QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+                <QualifierName UI="Q000000981" MajorTopicYN="N">diagnostic imaging</QualifierName>
+                <QualifierName UI="Q000628" MajorTopicYN="Y">therapy</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D058765" MajorTopicYN="N">Neurofeedback</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D059906" MajorTopicYN="N">Neuroimaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009488" MajorTopicYN="N">Neurosciences</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="Y">biomarkers</Keyword>
+            <Keyword MajorTopicYN="Y">computational psychiatry</Keyword>
+            <Keyword MajorTopicYN="Y">machine learning</Keyword>
+            <Keyword MajorTopicYN="Y">neuroimaging</Keyword>
+            <Keyword MajorTopicYN="Y">resting-state functional connectivity</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>08</Month>
+                <Day>31</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>27</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28032396</ArticleId>
+            <ArticleId IdType="doi">10.1111/pcn.12502</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

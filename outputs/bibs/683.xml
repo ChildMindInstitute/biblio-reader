@@ -1,0 +1,264 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">26405427</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>25</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">1017-0405</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>25</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Jan</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Statistica Sinica</Title>
+                <ISOAbbreviation>Stat Sin</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>A SPARSE REDUCED RANK FRAMEWORK FOR GROUP ANALYSIS OF FUNCTIONAL NEUROIMAGING DATA.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>295-312</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>In spatial-temporal neuroimaging studies, there is an evolving literature on the analysis of functional imaging data in order to learn the intrinsic functional connectivity patterns among different brain regions. However, there are only few efficient approaches for integrating functional connectivity pattern across subjects, while accounting for spatial-temporal functional variation across multiple groups of subjects. The objective of this paper is to develop a new sparse reduced rank (SRR) modeling framework for carrying out functional connectivity analysis across multiple groups of subjects in the frequency domain. Our new framework not only can extract both frequency and spatial factors across subjects, but also imposes sparse constraints on the frequency factors. It thus leads to the identification of important frequencies with high power spectra. In addition, we propose two novel adaptive criteria for automatic selection of sparsity level and model rank. Using simulated data, we demonstrate that SRR outperforms several existing methods. Finally, we apply SRR to detect group differences between controls and two subtypes of attention deficit hyperactivity disorder (ADHD) patients, through analyzing the ADHD-200 data.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Ahn</LastName>
+                    <ForeName>Mihye</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, U.S.A. mihye98@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shen</LastName>
+                    <ForeName>Haipeng</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, U.S.A. mihye98@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lin</LastName>
+                    <ForeName>Weili</ForeName>
+                    <Initials>W</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, U.S.A. mihye98@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zhu</LastName>
+                    <ForeName>Hongtu</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of North Carolina at Chapel Hill, Chapel Hill, NC 27599, U.S.A. mihye98@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>UL1 TR001111</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH086633</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 AG033387</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>TL1 TR001110</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 EB020426</GrantID>
+                    <Acronym>EB</Acronym>
+                    <Agency>NIBIB NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>China (Republic : 1949- )</Country>
+            <MedlineTA>Stat Sin</MedlineTA>
+            <NlmUniqueID>101473244</NlmUniqueID>
+            <ISSNLinking>1017-0405</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 1998;6(3):160-88</RefSource>
+                <PMID Version="1">9673671</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Sep;30(9):2731-45</RefSource>
+                <PMID Version="1">19072897</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Med. 2000 Apr;6(4):470-3</RefSource>
+                <PMID Version="1">10742158</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):1257-66</RefSource>
+                <PMID Version="1">22248579</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2011 May;30(5):1076-89</RefSource>
+                <PMID Version="1">21138799</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2008 May;30(5):342-8</RefSource>
+                <PMID Version="1">18060712</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2009 Oct 16;326(5951):399-403</RefSource>
+                <PMID Version="1">19833961</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Nov;20(3):1661-9</RefSource>
+                <PMID Version="1">14642476</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Mar;25(1):193-205</RefSource>
+                <PMID Version="1">15734355</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Inf Process Med Imaging. 2011;22:562-73</RefSource>
+                <PMID Version="1">21761686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2011 Jul;52(7):808-16</RefSource>
+                <PMID Version="1">21175614</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Jul;16(3 Pt 1):551-63</RefSource>
+                <PMID Version="1">12169242</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2001 Nov;14(3):140-51</RefSource>
+                <PMID Version="1">11559959</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2004 Feb;23(2):137-52</RefSource>
+                <PMID Version="1">14964560</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Sep 1;42(3):1078-93</RefSource>
+                <PMID Version="1">18650105</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2006 Feb 15;151(1):15-29</RefSource>
+                <PMID Version="1">16378641</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2005 Jun 1;57(11):1273-84</RefSource>
+                <PMID Version="1">15949999</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Fam Med. 2004 May-Jun;2(3):204-8</RefSource>
+                <PMID Version="1">15209195</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2010 Dec;66(4):1087-95</RefSource>
+                <PMID Version="1">20163403</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2010 Jun;214(5-6):535-49</RefSource>
+                <PMID Version="1">20512367</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Can J Psychiatry. 2009 Oct;54(10):651-64</RefSource>
+                <PMID Version="1">19835672</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Mar;45(1 Suppl):S163-72</RefSource>
+                <PMID Version="1">19059344</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2001 Nov;14(5):1080-8</RefSource>
+                <PMID Version="1">11697939</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2011 May;30(5):1154-65</RefSource>
+                <PMID Version="1">21478072</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2006 Jun;163(6):1033-43</RefSource>
+                <PMID Version="1">16741204</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">lasso</Keyword>
+            <Keyword MajorTopicYN="N">low rank representation</Keyword>
+            <Keyword MajorTopicYN="N">resting-state functional MRI</Keyword>
+            <Keyword MajorTopicYN="N">singular value decomposition</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26405427</ArticleId>
+            <ArticleId IdType="doi">10.5705/ss.2013.215w</ArticleId>
+            <ArticleId IdType="pmc">PMC4578223</ArticleId>
+            <ArticleId IdType="mid">NIHMS688198</ArticleId>
+        </ArticleIdList>
+        <?nihms?>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>
