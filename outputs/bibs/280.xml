@@ -1,0 +1,176 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26109666</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>06</Month>
+            <Day>25</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>08</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>06</Month>
+            <Day>25</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1529-2401</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>35</Volume>
+                    <Issue>25</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Jun</Month>
+                        <Day>24</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>The Journal of neuroscience : the official journal of the Society for Neuroscience</Title>
+                <ISOAbbreviation>J. Neurosci.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Neural Processes in the Human Temporoparietal Cortex Separated by Localized Independent Component Analysis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>9432-45</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1523/JNEUROSCI.0551-15.2015</ELocationID>
+            <Abstract>
+                <AbstractText>The human temporoparietal junction (TPJ) is a topic of intense research. Imaging studies have identified TPJ activation in association with many higher-order functions such as theory-of-mind, episodic memory, and attention, causing debate about the distribution of different processes. One major challenge is the lack of consensus about the anatomical location and extent of the TPJ. Here, we address this problem using data-driven analysis to test the hypothesis that the bilateral TPJ can be parcellated into subregions. We applied independent component analysis (ICA) to task-free fMRI data within a local region around the bilateral TPJ, iterating the ICA at multiple model orders and in several datasets. The localized analysis allowed finer separation of processes and the use of multiple dimensionalities provided qualitative information about lateralization. We identified four subdivisions that were bilaterally symmetrical and one that was right biased. To test whether the independent components (ICs) reflected true subdivisions, we performed functional connectivity analysis using the IC coordinates as seeds. This confirmed that the subdivisions belonged to distinct networks. The right-biased IC was connected with a network often associated with attentional processing. One bilateral subdivision was connected to sensorimotor regions and another was connected to auditory regions. One subdivision that presented as distinct left- and right-biased ICs was connected to frontoparietal regions. Another subdivision that also had left- and right-biased ICs was connected to social or default mode networks. Our results show that the TPJ in both hemispheres hosts multiple neural processes with connectivity patterns consistent with well developed specialization and lateralization.</AbstractText>
+                <CopyrightInformation>Copyright © 2015 the authors 0270-6474/15/359432-14$15.00/0.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Igelström</LastName>
+                    <ForeName>Kajsa M</ForeName>
+                    <Initials>KM</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0002-1904-5554</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>Princeton Neuroscience Institute and Department of Psychology, Princeton University, Princeton, New Jersey 08544 kajsa@igelstrom.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Webb</LastName>
+                    <ForeName>Taylor W</ForeName>
+                    <Initials>TW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Princeton Neuroscience Institute and Department of Psychology, Princeton University, Princeton, New Jersey 08544.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Graziano</LastName>
+                    <ForeName>Michael S A</ForeName>
+                    <Initials>MS</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Princeton Neuroscience Institute and Department of Psychology, Princeton University, Princeton, New Jersey 08544.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Neurosci</MedlineTA>
+            <NlmUniqueID>8102140</NlmUniqueID>
+            <ISSNLinking>0270-6474</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007839" MajorTopicYN="N">Functional Laterality</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="N">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010296" MajorTopicYN="N">Parietal Lobe</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013702" MajorTopicYN="N">Temporal Lobe</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">cortical parcellation</Keyword>
+            <Keyword MajorTopicYN="N">inferior parietal lobule</Keyword>
+            <Keyword MajorTopicYN="N">probabilistic independent component analysis</Keyword>
+            <Keyword MajorTopicYN="N">resting-state functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">supramarginal and angular gyrus</Keyword>
+            <Keyword MajorTopicYN="N">temporoparietal junction cortex</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>6</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>6</Month>
+                <Day>26</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>9</Month>
+                <Day>9</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26109666</ArticleId>
+            <ArticleId IdType="pii">35/25/9432</ArticleId>
+            <ArticleId IdType="doi">10.1523/JNEUROSCI.0551-15.2015</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

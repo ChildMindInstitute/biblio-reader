@@ -1,0 +1,388 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">23033990</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>02</Month>
+            <Day>27</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>06</Month>
+            <Day>07</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1471-2202</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>13</Volume>
+                    <PubDate>
+                        <Year>2012</Year>
+                        <Month>Oct</Month>
+                        <Day>03</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>BMC neuroscience</Title>
+                <ISOAbbreviation>BMC Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Functional connectivity profile of the human inferior frontal junction: involvement in a cognitive control network.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>119</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1186/1471-2202-13-119</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">The human inferior frontal junction area (IFJ) is critically involved in three main component processes of cognitive control (working memory, task switching and inhibitory control). As it overlaps with several areas in established anatomical labeling schemes, it is considered to be underreported as a functionally distinct location in the neuroimaging literature. While recent studies explicitly focused on the IFJ's anatomical organization and functional role as a single brain area, it is usually not explicitly denominated in studies on cognitive networks. However based on few analyses in small datasets constrained by specific a priori assumptions on its functional specialization, the IFJ has been postulated to be part of a cognitive control network. Goal of this meta-analysis was to establish the IFJ's connectivity profile on a high formal level of evidence by aggregating published implicit knowledge about its co-activations. We applied meta-analytical connectivity modeling (MACM) based on the activation likelihood estimation (ALE) method without specific assumptions regarding functional specialization on 180 (reporting left IFJ activity) and 131 (right IFJ) published functional neuroimaging experiments derived from the BrainMap database. This method is based on coordinates in stereotaxic space, not on anatomical descriptors.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">The IFJ is significantly co-activated with areas in the dorsolateral and ventrolateral prefrontal cortex, anterior insula, medial frontal gyrus / pre-SMA, posterior parietal cortex, occipitotemporal junction / cerebellum, thalamus and putamen as well as language and motor areas. Results are corroborated by an independent resting-state fMRI analysis.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">These results support the assumption that the IFJ is part of a previously described cognitive control network. They also highlight the involvement of subcortical structures in this system. A direct line is drawn from works on the functional significance of brain activity located at the IFJ and its anatomical definition to published results related to distributed cognitive brain systems. The IFJ is therefore introduced as a convenient starting point to investigate the cognitive control network in further studies.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sundermann</LastName>
+                    <ForeName>Benedikt</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Clinical Radiology, University Hospital Münster, Albert-Schweitzer-Campus 1, Gebäude A1, 48149, Münster, Germany. benedikt.sundermann@ukmuenster.de</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pfleiderer</LastName>
+                    <ForeName>Bettina</ForeName>
+                    <Initials>B</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D017418">Meta-Analysis</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>10</Month>
+                <Day>03</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>BMC Neurosci</MedlineTA>
+            <NlmUniqueID>100966986</NlmUniqueID>
+            <ISSNLinking>1471-2202</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Mar 30;31(13):4771-9</RefSource>
+                <PMID Version="1">21451015</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Psychiatry. 2010 May;23(3):267-72</RefSource>
+                <PMID Version="1">20308899</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cogn Affect Behav Neurosci. 2012 Jun;12(2):241-68</RefSource>
+                <PMID Version="1">22282036</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Neuropsychopharmacol. 2010 Aug;20(8):519-34</RefSource>
+                <PMID Version="1">20471808</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 2006 Sep 1;404(3):282-7</RefSource>
+                <PMID Version="1">16860474</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2012 Jan;135(Pt 1):201-15</RefSource>
+                <PMID Version="1">22184615</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Sep;30(9):2907-26</RefSource>
+                <PMID Version="1">19172646</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 Feb;24(2):79-91</RefSource>
+                <PMID Version="1">15455462</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2005 Sep 15;47(6):907-18</RefSource>
+                <PMID Version="1">16157284</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Jan;33(1):130-42</RefSource>
+                <PMID Version="1">21391260</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Bull. 2000 Jul 15;52(5):319-30</RefSource>
+                <PMID Version="1">10922509</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Aug 1;37(1):343-60</RefSource>
+                <PMID Version="1">17553704</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2010 Jan;103(1):297-321</RefSource>
+                <PMID Version="1">19889849</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Apr 1;40(2):955-62</RefSource>
+                <PMID Version="1">18234518</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jun;51(2):555-64</RefSource>
+                <PMID Version="1">20206702</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2006 Mar 8;26(10):2724-31</RefSource>
+                <PMID Version="1">16525051</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1993 Jan;13(1):5-14</RefSource>
+                <PMID Version="1">8417010</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 May 5;30(18):6409-21</RefSource>
+                <PMID Version="1">20445067</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Oct;23(2):604-12</RefSource>
+                <PMID Version="1">15488410</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 Nov;18(11):2553-9</RefSource>
+                <PMID Version="1">18296434</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2012 Feb 21;109(8):3131-6</RefSource>
+                <PMID Version="1">22323591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2011 Apr;1224:40-62</RefSource>
+                <PMID Version="1">21486295</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Nov;33(11):2627-37</RefSource>
+                <PMID Version="1">21932264</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cogn Affect Behav Neurosci. 2007 Dec;7(4):367-79</RefSource>
+                <PMID Version="1">18189010</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 1997;5(4):238-42</RefSource>
+                <PMID Version="1">20408222</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2000 Oct;23(10):475-83</RefSource>
+                <PMID Version="1">11006464</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2007 Nov;28(11):1194-205</RefSource>
+                <PMID Version="1">17266101</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Methods. 2011 Aug;8(8):665-70</RefSource>
+                <PMID Version="1">21706013</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2010 Feb;31(2):173-84</RefSource>
+                <PMID Version="1">19603407</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 May;25(1):22-34</RefSource>
+                <PMID Version="1">15846824</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Jun;51(2):677-83</RefSource>
+                <PMID Version="1">20197097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Jan;30(1):299-311</RefSource>
+                <PMID Version="1">18072280</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(9):e25031</RefSource>
+                <PMID Version="1">21949842</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2006 Feb;10(2):59-63</RefSource>
+                <PMID Version="1">16406760</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2005 Jul 5;102(27):9673-8</RefSource>
+                <PMID Version="1">15976020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2005 Jul;9(7):314-6</RefSource>
+                <PMID Version="1">15927520</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2009 Jul 09;3:23</RefSource>
+                <PMID Version="1">19636392</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychologia. 2003;41(10):1330-44</RefSource>
+                <PMID Version="1">12757906</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2005;3(1):65-78</RefSource>
+                <PMID Version="1">15897617</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2002 Apr;3(4):319-21</RefSource>
+                <PMID Version="1">11967563</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2000 Jun 9;288(5472):1835-8</RefSource>
+                <PMID Version="1">10846167</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2011 Oct;23(10):2864-77</RefSource>
+                <PMID Version="1">21265603</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2000 Jul;10(3):120-31</RefSource>
+                <PMID Version="1">10912591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2005 Jan;15(1):31-9</RefSource>
+                <PMID Version="1">15238447</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Aug 28;6:23</RefSource>
+                <PMID Version="1">22973224</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 14;4:13</RefSource>
+                <PMID Version="1">20577591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 May;25(1):155-64</RefSource>
+                <PMID Version="1">15846811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2009 Sep;10(9):659-69</RefSource>
+                <PMID Version="1">19672274</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Oct;17(2):922-7</RefSource>
+                <PMID Version="1">12377166</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2003 Jul;6(7):750-7</RefSource>
+                <PMID Version="1">12808459</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="Y">psychology</QualifierName>
+                <QualifierName UI="Q000706" MajorTopicYN="N">statistics &amp; numerical data</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003071" MajorTopicYN="N">Cognition</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016208" MajorTopicYN="N">Databases, Factual</DescriptorName>
+                <QualifierName UI="Q000706" MajorTopicYN="N">statistics &amp; numerical data</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005625" MajorTopicYN="N">Frontal Lobe</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016013" MajorTopicYN="N">Likelihood Functions</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+                <QualifierName UI="Q000706" MajorTopicYN="N">statistics &amp; numerical data</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC3582543</OtherID>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2012</Year>
+                <Month>07</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>09</Month>
+                <Day>26</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>10</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>10</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>6</Month>
+                <Day>8</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">23033990</ArticleId>
+            <ArticleId IdType="pii">1471-2202-13-119</ArticleId>
+            <ArticleId IdType="doi">10.1186/1471-2202-13-119</ArticleId>
+            <ArticleId IdType="pmc">PMC3582543</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

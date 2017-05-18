@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24956047</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>06</Month>
+            <Day>24</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>09</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2014</Year>
+            <Month>06</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1527-1315</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>272</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Jul</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Radiology</Title>
+                <ISOAbbreviation>Radiology</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Resting-state functional MR imaging: a new window to the brain.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>29-49</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1148/radiol.14132388</ELocationID>
+            <Abstract>
+                <AbstractText>Resting-state (RS) functional magnetic resonance (MR) imaging constitutes a novel paradigm that examines spontaneous brain function by using blood oxygen level-dependent contrast in the absence of a task. Spatially distributed networks of temporal synchronization can be detected that can characterize RS networks (RSNs). With a short acquisition time of less than 10 minutes, RS functional MR imaging can be applied in special populations such as children and patients with dementia. Some RSNs are already present in utero, while others mature in childhood. Around 10 major RSNs are consistently found in adults, but their exact spatial extent and strength of coherence are affected by physiologic parameters and drugs. Though the acquisition and analysis methods are still evolving, new disease insights are emerging in a variety of neurologic and psychiatric disorders. The default mode network is affected in Alzheimer disease and various other diseases of cognitive impairment. Alterations in RSNs have been identified in many diseases, in the absence of evident structural modifications, indicating a high sensitivity of the method. Moreover, there is evidence of correlation between RSN alterations and disease progression and severity. However, different diseases often affect the same RSN, illustrating the limited specificity of the findings. This suggests that neurologic and psychiatric diseases are characterized by altered interactions between RSNs and therefore the whole brain should be examined as an integral network (with subnetworks), for example, using graph analysis. A challenge for clinical applications of RS functional MR imaging is the potentially confounding effect of aging, concomitant vascular diseases, or medication on the neurovascular coupling and consequently the functional MR imaging response. Current investigation combines RS functional MR imaging and other methods such as electroencephalography or magnetoencephalography to better understand the vascular and neuronal contributions to alterations in functional connectivity.</AbstractText>
+                <CopyrightInformation>© RSNA, 2014.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Barkhof</LastName>
+                    <ForeName>Frederik</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>From the Department of Radiology and Nuclear Medicine, Neuroscience Campus Amsterdam, VU University Medical Centre, PO Box 7057, 1007 MB Amsterdam, the Netherlands (F.B.); Service neuro-diagnostique et neuro-interventionnel DISIM, University Hospitals of Geneva, Geneva, Switzerland (S.H.); and Department of Radiology, Leiden University Medical Center and Institute of Psychology, Leiden University, Leiden, the Netherlands (S.A.R.B.R.).</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Haller</LastName>
+                    <ForeName>Sven</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Rombouts</LastName>
+                    <ForeName>Serge A R B</ForeName>
+                    <Initials>SA</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Radiology</MedlineTA>
+            <NlmUniqueID>0401260</NlmUniqueID>
+            <ISSNLinking>0033-8419</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>AIM</CitationSubset>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012146" MajorTopicYN="Y">Rest</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>6</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>6</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>9</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24956047</ArticleId>
+            <ArticleId IdType="doi">10.1148/radiol.14132388</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,333 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27768717</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>21</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1932-6203</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>11</Volume>
+                    <Issue>10</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PloS one</Title>
+                <ISOAbbreviation>PLoS ONE</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Statistical Evidence Suggests that Inattention Drives Hyperactivity/Impulsivity in Attention Deficit-Hyperactivity Disorder.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e0165120</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0165120</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Numerous factor analytic studies consistently support a distinction between two symptom domains of attention-deficit/hyperactivity disorder (ADHD), inattention and hyperactivity/impulsivity. Both dimensions show high internal consistency and moderate to strong correlations with each other. However, it is not clear what drives this strong correlation. The aim of this paper is to address this issue.</AbstractText>
+                <AbstractText Label="METHOD" NlmCategory="METHODS">We applied a sophisticated approach for causal discovery on three independent data sets of scores of the two ADHD dimensions in NeuroIMAGE (total N = 675), ADHD-200 (N = 245), and IMpACT (N = 164), assessed by different raters and instruments, and further used information on gender or a genetic risk haplotype.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">In all data sets we found strong statistical evidence for the same pattern: the clear dependence between hyperactivity/impulsivity symptom level and an established genetic factor (either gender or risk haplotype) vanishes when one conditions upon inattention symptom level. Under reasonable assumptions, e.g., that phenotypes do not cause genotypes, a causal model that is consistent with this pattern contains a causal path from inattention to hyperactivity/impulsivity.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">The robust dependency cancellation observed in three different data sets suggests that inattention is a driving factor for hyperactivity/impulsivity. This causal hypothesis can be further validated in intervention studies. Our model suggests that interventions that affect inattention will also have an effect on the level of hyperactivity/impulsivity. On the other hand, interventions that affect hyperactivity/impulsivity would not change the level of inattention. This causal model may explain earlier findings on heritable factors causing ADHD reported in the study of twins with learning difficulties.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Sokolova</LastName>
+                    <ForeName>Elena</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Computing and Information Sciences, Radboud University, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Groot</LastName>
+                    <ForeName>Perry</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Computing and Information Sciences, Radboud University, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Claassen</LastName>
+                    <ForeName>Tom</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Computing and Information Sciences, Radboud University, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>van Hulzen</LastName>
+                    <ForeName>Kimm J</ForeName>
+                    <Initials>KJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Center, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Glennon</LastName>
+                    <ForeName>Jeffrey C</ForeName>
+                    <Initials>JC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cognitive Neuroscience, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Center, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Franke</LastName>
+                    <ForeName>Barbara</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Human Genetics, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Center, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Center, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Heskes</LastName>
+                    <ForeName>Tom</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute for Computing and Information Sciences, Radboud University, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Buitelaar</LastName>
+                    <ForeName>Jan</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cognitive Neuroscience, Donders Institute for Brain, Cognition and Behaviour, Radboud University Medical Center, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Karakter Child and Adolescent Psychiatry University Centre, Nijmegen, The Netherlands.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>21</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PLoS One</MedlineTA>
+            <NlmUniqueID>101285081</NlmUniqueID>
+            <ISSNLinking>1932-6203</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Genet. 2005 Jul;37(7):710-7</RefSource>
+                <PMID Version="1">15965475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Rheum Dis. 2008 Mar;67(3):358-63</RefSource>
+                <PMID Version="1">17666451</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2007;31(4):597-618</RefSource>
+                <PMID Version="1">17316796</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Med. 2005 Jun;35(6):817-27</RefSource>
+                <PMID Version="1">15997602</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Genome Biol. 2007;8(10):R219</RefSource>
+                <PMID Version="1">17931418</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Aug;19(8):880-9</RefSource>
+                <PMID Version="1">24061496</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Mar 1;40(1):110-20</RefSource>
+                <PMID Version="1">18191584</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Psychiatry. 2011 Mar;26(2):100-7</RefSource>
+                <PMID Version="1">20619613</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Psychiatry. 2009 Mar;194(3):204-11</RefSource>
+                <PMID Version="1">19252145</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Bull. 1992 Jul;112(1):155-9</RefSource>
+                <PMID Version="1">19565683</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2008 May;30(5):342-8</RefSource>
+                <PMID Version="1">18060712</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Med. 2006 Feb;36(2):159-65</RefSource>
+                <PMID Version="1">16420712</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Epidemiol. 2014 Apr;43(2):434-42</RefSource>
+                <PMID Version="1">24464188</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2009 Dec 15;1303:195-206</RefSource>
+                <PMID Version="1">19699190</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc R Soc Med. 1965 May;58:295-300</RefSource>
+                <PMID Version="1">14283879</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Abnorm Child Psychol. 1998 Aug;26(4):257-68</RefSource>
+                <PMID Version="1">9700518</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychopharmacology. 2010 Feb;35(3):656-64</RefSource>
+                <PMID Version="1">19890261</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2011 Feb;68(2):181-9</RefSource>
+                <PMID Version="1">21300945</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Synapse. 2002 Mar 1;43(3):181-7</RefSource>
+                <PMID Version="1">11793423</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 1997 Jul;36(7):980-8</RefSource>
+                <PMID Version="1">9204677</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2010 Aug;51(8):905-14</RefSource>
+                <PMID Version="1">20331490</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Med Genet B Neuropsychiatr Genet. 2015 Apr 2;:null</RefSource>
+                <PMID Version="1">25847847</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Abnorm Psychol. 2012 Nov;121(4):991-1010</RefSource>
+                <PMID Version="1">22612200</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2004 Jul;9(7):718-26</RefSource>
+                <PMID Version="1">14699433</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010 Nov 30;5(11):e14169</RefSource>
+                <PMID Version="1">21152065</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Feb;30(2):638-49</RefSource>
+                <PMID Version="1">18219621</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Methods. 2010 Apr;7(4):247-8</RefSource>
+                <PMID Version="1">20354511</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Neuropsychopharmacol. 2013 Jun;23(6):469-78</RefSource>
+                <PMID Version="1">22749356</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Natl Cancer Inst. 1959 Apr;22(4):719-48</RefSource>
+                <PMID Version="1">13655060</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Genet. 2009 Jul;126(1):51-90</RefSource>
+                <PMID Version="1">19506906</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Med Genet B Neuropsychiatr Genet. 2008 Dec 5;147B(8):1576-9</RefSource>
+                <PMID Version="1">18802924</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Child Adolesc Psychiatry. 2015 Mar;24(3):265-81</RefSource>
+                <PMID Version="1">25012461</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2000 May;157(5):816-8</RefSource>
+                <PMID Version="1">10784477</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Abnorm Child Psychol. 2000 Apr;28(2):149-59</RefSource>
+                <PMID Version="1">10834767</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2007 Jun;164(6):942-8</RefSource>
+                <PMID Version="1">17541055</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Mol Genet. 1993 Jun;2(6):767-73</RefSource>
+                <PMID Version="1">8353495</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(8):e22754</RefSource>
+                <PMID Version="1">21826203</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinform Biol Insights. 2011 Jan 23;5:13-39</RefSource>
+                <PMID Version="1">21423405</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2007 Aug;48(8):831-9</RefSource>
+                <PMID Version="1">17683455</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <CoiStatement>Barbara Franke, Kimm van Hulzen, Elena Sokolova, Tom Claassen, Tom Heskes, Perry Groot and Jeffrey C. Glennon report no biomedical financial interests or potential conflicts of interest. Jan K. Buitelaar has been in the past 3 years a consultant to / member of advisory board of / and/or speaker for Janssen Cilag BV, Eli Lilly, and Servier. He is not an employee of any of these companies, and not a stock shareholder of any of these companies. He has no other financial or material support, including expert testimony, patents, royalties. This does not alter our adherence to PLOS ONE policies on sharing data and materials.</CoiStatement>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>03</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>06</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>22</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27768717</ArticleId>
+            <ArticleId IdType="doi">10.1371/journal.pone.0165120</ArticleId>
+            <ArticleId IdType="pii">PONE-D-16-12009</ArticleId>
+            <ArticleId IdType="pmc">PMC5074570</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

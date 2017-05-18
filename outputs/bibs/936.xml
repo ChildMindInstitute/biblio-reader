@@ -1,0 +1,373 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">25964743</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>05</Month>
+            <Day>12</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>05</Month>
+            <Day>12</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>9</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroanatomy</Title>
+                <ISOAbbreviation>Front Neuroanat</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Parcellation of the primary cerebral cortices based on local connectivity profiles.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>50</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnana.2015.00050</ELocationID>
+            <Abstract>
+                <AbstractText>Connectivity-based parcellation using diffusion MRI has been extensively used to parcellate subcortical areas and the association cortex. Connectivity profiles are vital for connectivity-based parcellation. Two categories of connectivity profiles are generally utilized, including global connectivity profiles, in which the connectivity information is from the seed to the whole brain, and long connectivity profiles, in which the connectivity information is from the seed to other brain regions after excluding the seed. However, whether global or long connectivity profiles should be applied in parcellating the primary cortex utilizing connectivity-based parcellation is unclear. Many sources of evidence have indicated that the primary cerebral cortices are composed of structurally and functionally distinct subregions. Because the primary cerebral cortices are rich in local anatomic hierarchical connections and possess high degree of local functional connectivity profiles, we proposed that local connectivity profiles, that is the connectivity information within a seed region of interest, might be used for parcellating the primary cerebral cortices. In this study, the global, long, and local connectivity profiles were separately used to parcellate the bilateral M1, A1, S1, and V1. We found that results using the three profiles were all quite consistent with reported cytoarchitectonic evidence. More importantly, the results using local connectivity profiles showed less inter-subject variability than the results using the other two, a finding which suggests that local connectivity profiles are superior to global and long connectivity profiles for parcellating the primary cerebral cortices. This also implies that, depending on the characteristics of specific areas of the cerebral cortex, different connectivity profiles may need to be adopted to parcellate different areas.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Qiaojun</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences Beijing, China ; National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Song</LastName>
+                    <ForeName>Ming</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences Beijing, China ; National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fan</LastName>
+                    <ForeName>Lingzhong</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences Beijing, China ; National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Yong</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences Beijing, China ; National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences Beijing, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiang</LastName>
+                    <ForeName>Tianzi</ForeName>
+                    <Initials>T</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brainnetome Center, Institute of Automation, Chinese Academy of Sciences Beijing, China ; National Laboratory of Pattern Recognition, Institute of Automation, Chinese Academy of Sciences Beijing, China ; CAS Center for Excellence in Brain Science, Institute of Automation, Chinese Academy of Sciences Beijing, China ; The Queensland Brain Institute, University of Queensland, Brisbane QLD, Australia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>04</Month>
+                <Day>27</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neuroanat</MedlineTA>
+            <NlmUniqueID>101477943</NlmUniqueID>
+            <ISSNLinking>1662-5129</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Apr;17(4):816-25</RefSource>
+                <PMID Version="1">16707738</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):204-11</RefSource>
+                <PMID Version="1">17023184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2013 Sep;23(9):2261-8</RefSource>
+                <PMID Version="1">22826609</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2008 Oct;64(4):367-78</RefSource>
+                <PMID Version="1">18991346</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Jan 20;106(3):918-23</RefSource>
+                <PMID Version="1">19139417</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 1991 Jan-Feb;1(1):1-47</RefSource>
+                <PMID Version="1">1822724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Compr Psychiatry. 2014 Oct;55(7):1688-95</RefSource>
+                <PMID Version="1">25060989</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 1990 Nov;28(5):597-613</RefSource>
+                <PMID Version="1">2260847</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jun;93 Pt 2:165-75</RefSource>
+                <PMID Version="1">23567887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jun;11(6 Pt 1):684-96</RefSource>
+                <PMID Version="1">10860796</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2003 Nov 13;40(4):859-69</RefSource>
+                <PMID Version="1">14622588</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1980 Apr 1;190(3):597-610</RefSource>
+                <PMID Version="1">6771305</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2007 Oct 25;56(2):252-69</RefSource>
+                <PMID Version="1">17964244</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res Bull. 2011 Nov 25;86(5-6):298-313</RefSource>
+                <PMID Version="1">21888952</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2014 Nov 7;1588:135-43</RefSource>
+                <PMID Version="1">25199592</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1996 Aug 29;382(6594):805-7</RefSource>
+                <PMID Version="1">8752272</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 Sep;22(9):2024-38</RefSource>
+                <PMID Version="1">21980020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2001 Apr;13(4):684-701</RefSource>
+                <PMID Version="1">11305897</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2000 Mar;83(3):1770-6</RefSource>
+                <PMID Version="1">10712498</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 Nov 7;32(45):15815-22</RefSource>
+                <PMID Version="1">23136420</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2012 May 2;32(18):6240-50</RefSource>
+                <PMID Version="1">22553030</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Mar 16;31(11):4087-100</RefSource>
+                <PMID Version="1">21411650</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2007 Oct;17(10):2420-32</RefSource>
+                <PMID Version="1">17190967</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2001 Jun;5(2):143-56</RefSource>
+                <PMID Version="1">11516708</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):144-55</RefSource>
+                <PMID Version="1">17070705</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Oct 1;32(4):1524-37</RefSource>
+                <PMID Version="1">16806989</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stereotact Funct Neurosurg. 2007;85(5):204-15</RefSource>
+                <PMID Version="1">17534133</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2003 Sep;13(9):987-93</RefSource>
+                <PMID Version="1">12902398</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(9):e14832</RefSource>
+                <PMID Version="1">21915250</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Jul;19(3):906-12</RefSource>
+                <PMID Version="1">12880819</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 1999 Sep 16;401(6750):269-72</RefSource>
+                <PMID Version="1">10499583</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2009 Jan 28;29(4):1175-90</RefSource>
+                <PMID Version="1">19176826</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Psychol. 2014 Nov 06;5:1223</RefSource>
+                <PMID Version="1">25414677</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroanat. 2012 Aug 29;6:34</RefSource>
+                <PMID Version="1">22952459</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2004 Sep 7;101(36):13335-40</RefSource>
+                <PMID Version="1">15340158</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 May 1;25(4):1325-35</RefSource>
+                <PMID Version="1">15850749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jun;93 Pt 2:237-51</RefSource>
+                <PMID Version="1">23891882</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2002 Jul;88(1):514-9</RefSource>
+                <PMID Version="1">12091573</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jun;93 Pt 2:221-30</RefSource>
+                <PMID Version="1">23558101</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2011 Jul 07;5:58</RefSource>
+                <PMID Version="1">21779237</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Aug 10;31(32):11597-616</RefSource>
+                <PMID Version="1">21832190</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Nov 1;63(2):641-52</RefSource>
+                <PMID Version="1">22846658</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Sep;78:46-58</RefSource>
+                <PMID Version="1">23587692</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Feb 13;98(4):1907-11</RefSource>
+                <PMID Version="1">11172049</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jan;11(1):66-84</RefSource>
+                <PMID Version="1">10686118</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1993 Dec 15;338(3):360-76</RefSource>
+                <PMID Version="1">8113445</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2004 Mar;91(3):1282-96</RefSource>
+                <PMID Version="1">14614108</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2010 Jun;11(6):417-28</RefSource>
+                <PMID Version="1">20445542</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2009 Jul;132(Pt 7):1898-906</RefSource>
+                <PMID Version="1">19467992</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Nov;17(3):1144-61</RefSource>
+                <PMID Version="1">12414256</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2010 Jun 10;6(6):e1000808</RefSource>
+                <PMID Version="1">20548945</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2000 Oct 24;97(22):11793-9</RefSource>
+                <PMID Version="1">11050211</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 Feb;35(2):567-80</RefSource>
+                <PMID Version="1">23118015</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2014 Dec;24(12):3365-78</RefSource>
+                <PMID Version="1">23926116</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4410601</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">connectivity-based parcellation</Keyword>
+            <Keyword MajorTopicYN="N">diffusion tensor imaging</Keyword>
+            <Keyword MajorTopicYN="N">local connectivity profiles</Keyword>
+            <Keyword MajorTopicYN="N">primary cerebral cortices</Keyword>
+            <Keyword MajorTopicYN="N">tractography</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>26</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>04</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25964743</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnana.2015.00050</ArticleId>
+            <ArticleId IdType="pmc">PMC4410601</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

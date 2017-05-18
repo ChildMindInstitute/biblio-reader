@@ -1,0 +1,147 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27585835</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>02</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>11</Month>
+            <Day>07</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1361-8423</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>35</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Jan</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Medical image analysis</Title>
+                <ISOAbbreviation>Med Image Anal</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Identifying differences in brain activities and an accurate detection of autism spectrum disorder using resting state functional-magnetic resonance imaging : A spatial filtering approach.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>375-389</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S1361-8415(16)30151-7</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.media.2016.08.003</ELocationID>
+            <Abstract>
+                <AbstractText>This paper presents a new approach for detecting major differences in brain activities between Autism Spectrum Disorder (ASD) patients and neurotypical subjects using the resting state fMRI. Further the method also extracts discriminative features for an accurate diagnosis of ASD. The proposed approach determines a spatial filter that projects the covariance matrices of the Blood Oxygen Level Dependent (BOLD) time-series signals from both the ASD patients and neurotypical subjects in orthogonal directions such that they are highly separable. The inverse of this filter also provides a spatial pattern map within the brain that highlights those regions responsible for the distinguishable activities between the ASD patients and neurotypical subjects. For a better classification, highly discriminative log-variance features providing the maximum separation between the two classes are extracted from the projected BOLD time-series data. A detailed study has been carried out using the publicly available data from the Autism Brain Imaging Data Exchange (ABIDE) consortium for the different gender and age-groups. The study results indicate that for all the above categories, the regional differences in resting state activities are more commonly found in the right hemisphere compared to the left hemisphere of the brain. Among males, a clear shift in activities to the prefrontal cortex is observed for ASD patients while other parts of the brain show diminished activities compared to neurotypical subjects. Among females, such a clear shift is not evident; however, several regions, especially in the posterior and medial portions of the brain show diminished activities due to ASD. Finally, the classification performance obtained using the log-variance features is found to be better when compared to earlier studies in the literature.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Subbaraju</LastName>
+                    <ForeName>Vigneshwaran</ForeName>
+                    <Initials>V</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Computer Engineering, Nanyang Technological University, 02b-45, block n4, 50 Nanyang Avenue, 639798 Singapore. Electronic address: vigneshw1@e.ntu.edu.sg.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Suresh</LastName>
+                    <ForeName>Mahanand Belathur</ForeName>
+                    <Initials>MB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Information Science and Engineering, Sri Jayachamarajendra College of Engineering, Mysore, India. Electronic address: bsmahanand@sjce.ac.in.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sundaram</LastName>
+                    <ForeName>Suresh</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Computer Engineering, Nanyang Technological University, 02b-45, block n4, 50 Nanyang Avenue, 639798 Singapore. Electronic address: ssundaram@ntu.edu.sg.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Narasimhan</LastName>
+                    <ForeName>Sundararajan</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Computer Engineering, Nanyang Technological University, 02b-45, block n4, 50 Nanyang Avenue, 639798 Singapore. Electronic address: ensundara@ntu.edu.sg.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>08</Month>
+                <Day>23</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Med Image Anal</MedlineTA>
+            <NlmUniqueID>9713490</NlmUniqueID>
+            <ISSNLinking>1361-8415</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Autism spectrum disorder</Keyword>
+            <Keyword MajorTopicYN="N">Fukunaga–Koontz transform</Keyword>
+            <Keyword MajorTopicYN="N">Functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Resting state functional magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">Spatial filtering</Keyword>
+            <Keyword MajorTopicYN="N">Support vector machine</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>02</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>08</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>9</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27585835</ArticleId>
+            <ArticleId IdType="pii">S1361-8415(16)30151-7</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.media.2016.08.003</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

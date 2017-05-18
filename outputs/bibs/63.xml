@@ -1,0 +1,431 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">22493576</PMID>
+        <DateCreated>
+            <Year>2012</Year>
+            <Month>04</Month>
+            <Day>11</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2012</Year>
+            <Month>10</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1662-5196</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2012</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroinformatics</Title>
+                <ISOAbbreviation>Front Neuroinform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Data sharing in neuroimaging research.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>9</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fninf.2012.00009</ELocationID>
+            <Abstract>
+                <AbstractText>Significant resources around the world have been invested in neuroimaging studies of brain function and disease. Easier access to this large body of work should have profound impact on research in cognitive neuroscience and psychiatry, leading to advances in the diagnosis and treatment of psychiatric and neurological disease. A trend toward increased sharing of neuroimaging data has emerged in recent years. Nevertheless, a number of barriers continue to impede momentum. Many researchers and institutions remain uncertain about how to share data or lack the tools and expertise to participate in data sharing. The use of electronic data capture (EDC) methods for neuroimaging greatly simplifies the task of data collection and has the potential to help standardize many aspects of data sharing. We review here the motivations for sharing neuroimaging data, the current data sharing landscape, and the sociological or technical barriers that still need to be addressed. The INCF Task Force on Neuroimaging Datasharing, in conjunction with several collaborative groups around the world, has started work on several tools to ease and eventually automate the practice of data sharing. It is hoped that such tools will allow researchers to easily share raw, processed, and derived neuroimaging data, with appropriate metadata and provenance records, and will improve the reproducibility of neuroimaging studies. By providing seamless integration of data sharing and analysis tools within a commodity research environment, the Task Force seeks to identify and minimize barriers to data sharing in the field of neuroimaging.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Poline</LastName>
+                    <ForeName>Jean-Baptiste</ForeName>
+                    <Initials>JB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Neurospin, Commissariat à l'Energie Atomique et aux Energies Alternatives Gif-sur-Yvette, France.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Breeze</LastName>
+                    <ForeName>Janis L</ForeName>
+                    <Initials>JL</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ghosh</LastName>
+                    <ForeName>Satrajit</ForeName>
+                    <Initials>S</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gorgolewski</LastName>
+                    <ForeName>Krzysztof</ForeName>
+                    <Initials>K</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Halchenko</LastName>
+                    <ForeName>Yaroslav O</ForeName>
+                    <Initials>YO</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hanke</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Haselgrove</LastName>
+                    <ForeName>Christian</ForeName>
+                    <Initials>C</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Helmer</LastName>
+                    <ForeName>Karl G</ForeName>
+                    <Initials>KG</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Keator</LastName>
+                    <ForeName>David B</ForeName>
+                    <Initials>DB</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Marcus</LastName>
+                    <ForeName>Daniel S</ForeName>
+                    <Initials>DS</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Poldrack</LastName>
+                    <ForeName>Russell A</ForeName>
+                    <Initials>RA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schwartz</LastName>
+                    <ForeName>Yannick</ForeName>
+                    <Initials>Y</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ashburner</LastName>
+                    <ForeName>John</ForeName>
+                    <Initials>J</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kennedy</LastName>
+                    <ForeName>David N</ForeName>
+                    <Initials>DN</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>091593</GrantID>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>P30 HD004147</GrantID>
+                    <Acronym>HD</Acronym>
+                    <Agency>NICHD NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH083320</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2012</Year>
+                <Month>04</Month>
+                <Day>05</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neuroinform</MedlineTA>
+            <NlmUniqueID>101477957</NlmUniqueID>
+            <ISSNLinking>1662-5196</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Magn Reson Imaging. 2012 Jul;36(1):39-54</RefSource>
+                <PMID Version="1">22314879</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Methods. 2011 Jun 26;8(8):665-70</RefSource>
+                <PMID Version="1">21706013</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Biomed Inform. 2009 Apr;42(2):377-81</RefSource>
+                <PMID Version="1">18929686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Jun 27;5:4</RefSource>
+                <PMID Version="1">21743807</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1720-34</RefSource>
+                <PMID Version="1">19371790</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Aug 22;5:13</RefSource>
+                <PMID Version="1">21897815</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2009 Jan;35(1):15-8</RefSource>
+                <PMID Version="1">19023124</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2010 Feb 16;8(2):e1000309</RefSource>
+                <PMID Version="1">20169109</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2007 Spring;5(1):11-34</RefSource>
+                <PMID Version="1">17426351</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2010 Dec;8(4):231-49</RefSource>
+                <PMID Version="1">20567938</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Mar 9;107(10):4734-9</RefSource>
+                <PMID Version="1">20176931</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2009 Nov;30(11):3795-811</RefSource>
+                <PMID Version="1">19434601</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Inform Assoc. 2007 Jul-Aug;14(4):478-88</RefSource>
+                <PMID Version="1">17460139</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ecol Lett. 2007 Aug;10(8):663-72</RefSource>
+                <PMID Version="1">17594421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acta Psychiatr Scand. 2008 Feb;117(2):100-17</RefSource>
+                <PMID Version="1">18028255</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(10):e25829</RefSource>
+                <PMID Version="1">21991367</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Dec 23;5:33</RefSource>
+                <PMID Version="1">22275896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Apr 03;6:7</RefSource>
+                <PMID Version="1">22493575</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2008 Nov;18(11):2553-9</RefSource>
+                <PMID Version="1">18296434</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 15;59(4):4189-95</RefSource>
+                <PMID Version="1">22008368</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Res Notes. 2010 Sep 02;3:235</RefSource>
+                <PMID Version="1">20813027</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2009 Jan;35(1):19-31</RefSource>
+                <PMID Version="1">19042912</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Jul 07;5:8</RefSource>
+                <PMID Version="1">21779243</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2007 Aug 16;448(7155):737</RefSource>
+                <PMID Version="1">17700666</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2010 Dec 28;4:118</RefSource>
+                <PMID Version="1">21228907</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2012 Feb 22;482(7386):485-8</RefSource>
+                <PMID Version="1">22358837</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Mar;30(1):184-202</RefSource>
+                <PMID Version="1">16376577</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010 Sep 28;5(9):null</RefSource>
+                <PMID Version="1">20927408</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sci Eng Ethics. 2012 Dec;18(4):775-88</RefSource>
+                <PMID Version="1">21626219</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2010 Jun 10;4:null</RefSource>
+                <PMID Version="1">20725521</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2011 Jun 06;5:3</RefSource>
+                <PMID Version="1">21713110</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimaging Clin N Am. 2005 Nov;15(4):869-77, xi-xii</RefSource>
+                <PMID Version="1">16443497</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Invest. 2008 May;118(5):1590-605</RefSource>
+                <PMID Version="1">18451988</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2009 Sep 10;461(7261):168-70</RefSource>
+                <PMID Version="1">19741685</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Genet. 2009 May;10 (5):331-5</RefSource>
+                <PMID Version="1">19308065</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2007 Fall;5(3):146-53</RefSource>
+                <PMID Version="1">17917125</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Inf Technol Biomed. 2008 Mar;12(2):162-72</RefSource>
+                <PMID Version="1">18348946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Inform Assoc. 2011 Jul-Aug;18(4):416-22</RefSource>
+                <PMID Version="1">21515543</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2010 Dec;22(12):2677-84</RefSource>
+                <PMID Version="1">19929323</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2012 Jan;10(1):57-66</RefSource>
+                <PMID Version="1">21643732</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Digit Imaging. 2007 Nov;20 Suppl 1:130-8</RefSource>
+                <PMID Version="1">17710494</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2011 Feb;32(2):240-8</RefSource>
+                <PMID Version="1">20336688</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMJ. 2011 May 17;342:d3035</RefSource>
+                <PMID Version="1">21586466</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2004 May;7(5):473-81</RefSource>
+                <PMID Version="1">15114361</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin EEG Neurosci. 2005 Apr;36(2):76-81</RefSource>
+                <PMID Version="1">15999902</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):1216-20</RefSource>
+                <PMID Version="1">21856431</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2010 Oct 04;4:null</RefSource>
+                <PMID Version="1">20953291</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Arch Gen Psychiatry. 2009 Feb;66(2):128-33</RefSource>
+                <PMID Version="1">19188534</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 May;25(1):46-59</RefSource>
+                <PMID Version="1">15846822</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2012 Jan;10(1):19-32</RefSource>
+                <PMID Version="1">21479735</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2005 May;25(1):155-64</RefSource>
+                <PMID Version="1">15846811</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Jul;19(3):513-31</RefSource>
+                <PMID Version="1">12880784</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Apr 15;45(3):810-23</RefSource>
+                <PMID Version="1">19166944</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2012 Jan 20;5:37</RefSource>
+                <PMID Version="1">22319489</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2012 Jan 26;73(2):214-8</RefSource>
+                <PMID Version="1">22284177</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC3319918</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">EEG-MEG</Keyword>
+            <Keyword MajorTopicYN="N">brain imaging</Keyword>
+            <Keyword MajorTopicYN="N">data sharing</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+            <Keyword MajorTopicYN="N">magnetic resonance imaging</Keyword>
+            <Keyword MajorTopicYN="N">standards</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2011</Year>
+                <Month>10</Month>
+                <Day>13</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2012</Year>
+                <Month>03</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2012</Year>
+                <Month>4</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2012</Year>
+                <Month>4</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2012</Year>
+                <Month>4</Month>
+                <Day>12</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">22493576</ArticleId>
+            <ArticleId IdType="doi">10.3389/fninf.2012.00009</ArticleId>
+            <ArticleId IdType="pmc">PMC3319918</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

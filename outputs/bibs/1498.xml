@@ -1,0 +1,128 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28232122</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>24</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Feb</Month>
+                        <Day>14</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Functional connectomics from a &quot;big data&quot; perspective.</ArticleTitle>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(17)30142-8</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2017.02.031</ELocationID>
+            <Abstract>
+                <AbstractText>In the last decade, explosive growth regarding functional connectome studies has been observed. Accumulating knowledge has significantly contributed to our understanding of the brain's functional network architectures in health and disease. With the development of innovative neuroimaging techniques, the establishment of large brain datasets and the increasing accumulation of published findings, functional connectomic research has begun to move into the era of &quot;big data&quot;, which generates unprecedented opportunities for discovery in brain science and simultaneously encounters various challenging issues, such as data acquisition, management and analyses. Big data on the functional connectome exhibits several critical features: high spatial and/or temporal precision, large sample sizes, long-term recording of brain activity, multidimensional biological variables (e.g., imaging, genetic, demographic, cognitive and clinic) and/or vast quantities of existing findings. We review studies regarding functional connectomics from a big data perspective, with a focus on recent methodological advances in state-of-the-art image acquisition (e.g., multiband imaging), analysis approaches and statistical strategies (e.g., graph theoretical analysis, dynamic network analysis, independent component analysis, multivariate pattern analysis and machine learning), as well as reliability and reproducibility validations. We highlight the novel findings in the application of functional connectomic big data to the exploration of the biological mechanisms of cognitive functions, normal development and aging and of neurological and psychiatric disorders. We advocate the urgent need to expand efforts directed at the methodological challenges and discuss the direction of applications in this field.</AbstractText>
+                <CopyrightInformation>Copyright © 2017 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Xia</LastName>
+                    <ForeName>Mingrui</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>National Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, Beijing 100875, China; IDG/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>He</LastName>
+                    <ForeName>Yong</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>National Key Laboratory of Cognitive Neuroscience and Learning, Beijing Normal University, Beijing 100875, China; IDG/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Beijing Key Laboratory of Brain Imaging and Connectomics, Beijing Normal University, Beijing 100875, China. Electronic address: yong.he@bnu.edu.cn.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>14</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Big data</Keyword>
+            <Keyword MajorTopicYN="N">Brain networks</Keyword>
+            <Keyword MajorTopicYN="N">Connectome</Keyword>
+            <Keyword MajorTopicYN="N">Dynamics</Keyword>
+            <Keyword MajorTopicYN="N">Fingerprint</Keyword>
+            <Keyword MajorTopicYN="N">Graph theory</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>08</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2017</Year>
+                <Month>01</Month>
+                <Day>21</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>13</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28232122</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(17)30142-8</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2017.02.031</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

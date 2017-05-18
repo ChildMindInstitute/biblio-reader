@@ -1,0 +1,185 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">25435598</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>12</Month>
+            <Day>01</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">0162-1459</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>109</Volume>
+                    <Issue>507</Issue>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Jul</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Journal of the American Statistical Association</Title>
+                <ISOAbbreviation>J Am Stat Assoc</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Spatially Varying Coefficient Model for Neuroimaging Data with Jump Discontinuities.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1084-1098</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>Motivated by recent work on studying massive imaging data in various neuroimaging studies, we propose a novel spatially varying coefficient model (SVCM) to capture the varying association between imaging measures in a three-dimensional (3D) volume (or 2D surface) with a set of covariates. Two stylized features of neuorimaging data are the presence of multiple piecewise smooth regions with unknown edges and jumps and substantial spatial correlations. To specifically account for these two features, SVCM includes a measurement model with multiple varying coefficient functions, a jumping surface model for each varying coefficient function, and a functional principal component model. We develop a three-stage estimation procedure to simultaneously estimate the varying coefficient functions and the spatial correlations. The estimation procedure includes a fast multiscale adaptive estimation and testing procedure to independently estimate each varying coefficient function, while preserving its edges among different piecewise-smooth regions. We systematically investigate the asymptotic properties (e.g., consistency and asymptotic normality) of the multiscale adaptive parameter estimates. We also establish the uniform convergence rate of the estimated spatial covariance function and its associated eigenvalues and eigenfunctions. Our Monte Carlo simulation and real data analysis have confirmed the excellent performance of SVCM.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhu</LastName>
+                    <ForeName>Hongtu</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics and Biomedical Research Imaging Center, University of North Carolina at Chapel Hill, hapel Hill, NC 27599, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fan</LastName>
+                    <ForeName>Jianqing</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Oper Res and Fin. Eng, Princeton University, Princeton, NJ 08540.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kong</LastName>
+                    <ForeName>Linglong</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Mathematical and Statistical Sciences, University of Alberta, Edmonton, AB Canada T6G 2G1.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 GM072611</GrantID>
+                    <Acronym>GM</Acronym>
+                    <Agency>NIGMS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 GM100474</GrantID>
+                    <Acronym>GM</Acronym>
+                    <Agency>NIGMS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH086633</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>J Am Stat Assoc</MedlineTA>
+            <NlmUniqueID>01510020R</NlmUniqueID>
+            <ISSNLinking>0162-1459</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2008 Apr;27(4):531-7</RefSource>
+                <PMID Version="1">18390349</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jan 1;44(1):62-70</RefSource>
+                <PMID Version="1">18603449</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J R Stat Soc Series B Stat Methodol. 2011 Sep;73(4):559-578</RefSource>
+                <PMID Version="1">21860598</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004;23 Suppl 1:S189-95</RefSource>
+                <PMID Version="1">15501088</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2001 Dec;14(6):1361-9</RefSource>
+                <PMID Version="1">11707092</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Oct 1;58(3):772-84</RefSource>
+                <PMID Version="1">21798354</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2011 Jun 15;69(12):1160-7</RefSource>
+                <PMID Version="1">21489409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Interface. 2008;1(1):179-195</RefSource>
+                <PMID Version="1">18978950</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2007 Jun;164(6):942-8</RefSource>
+                <PMID Version="1">17541055</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Aug 15;52(2):515-23</RefSource>
+                <PMID Version="1">20420928</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2008 Feb 15;39(4):1763-73</RefSource>
+                <PMID Version="1">18060811</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Asymptotic normality</Keyword>
+            <Keyword MajorTopicYN="N">Functional principal component analysis</Keyword>
+            <Keyword MajorTopicYN="N">Jumping surface model</Keyword>
+            <Keyword MajorTopicYN="N">Kernel</Keyword>
+            <Keyword MajorTopicYN="N">Spatial varying coefficient model</Keyword>
+            <Keyword MajorTopicYN="N">Wald test</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>2</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25435598</ArticleId>
+            <ArticleId IdType="doi">10.1080/01621459.2014.881742</ArticleId>
+            <ArticleId IdType="pmc">PMC4244662</ArticleId>
+            <ArticleId IdType="mid">NIHMS588529</ArticleId>
+        </ArticleIdList>
+        <?nihms?>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

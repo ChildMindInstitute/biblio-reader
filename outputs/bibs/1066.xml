@@ -1,0 +1,423 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27875803</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>11</Month>
+            <Day>22</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1879-0046</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>170</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Jan</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Drug and alcohol dependence</Title>
+                <ISOAbbreviation>Drug Alcohol Depend</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Analysis of alcohol use disorders from the Nathan Kline Institute-Rockland Sample: Correlation of brain cortical thickness with neuroticism.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>66-73</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S0376-8716(16)30991-7</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.drugalcdep.2016.10.040</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Although differences in both neuroanatomical measures and personality traits, in particular neuroticism, have been associated with alcohol use disorders (AUD), whether lifetime AUD diagnosis alters the relationship between neuroticism and neuroanatomical structures remains to be determined.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">Data from 65 patients with lifetime AUD diagnoses and 65 healthy comparisons (HC) group-matched on age, sex and race were extracted from the Nathan Kline Institute - Rockland Sample data set. Each subject completed personality trait measures and underwent MRI scanning. Cortical thickness measures at 68 Desikan-Killiany Atlas regions were obtained using FreeSurfer 5.3.0. Regression analyses were performed to identify brain regions at which the neuroticism-cortical thickness relationship was altered by lifetime AUD status.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">As expected, AUDs had higher neuroticism scores than HCs. Correlations between neuroticism and cortical thickness in the left insula and right fusiform differed significantly across groups. Higher neuroticism score in AUD and the interaction between the insular cortical thickness-neuroticism correlation and AUD status were confirmed in a replication study using the Human Connectome Project data set.</AbstractText>
+                <AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">Results confirmed the relationship between neuroticism and AUD and suggests that specific cortical regions, particularly the left insula, represent anatomic substrates underlying this association in AUD.</AbstractText>
+                <CopyrightInformation>Copyright © 2016 Elsevier Ireland Ltd. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhao</LastName>
+                    <ForeName>Yihong</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child and Adolescent Psychiatry, NYU Langone Medical Center, New York, NY 10016, USA; Bureau of Epidemiology Services, Division of Epidemiology, New York City Department of Health and Mental Hygiene, Queens, NY 11101, USA. Electronic address: yz2135@caa.columbia.edu.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zheng</LastName>
+                    <ForeName>Zhi-Liang</ForeName>
+                    <Initials>ZL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biological Sciences, Lehman College, City University of New York, Bronx, NY 10468, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Castellanos</LastName>
+                    <ForeName>F Xavier</ForeName>
+                    <Initials>FX</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child and Adolescent Psychiatry, NYU Langone Medical Center, New York, NY 10016, USA; Nathan S. Kline Institute for Psychiatric Research, Orangeburg, NY 10962, USA. Electronic address: Francisco.Castellanos@nyumc.org.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>U01 MH099059</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R21 AA023800</GrantID>
+                    <Acronym>AA</Acronym>
+                    <Agency>NIAAA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 TR001445</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U54 MH091657</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 MH094639</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>UL1 TR000038</GrantID>
+                    <Acronym>TR</Acronym>
+                    <Agency>NCATS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>08</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Ireland</Country>
+            <MedlineTA>Drug Alcohol Depend</MedlineTA>
+            <NlmUniqueID>7513587</NlmUniqueID>
+            <ISSNLinking>0376-8716</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Addict Biol. 2013 May;18(3):581-92</RefSource>
+                <PMID Version="1">22458455</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 15;65:194-208</RefSource>
+                <PMID Version="1">23063449</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Struct Funct. 2014 Nov;219(6):1913-22</RefSource>
+                <PMID Version="1">23881294</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 2014 Jul;38(7):1912-23</RefSource>
+                <PMID Version="1">24890898</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:62-79</RefSource>
+                <PMID Version="1">23684880</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2015 Apr;18(4):499-500</RefSource>
+                <PMID Version="1">25751532</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Cogn Neurosci. 2015 Dec;16:101-9</RefSource>
+                <PMID Version="1">25953106</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Addiction. 2014 Mar;109(3):460-71</RefSource>
+                <PMID Version="1">24329936</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2002 Jan 31;33(3):341-55</RefSource>
+                <PMID Version="1">11832223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2013 Jan;37(1):59-72</RefSource>
+                <PMID Version="1">23068306</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Addict Biol. 2013 Jan;18(1):121-33</RefSource>
+                <PMID Version="1">22574861</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropharmacology. 2015 May;92:63-8</RefSource>
+                <PMID Version="1">25592214</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2012 Nov;36(10):2179-92</RefSource>
+                <PMID Version="1">22975446</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychopharmacology. 2011 Sep;36(10):2086-96</RefSource>
+                <PMID Version="1">21677649</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Handb Clin Neurol. 2014;125:15-29</RefSource>
+                <PMID Version="1">25307566</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 2011 Jun;35(6):1187-200</RefSource>
+                <PMID Version="1">21410483</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2010 Jun;167(6):630-9</RefSource>
+                <PMID Version="1">20516163</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2016 Mar;57(3):421-39</RefSource>
+                <PMID Version="1">26732133</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Brain Res. 1996;107:243-55</RefSource>
+                <PMID Version="1">8782523</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Stud Alcohol. 1994 Jan;55(1):81-90</RefSource>
+                <PMID Version="1">8189730</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2007 Jan 26;315(5811):531-4</RefSource>
+                <PMID Version="1">17255515</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 2012 Dec;36(12):2017-27</RefSource>
+                <PMID Version="1">22577873</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Drug Alcohol Depend. 2015 Aug 1;153:22-8</RefSource>
+                <PMID Version="1">26072220</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurol. 2011 May;7(5):284-94</RefSource>
+                <PMID Version="1">21487421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Cogn. 2009 Feb;69(1):73-80</RefSource>
+                <PMID Version="1">18632198</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Gastroenterology. 2011 Sep;141(3):909-917.e1</RefSource>
+                <PMID Version="1">21699797</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 1;31(3):968-80</RefSource>
+                <PMID Version="1">16530430</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Addiction. 2012 Mar;107(3):540-8</RefSource>
+                <PMID Version="1">21851441</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Nov 24;106(47):20069-74</RefSource>
+                <PMID Version="1">19903877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Psychol Rev. 2015 Apr;37:57-71</RefSource>
+                <PMID Version="1">25766100</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 1988 Aug;12(4):494-505</RefSource>
+                <PMID Version="1">3056070</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Addiction. 2002 Sep;97(9):1183-94</RefSource>
+                <PMID Version="1">12199834</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2013 Nov;34(11):2829-40</RefSource>
+                <PMID Version="1">22610513</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2006 Dec;16(12):1809-19</RefSource>
+                <PMID Version="1">16421327</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 2015 Apr;39(4):579-84</RefSource>
+                <PMID Version="1">25833016</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2011 Nov;32(11):1836-46</RefSource>
+                <PMID Version="1">21181800</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Drug Alcohol Depend. 2015 Jun 1;151:110-4</RefSource>
+                <PMID Version="1">25823906</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2014 Jan;38:1-16</RefSource>
+                <PMID Version="1">24211373</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 2011 Oct;35(10 ):1771-93</RefSource>
+                <PMID Version="1">21777260</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychol Rev. 2007 Sep;17(3):239-57</RefSource>
+                <PMID Version="1">17874302</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2013 Sep;37(8):1518-29</RefSource>
+                <PMID Version="1">23685122</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Alcohol. 2013 Jul-Aug;48(4):433-44</RefSource>
+                <PMID Version="1">23632805</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2002 Apr;12 (4):376-85</RefSource>
+                <PMID Version="1">11884353</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2011 Sep;15(9):395-400</RefSource>
+                <PMID Version="1">21831694</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2008 Mar;29(3):363-73</RefSource>
+                <PMID Version="1">17415777</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2008 Oct 9;60(1):174-88</RefSource>
+                <PMID Version="1">18940597</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroreport. 2013 May 8;24(7):375-80</RefSource>
+                <PMID Version="1">23531766</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Clin Exp Res. 2010 Aug;34(8):1433-41</RefSource>
+                <PMID Version="1">20497133</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychol Sci. 2010 Jun;21(6):820-8</RefSource>
+                <PMID Version="1">20435951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(11):e27633</RefSource>
+                <PMID Version="1">22140453</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2015 Jul;19(7):414-20</RefSource>
+                <PMID Version="1">26066588</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Psychol. 2001;52:197-221</RefSource>
+                <PMID Version="1">11148304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Biobehav Rev. 2013 Jan;37(1):73-95</RefSource>
+                <PMID Version="1">23142157</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Neurosci. 2009 Jan;32(1):56-67</RefSource>
+                <PMID Version="1">18986715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2012 May;17(5):511-9</RefSource>
+                <PMID Version="1">21483437</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alcohol Alcohol. 2007 Sep-Oct;42(5):417-22</RefSource>
+                <PMID Version="1">17307790</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2004 Jan;14(1):11-22</RefSource>
+                <PMID Version="1">14654453</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Alcohol use disorders</Keyword>
+            <Keyword MajorTopicYN="N">Chronic pain disorder</Keyword>
+            <Keyword MajorTopicYN="N">Fusiform gyrus</Keyword>
+            <Keyword MajorTopicYN="N">Insula</Keyword>
+            <Keyword MajorTopicYN="N">Neuroticism</Keyword>
+            <Keyword MajorTopicYN="N">Personality</Keyword>
+        </KeywordList>
+        <CoiStatement>The authors declared no conflicts of interest related to this research.</CoiStatement>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>06</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pmc-release">
+                <Year>2018</Year>
+                <Month>01</Month>
+                <Day>01</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>23</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27875803</ArticleId>
+            <ArticleId IdType="pii">S0376-8716(16)30991-7</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.drugalcdep.2016.10.040</ArticleId>
+            <ArticleId IdType="pmc">PMC5183556</ArticleId>
+            <ArticleId IdType="mid">NIHMS831302</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

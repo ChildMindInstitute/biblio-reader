@@ -1,0 +1,150 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">28210428</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>17</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>8</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Online journal of public health informatics</Title>
+                <ISOAbbreviation>Online J Public Health Inform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Privacy, security, and the public health researcher in the era of electronic health record research.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e207</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.5210/ojphi.v8i3.7251</ELocationID>
+            <Abstract>
+                <AbstractText>Health data derived from electronic health records are increasingly utilized in large-scale population health analyses. Going hand in hand with this increase in data is an increasing number of data breaches. Ensuring privacy and security of these data is a shared responsibility between the public health researcher, collaborators, and their institutions. In this article, we review the requirements of data privacy and security and discuss epidemiologic implications of emerging technologies from the computer science community that can be used for health data. In order to ensure that our needs as researchers are captured in these technologies, we must engage in the dialogue surrounding the development of these tools.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Goldstein</LastName>
+                    <ForeName>Neal D</ForeName>
+                    <Initials>ND</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Christiana Care Health System, Department of Pediatrics, 4745 Ogletown-Stanton Road, MAP 1, Suite 116, Newark, DE 19713 USA; Drexel University Dornsife School of Public Health, Department of Epidemiology and Biostatistics, 3215 Market Street, Philadelphia, PA 19104 USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sarwate</LastName>
+                    <ForeName>Anand D</ForeName>
+                    <Initials>AD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Rutgers, The State University of New Jersey, Department of Electrical and Computer Engineering, 94 Brett Road, Piscataway, NJ 08854 USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>28</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Online J Public Health Inform</MedlineTA>
+            <NlmUniqueID>101536954</NlmUniqueID>
+            <ISSNLinking>1947-2579</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroinform. 2014 Apr 07;8:35</RefSource>
+                <PMID Version="1">24778614</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Genet. 2008 Aug 29;4(8):e1000167</RefSource>
+                <PMID Version="1">18769715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Epidemiol. 2014 Dec;43(6):1929-44</RefSource>
+                <PMID Version="1">25261970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Inform Assoc. 2010 Mar-Apr;17(2):169-77</RefSource>
+                <PMID Version="1">20190059</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Inform Assoc. 1996 Mar-Apr;3(2):139-48</RefSource>
+                <PMID Version="1">8653450</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Law Med Ethics. 1997 Summer-Fall;25(2-3):98-110, 82</RefSource>
+                <PMID Version="1">11066504</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2016 Aug 19;10:365</RefSource>
+                <PMID Version="1">27594820</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Inform Assoc. 2015 Nov;22(6):1187-95</RefSource>
+                <PMID Version="1">26142423</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Epidemiol. 2015 Oct 8;:null</RefSource>
+                <PMID Version="1">26452388</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">analysis</Keyword>
+            <Keyword MajorTopicYN="N">data security</Keyword>
+            <Keyword MajorTopicYN="N">electronic health record</Keyword>
+            <Keyword MajorTopicYN="N">privacy</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28210428</ArticleId>
+            <ArticleId IdType="doi">10.5210/ojphi.v8i3.7251</ArticleId>
+            <ArticleId IdType="pii">ojphi-08-e207</ArticleId>
+            <ArticleId IdType="pmc">PMC5302472</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

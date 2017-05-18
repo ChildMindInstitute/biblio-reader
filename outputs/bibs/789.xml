@@ -1,0 +1,385 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">25653582</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>02</Month>
+            <Day>05</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>02</Month>
+            <Day>05</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Print">1662-4548</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>8</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroscience</Title>
+                <ISOAbbreviation>Front Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Impact of hematocrit on measurements of the intrinsic brain.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>452</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnins.2014.00452</ELocationID>
+            <Abstract>
+                <AbstractText>Blood oxygenation level dependent (BOLD)-based functional MRI (fMRI) is a widely utilized neuroimaging technique for mapping brain function. Hematocrit (HCT), a global hematologic marker of the amount of hemoglobin in blood, is known to impact task-evoked BOLD activation. Yet, its impact on resting-state fMRI (R-fMRI) measures has not been characterized. We address this gap by testing for associations between HCT level and inter-individual variation in commonly employed R-fMRI indices of intrinsic brain function from 45 healthy adults. Given known sex differences in HCT, we also examined potential sex differences. Variation in baseline HCT among individuals were associated with regional differences in four of the six intrinsic brain indices examined. Portions of the default (anterior cingulate cortex/medial prefrontal cortex: ACC/MPFC), dorsal attention (intraparietal sulcus), and salience (insular and opercular cortex) network showed relationships with HCT for two measures. The relationships within MPFC, as well as visual and cerebellar networks, were modulated by sex. These results suggest that inter-individual variations in HCT can serve as a source of variations in R-fMRI derivatives at a regional level. Future work is needed to delineate whether this association is attributable to neural or non-neuronal source of variations and whether these effects are related to acute or chronic differences in HCT level.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Yang</LastName>
+                    <ForeName>Zhen</ForeName>
+                    <Initials>Z</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute New York, NY, USA ; Nathan Kline Institute for Psychiatric Research Orangeburg, NY, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Craddock</LastName>
+                    <ForeName>R Cameron</ForeName>
+                    <Initials>RC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute New York, NY, USA ; Nathan Kline Institute for Psychiatric Research Orangeburg, NY, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Milham</LastName>
+                    <ForeName>Michael P</ForeName>
+                    <Initials>MP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute New York, NY, USA ; Nathan Kline Institute for Psychiatric Research Orangeburg, NY, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>R01 MH094639</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>20</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neurosci</MedlineTA>
+            <NlmUniqueID>101478481</NlmUniqueID>
+            <ISSNLinking>1662-453X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Clin Lab Anal. 2015 Jul;29(4):289-93</RefSource>
+                <PMID Version="1">24849556</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2009 Aug;166(8):891-9</RefSource>
+                <PMID Version="1">19605539</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 15;48(1):63-72</RefSource>
+                <PMID Version="1">19573611</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Oct;17(2):825-41</RefSource>
+                <PMID Version="1">12377157</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Natl Med Assoc. 1979 Oct;71(10):945-54</RefSource>
+                <PMID Version="1">537117</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Aug;34(2):201-12</RefSource>
+                <PMID Version="1">7476079</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2010 Nov 10;30(45):15034-43</RefSource>
+                <PMID Version="1">21068309</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1998 Sep;18(9):1018-21</RefSource>
+                <PMID Version="1">9740105</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1992 Jul 1;89(13):5951-5</RefSource>
+                <PMID Version="1">1631079</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 May;22(1):394-400</RefSource>
+                <PMID Version="1">15110032</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurol Neurosci. 2008;23:4-15</RefSource>
+                <PMID Version="1">18004050</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscience. 2009 Nov 10;163(4):1102-8</RefSource>
+                <PMID Version="1">19628025</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2003 Jul;21(6):599-607</RefSource>
+                <PMID Version="1">12915190</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Exp Physiol. 2008 Sep;93(9):1022-8</RefSource>
+                <PMID Version="1">18567605</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:246-62</RefSource>
+                <PMID Version="1">23631983</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neuroenergetics. 2010 Oct 04;2:null</RefSource>
+                <PMID Version="1">20953238</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Respir Physiol Neurobiol. 2009 May 30;167(1):72-86</RefSource>
+                <PMID Version="1">18977463</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2012 Aug;22(8):1862-75</RefSource>
+                <PMID Version="1">21968567</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Aug 1;76:183-201</RefSource>
+                <PMID Version="1">23499792</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Jan;35(1):107-13</RefSource>
+                <PMID Version="1">8771028</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Health Psychol. 1995 Jul;14(4):319-24</RefSource>
+                <PMID Version="1">7556035</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Oct 1;47(4):1448-59</RefSource>
+                <PMID Version="1">19446646</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Appl Physiol (1985). 1992 Jun;72 (6):2238-43</RefSource>
+                <PMID Version="1">1629078</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Jul 1;46(3):786-802</RefSource>
+                <PMID Version="1">19195496</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1990 Dec;87(24):9868-72</RefSource>
+                <PMID Version="1">2124706</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014 Feb 13;9(2):e88751</RefSource>
+                <PMID Version="1">24551151</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 1987 Jun;7(3):259-65</RefSource>
+                <PMID Version="1">3294863</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Sep;47(3):821-35</RefSource>
+                <PMID Version="1">19465137</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2001 Oct;19(8):1055-62</RefSource>
+                <PMID Version="1">11711229</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2012 Mar 06;6:7</RefSource>
+                <PMID Version="1">22408609</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Aug 4;106(31):13040-5</RefSource>
+                <PMID Version="1">19620724</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Hypertens. 2014 Feb;32(2):245-50</RefSource>
+                <PMID Version="1">24248088</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Feb 1;54(3):2033-44</RefSource>
+                <PMID Version="1">20851191</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jan 1;84:320-41</RefSource>
+                <PMID Version="1">23994314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sports Med. 2003;33(3):231-43</RefSource>
+                <PMID Version="1">12656642</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Sports Med. 2000 Feb;21(2):133-8</RefSource>
+                <PMID Version="1">10727075</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1998 Dec;40(6):857-64</RefSource>
+                <PMID Version="1">9840830</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Nephrol. 2009 Apr;71(4):397-404</RefSource>
+                <PMID Version="1">19356372</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2010 Aug 12;1348:21-9</RefSource>
+                <PMID Version="1">20599837</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2000 Jul;44(1):162-7</RefSource>
+                <PMID Version="1">10893535</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010 Jul 06;5(7):e11449</RefSource>
+                <PMID Version="1">20625426</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sleep Breath. 2006 Sep;10 (3):155-60</RefSource>
+                <PMID Version="1">16770648</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Scand J Clin Lab Invest. 1992 Feb;52(1):43-50</RefSource>
+                <PMID Version="1">1594887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurophysiol. 2011 Sep;106(3):1125-65</RefSource>
+                <PMID Version="1">21653723</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Mar;35(3):346-55</RefSource>
+                <PMID Version="1">8699946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Med Dir Assoc. 2013 Nov;14(11):848</RefSource>
+                <PMID Version="1">24054983</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Syst Neurosci. 2010 May 14;4:13</RefSource>
+                <PMID Version="1">20577591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2009 Apr 28;106(17):7209-14</RefSource>
+                <PMID Version="1">19357304</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Chem. 1999 Oct;45(10):1850-5</RefSource>
+                <PMID Version="1">10508133</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1990 Apr;14(1):68-78</RefSource>
+                <PMID Version="1">2161986</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2008 Jul 15;172(1):137-41</RefSource>
+                <PMID Version="1">18501969</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(11):e27633</RefSource>
+                <PMID Version="1">22140453</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Feb 14;54(4):2950-9</RefSource>
+                <PMID Version="1">20974260</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):864-70</RefSource>
+                <PMID Version="1">22245341</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Neurosci. 2012 Oct 16;6:152</RefSource>
+                <PMID Version="1">23087608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 1;64:240-56</RefSource>
+                <PMID Version="1">22926292</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4299407</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">BOLD</Keyword>
+            <Keyword MajorTopicYN="N">default network</Keyword>
+            <Keyword MajorTopicYN="N">dorsal attention network</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+            <Keyword MajorTopicYN="N">hematorcrit</Keyword>
+            <Keyword MajorTopicYN="N">hemoglobin</Keyword>
+            <Keyword MajorTopicYN="N">resting-state</Keyword>
+            <Keyword MajorTopicYN="N">salience network</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>11</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>22</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>2</Month>
+                <Day>6</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25653582</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnins.2014.00452</ArticleId>
+            <ArticleId IdType="pmc">PMC4299407</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

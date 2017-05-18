@@ -1,0 +1,240 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">28174516</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>08</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Print">1662-4548</ISSN>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>11</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroscience</Title>
+                <ISOAbbreviation>Front Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>ANOCVA in R: A Software to Compare Clusters between Groups and Its Application to the Study of Autism Spectrum Disorder.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>16</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnins.2017.00016</ELocationID>
+            <Abstract>
+                <AbstractText>Understanding how brain activities cluster can help in the diagnosis of neuropsychological disorders. Thus, it is important to be able to identify alterations in the clustering structure of functional brain networks. Here, we provide an R implementation of Analysis of Cluster Variability (ANOCVA), which statistically tests (1) whether a set of brain regions of interest (ROI) are equally clustered between two or more populations and (2) whether the contribution of each ROI to the differences in clustering is significant. To illustrate the usefulness of our method and software, we apply the R package in a large functional magnetic resonance imaging (fMRI) dataset composed of 896 individuals (529 controls and 285 diagnosed with ASD-autism spectrum disorder) collected by the ABIDE (The Autism Brain Imaging Data Exchange) Consortium. Our analysis show that the clustering structure of controls and ASD subjects are different (p &lt; 0.001) and that specific brain regions distributed in the frontotemporal, sensorimotor, visual, cerebellar, and brainstem systems significantly contributed (p &lt; 0.05) to this differential clustering. These findings suggest an atypical organization of domain-specific function brain modules in ASD.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Vidal</LastName>
+                    <ForeName>Maciel C</ForeName>
+                    <Initials>MC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Computer Science, Institute of Mathematics and Statistics, University of São Paulo São Paulo, Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sato</LastName>
+                    <ForeName>João R</ForeName>
+                    <Initials>JR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center of Mathematics, Computation, and Cognition, Universidade Federal do ABC Santo André, Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Balardin</LastName>
+                    <ForeName>Joana B</ForeName>
+                    <Initials>JB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Hospital Israelita Albert Einstein São Paulo, Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Takahashi</LastName>
+                    <ForeName>Daniel Y</ForeName>
+                    <Initials>DY</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Deparment of Psychology and Princeton Neuroscience Institute, Princeton University Princeton, NJ, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fujita</LastName>
+                    <ForeName>André</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Computer Science, Institute of Mathematics and Statistics, University of São Paulo São Paulo, Brazil.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>01</Month>
+                <Day>24</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neurosci</MedlineTA>
+            <NlmUniqueID>101478481</NlmUniqueID>
+            <ISSNLinking>1662-453X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE/ACM Trans Comput Biol Bioinform. 2015 Sep 03;:null</RefSource>
+                <PMID Version="1">26353378</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 1999 Mar 16;96(6):3257-62</RefSource>
+                <PMID Version="1">10077671</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet Neurol. 2015 Nov;14(11):1121-34</RefSource>
+                <PMID Version="1">25891007</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Phys Life Rev. 2011 Dec;8(4):410-37</RefSource>
+                <PMID Version="1">22018722</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2001 Apr 15;49(8):665-76</RefSource>
+                <PMID Version="1">11313034</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2006 Sep 12;103(37):13848-53</RefSource>
+                <PMID Version="1">16945915</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2011 Nov 17;72(4):665-78</RefSource>
+                <PMID Version="1">22099467</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:360-78</RefSource>
+                <PMID Version="1">23707587</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2014 Aug 6;83(3):518-32</RefSource>
+                <PMID Version="1">25102558</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2000 Jun;4(6):233-246</RefSource>
+                <PMID Version="1">10827446</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2010 Feb 8;1313:202-14</RefSource>
+                <PMID Version="1">20004180</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 2010 Mar 12;1320:168-75</RefSource>
+                <PMID Version="1">20096269</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2009 Sep;132(Pt 9):2413-25</RefSource>
+                <PMID Version="1">19389870</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 15;53(1):247-56</RefSource>
+                <PMID Version="1">20621638</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Med. 2014 Dec 10;33(28):4949-62</RefSource>
+                <PMID Version="1">25185759</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage Clin. 2013 Sep 19;3:321-31</RefSource>
+                <PMID Version="1">24273716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2012 Aug;33(8):1914-28</RefSource>
+                <PMID Version="1">21769991</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2014 Apr;35(4):1284-96</RefSource>
+                <PMID Version="1">23334984</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann N Y Acad Sci. 2008 Mar;1124:1-38</RefSource>
+                <PMID Version="1">18400922</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Psychiatry Neurosci. 2016 Mar;41(2):124-32</RefSource>
+                <PMID Version="1">26505141</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Annu Rev Psychol. 2016;67:613-40</RefSource>
+                <PMID Version="1">26393868</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Cogn Affect Neurosci. 2008 Jun;3(2):177-90</RefSource>
+                <PMID Version="1">19015108</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ABIDE</Keyword>
+            <Keyword MajorTopicYN="N">Analysis of Cluster Variability</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+            <Keyword MajorTopicYN="N">functional brain network</Keyword>
+            <Keyword MajorTopicYN="N">silhouette statistic</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>01</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>9</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>9</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>2</Month>
+                <Day>9</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28174516</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnins.2017.00016</ArticleId>
+            <ArticleId IdType="pmc">PMC5258722</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

@@ -1,0 +1,322 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">27303280</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>06</Month>
+            <Day>15</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>06</Month>
+            <Day>15</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>10</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in human neuroscience</Title>
+                <ISOAbbreviation>Front Hum Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Influences of Head Motion Regression on High-Frequency Oscillation Amplitudes of Resting-State fMRI Signals.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>243</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fnhum.2016.00243</ELocationID>
+            <Abstract>
+                <AbstractText>High-frequency oscillations (HFOs, &gt;0.1 Hz) of resting-state fMRI (rs-fMRI) signals have received much attention in recent years. Denoising is critical for HFO studies. Previous work indicated that head motion (HM) has remarkable influences on a variety of rs-fMRI metrics, but its influences on rs-fMRI HFOs are still unknown. In this study, we investigated the impacts of HM regression (HMR) on HFO results using a fast sampling rs-fMRI dataset. We demonstrated that apparent high-frequency (∼0.2-0.4 Hz) components existed in the HM trajectories in almost all subjects. In addition, we found that individual-level HMR could robustly reveal more between-condition (eye-open vs. eye-closed) amplitude differences in high-frequency bands. Although regression of mean framewise displacement (FD) at the group level had little impact on the results, mean FD could significantly account for inter-subject variance of HFOs even after individual-level HMR. Our findings suggest that HM artifacts should not be ignored in HFO studies, and HMR is necessary for detecting HFO between-condition differences.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Yuan</LastName>
+                    <ForeName>Bin-Ke</ForeName>
+                    <Initials>BK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Hangzhou Normal UniversityHangzhou, China; Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments, Hangzhou Normal UniversityHangzhou, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zang</LastName>
+                    <ForeName>Yu-Feng</ForeName>
+                    <Initials>YF</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Cognition and Brain Disorders, Hangzhou Normal UniversityHangzhou, China; Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments, Hangzhou Normal UniversityHangzhou, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Liu</LastName>
+                    <ForeName>Dong-Qiang</ForeName>
+                    <Initials>DQ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Research Center of Brain and Cognitive Neuroscience, Liaoning Normal University Dalian, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>05</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Hum Neurosci</MedlineTA>
+            <NlmUniqueID>101477954</NlmUniqueID>
+            <ISSNLinking>1662-5161</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Cogn Affect Neurosci. 2009 Dec;4(4):417-22</RefSource>
+                <PMID Version="1">20042432</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Oct;17(2):825-41</RefSource>
+                <PMID Version="1">12377157</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 15;65:216-22</RefSource>
+                <PMID Version="1">23069810</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1998 Aug;8(2):113-28</RefSource>
+                <PMID Version="1">9740755</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Mar;60(1):623-32</RefSource>
+                <PMID Version="1">22233733</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 2013 Oct;70(4):962-71</RefSource>
+                <PMID Version="1">23097342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2001 Aug;22(7):1326-33</RefSource>
+                <PMID Version="1">11498421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1998 Feb;7(2):119-32</RefSource>
+                <PMID Version="1">9558644</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2010 Apr 6;107(14):6493-7</RefSource>
+                <PMID Version="1">20308545</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014 Aug 22;9(8):e104989</RefSource>
+                <PMID Version="1">25148416</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Dec 26;7:910</RefSource>
+                <PMID Version="1">24421764</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Apr 23;7:156</RefSource>
+                <PMID Version="1">23630487</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2014 Apr 22;111(16):6058-62</RefSource>
+                <PMID Version="1">24711399</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Jan 1;34(1):212-9</RefSource>
+                <PMID Version="1">17071111</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:246-62</RefSource>
+                <PMID Version="1">23631983</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jan 2;59(1):431-8</RefSource>
+                <PMID Version="1">21810475</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Feb 1;59(3):2142-54</RefSource>
+                <PMID Version="1">22019881</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2015 Feb;5(1):23-34</RefSource>
+                <PMID Version="1">24702246</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 Sep 28;31(39):13981-90</RefSource>
+                <PMID Version="1">21957259</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Aug 15;62(2):811-5</RefSource>
+                <PMID Version="1">22521256</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Aug 1;76:183-201</RefSource>
+                <PMID Version="1">23499792</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Nov 1;101:87-95</RefSource>
+                <PMID Version="1">24999036</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2015 Mar 27;10(3):e0121757</RefSource>
+                <PMID Version="1">25816237</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2014 Apr 11;9(4):e93375</RefSource>
+                <PMID Version="1">24728207</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2013 Oct;11(4):469-76</RefSource>
+                <PMID Version="1">23836389</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010 Dec 20;5(12):e15710</RefSource>
+                <PMID Version="1">21187930</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 May 01;7:168</RefSource>
+                <PMID Version="1">23641208</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Psychiatry. 2013 Mar 13;13:84</RefSource>
+                <PMID Version="1">23497482</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2015 Jan 15;105:536-51</RefSource>
+                <PMID Version="1">25462692</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2014 Jul 08;8:503</RefSource>
+                <PMID Version="1">25071530</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 15;31(4):1536-48</RefSource>
+                <PMID Version="1">16632379</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2011 May 25;31(21):7910-9</RefSource>
+                <PMID Version="1">21613505</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(9):e25031</RefSource>
+                <PMID Version="1">21949842</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Jan 1;84:320-41</RefSource>
+                <PMID Version="1">23994314</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biomed Res Int. 2015 ;2015 :505479</RefSource>
+                <PMID Version="1">25705666</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jan 1;29(1):54-66</RefSource>
+                <PMID Version="1">16099175</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Medicine (Baltimore). 2015 Aug;94(32):e1374</RefSource>
+                <PMID Version="1">26266394</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1996 Mar;35(3):346-55</RefSource>
+                <PMID Version="1">8699946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2002 Apr 1;14(3):420-9</RefSource>
+                <PMID Version="1">11970801</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2009 May 29;4(5):e5743</RefSource>
+                <PMID Version="1">19492040</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2003 Jan 7;100(1):253-8</RefSource>
+                <PMID Version="1">12506194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Dev. 2007 Mar;29(2):83-91</RefSource>
+                <PMID Version="1">16919409</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2000 Oct;21(9):1636-44</RefSource>
+                <PMID Version="1">11039342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2013 Jul 17;33(29):11994-2002</RefSource>
+                <PMID Version="1">23864686</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Jan 1;64:240-56</RefSource>
+                <PMID Version="1">22926292</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1995 Oct;34(4):537-41</RefSource>
+                <PMID Version="1">8524021</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC4881380</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">eyes closed</Keyword>
+            <Keyword MajorTopicYN="N">eyes open</Keyword>
+            <Keyword MajorTopicYN="N">fluctuation amplitude</Keyword>
+            <Keyword MajorTopicYN="N">head motion</Keyword>
+            <Keyword MajorTopicYN="N">high-frequency oscillations</Keyword>
+            <Keyword MajorTopicYN="N">resting-state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>27</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>05</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>6</Month>
+                <Day>16</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27303280</ArticleId>
+            <ArticleId IdType="doi">10.3389/fnhum.2016.00243</ArticleId>
+            <ArticleId IdType="pmc">PMC4881380</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

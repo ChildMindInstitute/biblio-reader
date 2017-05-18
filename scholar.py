@@ -34,29 +34,6 @@ page. It is not a recursive crawler.
 #       Accordingly, the command-line options are --no-patents and
 #       --no-citations.
 #
-# 2.5:  Ability to parse global result attributes. This right now means
-#       only the total number of results as reported by Scholar at the
-#       top of the results pages (e.g. "About 31 results"). Such
-#       global result attributes end up in the new attrs member of the
-#       used ScholarQuery class. To render those attributes, you need
-#       to use the new --txt-globals flag.
-#
-#       Rendering global results is currently not supported for CSV
-#       (as they don't fit the one-line-per-article pattern). For
-#       grepping, you can separate the global results from the
-#       per-article ones by looking for a line prefix of "[G]":
-#
-#       $ scholar.py --txt-globals -a "Einstein"
-#       [G]    Results 11900
-#
-#                Title Can quantum-mechanical description of physical reality be considered complete?
-#                  URL http://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777
-#                 Year 1935
-#            Citations 12804
-#             Versions 80
-#              Cluster ID 8174092782678430881
-#       Citations list http://scholar.google.com/scholar?cites=8174092782678430881&as_sdt=2005&sciodt=0,5&hl=en
-#        Versions list http://scholar.google.com/scholar?cluster=8174092782678430881&hl=en&as_sdt=0,5
 #
 # 2.4:  Bugfixes:
 #
@@ -70,7 +47,6 @@ page. It is not a recursive crawler.
 #
 #       - Direct extraction of first PDF version of an article
 #
-#       - Ability to pull up an article cluster's results directly.
 #
 #       This is based on work from @aliparsai on GitHub -- thanks!
 #
@@ -167,7 +143,7 @@ import re
 import sys
 import warnings
 import math
-import bibtexparser
+import manager
 import pandas
 
 
@@ -188,6 +164,7 @@ try:
     import bibtexparser
 except:
     print("We need Bibtexparser, sorry...")
+    sys.exit(1)
 
 # Import BeautifulSoup -- try 4 first, fall back to older
 try:
@@ -343,32 +320,10 @@ class ScholarArticle(object):
         if 'publisher' in self.citation_data:
             self['publisher'] = str(self.citation_data['publisher'])
 
-    def as_txt(self):
-        # Get items sorted in specified order:
-        items = sorted(list(self.attrs.values()), key=lambda item: item[2])
-        # Find largest label length:
-        max_label_len = max([len(str(item[1])) for item in items])
-        fmt = '%%%ds %%s' % max_label_len
-        res = []
-        for item in items:
-            if item[0] is not None:
-                res.append(fmt % (item[1], item[0]))
-        return '\n'.join(res)
-
-    def as_citation(self):
-        """
-        Reports the article in a standard citation format. This works only
-        if you have configured the querier to retrieve a particular
-        citation export format. (See ScholarSettings.)
-        """
-        return self.citation_data or ''
-
     def getlist(self, keynumber):
-        result = []
-        items = sorted(list(self.attrs.values()), key=lambda item: item[2])
-        for item in items:
-            result.append(item[keynumber])
-        return result
+        return [item[keynumber] for item in
+                sorted(list(self.attrs.values()),
+                       key=lambda item: item[2])]
 
 
 
@@ -422,7 +377,7 @@ class ScholarArticleParser(object):
         needed cleanup/polishing before we hand off the resulting
         article.
         """
-        if self.article.attrs['title']:
+        if self.article['title']:
             self.article['title'] = self.article['title'].strip()
 
     def _parse_globals(self):
@@ -717,46 +672,6 @@ class ScholarQuery(object):
             phrases.append(phrase)
         return ' '.join(phrases)
 
-class ClusterScholarQuery(ScholarQuery):
-    """
-    This version just pulls up an article cluster whose ID we already
-    know about.
-    """
-    SCHOLAR_CLUSTER_URL = ScholarConf.SCHOLAR_SITE + '/scholar?' \
-        + 'start=%(page)s0' \
-        + '&cluster=%(cluster)s' \
-        + '%(num)s'
-
-    def __init__(self, cluster=None):
-        ScholarQuery.__init__(self)
-        self._add_attribute_type('num_results', 'Results', 0)
-        self.cluster = None
-        self.set_cluster(cluster)
-
-    def set_cluster(self, cluster):
-        """
-        Sets search to a Google Scholar results cluster ID.
-        """
-        msg = 'cluster ID must be numeric'
-        self.cluster = ScholarUtils.ensure_int(cluster, msg)
-
-    def get_url(self):
-        if self.cluster is None:
-            raise QueryArgumentError('cluster query needs cluster ID')
-
-        urlargs = {'page': self.page,
-                   'cluster': self.cluster}
-
-        for key, val in urlargs.items():
-            urlargs[key] = quote(encode(val))
-
-        # The following URL arguments must not be quoted, or the
-        # server will not recognize them:
-        urlargs['num'] = ('&num=%d' % self.num_results
-                          if self.num_results is not None else '')
-
-        return self.SCHOLAR_CLUSTER_URL % urlargs
-
 
 class SearchScholarQuery(ScholarQuery):
     """
@@ -988,7 +903,7 @@ class ScholarQuerier(object):
         ScholarUtils.log('info', 'settings applied')
         return True
 
-    def send_query(self, query, all_pages=False):
+    def send_query(self, query):
         """
         This method initiates a search query (a ScholarQuery instance)
         with subsequent parsing of the response.
@@ -1004,8 +919,8 @@ class ScholarQuerier(object):
 
         self.parse(html)
         num_results = query['num_results']
-        if all_pages and num_results > 10:
-            num_pages = min(math.floor(num_results / 10), 99)
+        if num_results > 10:
+            num_pages = min(math.floor(num_results / 10), 2)
             for page in range(1, num_pages):
                 query.page = page
                 html = self._get_http_response(url=query.get_url(),
@@ -1090,47 +1005,20 @@ class ScholarQuerier(object):
 
             return html
         except Exception as err:
-            print("Error getting an http response:" + url)
+            print("Error getting an http response:", url)
             ScholarUtils.log('info', err_msg + ': %s' % err)
-            return None
+            sys.exit(1)
 
 
-def txt(querier, with_globals):
-    if with_globals:
-        # If we have any articles, check their attribute labels to get
-        # the maximum length -- makes for nicer alignment.
-        max_label_len = 0
-        if len(querier.articles) > 0:
-            items = sorted(list(querier.articles[0].attrs.values()),
-                           key=lambda item: item[2])
-            max_label_len = max([len(str(item[1])) for item in items])
 
-        # Get items sorted in specified order:
-        items = sorted(list(querier.query.attrs.values()), key=lambda item: item[2])
-        # Find largest label length:
-        max_label_len = max([len(str(item[1])) for item in items] + [max_label_len])
-        fmt = '[G] %%%ds %%s' % max(0, max_label_len-4)
-        for item in items:
-            if item[0] is not None:
-                print(fmt % (item[1], item[0]))
-        if len(items) > 0:
-            print()
-
-    articles = querier.articles
-    for art in articles:
-        print(encode(art.as_txt()) + '\n')
-
-
-def csv(querier, filename):
-    artlist = []
+def output(querier, filename):
     if len(querier.articles) == 0:
         print("No articles")
         return
-    for art in querier.articles:
-        artlist.append(art.getlist(0))
+    artlist = [art.getlist(0) for art in querier.articles]
     df = pandas.DataFrame(data=artlist, columns=querier.articles[0].getlist(1))
-    csvfile = filename + '.csv'
-    df.to_csv(path_or_buf=csvfile)
+    outfile = os.path.join(manager.OUTPUT_PATH, filename + '.csv')
+    df.to_csv(path_or_buf=outfile)
 
 def main():
     usage = """scholar.py [options] <query string>
@@ -1140,9 +1028,6 @@ Examples:
 
 # Retrieve one article written by Einstein on quantum theory:
 scholar.py -c 1 --author "albert einstein" --phrase "quantum theory"
-
-# Retrieve a BibTeX entry for that quantum theory paper:
-scholar.py -c 1 -C 17749203648027613321 --citation bt
 
 # Retrieve five articles written by Einstein after 1970 where the title
 # does not contain the words "quantum" and "theory":
@@ -1175,21 +1060,11 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
                      help='Do not include patents in results')
     group.add_option('--no-citations', action='store_true', default=False,
                      help='Do not include citations in results')
-    group.add_option('-C', '--cluster-id', metavar='CLUSTER_ID', default=None,
-                     help='Do not search, just use articles in given cluster ID')
-    group.add_option('-c', '--count', type='int', default=None,
-                     help='Maximum number of results')
-    group.add_option('--all-pages', action='store_true', default=False,
-                     help='Include results of all pages up to page 99')
     parser.add_option_group(group)
 
     group = optparse.OptionGroup(parser, 'Output format',
-                                 'These options control the appearance of the results.')
-    group.add_option('--txt', action='store_true',
-                     help='Print article data in text format (default)')
-    group.add_option('--txt-globals', action='store_true',
-                     help='Like --txt, but first print global results too')
-    group.add_option('--csv', metavar='FILENAME', default=None,
+                                 'Control the name of the output file.')
+    group.add_option('--out', metavar='FILENAME', default='ScholarOutput',
                      help='Export articles in csv format with a chosen filename')
     parser.add_option_group(group)
 
@@ -1199,8 +1074,6 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
                      startup, and save resulting cookies in the end.')
     group.add_option('-d', '--debug', action='count', default=0,
                      help='Enable verbose logging to stderr. Repeated options increase detail of debug output.')
-    group.add_option('-v', '--version', action='store_true', default=False,
-                     help='Show version information')
     parser.add_option_group(group)
 
     options, _ = parser.parse_args()
@@ -1215,63 +1088,38 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
         ScholarConf.LOG_LEVEL = options.debug
         ScholarUtils.log('info', 'using log level %d' % ScholarConf.LOG_LEVEL)
 
-    if options.version:
-        print('This is scholar.py %s.' % ScholarConf.VERSION)
-        return 0
 
     if options.cookie_file:
         ScholarConf.COOKIE_JAR_FILE = options.cookie_file
 
-    # Sanity-check the options: if they include a cluster ID query, it
-    # makes no sense to have search arguments:
-    if options.cluster_id is not None:
-        if options.author or options.allw or options.some or options.none \
-           or options.phrase or options.title_only or options.pub \
-           or options.after or options.before:
-            print('Cluster ID queries do not allow additional search arguments.')
-            return 1
-
     querier = ScholarQuerier()
     querier.apply_settings()
 
-    if options.cluster_id:
-        query = ClusterScholarQuery(cluster=options.cluster_id)
-    else:
-        query = SearchScholarQuery()
-        if options.author:
-            query.set_author(options.author)
-        if options.allw:
-            query.set_words(options.allw)
-        if options.some:
-            query.set_words_some(options.some)
-        if options.none:
-            query.set_words_none(options.none)
-        if options.phrase:
-            query.set_phrase(options.phrase)
-        if options.title_only:
-            query.set_scope(True)
-        if options.pub:
-            query.set_pub(options.pub)
-        if options.after or options.before:
-            query.set_timeframe(options.after, options.before)
-        if options.no_patents:
-            query.set_include_patents(False)
-        if options.no_citations:
-            query.set_include_citations(False)
+    query = SearchScholarQuery()
+    if options.author:
+        query.set_author(options.author)
+    if options.allw:
+        query.set_words(options.allw)
+    if options.some:
+        query.set_words_some(options.some)
+    if options.none:
+        query.set_words_none(options.none)
+    if options.phrase:
+        query.set_phrase(options.phrase)
+    if options.title_only:
+        query.set_scope(True)
+    if options.pub:
+        query.set_pub(options.pub)
+    if options.after or options.before:
+        query.set_timeframe(options.after, options.before)
+    if options.no_patents:
+        query.set_include_patents(False)
+    if options.no_citations:
+        query.set_include_citations(False)
 
-    if options.count is not None:
-        options.count = min(options.count, ScholarConf.MAX_PAGE_RESULTS)
-        query.set_num_page_results(options.count)
-
-    if options.all_pages:
-        querier.send_query(query, True)
-    else:
-        querier.send_query(query)
-
-    if options.csv:
-        csv(querier, options.csv)
-    else:
-        txt(querier, with_globals=options.txt_globals)
+    querier.send_query(query)
+    manager.DATA_NAME = 'YES'
+    output(querier, options.out)
 
     if options.cookie_file:
         querier.save_cookies()

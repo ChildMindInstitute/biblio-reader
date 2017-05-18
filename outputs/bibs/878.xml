@@ -1,0 +1,211 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27983754</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>16</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>03</Month>
+            <Day>09</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1521-4036</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>59</Volume>
+                    <Issue>2</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Biometrical journal. Biometrische Zeitschrift</Title>
+                <ISOAbbreviation>Biom J</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Estimating the prevalence of atrial fibrillation from a three-class mixture model for repeated diagnoses.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>331-343</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1002/bimj.201600098</ELocationID>
+            <Abstract>
+                <AbstractText>Atrial fibrillation (AF) is an abnormal heart rhythm characterized by rapid and irregular heartbeat, with or without perceivable symptoms. In clinical practice, the electrocardiogram (ECG) is often used for diagnosis of AF. Since the AF often arrives as recurrent episodes of varying frequency and duration and only the episodes that occur at the time of ECG can be detected, the AF is often underdiagnosed when a limited number of repeated ECGs are used. In studies evaluating the efficacy of AF ablation surgery, each patient undergoes multiple ECGs and the AF status at the time of ECG is recorded. The objective of this paper is to estimate the marginal proportions of patients with or without AF in a population, which are important measures of the efficacy of the treatment. The underdiagnosis problem is addressed by a three-class mixture regression model in which a patient's probability of having no AF, paroxysmal AF, and permanent AF is modeled by auxiliary baseline covariates in a nested logistic regression. A binomial regression model is specified conditional on a subject being in the paroxysmal AF group. The model parameters are estimated by the Expectation-Maximization (EM) algorithm. These parameters are themselves nuisance parameters for the purpose of this research, but the estimators of the marginal proportions of interest can be expressed as functions of the data and these nuisance parameters and their variances can be estimated by the sandwich method. We examine the performance of the proposed methodology in simulations and two real data applications.</AbstractText>
+                <CopyrightInformation>© 2016 WILEY-VCH Verlag GmbH &amp; Co. KGaA, Weinheim.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Li</LastName>
+                    <ForeName>Liang</ForeName>
+                    <Initials>L</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, MD Anderson Cancer Center, Houston, Texas.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mao</LastName>
+                    <ForeName>Huzhang</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, The University of Texas Health Science Center at Houston, Houston, Texas.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ishwaran</LastName>
+                    <ForeName>Hemant</ForeName>
+                    <Initials>H</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Biostatistics, University of Miami, Miami, Florida.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Rajeswaran</LastName>
+                    <ForeName>Jeevanantham</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Quantitative Health Sciences, Cleveland Clinic, Cleveland, Ohio.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ehrlinger</LastName>
+                    <ForeName>John</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Quantitative Health Sciences, Cleveland Clinic, Cleveland, Ohio.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Blackstone</LastName>
+                    <ForeName>Eugene H</ForeName>
+                    <Initials>EH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Cardiothoracic Surgery, Cleveland Clinic, Cleveland, Ohio.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>P30 CA016672</GrantID>
+                    <Acronym>CA</Acronym>
+                    <Agency>NCI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>R01 HL103552</GrantID>
+                    <Acronym>HL</Acronym>
+                    <Agency>NHLBI NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>16</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Biom J</MedlineTA>
+            <NlmUniqueID>7708048</NlmUniqueID>
+            <ISSNLinking>0323-3847</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Coll Cardiol. 2005 Mar 15;45(6):873-6</RefSource>
+                <PMID Version="1">15766823</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 1982 Dec;38(4):1041-6</RefSource>
+                <PMID Version="1">7168793</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2002 Mar;58(1):37-47</RefSource>
+                <PMID Version="1">11892691</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Circulation. 2006 Aug 15;114(7):e257-354</RefSource>
+                <PMID Version="1">16908781</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2010 May 25;74(21):1666-70</RefSource>
+                <PMID Version="1">20498434</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biometrics. 2000 Dec;56(4):1030-9</RefSource>
+                <PMID Version="1">11129458</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Pacing Clin Electrophysiol. 2007 Apr;30(4):458-62</RefSource>
+                <PMID Version="1">17437567</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Thorac Surg. 2006 Aug;82(2):502-13; discussion 513-4</RefSource>
+                <PMID Version="1">16863753</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Atrial fibrillation</Keyword>
+            <Keyword MajorTopicYN="N">Latent class model</Keyword>
+            <Keyword MajorTopicYN="N">Mixture model</Keyword>
+            <Keyword MajorTopicYN="N">Two-part model</Keyword>
+            <Keyword MajorTopicYN="N">Zero-inflated binomial</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>04</Month>
+                <Day>22</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>09</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27983754</ArticleId>
+            <ArticleId IdType="doi">10.1002/bimj.201600098</ArticleId>
+            <ArticleId IdType="pmc">PMC5340598</ArticleId>
+            <ArticleId IdType="mid">NIHMS831000</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

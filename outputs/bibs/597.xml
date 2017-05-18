@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">27073219</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>04</Month>
+            <Day>13</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>27</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>27</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Electronic">1460-2199</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>27</Volume>
+                    <Issue>4</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Apr</Month>
+                        <Day>01</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cerebral cortex (New York, N.Y. : 1991)</Title>
+                <ISOAbbreviation>Cereb. Cortex</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Functional Connectivity Between the Temporoparietal Cortex and Cerebellum in Autism Spectrum Disorder.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>2617-2627</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1093/cercor/bhw079</ELocationID>
+            <Abstract>
+                <AbstractText>The neural basis of autism spectrum disorder (ASD) is not yet understood. ASD is marked by social deficits and is strongly associated with cerebellar abnormalities. We studied the organization and cerebellar connectivity of the temporoparietal junction (TPJ), an area that plays a crucial role in social cognition. We applied localized independent component analysis to resting-state fMRI data from autistic and neurotypical adolescents to yield an unbiased parcellation of the bilateral TPJ into 11 independent components (ICs). A comparison between neurotypical and autistic adolescents showed that the organization of the TPJ was not significantly altered in ASD. Second, we used the time courses of the TPJ ICs as spatially unbiased &quot;seeds&quot; for a functional connectivity analysis applied to voxels within the cerebellum. We found that the cerebellum contained a fine-grained, lateralized map of the TPJ. The connectivity of the TPJ subdivisions with cerebellar zones showed one striking difference in ASD. The right dorsal TPJ showed markedly less connectivity with the left Crus II. Disturbed cerebellar input to this key region for cognition and multimodal integration may contribute to social deficits in ASD. The findings might also suggest that the right TPJ and/or left Crus II are potential targets for noninvasive brain stimulation therapies.</AbstractText>
+                <CopyrightInformation>© The Author 2016. Published by Oxford University Press. All rights reserved. For Permissions, please e-mail: journals.permissions@oup.com.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Igelström</LastName>
+                    <ForeName>Kajsa M</ForeName>
+                    <Initials>KM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Princeton Neuroscience Institute.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Princeton University, Princeton, NJ 08544, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Webb</LastName>
+                    <ForeName>Taylor W</ForeName>
+                    <Initials>TW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Princeton Neuroscience Institute.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Princeton University, Princeton, NJ 08544, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Graziano</LastName>
+                    <ForeName>Michael S A</ForeName>
+                    <Initials>MSA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Princeton Neuroscience Institute.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychology, Princeton University, Princeton, NJ 08544, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Cereb Cortex</MedlineTA>
+            <NlmUniqueID>9110718</NlmUniqueID>
+            <ISSNLinking>1047-3211</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000067877" MajorTopicYN="N">Autism Spectrum Disorder</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002531" MajorTopicYN="N">Cerebellum</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007090" MajorTopicYN="N">Image Interpretation, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D010296" MajorTopicYN="N">Parietal Lobe</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013702" MajorTopicYN="N">Temporal Lobe</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">cerebellar Crus II</Keyword>
+            <Keyword MajorTopicYN="N">default mode network</Keyword>
+            <Keyword MajorTopicYN="N">developmental diaschisis hypothesis</Keyword>
+            <Keyword MajorTopicYN="N">frontoparietal executive resting-state network</Keyword>
+            <Keyword MajorTopicYN="N">localized independent component analysis</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>28</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>14</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27073219</ArticleId>
+            <ArticleId IdType="pii">bhw079</ArticleId>
+            <ArticleId IdType="doi">10.1093/cercor/bhw079</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

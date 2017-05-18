@@ -1,0 +1,326 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">24246490</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>06</Month>
+            <Day>29</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>88</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Prediction of individual season of birth using MRI.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>61-8</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2013.11.011</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(13)01103-8</ELocationID>
+            <Abstract>
+                <AbstractText>Previous research suggests statistical associations between season of birth (SOB) with prevalence of neurobehavioral disorders such as schizophrenia and bipolar disorder, personality traits such as novelty and sensation seeking, and suicidal behavior. These effects are thought to be mediated by seasonal differences in perinatal photoperiod, which was recently shown to imprint circadian clock neurons and behavior in rodents. However, it is unknown whether SOB is associated with any measurable differences in the normal human adult brain, and whether individual SOB can be deduced based on phenotype. Here I show that SOB predicts morphological differences in brain structure, and that MRI scans carry spatially distributed information allowing significantly above chance prediction of an individual's SOB. Using an open source database of over 550 structural brain scans, Voxel-Based Morphometry (VBM) analysis showed a significant SOB effect in the left superior temporal gyrus (STG) in males (p=0.009, FWE whole-brain corrected), with greater gray matter volumes in fall and winter births. A cosinor analysis revealed a significant annual periodicity in the left STG gray matter volume (Zero Amplitude Test: p&lt;5×10(-7)), with a peak towards the end of December and a nadir towards the end of June, suggesting that perinatal photoperiod accounts for this SOB effect. Whole-brain VBM maps were used as input features to multivariate machine-learning based analyses to classify SOB. Significantly greater than chance prediction was achieved in females (overall accuracy 35%, p&lt;0.001), but not in males (overall accuracy 26%, p=0.45). Pairwise binary classification in females revealed that the highest discrimination was obtained for winter vs. summer classification (peak area under the ROC curve=0.71, p&lt;0.0005). Discriminating regions included fusiform and middle temporal gyrus, inferior and superior parietal lobe, cerebellum, and dorsolateral and dorsomedial prefrontal cortex. Results indicate that SOB is detectable with MRI, imply that SOB exerts effects on the developing human brain that persist through adulthood, and suggest that neuroimaging may be a valuable intermediate phenotype in bridging the gap between SOB and personality and neurobehavioral disorders.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Pantazatos</LastName>
+                    <ForeName>Spiro P</ForeName>
+                    <Initials>SP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, Columbia University Medical Center, New York, NY, USA. Electronic address: spiropan@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>F31 MH088104</GrantID>
+                    <Acronym>MH</Acronym>
+                    <Agency>NIMH NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>16</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 1997 Nov 7;28(1):1-38</RefSource>
+                <PMID Version="1">9428062</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2012 Jan 30;195(1-2):66-8</RefSource>
+                <PMID Version="1">21840608</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 1999 Jun 1;45(11):1393-402</RefSource>
+                <PMID Version="1">10356620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychobiology. 1999;39(2):57-62</RefSource>
+                <PMID Version="1">10072660</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychobiology. 1999 Nov;40(4):177-82</RefSource>
+                <PMID Version="1">10559699</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Eur Arch Psychiatry Clin Neurosci. 2002 Jun;252(3):130-4</RefSource>
+                <PMID Version="1">12192471</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Sep;23(1):17-20</RefSource>
+                <PMID Version="1">15325347</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2005 Dec;162(12):2233-45</RefSource>
+                <PMID Version="1">16330585</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2001 Feb 27;98(5):2934-9</RefSource>
+                <PMID Version="1">11226344</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuro Endocrinol Lett. 2012;33(3):314-7</RefSource>
+                <PMID Version="1">22635091</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Psychiatry Res. 2012 Jan 30;195(1-2):69-75</RefSource>
+                <PMID Version="1">21824667</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Imaging. 2008 May;26(4):490-503</RefSource>
+                <PMID Version="1">18060720</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Eat Disord. 2005 Nov;38(3):236-43</RefSource>
+                <PMID Version="1">16211635</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Hypotheses. 2011 Jun;76(6):785-93</RefSource>
+                <PMID Version="1">21382670</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neuropsychopharmacol Biol Psychiatry. 2008 Oct 1;32(7):1673-6</RefSource>
+                <PMID Version="1">18657587</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 1982 Apr;143(1):29-36</RefSource>
+                <PMID Version="1">7063747</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychologia. 2010 Nov;48(13):3926-33</RefSource>
+                <PMID Version="1">20875435</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Geriatr Psychiatry Neurol. 2010 Sep;23(3):171-84</RefSource>
+                <PMID Version="1">20430976</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Jan;21(1):46-57</RefSource>
+                <PMID Version="1">14741641</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2007 Oct 15;38(1):95-113</RefSource>
+                <PMID Version="1">17761438</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2007 Nov 6;104(45):17849-54</RefSource>
+                <PMID Version="1">17978184</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Int J Environ Res Public Health. 2012 Feb;9(2):531-47</RefSource>
+                <PMID Version="1">22470308</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Chronobiologia. 1979 Oct-Dec;6(4):305-23</RefSource>
+                <PMID Version="1">548245</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Prog Neurobiol. 2011 Jan;93(1):23-58</RefSource>
+                <PMID Version="1">20955757</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2007 Nov 21;2(11):e1216</RefSource>
+                <PMID Version="1">18030347</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2003;29(3):587-93</RefSource>
+                <PMID Version="1">14609251</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2006 Dec;163(12):2103-10</RefSource>
+                <PMID Version="1">17151161</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuropsychobiology. 2002;46(4):209-14</RefSource>
+                <PMID Version="1">12566940</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Apr 15;50(3):883-92</RefSource>
+                <PMID Version="1">20070949</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2010 Apr;31(4):711-9</RefSource>
+                <PMID Version="1">20037137</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Matern Fetal Neonatal Med. 2006 Jul;19(7):425-31</RefSource>
+                <PMID Version="1">16923698</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2011 Jan;14(1):25-7</RefSource>
+                <PMID Version="1">21131951</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Compr Psychiatry. 2009 Nov-Dec;50(6):562-6</RefSource>
+                <PMID Version="1">19840595</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mult Scler. 2013 Jul;19(8):1028-34</RefSource>
+                <PMID Version="1">23257620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Jun;22(2):676-87</RefSource>
+                <PMID Version="1">15193596</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2005 Jul 1;26(3):839-51</RefSource>
+                <PMID Version="1">15955494</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Psychiatr Res. 2011 Jul;45(7):955-61</RefSource>
+                <PMID Version="1">21208628</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Med Imaging. 2011 Dec 21;11:23</RefSource>
+                <PMID Version="1">22189342</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Midwifery Womens Health. 2010 Nov-Dec;55(6):550-60</RefSource>
+                <PMID Version="1">20974417</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2006 Oct;7(10):818-27</RefSource>
+                <PMID Version="1">16988657</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Sleep. 2009 Mar;32(3):423-6</RefSource>
+                <PMID Version="1">19294963</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Dev Neuropsychol. 2007;31(2):217-38</RefSource>
+                <PMID Version="1">17488217</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Neural Netw. 1999;10(5):988-99</RefSource>
+                <PMID Version="1">18252602</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurosci Lett. 1999 Oct 22;274(2):139-41</RefSource>
+                <PMID Version="1">10553957</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Psychiatry. 2006 May;188:416-22</RefSource>
+                <PMID Version="1">16648527</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Dec;83:450-7</RefSource>
+                <PMID Version="1">23796547</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2000 Jun;11(6 Pt 1):805-21</RefSource>
+                <PMID Version="1">10860804</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">NIHMS542090</OtherID>
+        <OtherID Source="NLM">PMC4545475</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Grey matter morphology</Keyword>
+            <Keyword MajorTopicYN="N">IXI database</Keyword>
+            <Keyword MajorTopicYN="N">Neural development</Keyword>
+            <Keyword MajorTopicYN="N">Pattern recognition</Keyword>
+            <Keyword MajorTopicYN="N">Seasonal biology</Keyword>
+            <Keyword MajorTopicYN="N">Support vector machine</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>08</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24246490</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(13)01103-8</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2013.11.011</ArticleId>
+            <ArticleId IdType="pmc">PMC4545475</ArticleId>
+            <ArticleId IdType="mid">NIHMS542090</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

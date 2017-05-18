@@ -1,0 +1,136 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28450139</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>28</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>05</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Apr</Month>
+                        <Day>24</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>3D fully convolutional networks for subcortical segmentation in MRI: A large-scale study.</ArticleTitle>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(17)30332-4</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2017.04.039</ELocationID>
+            <Abstract>
+                <AbstractText>This study investigates a 3D and fully convolutional neural network (CNN) for subcortical brain structure segmentation in MRI. 3D CNN architectures have been generally avoided due to their computational and memory requirements during inference. We address the problem via small kernels, allowing deeper architectures. We further model both local and global context by embedding intermediate-layer outputs in the final prediction, which encourages consistency between features extracted at different scales and embeds fine-grained information directly in the segmentation process. Our model is efficiently trained end-to-end on a graphics processing unit (GPU), in a single stage, exploiting the dense inference capabilities of fully CNNs. We performed comprehensive experiments over two publicly available datasets. First, we demonstrate a state-of-the-art performance on the ISBR dataset. Then, we report a large-scale multi-site evaluation over 1112 unregistered subject datasets acquired from 17 different sites (ABIDE dataset), with ages ranging from 7 to 64 years, showing that our method is robust to various acquisition protocols, demographics and clinical factors. Our method yielded segmentations that are highly consistent with a standard atlas-based approach, while running in a fraction of the time needed by atlas-based methods and avoiding registration/normalization steps. This makes it convenient for massive multi-site neuroanatomical imaging studies. To the best of our knowledge, our work is the first to study subcortical structure segmentation on such large-scale and heterogeneous data.</AbstractText>
+                <CopyrightInformation>Copyright © 2017 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Dolz</LastName>
+                    <ForeName>Jose</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>LIVIA Laboratory, École de technologie supérieure (ETS), Montreal, QC, Canada. Electronic address: jose.dolz.upv@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Desrosiers</LastName>
+                    <ForeName>Christian</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>LIVIA Laboratory, École de technologie supérieure (ETS), Montreal, QC, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ben Ayed</LastName>
+                    <ForeName>Ismail</ForeName>
+                    <Initials>I</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>LIVIA Laboratory, École de technologie supérieure (ETS), Montreal, QC, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016454">Review</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>24</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">3D CNN</Keyword>
+            <Keyword MajorTopicYN="N">Brain</Keyword>
+            <Keyword MajorTopicYN="N">Deep learning</Keyword>
+            <Keyword MajorTopicYN="N">Fully CNN</Keyword>
+            <Keyword MajorTopicYN="N">MRI segmentation</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>02</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2017</Year>
+                <Month>02</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>04</Month>
+                <Day>17</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>30</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>4</Month>
+                <Day>29</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28450139</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(17)30332-4</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2017.04.039</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

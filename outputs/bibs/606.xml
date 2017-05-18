@@ -1,0 +1,201 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24914522</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>08</Month>
+            <Day>18</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>05</Month>
+            <Day>12</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2014</Year>
+            <Month>08</Month>
+            <Day>18</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>100</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Oct</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Non-parametric Bayesian graph models reveal community structure in resting state fMRI.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>301-15</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2014.05.083</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(14)00468-6</ELocationID>
+            <Abstract>
+                <AbstractText>Modeling of resting state functional magnetic resonance imaging (rs-fMRI) data using network models is of increasing interest. It is often desirable to group nodes into clusters to interpret the communication patterns between nodes. In this study we consider three different nonparametric Bayesian models for node clustering in complex networks. In particular, we test their ability to predict unseen data and their ability to reproduce clustering across datasets. The three generative models considered are the Infinite Relational Model (IRM), Bayesian Community Detection (BCD), and the Infinite Diagonal Model (IDM). The models define probabilities of generating links within and between clusters and the difference between the models lies in the restrictions they impose upon the between-cluster link probabilities. IRM is the most flexible model with no restrictions on the probabilities of links between clusters. BCD restricts the between-cluster link probabilities to be strictly lower than within-cluster link probabilities to conform to the community structure typically seen in social networks. IDM only models a single between-cluster link probability, which can be interpreted as a background noise probability. These probabilistic models are compared against three other approaches for node clustering, namely Infomap, Louvain modularity, and hierarchical clustering. Using 3 different datasets comprising healthy volunteers' rs-fMRI we found that the BCD model was in general the most predictive and reproducible model. This suggests that rs-fMRI data exhibits community structure and furthermore points to the significance of modeling heterogeneous between-cluster link probabilities.</AbstractText>
+                <CopyrightInformation>Copyright © 2014 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Andersen</LastName>
+                    <ForeName>Kasper Winther</ForeName>
+                    <Initials>KW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Applied Mathematics and Computer Science, Technical University of Denmark, Matematiktorvet, Bygning 303 B, 2800 Kgs. Lyngby, Denmark; Danish Research Centre for Magnetic Resonance, Centre for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital Hvidovre, Kettegaard Alle 30, 2650 Hvidovre, Denmark. Electronic address: kasperwj@drcmr.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Madsen</LastName>
+                    <ForeName>Kristoffer H</ForeName>
+                    <Initials>KH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Danish Research Centre for Magnetic Resonance, Centre for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital Hvidovre, Kettegaard Alle 30, 2650 Hvidovre, Denmark. Electronic address: stoffer@drcmr.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Siebner</LastName>
+                    <ForeName>Hartwig Roman</ForeName>
+                    <Initials>HR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Danish Research Centre for Magnetic Resonance, Centre for Functional and Diagnostic Imaging and Research, Copenhagen University Hospital Hvidovre, Kettegaard Alle 30, 2650 Hvidovre, Denmark; Department of Clinical Medicine, Faculty of Health and Medical Sciences, University of Copenhagen, Blegdamsvej 3B, 2200 København N, Denmark; Department of Neurology, Copenhagen University Hospital Bispebjerg, Bispebjerg Bakke 23, 2400 København NV, Denmark. Electronic address: hartwig.siebner@drcmr.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schmidt</LastName>
+                    <ForeName>Mikkel N</ForeName>
+                    <Initials>MN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Applied Mathematics and Computer Science, Technical University of Denmark, Matematiktorvet, Bygning 303 B, 2800 Kgs. Lyngby, Denmark. Electronic address: mns@dtu.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mørup</LastName>
+                    <ForeName>Morten</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Applied Mathematics and Computer Science, Technical University of Denmark, Matematiktorvet, Bygning 303 B, 2800 Kgs. Lyngby, Denmark. Electronic address: mm@dtu.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hansen</LastName>
+                    <ForeName>Lars Kai</ForeName>
+                    <Initials>LK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Applied Mathematics and Computer Science, Technical University of Denmark, Matematiktorvet, Bygning 303 B, 2800 Kgs. Lyngby, Denmark. Electronic address: lkai@dtu.dk.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>06</Month>
+                <Day>07</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015233" MajorTopicYN="Y">Models, Statistical</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016571" MajorTopicYN="Y">Neural Networks (Computer)</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Bayesian Community Detection</Keyword>
+            <Keyword MajorTopicYN="N">Complex network</Keyword>
+            <Keyword MajorTopicYN="N">Graph theory</Keyword>
+            <Keyword MajorTopicYN="N">Infinite Relational Model</Keyword>
+            <Keyword MajorTopicYN="N">Resting state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>03</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2014</Year>
+                <Month>05</Month>
+                <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>05</Month>
+                <Day>30</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>6</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>6</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>5</Month>
+                <Day>13</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24914522</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(14)00468-6</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2014.05.083</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

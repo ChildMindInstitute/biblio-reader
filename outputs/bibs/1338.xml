@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28034766</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>12</Month>
+            <Day>30</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>01</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Dec</Month>
+                        <Day>26</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The dynamic functional connectome: State-of-the-art and perspectives.</ArticleTitle>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(16)30788-1</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2016.12.061</ELocationID>
+            <Abstract>
+                <AbstractText>Resting-state functional magnetic resonance imaging (fMRI) has highlighted the rich structure of brain activity in absence of a task or stimulus. A great effort has been dedicated in the last two decades to investigate functional connectivity (FC), i.e. the functional interplay between different regions of the brain, which was for a long time assumed to have stationary nature. Only recently was the dynamic behaviour of FC revealed, showing that on top of correlational patterns of spontaneous fMRI signal fluctuations, connectivity between different brain regions exhibits meaningful variations within a typical resting-state fMRI experiment. As a consequence, a considerable amount of work has been directed to assessing and characterising dynamic FC (dFC), and several different approaches were explored to identify relevant FC fluctuations. At the same time, several questions were raised about the nature of dFC, which would be of interest only if brought back to a neural origin. In support of this, correlations with electroencephalography (EEG) recordings, demographic and behavioural data were established, and various clinical applications were explored, where the potential of dFC could be preliminarily demonstrated. In this review, we aim to provide a comprehensive description of the dFC approaches proposed so far, and point at the directions that we see as most promising for the future developments of the field. Advantages and pitfalls of dFC analyses are addressed, helping the readers to orient themselves through the complex web of available methodologies and tools.</AbstractText>
+                <CopyrightInformation>Copyright © 2017 The Authors. Published by Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Preti</LastName>
+                    <ForeName>Maria Giulia</ForeName>
+                    <Initials>MG</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Bioengineering, Center for Neuroprosthetics, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland; Department of Radiology and Medical Informatics, University of Geneva (UNIGE), Geneva, Switzerland. Electronic address: maria.preti@epfl.ch.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bolton</LastName>
+                    <ForeName>Thomas Aw</ForeName>
+                    <Initials>TA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Bioengineering, Center for Neuroprosthetics, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland; Department of Radiology and Medical Informatics, University of Geneva (UNIGE), Geneva, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Van De Ville</LastName>
+                    <ForeName>Dimitri</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Bioengineering, Center for Neuroprosthetics, Ecole Polytechnique Fédérale de Lausanne (EPFL), Lausanne, Switzerland; Department of Radiology and Medical Informatics, University of Geneva (UNIGE), Geneva, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Dynamic functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Dynamic graph analysis</Keyword>
+            <Keyword MajorTopicYN="N">Frame-wise description</Keyword>
+            <Keyword MajorTopicYN="N">Sliding window analysis</Keyword>
+            <Keyword MajorTopicYN="N">State characterization</Keyword>
+            <Keyword MajorTopicYN="N">Temporal modeling</Keyword>
+            <Keyword MajorTopicYN="N">Time/frequency analysis</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>09</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28034766</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(16)30788-1</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2016.12.061</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

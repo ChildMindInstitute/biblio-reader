@@ -1,0 +1,363 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26106557</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>06</Month>
+            <Day>24</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>04</Month>
+            <Day>04</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">2213-1582</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>8</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage. Clinical</Title>
+                <ISOAbbreviation>Neuroimage Clin</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Structural connectivity changes in temporal lobe epilepsy: Spatial features contribute more than topological measures.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>322-8</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.nicl.2015.02.004</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Previous studies reported reduced volumes of many brain regions for temporal lobe epilepsy (TLE). It has also been suggested that there may be widespread changes in network features of TLE patients. It is not fully understood, however, how these two observations are related.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">Using magnetic resonance imaging data, we perform parcellation of the brains of 22 patients with left TLE and 39 non-epileptic controls. In each parcellated region of interest (ROI) we computed the surface area and, using diffusion tensor imaging and deterministic tractography, infer the number of streamlines and their average length between each pair of connected ROIs. For comparison to previous studies, we use a connectivity 'weight' and investigate how ROI surface area, number of streamlines &amp; mean streamline length contribute to such weight.</AbstractText>
+                <AbstractText Label="RESULTS" NlmCategory="RESULTS">We find that although there are widespread significant changes in surface area and position of ROIs in patients compared to controls, the changes in connectivity are much more subtle. Significant changes in connectivity weight can be accounted for by decreased surface area and increased streamline count.</AbstractText>
+                <AbstractText Label="CONCLUSION" NlmCategory="CONCLUSIONS">Changes in the surface area of ROIs can be a reliable biomarker for TLE with a large influence on connectivity. However, changes in structural connectivity via white matter streamlines are more subtle with a relatively lower influence on connection weights.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Taylor</LastName>
+                    <ForeName>Peter N</ForeName>
+                    <Initials>PN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Interdisciplinary Computing and Complex BioSystems (ICOS) Research Group, School of Computing Science, Newcastle University, United Kingdom.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Han</LastName>
+                    <ForeName>Cheol E</ForeName>
+                    <Initials>CE</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Dept. of Biomedical Engineering, Korea University, Seoul, Republic of Korea ; Dept. of Brain and Cognitive Sciences, Seoul National University, Republic of Korea.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Schoene-Bake</LastName>
+                    <ForeName>Jan-Christoph</ForeName>
+                    <Initials>JC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Pediatric and Adolescent Medicine, Freiburg University, Freiburg, Germany ; Dept. of Epileptology, University of Bonn, Bonn, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Weber</LastName>
+                    <ForeName>Bernd</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Dept. of Epileptology, University of Bonn, Bonn, Germany ; Center for Economics and Neuroscience, University of Bonn, Bonn, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kaiser</LastName>
+                    <ForeName>Marcus</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Interdisciplinary Computing and Complex BioSystems (ICOS) Research Group, School of Computing Science, Newcastle University, United Kingdom ; Institute of Neuroscience, Newcastle University, United Kingdom.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>02</Month>
+                <Day>20</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Neuroimage Clin</MedlineTA>
+            <NlmUniqueID>101597070</NlmUniqueID>
+            <ISSNLinking>2213-1582</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurol Neurosurg Psychiatry. 2012 Dec;83(12):1238-48</RefSource>
+                <PMID Version="1">22917671</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 1988 Sep-Oct;1(5):329-37</RefSource>
+                <PMID Version="1">3154520</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsy Behav. 2012 Mar;23(3):353-9</RefSource>
+                <PMID Version="1">22381387</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsia. 2010 Sep;51(9):1774-9</RefSource>
+                <PMID Version="1">20412283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2011 Oct;134(Pt 10):2912-28</RefSource>
+                <PMID Version="1">21975588</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2014 Mar;270(3):842-8</RefSource>
+                <PMID Version="1">24475828</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2002 Jan 31;33(3):341-55</RefSource>
+                <PMID Version="1">11832223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2012 Jun;61(2):324-41</RefSource>
+                <PMID Version="1">22120012</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsia. 2014 May;55(5):674-82</RefSource>
+                <PMID Version="1">24650167</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2011 Oct;134(Pt 10):2800-1</RefSource>
+                <PMID Version="1">21921018</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2015 Jul 15;78(2):126-34</RefSource>
+                <PMID Version="1">25850620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 2014 Oct 30;236:51-7</RefSource>
+                <PMID Version="1">25149109</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurol Neurosurg Psychiatry. 2012 Sep;83(9):903-9</RefSource>
+                <PMID Version="1">22764263</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsia. 2012 Jun;53(6):1013-23</RefSource>
+                <PMID Version="1">22578020</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Aug 1;57(3):892-907</RefSource>
+                <PMID Version="1">21605688</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2004 Oct;23(2):717-23</RefSource>
+                <PMID Version="1">15488421</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2013 Oct 15;80:397-404</RefSource>
+                <PMID Version="1">23558097</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsy Res. 2012 May;99(3):327-34</RefSource>
+                <PMID Version="1">22281064</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2013 Nov 5;81(19):1704-10</RefSource>
+                <PMID Version="1">24107863</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2006 Jul 1;31(3):968-80</RefSource>
+                <PMID Version="1">16530430</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Connect. 2011;1(3):169-83</RefSource>
+                <PMID Version="1">22433046</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsia. 2008 May;49(5):741-57</RefSource>
+                <PMID Version="1">18177358</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Anat Rec. 1999 Jun 15;257(3):102-9</RefSource>
+                <PMID Version="1">10397783</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Hum Neurosci. 2013 Aug 15;7:484</RefSource>
+                <PMID Version="1">23966935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2010 Jun 1;74(22):1776-84</RefSource>
+                <PMID Version="1">20513813</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2008 Jul 1;6(7):e159</RefSource>
+                <PMID Version="1">18597554</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsy Res. 1998 Sep;32(1-2):233-53</RefSource>
+                <PMID Version="1">9761324</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsia. 2010 Apr;51(4):676-85</RefSource>
+                <PMID Version="1">20196795</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Hum Brain Mapp. 2011 Jun;32(6):883-95</RefSource>
+                <PMID Version="1">20533558</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2014 Oct 15;100:135-44</RefSource>
+                <PMID Version="1">24814212</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Seizure. 2008 Apr;17(3):234-46</RefSource>
+                <PMID Version="1">17764980</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2002 Apr;15(4):870-8</RefSource>
+                <PMID Version="1">11906227</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 1999 Jan 1;52(1):132-6</RefSource>
+                <PMID Version="1">9921860</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurol. 1999 Oct;246(10):926-33</RefSource>
+                <PMID Version="1">10552240</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 1998 Jan;43(1):41-5</RefSource>
+                <PMID Version="1">9450767</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2001 Apr;49(4):433-42</RefSource>
+                <PMID Version="1">11310620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cereb Cortex. 2004 Jan;14(1):11-22</RefSource>
+                <PMID Version="1">14654453</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010;5(1):e8525</RefSource>
+                <PMID Version="1">20072616</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 1998 Jun;17(3):463-8</RefSource>
+                <PMID Version="1">9735909</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D004833" MajorTopicYN="N">Epilepsy, Temporal Lobe</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">PMC4473265</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Brain network</Keyword>
+            <Keyword MajorTopicYN="N">Connectome</Keyword>
+            <Keyword MajorTopicYN="N">Diffusion MRI</Keyword>
+            <Keyword MajorTopicYN="N">Epilepsy</Keyword>
+            <Keyword MajorTopicYN="N">Temporal lobe</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>10</Month>
+                <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>02</Month>
+                <Day>14</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>6</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>6</Month>
+                <Day>25</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>4</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26106557</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.nicl.2015.02.004</ArticleId>
+            <ArticleId IdType="pii">S2213-1582(15)00022-4</ArticleId>
+            <ArticleId IdType="pmc">PMC4473265</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

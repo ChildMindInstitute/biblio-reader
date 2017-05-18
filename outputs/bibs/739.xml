@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25524841</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>12</Month>
+            <Day>19</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2015</Year>
+            <Month>08</Month>
+            <Day>14</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>25</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1872-6844</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>109</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Jan</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Epilepsy research</Title>
+                <ISOAbbreviation>Epilepsy Res.</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Quantitative assessment of corpus callosum morphology in periventricular nodular heterotopia.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>40-7</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.eplepsyres.2014.10.010</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S0920-1211(14)00289-7</ELocationID>
+            <Abstract>
+                <AbstractText>We investigated systematic differences in corpus callosum morphology in periventricular nodular heterotopia (PVNH). Differences in corpus callosum mid-sagittal area and subregional area changes were measured using an automated software-based method. Heterotopic gray matter deposits were automatically labeled and compared with corpus callosum changes. The spatial pattern of corpus callosum changes were interpreted in the context of the characteristic anterior-posterior development of the corpus callosum in healthy individuals. Individuals with periventricular nodular heterotopia were imaged at the Melbourne Brain Center or as part of the multi-site Epilepsy Phenome Genome project. Whole brain T1 weighted MRI was acquired in cases (n=48) and controls (n=663). The corpus callosum was segmented on the mid-sagittal plane using the software &quot;yuki&quot;. Heterotopic gray matter and intracranial brain volume was measured using Freesurfer. Differences in corpus callosum area and subregional areas were assessed, as well as the relationship between corpus callosum area and heterotopic GM volume. The anterior-posterior distribution of corpus callosum changes and heterotopic GM nodules were quantified using a novel metric and compared with each other. Corpus callosum area was reduced by 14% in PVNH (p=1.59×10(-9)). The magnitude of the effect was least in the genu (7% reduction) and greatest in the isthmus and splenium (26% reduction). Individuals with higher heterotopic GM volume had a smaller corpus callosum. Heterotopic GM volume was highest in posterior brain regions, however there was no linear relationship between the anterior-posterior position of corpus callosum changes and PVNH nodules. Reduced corpus callosum area is strongly associated with PVNH, and is probably associated with abnormal brain development in this neurological disorder. The primarily posterior corpus callosum changes may inform our understanding of the etiology of PVNH. Our results suggest that interhemispheric pathways are affected in PVNH.</AbstractText>
+                <CopyrightInformation>Copyright © 2014 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Pardoe</LastName>
+                    <ForeName>Heath R</ForeName>
+                    <Initials>HR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Comprehensive Epilepsy Center, Department of Neurology, New York University School of Medicine, New York, NY, United States. Electronic address: heath.pardoe@nyumc.org.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mandelstam</LastName>
+                    <ForeName>Simone A</ForeName>
+                    <Initials>SA</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Florey Institute of Neuroscience and Mental Health, Melbourne, Australia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hiess</LastName>
+                    <ForeName>Rebecca Kucharsky</ForeName>
+                    <Initials>RK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Comprehensive Epilepsy Center, Department of Neurology, New York University School of Medicine, New York, NY, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kuzniecky</LastName>
+                    <ForeName>Ruben I</ForeName>
+                    <Initials>RI</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Comprehensive Epilepsy Center, Department of Neurology, New York University School of Medicine, New York, NY, United States.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jackson</LastName>
+                    <ForeName>Graeme D</ForeName>
+                    <Initials>GD</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Florey Institute of Neuroscience and Mental Health, Melbourne, Australia.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <CollectiveName>Alzheimer's Disease Neuroimaging Initiative</CollectiveName>
+                </Author>
+                <Author ValidYN="Y">
+                    <CollectiveName>Epilepsy Phenome/Genome Project Investigators</CollectiveName>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>U01 AG024904</GrantID>
+                    <Acronym>AG</Acronym>
+                    <Agency>NIA NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>U01 NS053998</GrantID>
+                    <Acronym>NS</Acronym>
+                    <Agency>NINDS NIH HHS</Agency>
+                    <Country>United States</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D016448">Multicenter Study</PublicationType>
+                <PublicationType UI="D052061">Research Support, N.I.H., Extramural</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>10</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Epilepsy Res</MedlineTA>
+            <NlmUniqueID>8703089</NlmUniqueID>
+            <ISSNLinking>0920-1211</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2002 Jan 31;33(3):341-55</RefSource>
+                <PMID Version="1">11832223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2003 Feb;18(2):284-92</RefSource>
+                <PMID Version="1">12595183</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 1979 Oct;6(4):349-54</RefSource>
+                <PMID Version="1">554524</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJR Am J Roentgenol. 1988 Jul;151(1):171-9</RefSource>
+                <PMID Version="1">3259802</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Comp Neurol. 1968 Jan;132(1):45-72</RefSource>
+                <PMID Version="1">5293999</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 1989 Jun;112 ( Pt 3):799-835</RefSource>
+                <PMID Version="1">2731030</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2007 Dec;130(Pt 12):3149-54</RefSource>
+                <PMID Version="1">17728360</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsy Behav. 2009 Aug;15(4):456-60</RefSource>
+                <PMID Version="1">19541546</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurology. 2012 Sep 18;79(12):1244-51</RefSource>
+                <PMID Version="1">22914838</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsia. 2013 Feb;54(2):305-13</RefSource>
+                <PMID Version="1">23330738</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2013 Feb;34(2):432-8</RefSource>
+                <PMID Version="1">23348762</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>AJNR Am J Neuroradiol. 2013 Apr;34(4):877-83</RefSource>
+                <PMID Version="1">23064591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Clin Trials. 2013 Aug;10(4):568-86</RefSource>
+                <PMID Version="1">23818435</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Epilepsy Res. 2014 Nov;108(9):1533-42</RefSource>
+                <PMID Version="1">25260933</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2001 Jun;5(2):143-56</RefSource>
+                <PMID Version="1">11516708</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000367" MajorTopicYN="N">Age Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D015331" MajorTopicYN="N">Cohort Studies</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003337" MajorTopicYN="N">Corpus Callosum</DescriptorName>
+                <QualifierName UI="Q000254" MajorTopicYN="N">growth &amp; development</QualifierName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016014" MajorTopicYN="N">Linear Models</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009929" MajorTopicYN="N">Organ Size</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D054091" MajorTopicYN="N">Periventricular Nodular Heterotopia</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012737" MajorTopicYN="N">Sex Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <OtherID Source="NLM">NIHMS641616</OtherID>
+        <OtherID Source="NLM">PMC4272571</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Brain development</Keyword>
+            <Keyword MajorTopicYN="N">Epilepsy</Keyword>
+            <Keyword MajorTopicYN="N">MRI</Keyword>
+            <Keyword MajorTopicYN="N">Neuroimaging</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>07</Month>
+                <Day>23</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2014</Year>
+                <Month>10</Month>
+                <Day>05</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2014</Year>
+                <Month>10</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>12</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2015</Year>
+                <Month>8</Month>
+                <Day>15</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25524841</ArticleId>
+            <ArticleId IdType="pii">S0920-1211(14)00289-7</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.eplepsyres.2014.10.010</ArticleId>
+            <ArticleId IdType="pmc">PMC4272571</ArticleId>
+            <ArticleId IdType="mid">NIHMS641616</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

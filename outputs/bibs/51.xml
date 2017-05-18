@@ -1,0 +1,293 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">24333927</PMID>
+        <DateCreated>
+            <Year>2014</Year>
+            <Month>01</Month>
+            <Day>13</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2014</Year>
+            <Month>05</Month>
+            <Day>19</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2014</Year>
+            <Month>01</Month>
+            <Day>13</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1878-9307</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>7</Volume>
+                    <PubDate>
+                        <Year>2014</Year>
+                        <Month>Jan</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Developmental cognitive neuroscience</Title>
+                <ISOAbbreviation>Dev Cogn Neurosci</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Topological organization of the human brain functional connectome across the lifespan.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>76-93</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.dcn.2013.11.004</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1878-9293(13)00096-0</ELocationID>
+            <Abstract>
+                <AbstractText>Human brain function undergoes complex transformations across the lifespan. We employed resting-state functional MRI and graph-theory approaches to systematically chart the lifespan trajectory of the topological organization of human whole-brain functional networks in 126 healthy individuals ranging in age from 7 to 85 years. Brain networks were constructed by computing Pearson's correlations in blood-oxygenation-level-dependent temporal fluctuations among 1024 parcellation units followed by graph-based network analyses. We observed that the human brain functional connectome exhibited highly preserved non-random modular and rich club organization over the entire age range studied. Further quantitative analyses revealed linear decreases in modularity and inverted-U shaped trajectories of local efficiency and rich club architecture. Regionally heterogeneous age effects were mainly located in several hubs (e.g., default network, dorsal attention regions). Finally, we observed inverse trajectories of long- and short-distance functional connections, indicating that the reorganization of connectivity concentrates and distributes the brain's functional networks. Our results demonstrate topological changes in the whole-brain functional connectome across nearly the entire human lifespan, providing insights into the neural substrates underlying individual variations in behavior and cognition. These results have important implications for disease connectomics because they provide a baseline for evaluating network impairments in age-related neuropsychiatric disorders.</AbstractText>
+                <CopyrightInformation>Copyright © 2013 The Authors. Published by Elsevier Ltd.. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Cao</LastName>
+                    <ForeName>Miao</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wang</LastName>
+                    <ForeName>Jin-Hui</ForeName>
+                    <Initials>JH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Cognition and Brain Disorders, Hangzhou Normal University, Hangzhou 310015, China; Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments, Hangzhou 310015, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dai</LastName>
+                    <ForeName>Zheng-Jia</ForeName>
+                    <Initials>ZJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cao</LastName>
+                    <ForeName>Xiao-Yan</ForeName>
+                    <Initials>XY</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science, Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing 100101, China; Center for Cognition and Brain Disorders, Hangzhou Normal University, Hangzhou 310015, China; Zhejiang Key Laboratory for Research in Assessment of Cognitive Impairments, Hangzhou 310015, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Jiang</LastName>
+                    <ForeName>Li-Li</ForeName>
+                    <Initials>LL</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science, Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Fan</LastName>
+                    <ForeName>Feng-Mei</ForeName>
+                    <Initials>FM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science, Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing 100101, China; Psychiatry Research Center, Beijing Huilongguan Hospital, Beijing 100096, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Song</LastName>
+                    <ForeName>Xiao-Wei</ForeName>
+                    <Initials>XW</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Biophysics, Chinese Academy of Sciences, Beijing 100101, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Xia</LastName>
+                    <ForeName>Ming-Rui</ForeName>
+                    <Initials>MR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Shu</LastName>
+                    <ForeName>Ni</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Dong</LastName>
+                    <ForeName>Qi</ForeName>
+                    <Initials>Q</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Milham</LastName>
+                    <ForeName>Michael P</ForeName>
+                    <Initials>MP</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for the Developing Brain, Child Mind Institute, New York, NY 10022, USA; Nathan Kline Institute for Psychiatric Research, Orangeburg, NY 10962, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Castellanos</LastName>
+                    <ForeName>F Xavier</ForeName>
+                    <Initials>FX</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Nathan Kline Institute for Psychiatric Research, Orangeburg, NY 10962, USA; Phyllis Green and Randolph Cowen Institute for Pediatric Neuroscience, New York University Langone Medical Center, New York, NY 10016, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Zuo</LastName>
+                    <ForeName>Xi-Nian</ForeName>
+                    <Initials>XN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory of Behavioral Science, Magnetic Resonance Imaging Research Center, Institute of Psychology, Chinese Academy of Sciences, Beijing 100101, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China. Electronic address: zuoxn@psych.ac.cn.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>He</LastName>
+                    <ForeName>Yong</ForeName>
+                    <Initials>Y</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>State Key Laboratory of Cognitive Neuroscience and Learning &amp; International Data Group/McGovern Institute for Brain Research, Beijing Normal University, Beijing 100875, China; Center for Collaboration and Innovation in Brain and Learning Sciences, Beijing Normal University, Beijing 100875, China. Electronic address: yong.he@bnu.edu.cn.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+                <PublicationType UI="D013486">Research Support, U.S. Gov't, Non-P.H.S.</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>28</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Dev Cogn Neurosci</MedlineTA>
+            <NlmUniqueID>101541838</NlmUniqueID>
+            <ISSNLinking>1878-9293</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000367" MajorTopicYN="N">Age Factors</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000369" MajorTopicYN="N">Aged, 80 and over</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000375" MajorTopicYN="N">Aging</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003071" MajorTopicYN="Y">Cognition</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="Y">Connectome</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012737" MajorTopicYN="N">Sex Factors</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Functional connectomics</Keyword>
+            <Keyword MajorTopicYN="N">Graph theory</Keyword>
+            <Keyword MajorTopicYN="N">Lifespan trajectory</Keyword>
+            <Keyword MajorTopicYN="N">Rich club</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>07</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>18</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>19</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>17</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>18</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2014</Year>
+                <Month>5</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24333927</ArticleId>
+            <ArticleId IdType="pii">S1878-9293(13)00096-0</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.dcn.2013.11.004</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

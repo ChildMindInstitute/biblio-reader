@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">26737238</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>01</Month>
+            <Day>07</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print">
+            <Journal>
+                <ISSN IssnType="Print">1557-170X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>2015</Volume>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Aug</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Conference proceedings : ... Annual International Conference of the IEEE Engineering in Medicine and Biology Society. IEEE Engineering in Medicine and Biology Society. Annual Conference</Title>
+                <ISOAbbreviation>Conf Proc IEEE Eng Med Biol Soc</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The predictive power of structural MRI in Autism diagnosis.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>4270-3</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1109/EMBC.2015.7319338</ELocationID>
+            <Abstract>
+                <AbstractText>Diagnosis of Autism Spectrum Disorder (ASD) using structural magnetic resonance imaging (sMRI) of the brain has been a topic of significant research interest. Previous studies using small datasets with well-matched Typically Developing Controls (TDC) report high classification accuracies (80-96%) but studies using the large heterogeneous ABIDE dataset report accuracies less than 60%. In this study we investigate the predictive power of sMRI in ASD using 373 ASD and 361 TDC male subjects from the ABIDE. Brain morphometric features were derived using FreeSurfer and classification was performed using three different techniques: Random Forest (RF), Support Vector Machine (SVM) and Gradient Boosting Machine (GBM). Although high classification accuracies were possible in individual sites (with a maximum of 97% in Caltech), the highest classification accuracy across all sites was only 60% (sensitivity = 57%, specificity = 64%). However, the accuracy across all sites improved to 67% when IQ and age information were added to morphometric features. Across all three classifiers, volume and surface area had more discriminative power. In general, important features for classification were present in the frontal and temporal regions and these regions have been implicated in ASD. This study also explores the effect of demographics and behavioral measures on the predictive power of sMRI. Results show that classification accuracy increases with autism severity and that ASD detection with sMRI is easier before the age of 10 years.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Katuwal</LastName>
+                    <ForeName>Gajendra J</ForeName>
+                    <Initials>GJ</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Cahill</LastName>
+                    <ForeName>Nathan D</ForeName>
+                    <Initials>ND</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Baum</LastName>
+                    <ForeName>Stefi A</ForeName>
+                    <Initials>SA</Initials>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Michael</LastName>
+                    <ForeName>Andrew M</ForeName>
+                    <Initials>AM</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Conf Proc IEEE Eng Med Biol Soc</MedlineTA>
+            <NlmUniqueID>101243413</NlmUniqueID>
+            <ISSNLinking>1557-170X</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>1</Month>
+                <Day>7</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26737238</ArticleId>
+            <ArticleId IdType="doi">10.1109/EMBC.2015.7319338</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

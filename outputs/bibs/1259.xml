@@ -1,0 +1,306 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">28072842</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>01</Month>
+            <Day>10</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>24</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <ISSN IssnType="Electronic">1932-6203</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>12</Volume>
+                    <Issue>1</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>PloS one</Title>
+                <ISOAbbreviation>PLoS ONE</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Fractal Analysis of Brain Blood Oxygenation Level Dependent (BOLD) Signals from Children with Mild Traumatic Brain Injury (mTBI).</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>e0169647</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1371/journal.pone.0169647</ELocationID>
+            <Abstract>
+                <AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">Conventional imaging techniques are unable to detect abnormalities in the brain following mild traumatic brain injury (mTBI). Yet patients with mTBI typically show delayed response on neuropsychological evaluation. Because fractal geometry represents complexity, we explored its utility in measuring temporal fluctuations of brain resting state blood oxygen level dependent (rs-BOLD) signal. We hypothesized that there could be a detectable difference in rs-BOLD signal complexity between healthy subjects and mTBI patients based on previous studies that associated reduction in signal complexity with disease.</AbstractText>
+                <AbstractText Label="METHODS" NlmCategory="METHODS">Fifteen subjects (13.4 ± 2.3 y/o) and 56 age-matched (13.5 ± 2.34 y/o) healthy controls were scanned using a GE Discovery MR750 3T MRI and 32-channel RF-coil. Axial FSPGR-3D images were used to prescribe rs-BOLD (TE/TR = 35/2000ms), acquired over 6 minutes. Motion correction was performed and anatomical and functional images were aligned and spatially warped to the N27 standard atlas. Fractal analysis, performed on grey matter, was done by estimating the Hurst exponent using de-trended fluctuation analysis and signal summation conversion methods.</AbstractText>
+                <AbstractText Label="RESULTS AND CONCLUSIONS" NlmCategory="CONCLUSIONS">Voxel-wise fractal dimension (FD) was calculated for every subject in the control group to generate mean and standard deviation maps for regional Z-score analysis. Voxel-wise validation of FD normality across controls was confirmed, and non-Gaussian voxels (3.05% over the brain) were eliminated from subsequent analysis. For each mTBI patient, regions where Z-score values were at least 2 standard deviations away from the mean (i.e. where |Z| &gt; 2.0) were identified. In individual patients the frequently affected regions were amygdala (p = 0.02), vermis(p = 0.03), caudate head (p = 0.04), hippocampus(p = 0.03), and hypothalamus(p = 0.04), all previously reported as dysfunctional after mTBI, but based on group analysis. It is well known that the brain is best modeled as a complex system. Therefore a measure of complexity using rs-BOLD signal FD could provide an additional method to grade and monitor mTBI. Furthermore, this approach can be personalized thus providing unique patient specific assessment.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Dona</LastName>
+                    <ForeName>Olga</ForeName>
+                    <Initials>O</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McMaster School of Biomedical Engineering, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Imaging Research Centre, St. Joseph's Healthcare, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Noseworthy</LastName>
+                    <ForeName>Michael D</ForeName>
+                    <Initials>MD</Initials>
+                    <Identifier Source="ORCID">http://orcid.org/0000-0003-1464-159X</Identifier>
+                    <AffiliationInfo>
+                        <Affiliation>McMaster School of Biomedical Engineering, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Imaging Research Centre, St. Joseph's Healthcare, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Electrical and Computer Engineering, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Radiology, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>DeMatteo</LastName>
+                    <ForeName>Carol</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>School of Rehabilitation Medicine, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Connolly</LastName>
+                    <ForeName>John F</ForeName>
+                    <Initials>JF</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McMaster School of Biomedical Engineering, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Linguistics, McMaster University, Hamilton, Ontario, Canada.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>01</Month>
+                <Day>10</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>PLoS One</MedlineTA>
+            <NlmUniqueID>101285081</NlmUniqueID>
+            <ISSNLinking>1932-6203</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 1997 Apr;5(3):179-97</RefSource>
+                <PMID Version="1">9345548</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurol. 2013 Apr;9(4):222-30</RefSource>
+                <PMID Version="1">23478462</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Exp Neurol. 2015 Nov;273:11-23</RefSource>
+                <PMID Version="1">26238734</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>CMAJ. 2008 Apr 22;178(9):1163-70</RefSource>
+                <PMID Version="1">18427091</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2014 Jun;19(6):659-67</RefSource>
+                <PMID Version="1">23774715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Appl Neuropsychol. 2003;10(3):137-44</RefSource>
+                <PMID Version="1">12890639</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Conf Proc IEEE Eng Med Biol Soc. 2004;1:604-7</RefSource>
+                <PMID Version="1">17271749</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neurol Sci. 2011 Oct;32(5):773-85</RefSource>
+                <PMID Version="1">21667095</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain Res. 1993 Apr 2;607(1-2):9-16</RefSource>
+                <PMID Version="1">8481813</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci Methods. 1994 Oct;54(2):171-87</RefSource>
+                <PMID Version="1">7869750</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Neurosci. 2007 Sep;8(9):700-11</RefSource>
+                <PMID Version="1">17704812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Ann Neurol. 2016 Jun;79(6):907-20</RefSource>
+                <PMID Version="1">27230970</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Magn Reson Med. 1992 Jun;25(2):390-7</RefSource>
+                <PMID Version="1">1614324</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurotrauma. 2016 Oct 15;33(20):1855-1865</RefSource>
+                <PMID Version="1">26756169</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Comput Biol. 2009 Sep;5(9):e1000519</RefSource>
+                <PMID Version="1">19779556</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Radiology. 2015 Dec;277(3):793-800</RefSource>
+                <PMID Version="1">26079380</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Pflugers Arch. 2000 Feb;439(4):403-15</RefSource>
+                <PMID Version="1">10678736</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Br J Sports Med. 2013 Apr;47(5):250-8</RefSource>
+                <PMID Version="1">23479479</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosurg. 1987 Feb;66(2):234-43</RefSource>
+                <PMID Version="1">3806205</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2002 Feb 19;99 Suppl 1:2466-72</RefSource>
+                <PMID Version="1">11875196</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2010 Dec 20;5(12):e15710</RefSource>
+                <PMID Version="1">21187930</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>MAGMA. 2012 Oct;25(5):335-44</RefSource>
+                <PMID Version="1">22446877</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2016 Oct;21(10):1358-65</RefSource>
+                <PMID Version="1">26552591</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biomed Res Int. 2015 ;2015 :470676</RefSource>
+                <PMID Version="1">26798636</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Exp Neurol. 2016 Mar;277:215-26</RefSource>
+                <PMID Version="1">26791254</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Physiol Meas. 2002 Feb;23(1):R1-38</RefSource>
+                <PMID Version="1">11876246</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Alzheimers Dement. 2014 Feb;10(1 Suppl):S62-75</RefSource>
+                <PMID Version="1">24529527</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2016 Feb 12;11(2):e0149587</RefSource>
+                <PMID Version="1">26872349</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cereb Blood Flow Metab. 2012 Dec;32(12):2122-34</RefSource>
+                <PMID Version="1">22892723</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroscience. 2005;133(1):1-15</RefSource>
+                <PMID Version="1">15893627</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Trauma. 2002 Aug;53(2):219-23; discussion 223-4</RefSource>
+                <PMID Version="1">12169925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>MAGMA. 2014 Aug;27(4):291-301</RefSource>
+                <PMID Version="1">24287715</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>ACS Chem Neurosci. 2015 Jan 21;6(1):16-26</RefSource>
+                <PMID Version="1">25491156</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2009 Sep;47(3):1125-34</RefSource>
+                <PMID Version="1">19460447</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosurg Sci. 2015 Sep 09;:null</RefSource>
+                <PMID Version="1">26354185</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Comput Biomed Res. 1996 Jun;29(3):162-73</RefSource>
+                <PMID Version="1">8812068</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mt Sinai J Med. 2009 Apr;76(2):97-104</RefSource>
+                <PMID Version="1">19306379</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Oct 15;58(4):1060-9</RefSource>
+                <PMID Version="1">21777682</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <CoiStatement>The authors have declared that no competing interests exist.</CoiStatement>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>07</Month>
+                <Day>15</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>12</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>1</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28072842</ArticleId>
+            <ArticleId IdType="doi">10.1371/journal.pone.0169647</ArticleId>
+            <ArticleId IdType="pii">PONE-D-16-28448</ArticleId>
+            <ArticleId IdType="pmc">PMC5224975</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

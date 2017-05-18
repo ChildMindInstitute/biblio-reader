@@ -1,0 +1,158 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27859903</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>11</Month>
+            <Day>18</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1097-0193</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>38</Volume>
+                    <Issue>3</Issue>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Mar</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Human brain mapping</Title>
+                <ISOAbbreviation>Hum Brain Mapp</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Corticostriatal connectivity fingerprints: Probability maps based on resting-state functional connectivity.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1478-1491</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1002/hbm.23466</ELocationID>
+            <Abstract>
+                <AbstractText>Over the last decade, structure-function relationships have begun to encompass networks of brain areas rather than individual structures. For example, corticostriatal circuits have been associated with sensorimotor, limbic, and cognitive information processing, and damage to these circuits has been shown to produce unique behavioral outcomes in Autism, Parkinson's Disease, Schizophrenia and healthy ageing. However, it remains an open question how abnormal or absent connectivity can be detected at the individual level. Here, we provide a method for clustering gross morphological structures into subregions with unique functional connectivity fingerprints, and generate network probability maps usable as a baseline to compare individual cases against. We used connectivity metrics derived from resting-state fMRI (N = 100), in conjunction with hierarchical clustering methods, to parcellate the striatum into functionally distinct clusters. We identified three highly reproducible striatal subregions, across both hemispheres and in an independent replication dataset (N = 100) (dice-similarity values 0.40-1.00). Each striatal seed region resulted in a highly reproducible distinct connectivity fingerprint: the putamen showed predominant connectivity with cortical and cerebellar sensorimotor and language processing areas; the ventromedial striatum cluster had a distinct limbic connectivity pattern; the caudate showed predominant connectivity with the thalamus, frontal and occipital areas, and the cerebellum. Our corticostriatal probability maps agree with existing connectivity data in humans and non-human primates, and showed a high degree of replication. We believe that these maps offer an efficient tool to further advance hypothesis driven research and provide important guidance when investigating deviant connectivity in neurological patient populations suffering from e.g., stroke or cerebral palsy. Hum Brain Mapp 38:1478-1491, 2017. © 2016 Wiley Periodicals, Inc.</AbstractText>
+                <CopyrightInformation>© 2016 Wiley Periodicals, Inc.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Jaspers</LastName>
+                    <ForeName>Ellen</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Health Sciences and Technology, Neural Control of Movement Lab, ETH Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Balsters</LastName>
+                    <ForeName>Joshua H</ForeName>
+                    <Initials>JH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Health Sciences and Technology, Neural Control of Movement Lab, ETH Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kassraian Fard</LastName>
+                    <ForeName>Pegah</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Health Sciences and Technology, Neural Control of Movement Lab, ETH Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mantini</LastName>
+                    <ForeName>Dante</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Health Sciences and Technology, Neural Control of Movement Lab, ETH Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Kinesiology, Movement Control &amp; Neuroplasticity Research Group, KU Leuven, Belgium.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Wenderoth</LastName>
+                    <ForeName>Nicole</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Health Sciences and Technology, Neural Control of Movement Lab, ETH Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Kinesiology, Movement Control &amp; Neuroplasticity Research Group, KU Leuven, Belgium.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>12</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Hum Brain Mapp</MedlineTA>
+            <NlmUniqueID>9419065</NlmUniqueID>
+            <ISSNLinking>1065-9471</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">corticostriatal connectivity</Keyword>
+            <Keyword MajorTopicYN="N">hierarchical clustering</Keyword>
+            <Keyword MajorTopicYN="N">probability maps</Keyword>
+            <Keyword MajorTopicYN="N">resting-state fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>02</Month>
+                <Day>11</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>14</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>04</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>20</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>11</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27859903</ArticleId>
+            <ArticleId IdType="doi">10.1002/hbm.23466</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

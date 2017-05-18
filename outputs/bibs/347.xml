@@ -1,0 +1,161 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="PubMed-not-MEDLINE" Owner="NLM">
+        <PMID Version="1">24302911</PMID>
+        <DateCreated>
+            <Year>2013</Year>
+            <Month>12</Month>
+            <Day>04</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2013</Year>
+            <Month>12</Month>
+            <Day>04</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>02</Month>
+            <Day>20</Day>
+        </DateRevised>
+        <Article PubModel="Electronic-eCollection">
+            <Journal>
+                <JournalIssue CitedMedium="Print">
+                    <Volume>7</Volume>
+                    <PubDate>
+                        <Year>2013</Year>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Frontiers in neuroinformatics</Title>
+                <ISOAbbreviation>Front Neuroinform</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Robust multi-site MR data processing: iterative optimization of bias correction, tissue classification, and registration.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>29</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.3389/fninf.2013.00029</ELocationID>
+            <Abstract>
+                <AbstractText>A robust multi-modal tool, for automated registration, bias correction, and tissue classification, has been implemented for large-scale heterogeneous multi-site longitudinal MR data analysis. This work focused on improving the an iterative optimization framework between bias-correction, registration, and tissue classification inspired from previous work. The primary contributions are robustness improvements from incorporation of following four elements: (1) utilize multi-modal and repeated scans, (2) incorporate high-deformable registration, (3) use extended set of tissue definitions, and (4) use of multi-modal aware intensity-context priors. The benefits of these enhancements were investigated by a series of experiments with both simulated brain data set (BrainWeb) and by applying to highly-heterogeneous data from a 32 site imaging study with quality assessments through the expert visual inspection. The implementation of this tool is tailored for, but not limited to, large-scale data processing with great data variation with a flexible interface. In this paper, we describe enhancements to a joint registration, bias correction, and the tissue classification, that improve the generalizability and robustness for processing multi-modal longitudinal MR scans collected at multi-sites. The tool was evaluated by using both simulated and simulated and human subject MRI images. With these enhancements, the results showed improved robustness for large-scale heterogeneous MRI processing.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Young Kim</LastName>
+                    <ForeName>Eun</ForeName>
+                    <Initials>E</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Biomedical Engineering Department, University of Iowa Iowa City, IA, USA.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Johnson</LastName>
+                    <ForeName>Hans J</ForeName>
+                    <Initials>HJ</Initials>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2013</Year>
+                <Month>11</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Switzerland</Country>
+            <MedlineTA>Front Neuroinform</MedlineTA>
+            <NlmUniqueID>101477957</NlmUniqueID>
+            <ISSNLinking>1662-5196</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Med Image Anal. 2005 Oct;9(5):457-66</RefSource>
+                <PMID Version="1">16019252</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2002 Jan 31;33(3):341-55</RefSource>
+                <PMID Version="1">11832223</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jul 1;57(1):19-21</RefSource>
+                <PMID Version="1">21376812</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 1996;15(4):429-42</RefSource>
+                <PMID Version="1">18215925</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 1999 Oct;18(10):885-96</RefSource>
+                <PMID Version="1">10628948</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroinformatics. 2011 Dec;9(4):381-400</RefSource>
+                <PMID Version="1">21373993</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>IEEE Trans Med Imaging. 2002 Oct;21(10):1280-91</RefSource>
+                <PMID Version="1">12585710</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Acad Radiol. 2003 Dec;10(12):1341-8</RefSource>
+                <PMID Version="1">14697002</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Cogn Neurosci. 2007 Sep;19(9):1498-507</RefSource>
+                <PMID Version="1">17714011</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <OtherID Source="NLM">PMC3831347</OtherID>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">inhomogeneity correction</Keyword>
+            <Keyword MajorTopicYN="N">registration</Keyword>
+            <Keyword MajorTopicYN="N">segmentation</Keyword>
+            <Keyword MajorTopicYN="N">tissue classification</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2013</Year>
+                <Month>05</Month>
+                <Day>31</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2013</Year>
+                <Month>10</Month>
+                <Day>25</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2013</Year>
+                <Month>12</Month>
+                <Day>5</Day>
+                <Hour>6</Hour>
+                <Minute>1</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">24302911</ArticleId>
+            <ArticleId IdType="doi">10.3389/fninf.2013.00029</ArticleId>
+            <ArticleId IdType="pmc">PMC3831347</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

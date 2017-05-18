@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">26515902</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>12</Month>
+            <Day>25</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>30</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>12</Month>
+            <Day>25</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1095-9572</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>125</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Jan</Month>
+                        <Day>15</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>NeuroImage</Title>
+                <ISOAbbreviation>Neuroimage</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>A cross-modal, cross-species comparison of connectivity measures in the primate brain.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>311-31</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.neuroimage.2015.10.057</ELocationID>
+            <ELocationID EIdType="pii" ValidYN="Y">S1053-8119(15)00969-6</ELocationID>
+            <Abstract>
+                <AbstractText>In systems neuroscience, the term &quot;connectivity&quot; has been defined in numerous ways, according to the particular empirical modality from which it is derived. Due to large differences in the phenomena measured by these modalities, the assumptions necessary to make inferences about axonal connections, and the limitations accompanying each, brain connectivity remains an elusive concept. Despite this, only a handful of studies have directly compared connectivity as inferred from multiple modalities, and there remains much ambiguity over what the term is actually referring to as a biological construct. Here, we perform a direct comparison based on the high-resolution and high-contrast Enhanced Nathan Klein Institute (NKI) Rockland Sample neuroimaging data set, and the CoCoMac database of tract tracing studies. We compare four types of commonly-used primate connectivity analyses: tract tracing experiments, compiled in CoCoMac; group-wise correlation of cortical thickness; tractographic networks computed from diffusion-weighted MRI (DWI); and correlational networks obtained from resting-state BOLD (fMRI). We find generally poor correspondence between all four modalities, in terms of correlated edge weights, binarized comparisons of thresholded networks, and clustering patterns. fMRI and DWI had the best agreement, followed by DWI and CoCoMac, while other comparisons showed striking divergence. Networks had the best correspondence for local ipsilateral and homotopic contralateral connections, and the worst correspondence for long-range and heterotopic contralateral connections. k-Means clustering highlighted the lowest cross-modal and cross-species consensus in lateral and medial temporal lobes, anterior cingulate, and the temporoparietal junction. Comparing the NKI results to those of the lower resolution/contrast International Consortium for Brain Imaging (ICBM) dataset, we find that the relative pattern of intermodal relationships is preserved, but the correspondence between human imaging connectomes is substantially better for NKI. These findings caution against using &quot;connectivity&quot; as an umbrella term for results derived from single empirical modalities, and suggest that any interpretation of these results should account for (and ideally help explain) the lack of multimodal correspondence.</AbstractText>
+                <CopyrightInformation>Copyright © 2015 Elsevier Inc. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Reid</LastName>
+                    <ForeName>Andrew T</ForeName>
+                    <Initials>AT</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Neuroscience and Medicine (INM-1), Research Centre Jülich, Jülich, Germany. Electronic address: a.reid@fz-juelich.de.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lewis</LastName>
+                    <ForeName>John</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McConnell Brain Imaging Centre, Montreal Neurological Institute, McGill University, Montreal, Canada. Electronic address: jlewis@bic.mni.mcgill.ca.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bezgin</LastName>
+                    <ForeName>Gleb</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Rotman Research Institute of Baycrest Centre, University of Toronto, Toronto, ON, Canada. Electronic address: gbezgin@rotman-baycrest.on.ca.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Khundrakpam</LastName>
+                    <ForeName>Budhachandra</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McConnell Brain Imaging Centre, Montreal Neurological Institute, McGill University, Montreal, Canada. Electronic address: budha@bic.mni.mcgill.ca.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Eickhoff</LastName>
+                    <ForeName>Simon B</ForeName>
+                    <Initials>SB</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Institute of Neuroscience and Medicine (INM-1), Research Centre Jülich, Jülich, Germany; Institute of Clinical Neuroscience and Medical Psychology, Heinrich Heine University, Düsseldorf, Germany. Electronic address: s.eickhoff@fz-juelich.de.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>McIntosh</LastName>
+                    <ForeName>Anthony R</ForeName>
+                    <Initials>AR</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Rotman Research Institute of Baycrest Centre, University of Toronto, Toronto, ON, Canada. Electronic address: rmcintosh@rotman-baycrest.on.ca.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bellec</LastName>
+                    <ForeName>Pierre</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre de Recherche de l'Institut de Gériatrie de Montréal CRIUGM, Montreal, QC, Canada. Electronic address: pierre.bellec@criugm.qc.ca.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Evans</LastName>
+                    <ForeName>Alan C</ForeName>
+                    <Initials>AC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>McConnell Brain Imaging Centre, Montreal Neurological Institute, McGill University, Montreal, Canada. Electronic address: alan@bic.mni.mcgill.ca.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <Agency>Canadian Institutes of Health Research</Agency>
+                    <Country>Canada</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D003160">Comparative Study</PublicationType>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>26</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Neuroimage</MedlineTA>
+            <NlmUniqueID>9215515</NlmUniqueID>
+            <ISSNLinking>1053-8119</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000369" MajorTopicYN="N">Aged, 80 and over</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D000818" MajorTopicYN="N">Animals</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D016000" MajorTopicYN="N">Cluster Analysis</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D063132" MajorTopicYN="N">Connectome</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="Y">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D038524" MajorTopicYN="N">Diffusion Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008253" MajorTopicYN="N">Macaca mulatta</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008875" MajorTopicYN="N">Middle Aged</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000033" MajorTopicYN="Y">anatomy &amp; histology</QualifierName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D011323" MajorTopicYN="N">Primates</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D013045" MajorTopicYN="N">Species Specificity</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D055815" MajorTopicYN="N">Young Adult</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">CoCoMac</Keyword>
+            <Keyword MajorTopicYN="N">Connectomics</Keyword>
+            <Keyword MajorTopicYN="N">Cortical thickness</Keyword>
+            <Keyword MajorTopicYN="N">Diffusion-weighted MRI</Keyword>
+            <Keyword MajorTopicYN="N">Hierarchical clustering</Keyword>
+            <Keyword MajorTopicYN="N">Resting state functional MRI</Keyword>
+            <Keyword MajorTopicYN="N">Structural covariance</Keyword>
+            <Keyword MajorTopicYN="N">Tract tracing</Keyword>
+            <Keyword MajorTopicYN="N">k-Means clustering</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>17</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>16</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>22</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>10</Month>
+                <Day>31</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>11</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>1</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">26515902</ArticleId>
+            <ArticleId IdType="pii">S1053-8119(15)00969-6</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.neuroimage.2015.10.057</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

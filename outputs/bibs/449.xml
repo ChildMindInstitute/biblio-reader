@@ -1,0 +1,235 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25613588</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>10</Month>
+            <Day>03</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>05</Month>
+            <Day>02</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>10</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1435-165X</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>24</Volume>
+                    <Issue>10</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Oct</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>European child &amp; adolescent psychiatry</Title>
+                <ISOAbbreviation>Eur Child Adolesc Psychiatry</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Classifying adolescent attention-deficit/hyperactivity disorder (ADHD) based on functional and structural imaging.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>1279-89</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1007/s00787-015-0678-4</ELocationID>
+            <Abstract>
+                <AbstractText>Attention-deficit/hyperactivity disorder (ADHD) is a common disabling psychiatric disorder associated with consistent deficits in error processing, inhibition and regionally decreased grey matter volumes. The diagnosis is based on clinical presentation, interviews and questionnaires, which are to some degree subjective and would benefit from verification through biomarkers. Here, pattern recognition of multiple discriminative functional and structural brain patterns was applied to classify adolescents with ADHD and controls. Functional activation features in a Flanker/NoGo task probing error processing and inhibition along with structural magnetic resonance imaging data served to predict group membership using support vector machines (SVMs). The SVM pattern recognition algorithm correctly classified 77.78% of the subjects with a sensitivity and specificity of 77.78% based on error processing. Predictive regions for controls were mainly detected in core areas for error processing and attention such as the medial and dorsolateral frontal areas reflecting deficient processing in ADHD (Hart et al., in Hum Brain Mapp 35:3083-3094, 2014), and overlapped with decreased activations in patients in conventional group comparisons. Regions more predictive for ADHD patients were identified in the posterior cingulate, temporal and occipital cortex. Interestingly despite pronounced univariate group differences in inhibition-related activation and grey matter volumes the corresponding classifiers failed or only yielded a poor discrimination. The present study corroborates the potential of task-related brain activation for classification shown in previous studies. It remains to be clarified whether error processing, which performed best here, also contributes to the discrimination of useful dimensions and subtypes, different psychiatric disorders, and prediction of treatment success across studies and sites.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Iannaccone</LastName>
+                    <ForeName>Reto</ForeName>
+                    <Initials>R</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University Clinic for Child and Adolescent Psychiatry (UCCAP), University of Zurich, Neumünsterallee 9, 8032, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>PhD Program in Integrative Molecular Medicine, University of Zurich, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Hauser</LastName>
+                    <ForeName>Tobias U</ForeName>
+                    <Initials>TU</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University Clinic for Child and Adolescent Psychiatry (UCCAP), University of Zurich, Neumünsterallee 9, 8032, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Neuroscience Center Zurich, University of Zurich and ETH Zurich, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Wellcome Trust Centre for Neuroimaging, University College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ball</LastName>
+                    <ForeName>Juliane</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University Clinic for Child and Adolescent Psychiatry (UCCAP), University of Zurich, Neumünsterallee 9, 8032, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brandeis</LastName>
+                    <ForeName>Daniel</ForeName>
+                    <Initials>D</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University Clinic for Child and Adolescent Psychiatry (UCCAP), University of Zurich, Neumünsterallee 9, 8032, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Neuroscience Center Zurich, University of Zurich and ETH Zurich, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Zurich Center for Integrative Human Physiology, University of Zurich, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child and Adolescent Psychiatry and Psychotherapy, Central Institute of Mental Health, Medical Faculty Mannheim/Heidelberg University, J5, 68159, Mannheim, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Walitza</LastName>
+                    <ForeName>Susanne</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University Clinic for Child and Adolescent Psychiatry (UCCAP), University of Zurich, Neumünsterallee 9, 8032, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Neuroscience Center Zurich, University of Zurich and ETH Zurich, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Zurich Center for Integrative Human Physiology, University of Zurich, Zurich, Switzerland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Brem</LastName>
+                    <ForeName>Silvia</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>University Clinic for Child and Adolescent Psychiatry (UCCAP), University of Zurich, Neumünsterallee 9, 8032, Zurich, Switzerland. sbrem@kjpd.uzh.ch.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Neuroscience Center Zurich, University of Zurich and ETH Zurich, Zurich, Switzerland. sbrem@kjpd.uzh.ch.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>23</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Germany</Country>
+            <MedlineTA>Eur Child Adolesc Psychiatry</MedlineTA>
+            <NlmUniqueID>9212296</NlmUniqueID>
+            <ISSNLinking>1018-8827</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D000293" MajorTopicYN="N">Adolescent</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001288" MajorTopicYN="N">Attention</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001289" MajorTopicYN="N">Attention Deficit Disorder with Hyperactivity</DescriptorName>
+                <QualifierName UI="Q000145" MajorTopicYN="Y">classification</QualifierName>
+                <QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName>
+                <QualifierName UI="Q000523" MajorTopicYN="N">psychology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000473" MajorTopicYN="Y">pathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D004192" MajorTopicYN="N">Discrimination (Psychology)</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007091" MajorTopicYN="N">Image Processing, Computer-Assisted</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007266" MajorTopicYN="Y">Inhibition (Psychology)</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">ADHD</Keyword>
+            <Keyword MajorTopicYN="N">Adolescence</Keyword>
+            <Keyword MajorTopicYN="N">Attention</Keyword>
+            <Keyword MajorTopicYN="N">Classification</Keyword>
+            <Keyword MajorTopicYN="N">fMRI</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2014</Year>
+                <Month>06</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2015</Year>
+                <Month>01</Month>
+                <Day>09</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2015</Year>
+                <Month>1</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2015</Year>
+                <Month>1</Month>
+                <Day>24</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>5</Month>
+                <Day>3</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25613588</ArticleId>
+            <ArticleId IdType="doi">10.1007/s00787-015-0678-4</ArticleId>
+            <ArticleId IdType="pii">10.1007/s00787-015-0678-4</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

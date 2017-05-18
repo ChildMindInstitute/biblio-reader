@@ -1,0 +1,177 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Process" Owner="NLM">
+        <PMID Version="1">27507129</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>09</Month>
+            <Day>30</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2016</Year>
+            <Month>11</Month>
+            <Day>08</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2158-0022</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <Issue>9</Issue>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Nov</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Brain connectivity</Title>
+                <ISOAbbreviation>Brain Connect</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Reporting of Resting-State Functional Magnetic Resonance Imaging Preprocessing Methodologies.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>663-668</MedlinePgn>
+            </Pagination>
+            <Abstract>
+                <AbstractText>There has been a rapid increase in resting-state functional magnetic resonance imaging (rs-fMRI) literature in the past few years. We aim to highlight the variability in the current reporting practices of rs-fMRI acquisition and preprocessing parameters. The PubMed database was searched for the selection of appropriate articles in the rs-fMRI literature and the most recent 100 articles were selected based on our criteria. These articles were evaluated based on a checklist for reporting of certain preprocessing steps. All of the studies reported the temporal resolution for the scan and the software used for the analysis. Less than half of the studies reported physiologic monitoring, despiking, global signal regression, framewise displacement, and volume censoring. A majority of the studies mentioned the scanning duration, eye status, and smoothing kernel. Overall, we demonstrate the wide variability in reporting of preprocessing methods in rs-fMRI studies. Although there might be potential variability in reporting across studies due to individual requirements for a study, we suggest the need for standardizing reporting guidelines to ensure reproducibility.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Waheed</LastName>
+                    <ForeName>Syed Hamza</ForeName>
+                    <Initials>SH</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>1 Services Institute of Medical Sciences , Lahore, Pakistan .</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Mirbagheri</LastName>
+                    <ForeName>Saeedeh</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Agarwal</LastName>
+                    <ForeName>Shruti</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kamali</LastName>
+                    <ForeName>Arash</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Yahyavi-Firouz-Abadi</LastName>
+                    <ForeName>Noushin</ForeName>
+                    <Initials>N</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chaudhry</LastName>
+                    <ForeName>Ammar</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>DiGianvittorio</LastName>
+                    <ForeName>Michael</ForeName>
+                    <Initials>M</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gujar</LastName>
+                    <ForeName>Sachin K</ForeName>
+                    <Initials>SK</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Pillai</LastName>
+                    <ForeName>Jay J</ForeName>
+                    <Initials>JJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Sair</LastName>
+                    <ForeName>Haris I</ForeName>
+                    <Initials>HI</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>2 Division of Neuroradiology, The Russell H. Morgan Department of Radiology and Radiological Science, Johns Hopkins University School of Medicine , Baltimore, Maryland.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>09</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Brain Connect</MedlineTA>
+            <NlmUniqueID>101550313</NlmUniqueID>
+            <ISSNLinking>2158-0014</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">analysis</Keyword>
+            <Keyword MajorTopicYN="N">preprocessing</Keyword>
+            <Keyword MajorTopicYN="N">reporting</Keyword>
+            <Keyword MajorTopicYN="N">resting-state fMRI</Keyword>
+            <Keyword MajorTopicYN="N">techniques</Keyword>
+            <Keyword MajorTopicYN="N">variability</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>8</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>8</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>8</Month>
+                <Day>11</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27507129</ArticleId>
+            <ArticleId IdType="doi">10.1089/brain.2016.0446</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

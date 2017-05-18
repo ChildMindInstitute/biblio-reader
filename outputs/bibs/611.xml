@@ -1,0 +1,189 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="MEDLINE" Owner="NLM">
+        <PMID Version="1">25122466</PMID>
+        <DateCreated>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>29</Day>
+        </DateCreated>
+        <DateCompleted>
+            <Year>2016</Year>
+            <Month>07</Month>
+            <Day>20</Day>
+        </DateCompleted>
+        <DateRevised>
+            <Year>2015</Year>
+            <Month>09</Month>
+            <Day>29</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1460-2199</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>25</Volume>
+                    <Issue>10</Issue>
+                    <PubDate>
+                        <Year>2015</Year>
+                        <Month>Oct</Month>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Cerebral cortex (New York, N.Y. : 1991)</Title>
+                <ISOAbbreviation>Cereb. Cortex</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>The Fault Lies on the Other Side: Altered Brain Functional Connectivity in Psychiatric Disorders is Mainly Caused by Counterpart Regions in the Opposite Hemisphere.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>3475-86</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1093/cercor/bhu173</ELocationID>
+            <Abstract>
+                <AbstractText>Many psychiatric disorders are associated with abnormal resting-state functional connectivity between pairs of brain regions, although it remains unclear whether the fault resides within the pair of regions themselves or other regions connected to them. Identifying the source of dysfunction is crucial for understanding the etiology of different disorders. Using pathway- and network-based techniques to analyze resting-state functional magnetic imaging data from a large population of patients with attention deficit hyperactivity disorder (239 patients, 251 controls), major depression (39 patients, 37 controls), and schizophrenia (69 patients, 62 controls), we show for the first time that only network-based cross-correlation identifies significant functional connectivity changes in all 3 disorders which survive correction. This demonstrates that the primary source of dysfunction resides not in the regional pairs themselves but in their external connections. Combining pathway and network-based functional-connectivity analysis, we established that, in all 3 disorders, the counterparts of pairs of regions in the opposite hemisphere contribute 60-76% to altered functional connectivity, compared with only 17-21% from the regions themselves. Thus, a transdiagnostic feature is of abnormal functional connectivity between brain regions produced via their contralateral counterparts. Our results demonstrate an important role for contralateral counterpart regions in contributing to altered regional connectivity in psychiatric disorders.</AbstractText>
+                <CopyrightInformation>© The Author 2014. Published by Oxford University Press. All rights reserved. For Permissions, please e-mail: journals.permissions@oup.com.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Zhang</LastName>
+                    <ForeName>Jie</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Computational Systems Biology, Fudan University, Shanghai 200433, PR China Fudan University - Jinling Hospital Computational Translational Medicine Center, Jinling Hospital, Nanjing University School of Medicine, Nanjing 210002, PR China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Kendrick</LastName>
+                    <ForeName>Keith M</ForeName>
+                    <Initials>KM</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Key Laboratory for Neuro Information, University of Electronic Science and Technology of China, School of Life Science and Technology, Chengdu 610054, PR China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lu</LastName>
+                    <ForeName>Guangming</ForeName>
+                    <Initials>G</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Medical Imaging, Jinling Hospital, Nanjing University School of Medicine, Nanjing 210002, PR China Fudan University - Jinling Hospital Computational Translational Medicine Center, Jinling Hospital, Nanjing University School of Medicine, Nanjing 210002, PR China.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Feng</LastName>
+                    <ForeName>Jianfeng</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Computational Systems Biology, Fudan University, Shanghai 200433, PR China Fudan University - Jinling Hospital Computational Translational Medicine Center, Jinling Hospital, Nanjing University School of Medicine, Nanjing 210002, PR China Department of Computer Science, University of Warwick, Coventry, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+                <PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2014</Year>
+                <Month>08</Month>
+                <Day>13</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>United States</Country>
+            <MedlineTA>Cereb Cortex</MedlineTA>
+            <NlmUniqueID>9110718</NlmUniqueID>
+            <ISSNLinking>1047-3211</ISSNLinking>
+        </MedlineJournalInfo>
+        <CitationSubset>IM</CitationSubset>
+        <MeshHeadingList>
+            <MeshHeading>
+                <DescriptorName UI="D001289" MajorTopicYN="N">Attention Deficit Disorder with Hyperactivity</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001921" MajorTopicYN="N">Brain</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="Y">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001931" MajorTopicYN="N">Brain Mapping</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D003865" MajorTopicYN="N">Depressive Disorder, Major</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D005260" MajorTopicYN="N">Female</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D007839" MajorTopicYN="N">Functional Laterality</DescriptorName>
+                <QualifierName UI="Q000502" MajorTopicYN="N">physiology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008279" MajorTopicYN="N">Magnetic Resonance Imaging</DescriptorName>
+                <QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D008297" MajorTopicYN="N">Male</DescriptorName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D001523" MajorTopicYN="N">Mental Disorders</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="Y">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009415" MajorTopicYN="N">Nerve Net</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D009434" MajorTopicYN="N">Neural Pathways</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+            <MeshHeading>
+                <DescriptorName UI="D012559" MajorTopicYN="N">Schizophrenia</DescriptorName>
+                <QualifierName UI="Q000503" MajorTopicYN="N">physiopathology</QualifierName>
+            </MeshHeading>
+        </MeshHeadingList>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">cross-correlation</Keyword>
+            <Keyword MajorTopicYN="N">functional connectivity alteration</Keyword>
+            <Keyword MajorTopicYN="N">mental disorders</Keyword>
+            <Keyword MajorTopicYN="N">partial correlation</Keyword>
+            <Keyword MajorTopicYN="N">resting-state functional brain network</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2014</Year>
+                <Month>8</Month>
+                <Day>15</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2014</Year>
+                <Month>8</Month>
+                <Day>15</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>7</Month>
+                <Day>21</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>ppublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">25122466</ArticleId>
+            <ArticleId IdType="pii">bhu173</ArticleId>
+            <ArticleId IdType="doi">10.1093/cercor/bhu173</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

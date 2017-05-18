@@ -1,0 +1,708 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="In-Data-Review" Owner="NLM">
+        <PMID Version="1">27752054</PMID>
+        <DateCreated>
+            <Year>2016</Year>
+            <Month>10</Month>
+            <Day>18</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>04</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">2045-2322</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>6</Volume>
+                    <PubDate>
+                        <Year>2016</Year>
+                        <Month>Oct</Month>
+                        <Day>18</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Scientific reports</Title>
+                <ISOAbbreviation>Sci Rep</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Unsupervised data-driven stratification of mentalizing heterogeneity in autism.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>35333</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1038/srep35333</ELocationID>
+            <Abstract>
+                <AbstractText>Individuals affected by autism spectrum conditions (ASC) are considerably heterogeneous. Novel approaches are needed to parse this heterogeneity to enhance precision in clinical and translational research. Applying a clustering approach taken from genomics and systems biology on two large independent cognitive datasets of adults with and without ASC (n = 694; n = 249), we find replicable evidence for 5 discrete ASC subgroups that are highly differentiated in item-level performance on an explicit mentalizing task tapping ability to read complex emotion and mental states from the eye region of the face (Reading the Mind in the Eyes Test; RMET). Three subgroups comprising 45-62% of ASC adults show evidence for large impairments (Cohen's d = -1.03 to -11.21), while other subgroups are effectively unimpaired. These findings delineate robust natural subdivisions within the ASC population that may allow for more individualized inferences and accelerate research towards precision medicine goals.</AbstractText>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Lombardo</LastName>
+                    <ForeName>Michael V</ForeName>
+                    <Initials>MV</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Center for Applied Neuroscience, Department of Psychology, University of Cyprus, Nicosia, Cyprus.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Lai</LastName>
+                    <ForeName>Meng-Chuan</ForeName>
+                    <Initials>MC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Child and Youth Mental Health Collaborative at the Centre for Addiction and Mental Health and The Hospital for Sick Children, Department of Psychiatry, University of Toronto, Toronto, Canada.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Psychiatry, National Taiwan University Hospital and College of Medicine, Taipei, Taiwan.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Auyeung</LastName>
+                    <ForeName>Bonnie</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>School of Philosophy, Psychology and Language Sciences, Department of Psychology, University of Edinburgh, Edinburgh, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Holt</LastName>
+                    <ForeName>Rosemary J</ForeName>
+                    <Initials>RJ</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Allison</LastName>
+                    <ForeName>Carrie</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Smith</LastName>
+                    <ForeName>Paula</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Chakrabarti</LastName>
+                    <ForeName>Bhismadev</ForeName>
+                    <Initials>B</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Centre for Integrative Neuroscience and Neurodynamics, School of Psychology and Clinical Language Sciences, University of Reading, Reading, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ruigrok</LastName>
+                    <ForeName>Amber N V</ForeName>
+                    <Initials>AN</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Suckling</LastName>
+                    <ForeName>John</ForeName>
+                    <Initials>J</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brain Mapping Unit, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge, United Kingdom.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Bullmore</LastName>
+                    <ForeName>Edward T</ForeName>
+                    <Initials>ET</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Brain Mapping Unit, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge, United Kingdom.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <CollectiveName>MRC AIMS Consortium</CollectiveName>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Ecker</LastName>
+                    <ForeName>Christine</ForeName>
+                    <Initials>C</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Sackler Institute for Translational Neurodevelopment, Department of Forensic and Neurodevelopmental Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Child &amp;Adolescent Psychiatry, Psychosomatics and Psychotherapy, University Hospital Frankfurt am Main, Goethe-University, Frankfurt am Main, Germany.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Craig</LastName>
+                    <ForeName>Michael C</ForeName>
+                    <Initials>MC</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Sackler Institute for Translational Neurodevelopment, Department of Forensic and Neurodevelopmental Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>National Autism Unit, Bethlem Royal Hospital, SLAM NHS Foundation Trust, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Murphy</LastName>
+                    <ForeName>Declan G M</ForeName>
+                    <Initials>DG</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Sackler Institute for Translational Neurodevelopment, Department of Forensic and Neurodevelopmental Sciences, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Happé</LastName>
+                    <ForeName>Francesca</ForeName>
+                    <Initials>F</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>MRC Social, Genetic, and Developmental Psychiatry Centre, Institute of Psychiatry, Psychology &amp;Neuroscience, King's College London, London, UK.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Baron-Cohen</LastName>
+                    <ForeName>Simon</ForeName>
+                    <Initials>S</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Autism Research Centre, Department of Psychiatry, University of Cambridge, Cambridge, UK.</Affiliation>
+                    </AffiliationInfo>
+                    <AffiliationInfo>
+                        <Affiliation>Cambridgeshire and Peterborough NHS Foundation Trust, Cambridge, United Kingdom.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <GrantList CompleteYN="Y">
+                <Grant>
+                    <GrantID>093875</GrantID>
+                    <Agency>Wellcome Trust</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>G0600977</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>G1000183</GrantID>
+                    <Agency>Medical Research Council</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+                <Grant>
+                    <GrantID>RP-PG-0606-1045</GrantID>
+                    <Agency>Department of Health</Agency>
+                    <Country>United Kingdom</Country>
+                </Grant>
+            </GrantList>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>18</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>England</Country>
+            <MedlineTA>Sci Rep</MedlineTA>
+            <NlmUniqueID>101563288</NlmUniqueID>
+            <ISSNLinking>2045-2322</ISSNLinking>
+        </MedlineJournalInfo>
+        <CommentsCorrectionsList>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2011 Jun 1;56(3):1832-8</RefSource>
+                <PMID Version="1">21356316</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2014 Dec;44(12):3274-6</RefSource>
+                <PMID Version="1">24958434</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Consult Clin Psychol. 2012 Jun;80(3):477-89</RefSource>
+                <PMID Version="1">22506796</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2001 Dec 20;32(6):969-79</RefSource>
+                <PMID Version="1">11754830</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2000 Jun;30(3):205-23</RefSource>
+                <PMID Version="1">11055457</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(10):e47198</RefSource>
+                <PMID Version="1">23094036</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2004 Apr;34(2):163-75</RefSource>
+                <PMID Version="1">15162935</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Res. 2013 Feb;143(2-3):277-84</RefSource>
+                <PMID Version="1">23266067</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 Apr;72(4):386-94</RefSource>
+                <PMID Version="1">25739104</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>JAMA Psychiatry. 2015 Mar;72(3):276-83</RefSource>
+                <PMID Version="1">25629657</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet Neurol. 2015 Nov;14(11):1109-20</RefSource>
+                <PMID Version="1">25891009</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Cogn Affect Neurosci. 2015 Oct;10 (10 ):1348-56</RefSource>
+                <PMID Version="1">25698698</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2002 Aug 30;297(5586):1551-5</RefSource>
+                <PMID Version="1">12202830</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism. 2014 Jan;18(1):17-30</RefSource>
+                <PMID Version="1">24126870</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Autism. 2012 Dec 05;3(1):16</RefSource>
+                <PMID Version="1">23216716</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2014 Apr;171(4):395-7</RefSource>
+                <PMID Version="1">24687194</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Biol Psychiatry. 2015 Jul 15;78(2):126-34</RefSource>
+                <PMID Version="1">25850620</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cochrane Database Syst Rev. 2014 Mar 21;(3):CD008785</RefSource>
+                <PMID Version="1">24652601</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Neurosci. 2015 Feb;18(2):302-9</RefSource>
+                <PMID Version="1">25599222</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Child Dev. 1995 Jun;66(3):843-55</RefSource>
+                <PMID Version="1">7789204</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2015 Mar;54(3):208-216.e1</RefSource>
+                <PMID Version="1">25721186</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell. 2013 Nov 21;155(5):1008-21</RefSource>
+                <PMID Version="1">24267887</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2012 Dec;17(12):1174-9</RefSource>
+                <PMID Version="1">22869033</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Psychiatry. 2015 Feb;20(1):118-25</RefSource>
+                <PMID Version="1">25199916</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Commun. 2014 Dec 10;5:5748</RefSource>
+                <PMID Version="1">25494366</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2008 Aug;47(8):921-9</RefSource>
+                <PMID Version="1">18645422</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Trends Cogn Sci. 2015 Feb;19(2):65-72</RefSource>
+                <PMID Version="1">25496670</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Proc Natl Acad Sci U S A. 2011 Feb 15;108(7):2688-92</RefSource>
+                <PMID Version="1">21282628</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>N Engl J Med. 2015 Feb 26;372(9):793-5</RefSource>
+                <PMID Version="1">25635347</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Brain. 2013 Sep;136(Pt 9):2799-815</RefSource>
+                <PMID Version="1">23935125</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2013 Sep 20;8(9):e75468</RefSource>
+                <PMID Version="1">24073267</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2009 Apr;2(2):67-77</RefSource>
+                <PMID Version="1">19455643</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 1994 Oct;24(5):659-85</RefSource>
+                <PMID Version="1">7814313</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Mol Syst Biol. 2015 Dec 14;11(12 ):841</RefSource>
+                <PMID Version="1">26668231</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>BMC Bioinformatics. 2008 Dec 29;9:559</RefSource>
+                <PMID Version="1">19114008</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Scand J Psychol. 2014 Dec;55(6):585-92</RefSource>
+                <PMID Version="1">24954681</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Lancet. 2014 Mar 8;383(9920):896-910</RefSource>
+                <PMID Version="1">24074734</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2012;7(8):e41650</RefSource>
+                <PMID Version="1">22870240</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2011;6(6):e20835</RefSource>
+                <PMID Version="1">21695147</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Bioinformatics. 2008 Mar 1;24(5):719-20</RefSource>
+                <PMID Version="1">18024473</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cell. 2014 Jul 17;158(2):263-76</RefSource>
+                <PMID Version="1">24998929</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2015 Jun;54(6):479-86.e1</RefSource>
+                <PMID Version="1">26004663</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Curr Opin Neurobiol. 2007 Feb;17(1):103-11</RefSource>
+                <PMID Version="1">17275283</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Am Acad Child Adolesc Psychiatry. 2015 Jan;54(1):11-24</RefSource>
+                <PMID Version="1">25524786</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuroimage. 2010 Oct 1;52(4):1465-76</RefSource>
+                <PMID Version="1">20553896</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Schizophr Bull. 2015 Mar;41(2):483-93</RefSource>
+                <PMID Version="1">24962607</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Med Genet A. 2014 Sep;164A(9):2232-9</RefSource>
+                <PMID Version="1">24980612</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Neuron. 2015 Apr 22;86(2):567-77</RefSource>
+                <PMID Version="1">25864635</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2001 Feb;31(1):5-17</RefSource>
+                <PMID Version="1">11439754</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Stat Appl Genet Mol Biol. 2005;4:Article17</RefSource>
+                <PMID Version="1">16646834</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nature. 2011 May 25;474(7351):380-4</RefSource>
+                <PMID Version="1">21614001</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2014 Dec;55(12):1354-62</RefSource>
+                <PMID Version="1">24889883</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Am J Psychiatry. 2010 Jul;167(7):748-51</RefSource>
+                <PMID Version="1">20595427</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2012 Feb;42(2):257-65</RefSource>
+                <PMID Version="1">21468770</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Front Psychol. 2012 Jul 05;3:220</RefSource>
+                <PMID Version="1">22783217</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Cognition. 1985 Oct;21(1):37-46</RefSource>
+                <PMID Version="1">2934210</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS Biol. 2013;11(4):e1001544</RefSource>
+                <PMID Version="1">23630456</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2009 Jun;2(3):148-56</RefSource>
+                <PMID Version="1">19575384</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Science. 2009 Aug 14;325(5942):883-5</RefSource>
+                <PMID Version="1">19608858</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Soc Neurosci. 2006;1(2):111-23</RefSource>
+                <PMID Version="1">18633780</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Child Psychol Psychiatry. 2001 Feb;42(2):241-51</RefSource>
+                <PMID Version="1">11280420</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Neurosci. 2015 Apr 8;35(14):5837-50</RefSource>
+                <PMID Version="1">25855192</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>PLoS One. 2015 Aug 27;10(8):e0136521</RefSource>
+                <PMID Version="1">26313946</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Transl Psychiatry. 2015 Feb 10;5:e507</RefSource>
+                <PMID Version="1">25668435</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>J Autism Dev Disord. 2006 Jul;36(5):623-36</RefSource>
+                <PMID Version="1">16755332</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Autism Res. 2014 Oct;7(5):568-81</RefSource>
+                <PMID Version="1">24903974</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Nat Rev Genet. 2015 Aug;16(8):441-58</RefSource>
+                <PMID Version="1">26149713</PMID>
+            </CommentsCorrections>
+            <CommentsCorrections RefType="Cites">
+                <RefSource>Philos Trans R Soc Lond B Biol Sci. 2016 Jan 19;371(1686):20150082</RefSource>
+                <PMID Version="1">26644600</PMID>
+            </CommentsCorrections>
+        </CommentsCorrectionsList>
+        <InvestigatorList>
+            <Investigator ValidYN="Y">
+                <LastName>Bailey</LastName>
+                <ForeName>Anthony J</ForeName>
+                <Initials>AJ</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Baron-Cohen</LastName>
+                <ForeName>Simon</ForeName>
+                <Initials>S</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Bolton</LastName>
+                <ForeName>Patrick F</ForeName>
+                <Initials>PF</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Bullmore</LastName>
+                <ForeName>Edward T</ForeName>
+                <Initials>ET</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Carrington</LastName>
+                <ForeName>Sarah</ForeName>
+                <Initials>S</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Catani</LastName>
+                <ForeName>Marco</ForeName>
+                <Initials>M</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Chakrabarti</LastName>
+                <ForeName>Bhismadev</ForeName>
+                <Initials>B</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Craig</LastName>
+                <ForeName>Michael C</ForeName>
+                <Initials>MC</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Daly</LastName>
+                <ForeName>Eileen M</ForeName>
+                <Initials>EM</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Deoni</LastName>
+                <ForeName>Sean C L</ForeName>
+                <Initials>SC</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Ecker</LastName>
+                <ForeName>Christine</ForeName>
+                <Initials>C</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Happé</LastName>
+                <ForeName>Francesca</ForeName>
+                <Initials>F</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Henty</LastName>
+                <ForeName>Julian</ForeName>
+                <Initials>J</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Jezzard</LastName>
+                <ForeName>Peter</ForeName>
+                <Initials>P</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Johnston</LastName>
+                <ForeName>Patrick</ForeName>
+                <Initials>P</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Jones</LastName>
+                <ForeName>Derek K</ForeName>
+                <Initials>DK</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Lai</LastName>
+                <ForeName>Meng-Chuan</ForeName>
+                <Initials>MC</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Lombardo</LastName>
+                <ForeName>Michael V</ForeName>
+                <Initials>MV</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Madden</LastName>
+                <ForeName>Anya</ForeName>
+                <Initials>A</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Mullins</LastName>
+                <ForeName>Diane</ForeName>
+                <Initials>D</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Murphy</LastName>
+                <ForeName>Clodagh M</ForeName>
+                <Initials>CM</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Murphy</LastName>
+                <ForeName>Declan G M</ForeName>
+                <Initials>DG</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Pasco</LastName>
+                <ForeName>Greg</ForeName>
+                <Initials>G</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Ruigrok</LastName>
+                <ForeName>Amber N V</ForeName>
+                <Initials>AN</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Sadek</LastName>
+                <ForeName>Susan A</ForeName>
+                <Initials>SA</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Spain</LastName>
+                <ForeName>Debbie</ForeName>
+                <Initials>D</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Stewart</LastName>
+                <ForeName>Rose</ForeName>
+                <Initials>R</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Suckling</LastName>
+                <ForeName>John</ForeName>
+                <Initials>J</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Wheelwright</LastName>
+                <ForeName>Sally J</ForeName>
+                <Initials>SJ</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Williams</LastName>
+                <ForeName>Steven C</ForeName>
+                <Initials>SC</Initials>
+            </Investigator>
+            <Investigator ValidYN="Y">
+                <LastName>Ellie Wilson</LastName>
+                <ForeName>C</ForeName>
+                <Initials>C</Initials>
+            </Investigator>
+        </InvestigatorList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>04</Month>
+                <Day>29</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2016</Year>
+                <Month>09</Month>
+                <Day>12</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2016</Year>
+                <Month>10</Month>
+                <Day>19</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>epublish</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">27752054</ArticleId>
+            <ArticleId IdType="pii">srep35333</ArticleId>
+            <ArticleId IdType="doi">10.1038/srep35333</ArticleId>
+            <ArticleId IdType="pmc">PMC5067562</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>
