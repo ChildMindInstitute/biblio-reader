@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import manager
-
+import manager, os
+data = manager.get_data()
 def countstats(series, path=None, row_limit=None):
     stat = series.dropna().apply(lambda x: str(x).casefold()).value_counts()
     if row_limit:
@@ -46,35 +46,27 @@ def year_sum_graph(data, column):
     plt.savefig('Citations_sum.png', bbox_inches='tight')
 
 
+def categorize_journals(dict):
+    categories = manager.dir(os.path.join(manager.INPUT_PATH, 'journal_categories'))
+    if len(os.listdir(categories)) == 0:
+        print('No journal categories')
+        return
+    for category in os.listdir(categories):
+        cat_name = category.replace('.txt', '')
+        with open(os.path.join(categories, category)) as c:
+            keywords = [keyword.strip() for keyword in c.readlines()]
+        if '_URL' in cat_name:
+            type = 'URL'
+            cat_name = cat_name.replace('_URL', '')
+        else:
+            type = 'Journal'
+        data_journals = data.dropna(subset=[type])
+        for keyword in keywords:
+            dict.update({row[1]['i']: cat_name for row in data_journals.iterrows() if keyword in row[1][type].lower()})
 
-
-def categorize_journals(dict, keywords, category, type='Journal'):
-    data_journals = data.dropna(subset=[type])
-    for keyword in keywords:
-        dict.update({row[1]['i']: category for row in data_journals.iterrows() if keyword in row[1][type].lower()})
-
-
-other = ['arxiv', 'biorxiv', 'proceedings', 'advances in child development', 'using secondary datasets',
-         '2 center for mind', 'under construct', 'bridging the gap before and after', 'autism imaging and devices']
-
-journals = ['journal', 'plos', 'ieee', 'human brain mapping', 'frontiers', 'molecular', 'nature', 'neuro',
-            'brain', 'biological psychiatry', 'autism', 'scientific', 'cortex', 'trends', 'jama', 'giga', 'bmc',
-            'cell', 'chinese', 'phil. trans.', 'peerj', 'clinical trials', 'psychological', 'radiology', ]
-
-journal_urls = ['nature', 'sciencedirect', 'wiley', 'springer', 'ncbi', 'journal']
-other_urls = ['proceedings', 'ieeexplore', 'preprint', 'crcnetbase', 'patents']
-t_urls = ['gradworks', 'academia', 'thesis', 'dissertation']
 
 journal_categories = {}
-categorize_journals(journal_categories, other, 'Other')
-categorize_journals(journal_categories, journals, 'Journal')
-categorize_journals(journal_categories, journal_urls, 'Journal', type='URL')
-categorize_journals(journal_categories, other_urls, 'Other', type='URL')
-categorize_journals(journal_categories, t_urls, 'Thesis/Dissertation', type='URL')
+categorize_journals(journal_categories)
 journal_categories.update({i: 'Unknown' for i in range(0, 1560) if i not in journal_categories})
 
-#print(*sorted([(key, data.iloc[key]['Journal'], data.iloc[key]['URL']) for key, category in journal_categories.items() if category == 'Other']), sep='\n')
-data['Journal Category'] = [journal for key, journal in sorted(journal_categories.items())]
-
 print(*sorted(journal_categories.items()), sep='\n')
-data.to_csv(path_or_buf='../inputs/FCP_DATA.csv', index=False)
