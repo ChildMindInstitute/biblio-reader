@@ -8,8 +8,8 @@ page. It is not a recursive crawler.
 # ---------
 #
 # 2.11  The Scholar site seems to have become more picky about the
-#       number of results requested. The default of 20 in scholar.py
-#       could cause HTTP 503 responses. scholar.py now doesn't request
+#       number of results requested. The default of 20 in biblio_reader
+#       could cause HTTP 503 responses. biblio_reader now doesn't request
 #       a maximum unless you provide it at the comment line. (For the
 #       time being, you still cannot request more than 20 results.)
 #
@@ -62,7 +62,7 @@ page. It is not a recursive crawler.
 #       - Improved cookie support: the new --cookie-file options
 #         allows the reuse of a cookie across invocations of the tool;
 #         this allows higher query rates than would otherwise result
-#         when invoking scholar.py repeatedly.
+#         when invoking biblio_reader repeatedly.
 #
 #       - Workaround: remove the num= URL-encoded argument from parsed
 #         URLs. For some reason, Google Scholar decides to propagate
@@ -1021,17 +1021,17 @@ def output(querier, filename):
     df.to_csv(path_or_buf=outfile)
 
 def main():
-    usage = """scholar.py [options] <query string>
+    usage = """biblio_reader [options] <query string>
 A command-line interface to Google Scholar.
 
 Examples:
 
 # Retrieve one article written by Einstein on quantum theory:
-scholar.py -c 1 --author "albert einstein" --phrase "quantum theory"
+biblio_reader -c 1 --author "albert einstein" --phrase "quantum theory"
 
 # Retrieve five articles written by Einstein after 1970 where the title
 # does not contain the words "quantum" and "theory":
-scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
+biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
 
     fmt = optparse.IndentedHelpFormatter(max_help_position=50, width=100)
     parser = optparse.OptionParser(usage=usage, formatter=fmt)
@@ -1064,7 +1064,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
 
     group = optparse.OptionGroup(parser, 'Output format',
                                  'Control the name of the output file.')
-    group.add_option('--out', metavar='FILENAME', default='ScholarOutput',
+    group.add_option('-o', '--out', metavar='FILENAME', default='ScholarOutput',
                      help='Export articles in csv format with a chosen filename')
     parser.add_option_group(group)
 
@@ -1091,7 +1091,6 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
 
     if options.cookie_file:
         ScholarConf.COOKIE_JAR_FILE = options.cookie_file
-
     querier = ScholarQuerier()
     querier.apply_settings()
 
@@ -1118,7 +1117,7 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
         query.set_include_citations(False)
 
     querier.send_query(query)
-    manager.DATA_NAME = 'YES'
+    manager.write('DATA.txt', manager.ROOT_PATH, options.out)
     output(querier, options.out)
 
     if options.cookie_file:

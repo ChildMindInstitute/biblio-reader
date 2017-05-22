@@ -2,19 +2,9 @@ import pandas as pd
 import unidecode, os, numpy
 import xml.etree.ElementTree as etree
 from Bio import Entrez
+import manager
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
-
-with open('../inputs/FCP_DATA.csv', 'r') as f, open('../outputs/PMCIDS.txt', 'r') as g:
-    data = pd.read_csv(f)
-    pmcids = pd.read_csv(g)
-
-
-def safeint(x):
-    try:
-        return int(x)
-    except:
-        return x
 
 
 def filterstr(str, filter, decode=True):
@@ -26,11 +16,11 @@ def filterstr(str, filter, decode=True):
         return str
 
 
-def get_ids(file=None):
+def get_ids(data):
     ids = []
     for row in data.iterrows():
         row = row[1]
-        year = str(safeint(row['Year']))
+        year = str(row['Year']).replace('.0', '')
         term = filterstr(str(row['Title']), ")'>',\```[](<}{")
         author = filterstr(str(row['Authors']).lower().split(' & ')[0], ")'',```'[\](}{')")
         request = Entrez.esearch(db='pubmed', term=term, retmax=1, field='title', year=year, author=author)
@@ -40,12 +30,13 @@ def get_ids(file=None):
         else:
             ids.append(0)
     data['PMCID'] = ids
-    if file:
-        data.to_csv('../inputs/FCP_DATA.csv')
     return ids
 
 
-def write_bib(directory):
+def write_bib(data, directory):
+    if 'PMCID' not in data:
+        print("NO PMCIDS")
+        return
     id_dict = {i: int(pmcid) for i, pmcid in dict(zip(data['i'], data['PMCID'])).items() if int(pmcid) != 0}
     for i, pmcid in id_dict.items():
         bib = Entrez.efetch(db='pubmed', id=pmcid, retmode="xml", rettype="full")
@@ -73,5 +64,7 @@ def parse_bib(directory):
 
 
 
-data = data[data.columns[5:]]
-data.to_csv('../inputs/FCP_DATA.csv', index=False)
+if __name__ == '__main__':
+    get_ids(manager.DATA)
+    manager.update()
+    write_bib(manager.DATA, manager)
