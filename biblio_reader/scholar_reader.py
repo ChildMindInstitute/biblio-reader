@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import manager, os
+import manager, os, datetime
 data = manager.get_data()
 def countstats(series, path=None, row_limit=None):
     stat = series.dropna().apply(lambda x: str(x).casefold()).value_counts()
@@ -13,7 +13,7 @@ def countstats(series, path=None, row_limit=None):
 
 
 def citations_per_year(data, sort=False):
-    data['CPY'] = data['Citations'] / (2018 - data['Year'])
+    data['CPY'] = data['Citations'] / (datetime.datetime.now().year + 1 - data['Year'])
     if sort:
         data.sort_values('CPY', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
@@ -67,6 +67,6 @@ def categorize_journals(dict):
 
 journal_categories = {}
 categorize_journals(journal_categories)
-journal_categories.update({i: 'Unknown' for i in range(0, 1560) if i not in journal_categories})
+journal_categories.update({i: 'Unknown' for i in range(0, len(data)) if i not in journal_categories})
 
 print(*sorted(journal_categories.items()), sep='\n')
