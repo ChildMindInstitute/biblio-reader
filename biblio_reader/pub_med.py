@@ -5,7 +5,7 @@ from Bio import Entrez
 import manager
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
-
+data = manager.get_data()
 
 def filterstr(str, filter, decode=True):
     for char in filter:
@@ -44,27 +44,36 @@ def write_bib(data, directory):
             f.write(bib.read())
 
 
-def parse_bib(directory):
-    bibs = {}
+def parse_bib(directory, outfile):
+    parsed = []
     for bib in os.listdir(directory):
         root = etree.parse(open('/'.join([directory, bib]))).getroot()
-        authors = ''
+        authors = []
         for auth in root.findall('.//Author'):
             fore = auth.find('ForeName')
             last = auth.find('LastName')
             if fore is not None and last is not None:
-                authors += ' '.join([fore.text, last.text, '&'])
-        affiliations = ' && '.join(set([aff.text for aff in root.findall('.//Affiliation')]))
-        qualifiers = ' & '.join(set([qual.text for qual in root.findall('.//MeshHeading/QualifierName')]).union(set([
+                authors.append(' '.join([fore.text, last.text]))
+        authors = ';;'.join(authors)
+        affiliations = ';;'.join(set([aff.text for aff in root.findall('.//Affiliation')]))
+        qualifiers = ';;'.join(set([qual.text for qual in root.findall('.//MeshHeading/QualifierName')]).union(set([
             key.text for key in root.findall('.//KeywordList/Keyword')])))
-        bibs[int(bib.replace('.xml', ''))] = (authors, affiliations, qualifiers)
-    bibs.update({i: (None, numpy.NaN, numpy.NaN) for i in range(0, 1560) if i not in bibs.keys()})
-    return {key: bib for key, bib in sorted(bibs.items())}
-
+        parsed.append((int(bib.replace('.xml', '')), authors, affiliations, qualifiers))
+    parsed_data = pd.DataFrame(parsed, columns=['i', 'authors', 'affiliations', 'qualifiers'])
+    parsed_data.sort_values('i', inplace=True)
+    parsed_data.to_csv(path_or_buf=outfile, index=False)
 
 
 
 if __name__ == '__main__':
-    get_ids(manager.DATA)
-    manager.update()
-    write_bib(manager.DATA, manager)
+
+    BIB_DIR = manager.dir(os.path.join(manager.ROOT_PATH, 'bibs'))
+
+    PARSED_BIBS = os.path.join(manager.ROOT_PATH, 'parsed_bibs.csv')
+
+    if 'PMCID' not in data:
+        get_ids(data)
+        manager.update_data()
+    if not os.path.exists(BIB_DIR):
+        write_bib(data, manager.dir(BIB_DIR))
+    parse_bib(BIB_DIR, PARSED_BIBS)
