@@ -1,80 +1,12 @@
-import random, os, csv, ast, collections, math, manager
+import random, os, collections, math, manager
 import pandas as pd
 
 with open('../outputs/unlinkables.csv', 'r') as u:
     bad_data = pd.read_csv(u)
 
 data = manager.get_data()
-paragraphs = {key: value for key, value in manager.get_paragraphs().items() if key not in [int(i) for i in bad_data['i']]}
-
-
-def checker_directory(directory):
-    checks = {}
-    for check in os.listdir(directory):
-        if '.csv' not in check:
-            continue
-        full_path = '/'.join([directory, check])
-        with open(full_path, 'r') as f:
-            reader = list(csv.reader(f))
-            for rows in reader[1:]:
-                if rows[1] != '':
-                    k = int(rows[0])
-                    v = rows[1].replace(' and ', '').upper()
-                    if k not in checks:
-                        checks[k] = [v]
-                    elif len(checks[k]) < 2:
-                        checks[k].append(v)
-                    else:
-                        checks[k].append(v)
-                        singles = [item for item, count in
-                                   collections.Counter(checks[k]).items()
-                                   if count == 1]
-                        for single in singles:
-                            checks[k].remove(single)
-                        if len(checks[k]) == 3:
-                            del checks[k][0]
-    return checks
-
-def specifier_directory(directory):
-    checks = {}
-    for check in os.listdir(directory):
-        if '.csv' not in check:
-            continue
-        full_path = '/'.join([directory, check])
-        with open(full_path, 'r') as f:
-            reader = list(csv.reader(f))
-            for rows in reader[1:]:
-                if rows[1] != '':
-                    k = int(rows[0])
-                    v = rows[2].replace(' and ', '').upper()
-                    if k not in checks:
-                        checks[k] = [v]
-                    elif len(checks[k]) < 2:
-                        checks[k].append(v)
-                    else:
-                        checks[k].append(v)
-                        singles = [item for item, count in
-                                   collections.Counter(checks[k]).items()
-                                   if count == 1]
-                        for single in singles:
-                            checks[k].remove(single)
-                        if len(checks[k]) == 3:
-                            del checks[k][0]
-    return checks
-double_checked_spec = [(key, check) for key, check in
-                  specifier_directory('../inputs/validity_checks').items() if len(check) == 2]
-cmi_authored = [key for key, check in double_checked_spec if 'Q' in check[0] or 'Q' in check[1]]
-
-double_checked = [(key, check) for key, check in
-                  checker_directory('../inputs/validity_checks').items() if len(check) == 2 and key not in cmi_authored]
-conflicts = [(key, check) for key, check in double_checked if check[0] != check[1]]
-usage = [key for key, check in double_checked if check[0] == 'Y']
-no_usage = [key for key, check in double_checked if check[0] == 'N']
-invalid = [key for key, check in double_checked if check[0] == 'I']
-scripts = [key for key, check in double_checked if check[0] == 'S']
-print(len(conflicts + usage + no_usage + invalid + scripts))
-print(len(conflicts), len(usage), len(no_usage), len(invalid), len(scripts), len(double_checked))
-
+paragraphs = {key: value for key, value in manager.get_paragraphs().items()
+              if key not in [int(i) for i in bad_data['i']]}
 
 
 class Member(object):

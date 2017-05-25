@@ -1,0 +1,282 @@
+/* tables */
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Source+Sans+Pro:100,300,400,600,700,300italic,400italic,600italic,700italic");
+$heading_font: 'Roboto Condensed';
+.databaseTable_holder {
+  //border-radius: 4px;
+  overflow: hidden;
+  margin: 3rem auto 3rem auto;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+div[class*="databaseTable_import_wrap"] {
+	max-width: 100%;
+	overflow-x: scroll;
+	overflow-y: scroll;
+	overflow: -moz-scrollbars-none;
+	-ms-overflow-style: none;
+	border: 1px solid #ccc;
+  //border-radius: 0 0 4px 4px;
+	border-top: none;
+}
+.databaseTable {
+		position: relative;
+		//border-radius: 4px;
+}
+.databaseTable_import_wrap div img {
+	padding: 40px;
+}
+.databaseTable_import_wrap div {
+	font: 1em/1.5em "Source Sans Pro", segoe ui, arial, sans-serif;
+	text-transform: uppercase;
+	padding: 1.25em;
+}
+.databaseTable_heading {
+	background-color: #7EB535;
+	color: #fff;
+	font-weight: normal;
+	height: 3em;
+	position: relative;
+}
+.databaseTable_title {
+	position: absolute;
+	left: 0.75rem;
+	top: 0;
+	bottom: 0;
+	font: 100 1.5em/2em $heading_font;
+	width: calc( 100% - 202px - 1em ); /* width of searchbox */
+  text-overflow: ellipsis;
+	overflow: hidden;
+  white-space: nowrap;
+}
+.databaseTable_heading:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 0.125em;
+	background: rgba(0,0,0,0.1);
+}
+.databaseTable_heading input {
+	position: absolute;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	margin: 0;
+	height: 100%;
+	padding: 0px 0.5em;
+	border: none;
+	background: rgba(0,0,0,0.15);
+	color: #fff;
+	font: 100 1em/1.8em "Source Sans Pro", segoe ui, arial, sans-serif;
+}
+.databaseTable_import {
+	font: 1em/1.5em "Source Sans Pro", segoe ui, arial, sans-serif;
+	background-color: #fff;
+	margin: 0px;
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+}
+.databaseTable_import tr.even {
+  background: #f5f5f5;
+}
+.databaseTable_import th {
+	background-color: #efefef;
+	border-bottom: solid 0.125em #dfdfdf;
+	color: #444;
+	padding: 0.5em 0.5em;
+	text-transform: uppercase;
+	font: 700 1em/1em roboto condensed, arial, sans-serif;
+}
+.databaseTable_import th:hover {
+	background-color: #efefef;
+	border-bottom: solid 0.125em #D28700;
+}
+.databaseTable_import .headerSortUp {
+	background-image: url(https://campus.mst.edu/emctest/t4_template/content_types/search_sort_table/images/asc.gif);
+}
+.databaseTable_import .headerSortDown {
+	background-image: url(https://campus.mst.edu/emctest/t4_template/content_types/search_sort_table/images/desc.gif);
+}
+.databaseTable_import .headerSortDown, .databaseTable_import .headerSortUp {
+	border-bottom-color: #D28700;
+	background-color: #f9f9f9;
+}/*
+.databaseTable_import .header:first-of-type {
+	border-left: 1px solid #ccc;
+}*/
+.databaseTable_import thead tr .header {
+	background-image: url(https://campus.mst.edu/emctest/t4_template/content_types/search_sort_table/images/bg.gif);
+  background-size: 1.333em;
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+	padding-right: 2em;
+	border-right: 1px solid #ccc;
+}
+.databaseTable_import td {
+	color: #333;
+	padding: 0.25em 0.5em;
+	vertical-align: middle;
+	white-space: nowrap;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	font: 1em/1.25em roboto condensed, arial, sans-serif;
+
+}
+.databaseTable_import tr:last-of-type td {
+  border-bottom: none;
+}
+.databaseTable_import td:last-of-type, .databaseTable_import .header:last-of-type {
+    border-right: none;
+}
+.databaseTable_import td {
+	position: relative;
+}
+.databaseTable_import td:nth-of-type(even):after {
+	display: none;
+  content: '';
+	background: rgba(186, 180, 139, 0.09);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.databaseTable_heading input:focus, .databaseTable_heading input:hover {
+	background: rgba(0,0,0,0.2);
+  border: none;
+  outline: none;
+}
+.databaseTable_heading input::-webkit-input-placeholder {
+	color: #fff;
+}
+.databaseTable_heading input:-moz-input-placeholder {
+	color: #fff;
+}
+.databaseTable_heading input::-moz-input-placeholder {
+	color: #fff;
+}
+.databaseTable_import_wrap::-webkit-scrollbar {
+    display: none;
+}
+.databaseTable_heading input:focus::-webkit-input-placeholder {
+	color: transparent !important;
+}
+.databaseTable_heading input:focus:-moz-input-placeholder {
+	color: transparent !important;
+}
+.databaseTable_heading input:focus::-moz-input-placeholder {
+	color: transparent !important;
+}
+.databaseTable_UI_button {
+	background: rgba(0,0,0,0.2);
+	width: 5%;
+	min-width: 3.75em;
+}
+.databaseTable_UI_scrollRight {
+	position: absolute;
+	top: 0;
+	right: 0;
+  bottom: 0;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.0195) 25%, rgba(0,0,0,0.1105) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0)), color-stop(25%,rgba(0,0,0,0.0195)), color-stop(100%,rgba(0,0,0,0.1105))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.0195) 25%,rgba(0,0,0,0.1105) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.0195) 25%,rgba(0,0,0,0.1105) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.0195) 25%,rgba(0,0,0,0.1105) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.0195) 25%,rgba(0,0,0,0.1105) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#2b000000',GradientType=1 ); /* IE6-9 */
+}
+.databaseTable_UI_scrollRight:before {
+  content: '\f138';
+  position: absolute;
+  background: rgba( 255,255,255, 0.87);
+  box-shadow: 0 0.5em 1.5em rgba(0,0,0,0.2);
+  border-radius: 1.5em 0 0 1.5em;
+  font-family: 'FontAwesome';
+  font-size: 2.5em;
+  line-height: 1.15em;
+  padding: 0 0.1em 0 0.15em;
+  top: 4em;
+  right: 0px;
+  color: #333;
+  border-left: 0.08em solid #7EB535;
+  transition: padding linear 60ms;
+}
+.databaseTable_UI_scrollLeft:before {
+  content: '\f137';
+  position: absolute;
+  background: rgba( 255,255,255, 0.87);
+  padding: 0 0.15em 0 0.1em;
+  font-family: 'FontAwesome';
+  font-size: 2.5em;
+  line-height: 1.15em;
+  border-radius: 0 1.5em 1.5em 0;
+  box-shadow: 0 0.25em 1.5em rgba(0,0,0,0.2);
+  color: #333;
+  top: 4em;
+  left: 0px;
+  border-right: 0.08em solid #7EB535;
+  transition: padding linear 60ms;
+}
+.databaseTable_UI_scrollRight:hover:before  {
+	padding-right: 0.33em;
+  border-left-color: #CC570E;
+  transition: padding linear 60ms;
+}
+.databaseTable_UI_scrollLeft:hover:before {
+	padding-left: 0.33em;
+  border-right-color: #CC570E;
+}
+.databaseTable_UI_scrollLeft {
+	position: absolute;
+	top: 0;
+	left: 0;
+  bottom: 0;
+	background: -moz-linear-gradient(left,  rgba(0,0,0,0.1105) 0%, rgba(0,0,0,0.0195) 75%, rgba(0,0,0,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,0,0,0.1105)), color-stop(75%,rgba(0,0,0,0.0195)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(0,0,0,0.1105) 0%,rgba(0,0,0,0.0195) 75%,rgba(0,0,0,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(0,0,0,0.1105) 0%,rgba(0,0,0,0.0195) 75%,rgba(0,0,0,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(0,0,0,0.1105) 0%,rgba(0,0,0,0.0195) 75%,rgba(0,0,0,0) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(0,0,0,0.1105) 0%,rgba(0,0,0,0.0195) 75%,rgba(0,0,0,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2b000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+}
+/* custom heading colors */
+.green_bg {
+  background-color: #75B634;
+  color: #fff; }
+
+.gray_bg {
+  background-color: #5b5b5b;
+  color: #fff; }
+
+.blue_bg {
+  background-color: #1D4A91;
+  color: #fff; }
+
+// unecessary font size changes with v3
+/*
+@media screen and (max-width: 820px) {
+  .databaseTable_import td {
+    font-size: 1.5em;
+  }
+  .databaseTable_import th {
+    font-size: 1.5em;
+  }
+  .databaseTable_heading input {
+    font-size: 1.5em;
+  }
+  .databaseTable_title {
+    font-size: 2.5em;
+  }
+  .databaseTable_heading {
+    height: 4em;
+  }
+  .databaseTable_UI_button {
+    font-size: 1.5em;
+  }
+}*/
