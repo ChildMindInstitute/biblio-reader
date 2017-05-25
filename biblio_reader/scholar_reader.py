@@ -1,7 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import manager, os, datetime
+import manager, os, datetime, re
 data = manager.get_data()
+
+
 def countstats(series, path=None, row_limit=None):
     stat = series.dropna().apply(lambda x: str(x).casefold()).value_counts()
     if row_limit:
@@ -46,8 +48,8 @@ def year_sum_graph(data, column):
     plt.savefig('Citations_sum.png', bbox_inches='tight')
 
 
-def categorize_journals(dict):
-    categories = manager.dir(os.path.join(manager.INPUT_PATH, 'journal_categories'))
+def categorize_journals(data, categories):
+    res = {}
     if len(os.listdir(categories)) == 0:
         print('No journal categories')
         return
@@ -62,11 +64,6 @@ def categorize_journals(dict):
             type = 'Journal'
         data_journals = data.dropna(subset=[type])
         for keyword in keywords:
-            dict.update({row[1]['i']: cat_name for row in data_journals.iterrows() if keyword in row[1][type].lower()})
-
-
-journal_categories = {}
-categorize_journals(journal_categories)
-journal_categories.update({i: 'Unknown' for i in range(0, len(data)) if i not in journal_categories})
-
-print(*sorted(journal_categories.items()), sep='\n')
+            res.update({row[1]['i']: cat_name for row in data_journals.iterrows() if keyword in row[1][type].lower()})
+    res.update({i: 'Unknown' for i in range(0, len(data)) if i not in res})
+    return res
