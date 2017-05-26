@@ -1,4 +1,4 @@
-import os, pandas, sys, ast
+import os, pandas, sys, ast, re
 
 
 def dir(dir):
@@ -23,10 +23,19 @@ OUTPUT_PATH = dir(os.path.join(MAIN_DIR, 'outputs'))
 
 ROOT_PATH = dir(os.path.join(MAIN_DIR, 'root'))
 
-FCP_TERMS = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
+TERMS = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
        'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
        'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000',
        'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC', 'ABIDE', 'Di Martino']
+
+
+WEIGHTED_SETS = [('NKI', re.compile('(\WNKI\W)?Rockland\s(Sample)?')), ('ADHD200', re.compile('adhd\W200')),
+        ('CORR', re.compile('\scorr\s|(consortium\sfor\sreproducibility\sand\sreliability)')),
+        ('ABIDE', re.compile('abide|(autism\sbrain\simaging\sdata\sexchange)'))]
+
+UNWEIGHTED_SETS = [('FCP', re.compile('1,?000\sfunctional\sconnectomes?(\sproject)?|fcp|fcon[\s_]1000')),
+                   ('INDI', re.compile('\Windi\W|(international\sneuroimaging\sdata\Wsharing\sinitiative)'))]
+
 
 def get_file(file, dir):
     file_name = file.replace('_', ' ').split('.')[0]

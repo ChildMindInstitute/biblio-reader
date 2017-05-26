@@ -165,32 +165,76 @@ def find_corrupted(pdf_directory):
 def find_paragraphs(txt_directory, terms, outfile=None):
     res = {}
     terms = list(map((lambda x: x.lower()), terms))
-    for path, dirs, files in os.walk(txt_directory):
-        for file in files:
-            full_file = '/'.join([path, file])
-            with open(full_file, 'r') as f:
-                text = f.read()
-            paragraphs = re.split(r'[ \t\r\f\v]*\n[ \t\r\f\v]*\n[ \t\r\f\v]*', text)
-            paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
-            key_paragraphs = []
-            for term in terms:
-                re_term = term.replace(' ', '[\s]*')
-                key_paragraphs += [paragraph for paragraph in paragraphs
-                                   if re.search(re_term, paragraph) and paragraph not in key_paragraphs]
-            for term in terms:
-                re_term = term.replace(' ', '[\s]*')
-                key_paragraphs = [str(re.sub(re_term, '@@@@' + term, paragraph)) for paragraph in key_paragraphs]
-            res[int(file.replace('.txt', ''))] = key_paragraphs
+    for file in os.listdir(txt_directory):
+        full_file = os.path.join(txt_directory, file)
+        with open(full_file, 'r') as f:
+            text = f.read()
+        paragraphs = re.split(r'[ \t\r\f\v]*\n[ \t\r\f\v]*\n[ \t\r\f\v]*', text)
+        paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
+        key_paragraphs = []
+        for term in terms:
+            re_term = term.replace(' ', '\s+')
+            key_paragraphs += [paragraph for paragraph in paragraphs
+                               if re.search(re_term, paragraph) and paragraph not in key_paragraphs]
+        for term in terms:
+            re_term = term.replace(' ', '\s+')
+            key_paragraphs = [str(re.sub(re_term, '@@@@' + term, paragraph)) for paragraph in key_paragraphs]
+        res[int(file.replace('.txt', ''))] = key_paragraphs
     if outfile:
         with open(outfile, 'w') as f:
             f.write(str(res))
     return res
 
+
+def assoc_sets(dir, sets, less_weighted_sets=None):
+    res = {}
+    for file in os.listdir(dir):
+        associations = []
+        full_file = os.path.join(dir, file)
+        with open(full_file, 'r') as f:
+            text = f.read().lower()
+        for group, pattern in sets:
+            if re.search(pattern, text) is not None:
+                associations.append(group)
+        if less_weighted_sets is not None and len(associations) == 0:
+            for group, pattern in less_weighted_sets:
+                if re.search(pattern, text) is not None:
+                    associations.append(group)
+        res[int(file.replace('.txt', ''))] = associations
+    res.update({i: [] for i in range(0, len(data)) if i not in res})
+    res = {i: sets for i, sets in sorted(res.items())}
+    return res
+
+
+def auth_to_set(data, set_associations, outfile=None):
+    data = data.dropna(subset=['Authors'])
+    authors = [(i, authors.split(' & ')) for i, authors in zip(data['i'], data['Authors'])]
+    author_associations = {}
+    for i, author_list in authors:
+        for author in author_list:
+            if author in author_associations:
+                author_associations[author] += set_associations[i]
+            else:
+                author_associations[author] = set_associations[i]
+    if outfile:
+        pd.DataFrame(list(author_associations.items()), columns=['Author', 'Data set']).\
+            to_csv(path_or_buf=outfile, index_label='i')
+    return author_associations
+
+
+TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
+
+data['Sets'] = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).values()
+mg.update_data()
+"""
 def main():
 
     PDF_DIR = mg.dir(os.path.join(mg.INPUT_PATH, 'pdfs'))
 
     TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
+
+    dict_data = dict(zip(data['i'], data['URL']))
+
 
     if len(os.listdir(PDF_DIR)) == 0:
         pass
@@ -207,3 +251,4 @@ def main():
     bad_data = list(no_pdfs) + empty_paragraphs
     data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
 
+"""
