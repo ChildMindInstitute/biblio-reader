@@ -213,9 +213,9 @@ def auth_to_set(data, set_associations, outfile=None):
     for i, author_list in authors:
         for author in author_list:
             if author in author_associations:
-                author_associations[author] += set_associations[i]
+                author_associations[author].update(set_associations[i])
             else:
-                author_associations[author] = set_associations[i]
+                author_associations[author] = set(set_associations[i])
     if outfile:
         pd.DataFrame(list(author_associations.items()), columns=['Author', 'Data set']).\
             to_csv(path_or_buf=outfile, index_label='i')
@@ -224,9 +224,11 @@ def auth_to_set(data, set_associations, outfile=None):
 
 TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
 
+auth_to_set(data, assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS), outfile=os.path.join(mg.ROOT_PATH, 'author_sets.csv'))
+"""
 data['Sets'] = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).values()
 mg.update_data()
-"""
+
 def main():
 
     PDF_DIR = mg.dir(os.path.join(mg.INPUT_PATH, 'pdfs'))
