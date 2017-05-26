@@ -3,6 +3,8 @@ import os, sys, csv, collections
 from biblio_reader import scholar_reader
 
 checks = mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks'))
+authors = mg.get_author_sets()
+
 if len(os.listdir(checks)) == 0:
     print('No validity checks to analyze')
     sys.exit(1)
@@ -68,19 +70,98 @@ def correct_types(directory, data):
     return {key: type for key, type in sorted(journal_types.items())}
 
 
-data['Journal Category'] = correct_types(checks, data).values()
+def data_contributions_count(data, directory, author_associations):
+    data = data.dropna(subset=['Authors'])
+    contributing_papers = set()
+    for check in os.listdir(directory):
+        if '.csv' not in check:
+            continue
+        full_path = '/'.join([directory, check])
+        with open(full_path, 'r') as f:
+            reader = list(csv.reader(f))
+            for rows in reader[1:]:
+                k = int(rows[0])
+                v = rows[2].replace(' and ', '').upper()
+                if 'Q' in v:
+                    contributing_papers.add(k)
+    global original_contributers
+    original_contributers = list(contributing_papers)
+    contributing_authors = {author for i, authors in zip(data['i'], data['Authors']) for author in authors.split(' & ')
+                            if i in contributing_papers}
+    for row in data.iterrows():
+        row = row[1]
+        authors = [author for author in row['Authors'].split(' & ') if author in contributing_authors]
+        sets = row['Sets']
+        i = row['i']
+        if len(authors) != 0:
+            for author in authors:
+                if any(s in author_associations[author] for s in sets):
+                    contributing_papers.add(i)
+    return contributing_papers
 
-data['Data Use'] = usage_directory(checks).values()
 
-mg.update_data()
+def checker_stat(type, checks, intersection=None):
+    stat = [key for key, check in checks.items() if check[0] == type]
+    if not intersection:
+        return len(stat)
+    else:
+        return len([key for key in stat if key in intersection])
+
+def calculate_stats():
+    use_checks = usage_directory(checks)
+    type_checks = correct_types(checks, data)
+    contributions = data_contributions_count(data, checks, authors)
+    no_contributions = [i for i in range(0, len(data)) if i not in contributions]
+    stats = []
+    for usage in ['Y', 'S', 'N', 'I']:
+        use_stats = []
+        use_stats.append(checker_stat(usage, use_checks))
+        use_stats.append(checker_stat(usage, use_checks, intersection=no_contributions))
+        for type in ['Journal', 'Other', 'Thesis']:
+            use_stats.append(checker_stat(usage, use_checks,
+                                          intersection=[key for key, check in type_checks.items() if check == type]))
+        stats.append((usage, use_stats))
+    for use_type, use in stats:
+        for i, stat in enumerate(use):
+            if i == 0:
+                message = 'Number of articles'
+            elif i == 1:
+                message = 'Number of articles that did not contribute'
+            elif i == 2:
+                message = 'Number of journals'
+            elif i == 3:
+                message = 'Number of preprints, proceedings, books, etc,'
+            else:
+                message = 'Number of theses/dissertations'
+            if use_type == 'Y':
+                message += ' that used data:'
+            elif use_type == 'N':
+                message += ' that did not use data:'
+            elif use_type == 'S':
+                message += ' that only used scripts:'
+            else:
+                message += ' that were invalid:'
+            print(message, stat)
 
 """
-double_checked_spec = [(key, check) for key, check in
-                  specifier_directory('../inputs/validity_checks').items() if len(check) == 2]
-cmi_authored = [key for key, check in double_checked_spec if 'Q' in check[0] or 'Q' in check[1]]
+def calculate_stats():
+    pass
+    usage = usage_directory(checks)
+    types = correct_types(checks, data)
+    contributions = data_contributions_count(data, checks, authors)
+    no_contributions = [i for i in range(0, len(data)) if i not in contributions]
+    print('Number of articles that used data:', checker_stat('Y', usage), '\n',
+          'Number of articles that did not use data:', checker_stat('N', usage), '\n',
+          'Number of articles that only used scripts:', checker_stat('S', usage), '\n',
+          'Number of articles that were invalid:', checker_stat('I', usage))
+    print('Number of journals:', checker_stat('Journal', types), '\n',
+          'Number of theses and dissertations:', checker_stat('Thesis', types), '\n',
+          'Number of preprints, proceedings, books, etc.:', checker_stat('Other', types))
+    print('Number of articles that used data and did not contribute:', checker_stat('Y', usage, intersection=no_contributions))
+"""
 
-double_checked = [(key, check) for key, check in
-                  checker_directory('../inputs/validity_checks').items() if len(check) == 2 and key not in cmi_authored]
+calculate_stats()
+"""
 conflicts = [(key, check) for key, check in double_checked if check[0] != check[1]]
 usage = [key for key, check in double_checked if check[0] == 'Y']
 no_usage = [key for key, check in double_checked if check[0] == 'N']

@@ -65,3 +65,7 @@ def get_bibs():
 def update_data():
     DATA.to_csv(path_or_buf=os.path.join(OUTPUT_PATH, DATA_NAME),
                 index=False)
+
+def get_author_sets():
+    df = pandas.read_csv(get_file('author_sets.csv', ROOT_PATH))
+    return dict(zip(df['Author'], df['Data set']))
