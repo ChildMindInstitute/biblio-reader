@@ -88,14 +88,15 @@ def data_contributions_count(data, directory, author_associations):
     original_contributers = list(contributing_papers)
     contributing_authors = {author for i, authors in zip(data['i'], data['Authors']) for author in authors.split(' & ')
                             if i in contributing_papers}
-    for row in data.iterrows():
+    for row in data.dropna(subset=['Sets']).iterrows():
         row = row[1]
         authors = [author for author in row['Authors'].split(' & ') if author in contributing_authors]
-        sets = row['Sets']
+        sets = row['Sets'].split(';')
         i = row['i']
         if len(authors) != 0:
             for author in authors:
                 if any(s in author_associations[author] for s in sets):
+                    print(i, author, sets, author_associations[author])
                     contributing_papers.add(i)
     return contributing_papers
 

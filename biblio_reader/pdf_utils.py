@@ -1,4 +1,4 @@
-import PyPDF2, os, re
+import PyPDF2, os, re, json
 import pandas as pd
 import urllib.parse as urlparse
 import urllib.request as urllib
@@ -181,8 +181,8 @@ def find_paragraphs(txt_directory, terms, outfile=None):
             key_paragraphs = [str(re.sub(re_term, '@@@@' + term, paragraph)) for paragraph in key_paragraphs]
         res[int(file.replace('.txt', ''))] = key_paragraphs
     if outfile:
-        with open(outfile, 'w') as f:
-            f.write(str(res))
+        with open(outfile + '.json', 'w') as f:
+            json.dump(res, f)
     return res
 
 
@@ -222,9 +222,11 @@ def auth_to_set(data, set_associations, outfile=None):
     return author_associations
 
 
-TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
+paragraphs = json.load(open(os.path.join(mg.ROOT_PATH, 'paragraphs.json')))
 
-auth_to_set(data, assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS), outfile=os.path.join(mg.ROOT_PATH, 'author_sets.csv'))
+print([int(k) for k in paragraphs])
+
+
 """
 data['Sets'] = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).values()
 mg.update_data()
