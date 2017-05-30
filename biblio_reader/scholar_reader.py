@@ -1,17 +1,36 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import manager, os, datetime, re
-data = manager.get_data()
+import manager as mg
+import os, datetime, collections, ast
+data = mg.get_data()
 
 
-def countstats(series, path=None, row_limit=None):
-    stat = series.dropna().apply(lambda x: str(x).casefold()).value_counts()
+def count_visualizer(value_count, out, stat_type='csv', row_limit=None):
+    """
+    Counts values of specific columns in dataframe
+    :param value_count: A value count series (see pandas value_count function)
+    :param out: output file name
+    :param stat_type: one of: csv, bar, pie
+    :param row_limit: Sets a limit to how many highest values should be counted
+    :return: csv, bar, or pie file
+    """
     if row_limit:
-        stat = stat.head(row_limit)
-    if path:
-        stat.to_csv(path=path, header=True)
+        value_count = value_count.head(row_limit)
+    if stat_type == 'csv':
+        value_count.to_csv(path=out, header=[value_count.name, 'Count'])
+        return
+    plt.figure()
+    plt.ylabel('Count')
+    plt.title(value_count.name + ' Count')
+    if stat_type in ['pie',  'bar']:
+        value_count.plot(kind=stat_type)
+        plt.xlabel('', visible=False)
     else:
-        return stat
+        raise IOError("Invalid stat type")
+    plt.savefig(out, bbox_inches='tight')
+    plt.clf()
+
+
 
 
 def citations_per_year(data, sort=False):
@@ -21,8 +40,9 @@ def citations_per_year(data, sort=False):
         data.reset_index(drop=True, inplace=True)
 
 
-def value_count_graph(series, xcount=10):
-    value_series = countstats(series)
+def value_count_graph(data, column, xcount=10):
+    series = data[column]
+    value_series = value_counter(data, series)
     value_df = pd.DataFrame()
     for item in value_series.head(xcount).index.tolist():
         value_df[item] = count_item_year(series.name, item)
@@ -35,17 +55,11 @@ def value_count_graph(series, xcount=10):
     plt.savefig('Journals_by_year.png', bbox_inches='tight')
 
 
-def count_item_year(data, column, item):
-    return data.loc[data[column].apply(lambda x:str(x).casefold()) == item]['Year'].value_counts()
-
-
-def year_sum_graph(data, column):
-    df = data.groupby('Year').sum()[column]
-    plt.figure()
-    plt.ylabel(column)
-    plt.xlabel('Year')
-    df.plot.bar()
-    plt.savefig('Citations_sum.png', bbox_inches='tight')
+def count_sets(data):
+    if 'Sets' not in data:
+        raise IOError('No sets to work with')
+    sets = [dset for dsets in data['Sets'].dropna() for dset in dsets.split(';')]
+    return pd.Series(collections.Counter(sets), name='Sets')
 
 
 def categorize_journals(data, categories):
@@ -67,3 +81,23 @@ def categorize_journals(data, categories):
             res.update({row[1]['i']: cat_name for row in data_journals.iterrows() if keyword in row[1][type].lower()})
     res.update({i: 'Unknown' for i in range(0, len(data)) if i not in res})
     return res
+
+#countstats(data['Journal'], path=os.path.join(manager.OUTPUT_PATH, 'stats/journalstat.csv'))
+
+#count_visualizer(count_sets(data), , row_limit=20, stat_type='pie')
+"""
+
+journal_dict = {journal.lower(): typ for journal, typ in journal_dict.items()}
+with open(os.path.join(manager.OUTPUT_PATH, 'stats/journal_use_stat.csv'), 'r') as f:
+    journal_stat = pd.read_csv(f)
+    res = []
+    for journal in journal_stat['Journal']:
+        try:
+            res.append(journal_dict[journal])
+        except KeyError:
+            res.append('Unknown')
+    journal_stat['Journal Type'] = res
+    journal_stat.to_csv(path_or_buf=os.path.join(manager.OUTPUT_PATH, 'stats/journal_use_stat.csv'), index=False)
+"""
+
+
