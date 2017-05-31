@@ -37,42 +37,28 @@ def citations_per_year(data, sort=False):
         data.sort_values('CPY', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
 
-def stack_bar(data, column, stacker, out, split=None):
+def stack_bar(data, column, stacker, stack_type, out, split=None):
     plt.figure()
-    last_stack = None
-    for stack in data[stacker].value_counts().index.tolist():
-        print(stack)
+    last_stack = []
+    for stack in stacker:
         if not split:
-            stacked = [value for value in data[data[stacker] == stack].dropna()[column]]
+            stacked = [value for value in data[data[stack_type] == stack][column].dropna()]
         else:
             stacked = [value for values in
-                       data[data[stacker] == stack].dropna()[column]
+                       data[data[stack_type] == stack][column].dropna()
                        for value in values.split(split)]
-        print()
-        stacked = collections.Counter(stacked)
-        print(*stacked.items(), sep='\n')
-        plt.bar(range(len(stacked)), list(stacked.values()), align='center', label=stack, bottom=last_stack)
-        #plt.set_prop_cycle(cycler('color', ['r', 'g', 'b', 'y']))
-        last_stack = stack
+        stacked = {typ: count for typ, count in sorted(collections.Counter(stacked).items())[:10]}
+        if len(last_stack) > len(stacked):
+            stacked.update({'No data ' + str(i): 0 for i in range(len(last_stack) - len(stacked))})
+        last_stack += [0 for i in range(len(stacked) - len(last_stack))]
+        print(len(stacked), len(last_stack))
+        plt.bar(range(len(stacked)), list(stacked.values()), align='center', label=stack,
+                bottom=last_stack)
+        last_stack = [x + y for x, y in zip(last_stack, list(stacked.values()))]
     plt.xticks(range(len(stacked)), stacked.keys())
+    plt.title(column + ' by ' + stack_type)
+    plt.legend()
     plt.savefig(out)
-
-#stack_bar(data, 'Sets', 'Year', 'tester.png', split=';')
-
-
-def value_count_graph(data, column, xcount=10):
-    series = data[column]
-    value_series = value_counter(data, series)
-    value_df = pd.DataFrame()
-    for item in value_series.head(xcount).index.tolist():
-        value_df[item] = count_item_year(series.name, item)
-    value_df.sort_index(inplace=True, ascending=False)
-    value_df = value_df.T
-    plt.figure()
-    plt.xlabel(series.name)
-    plt.ylabel('Number of' + series.name + 's')
-    value_df.plot.bar(stacked=True)
-    plt.savefig('Journals_by_year.png', bbox_inches='tight')
 
 
 def count_sets(data):
@@ -82,6 +68,8 @@ def count_sets(data):
     return pd.Series(collections.Counter(sets), name='Sets')
 
 
+stack_bar(data, 'Sets', data['Journal'].dropna().value_counts().head(10), 'Journal', 'tester.png', split=';')
+print(count_sets(data))
 def categorize_journals(data, categories):
     res = {}
     if len(os.listdir(categories)) == 0:
@@ -116,7 +104,6 @@ def author_links(data):
     return links
 
 
-author_counts = {}
 
 #countstats(data['Journal'], path=os.path.join(manager.OUTPUT_PATH, 'stats/journalstat.csv'))
 
