@@ -60,7 +60,13 @@ def geo_lookup(affiliations):
         else:
             geo_dict[latlong].append(affils)
         print('Successful finds for article no', affils, ':', successes)
-    with open('affiliations.json', 'w') as jf:
-        json.dump(geo_dict, jf)
+    with open('affiliations.json', 'w') as jf, open('affiliations_fail.txt', 'w') as t:
+        try:
+            json.dump(geo_dict, jf)
+        except:
+            try:
+                t.write(str(geo_dict))
+            except:
+                print(*geo_dict.items(), sep='\n')
 
 #geo_lookup([])
