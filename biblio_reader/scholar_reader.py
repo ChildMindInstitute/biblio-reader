@@ -2,10 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import manager as mg
 import os, datetime, collections, re
+import numpy as np
 data = mg.get_data()
+data = data[data['Data Use'] != 'I']
 
 
-def count_visualizer(value_count, out, stat_type, name, row_limit=None):
+def count_visualizer(value_count, stat_type, name, out, row_limit=None):
     """
     Counts values of specific columns in dataframe
     :param value_count: A value count series, dict, or LOT (see pandas value_count function)
@@ -37,9 +39,10 @@ def citations_per_year(data, sort=False):
         data.sort_values('CPY', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
 
+
 def stack_bar(data, column, stacker, stack_type, out, split=None):
     plt.figure()
-    last_stack = []
+    stacks = []
     for stack in stacker:
         if not split:
             stacked = [value for value in data[data[stack_type] == stack][column].dropna()]
@@ -47,7 +50,24 @@ def stack_bar(data, column, stacker, stack_type, out, split=None):
             stacked = [value for values in
                        data[data[stack_type] == stack][column].dropna()
                        for value in values.split(split)]
-        stacked = {typ: count for typ, count in sorted(collections.Counter(stacked).items())[:10]}
+        stacks.append({typ: count for typ, count in sorted(collections.Counter(stacked).items())[:10]})
+    max_stack = max(stacks, key=len)
+    last_stack = list(np.zeros(len(max_stack), dtype=np.int))
+    for name, stack in zip(stacker, stacks):
+        empty_stacks = {key: 0 for key in max_stack.keys() if key not in stack}
+        if len(empty_stacks) > 0:
+            stack.update(empty_stacks)
+            stack = {key: value for key, value in sorted(stack.items())}
+        print(name, stack, last_stack)
+        plt.bar(range(len(stack)), list(stack.values()), align='center', label=name,
+                bottom=last_stack)
+        last_stack = [x + y for x, y in zip(last_stack, list(stack.values()))]
+    plt.xticks(range(len(max_stack)), max_stack.keys())
+    plt.title(column + ' by ' + stack_type)
+    plt.legend()
+    plt.savefig(out)
+
+    """
         if len(last_stack) > len(stacked):
             stacked.update({'No data ' + str(i): 0 for i in range(len(last_stack) - len(stacked))})
         last_stack += [0 for i in range(len(stacked) - len(last_stack))]
@@ -59,7 +79,7 @@ def stack_bar(data, column, stacker, stack_type, out, split=None):
     plt.title(column + ' by ' + stack_type)
     plt.legend()
     plt.savefig(out)
-
+    """
 
 def count_sets(data):
     if 'Sets' not in data:
@@ -68,8 +88,6 @@ def count_sets(data):
     return pd.Series(collections.Counter(sets), name='Sets')
 
 
-stack_bar(data, 'Sets', data['Journal'].dropna().value_counts().head(10), 'Journal', 'tester.png', split=';')
-print(count_sets(data))
 def categorize_journals(data, categories):
     res = {}
     if len(os.listdir(categories)) == 0:
@@ -103,15 +121,21 @@ def author_links(data):
                 links[author] = others
     return links
 
+STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
+stack_bar(data, 'Data Use', range(2009, 2018), 'Year', os.path.join(STAT_DIR, 'sets_by_year.png'))
+"""
+STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
+count_visualizer(data['Year'].dropna().apply(lambda x: int(x)).value_counts(), 'bar', 'Year Count',
+                 os.path.join(STAT_DIR, 'Year_count'))
 
+count_visualizer(count_sets(data), 'pie', 'Set Count', os.path.join(STAT_DIR, 'Stat_count'))
 
-#countstats(data['Journal'], path=os.path.join(manager.OUTPUT_PATH, 'stats/journalstat.csv'))
+stack_bar(data, 'Sets', range(2009, 2018), 'Year', os.path.join(STAT_DIR, 'sets_by_year.png'), split=';')
 
 #count_visualizer(count_sets(data), 'tester', 'pie', 'Set Use')
-
-#print(list(count_sets(data).index))
 """
 
+"""""
 journal_dict = {journal.lower(): typ for journal, typ in journal_dict.items()}
 with open(os.path.join(manager.OUTPUT_PATH, 'stats/journal_use_stat.csv'), 'r') as f:
     journal_stat = pd.read_csv(f)

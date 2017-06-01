@@ -1,4 +1,4 @@
-import PyPDF2, os, re, json
+import PyPDF2, os, re, json, numpy
 import pandas as pd
 import urllib.parse as urlparse
 import urllib.request as urllib
@@ -200,9 +200,10 @@ def assoc_sets(dir, sets, less_weighted_sets=None):
             for group, pattern in less_weighted_sets:
                 if re.search(pattern, text) is not None:
                     associations.append(group)
+                    break
         res[int(file.replace('.txt', ''))] = associations
     res.update({i: [] for i in range(0, len(data)) if i not in res})
-    res = {i: sets for i, sets in sorted(res.items())}
+    res = {i: ';'.join(sets) for i, sets in sorted(res.items())}
     return res
 
 
@@ -221,12 +222,16 @@ def auth_to_set(data, set_associations, outfile=None):
             to_csv(path_or_buf=outfile, index_label='i')
     return author_associations
 
-
 paragraphs = json.load(open(os.path.join(mg.ROOT_PATH, 'paragraphs.json')))
+#print(*assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).items(), sep='\n')
+#print(len([k for k in paragraphs.values() if len(k) == 0]))
+TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
+sets = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS)
 
-print([int(k) for k in paragraphs])
 
 
+
+#mg.update_data()
 """
 data['Sets'] = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).values()
 mg.update_data()
