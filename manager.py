@@ -29,7 +29,8 @@ TERMS = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Con
        'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC', 'ABIDE', 'Di Martino']
 
 
-WEIGHTED_SETS = [('NKI', re.compile('(\WNKI\W)?Rockland\s(Sample)?')), ('ADHD200', re.compile('adhd\W200')),
+WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W|nathan\s(s.)?kline\sinstitute).*rockland')),
+                 ('ADHD200', re.compile('adhd\W200')),
         ('CORR', re.compile('\scorr\s|(consortium\sfor\sreproducibility\sand\sreliability)')),
         ('ABIDE', re.compile('abide|(autism\sbrain\simaging\sdata\sexchange)'))]
 
