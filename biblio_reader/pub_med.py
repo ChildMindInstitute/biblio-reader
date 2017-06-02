@@ -1,11 +1,12 @@
 import pandas as pd
-import unidecode, os, numpy
+import unidecode, os
 import xml.etree.ElementTree as etree
 from Bio import Entrez
 import manager
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
 data = manager.get_data()
+
 
 def filterstr(str, filter, decode=True):
     for char in filter:

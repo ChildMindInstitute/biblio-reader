@@ -10,6 +10,11 @@ $heading_font: 'Roboto Condensed';
   table-layout: fixed;
   width: 100%;
 }
+
+.databaseTable_title {
+    font: bold 22px/56px Verdana, serif;
+    color: black
+}
 div[class*="databaseTable_import_wrap"] {
 	max-width: 100%;
 	overflow-x: scroll;

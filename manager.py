@@ -1,4 +1,4 @@
-import os, pandas, sys, ast, re
+import os, pandas, sys, re, json
 
 
 def dir(dir):
@@ -29,7 +29,7 @@ TERMS = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Con
        'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC', 'ABIDE', 'Di Martino']
 
 
-WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W|nathan\s(s.)?kline\sinstitute).*rockland')),
+WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s.)?kline\sinstitute).*rockland')),
                  ('ADHD200', re.compile('adhd\W200')),
         ('CORR', re.compile('\scorr\s|(consortium\sfor\sreproducibility\sand\sreliability)')),
         ('ABIDE', re.compile('abide|(autism\sbrain\simaging\sdata\sexchange)'))]
@@ -56,7 +56,7 @@ def get_data():
     return DATA
 
 def get_paragraphs():
-    return ast.literal_eval(get_file('paragraphs.txt', ROOT_PATH).read())
+    return {int(i): paragraph for i, paragraph in json.load(get_file('paragraphs.json', ROOT_PATH)).items()}
 
 
 def get_bibs():
