@@ -1,6 +1,10 @@
 import manager as mg
 import os, sys, csv, collections
+<<<<<<< HEAD
 from biblio_reader.scholar_reader import categorize_journals
+=======
+from biblio_reader import scholar_reader
+>>>>>>> 03143fbd02947324f278b2e2ca7f8438cc011736
 
 checks = mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks'))
 authors = mg.get_author_sets()
@@ -80,7 +84,12 @@ def correct_types(directory, data):
                             journal_types[k] = 'Other'
                     else:
                         journal_types[k] = 'Other'
+<<<<<<< HEAD
     journal_types.update({key: typ for key, typ in categorize_journals(data, categories).items()
+=======
+    journal_types.update({key: typ for key, typ in scholar_reader.
+                         categorize_journals(data, categories).items()
+>>>>>>> 03143fbd02947324f278b2e2ca7f8438cc011736
                           if key not in journal_types})
     for key, type in journal_types.items():
         if type == 'Unknown':
