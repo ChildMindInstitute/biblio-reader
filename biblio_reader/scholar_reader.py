@@ -5,6 +5,7 @@ import os, datetime, collections
 import numpy as np
 from biblio_reader import validity_analysis
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
+data = mg.get_data()
 
 
 def count_visualizer(value_count, stat_type, name, row_limit=None):
@@ -46,7 +47,7 @@ def citations_per_year(data, sort=False):
         mg.update_data()
 
 
-def stack_bar(data, column, stacker, stack_type, split=None):
+def stack_bar(data, column, stacker, stack_type, stat, split=None):
     """
     Almost the same as value counter, except each bar is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
@@ -68,23 +69,39 @@ def stack_bar(data, column, stacker, stack_type, split=None):
                        for value in values.split(split)]
         stacks.append({typ: count for typ, count in sorted(collections.Counter(stacked).items())[:10]})
     max_stack = max(stacks, key=len)
-    print([len(stack) for stack in stacks])
-    last_stack = list(np.zeros(len(max_stack), dtype=np.int))
-    for name, stack in zip(stacker, stacks):
+    repaired_stacks = []
+    for stack in stacks:
         empty_stacks = {key: 0 for key in max_stack.keys() if key not in stack}
         if len(empty_stacks) > 0:
             stack.update(empty_stacks)
-            stack = {key: value for key, value in sorted(stack.items()) if key in max_stack}
-        print(name, stack, last_stack)
-        plt.bar(range(len(stack)), list(stack.values()), align='center', label=name,
-                bottom=last_stack)
-        last_stack = [x + y for x, y in zip(last_stack, list(stack.values()))]
-    plt.xticks(range(len(max_stack)), max_stack.keys())
+            repaired_stacks.append({key: value for key, value in sorted(stack.items()) if key in max_stack})
+        else:
+            repaired_stacks.append(stack)
+    stacks = repaired_stacks
+    if stat == 'bar':
+        last_stack = list(np.zeros(len(max_stack), dtype=np.int))
+        for name, stack in zip(stacker, stacks):
+            plt.bar(range(len(stack)), list(stack.values()), align='center', label=name,
+                    bottom=last_stack)
+            last_stack = [x + y for x, y in zip(last_stack, list(stack.values()))]
+        plt.xticks(range(len(max_stack)), max_stack.keys())
+    if stat == 'plot':
+        plot_dict = dict()
+        for stack in stacks:
+            for key, value in stack.items():
+                if key in plot_dict:
+                    plot_dict[key].append(value)
+                else:
+                    plot_dict[key] = [value]
+        for stack, plot in plot_dict.items():
+            plt.plot(plot, label=stack)
+        plt.xticks(range(len(stacker)), stacker)
     plt.legend()
     title = ' by '.join([column, stack_type])
     plt.title(title)
-    plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '.png'))
+    plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '_' + stat + '.png'))
 
+stack_bar(data[data['Data Use'] != 'Y'], 'Sets', range(2009, 2017), 'Year', 'plot', split=';')
 
 def count_sets(data):
     """
