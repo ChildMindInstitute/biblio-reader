@@ -4,8 +4,8 @@ import urllib.parse as urlparse
 import urllib.request as urllib
 import manager as mg
 from bs4 import BeautifulSoup as bs
-from biblio_reader.text_tools import convertToText
 data = mg.get_data()
+
 
 def pdfopener(data, dir):
     for row in data.iterrows():
@@ -161,78 +161,12 @@ def find_corrupted(pdf_directory):
                 res.append(int(file.replace('.pdf', '')))
     return res
 
-
-def find_paragraphs(txt_directory, terms, outfile=None):
-    res = {}
-    terms = list(map((lambda x: x.lower()), terms))
-    for file in os.listdir(txt_directory):
-        full_file = os.path.join(txt_directory, file)
-        with open(full_file, 'r') as f:
-            text = f.read()
-        paragraphs = re.split(r'[ \t\r\f\v]*\n[ \t\r\f\v]*\n[ \t\r\f\v]*', text)
-        paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
-        key_paragraphs = []
-        for term in terms:
-            re_term = term.replace(' ', '\s+')
-            key_paragraphs += [paragraph for paragraph in paragraphs
-                               if re.search(re_term, paragraph) and paragraph not in key_paragraphs]
-        for term in terms:
-            re_term = term.replace(' ', '\s+')
-            key_paragraphs = [str(re.sub(re_term, '@@@@' + term, paragraph)) for paragraph in key_paragraphs]
-        res[int(file.replace('.txt', ''))] = key_paragraphs
-    if outfile:
-        with open(outfile + '.json', 'w') as f:
-            json.dump(res, f)
-    return res
-
-
-def assoc_sets(dir, sets, less_weighted_sets=None):
-    res = {}
-    for file in os.listdir(dir):
-        associations = []
-        full_file = os.path.join(dir, file)
-        with open(full_file, 'r') as f:
-            text = f.read().lower()
-        for group, pattern in sets:
-            if re.search(pattern, text) is not None:
-                associations.append(group)
-        if less_weighted_sets is not None and len(associations) == 0:
-            for group, pattern in less_weighted_sets:
-                if re.search(pattern, text) is not None:
-                    associations.append(group)
-                    break
-        res[int(file.replace('.txt', ''))] = associations
-    res.update({i: [] for i in range(0, len(data)) if i not in res})
-    res = {i: ';'.join(sets) for i, sets in sorted(res.items())}
-    return res
-
-
-def auth_to_set(data, set_associations, outfile=None):
-    data = data.dropna(subset=['Authors'])
-    authors = [(i, authors.split(' & ')) for i, authors in zip(data['i'], data['Authors'])]
-    author_associations = {}
-    for i, author_list in authors:
-        for author in author_list:
-            if author in author_associations:
-                author_associations[author].update(set_associations[i])
-            else:
-                author_associations[author] = set(set_associations[i])
-    if outfile:
-        pd.DataFrame(list(author_associations.items()), columns=['Author', 'Data set']).\
-            to_csv(path_or_buf=outfile, index_label='i')
-    return author_associations
-
-paragraphs = json.load(open(os.path.join(mg.ROOT_PATH, 'paragraphs.json')))
-#print(*assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).items(), sep='\n')
-#print(len([k for k in paragraphs.values() if len(k) == 0]))
-TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
-sets = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS)
-
-
-
-
-#mg.update_data()
 """
+print([i for i, paragraph in paragraphs.items() if len(paragraph) == 0])
+print([i for i in range(len(data)) if i not in paragraphs])
+print([i for i, sets in sets.items() if len(sets) == 0])
+#mg.update_data()
+""""""
 data['Sets'] = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).values()
 mg.update_data()
 
