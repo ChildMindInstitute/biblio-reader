@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 import manager as mg
 import os, datetime, collections
 import numpy as np
-from biblio_reader import validity_analysis
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 data = mg.get_data()
 
@@ -17,7 +16,7 @@ def count_visualizer(value_count, stat_type, name, row_limit=None):
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
-    value_count = dict(value_count)
+    value_count = dict(sorted(dict(value_count).items()))
     if row_limit:
         value_count = sorted(value_count, key=value_count.get)[:row_limit]
     plt.figure()
@@ -47,7 +46,7 @@ def citations_per_year(data, sort=False):
         mg.update_data()
 
 
-def stack_bar(data, column, stacker, stack_type, stat, split=None):
+def stacked_data(data, column, stacker, stack_type, stat, split=None):
     """
     Almost the same as value counter, except each bar is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
@@ -56,7 +55,8 @@ def stack_bar(data, column, stacker, stack_type, stat, split=None):
     :param stacker: A list of distinct values that correspond to values in the stack_type
     :param stack_type: The column in the dataframe to be part of the stacks (such as year, etc.)
     :param split: If true, splits each row in the column by the splitter
-    :return: A stacked bar graph
+    :param stat: One of: stacked, plot, cluster
+    :return: Either a stacked bar graph or a line plot, depending on the stat type
     """
     plt.figure()
     stacks = []
@@ -78,14 +78,14 @@ def stack_bar(data, column, stacker, stack_type, stat, split=None):
         else:
             repaired_stacks.append(stack)
     stacks = repaired_stacks
-    if stat == 'bar':
+    if stat == 'stacked':
         last_stack = list(np.zeros(len(max_stack), dtype=np.int))
         for name, stack in zip(stacker, stacks):
             plt.bar(range(len(stack)), list(stack.values()), align='center', label=name,
                     bottom=last_stack)
             last_stack = [x + y for x, y in zip(last_stack, list(stack.values()))]
         plt.xticks(range(len(max_stack)), max_stack.keys())
-    if stat == 'plot':
+    elif stat == 'plot':
         plot_dict = dict()
         for stack in stacks:
             for key, value in stack.items():
@@ -96,12 +96,23 @@ def stack_bar(data, column, stacker, stack_type, stat, split=None):
         for stack, plot in plot_dict.items():
             plt.plot(plot, label=stack)
         plt.xticks(range(len(stacker)), stacker)
+    elif stat == 'cluster':
+        curr_width = 0
+        width = 0.75 / len(stacks)
+        for name, stack in zip(stacker, stacks):
+            plt.bar([x + curr_width for x in range(len(stack))], list(stack.values()), width, label=name)
+            curr_width += width
+        plt.xticks([x + (((len(stacks) / 2) - 0.5) * width) for x in range(len(max_stack))], max_stack.keys())
+    else:
+        raise IOError('Invalid stat type')
     plt.legend()
     title = ' by '.join([column, stack_type])
     plt.title(title)
-    plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '_' + stat + '.png'))
+    plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '_' + stat + '.png'), bbox_inches='tight')
 
-stack_bar(data[data['Data Use'] != 'Y'], 'Sets', range(2009, 2017), 'Year', 'plot', split=';')
+
+#stacked_data(data[data['Data Use'] == 'Y'], 'Sets', ['Contributor', 'Not a Contributor'], 'Contributor', 'cluster', split=';')
+#count_visualizer(data[data['Data Use'] == 'Y']['Contributor'].value_counts(), 'pie', 'Contributors')
 
 def count_sets(data):
     """
@@ -144,7 +155,7 @@ def categorize_journals(data, categories):
         for keyword in keywords:
             res.update({row[1]['i']: cat_name for row in data_journals.iterrows() if keyword in row[1][type].lower()})
     res.update({i: 'Unknown' for i in range(0, len(data)) if i not in res})
-    return res
+    return {i: typ for i, typ in sorted(res.items())}
 
 
 def authors(data, link, split=None):
@@ -179,18 +190,17 @@ def calculate_stats(data):
     Prints the usage and journal category stats for the data set
     :param data: The pandas dataframe completed with data use and journal categories
     """
-    if 'Data Use' not in data or 'Journal Category' not in data:
+    if 'Data Use' not in data or 'Journal Category' not in data or 'Contributor' not in data:
         print('Must first perform validity analysis')
         return
-    contributions = validity_analysis.data_contributions_count\
-        (data, mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks')), mg.get_author_sets())
-    no_contributions = [i for i in range(0, len(data)) if i not in contributions]
+    """contributions =validity_analysis.data_contributions_count\
+        (data, mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks')), mg.get_author_sets())"""
     stats = []
     for usage in ['Y', 'S', 'N', 'I']:
         use_stats = []
         use_data = data[data['Data Use'] == usage]
         use_stats.append(len(use_data))
-        use_stats.append(len(use_data[use_data['i'].isin(no_contributions)]))
+        use_stats.append(len(use_data[use_data['Contributor'] == 'Not a Contributor']))
         for type in ['Journal', 'Other', 'Thesis']:
             use_stats.append(len(use_data[use_data['Journal Category'] == type]))
         stats.append((usage, use_stats))

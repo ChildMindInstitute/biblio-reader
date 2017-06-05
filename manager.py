@@ -23,13 +23,8 @@ OUTPUT_PATH = dir(os.path.join(MAIN_DIR, 'outputs'))
 
 ROOT_PATH = dir(os.path.join(MAIN_DIR, 'root'))
 
-TERMS = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
-       'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
-       'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000',
-       'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC', 'ABIDE', 'Di Martino']
 
-
-WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s.)?kline\sinstitute).*rockland')),
+WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).*rockland')),
                  ('ADHD200', re.compile('adhd\W200')),
         ('CORR', re.compile('\scorr\s|(consortium\sfor\sreproducibility\sand\sreliability)')),
         ('ABIDE', re.compile('abide|(autism\sbrain\simaging\sdata\sexchange)'))]
@@ -50,6 +45,8 @@ def get_file(file, dir):
         sys.exit(1)
 
 def get_data():
+    if 'DATA' in globals():
+        return
     global DATA_NAME, DATA
     DATA_NAME = get_file('DATA.txt', ROOT_PATH).read() + '.csv'
     DATA = pandas.read_csv(get_file(DATA_NAME, OUTPUT_PATH))
@@ -64,6 +61,7 @@ def get_bibs():
 
 
 def update_data():
+    print('data updated:', id(DATA))
     DATA.to_csv(path_or_buf=os.path.join(OUTPUT_PATH, DATA_NAME),
                 index=False)
 

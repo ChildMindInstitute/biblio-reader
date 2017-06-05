@@ -4,11 +4,15 @@ from urllib import request as req
 from unidecode import unidecode
 
 bibs = mg.get_bibs().dropna(subset=['affiliations'])
-
+map_dir = mg.dir(os.path.join(mg.INPUT_PATH, 'map_tools'))
 API = 'AIzaSyCkBVxMHaiUrL1j-p_tc8fEFIbVxjjWqCk'
 bibs['affiliations'] = bibs['affiliations'].apply(lambda aff: re.sub('\[?\d\]', ';', aff))
 affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil in affiliation.split(';;')]
                     for aff in sublist} for i, affiliation in zip(bibs['i'], bibs['affiliations'])}
+valid_countries = [country.split(' | ')[0] for country in mg.get_file('countries.txt', map_dir).readlines()] + \
+                  [state.strip() for state in mg.get_file('states.txt', map_dir).readlines()] + \
+                  [corr.split(' | ')[0] for corr in mg.get_file('country_corrections.txt', map_dir).readlines()]
+print(*valid_countries, sep='\n')
 
 def repair_affils(affiliations):
     aff_dict = dict()
@@ -18,6 +22,13 @@ def repair_affils(affiliations):
         for aff in affs:
             for sub in substitutions:
                 aff = re.sub(sub, '', aff)
+            valid = False
+            for valids in valid_countries:
+                if valids in aff:
+                    valid = True
+                    break
+            if not valid:
+                print(valid, aff)
             if aff != '':
                 if aff in aff_dict:
                     aff_dict[aff].add(i)
@@ -69,5 +80,11 @@ def geo_lookup(affiliations):
                 print(*geo_dict.items(), sep='\n')
 
 #geo_lookup(repair_affils(affiliations))
-affs = json.load(mg.get_file('affiliations.json', os.curdir))
-print(len([value for values in affs.values() for value in values]))
+affs = repair_affils(affiliations)
+
+""""
+for aff in affs.keys():
+    if re.search(r'([^./A-Z\s\d(Mc)-])(?=[A-Z])', aff):
+        print(aff)
+        print(re.sub('([^./A-Z\s\d-])(?=[A-Z])', lambda x: x.group(0) + ' ' + x.group(1)[1:], aff), '\n\n\n')
+"""

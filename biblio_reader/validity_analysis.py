@@ -1,14 +1,8 @@
 import manager as mg
 import os, sys, csv, collections
-<<<<<<< HEAD
-from biblio_reader.scholar_reader import categorize_journals
-=======
-from biblio_reader import scholar_reader
->>>>>>> 03143fbd02947324f278b2e2ca7f8438cc011736
 
 checks = mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks'))
 authors = mg.get_author_sets()
-
 if len(os.listdir(checks)) == 0:
     print('No validity checks to analyze')
     sys.exit(1)
@@ -16,6 +10,15 @@ if len(os.listdir(checks)) == 0:
 data = mg.get_data()
 categories = mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))
 
+
+def categorize_journals(data, categories):
+    from biblio_reader import scholar_reader
+    return scholar_reader.categorize_journals(data, categories)
+
+
+def author_links(data, link, split=None):
+    from biblio_reader import scholar_reader
+    return scholar_reader.authors(data, link, split=split)
 
 def usage_directory(directory):
     """
@@ -84,20 +87,14 @@ def correct_types(directory, data):
                             journal_types[k] = 'Other'
                     else:
                         journal_types[k] = 'Other'
-<<<<<<< HEAD
     journal_types.update({key: typ for key, typ in categorize_journals(data, categories).items()
-=======
-    journal_types.update({key: typ for key, typ in scholar_reader.
-                         categorize_journals(data, categories).items()
->>>>>>> 03143fbd02947324f278b2e2ca7f8438cc011736
                           if key not in journal_types})
     for key, type in journal_types.items():
         if type == 'Unknown':
             journal_types[key] = 'Journal'
     return {key: type for key, type in sorted(journal_types.items())}
 
-
-def data_contributions_count(data, directory, author_associations):
+def data_contributions_count(data, directory, author_associations, update=False):
     """
     If any manual investigator marks that a pub has some connection with the original source, the pub automatically
      gets marked as connected. All the papers with authors linked to that pub then get checked and added to the
@@ -108,7 +105,7 @@ def data_contributions_count(data, directory, author_associations):
     :param author_associations: A dictionary of authors and the terms that they are associated with
     :return: A list of papers that are considered part of the contributions count
     """
-    data = data.dropna(subset=['Authors'])
+    sub_data = data.dropna(subset=['Authors'])
     contributing_papers = set()
     for check in os.listdir(directory):
         if '.csv' not in check:
@@ -124,18 +121,24 @@ def data_contributions_count(data, directory, author_associations):
     global original_contributers
     original_contributers = list(contributing_papers)
     print(len(original_contributers))
-    contributing_authors = {author for i, authors in zip(data['i'], data['Authors']) for author in authors.split(' & ')
+    contributing_authors = {author for i, authors in zip(sub_data['i'], sub_data['Authors']) for author in authors.split(' & ')
                             if i in contributing_papers}
-    for row in data.dropna(subset=['Sets']).iterrows():
+    print(len(contributing_authors), contributing_authors)
+    for row in sub_data.dropna(subset=['Sets']).iterrows():
         row = row[1]
         authors = [author for author in row['Authors'].split(' & ') if author
                    in contributing_authors and author != 'others']
+        print(authors)
         sets = row['Sets'].split(';')
         i = row['i']
         if len(authors) != 0:
             for author in authors:
-                print(author_associations[author], sets)
                 if any(s in author_associations[author] for s in sets):
-                    print(i, author, sets, author_associations[author])
                     contributing_papers.add(i)
+
+    if update:
+        data['Contributors'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
+                        [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
+    print(len(contributing_papers))
     return contributing_papers
+data_contributions_count(data, checks, author_links(data, 'Sets', split=';'))
