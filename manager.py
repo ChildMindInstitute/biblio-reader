@@ -24,13 +24,12 @@ OUTPUT_PATH = dir(os.path.join(MAIN_DIR, 'outputs'))
 ROOT_PATH = dir(os.path.join(MAIN_DIR, 'root'))
 
 
-WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).*rockland')),
+WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).*rockland|rockland\ssample')),
                  ('ADHD200', re.compile('adhd\W200')),
         ('CORR', re.compile('\scorr\s|(consortium\sfor\sreproducibility\sand\sreliability)')),
         ('ABIDE', re.compile('abide|(autism\sbrain\simaging\sdata\sexchange)'))]
 
-UNWEIGHTED_SETS = [('FCP', re.compile('1,?000\sfunctional\sconnectomes?(\sproject)?|fcp|fcon[\s_]1000')),
-                   ('INDI', re.compile('\Windi\W|(international\sneuroimaging\sdata\Wsharing\sinitiative)'))]
+UNWEIGHTED_SETS = [('FCP', re.compile('1,?000\sfunctional\sconnectomes?(\sproject)?|fcp|fcon[\s_]*1000'))]
 
 
 def get_file(file, dir):

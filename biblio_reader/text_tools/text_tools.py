@@ -63,6 +63,16 @@ def assoc_sets(dir, sets, less_weighted_sets=None):
     return res
 
 
+data = mg.get_data()
+TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
+sets = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS)
+data['Sets'] = sets.values()
+paragraphs = mg.get_paragraphs()
+for i, set in sets.items():
+    if len(set) == 0 and i in paragraphs:
+        print(paragraphs[i], '\n\n\n')
+mg.update_data()
+
 def main():
     TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
     PDF_DIR = mg.dir(os.path.join(mg.INPUT_PATH, 'pdfs'))
@@ -70,5 +80,5 @@ def main():
     convertToText.walkAndText(PDF_DIR, TXT_DIR)
     find_paragraphs(TXT_DIR, mg.WEIGHTED_SETS + mg.UNWEIGHTED_SETS, outfile=os.path.join(mg.ROOT_PATH, 'paragraphs'))
     sets = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS)
-    data['Sets'] = sets
+    data['Sets'] = sets.values()
     mg.update_data()

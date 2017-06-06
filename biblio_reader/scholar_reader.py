@@ -12,7 +12,7 @@ def count_visualizer(value_count, stat_type, name, row_limit=None):
     Counts values of specific columns in dataframe
     :param value_count: A value count series, dict, or LOT (see pandas value_count function)
     :param out: output file name
-    :param stat_type: one of: csv, bar, pie
+    :param stat_type: one of: bar, pie
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
@@ -46,7 +46,7 @@ def citations_per_year(data, sort=False):
         mg.update_data()
 
 
-def stacked_data(data, column, stacker, stack_type, stat, split=None):
+def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each bar is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
@@ -54,19 +54,28 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None):
     :param column: The column of the dataframe to be value counted
     :param stacker: A list of distinct values that correspond to values in the stack_type
     :param stack_type: The column in the dataframe to be part of the stacks (such as year, etc.)
-    :param split: If true, splits each row in the column by the splitter
     :param stat: One of: stacked, plot, cluster
+    :param split: If true, splits each row in the column by the splitter
+    :param stacker_split: If true, looks in each stack not for exactness but for inclusion
     :return: Either a stacked bar graph or a line plot, depending on the stat type
     """
     plt.figure()
     stacks = []
     for stack in stacker:
         if not split:
-            stacked = [value for value in data[data[stack_type] == stack][column].dropna()]
+            if stacker_split:
+                stacked = [value for value in data[data[stack_type].str.contains(stack).fillna(False)][column].dropna()]
+            else:
+                stacked = [value for value in data[data[stack_type] == stack][column].dropna()]
         else:
-            stacked = [value for values in
-                       data[data[stack_type] == stack][column].dropna()
-                       for value in values.split(split)]
+            if stacker_split:
+                stacked = [value for values in
+                           data[data[stack_type].str.contains(stack).fillna(False)][column].dropna()
+                           for value in values.split(split)]
+            else:
+                stacked = [value for values in
+                           data[data[stack_type] == stack][column].dropna()
+                           for value in values.split(split)]
         stacks.append({typ: count for typ, count in sorted(collections.Counter(stacked).items())[:10]})
     max_stack = max(stacks, key=len)
     repaired_stacks = []
@@ -111,8 +120,8 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None):
     plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '_' + stat + '.png'), bbox_inches='tight')
 
 
-#stacked_data(data[data['Data Use'] == 'Y'], 'Sets', ['Contributor', 'Not a Contributor'], 'Contributor', 'cluster', split=';')
-#count_visualizer(data[data['Data Use'] == 'Y']['Contributor'].value_counts(), 'pie', 'Contributors')
+#stacked_data(data[data['Data Use'] == 'Y'], 'Sets', ["'" + str(x)[2:] for x in range(2010, 2017)], 'Year', 'cluster', split=';')
+#count_visualizer(count_sets(data[data['Data Use'] == 'Y']), 'pie', 'Used Data by Set')
 
 def count_sets(data):
     """
@@ -126,6 +135,8 @@ def count_sets(data):
     return pd.Series(collections.Counter(sets), name='Sets')
 
 
+#stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', count_sets(data[data['Data Use'] == 'Y']).index, 'Sets', 'cluster', split=';', stacker_split=True)
+#count_visualizer(count_sets(data[data['Data Use'] == 'Y']), 'pie', 'Used Data by Set')
 def categorize_journals(data, categories):
     """
     DISCLAIMER: Must have an inputted list of keywords and corresponding categories to work with before using this
