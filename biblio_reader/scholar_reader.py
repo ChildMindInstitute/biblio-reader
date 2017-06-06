@@ -120,8 +120,9 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '_' + stat + '.png'), bbox_inches='tight')
 
 
-#stacked_data(data[data['Data Use'] == 'Y'], 'Sets', ["'" + str(x)[2:] for x in range(2010, 2017)], 'Year', 'cluster', split=';')
-#count_visualizer(count_sets(data[data['Data Use'] == 'Y']), 'pie', 'Used Data by Set')
+stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', ['Journal', 'Thesis'], 'Journal Category', 'cluster', split=';')
+#stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', ['Contributor', 'Not a Contributor'], 'Contributor', 'cluster', split=';')
+count_visualizer(data[data['Data Use'] == 'Y']['Contributor'].value_counts(), 'pie', 'Contributions')
 
 def count_sets(data):
     """
@@ -135,7 +136,7 @@ def count_sets(data):
     return pd.Series(collections.Counter(sets), name='Sets')
 
 
-#stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', count_sets(data[data['Data Use'] == 'Y']).index, 'Sets', 'cluster', split=';', stacker_split=True)
+#stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', ['Contributor', 'Not a Contributor'], 'Contributor', 'cluster', split=';')
 #count_visualizer(count_sets(data[data['Data Use'] == 'Y']), 'pie', 'Used Data by Set')
 def categorize_journals(data, categories):
     """
@@ -205,6 +206,7 @@ def calculate_stats(data):
         print('Must first perform validity analysis')
         return
     stats = []
+    print(len(data[data['Contributor'] == 'Contributor']))
     for usage in ['Y', 'S', 'N', 'I']:
         use_stats = []
         use_data = data[data['Data Use'] == usage]
@@ -234,3 +236,5 @@ def calculate_stats(data):
             else:
                 message += ' that were invalid:'
             print(message, stat)
+
+calculate_stats(data)

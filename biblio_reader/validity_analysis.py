@@ -2,12 +2,13 @@ import manager as mg
 import os, sys, csv, collections
 
 checks = mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks'))
-authors = mg.get_author_sets()
+
 if len(os.listdir(checks)) == 0:
     print('No validity checks to analyze')
     sys.exit(1)
 
 data = mg.get_data()
+print(id(data))
 categories = mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))
 
 
@@ -105,8 +106,6 @@ def data_contributions_count(data, directory, update=False):
     :param author_associations: A dictionary of authors and the terms that they are associated with
     :return: A list of papers that are considered part of the contributions count
     """
-    sub_data = data.dropna(subset=['Authors'])
-    sub_data = sub_data[sub_data['Data Use'] != 'I']
     contributing_papers = set()
     for check in os.listdir(directory):
         if '.csv' not in check:
@@ -119,26 +118,22 @@ def data_contributions_count(data, directory, update=False):
                 v = rows[2].replace(' and ', '').upper()
                 if 'Q' in v:
                     contributing_papers.add(k)
-    contributing_authors = {author for i, authors in zip(sub_data['i'], sub_data['Authors']) for author in authors.split(' & ')
-                            if i in contributing_papers and sub_data.loc[i, 'Data Use'] != 'I'}
     author_associations = author_links(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
-    for row in sub_data.dropna(subset=['Sets']).iterrows():
+    for row in data.dropna(subset=['Sets']).iterrows():
         row = row[1]
         authors = [author for author in row['Authors'].split(' & ') if author
-                   in contributing_authors and author != 'others']
+                   in author_associations and author != 'others']
         sets = row['Sets'].split(';')
         i = row['i']
         if len(authors) != 0:
             for author in authors:
                 if any(s in author_associations[author] for s in sets):
                     contributing_papers.add(i)
-                else:
-                    pass
-                    #print(author, author_associations[author], sets)
-
     if update:
-        data['Contributors'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
+        data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
     print(len(contributing_papers))
     return contributing_papers
-data_contributions_count(data, checks)
+#data_contributions_count(data, checks, update=True)
+del data['Contributor']
+mg.update_data()
