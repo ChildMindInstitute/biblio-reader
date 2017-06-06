@@ -198,14 +198,12 @@ def authors(data, link, split=None):
 
 def calculate_stats(data):
     """
-    Prints the usage and journal category stats for the data set
+    Prints the usage, contributions, and journal category stats for the data set
     :param data: The pandas dataframe completed with data use and journal categories
     """
     if 'Data Use' not in data or 'Journal Category' not in data or 'Contributor' not in data:
         print('Must first perform validity analysis')
         return
-    """contributions =validity_analysis.data_contributions_count\
-        (data, mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks')), mg.get_author_sets())"""
     stats = []
     for usage in ['Y', 'S', 'N', 'I']:
         use_stats = []

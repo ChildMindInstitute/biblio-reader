@@ -9,10 +9,6 @@ API = 'AIzaSyCkBVxMHaiUrL1j-p_tc8fEFIbVxjjWqCk'
 bibs['affiliations'] = bibs['affiliations'].apply(lambda aff: re.sub('\[?\d\]', ';', aff))
 affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil in affiliation.split(';;')]
                     for aff in sublist} for i, affiliation in zip(bibs['i'], bibs['affiliations'])}
-valid_countries = [country.split(' | ')[0] for country in mg.get_file('countries.txt', map_dir).readlines()] + \
-                  [state.strip() for state in mg.get_file('states.txt', map_dir).readlines()] + \
-                  [corr.split(' | ')[0] for corr in mg.get_file('country_corrections.txt', map_dir).readlines()]
-print(*valid_countries, sep='\n')
 
 def repair_affils(affiliations):
     aff_dict = dict()
@@ -22,13 +18,8 @@ def repair_affils(affiliations):
         for aff in affs:
             for sub in substitutions:
                 aff = re.sub(sub, '', aff)
-            valid = False
-            for valids in valid_countries:
-                if valids in aff:
-                    valid = True
-                    break
-            if not valid:
-                print(valid, aff)
+            if re.search("([^./A-Z&'\s\d-])(?=[A-Z])", aff):
+                aff = re.sub("([^./A-Z&'\s\d-])(?=[A-Z])", lambda x: x.group(0) + ' ' + x.group(1)[1:], aff)
             if aff != '':
                 if aff in aff_dict:
                     aff_dict[aff].add(i)
@@ -43,14 +34,26 @@ def geo_req(request):
 
 
 def geo_lookup(affiliations):
-    geo_dict = dict()
+    if os.path.exists('geo_affil_successes.txt'):
+        with open('geo_affil_successes.txt', 'r') as a:
+            geo_affils = a.readlines()
+    else:
+        geo_affils = []
+    if os.path.exists('affiliations.json'):
+        with open('affiliations.json', 'r') as js:
+            geo_dict = {i: set(geo) for i, geo in json.load(js).items()}
+    else:
+        geo_dict = dict()
     for aff, ix in affiliations.items():
+        if aff in geo_affils:
+            continue
         request = geo_req(aff)
         try:
             geo_data = json.load(req.urlopen(request))
         except Exception as e:
             print(e, request)
             continue
+        original_aff = str(aff)
         while geo_data['status'] == 'ZERO_RESULTS' and ',' in aff:
             aff = aff[aff.find(',') + 1:].strip()
             request = geo_req(aff)
@@ -62,6 +65,7 @@ def geo_lookup(affiliations):
         if len(geo_data['results']) == 0:
             print(aff, ': Failure')
             continue
+        geo_affils.append(original_aff)
         print(aff, ': Success')
         location = geo_data['results'][0]['geometry']['location']
         latlong = ','.join([str(location['lat']), str(location['lng'])])
@@ -69,22 +73,8 @@ def geo_lookup(affiliations):
             geo_dict[latlong] = ix
         else:
             geo_dict[latlong].update(ix)
-    with open('affiliations.json', 'w') as jf, open('affiliations_fail.txt', 'w') as t:
-        try:
-            json.dump({latlong: [int(i) for i in ix] for latlong, ix in geo_dict.items()}, jf)
-        except Exception as e:
-            print(e)
-            try:
-                t.write(str(geo_dict))
-            except:
-                print(*geo_dict.items(), sep='\n')
+    with open('affiliations.json', 'w') as jf, open('geo_affil_successes.txt', 'w') as s:
+        s.write('\n'.join(geo_affils))
+        json.dump({latlong: [int(i) for i in ix] for latlong, ix in geo_dict.items()}, jf)
 
-#geo_lookup(repair_affils(affiliations))
-affs = repair_affils(affiliations)
-
-""""
-for aff in affs.keys():
-    if re.search(r'([^./A-Z\s\d(Mc)-])(?=[A-Z])', aff):
-        print(aff)
-        print(re.sub('([^./A-Z\s\d-])(?=[A-Z])', lambda x: x.group(0) + ' ' + x.group(1)[1:], aff), '\n\n\n')
-"""
+geo_lookup(repair_affils(affiliations))

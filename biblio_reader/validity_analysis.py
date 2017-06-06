@@ -94,7 +94,7 @@ def correct_types(directory, data):
             journal_types[key] = 'Journal'
     return {key: type for key, type in sorted(journal_types.items())}
 
-def data_contributions_count(data, directory, author_associations, update=False):
+def data_contributions_count(data, directory, update=False):
     """
     If any manual investigator marks that a pub has some connection with the original source, the pub automatically
      gets marked as connected. All the papers with authors linked to that pub then get checked and added to the
@@ -106,6 +106,7 @@ def data_contributions_count(data, directory, author_associations, update=False)
     :return: A list of papers that are considered part of the contributions count
     """
     sub_data = data.dropna(subset=['Authors'])
+    sub_data = sub_data[sub_data['Data Use'] != 'I']
     contributing_papers = set()
     for check in os.listdir(directory):
         if '.csv' not in check:
@@ -118,27 +119,26 @@ def data_contributions_count(data, directory, author_associations, update=False)
                 v = rows[2].replace(' and ', '').upper()
                 if 'Q' in v:
                     contributing_papers.add(k)
-    global original_contributers
-    original_contributers = list(contributing_papers)
-    print(len(original_contributers))
     contributing_authors = {author for i, authors in zip(sub_data['i'], sub_data['Authors']) for author in authors.split(' & ')
-                            if i in contributing_papers}
-    print(len(contributing_authors), contributing_authors)
+                            if i in contributing_papers and sub_data.loc[i, 'Data Use'] != 'I'}
+    author_associations = author_links(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
     for row in sub_data.dropna(subset=['Sets']).iterrows():
         row = row[1]
         authors = [author for author in row['Authors'].split(' & ') if author
                    in contributing_authors and author != 'others']
-        print(authors)
         sets = row['Sets'].split(';')
         i = row['i']
         if len(authors) != 0:
             for author in authors:
                 if any(s in author_associations[author] for s in sets):
                     contributing_papers.add(i)
+                else:
+                    pass
+                    #print(author, author_associations[author], sets)
 
     if update:
         data['Contributors'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
     print(len(contributing_papers))
     return contributing_papers
-data_contributions_count(data, checks, author_links(data, 'Sets', split=';'))
+data_contributions_count(data, checks)
