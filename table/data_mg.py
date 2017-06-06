@@ -1,6 +1,4 @@
-import manager as mg, re
-data = mg.get_data()
-
+import manager as mg
 
 data = mg.get_data()
 data = data[data['Data Use'] == 'Y']
