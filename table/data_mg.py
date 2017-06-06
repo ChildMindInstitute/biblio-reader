@@ -11,4 +11,3 @@ table_data.to_csv(path_or_buf='Table_data.csv', index=False)
 
 invalid_theses = [500, 808, 1038, 1072, 1363]
 
-"""
