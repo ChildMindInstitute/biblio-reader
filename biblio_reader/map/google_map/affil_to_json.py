@@ -5,7 +5,7 @@ from unidecode import unidecode
 
 bibs = mg.get_bibs().dropna(subset=['affiliations'])
 map_dir = mg.dir(os.path.join(mg.INPUT_PATH, 'map_tools'))
-API = 'AIzaSyCkBVxMHaiUrL1j-p_tc8fEFIbVxjjWqCk'
+API = 'AIzaSyCc3U_YDbluAh_Eja8Zc4e4PX04ndyDXgE'
 bibs['affiliations'] = bibs['affiliations'].apply(lambda aff: re.sub('\[?\d\]', ';', aff))
 affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil in affiliation.split(';;')]
                     for aff in sublist} for i, affiliation in zip(bibs['i'], bibs['affiliations'])}
@@ -46,8 +46,6 @@ def geo_lookup(affiliations):
         if aff in affils:
             continue
         ix = {int(i) for i in ix}
-        if ix is None:
-            print(aff)
         request = geo_req(aff)
         try:
             geo_data = json.load(req.urlopen(request))
