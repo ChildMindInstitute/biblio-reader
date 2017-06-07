@@ -13,7 +13,8 @@ affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil in af
 def repair_affils(affiliations):
     aff_dict = dict()
     substitutions = [re.compile('\s\([^(]*\)'), re.compile('\s*(Electronic address:\s*)*\S+@\S+'),
-                     re.compile('\A[^a-zA-Z]+'), re.compile('\s*[\.,]\Z'), re.compile('Email:.*')]
+                     re.compile('\A[^a-zA-Z]+'), re.compile('\s*[\.,]\Z'), re.compile('Email:.*'),
+                     re.compile('\Aand\s*'), re.compile(',?\s+and\Z'), re.compile('tel:.*|.*affiliated.*|To whom.*')]
     for i, affs in affiliations.items():
         for aff in affs:
             for sub in substitutions:
@@ -34,19 +35,19 @@ def geo_req(request):
 
 
 def geo_lookup(affiliations):
-    if os.path.exists('geo_affil_successes.txt'):
-        with open('geo_affil_successes.txt', 'r') as a:
-            geo_affils = a.readlines()
-    else:
-        geo_affils = []
     if os.path.exists('affiliations.json'):
         with open('affiliations.json', 'r') as js:
-            geo_dict = {i: set(geo) for i, geo in json.load(js).items()}
+            geo_dict = json.load(js)
+        affils = {affil for latlong in geo_dict for affil in geo_dict[latlong]['affiliations']}
     else:
         geo_dict = dict()
+        affils = set()
     for aff, ix in affiliations.items():
-        if aff in geo_affils:
+        if aff in affils:
             continue
+        ix = {int(i) for i in ix}
+        if ix is None:
+            print(aff)
         request = geo_req(aff)
         try:
             geo_data = json.load(req.urlopen(request))
@@ -65,16 +66,23 @@ def geo_lookup(affiliations):
         if len(geo_data['results']) == 0:
             print(aff, ': Failure')
             continue
-        geo_affils.append(original_aff)
         print(aff, ': Success')
         location = geo_data['results'][0]['geometry']['location']
         latlong = ','.join([str(location['lat']), str(location['lng'])])
         if latlong not in geo_dict:
-            geo_dict[latlong] = ix
+            geo_dict[latlong] = {"papers": ix,
+                                "affiliations": {original_aff},
+                                "matched searches": {aff}}
         else:
-            geo_dict[latlong].update(ix)
-    with open('affiliations.json', 'w') as jf, open('geo_affil_successes.txt', 'w') as s:
-        s.write('\n'.join(geo_affils))
-        json.dump({latlong: [int(i) for i in ix] for latlong, ix in geo_dict.items()}, jf)
 
+            geo_dict[latlong]["papers"] = set(geo_dict[latlong]["papers"]).union(ix)
+            geo_dict[latlong]["affiliations"] = set(geo_dict[latlong]["affiliations"]).union({original_aff})
+            geo_dict[latlong]["matched searches"] = set(geo_dict[latlong]["matched searches"]).union({aff})
+    geo_dict = {latlong: {"papers": list(geo_dict[latlong]['papers']), "affiliations":
+        list(geo_dict[latlong]['affiliations']), "matched searches":
+        list(geo_dict[latlong]['matched searches'])} for latlong in geo_dict}
+    with open('affiliations.json', 'w') as jf:
+        json.dump(geo_dict, jf)
+
+#repair_affils(affiliations)
 geo_lookup(repair_affils(affiliations))
