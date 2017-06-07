@@ -82,5 +82,4 @@ def geo_lookup(affiliations):
     with open('affiliations.json', 'w') as jf:
         json.dump(geo_dict, jf)
 
-#repair_affils(affiliations)
-geo_lookup(repair_affils(affiliations))
+

@@ -3,7 +3,7 @@ function initMap() {
           zoom: 2,
           center: {lat: 0, lng: 0}
         });
-        $.getJSON("affiliations.json", function(affils) {
+        /*$.getJSON("affiliations.json", function(affils) {
           $.each(affils, function(geo_key, attrs) {
           var latlong = geo_key.split(',')
           var marker = new google.maps.Marker({
@@ -11,5 +11,12 @@ function initMap() {
           map: map
           })
           })
+        })*/
+        var layer = new google.maps.FusionTablesLayer({
+            query: {
+                select: "col0",
+                from: "1YShwKh-1Ihj7O_h3LTn-O6r-DjWOcWUir80kQe0e"
+            }
         })
+        layer.setMap(map)
 }
