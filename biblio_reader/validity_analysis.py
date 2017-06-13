@@ -1,5 +1,4 @@
-import manager as mg
-import os, sys, csv, collections
+import manager as mg, os, sys, csv, collections
 
 checks = mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks'))
 
@@ -8,7 +7,6 @@ if len(os.listdir(checks)) == 0:
     sys.exit(1)
 
 data = mg.get_data()
-print(id(data))
 categories = mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))
 
 
@@ -134,6 +132,3 @@ def data_contributions_count(data, directory, update=False):
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
     print(len(contributing_papers))
     return contributing_papers
-#data_contributions_count(data, checks, update=True)
-del data['Contributor']
-mg.update_data()

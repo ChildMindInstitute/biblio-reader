@@ -16,13 +16,11 @@ def count_visualizer(value_count, stat_type, name, row_limit=None):
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
-    value_count = dict(sorted(dict(value_count).items()))
-    if row_limit:
-        value_count = sorted(value_count, key=value_count.get)[:row_limit]
+    value_count = {value.title(): count for value, count in list(dict(value_count).items())[:row_limit]}
     plt.figure()
     if stat_type == 'bar':
         plt.bar(range(len(value_count)), list(value_count.values()), align='center')
-        plt.xticks(range(len(value_count)), value_count.keys())
+        plt.xticks(range(len(value_count)), value_count.keys(), rotation=90)
     elif stat_type == 'pie':
         plt.pie(list(value_count.values()), labels=value_count.keys(), autopct='%1.1f%%', shadow=True)
         plt.axis('equal')
@@ -117,13 +115,17 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     plt.legend()
     title = ' by '.join([column, stack_type])
     plt.title(title)
-    plt.savefig(os.path.join(STAT_DIR, title.lower().replace(' ', '_') + '_' + stat + '.png'), bbox_inches='tight')
+    plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
 
-stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', ['Journal', 'Thesis'], 'Journal Category', 'cluster', split=';')
-#stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', ['Contributor', 'Not a Contributor'], 'Contributor', 'cluster', split=';')
-count_visualizer(data[data['Data Use'] == 'Y']['Contributor'].value_counts(), 'pie', 'Contributions')
 
+journals = data[data['Data Use'] == 'Y'][~data['Journal'].str.contains('Rxiv').\
+    fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'].\
+    dropna().apply(lambda x: x.lower()).value_counts()
+#count_visualizer(journals, 'bar', 'Journals by Data Use', row_limit=10)
+#print(*journals.items(), sep='\n')
+
+print(*data[~data['Journal'].str.contains('Rxiv').fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'], sep='\n')
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
@@ -237,4 +239,4 @@ def calculate_stats(data):
                 message += ' that were invalid:'
             print(message, stat)
 
-calculate_stats(data)
+#calculate_stats(data)

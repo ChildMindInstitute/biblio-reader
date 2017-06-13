@@ -21,7 +21,7 @@ def get_ids(data):
     ids = []
     for row in data.iterrows():
         row = row[1]
-        year = str(row['Year']).replace('.0', '')
+        year = row['Year'] or ''
         term = filterstr(str(row['Title']), ")'>',\```[](<}{")
         author = filterstr(str(row['Authors']).lower().split(' & ')[0], ")'',```'[\](}{')")
         request = Entrez.esearch(db='pubmed', term=term, retmax=1, field='title', year=year, author=author)
