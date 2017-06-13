@@ -1,0 +1,37 @@
+{
+    "title" : "Eyetracking Lit Search",
+    "graph" : {
+        "linkDistance" : 150,
+        "charge"       : -400,
+        "friction"     : 0.01,
+        "height"       : 1100,
+        "numColors"    : 12,
+        "gravity"      : 0.1,
+        "labelPadding" : {
+            "left"   : 3,
+            "right"  : 3,
+            "top"    : 2,
+            "bottom" : 2
+        },
+        "labelMargin" : {
+            "left"   : 3,
+            "right"  : 3,
+            "top"    : 2,
+            "bottom" : 2
+        },
+        "ticksWithoutCollisions" : 10
+    },
+    "types" : {
+        "author":   {
+            "short" : "Author",
+            "long:" : "Author"
+        }
+    },
+    "constraints" : [
+        {
+            "has"    : { "type" : "Author" },
+            "type"   : "Author",
+            "strength" : 0.2
+        }
+    ]
+}

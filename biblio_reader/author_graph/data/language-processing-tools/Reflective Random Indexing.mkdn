@@ -1,3 +1,0 @@
-> Instead of starting with the document-term matrix, randomly generated vectors with a much lower dimensionality are used as the initial term vectors. These vectors are constructed such that they have a high probability of being orthogonal, or close-to-orthogonal to one another, and therefore serve as a reduced dimensional approximation of the independent column assigned to each term in the original [{{Vector Space Model (VSM)}}] approach.
-
-–{{Wahle, M., Widdows, D., Herskovic, J. R., Bernstam, E. V., and Cohen, T. (2012)}}.
