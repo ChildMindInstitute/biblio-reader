@@ -12,11 +12,11 @@ function initMap() {
           })
           })
         })
-        /*var layer = new google.maps.FusionTablesLayer({
+        var layer = new google.maps.FusionTablesLayer({
             query: {
                 select: "col0",
                 from: "1YShwKh-1Ihj7O_h3LTn-O6r-DjWOcWUir80kQe0e"
             }
         })
-        layer.setMap(map)*/
+        layer.setMap(map)
 }
