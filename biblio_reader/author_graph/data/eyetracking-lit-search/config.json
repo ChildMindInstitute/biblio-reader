@@ -1,0 +1,71 @@
+{
+    "title" : "Eyetracking Lit Search",
+    "graph" : {
+        "linkDistance" : 75,
+        "charge"       : -400,
+        "friction"     : 0.01,
+        "height"       : 1100,
+        "numColors"    : 12,
+        "gravity"      : 0.1,
+        "labelPadding" : {
+            "left"   : 3,
+            "right"  : 3,
+            "top"    : 2,
+            "bottom" : 2
+        },
+        "labelMargin" : {
+            "left"   : 3,
+            "right"  : 3,
+            "top"    : 2,
+            "bottom" : 2
+        },
+        "ticksWithoutCollisions" : 10
+    },
+    "types" : {
+        "hardware" : {
+            "short" : "Hardware",
+            "long"  : "Eyetracking Hardware"
+        },
+        "article" : {
+            "short" : "Article",
+            "long"  : "Article Citation"
+        },
+        "disorder" : {
+            "short" : "Disorder",
+            "long"  : "Disorder"
+        },
+        "method" : {
+            "short" : "Analysis Method",
+            "long"  : "Analysis Method"
+        },
+        "software" : {
+            "short" : "Analysis Software",
+            "long"  : "Analysis Software"
+        },
+        "protocol" : {
+            "short" : "Protocols",
+            "long"  : "Procedures & Protocols"
+        },
+        "na" : {
+            "short" : "N/A",
+            "long" : "Not Applicable"
+        }
+    },
+    "constraints" : [
+        {
+            "has"    : { "type" : "software" },
+            "type"   : "linkStrength",
+            "strength" : 0.2
+        },
+        {
+            "has"    : { "type" : "paper" },
+            "type"   : "linkStrength",
+            "strength" : 0.2
+        },
+        {
+            "has"    : { "type" : "na" },
+            "type"   : "linkStrength",
+            "strength" : 0.01
+        }
+    ]
+}
