@@ -1,98 +1,80 @@
 import pandas as pd
-import unidecode
-import urllib.request as urllib
+import unidecode, os
 import xml.etree.ElementTree as etree
-import re
-from bs4 import BeautifulSoup
+from Bio import Entrez
+import manager
+Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
-
-with open('../inputs/FCP_DATA.csv', 'r') as f:
-    data = pd.read_csv(f)
-
-
-fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
-       'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
-       'Consortium for Reproducibility and Reliability']
-
-
-def safeint(x):
-    try:
-        return int(x)
-    except:
-        return x
+data = manager.get_data()
 
 
 def filterstr(str, filter, decode=True):
-    for char in str:
-        if char in filter:
-            str = str.replace(char, '')
+    for char in filter:
+        str = str.replace(char, '')
     if decode:
         return unidecode.unidecode(str)
     else:
         return str
 
 
-def joindata(row):
-    row.fillna('')
-    return '&'.join(['https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed', 'term='
-                     + filterstr(str(row['Title']).strip().lower(), ")'>',\```[](<}{"), 'retmax=1', 'field=title',
-                     'year=' + str(safeint(row['Year'])), 'author=' +
-                     filterstr(str(row['Authors']).lower().split(' & ')[0],
-                               ")'',```'[\](}{')")]).replace(' ', '+').replace('"', '')
-
-
-def get_id(url):
-    try:
-        xml = urllib.urlopen(url).read()
-    except:
-        return None
-    for idlist in etree.fromstring(xml).findall('IdList'):
-        for id in idlist:
-            return int(id.text)
-
-
-def change_id(id):
-    if isinstance(id, list):
-        if len(id) == 1:
-            return id[0]
-    return id
-
-
-def get_ids(file=None, full_text=True):
+def get_ids(data):
     ids = []
     for row in data.iterrows():
-        ids.append(getid(joindata(row[1])))
-    data['PMCIDS'] = ids
-    data['PMCIDS'] = data['PMCIDS'].apply(change_id).fillna(0.0).astype(int)
-    fulldata = data[data['PMCIDS'] != 0]
-    fulldata['index'] = list(range(0, len(fulldata['index'])))
-    fulldata.reset_index(inplace=True)
-    if full_text:
-        fulldata['Full'] = fulldata['PMCIDS'].apply(lambda x: 'https://eutils.ncbi.nlm.nih' +
-                                                              '.gov/entrez/eutils/elink.fcgi?dbfrom=pubmed&id=' +
-                                                              str(x) + '&cmd=prlinks&retmode=ref')
-    if file:
-        fulldata.to_csv(path_or_buf=file)
+        row = row[1]
+        year = row['Year'] or ''
+        term = filterstr(str(row['Title']), ")'>',\```[](<}{")
+        author = filterstr(str(row['Authors']).lower().split(' & ')[0], ")'',```'[\](}{')")
+        request = Entrez.esearch(db='pubmed', term=term, retmax=1, field='title', year=year, author=author)
+        idlist = Entrez.read(request)['IdList']
+        if len(idlist) == 1:
+            ids.append(int(idlist[0]))
+        else:
+            ids.append(0)
+    data['PMCID'] = ids
+    return ids
 
 
-def get_key_paragraphs(keywords):
-    if fulldata['Full'] is None:
+def write_bib(data, directory):
+    if 'PMCID' not in data:
+        print("NO PMCIDS")
         return
-    excerpts = []
-    keywords = re.compile("(" + '|'.join(keywords) + ")")
-    for link in fulldata['Full']:
-        try:
-            html = urllib.urlopen(link).read()
-        except:
-            excerpts.append(['N/A'])
-            continue
-        soup = BeautifulSoup(html, 'html.parser')
-        excerpts.append(soup.find_all(string=keywords))
-    fulldata['Excerpts'] = excerpts
-
-fulldata['index'] = list(range(0, len(fulldata['index'])))
+    id_dict = {i: int(pmcid) for i, pmcid in dict(zip(data['i'], data['PMCID'])).items() if int(pmcid) != 0}
+    for i, pmcid in id_dict.items():
+        bib = Entrez.efetch(db='pubmed', id=pmcid, retmode="xml", rettype="full")
+        with open('/'.join([directory, str(i) + '.xml']), 'w') as f:
+            f.write(bib.read())
 
 
-with open('outputs/FCP_DATA_wIDS.csv', 'w') as f:
-    f.write(fulldata.to_csv(index=False))
+def parse_bib(directory, outfile):
+    parsed = []
+    for bib in os.listdir(directory):
+        root = etree.parse(open('/'.join([directory, bib]))).getroot()
+        authors = []
+        for auth in root.findall('.//Author'):
+            fore = auth.find('ForeName')
+            last = auth.find('LastName')
+            if fore is not None and last is not None:
+                authors.append(' '.join([fore.text, last.text]))
+        authors = ';;'.join(authors)
+        affiliations = ';;'.join(set([aff.text for aff in root.findall('.//Affiliation')]))
+        qualifiers = ';;'.join(set([qual.text for qual in root.findall('.//MeshHeading/QualifierName')]).union(set([
+            key.text for key in root.findall('.//KeywordList/Keyword')])))
+        parsed.append((int(bib.replace('.xml', '')), authors, affiliations, qualifiers))
+    parsed_data = pd.DataFrame(parsed, columns=['i', 'authors', 'affiliations', 'qualifiers'])
+    parsed_data.sort_values('i', inplace=True)
+    parsed_data.to_csv(path_or_buf=outfile, index=False)
 
+
+
+if __name__ == '__main__':
+
+    BIB_DIR = manager.dir(os.path.join(manager.ROOT_PATH, 'bibs'))
+
+    PARSED_BIBS = os.path.join(manager.ROOT_PATH, 'parsed_bibs.csv')
+
+    if 'PMCID' not in data:
+        get_ids(data)
+        manager.update_data()
+    if not os.path.exists(BIB_DIR):
+        write_bib(data, manager.dir(BIB_DIR))
+    parse_bib(BIB_DIR, PARSED_BIBS)

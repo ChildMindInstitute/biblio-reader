@@ -1,27 +1,13 @@
-import PyPDF2, os, re
+import PyPDF2, os, re, json, numpy
 import pandas as pd
 import urllib.parse as urlparse
 import urllib.request as urllib
+import manager as mg
 from bs4 import BeautifulSoup as bs
+data = mg.get_data()
 
 
-
-with open('../inputs/FCP_DATA.csv', 'r') as f:
-    data = pd.read_csv(f)
-
-fcp = ['fcon_1000.projects.nitrc.org', 'Rockland Sample', '1000 Functional Connectomes',
-       'International Neuroimaging Data-Sharing Initiative', 'Autism Brain Imaging Data Exchange', 'ADHD-200',
-       'Consortium for Reproducibility and Reliability', 'FCP', 'ADHD 200', 'FCON 1000',
-       'Functional Connectomes Project', 'www.nitrc.org/projects/fcon_1000', 'NITRC']
-dict_data = dict(zip(data['i'], data['URL']))
-dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
-valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
-pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')]
-no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
-data[data['i'].isin(no_pdfs.keys())].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
-
-
-def pdfopener(data):
+def pdfopener(data, dir):
     for row in data.iterrows():
         url = row[1]['URL']
         if pd.isnull(url):
@@ -29,10 +15,10 @@ def pdfopener(data):
         if '.pdf' in url:
             try:
                 pdf = urllib.urlopen(url)
-                with open('../linked_pdfs/' + str(row[1]['i']) + '.pdf', 'wb') as f:
+                with open(dir + str(row[1]['i']) + '.pdf', 'wb') as f:
                     f.write(pdf.read())
             except:
-                print(row[1]['i'])
+                print('Unable to open:', row[1]['i'])
                 print(url)
                 continue
 
@@ -175,28 +161,37 @@ def find_corrupted(pdf_directory):
                 res.append(int(file.replace('.pdf', '')))
     return res
 
+"""
+print([i for i, paragraph in paragraphs.items() if len(paragraph) == 0])
+print([i for i in range(len(data)) if i not in paragraphs])
+print([i for i, sets in sets.items() if len(sets) == 0])
+#mg.update_data()
+""""""
+data['Sets'] = assoc_sets(TXT_DIR, mg.WEIGHTED_SETS, less_weighted_sets=mg.UNWEIGHTED_SETS).values()
+mg.update_data()
 
-def find_paragraphs(txt_directory, terms):
-    res = {}
-    terms = list(map((lambda x: x.lower()), terms))
-    for path, dirs, files in os.walk(txt_directory):
-        for file in files:
-            full_file = '/'.join([path, file])
-            with open(full_file, 'r') as f:
-                text = f.read()
-            paragraphs = re.split(r'[ \t\r\f\v]*\n[ \t\r\f\v]*\n[ \t\r\f\v]*', text)
-            paragraphs = [paragraph.lower() for paragraph in paragraphs if isinstance(paragraph, str)]
-            key_paragraphs = []
-            for term in terms:
-                term = term.replace(' ', '[\s]*')
-                key_paragraphs += [paragraph for paragraph in paragraphs
-                                   if re.search(term, paragraph) and paragraph not in key_paragraphs]
-                key_paragraphs = [paragraph.replace(term, '@@@@' + term) for paragraph in key_paragraphs]
-            res[int(file.replace('.txt', ''))] = key_paragraphs
-    return res
+def main():
+
+    PDF_DIR = mg.dir(os.path.join(mg.INPUT_PATH, 'pdfs'))
+
+    TXT_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'txts'))
+
+    dict_data = dict(zip(data['i'], data['URL']))
 
 
-paragraph_dict = find_paragraphs('../outputs/txts', fcp)
-empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
-bad_data = list(no_pdfs.keys()) + empty_paragraphs
-data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
+    if len(os.listdir(PDF_DIR)) == 0:
+        pass
+
+    dict_data = dict(zip(data['i'], data['URL']))
+    dict_titles = dict(zip(data['i'], zip(data['Title'], data['URL'])))
+    valid_data = {key: value for key, value in dict_data.items() if not isinstance(value, float)}
+    pdfs = [int(pdf.replace('.pdf', '')) for pdf in os.listdir('../inputs/pdfs') if not pdf.startswith('.')]
+    no_pdfs = {key: value for key, value in dict_data.items() if key not in pdfs}
+    print(len(pdfs))
+    convertToText.walkAndText(mg.dir(os.path.join(mg.INPUT_PATH, 'pdfs')), '../outputs/txts')
+    paragraph_dict = find_paragraphs('../outputs/txts', mg.FCP_TERMS, outfile='../outputs/paragraphs.txt')
+    empty_paragraphs = [key for key, value in paragraph_dict.items() if len(value) == 0]
+    bad_data = list(no_pdfs) + empty_paragraphs
+    data[data['i'].isin(bad_data)].to_csv(path_or_buf='../outputs/unlinkables.csv', index=False)
+
+"""
