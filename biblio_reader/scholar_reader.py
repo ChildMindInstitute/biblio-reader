@@ -143,7 +143,6 @@ def categorize_journals(data, categories):
         print('No journal categories')
         return
     for category in os.listdir(categories):
-        print(category)
         cat_name = category.replace('.txt', '')
         with open(os.path.join(categories, category)) as c:
             keywords = [keyword.strip() for keyword in c.readlines()]
@@ -158,6 +157,7 @@ def categorize_journals(data, categories):
     res.update({i: 'Unknown' for i in range(len(data)) if i not in res})
     return {i: typ for i, typ in sorted(res.items())}
 
+#print(*categorize_journals(data, mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))).items(), sep='\n')
 
 def authors(data, link, split=None):
     """

@@ -8,7 +8,6 @@ if len(os.listdir(checks)) == 0:
     sys.exit(1)
 
 
-
 def usage_directory(directory):
     """
     After manually looking at each publication and marking correctly, takes the marks from the csv directory
@@ -82,6 +81,7 @@ def correct_types(directory, data):
         if type == 'Unknown':
             journal_types[key] = 'Journal'
     return {key: type for key, type in sorted(journal_types.items())}
+
 
 def data_contributions_count(data, directory, update=False):
     """
