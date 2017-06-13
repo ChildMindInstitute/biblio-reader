@@ -21,7 +21,7 @@ INPUT_PATH = dir(os.path.join(MAIN_DIR, 'inputs'))
 
 OUTPUT_PATH = dir(os.path.join(MAIN_DIR, 'outputs'))
 
-ROOT_PATH = dir(os.path.join(MAIN_DIR, 'root'))
+ROOT_PATH = dir(os.path.join(MAIN_DIR, 'working'))
 
 
 WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).*rockland|rockland\ssample')),
@@ -43,6 +43,7 @@ def get_file(file, dir):
         print('Unable to open', file_name, 'file')
         sys.exit(1)
 
+
 def get_data():
     if 'DATA' in globals():
         return
@@ -50,6 +51,7 @@ def get_data():
     DATA_NAME = get_file('DATA.txt', ROOT_PATH).read() + '.csv'
     DATA = pandas.read_csv(get_file(DATA_NAME, OUTPUT_PATH))
     return DATA
+
 
 def get_paragraphs():
     return {int(i): paragraph for i, paragraph in json.load(get_file('paragraphs.json', ROOT_PATH)).items()}
