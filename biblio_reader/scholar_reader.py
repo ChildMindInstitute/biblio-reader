@@ -1,6 +1,6 @@
 import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
-#data = mg.get_data()
+data = mg.get_data()
 
 
 def count_visualizer(value_count, stat_type, name, row_limit=None):
@@ -12,7 +12,7 @@ def count_visualizer(value_count, stat_type, name, row_limit=None):
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
-    value_count = {value.title(): count for value, count in list(dict(value_count).items())[:row_limit]}
+    value_count = {value.title(): count for value, count in sorted(list(dict(value_count).items()))[:row_limit]}
     plt.figure()
     if stat_type == 'bar':
         plt.bar(range(len(value_count)), list(value_count.values()), align='center')
@@ -42,7 +42,7 @@ def citations_per_year(data, sort=False):
 
 def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_split=False):
     """
-    Almost the same as value counter, except each bar is stacked by a specific other column (such as finding out most
+    Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
     :param data: The pandas dataframe
     :param column: The column of the dataframe to be value counted
@@ -113,7 +113,7 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     plt.title(title)
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
-
+#count_visualizer(data[data['Data Use'] == 'Y']['Journal Category'].value_counts(), 'pie', 'Types of Publications')
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
