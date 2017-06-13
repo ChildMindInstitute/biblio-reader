@@ -313,30 +313,13 @@ function drawGraph() {
             }
         });
 
-    graph.nodeRect = graph.node.append('rect')
-        .attr('rx', 5)
-        .attr('ry', 5)
+    graph.nodeCir = graph.node.append('cir')
+        .attr('r', 5)
         .attr('stroke', function(d) {
             return graph.strokeColor(d.categoryKey);
         })
         .attr('fill', function(d) {
             return graph.fillColor(d.categoryKey);
-        })
-        .attr('width' , 120)
-        .attr('height', 30);
-
-    graph.node.each(function(d) {
-        var node  = d3.select(this),
-            rect  = node.select('rect'),
-            lines = wrap(d.name),
-            ddy   = 1.1,
-            dy    = -ddy * lines.length / 2 + .5;
-
-        lines.forEach(function(line) {
-            var text = node.append('text')
-                .text(line)
-                .attr('dy', dy + 'em');
-            dy += ddy;
         });
     });
 
