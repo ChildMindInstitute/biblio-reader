@@ -313,13 +313,26 @@ function drawGraph() {
             }
         });
 
-    graph.nodeCir = graph.node.append('cir')
+    graph.nodeCir = graph.node.append('circle')
         .attr('r', 5)
         .attr('stroke', function(d) {
             return graph.strokeColor(d.categoryKey);
         })
         .attr('fill', function(d) {
             return graph.fillColor(d.categoryKey);
+        })
+        .attr('width' , 10)
+        .attr('height', 10);
+
+    graph.node.each(function(d) {
+        var node  = d3.select(this),
+            cir   = node.select('circle'),
+            lines = wrap(d.name),
+            ddy   = 1.1,
+            dy    = -ddy * lines.length / 2 + .5;
+
+        lines.forEach(function(line) {
+            dy += ddy;
         });
     });
 
@@ -549,7 +562,7 @@ function selectObject(obj, el) {
     resize(true);
 
     var $graph   = $('#graph-container'),
-        nodeRect = {
+        nodeCir = {
             left   : obj.x + obj.extent.left + graph.margin.left,
             top    : obj.y + obj.extent.top  + graph.margin.top,
             width  : obj.extent.right  - obj.extent.left,
@@ -561,14 +574,14 @@ function selectObject(obj, el) {
             width  : $graph.width(),
             height : $graph.height()
         };
-    if (nodeRect.left < graphRect.left ||
-        nodeRect.top  < graphRect.top  ||
-        nodeRect.left + nodeRect.width  > graphRect.left + graphRect.width ||
-        nodeRect.top  + nodeRect.height > graphRect.top  + graphRect.height) {
+    if (nodeCir.left < graphRect.left ||
+        nodeCir.top  < graphRect.top  ||
+        nodeCir.left + nodeCir.width  > graphRect.left + graphRect.width ||
+        nodeCir.top  + nodeCir.height > graphRect.top  + graphRect.height) {
 
         $graph.animate({
-            scrollLeft : nodeRect.left + nodeRect.width  / 2 - graphRect.width  / 2,
-            scrollTop  : nodeRect.top  + nodeRect.height / 2 - graphRect.height / 2
+            scrollLeft : nodeCir.left + nodeCir.width  / 2 - graphRect.width  / 2,
+            scrollTop  : nodeCir.top  + nodeCir.height / 2 - graphRect.height / 2
         }, 500);
     }
 }

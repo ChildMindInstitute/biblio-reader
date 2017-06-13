@@ -1,10 +1,11 @@
 {
     "title" : "Author Links",
     "graph" : {
-        "linkDistance" : 150,
-        "charge"       : -400,
+        "linkDistance" : 5,
+        "charge"       : -4,
         "friction"     : 0.01,
         "height"       : 1100,
+        "width"        : 1100,
         "numColors"    : 12,
         "gravity"      : 0.1,
         "labelPadding" : {
@@ -19,7 +20,7 @@
             "top"    : 2,
             "bottom" : 2
         },
-        "ticksWithoutCollisions" : 10
+        "ticksWithoutCollisions" : 50
     },
     "types" : {
         "author":   {
@@ -28,10 +29,5 @@
         }
     },
     "constraints" : [
-        {
-            "has"    : { "type" : "Author" },
-            "type"   : "Author",
-            "strength" : 0.2
-        }
     ]
 }
