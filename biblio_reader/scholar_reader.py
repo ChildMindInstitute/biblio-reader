@@ -1,10 +1,6 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import manager as mg
-import os, datetime, collections
-import numpy as np
+import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
-data = mg.get_data()
+#data = mg.get_data()
 
 
 def count_visualizer(value_count, stat_type, name, row_limit=None):
@@ -118,14 +114,6 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
 
-"""""
-journals = data[data['Data Use'] == 'Y'][~data['Journal'].str.contains('Rxiv').\
-    fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'].\
-    dropna().apply(lambda x: x.lower()).value_counts()
-#count_visualizer(journals, 'bar', 'Journals by Data Use', row_limit=10)
-#print(*journals.items(), sep='\n')
-"""
-#print(*data[~data['Journal'].str.contains('Rxiv').fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'], sep='\n')
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
@@ -138,8 +126,6 @@ def count_sets(data):
     return pd.Series(collections.Counter(sets), name='Sets')
 
 
-#stacked_data(data[data['Data Use'] == 'Y'][data['Year'] != "'17"], 'Year', ['Contributor', 'Not a Contributor'], 'Contributor', 'cluster', split=';')
-#count_visualizer(count_sets(data[data['Data Use'] == 'Y']), 'pie', 'Used Data by Set')
 def categorize_journals(data, categories):
     """
     DISCLAIMER: Must have an inputted list of keywords and corresponding categories to work with before using this
@@ -157,6 +143,7 @@ def categorize_journals(data, categories):
         print('No journal categories')
         return
     for category in os.listdir(categories):
+        print(category)
         cat_name = category.replace('.txt', '')
         with open(os.path.join(categories, category)) as c:
             keywords = [keyword.strip() for keyword in c.readlines()]
@@ -167,8 +154,8 @@ def categorize_journals(data, categories):
             type = 'Journal'
         data_journals = data.dropna(subset=[type])
         for keyword in keywords:
-            res.update({row[1]['i']: cat_name for row in data_journals.iterrows() if keyword in row[1][type].lower()})
-    res.update({i: 'Unknown' for i in range(0, len(data)) if i not in res})
+            res.update({i: cat_name for i, row in data_journals.iterrows() if keyword in row[type].lower()})
+    res.update({i: 'Unknown' for i in range(len(data)) if i not in res})
     return {i: typ for i, typ in sorted(res.items())}
 
 
@@ -238,5 +225,3 @@ def calculate_stats(data):
             else:
                 message += ' that were invalid:'
             print(message, stat)
-
-#calculate_stats(data)

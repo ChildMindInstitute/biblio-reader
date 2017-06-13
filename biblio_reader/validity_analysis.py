@@ -1,23 +1,13 @@
 import manager as mg, os, sys, csv, collections
-
+data = mg.get_data()
+from biblio_reader import scholar_reader
 checks = mg.dir(os.path.join(mg.INPUT_PATH, 'validity_checks'))
-
+categories = mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))
 if len(os.listdir(checks)) == 0:
     print('No validity checks to analyze')
     sys.exit(1)
 
-data = mg.get_data()
-categories = mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))
 
-
-def categorize_journals(data, categories):
-    from biblio_reader import scholar_reader
-    return scholar_reader.categorize_journals(data, categories)
-
-
-def author_links(data, link, split=None):
-    from biblio_reader import scholar_reader
-    return scholar_reader.authors(data, link, split=split)
 
 def usage_directory(directory):
     """
@@ -86,7 +76,7 @@ def correct_types(directory, data):
                             journal_types[k] = 'Other'
                     else:
                         journal_types[k] = 'Other'
-    journal_types.update({key: typ for key, typ in categorize_journals(data, categories).items()
+    journal_types.update({key: typ for key, typ in scholar_reader.categorize_journals(data, categories).items()
                           if key not in journal_types})
     for key, type in journal_types.items():
         if type == 'Unknown':
@@ -116,7 +106,7 @@ def data_contributions_count(data, directory, update=False):
                 v = rows[2].replace(' and ', '').upper()
                 if 'Q' in v:
                     contributing_papers.add(k)
-    author_associations = author_links(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
+    author_associations = scholar_reader.authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
     for row in data.dropna(subset=['Sets']).iterrows():
         row = row[1]
         authors = [author for author in row['Authors'].split(' & ') if author
