@@ -118,14 +118,14 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
 
-
+"""""
 journals = data[data['Data Use'] == 'Y'][~data['Journal'].str.contains('Rxiv').\
     fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'].\
     dropna().apply(lambda x: x.lower()).value_counts()
 #count_visualizer(journals, 'bar', 'Journals by Data Use', row_limit=10)
 #print(*journals.items(), sep='\n')
-
-print(*data[~data['Journal'].str.contains('Rxiv').fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'], sep='\n')
+"""
+#print(*data[~data['Journal'].str.contains('Rxiv').fillna(False)][~data['Journal'].str.contains('Xiv').fillna(False)]['Journal'], sep='\n')
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
