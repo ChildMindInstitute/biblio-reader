@@ -1,8 +1,9 @@
 # IP
-bibliometrics/fulltext/fulltexts/pdf/*
-bibliometrics/fulltext/fulltexts/txt/*
-biblio_reader/fulltext/fulltexts/pdf/*
-biblio_reader/fulltext/fulltexts/txt/*
-outputs/*
-inputs/*
-pdfs/*
+.idea/*
+.DS_Store
+inputs/pdfs/
+root/bibs/
+root/txts/
+root/checker_assigns/
+root/parsed_bibs.csv
+__pycache__/
