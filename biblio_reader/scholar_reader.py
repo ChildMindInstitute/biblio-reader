@@ -1,5 +1,4 @@
 import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np, re
-import matplotlib.colors as colors
 from titlecase import titlecase
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 data = mg.get_data()
@@ -8,23 +7,22 @@ data = mg.get_data()
 def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     """
     Counts values of specific columns in dataframe
-    :param value_count: A value count series, dict, or LOT (see pandas value_count function)
+    :param value_count: A value counts series, dict, or LOT (see pandas value_count function)
     :param out: output file name
     :param stat_type: one of: bar, barh, pie
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
-    value_count = {titlecase(value).replace('Ieee', 'IEEE').replace('Jama', 'JAMA'): count for value, count in list(dict(value_count).items())[:row_limit]}
+    value_count = {titlecase(str(value)): count for value, count in list(dict(value_count).items())[:row_limit]}
     plt.figure()
     if stat_type == 'bar':
         plt.bar(range(len(value_count)), list(value_count.values()), align='center', color=color)
-        plt.xticks(range(len(value_count)), value_count.keys(), rotation=90)
+        plt.xticks(range(len(value_count)), value_count.keys())
     elif stat_type == 'barh':
         plt.barh(range(len(value_count)), list(value_count.values()), align='center', tick_label=value_count.keys(),
                  color=color)
-        plt.xlabel('Number of Publications')
     elif stat_type == 'pie':
-        plt.pie(list(value_count.values()), labels=value_count.keys(), autopct='%1.1f%%', shadow=True, color=color)
+        plt.pie(list(value_count.values()), labels=value_count.keys(), autopct='%1.1f%%', shadow=True)
         plt.axis('equal')
     else:
         raise IOError('Invalid stat type')
@@ -54,7 +52,7 @@ def journal_impacts(data):
     return reversed(list(collections.Counter(journals).items())[:15])
 
 
-count_visualizer(journal_impacts(data[data['Data Use'] == 'Y']), 'barh', 'Number of Publications in High Impact Journals')
+
 
 def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_split=False):
     """
@@ -112,8 +110,10 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
                     plot_dict[key].append(value)
                 else:
                     plot_dict[key] = [value]
+        marker = 0
         for stack, plot in plot_dict.items():
-            plt.plot(plot, label=stack)
+            plt.plot(plot, label=stack, marker=marker)
+            marker += 1
         plt.xticks(range(len(stacker)), stacker)
     elif stat == 'cluster':
         curr_width = 0
@@ -129,7 +129,9 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     plt.title(title)
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
-#count_visualizer(data[data['Data Use'] == 'Y']['Journal Category'].value_counts(), 'pie', 'Types of Publications')
+data = data[data['Data Use'] == 'Y']
+
+
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
@@ -141,6 +143,7 @@ def count_sets(data):
     sets = [dset for dsets in data['Sets'].dropna() for dset in dsets.split(';')]
     return pd.Series(collections.Counter(sets), name='Sets')
 
+stacked_data(data[data['Year'] != "'17"], 'Sets', ["'" + str(x)[2:] for x in range(2010, 2017)], 'Year', 'plot', split=';')
 
 def categorize_journals(data, categories):
     """
@@ -173,7 +176,6 @@ def categorize_journals(data, categories):
     res.update({i: 'Unknown' for i in range(len(data)) if i not in res})
     return {i: typ for i, typ in sorted(res.items())}
 
-#print(*categorize_journals(data, mg.dir(os.path.join(mg.INPUT_PATH, 'journal_categories'))).items(), sep='\n')
 
 def authors(data, link, split=None):
     """
