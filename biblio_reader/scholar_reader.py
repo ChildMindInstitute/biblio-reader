@@ -1,24 +1,30 @@
-import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
+import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np, re
+import matplotlib.colors as colors
+from titlecase import titlecase
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 data = mg.get_data()
 
 
-def count_visualizer(value_count, stat_type, name, row_limit=None):
+def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     """
     Counts values of specific columns in dataframe
     :param value_count: A value count series, dict, or LOT (see pandas value_count function)
     :param out: output file name
-    :param stat_type: one of: bar, pie
+    :param stat_type: one of: bar, barh, pie
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
-    value_count = {value.title(): count for value, count in sorted(list(dict(value_count).items()))[:row_limit]}
+    value_count = {titlecase(value).replace('Ieee', 'IEEE').replace('Jama', 'JAMA'): count for value, count in list(dict(value_count).items())[:row_limit]}
     plt.figure()
     if stat_type == 'bar':
-        plt.bar(range(len(value_count)), list(value_count.values()), align='center')
+        plt.bar(range(len(value_count)), list(value_count.values()), align='center', color=color)
         plt.xticks(range(len(value_count)), value_count.keys(), rotation=90)
+    elif stat_type == 'barh':
+        plt.barh(range(len(value_count)), list(value_count.values()), align='center', tick_label=value_count.keys(),
+                 color=color)
+        plt.xlabel('Number of Publications')
     elif stat_type == 'pie':
-        plt.pie(list(value_count.values()), labels=value_count.keys(), autopct='%1.1f%%', shadow=True)
+        plt.pie(list(value_count.values()), labels=value_count.keys(), autopct='%1.1f%%', shadow=True, color=color)
         plt.axis('equal')
     else:
         raise IOError('Invalid stat type')
@@ -39,6 +45,16 @@ def citations_per_year(data, sort=False):
         data.reset_index(drop=True, inplace=True)
         mg.update_data()
 
+
+def journal_impacts(data):
+    impacts = mg.get_impacts()
+    journals = sorted([' '.join([journal.lower(), '(Impact:', str(impacts[journal.lower()]) + ')'])
+                       for journal in data['Journal'].dropna() if journal.lower() in impacts],
+                      key=lambda journ: impacts[re.sub('\s\(Imp.*', '', journ)], reverse=True)
+    return reversed(list(collections.Counter(journals).items())[:15])
+
+
+count_visualizer(journal_impacts(data[data['Data Use'] == 'Y']), 'barh', 'Number of Publications in High Impact Journals')
 
 def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_split=False):
     """
@@ -70,7 +86,7 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
                 stacked = [value for values in
                            data[data[stack_type] == stack][column].dropna()
                            for value in values.split(split)]
-        stacks.append({typ: count for typ, count in sorted(collections.Counter(stacked).items())[:10]})
+        stacks.append({titlecase(str(typ)): count for typ, count in sorted(collections.Counter(stacked).items())[:10]})
     max_stack = max(stacks, key=len)
     repaired_stacks = []
     for stack in stacks:
