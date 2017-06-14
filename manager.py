@@ -69,3 +69,11 @@ def update_data():
 def get_author_sets():
     df = pandas.read_csv(get_file('author_sets.csv', ROOT_PATH))
     return dict(zip(df['Author'], df['Data set']))
+
+def get_impacts():
+    return json.load(get_file('journal_impacts.json', INPUT_PATH))
+
+impacts = get_impacts()
+with open('inputs/journal_impacts.json', 'w') as js:
+    json.dump(impacts, js, indent=4)
+print(*impacts.items(), sep='\n')
