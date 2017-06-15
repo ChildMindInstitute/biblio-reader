@@ -83,7 +83,7 @@ def correct_types(directory, data):
     return {key: type for key, type in sorted(journal_types.items())}
 
 
-def data_contributions_count(data, directory, update=False):
+def data_contributions_count(data, directory, update=False, original=False):
     """
     If any manual investigator marks that a pub has some connection with the original source, the pub automatically
      gets marked as connected. All the papers with authors linked to that pub then get checked and added to the

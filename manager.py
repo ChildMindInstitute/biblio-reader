@@ -71,5 +71,4 @@ def get_author_sets():
     return dict(zip(df['Author'], df['Data set']))
 
 def get_impacts():
-    return {key.lower(): value for key, value in json.load(get_file('journal_impacts.json', INPUT_PATH)).items()
-            if isinstance(value, float)}
+    return {key.lower(): value for key, value in json.load(get_file('journal_impacts.json', INPUT_PATH)).items()}

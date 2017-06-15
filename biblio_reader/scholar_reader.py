@@ -44,12 +44,14 @@ def citations_per_year(data, sort=False):
         mg.update_data()
 
 
-def journal_impacts(data):
+def journal_impacts(data, count=False):
     impacts = mg.get_impacts()
-    journals = sorted([' '.join([journal.lower(), '(Impact:', str(impacts[journal.lower()]) + ')'])
-                       for journal in data['Journal'].dropna() if journal.lower() in impacts],
-                      key=lambda journ: impacts[re.sub('\s\(Imp.*', '', journ)], reverse=True)
-    return reversed(list(collections.Counter(journals).items())[:15])
+    journals = sorted([(journal, impacts[journal.lower()]) for journal in data['Journal'].dropna()
+                       if journal.lower() in impacts], key=lambda impact: impact[1], reverse=True)
+    if count:
+        return reversed(list(collections.Counter(journals).items())[:15])
+    else:
+        return journals
 
 
 
@@ -115,6 +117,7 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
             plt.plot(plot, label=stack, marker=marker)
             marker += 1
         plt.xticks(range(len(stacker)), stacker)
+        column, stack_type = stack_type, column
     elif stat == 'cluster':
         curr_width = 0
         width = 0.75 / len(stacks)
@@ -125,11 +128,11 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     else:
         raise IOError('Invalid stat type')
     plt.legend()
-    title = ' by '.join([column, stack_type])
+    #title = ' by '.join([column, stack_type])
+    title = 'Number of Publications by Type per Year'
     plt.title(title)
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
-data = data[data['Data Use'] == 'Y']
 
 
 def count_sets(data):
@@ -143,7 +146,6 @@ def count_sets(data):
     sets = [dset for dsets in data['Sets'].dropna() for dset in dsets.split(';')]
     return pd.Series(collections.Counter(sets), name='Sets')
 
-stacked_data(data[data['Year'] != "'17"], 'Sets', ["'" + str(x)[2:] for x in range(2010, 2017)], 'Year', 'plot', split=';')
 
 def categorize_journals(data, categories):
     """
