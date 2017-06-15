@@ -106,6 +106,8 @@ def data_contributions_count(data, directory, update=False, original=False):
                 v = rows[2].replace(' and ', '').upper()
                 if 'Q' in v:
                     contributing_papers.add(k)
+    if original:
+        return contributing_papers
     author_associations = scholar_reader.authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
     for row in data.dropna(subset=['Sets']).iterrows():
         row = row[1]
@@ -120,5 +122,6 @@ def data_contributions_count(data, directory, update=False, original=False):
     if update:
         data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
-    print(len(contributing_papers))
     return contributing_papers
+
+

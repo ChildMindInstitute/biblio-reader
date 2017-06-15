@@ -54,8 +54,6 @@ def journal_impacts(data, count=False):
         return journals
 
 
-
-
 def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most

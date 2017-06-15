@@ -23,9 +23,13 @@
         "ticksWithoutCollisions" : 50
     },
     "types" : {
-        "author":   {
-            "short" : "Author",
-            "long:" : "Author"
+        "Contributor" : {
+            "short" : "Contributor",
+            "long:" : "Contributor"
+        },
+        "Not a Contributor" : {
+            "short" : "Not a Contributor",
+            "long:" : "Not a Contributor"
         }
     },
     "constraints" : [
