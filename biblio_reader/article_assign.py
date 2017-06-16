@@ -1,12 +1,10 @@
-import random, os, collections, math, manager
-import pandas as pd
+import random, os, collections, math, manager as mg
 
-with open('../outputs/unlinkables.csv', 'r') as u:
-    bad_data = pd.read_csv(u)
-
-data = manager.get_data()
-paragraphs = {key: value for key, value in manager.get_paragraphs().items()
-              if key not in [int(i) for i in bad_data['i']]}
+checker_dir = mg.dir(os.path.join(mg.ROOT_PATH, 'checker_assigns'))
+data = mg.get_data()
+from biblio_reader import validity_analysis
+data = data[data['i'].isin(validity_analysis.data_contributions_count(data, validity_analysis.checks, original=True))][data['Data Use'].isin(['Y', 'S'])]
+paragraphs = mg.get_paragraphs()
 
 
 class Member(object):
@@ -15,25 +13,23 @@ class Member(object):
         self.path = '/'.join([path, name + '.txt'])
         if os.path.exists(self.path):
             file = open(self.path)
-            for i, line in enumerate(file):
-                if i == 3:
-                    self.articles = sorted([int(l) for l in str(line).strip().split(',')])
-                    break
+            if len(file.readlines()) < 4:
+                self.articles = []
+            else:
+                for i, line in enumerate(file):
+                    if i == 3:
+                        self.articles = sorted([int(l) for l in str(line).strip().split(',')])
+                        break
         else:
             self.articles = []
         self.written = list(self.articles)
 
     def __str__(self):
         return self.name + '\n\n\n' + ','.join([str(article) for article in sorted(self.articles)]) + '\n\n\n' + \
-           '\n\n'.join(['ARTICLE NO ' + str(key) + ': ' + str(data.iloc[key]['Title']) +
-                        '\n' + str(data.iloc[key]['Authors']) + '\nPublication Type: ' +
-                        data.iloc[key]['Journal Category'] + '\n\n' + '\n\n'.join(paragraph)
-                        for key, paragraph in sorted(paragraphs.items()) if key in self.articles]) + \
-           '\n\n\n\nThese numbers have no paragraphs:\n\n\n' + \
-           '\n\n'.join(['ARTICLE NO ' + str(article) + ': ' + str(data.iloc[article]['Title']) +
-                        '\n' + str(data.iloc[article]['Authors']) + '\n' + str(data.iloc[article]['URL']) +
-                        '\nPublication Type: ' + data.iloc[article]['Journal Category'] for
-                        article in self.articles if article in sorted(list(bad_data['i']))])
+           '\n\n'.join(['ARTICLE NO ' + str(key) + ': ' + str(data.loc[key, 'Title']) +
+                        '\n' + str(data.loc[key, 'Authors']) + '\nPublication Type: ' +
+                        data.loc[key, 'Journal Category'] + '\n\n' + '\n\n'.join(paragraph)
+                        for key, paragraph in sorted(paragraphs.items()) if key in self.articles])
 
     def assign(self, assign, length):
         while length > 0 and not set(assign).issubset(set(self.articles)):
@@ -45,7 +41,7 @@ class Member(object):
 
 
 class Assignment(object):
-    def __init__(self, members=None, dir='../outputs/checker_assigns'):
+    def __init__(self, members=None, dir=checker_dir):
         if members is None:
             self.members = [Member(member.replace('.txt', ''), dir) for member in os.listdir(dir) if
                             '.txt' in member]
@@ -118,3 +114,6 @@ class Assignment(object):
                       len([article for article in member.articles if article not in member.written]), '| Old:',
                       len(member.written))
 
+assignment = Assignment(members=['Michael', 'Anirudh', 'Jon'], dir=mg.dir(os.path.join(checker_dir, 'contr_checks')))
+assignment.assign(list(data['i']))
+assignment.write()

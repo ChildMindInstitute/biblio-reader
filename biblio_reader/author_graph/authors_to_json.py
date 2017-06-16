@@ -1,6 +1,6 @@
 import manager as mg, json, os
 data = mg.get_data()
-data.dropna(subset=['Authors'], inplace=True)
+data = data[data['Data Use'] == 'Y'].dropna(subset=['Authors'])
 from biblio_reader import scholar_reader, validity_analysis
 
 #types = {auth: 'Contributor' in val for auth, val in scholar_reader.authors(data, 'Contributor').items()}

@@ -40,7 +40,9 @@ def usage_directory(directory):
                             checks[k].remove(single)
                         if len(checks[k]) == 3:
                             del checks[k][0]
-    print('These numbers still have conflicts:', [i for i, check in checks.items() if len(check) != 2])
+    global conflicts
+    conflicts = [i for i, check in checks.items() if len(check) != 2]
+    print('These numbers still have conflicts:', *conflicts, sep='\n')
     return {i: check[0] for i, check in sorted(checks.items()) if len(check) == 2}
 
 
@@ -103,7 +105,7 @@ def data_contributions_count(data, directory, update=False, original=False):
             reader = list(csv.reader(f))
             for rows in reader[1:]:
                 k = int(rows[0])
-                v = rows[2].replace(' and ', '').upper()
+                v = rows[2].upper()
                 if 'Q' in v:
                     contributing_papers.add(k)
     if original:
