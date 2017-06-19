@@ -3,7 +3,7 @@ import random, os, collections, math, manager as mg
 checker_dir = mg.dir(os.path.join(mg.ROOT_PATH, 'checker_assigns'))
 data = mg.get_data()
 from biblio_reader import validity_analysis
-data = data[data['i'].isin(validity_analysis.data_contributions_count(data, validity_analysis.checks, original=True))][data['Data Use'].isin(['Y', 'S'])]
+data = data[data['i'].isin(validity_analysis.data_contributions_count(data))][data['Data Use'].isin(['Y', 'S'])][data['Sets'].str.contains('ABIDE').fillna(False) | data['Sets'].str.contains('ADHD200').fillna(False)]
 paragraphs = mg.get_paragraphs()
 
 
@@ -114,6 +114,6 @@ class Assignment(object):
                       len([article for article in member.articles if article not in member.written]), '| Old:',
                       len(member.written))
 
-assignment = Assignment(members=['Michael', 'Anirudh', 'Jon'], dir=mg.dir(os.path.join(checker_dir, 'contr_checks')))
+assignment = Assignment(members=['Michael', 'Anirudh', 'Jon', 'Bonhwang'], dir=mg.dir(os.path.join(checker_dir, 'contr_checks')))
 assignment.assign(list(data['i']))
 assignment.write()

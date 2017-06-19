@@ -85,7 +85,7 @@ def correct_types(directory, data):
     return {key: type for key, type in sorted(journal_types.items())}
 
 
-def data_contributions_count(data, directory, update=False, original=False):
+def data_contributions_count(data, update=False):
     """
     If any manual investigator marks that a pub has some connection with the original source, the pub automatically
      gets marked as connected. All the papers with authors linked to that pub then get checked and added to the
@@ -96,20 +96,7 @@ def data_contributions_count(data, directory, update=False, original=False):
     :param author_associations: A dictionary of authors and the terms that they are associated with
     :return: A list of papers that are considered part of the contributions count
     """
-    contributing_papers = set()
-    for check in os.listdir(directory):
-        if '.csv' not in check:
-            continue
-        full_path = '/'.join([directory, check])
-        with open(full_path, 'r') as f:
-            reader = list(csv.reader(f))
-            for rows in reader[1:]:
-                k = int(rows[0])
-                v = rows[2].upper()
-                if 'Q' in v:
-                    contributing_papers.add(k)
-    if original:
-        return contributing_papers
+    contributing_papers = {1, 5, 74, 92, 249, 653}
     author_associations = scholar_reader.authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
     for row in data.dropna(subset=['Sets']).iterrows():
         row = row[1]
@@ -125,5 +112,3 @@ def data_contributions_count(data, directory, update=False, original=False):
         data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
     return contributing_papers
-
-

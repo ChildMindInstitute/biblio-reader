@@ -55,30 +55,33 @@ def citations_per_year(data, sort=False):
 
 
 def journal_impacts(data, count=True):
+    data = data.dropna(subset=['Journal'])
     impacts = mg.get_impacts()
-    journals = sorted([(titlecase(journal.lower()), impacts[journal.lower()]) for journal in data['Journal'].dropna()
+    journals = sorted([(journal.lower(), impacts[journal.lower()]) for i, journal in zip(data['i'], data['Journal'])
                        if journal.lower() in impacts], key=lambda impact: impact[1], reverse=True)
     if count:
         return collections.Counter(journals)
     else:
         return journals
 
-cits = sorted(collections.Counter(data[data['Data Use'] == 'Y']['Citations']).items())[2:]
-count_visualizer(cits, 'bar', 'Citations Histogram')
-print(*cits, sep='\n')
+#count_visualizer(data[data['Data Use'] == 'Y'][data['Year'] != "'17"]['Year'].value_counts().sort_index(), 'bar', 'Number of Publications that Used Data Per Year')
+#cits = sorted(collections.Counter(data[data['Data Use'] == 'Y']['Citations']).items())[2:]
+#count_visualizer(cits, 'bar', 'Citations Histogram')
+count_visualizer(reversed([(titlecase(j[0]) + " (Impact: " + str(j[1]) + ")", imp) for j, imp in journal_impacts(data[data['Data Use'] == 'Y']).items()][:15]), 'barh', 'Number of Publications in High Impact Journals')
 """""
 j_impacts = journal_impacts(data[data['Data Use'] == 'Y'])
 impacts = zip(j_impacts.keys(), np.cumsum(list(j_impacts.values())))
 
 count_visualizer(impacts, 'plot', 'Number of Publications by Impact Factor')
 """
-def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_split=False):
+
+
+def stacked_data(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
     :param data: The pandas dataframe
     :param column: The column of the dataframe to be value counted
-    :param stacker: A list of distinct values that correspond to values in the stack_type
     :param stack_type: The column in the dataframe to be part of the stacks (such as year, etc.)
     :param stat: One of: stacked, plot, cluster
     :param split: If true, splits each row in the column by the splitter
@@ -87,6 +90,7 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
     """
     plt.figure()
     stacks = []
+    stacker = list(data[stack_type].value_counts().index)[:15]
     for stack in stacker:
         if not split:
             if stacker_split:
@@ -143,8 +147,11 @@ def stacked_data(data, column, stacker, stack_type, stat, split=None, stacker_sp
         plt.xticks([x + (((len(stacks) / 2) - 0.5) * width) for x in range(len(max_stack))], max_stack.keys())
     else:
         raise IOError('Invalid stat type')
-    plt.legend()
-    title = ' by '.join([column, stack_type])
+    f, ax = plt.subplots()
+    handles, labels = ax.get_legend_handles_labels()
+    plt.legend(handles[::-1], labels[::-1])
+    if title is None:
+        title = ' by '.join([column, stack_type])
     plt.title(title)
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
@@ -193,7 +200,9 @@ def categorize_journals(data, categories):
     res.update({i: 'Unknown' for i in range(len(data)) if i not in res})
     return {i: typ for i, typ in sorted(res.items())}
 
-
+#data['Contributor'] = data['Contributor'].replace('Not a Contributor', 'Non-contributor')
+#stacked_data(data[data['Year'].isin(["'09", "'17"]) == False][data['Data Use'] == 'Y'], 'Year', 'Contributor', 'cluster', title='Number of Publications by Non/contributors per Year')
+stacked_data(data[data['Year'].isin(["'09", "'17"]) == False][data['Data Use'] == 'Y'], 'Year', 'Journal Category', 'stacked', title='Number of Publications by Type Per Year')
 def authors(data, link, split=None):
     """
     Links each author to every paper they are attributed to and to the specific column of that paper
@@ -260,3 +269,6 @@ def calculate_stats(data):
             else:
                 message += ' that were invalid:'
             print(message, stat)
+
+#print(data[data['Data Use'] == 'Y'][data['Year'] == "'09"]['i'])
+#calculate_stats(data)
