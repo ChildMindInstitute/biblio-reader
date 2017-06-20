@@ -47,7 +47,7 @@ def citations_per_year(data, sort=False):
     :param data: The pandas dataframe
     :param sort: If true, re-indexes the dataframe based on citations per year
     """
-    data['CPY'] = data['Citations'] / (datetime.datetime.now().year + 1 - data['Year'])
+    data['CPY'] = data['Citations'] / (datetime.datetime.now().year + 1 - data['Year'].apply(lambda x: (2000 + int(x[1:]))))
     if sort:
         data.sort_values('CPY', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
@@ -63,17 +63,6 @@ def journal_impacts(data, count=True):
         return collections.Counter(journals)
     else:
         return journals
-
-#count_visualizer(data[data['Data Use'] == 'Y'][data['Year'] != "'17"]['Year'].value_counts().sort_index(), 'bar', 'Number of Publications that Used Data Per Year')
-#cits = sorted(collections.Counter(data[data['Data Use'] == 'Y']['Citations']).items())[2:]
-#count_visualizer(cits, 'bar', 'Citations Histogram')
-count_visualizer(reversed([(titlecase(j[0]) + " (Impact: " + str(j[1]) + ")", imp) for j, imp in journal_impacts(data[data['Data Use'] == 'Y']).items()][:15]), 'barh', 'Number of Publications in High Impact Journals')
-"""""
-j_impacts = journal_impacts(data[data['Data Use'] == 'Y'])
-impacts = zip(j_impacts.keys(), np.cumsum(list(j_impacts.values())))
-
-count_visualizer(impacts, 'plot', 'Number of Publications by Impact Factor')
-"""
 
 
 def stacked_data(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
@@ -147,9 +136,7 @@ def stacked_data(data, column, stack_type, stat, title=None, split=None, stacker
         plt.xticks([x + (((len(stacks) / 2) - 0.5) * width) for x in range(len(max_stack))], max_stack.keys())
     else:
         raise IOError('Invalid stat type')
-    f, ax = plt.subplots()
-    handles, labels = ax.get_legend_handles_labels()
-    plt.legend(handles[::-1], labels[::-1])
+    plt.legend()
     if title is None:
         title = ' by '.join([column, stack_type])
     plt.title(title)
@@ -200,9 +187,7 @@ def categorize_journals(data, categories):
     res.update({i: 'Unknown' for i in range(len(data)) if i not in res})
     return {i: typ for i, typ in sorted(res.items())}
 
-#data['Contributor'] = data['Contributor'].replace('Not a Contributor', 'Non-contributor')
-#stacked_data(data[data['Year'].isin(["'09", "'17"]) == False][data['Data Use'] == 'Y'], 'Year', 'Contributor', 'cluster', title='Number of Publications by Non/contributors per Year')
-stacked_data(data[data['Year'].isin(["'09", "'17"]) == False][data['Data Use'] == 'Y'], 'Year', 'Journal Category', 'stacked', title='Number of Publications by Type Per Year')
+
 def authors(data, link, split=None):
     """
     Links each author to every paper they are attributed to and to the specific column of that paper
@@ -270,5 +255,56 @@ def calculate_stats(data):
                 message += ' that were invalid:'
             print(message, stat)
 
+
+
 #print(data[data['Data Use'] == 'Y'][data['Year'] == "'09"]['i'])
 #calculate_stats(data)
+#cits = sorted(dict(data[data['Data Use'] == 'Y']['Citations'].value_counts()).items(), key=lambda x: x[0])
+
+#print(*cits, sep='\n')
+#count_visualizer(data[data['Data Use'] == 'Y'][data['Year'] != "'17"]['Year'].value_counts().sort_index(), 'bar', 'Number of Publications that Used Data Per Year')
+#cits = sorted(collections.Counter(data[data['Data Use'] == 'Y']['Citations']).items())[2:]
+#count_visualizer(cits, 'bar', 'Citations Histogram')
+#count_visualizer(sorted(([(titlecase(j[0]) + " (CiteScore: " + str(j[1]) + ")", imp) for j, imp in journal_impacts(data[data['Data Use'] == 'Y']).items()][:15]), key=lambda j: j[1]), 'barh', 'Number of Publications in the 15 Highest Impact Journals')
+"""""
+j_impacts = journal_impacts(data[data['Data Use'] == 'Y'])
+impacts = zip(j_impacts.keys(), np.cumsum(list(j_impacts.values())))
+
+count_visualizer(impacts, 'plot', 'Number of Publications by Impact Factor')
+"""
+#data['Contributor'] = data['Contributor'].replace('Not a Contributor', 'Non-contributor')
+#stacked_data(data[data['Year'].isin(["'09", "'17"]) == False][data['Data Use'] == 'Y'], 'Year', 'Contributor', 'cluster', title='Number of Publications by Non/contributors per Year')
+#stacked_data(data[data['Year'].isin(["'09", "'17"]) == False][data['Data Use'] == 'Y'][data['Journal Category'] != 'Other'], 'Year', 'Journal Category', 'stacked', title='Number of Publications by Type Per Year')
+"""
+data = data[data['Year'].isin(["'09", "'17"]) == False].dropna(subset=['Year'])
+citations_per_year(data)
+x = zip(data['Year'], data['CPY'])
+res = {}
+for year, citations in x:
+    if year in res:
+        res[year] += citations
+    else:
+        res[year] = citations
+sres = sorted(res.items())
+res = zip([s[0] for s in sres], np.cumsum([s[1] for s in sres]))
+count_visualizer(res, 'bar', 'Total Number of Citations per Year')
+
+xx = sum(list(data['CPY'])) / float(len(data['CPY']))
+print(xx)
+"""
+data.dropna(subset=['Year'], inplace=True)
+sets = count_sets(data).index
+res = []
+for set in sets:
+    setlist = list(data[data['Sets'].str.contains(set).fillna(False)][data['Data Use'] == 'Y']['Citations Per Year'].dropna().values)
+    res.append(setlist)
+    print(set, np.percentile(setlist, 75), sum(setlist) / float(len(setlist)))
+
+
+plt.figure()
+plt.boxplot(res)
+plt.title('Average No. of Citations per Year by Initiative')
+plt.ylabel('Citations per Year')
+#plt.xlabel('Initiative')
+plt.xticks([x + 1 for x in range(len(sets))], sets)
+plt.savefig('tester.png', bbox_inches='tight')

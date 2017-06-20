@@ -85,7 +85,7 @@ def correct_types(directory, data):
     return {key: type for key, type in sorted(journal_types.items())}
 
 
-def data_contributions_count(data, update=False):
+def data_contributions_count(data, update=False, original=False):
     """
     If any manual investigator marks that a pub has some connection with the original source, the pub automatically
      gets marked as connected. All the papers with authors linked to that pub then get checked and added to the
@@ -96,7 +96,9 @@ def data_contributions_count(data, update=False):
     :param author_associations: A dictionary of authors and the terms that they are associated with
     :return: A list of papers that are considered part of the contributions count
     """
-    contributing_papers = {1, 5, 74, 92, 249, 653}
+    contributing_papers = {1, 5, 74, 92, 653}
+    if original:
+        return contributing_papers
     author_associations = scholar_reader.authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
     for row in data.dropna(subset=['Sets']).iterrows():
         row = row[1]
