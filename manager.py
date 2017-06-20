@@ -70,5 +70,5 @@ def get_author_sets():
     df = pandas.read_csv(get_file('author_sets.csv', ROOT_PATH))
     return dict(zip(df['Author'], df['Data set']))
 
-def get_impacts():
-    return {key: value for key, value in json.load(get_file('journal_impacts.json', INPUT_PATH)).items()}
+def get_journal_attrs():
+    return {key.lower(): value for key, value in json.load(get_file('journal_attrs.json', INPUT_PATH)).items()}

@@ -9,7 +9,7 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     Counts values of specific columns in dataframe
     :param value_count: A value counts series, dict, or LOT (see pandas value_count function)
     :param out: output file name
-    :param stat_type: one of: bar, barh, pie, plot, hist
+    :param stat_type: one of: bar, barh, pie, plot
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
@@ -27,13 +27,9 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     elif stat_type == 'plot':
         plt.plot(list(value_count.values()), color=color)
         plt.xticks([0, int(len(value_count) / 2), len(value_count)],
-                   [list(value_count.keys())[0][1], list(value_count.keys())[int(len(value_count) / 2)][1], list(value_count.keys())[len(value_count) - 1][1]])
-        plt.xlabel('Impact Factor')
-        plt.ylabel('Number of Publications')
+                   [list(value_count.keys())[0][1], list(value_count.keys())[int(len(value_count) / 2)][1],
+                    list(value_count.keys())[len(value_count) - 1][1]])
         plt.fill_between(range(len(value_count)), list(value_count.values()))
-    elif stat_type == 'hist':
-        plt.hist(list(value_count.values()))
-        plt.xticks(range(len(value_count)), value_count.keys())
     else:
         raise IOError('Invalid stat type')
     plt.title(name)
@@ -53,12 +49,15 @@ def citations_per_year(data, sort=False):
         data.reset_index(drop=True, inplace=True)
         mg.update_data()
 
-
-def journal_impacts(data, count=True):
+def journal_attrs(data, attr, count=False):
     data = data.dropna(subset=['Journal'])
-    impacts = mg.get_impacts()
-    journals = sorted([(journal.lower(), impacts[journal.lower()]) for i, journal in zip(data['i'], data['Journal'])
-                       if journal.lower() in impacts], key=lambda impact: impact[1], reverse=True)
+    attrs = mg.get_journal_attrs()
+    attrs = {journal: attrs[journal][attr] for journal in attrs}
+    for j in data['Journal']:
+        if j.lower() not in attrs and 'rxiv' not in j.lower():
+            print(j)
+    journals = sorted([(journal.lower(), attrs[journal.lower()]) for journal in data['Journal']
+                       if journal.lower() in attrs], key=lambda attrib: attrib[1], reverse=True)
     if count:
         return collections.Counter(journals)
     else:
@@ -254,3 +253,9 @@ def calculate_stats(data):
             else:
                 message += ' that were invalid:'
             print(message, stat)
+
+cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data, 'Categories')).values()
+                                   for cat in cats]).items(), key=lambda categ: categ[1], reverse=True)
+
+print(*cats, sep='\n')
+
