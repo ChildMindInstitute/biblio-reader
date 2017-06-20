@@ -1,9 +1,9 @@
-import random, os, collections, math, manager as mg
+import random, os, collections, math, manager as mg, csv, matplotlib.pyplot as plt
 
 checker_dir = mg.dir(os.path.join(mg.ROOT_PATH, 'checker_assigns'))
 data = mg.get_data()
-from biblio_reader import validity_analysis
-data = data[data['i'].isin(validity_analysis.data_contributions_count(data))][data['Data Use'].isin(['Y', 'S'])][data['Sets'].str.contains('ABIDE').fillna(False) | data['Sets'].str.contains('ADHD200').fillna(False)]
+from biblio_reader import scholar_reader
+data = data[data['i'].isin(scholar_reader.data_contributions_count(data))][data['Data Use'] == 'Y'][data['Sets'].str.contains('ABIDE').fillna(False) | data['Sets'].str.contains('ADHD200').fillna(False)]
 paragraphs = mg.get_paragraphs()
 
 
@@ -114,6 +114,38 @@ class Assignment(object):
                       len([article for article in member.articles if article not in member.written]), '| Old:',
                       len(member.written))
 
+"""
 assignment = Assignment(members=['Michael', 'Anirudh', 'Jon', 'Bonhwang'], dir=mg.dir(os.path.join(checker_dir, 'contr_checks')))
 assignment.assign(list(data['i']))
 assignment.write()
+"""
+
+SIZES_DIR = os.path.join(mg.INPUT_PATH, 'sample_sizes')
+sizes = {}
+for size in os.listdir(SIZES_DIR):
+    if '.csv' not in size:
+        continue
+    full_path = '/'.join([SIZES_DIR, size])
+    with open(full_path, 'r') as f:
+        reader = list(csv.reader(f))
+        for rows in reader[1:]:
+            sizes[int(rows[0])] = int(rows[1])
+
+sizes = {article: size for article, size in sizes.items() if article in data['i']}
+adhd200, abide = [], []
+for article, size in sizes.items():
+    if 'ABIDE' in data.loc[article, 'Sets'] and 'ADHD200' in data.loc[article, 'Sets']:
+        abide.append(size / 2)
+        adhd200.append(size/ 2)
+    elif 'ABIDE' in data.loc[article, 'Sets']:
+        abide.append(size)
+    elif 'ADHD200' in data.loc[article, 'Sets']:
+        adhd200.append(size)
+
+print(abide, adhd200)
+
+plt.figure()
+plt.boxplot([abide, adhd200])
+plt.xticks([1, 2], ['ABIDE', 'ADHD200'])
+plt.title('Sample Sizes')
+plt.savefig('tester.png')

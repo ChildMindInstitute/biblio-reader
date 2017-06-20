@@ -1,4 +1,4 @@
-import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
+import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np, csv
 from titlecase import titlecase
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 data = mg.get_data()
@@ -53,9 +53,6 @@ def journal_attrs(data, attr, count=False):
     data = data.dropna(subset=['Journal'])
     attrs = mg.get_journal_attrs()
     attrs = {journal: attrs[journal][attr] for journal in attrs}
-    for j in data['Journal']:
-        if j.lower() not in attrs and 'rxiv' not in j.lower():
-            print(j)
     journals = sorted([(journal.lower(), attrs[journal.lower()]) for journal in data['Journal']
                        if journal.lower() in attrs], key=lambda attrib: attrib[1], reverse=True)
     if count:
@@ -254,8 +251,42 @@ def calculate_stats(data):
                 message += ' that were invalid:'
             print(message, stat)
 
-cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data, 'Categories')).values()
+
+def data_contributions_count(data, update=False, original=False):
+    """
+    If any manual investigator marks that a pub has some connection with the original source, the pub automatically
+     gets marked as connected
+
+    :param data: The pandas dataframe
+    :param directory: The directory of csv files of manual checks
+    :param author_associations: A dictionary of authors and the terms that they are associated with
+    :return: A list of papers that are considered part of the contributions count
+    """
+    contributing_papers = {1, 5, 74, 92, 653}
+    if original:
+        return contributing_papers
+    author_associations = authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
+    for row in data.dropna(subset=['Sets']).iterrows():
+        row = row[1]
+        all_authors = [author for author in row['Authors'].split(' & ') if author
+                   in author_associations and author != 'others']
+        sets = row['Sets'].split(';')
+        i = row['i']
+        if len(all_authors) != 0:
+            for author in all_authors:
+                if any(s in author_associations[author] for s in sets):
+                    contributing_papers.add(i)
+    if update:
+        data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
+                        [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
+    return contributing_papers
+
+"""
+cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data[data['Data Use'] == 'Y'], 'Categories')).values()
                                    for cat in cats]).items(), key=lambda categ: categ[1], reverse=True)
+
 
 print(*cats, sep='\n')
 
+#count_visualizer(reversed(cats), 'barh', 'Top 15 Journal Categories')
+"""
