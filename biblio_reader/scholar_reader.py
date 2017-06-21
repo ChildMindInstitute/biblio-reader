@@ -1,5 +1,6 @@
 import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np, csv
 from titlecase import titlecase
+from scipy.stats import norm
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 data = mg.get_data()
 
@@ -43,7 +44,7 @@ def citations_per_year(data, sort=False):
     :param data: The pandas dataframe
     :param sort: If true, re-indexes the dataframe based on citations per year
     """
-    data['CPY'] = data['Citations'] / (datetime.datetime.now().year + 1 - data['Year'].apply(lambda x: (2000 + int(x[1:]))))
+    data['Citations Per Year'] = data['Citations'] / (datetime.datetime.now().year + 1 - data['Year'].apply(lambda x: (2000 + int(x[1:]))))
     if sort:
         data.sort_values('CPY', inplace=True, ascending=False)
         data.reset_index(drop=True, inplace=True)
@@ -212,10 +213,13 @@ def authors(data, link, split=None):
     return author_links
 
 
-def impacts(data, sets, type):
+def impacts(data, sets, type, per_year=False):
     res = []
     for set in sets:
-        citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations'])
+        if per_year:
+            citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations Per Year'], reverse=True)
+        else:
+            citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations'], reverse=True)
         """
         plt.figure()
         plt.hist(citations, bins=max(citations), edgecolor='black')
@@ -224,6 +228,7 @@ def impacts(data, sets, type):
         plt.title(set)
         plt.savefig(set + '.png')
         """
+
         if type == 'h':
             for i, citation in enumerate(citations):
                 if citation >= i + 1:
@@ -319,19 +324,8 @@ def data_contributions_count(data, update=False, original=False):
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
     return contributing_papers
 
-"""
-cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data[data['Data Use'] == 'Y'], 'Categories')).values()
-                                   for cat in cats]).items(), key=lambda categ: categ[1], reverse=True)
 
 
-print(*cats, sep='\n')
-
-#count_visualizer(reversed(cats), 'barh', 'Top 15 Journal Categories')
-
-
-impacts = [float(j[1]) for j in journal_attrs(data, 'CiteScore') if j[1] != ""]
-plt.hist(impacts, bins=50, edgecolor='black')
-plt.savefig('tester.png', bbox_inches='tight')
-"""
 #print(*sorted(data[data['Data Use'] == 'Y'][data['Sets'].str.contains(';').fillna(False)]['Citations']), sep='\n')
-print(*impacts(data[data['Data Use'] == 'Y'], count_sets(data).index, 'total'), sep='\n')
+#print(*impacts(data[data['Data Use'] == 'Y'], count_sets(data).index, 'mean', per_year=True), sep='\n')
+print(*impacts(data[data['Data Use'] == 'Y'], count_sets(data).index, 'sd'), sep='\n')
