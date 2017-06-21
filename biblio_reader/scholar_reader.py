@@ -49,6 +49,7 @@ def citations_per_year(data, sort=False):
         data.reset_index(drop=True, inplace=True)
         mg.update_data()
 
+
 def journal_attrs(data, attr, count=False):
     data = data.dropna(subset=['Journal'])
     attrs = mg.get_journal_attrs()
@@ -211,6 +212,43 @@ def authors(data, link, split=None):
     return author_links
 
 
+def impacts(data, sets, type):
+    res = []
+    for set in sets:
+        citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations'])
+        """
+        plt.figure()
+        plt.hist(citations, bins=max(citations), edgecolor='black')
+        plt.xlabel('Total Number of Citations')
+        plt.ylabel('Number of Publications')
+        plt.title(set)
+        plt.savefig(set + '.png')
+        """
+        if type == 'h':
+            for i, citation in enumerate(citations):
+                if citation >= i + 1:
+                    h = citation
+                else:
+                    break
+            res.append((set, h))
+        elif type == 'mean':
+            mean = sum(citations) / float(len(citations))
+            res.append((set, mean))
+        elif type == 'total':
+            res.append((set, sum(citations)))
+        elif type == 'sd':
+            pass
+            res.append((set, np.std(citations)))
+        elif type == 'i10':
+            i10 = len([cit for cit in citations if cit >= 10])
+            res.append((set, i10))
+        elif isinstance(type, int):
+            res.append((set, np.percentile(citations, type)))
+        else:
+            raise IOError("Invalid type")
+    return res
+
+
 def calculate_stats(data):
     """
     Prints the usage, contributions, and journal category stats for the data set
@@ -289,4 +327,11 @@ cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data[data[
 print(*cats, sep='\n')
 
 #count_visualizer(reversed(cats), 'barh', 'Top 15 Journal Categories')
+
+
+impacts = [float(j[1]) for j in journal_attrs(data, 'CiteScore') if j[1] != ""]
+plt.hist(impacts, bins=50, edgecolor='black')
+plt.savefig('tester.png', bbox_inches='tight')
 """
+#print(*sorted(data[data['Data Use'] == 'Y'][data['Sets'].str.contains(';').fillna(False)]['Citations']), sep='\n')
+print(*impacts(data[data['Data Use'] == 'Y'], count_sets(data).index, 'total'), sep='\n')
