@@ -1,7 +1,6 @@
 import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
 from titlecase import titlecase
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
-data = mg.get_data()
 
 
 def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
@@ -62,7 +61,7 @@ def journal_attrs(data, attr, count=False):
         return journals
 
 
-def stacked_data(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
+def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
@@ -70,6 +69,7 @@ def stacked_data(data, column, stack_type, stat, title=None, split=None, stacker
     :param column: The column of the dataframe to be value counted
     :param stack_type: The column in the dataframe to be part of the stacks (such as year, etc.)
     :param stat: One of: stacked, plot, cluster
+    :param title: If not None, the title of the graph. Otherwise it is "{column} by {stack_type}"
     :param split: If true, splits each row in the column by the splitter
     :param stacker_split: If true, looks in each stack not for exactness but for inclusion
     :return: Either a stacked bar graph or a line plot, depending on the stat type
@@ -295,7 +295,7 @@ def data_contributions_count(data, update=False, original=False):
     :param author_associations: A dictionary of authors and the terms that they are associated with
     :return: A list of papers that are considered part of the contributions count
     """
-    contributing_papers = {1, 5, 74, 92, 653}
+    contributing_papers = set(mg.CONTR_PAPERS)
     if original:
         return contributing_papers
     author_associations = authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')

@@ -31,6 +31,8 @@ WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).
 
 UNWEIGHTED_SETS = [('FCP', re.compile('1,?000\sfunctional\sconnectomes?(\sproject)?|fcp|fcon[\s_]*1000'))]
 
+CONTR_PAPERS = [1, 5, 74, 92, 653]
+
 
 def get_file(file, dir):
     file_name = file.replace('_', ' ').split('.')[0]
