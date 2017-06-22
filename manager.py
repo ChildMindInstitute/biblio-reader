@@ -21,7 +21,7 @@ INPUT_PATH = dir(os.path.join(MAIN_DIR, 'inputs'))
 
 OUTPUT_PATH = dir(os.path.join(MAIN_DIR, 'outputs'))
 
-ROOT_PATH = dir(os.path.join(MAIN_DIR, 'working'))
+ROOT_PATH = dir(os.path.join(MAIN_DIR, 'root'))
 
 
 WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).*rockland|rockland\ssample')),

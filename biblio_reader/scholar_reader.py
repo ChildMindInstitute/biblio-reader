@@ -1,6 +1,5 @@
-import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np, csv
+import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
 from titlecase import titlecase
-from scipy.stats import norm
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 data = mg.get_data()
 
@@ -141,7 +140,6 @@ def stacked_data(data, column, stack_type, stat, title=None, split=None, stacker
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
 
-
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
@@ -163,7 +161,7 @@ def categorize_journals(data, categories):
     categorize each publication into specific categories
 
     :param data: The dataframe to use
-    :param categories: A directory of text files named by category that contain keywords to categorize (see working)
+    :param categories: A directory of text files named by category that contain keywords to categorize (see root)
     :return: A dictionary of publication indeces and their corresponding Journal Category
     """
     res = {}
@@ -213,22 +211,14 @@ def authors(data, link, split=None):
     return author_links
 
 
-def impacts(data, sets, type, per_year=False):
+def impacts(data, type, per_year=False):
+    sets = count_sets(data).index
     res = []
     for set in sets:
         if per_year:
             citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations Per Year'], reverse=True)
         else:
             citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations'], reverse=True)
-        """
-        plt.figure()
-        plt.hist(citations, bins=max(citations), edgecolor='black')
-        plt.xlabel('Total Number of Citations')
-        plt.ylabel('Number of Publications')
-        plt.title(set)
-        plt.savefig(set + '.png')
-        """
-
         if type == 'h':
             for i, citation in enumerate(citations):
                 if citation >= i + 1:
@@ -323,9 +313,3 @@ def data_contributions_count(data, update=False, original=False):
         data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
                         [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
     return contributing_papers
-
-
-
-#print(*sorted(data[data['Data Use'] == 'Y'][data['Sets'].str.contains(';').fillna(False)]['Citations']), sep='\n')
-#print(*impacts(data[data['Data Use'] == 'Y'], count_sets(data).index, 'mean', per_year=True), sep='\n')
-print(*impacts(data[data['Data Use'] == 'Y'], count_sets(data).index, 'sd'), sep='\n')

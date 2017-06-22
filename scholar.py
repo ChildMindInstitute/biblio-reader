@@ -236,7 +236,6 @@ class ScholarConf(object):
     # If set, we will use this file to read/save cookies to enable
     # cookie use across sessions.
     COOKIE_JAR_FILE = None
-
 class ScholarUtils(object):
     """A wrapper for various utensils that come in handy."""
 
@@ -920,7 +919,7 @@ class ScholarQuerier(object):
         self.parse(html)
         num_results = query['num_results']
         if num_results > 10:
-            num_pages = min(math.floor(num_results / 10), 2)
+            num_pages = min(math.floor(num_results / 10), 99)
             for page in range(1, num_pages):
                 query.page = page
                 html = self._get_http_response(url=query.get_url(),
@@ -1117,7 +1116,7 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"
         query.set_include_citations(False)
 
     querier.send_query(query)
-    manager.write('DATA.txt', manager.ROOT_PATH, options.out)
+    manager.write('DATA_NAME.txt', manager.ROOT_PATH, options.out)
     output(querier, options.out)
 
     if options.cookie_file:
