@@ -1,13 +1,15 @@
-import PyPDF2, os, re, json, numpy
-import pandas as pd
-import urllib.parse as urlparse
-import urllib.request as urllib
-import manager as mg
+import PyPDF2, os, pandas as pd, urllib.parse as urlparse, urllib.request as urllib, manager as mg
 from bs4 import BeautifulSoup as bs
 data = mg.get_data()
 
 
 def pdfopener(data, dir):
+    """
+
+    :param data:
+    :param dir:
+    :return:
+    """
     for row in data.iterrows():
         url = row[1]['URL']
         if pd.isnull(url):

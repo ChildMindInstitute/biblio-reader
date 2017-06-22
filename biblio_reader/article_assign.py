@@ -1,14 +1,16 @@
-import random, os, collections, math, manager as mg, csv, matplotlib.pyplot as plt
-
+import random, os, collections, math, manager as mg
 checker_dir = mg.dir(os.path.join(mg.ROOT_PATH, 'checker_assigns'))
 data = mg.get_data()
-from biblio_reader import scholar_reader
-data = data[data['i'].isin(scholar_reader.data_contributions_count(data))][data['Data Use'] == 'Y'][data['Sets'].str.contains('ABIDE').fillna(False) | data['Sets'].str.contains('ADHD200').fillna(False)]
 paragraphs = mg.get_paragraphs()
 
 
 class Member(object):
     def __init__(self, name, path):
+        """
+        The Member class represents a reviewer of the articles
+        :param name: Reviewer ID
+        :param path: Path of reviewer text file
+        """
         self.name = name
         self.path = '/'.join([path, name + '.txt'])
         if os.path.exists(self.path):
@@ -25,15 +27,24 @@ class Member(object):
         self.written = list(self.articles)
 
     def __str__(self):
+        """
+        The reviwer's text file contains key information associated with their articles, including article Title,
+        Publication type, authors, journal category, and key text snippets containing matched key words
+        """
         return self.name + '\n\n\n' + ','.join([str(article) for article in sorted(self.articles)]) + '\n\n\n' + \
            '\n\n'.join(['ARTICLE NO ' + str(key) + ': ' + str(data.loc[key, 'Title']) +
                         '\n' + str(data.loc[key, 'Authors']) + '\nPublication Type: ' +
                         data.loc[key, 'Journal Category'] + '\n\n' + '\n\n'.join(paragraph)
                         for key, paragraph in sorted(paragraphs.items()) if key in self.articles])
 
-    def assign(self, assign, length):
-        while length > 0 and not set(assign).issubset(set(self.articles)):
-            assignment = random.choice(assign)
+    def assign(self, assign_list, length):
+        """
+        Randomly assigns numbers from the list to the member's list of articles
+        :param assign_list: The list of article reference numbers to assign to reviewers
+        :param length: The size of numbers to assign
+        """
+        while length > 0 and not set(assign_list).issubset(set(self.articles)):
+            assignment = random.choice(assign_list)
             if assignment not in self.articles:
                 self.articles.append(assignment)
                 assign.remove(assignment)
@@ -42,6 +53,12 @@ class Member(object):
 
 class Assignment(object):
     def __init__(self, members=None, dir=checker_dir):
+        """
+        Creates members with member names and dir paths from the members list
+        :param members: if None, looks through the directory for all text files contained and creates members based on
+        those. Otherwise, creates new members
+        :param dir: The path for each member
+        """
         if members is None:
             self.members = [Member(member.replace('.txt', ''), dir) for member in os.listdir(dir) if
                             '.txt' in member]
@@ -57,6 +74,11 @@ class Assignment(object):
         return None
 
     def assign(self, assignment, length=None):
+        """
+        Assigns each member an equal amount of articles from assignment
+        :param assignment: The assignment of articles
+        :param length: The amount of articles to assign
+        """
         if length is None:
             length = len(assignment)
         length /= len(self.members)
@@ -64,6 +86,10 @@ class Assignment(object):
             member.assign(assignment, length)
 
     def write(self, new=None):
+        """
+        Creates text files for each member
+        :param new: If not None, creates a separate new text file for each member if they already have one
+        """
         for member in self.members:
             if new:
                 member.articles = [article for article in member.articles if article not in member.written]
@@ -74,6 +100,10 @@ class Assignment(object):
                     f.write(str(member))
 
     def double(self):
+        """
+        After assigning articles to members, reassigns articles to be double-checked (no member is assigned
+        any article twice)
+        """
         articles = []
         for member in self.members:
             articles += member.articles
@@ -98,6 +128,10 @@ class Assignment(object):
                         revert = len(assignment)
 
     def test(self, test_type=list([1, 2, 3])):
+        """
+        Tests to make sure no member has duplicate articles, and that the assignment has been assigned correctly
+        :param test_type: Different tests for the assignment (default is all)
+        """
         if 1 in test_type:
             articles = []
             for member in self.members:
@@ -113,39 +147,3 @@ class Assignment(object):
                 print(member.name.capitalize() + "'s New Articles:",
                       len([article for article in member.articles if article not in member.written]), '| Old:',
                       len(member.written))
-
-"""
-assignment = Assignment(members=['Michael', 'Anirudh', 'Jon', 'Bonhwang'], dir=mg.dir(os.path.join(checker_dir, 'contr_checks')))
-assignment.assign(list(data['i']))
-assignment.write()
-"""
-
-SIZES_DIR = os.path.join(mg.INPUT_PATH, 'sample_sizes')
-sizes = {}
-for size in os.listdir(SIZES_DIR):
-    if '.csv' not in size:
-        continue
-    full_path = '/'.join([SIZES_DIR, size])
-    with open(full_path, 'r') as f:
-        reader = list(csv.reader(f))
-        for rows in reader[1:]:
-            sizes[int(rows[0])] = int(rows[1])
-
-sizes = {article: size for article, size in sizes.items() if article in data['i']}
-adhd200, abide = [], []
-for article, size in sizes.items():
-    if 'ABIDE' in data.loc[article, 'Sets'] and 'ADHD200' in data.loc[article, 'Sets']:
-        abide.append(size / 2)
-        adhd200.append(size/ 2)
-    elif 'ABIDE' in data.loc[article, 'Sets']:
-        abide.append(size)
-    elif 'ADHD200' in data.loc[article, 'Sets']:
-        adhd200.append(size)
-
-print(abide, adhd200)
-
-plt.figure()
-plt.boxplot([abide, adhd200])
-plt.xticks([1, 2], ['ABIDE', 'ADHD200'])
-plt.title('Sample Sizes')
-plt.savefig('tester.png')

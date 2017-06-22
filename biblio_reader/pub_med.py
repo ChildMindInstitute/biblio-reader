@@ -1,14 +1,19 @@
-import pandas as pd
-import unidecode, os
-import xml.etree.ElementTree as etree
+import pandas as pd, unidecode, os, xml.etree.ElementTree as etree
 from Bio import Entrez
-import manager
+import manager as mg
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
-data = manager.get_data()
+data = mg.get_data()
 
 
 def filterstr(str, filter, decode=True):
+    """
+    Returns a string without characters contained in the filter
+    :param str: The string to be filtered
+    :param filter: The characters that will filter the string
+    :param decode: If true, returns a UTF-8 encoded string
+    :return: Filtered string
+    """
     for char in filter:
         str = str.replace(char, '')
     if decode:
@@ -18,6 +23,12 @@ def filterstr(str, filter, decode=True):
 
 
 def get_ids(data):
+    """
+    Takes all pubs of the dataframe and searches Pubmed for PMCID's related to the title, authors, and year in
+    each row
+    :param data: The dataframe
+    :return: a list of all IDS, an updated dataframe
+    """
     ids = []
     for row in data.iterrows():
         row = row[1]
@@ -35,6 +46,11 @@ def get_ids(data):
 
 
 def write_bib(data, directory):
+    """
+    Takes all PMCIDS and gets the associated bibliographies for each
+    :param data: The dataframe containing PMCIDS
+    :param directory: The directory to write bibs in
+    """
     if 'PMCID' not in data:
         print("NO PMCIDS")
         return
@@ -46,6 +62,12 @@ def write_bib(data, directory):
 
 
 def parse_bib(directory, outfile):
+    """
+    Parses each Pubmed obtained bibliography to find qualifiers, affiliations, and full author lists
+    :param directory: The directory of Pubmed bibs
+    :param outfile: outfile dir to write result in
+    :return: A CSV file with reference #s, qualifiers, affiliations, and authors for each article with a PMCID
+    """
     parsed = []
     for bib in os.listdir(directory):
         root = etree.parse(open('/'.join([directory, bib]))).getroot()
@@ -64,17 +86,15 @@ def parse_bib(directory, outfile):
     parsed_data.sort_values('i', inplace=True)
     parsed_data.to_csv(path_or_buf=outfile, index=False)
 
-
-
 if __name__ == '__main__':
 
-    BIB_DIR = manager.dir(os.path.join(manager.ROOT_PATH, 'bibs'))
+    BIB_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'bibs'))
 
-    PARSED_BIBS = os.path.join(manager.ROOT_PATH, 'parsed_bibs.csv')
+    PARSED_BIBS = os.path.join(mg.ROOT_PATH, 'parsed_bibs.csv')
 
     if 'PMCID' not in data:
         get_ids(data)
-        manager.update_data()
+        mg.update_data()
     if not os.path.exists(BIB_DIR):
-        write_bib(data, manager.dir(BIB_DIR))
+        write_bib(data, mg.dir(BIB_DIR))
     parse_bib(BIB_DIR, PARSED_BIBS)
