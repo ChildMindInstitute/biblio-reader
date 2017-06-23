@@ -116,7 +116,7 @@ def plos_open(data, dir):
                     print(e, key, pdf)
 
 
-def liebert_open(data):
+def liebert_open(data, dir):
     """
     Writes all PDFS found on Liebert website to the directory
     :param data: A zip list of article reference #s and their URLS

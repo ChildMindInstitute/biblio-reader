@@ -1,42 +1,39 @@
-
-
-* Extracts publication title, most relevant web link, PDF link, number of citations, number of online versions, link to Google Scholar's article cluster for the work, Google Scholar's cluster of all works referencing the publication, and excerpt of content.
-* Extracts total number of hits as reported by Scholar (new in version 2.5)
-* Supports the full range of advanced query options provided by Google Scholar, such as title-only search, publication date timeframes, and inclusion/exclusion of patents and citations.
-* Supports article cluster IDs, i.e., information relating to the variants of an article already identified by Google Scholar
-* Supports retrieval of citation details in standard external formats as provided by Google Scholar, including BibTeX and EndNote.
-* Command-line tool prints entries in CSV format, simple plain text, or in the citation export format.
-* Cookie support for higher query volume, including ability to persist cookies to disk across invocations.
-
-Note
-----
-
-I will always strive to add features that increase the power of this
-API, but I will never add features that intentionally try to work
-around the query limits imposed by Google Scholar. Please don't ask me
-to add such features.
-
-Examples
---------
-
-Try scholar.py --help for all available options. Note, the command line arguments changed considerably in version 2.0! A few examples:
-
-Retrieve one article written by Einstein on quantum theory:
-
-    scholar.py -c 1 --author "albert einstein" --phrase "quantum theory"
-             Title On the quantum theory of radiation
-               URL http://icole.mut-es.ac.ir/downloads/Sci_Sec/W1/Einstein%201917.pdf
-              Year 1917
-         Citations 184
-          Versions 3
-        Cluster ID 17749203648027613321
-          PDF link http://icole.mut-es.ac.ir/downloads/Sci_Sec/W1/Einstein%201917.pdf
-    Citations list http://scholar.google.com/scholar?cites=17749203648027613321&as_sdt=2005&sciodt=0,5&hl=en
-     Versions list http://scholar.google.com/scholar?cluster=17749203648027613321&hl=en&as_sdt=0,5
-     Excerpt The formal similarity between the chromatic distribution curve for thermal radiation [...]
-
-
-biblio_reader
+Biblio_reader
 =============
 
+Welcome! Biblio_reader is a literature parsing tool that compiles and analyzes publications matched by Google Scholar searches.
+For publications found on Google Scholar between pages 1 and 99, it can do the following:
+* Compile key information from each publication such as article title, year, authors, journal title, URL, and citations
+* Write all key information into a CSV file
+* Look for trends in journal fields, publication growth over the years, publication types, journal impact, citations, etc.
+* Find and display author information, including relationships between each author and attributed articles
+* Help users find full-text PDFs for each publication 
+* Subsequently analyze and categorize full text files for each PDF 
+* Map author affiliations on Google Maps
+* Facilitate manual publication review, including assigning articles to separate reviewers and analyzing their input
+* Create a sortable table displaying publications and key information about each article
+
+Navigation
+----------
+Biblio_reader has many submodules, and navigating them can be a bit intimidating. Hopefully this section helps you understand each section more comprehensively.
+
+#### manager.py
+
+Manager.py is the utilities manager, and provides support for reading and writing files through the inputs, outputs, and working directory. It is also in charge of updating the main data CSV file with the update_data() method.
+
+This is also where users can enter project-specific variables including marking which publications are connected to the original work of interest, and categories of search terms with regular expressions Google Scholar may have used to find them.
+
+#### [scholar](/scholar/README.md)
+
+scholar.py is where the original Google Scholar results are compiled. (More in link)
+
+#### [biblio_reader](/biblio_reader/README.md)
+
+#### inputs
+
+#### outputs
+
+#### working
+
+#### table
 

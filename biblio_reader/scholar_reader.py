@@ -36,31 +36,6 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     plt.clf()
 
 
-def citations_per_year(data, sort=False):
-    """
-    Calculates the number of citations per year for each pub
-    :param data: The pandas dataframe
-    :param sort: If true, re-indexes the dataframe based on citations per year
-    """
-    data['Citations Per Year'] = data['Citations'] / (datetime.datetime.now().year + 1 - data['Year'].apply(lambda x: (2000 + int(x[1:]))))
-    if sort:
-        data.sort_values('CPY', inplace=True, ascending=False)
-        data.reset_index(drop=True, inplace=True)
-        mg.update_data()
-
-
-def journal_attrs(data, attr, count=False):
-    data = data.dropna(subset=['Journal'])
-    attrs = mg.get_journal_attrs()
-    attrs = {journal: attrs[journal][attr] for journal in attrs}
-    journals = sorted([(journal.lower(), attrs[journal.lower()]) for journal in data['Journal']
-                       if journal.lower() in attrs], key=lambda attrib: attrib[1], reverse=True)
-    if count:
-        return collections.Counter(journals)
-    else:
-        return journals
-
-
 def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most
@@ -140,6 +115,34 @@ def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=No
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
 
 
+def citations_per_year(data, sort=False):
+    """
+    Calculates the number of citations per year for each pub
+    :param data: The pandas dataframe
+    :param sort: If true, re-indexes the dataframe based on citations per year
+    """
+    data['Citations Per Year'] = data['Citations'] / (datetime.datetime.now().year + 1
+                                                      - data['Year'].apply(lambda x: (2000 + int(x[1:]))))
+    if sort:
+        data.sort_values('CPY', inplace=True, ascending=False)
+        data.reset_index(drop=True, inplace=True)
+        mg.update_data()
+
+
+def journal_attrs(data, attr):
+    """
+    Pairs each journal in the dataframe with its attributes, which include either CiteScore or Topics
+    :param data: The pandas dataframe
+    :param attr: One of: CiteScore, Categories
+    :return: A list of tuples with each journal and its associated attribute
+    """
+    data = data.dropna(subset=['Journal'])
+    attrs = mg.get_journal_attrs()
+    attrs = {journal: attrs[journal][attr] for journal in attrs}
+    return sorted([(journal.lower(), attrs[journal.lower()]) for journal in data['Journal']
+                       if journal.lower() in attrs], key=lambda attrib: attrib[1], reverse=True)
+
+
 def count_sets(data):
     """
     Takes the terms that Google Scholar matched for all the publications and counts how many of each there are
@@ -161,8 +164,8 @@ def categorize_journals(data, categories):
     categorize each publication into specific categories
 
     :param data: The dataframe to use
-    :param categories: A directory of text files named by category that contain keywords to categorize (see root)
-    :return: A dictionary of publication indeces and their corresponding Journal Category
+    :param categories: A directory of text files named by category that contain keywords to categorize (see inputs)
+    :return: A dictionary of publication indices and their corresponding Journal Category
     """
     res = {}
     if len(os.listdir(categories)) == 0:
@@ -184,9 +187,43 @@ def categorize_journals(data, categories):
     return {i: typ for i, typ in sorted(res.items())}
 
 
+def data_contributions_count(data, update=False, original=False):
+    """
+    Contributions are considered publications that share authorship or have connection with the original
+    publications of interest
+
+    Before this function can be completed, the user must enter in the reference numbers for each of these publications
+    into the CONTR_PAPERS variable in manager.py
+
+    :param data: The pandas dataframe
+    :param update: If True, updates the dataframe to distinguish between contributors or noncontributor articles
+    :param original: If True, only counts the original publications and their authors
+    :return: A list of papers that are considered part of the contributions count
+    """
+    contributing_papers = set(mg.CONTR_PAPERS)
+    if original:
+        return contributing_papers
+    author_associations = authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
+    for row in data.dropna(subset=['Sets']).iterrows():
+        row = row[1]
+        all_authors = [author for author in row['Authors'].split(' & ') if author
+                       in author_associations and author != 'others']
+        sets = row['Sets'].split(';')
+        i = row['i']
+        if len(all_authors) != 0:
+            for author in all_authors:
+                if any(s in author_associations[author] for s in sets):
+                    contributing_papers.add(i)
+    if update:
+        data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
+                                          [(i, 'Not a Contributor') for i in range(len(data)) if
+                                           i not in contributing_papers])).values()
+    return contributing_papers
+
 def authors(data, link, split=None):
     """
-    Links each author to every paper they are attributed to and to the specific column of that paper
+    Links each author to every paper they are attributed to and to the specific attribute of that paper
+
     :param data: The pandas dataframe
     :param link: The column in the dataframe that will be linked in the result
     :param split: If not None, splits the link into its sublinks
@@ -212,10 +249,23 @@ def authors(data, link, split=None):
 
 
 def impacts(data, type, per_year=False):
+    """
+    Finds the impact factor and other stats (mean, h-index, i-10 index, sd, total) attributed to number of
+    citations per article.
+
+    Separates these by Set.
+
+    :param data: The pandas dataframe
+    :param type: One of: h, mean, total, sd, i10
+    :param per_year: If true, calculates by Citations Per Year instead of total Citations
+    """
     sets = count_sets(data).index
     res = []
     for set in sets:
         if per_year:
+            if 'Citations Per Year' not in data:
+                print('Calculate Citations Per Year first (see func above)')
+                return
             citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations Per Year'], reverse=True)
         else:
             citations = sorted(data[data['Sets'].str.contains(set).fillna(False)]['Citations'], reverse=True)
@@ -283,33 +333,3 @@ def calculate_stats(data):
             else:
                 message += ' that were invalid:'
             print(message, stat)
-
-
-def data_contributions_count(data, update=False, original=False):
-    """
-    If any manual investigator marks that a pub has some connection with the original source, the pub automatically
-     gets marked as connected
-
-    :param data: The pandas dataframe
-    :param directory: The directory of csv files of manual checks
-    :param author_associations: A dictionary of authors and the terms that they are associated with
-    :return: A list of papers that are considered part of the contributions count
-    """
-    contributing_papers = set(mg.CONTR_PAPERS)
-    if original:
-        return contributing_papers
-    author_associations = authors(data[data['i'].isin(contributing_papers)], 'Sets', split=';')
-    for row in data.dropna(subset=['Sets']).iterrows():
-        row = row[1]
-        all_authors = [author for author in row['Authors'].split(' & ') if author
-                   in author_associations and author != 'others']
-        sets = row['Sets'].split(';')
-        i = row['i']
-        if len(all_authors) != 0:
-            for author in all_authors:
-                if any(s in author_associations[author] for s in sets):
-                    contributing_papers.add(i)
-    if update:
-        data['Contributor'] = dict(sorted([(i, 'Contributor') for i in contributing_papers] +
-                        [(i, 'Not a Contributor') for i in range(len(data)) if i not in contributing_papers])).values()
-    return contributing_papers

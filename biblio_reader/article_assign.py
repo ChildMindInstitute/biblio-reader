@@ -1,5 +1,5 @@
 import random, os, collections, math, manager as mg
-checker_dir = mg.dir(os.path.join(mg.ROOT_PATH, 'checker_assigns'))
+checker_dir = mg.dir(os.path.join(mg.WORKING_PATH, 'reviewer_assigns'))
 data = mg.get_data()
 paragraphs = mg.get_paragraphs()
 

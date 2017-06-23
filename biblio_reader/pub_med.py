@@ -88,9 +88,9 @@ def parse_bib(directory, outfile):
 
 if __name__ == '__main__':
 
-    BIB_DIR = mg.dir(os.path.join(mg.ROOT_PATH, 'bibs'))
+    BIB_DIR = mg.dir(os.path.join(mg.WORKING_PATH, 'bibs'))
 
-    PARSED_BIBS = os.path.join(mg.ROOT_PATH, 'parsed_bibs.csv')
+    PARSED_BIBS = os.path.join(mg.WORKING_PATH, 'parsed_bibs.csv')
 
     if 'PMCID' not in data:
         get_ids(data)
