@@ -17,7 +17,7 @@ Navigation
 ----------
 Biblio_reader has many submodules, and navigating them can be a bit intimidating. Hopefully this section helps you understand each section more comprehensively.
 
-#### manager.py
+### manager.py
 
 Manager.py is the utilities manager, and provides support for reading and writing files through the inputs, outputs, and working directory. It is also in charge of updating the main data CSV file with the update_data() method.
 
