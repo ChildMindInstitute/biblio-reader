@@ -1,3 +1,6 @@
+#biblio_reader
+
+biblio_reader is the main analysis utility and provides support from the following modules:
 ## scholar_reader.py
 Utilities to analyze trends in the main CSV file including the following:
 * Matplotlib graph tools for counting pandas columns and visualizing data
