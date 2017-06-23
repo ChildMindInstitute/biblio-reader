@@ -918,13 +918,18 @@ class ScholarQuerier(object):
 
         self.parse(html)
         num_results = query['num_results']
+        i = 0
         if num_results > 10:
             num_pages = min(math.floor(num_results / 10), 99)
             for page in range(1, num_pages):
+                i += 1
+                print(i)
                 query.page = page
                 html = self._get_http_response(url=query.get_url(),
                                                log_msg='dump of query response HTML',
                                                err_msg='results retrieval failed')
+                if html is None:
+                    continue
                 self.parse(html)
 
     def get_citation_data(self, article):
@@ -1006,7 +1011,6 @@ class ScholarQuerier(object):
         except Exception as err:
             print("Error getting an http response:", url)
             ScholarUtils.log('info', err_msg + ': %s' % err)
-            sys.exit(1)
 
 
 
