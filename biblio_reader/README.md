@@ -9,7 +9,7 @@ Utilities to analyze trends in the main CSV file including the following:
 * Author relationship dictionary generator
 * Statistics and impacts printer
 
-These utilities are independent and useful for various reasons throughout the project
+These utilities are independent and useful throughout the project
 
 ## pdf_utils.py
 
@@ -26,7 +26,7 @@ Utilities to help find full-text PDFs from each publication URL
 ## article_assign.py
 Assigns articles randomly to be reviewed manually by multiple reviewers
 ## review_analysis.py
-Analyzes the reviewer inputs for each article, categorizes publications accordingly
+Analyzes the reviewer inputs for each article, and categorizes publications accordingly
 ## pub_med.py
 Finds affiliation and topic information for articles that are able to be found on Pubmed Central
 ## map
