@@ -9,7 +9,7 @@ Utilities to analyze trends in the main CSV file including the following:
 * Author relationship dictionary generator
 * Statistics and impacts printer
 
-These utilities are independent and useful throughout the project
+These utilities are independent and ?  useful throughout the project
 
 ## pdf_utils.py
 
