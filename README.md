@@ -3,9 +3,9 @@ Biblio_reader
 
 Welcome! Biblio_reader is a literature parsing tool that compiles and analyzes publications matched by Google Scholar searches.
 For publications found on Google Scholar between pages 1 and 99, it can do the following:
-* Compile key information from each publication such as article title, year, authors, journal title, URL, and citations
+* Compile key information from each publication (such as article title, year, authors, journal title, URL, and citations)
 * Write all key information into a CSV file
-* Look for trends in journal fields, publication growth over the years, publication types, journal impact, citations, etc.
+* Look for trends in journal fields, publication growth over the years, publication types, journal impact, citations, and more
 * Find and display author information, including relationships between each author and attributed articles
 * Help users find full-text PDFs for each publication 
 * Subsequently analyze and categorize full text files for each PDF 
