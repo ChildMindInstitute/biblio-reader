@@ -220,6 +220,7 @@ def data_contributions_count(data, update=False, original=False):
                                            i not in contributing_papers])).values()
     return contributing_papers
 
+
 def authors(data, link, split=None):
     """
     Links each author to every paper they are attributed to and to the specific attribute of that paper
@@ -333,3 +334,26 @@ def calculate_stats(data):
             else:
                 message += ' that were invalid:'
             print(message, stat)
+data = mg.get_data()
+
+"""
+with open('MPM.csv', 'r') as g:
+    michael_data = pd.read_csv(g)
+
+michael_data = michael_data[michael_data['Authors'].str.contains('Milham, Michael P')]
+
+michael = list(authors(michael_data, 'Authors', split=' & '))
+michael += ['Milham, Michael', 'Milham, Michael Peter', 'Craddock, C']
+data = data[data['Sets'].str.contains('NKI').fillna(False)][data['Data Use'] == 'Y']
+print(len(data))
+
+x = []
+for i, row in data.iterrows():
+    auths = row['Authors'].split(' & ')
+    if not any(a in auths for a in michael):
+        print(auths)
+        x.append(i)
+
+print(len(x))
+"""
+

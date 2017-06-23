@@ -14,6 +14,7 @@ def write(file, directory, st):
     with open(os.path.join(dir(directory), file), 'w') as f:
         f.write(st)
 
+# main directories
 
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 
@@ -24,12 +25,18 @@ OUTPUT_PATH = dir(os.path.join(MAIN_DIR, 'outputs'))
 WORKING_PATH = dir(os.path.join(MAIN_DIR, 'working'))
 
 
+# These are tuple sets that contain different regular expression terms Google Scholar matched and their categories,
+# used to associate each publication with its attribute "Sets"
+
 WEIGHTED_SETS = [('NKI', re.compile('(\Wnki\W*|nathan\s(s\. )?kline\sinstitute).*rockland|rockland\ssample')),
                  ('ADHD200', re.compile('adhd\W200')),
         ('CORR', re.compile('\scorr\s|(consortium\sfor\sreproducibility\sand\sreliability)')),
         ('ABIDE', re.compile('abide|(autism\sbrain\simaging\sdata\sexchange)'))]
 
 UNWEIGHTED_SETS = [('FCP', re.compile('1,?000\sfunctional\sconnectomes?(\sproject)?|fcp|fcon[\s_]*1000'))]
+
+
+# These are the papers that have connection to the main area of interest, found manually
 
 CONTR_PAPERS = [1, 5, 74, 92, 653]
 
