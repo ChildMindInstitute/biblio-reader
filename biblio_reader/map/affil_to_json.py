@@ -10,6 +10,7 @@ bibs['affiliations'] = bibs['affiliations'].apply(lambda aff: re.sub('\[?\d\]', 
 affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil in affiliation.split(';;')]
                     for aff in sublist} for i, affiliation in zip(bibs['i'], bibs['affiliations'])}
 
+
 def repair_affils(affiliations):
     aff_dict = dict()
     substitutions = [re.compile('\s\([^(]*\)'), re.compile('\s*(Electronic address:\s*)*\S+@\S+'),
