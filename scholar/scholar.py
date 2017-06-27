@@ -141,6 +141,8 @@ import optparse
 import os
 import re
 import sys
+# Included to import "manager.py" module from upstream directory "Biblio_Reader"
+sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
 import warnings
 import math
 import manager
@@ -151,6 +153,7 @@ try:
     # Try importing for Python 3
     # pylint: disable-msg=F0401
     # pylint: disable-msg=E0611
+    "Imports modules from urllib that allow for HTML text retrieval and parsing"
     from urllib.request import HTTPCookieProcessor, Request, build_opener
     from urllib.parse import quote, unquote
     from http.cookiejar import MozillaCookieJar
