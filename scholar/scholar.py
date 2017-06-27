@@ -1067,6 +1067,8 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"
 
     group = optparse.OptionGroup(parser, 'Output format',
                                  'Control the name of the output file.')
+    # Default csv filename in outputs directory is 'ScholarOutput'
+    # For our purposes, it was named FCP_DATA.csv, which led to the issue with get_data() in manager.py
     group.add_option('-o', '--out', metavar='FILENAME', default='ScholarOutput',
                      help='Export articles in csv format with a chosen filename')
     parser.add_option_group(group)

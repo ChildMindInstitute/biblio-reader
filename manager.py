@@ -14,8 +14,6 @@ def write(file, directory, st):
     with open(os.path.join(dir(directory), file), 'w') as f:
         f.write(st)
 
-# main directories
-
 MAIN_DIR = os.path.dirname(os.path.abspath(__file__))
 
 INPUT_PATH = dir(os.path.join(MAIN_DIR, 'inputs'))
@@ -42,6 +40,12 @@ CONTR_PAPERS = [1, 5, 74, 92, 653]
 
 
 def get_file(file, dir):
+    """This function retrieves the file based on the user-input filename and directory
+
+    :param file: Name of the text file that contains the filename to be converted into a csv file for analysis
+    :param dir: Directory name specified by WORKING_PATH
+    :return: String containing filename to be converted to a csv file
+    """
     file_name = file.replace('_', ' ').split('.')[0]
     if not os.path.isfile(os.path.join(dir, file)):
         print(file_name, 'does not exist')
@@ -54,6 +58,10 @@ def get_file(file, dir):
 
 
 def get_data():
+    """ Converts the csv file specified in get_file into a pandas data structure
+
+    :return: DATA -- contains a pandas data structure with Google Scholar results
+    """
     if 'DATA' in globals():
         return
     global DATA_NAME, DATA
@@ -63,6 +71,10 @@ def get_data():
 
 
 def get_paragraphs():
+    """ Retrieves text from the paragraphs.json file and converts into a dictionary
+
+    :return: Dictionary with (key = integer index, value = paragraph text)
+    """
     return {int(i): paragraph for i, paragraph in json.load(get_file('paragraphs.json', WORKING_PATH)).items()}
 
 
