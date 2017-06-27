@@ -1120,7 +1120,7 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"
         query.set_include_citations(False)
 
     querier.send_query(query)
-    manager.write('DATA_NAME.txt', manager.ROOT_PATH, options.out)
+    manager.write('DATA_NAME.txt', manager.WORKING_PATH, options.out)
     output(querier, options.out)
 
     if options.cookie_file:
