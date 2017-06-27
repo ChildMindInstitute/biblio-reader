@@ -1,5 +1,7 @@
-import pandas as pd, matplotlib.pyplot as plt, manager as mg, os, datetime, collections, numpy as np
+import pandas as pd, matplotlib.pyplot as plt, sys, os, datetime, collections, numpy as np
 from titlecase import titlecase
+sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
+import manager as mg
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 
 
