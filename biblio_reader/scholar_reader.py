@@ -105,6 +105,7 @@ def stacked_data_visualizer(data, column, stacker, stack_type, stat, title=None,
             plt.plot(plot, label=stack, marker=marker)
             marker += 1
         plt.xticks(range(len(stacker)), stacker)
+        print(plot_dict.items())
         column, stack_type = stack_type, column
     elif stat == 'cluster':
         curr_width = 0
@@ -122,9 +123,6 @@ def stacked_data_visualizer(data, column, stacker, stack_type, stat, title=None,
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
     plt.show()
 
-data = mg.get_data()
-data = data[data['Data Use'] == 'Y']
-stacked_data_visualizer(data, 'Sets', ["'" + str(x)[2:] for x in range(2010, 2017)], 'Year', 'plot', split=';')
 
 def citations_per_year(data, sort=False):
     """
@@ -166,11 +164,6 @@ def journal_attrs(data, attr):
 # Visualize the counts of Citescore for journals based on data retrieved from relevant csv file
 #count_visualizer(journal_attrs(data, 'CiteScore'), 'barh', 'Number of Publications in High Impact Journals')
 
-# TOP 15 JOURNAL CATEGORIES
-
-#cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data[data['Data Use'] == 'Y'], 'Categories')).values()
-#                                     for cat in cats]).items(), key=lambda categ: categ[1], reverse=True)
-#count_visualizer(reversed(cats), 'barh', 'Top 15 Journal Categories')
 
 
 def count_sets(data):
