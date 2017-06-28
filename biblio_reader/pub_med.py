@@ -1,9 +1,9 @@
-import pandas as pd, unidecode, os, xml.etree.ElementTree as etree
+import pandas as pd, unidecode, os, xml.etree.ElementTree as etree, sys
 from Bio import Entrez
+sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
 import manager as mg
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
-data = mg.get_data()
 
 
 def filterstr(str, filter, decode=True):
@@ -86,10 +86,11 @@ def parse_bib(directory, outfile):
     parsed_data.sort_values('i', inplace=True)
     parsed_data.to_csv(path_or_buf=outfile, index=False)
 
+
 if __name__ == '__main__':
 
+    data = mg.get_data()
     BIB_DIR = mg.dir(os.path.join(mg.WORKING_PATH, 'bibs'))
-
     PARSED_BIBS = os.path.join(mg.WORKING_PATH, 'parsed_bibs.csv')
 
     if 'PMCID' not in data:
