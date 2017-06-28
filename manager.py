@@ -58,7 +58,7 @@ def get_file(file, dir):
 
 
 def get_data():
-    """ Converts the csv file specified in get_file into a pandas data structure
+    """Converts the csv file specified in get_file into a pandas data structure
 
     :return: DATA -- contains a pandas data structure with Google Scholar results
     """
@@ -71,7 +71,7 @@ def get_data():
 
 
 def get_paragraphs():
-    """ Retrieves text from the paragraphs.json file and converts into a dictionary
+    """Retrieves text from the paragraphs.json file and converts into a dictionary
 
     :return: Dictionary with (key = integer index, value = paragraph text)
     """
@@ -79,6 +79,10 @@ def get_paragraphs():
 
 
 def get_bibs():
+    """Use in affil_to_json.py to determine article affiliations and locate them geographically
+
+    :return: Pandas data structure of article affiliations
+    """
     return pandas.read_csv(get_file('parsed_bibs.csv', WORKING_PATH))
 
 
@@ -89,4 +93,12 @@ def update_data():
 
 
 def get_journal_attrs():
+    """Retrieves journal names and relevant attributes (Citescore, categories) from a json file located
+    in inputs directory
+
+    :return: A dictionary with (key = journal name, value = attributes)
+    """
     return {key.lower(): value for key, value in json.load(get_file('journal_attrs.json', INPUT_PATH)).items()}
+
+
+sample = {key.lower(): value for key, value in json.load(get_file('journal_attrs.json', INPUT_PATH)).items()}
