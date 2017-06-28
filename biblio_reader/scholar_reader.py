@@ -9,8 +9,8 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     """
     Counts values of specific columns in dataframe
     :param value_count: A value counts series, dict, or LOT (see pandas value_count function)
-    :param out: output file name
     :param stat_type: one of: bar, barh, pie, plot
+    :param name: output file name
     :param row_limit: Sets a limit to how many highest values should be counted
     :return: csv, bar, or pie file
     """
@@ -34,11 +34,17 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     else:
         raise IOError('Invalid stat type')
     plt.title(name)
+    plt.plot()
     plt.savefig(os.path.join(STAT_DIR, name.lower().replace(' ', '_') + '.png'), bbox_inches='tight')
-    plt.clf()
+    plt.show()
+
+# PIE PLOT FROM OLD COMMIT CODE
+
+#print(data[data['Data Use'] == 'Y']['Sets'].value_counts())
+#count_visualizer(data[data['Data Use'] == 'Y']['Sets'].value_counts(), 'pie', 'Types of Publications')
 
 
-def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
+def stacked_data_visualizer(data, column, stacker, stack_type, stat, title=None, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
@@ -53,7 +59,6 @@ def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=No
     """
     plt.figure()
     stacks = []
-    stacker = list(data[stack_type].value_counts().index)[:15]
     for stack in stacker:
         if not split:
             if stacker_split:
@@ -115,7 +120,11 @@ def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=No
         title = ' by '.join([column, stack_type])
     plt.title(title)
     plt.savefig(os.path.join(STAT_DIR, '_'.join([title.lower().replace(' ', '_'), stat]) + '.png'), bbox_inches='tight')
+    plt.show()
 
+data = mg.get_data()
+data = data[data['Data Use'] == 'Y']
+stacked_data_visualizer(data, 'Sets', ["'" + str(x)[2:] for x in range(2010, 2017)], 'Year', 'plot', split=';')
 
 def citations_per_year(data, sort=False):
     """
@@ -143,6 +152,25 @@ def journal_attrs(data, attr):
     attrs = {journal: attrs[journal][attr] for journal in attrs}
     return sorted([(journal.lower(), attrs[journal.lower()]) for journal in data['Journal']
                        if journal.lower() in attrs], key=lambda attrib: attrib[1], reverse=True)
+
+# Get data using mg.get_data() from relevant csv file in the form of a Pandas data frame
+# data = mg.get_data()
+# Convert full pandas dataframe into containing only journals that use the shared data
+# data = data[data['Data Use'] == 'Y'][data['Journal Category'] == 'Journal']
+# data = journal_attrs(data, 'CiteScore')
+# data = {value: count for value, count in list(dict(data).items())}
+# keys_list = list(data.keys())
+# values_list = list(data.values())
+# print(keys_list[:14])
+# print(values_list[:14])
+# Visualize the counts of Citescore for journals based on data retrieved from relevant csv file
+#count_visualizer(journal_attrs(data, 'CiteScore'), 'barh', 'Number of Publications in High Impact Journals')
+
+# TOP 15 JOURNAL CATEGORIES
+
+#cats = sorted(collections.Counter([cat for cats in dict(journal_attrs(data[data['Data Use'] == 'Y'], 'Categories')).values()
+#                                     for cat in cats]).items(), key=lambda categ: categ[1], reverse=True)
+#count_visualizer(reversed(cats), 'barh', 'Top 15 Journal Categories')
 
 
 def count_sets(data):
