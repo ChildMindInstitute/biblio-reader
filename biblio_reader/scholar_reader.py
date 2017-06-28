@@ -1,7 +1,9 @@
-import pandas as pd, matplotlib.pyplot as plt, sys, os, datetime, collections, numpy as np
+import pandas as pd, matplotlib.pyplot as plt, sys, os, datetime, collections, numpy as np, re
 from titlecase import titlecase
+
 sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
 import manager as mg
+
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
 
 
@@ -38,13 +40,8 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
     plt.savefig(os.path.join(STAT_DIR, name.lower().replace(' ', '_') + '.png'), bbox_inches='tight')
     plt.show()
 
-# PIE PLOT FROM OLD COMMIT CODE
 
-#print(data[data['Data Use'] == 'Y']['Sets'].value_counts())
-#count_visualizer(data[data['Data Use'] == 'Y']['Sets'].value_counts(), 'pie', 'Types of Publications')
-
-
-def stacked_data_visualizer(data, column, stacker, stack_type, stat, title=None, split=None, stacker_split=False):
+def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=None, stacker_split=False):
     """
     Almost the same as value counter, except each type is stacked by a specific other column (such as finding out most
     popular journals by year, or term sets by usage, etc.) Examples are in the stats file
@@ -59,6 +56,7 @@ def stacked_data_visualizer(data, column, stacker, stack_type, stat, title=None,
     """
     plt.figure()
     stacks = []
+    stacker = list(data[stack_type].value_counts().index) #OPTIONAL: [:15]
     for stack in stacker:
         if not split:
             if stacker_split:
@@ -150,20 +148,6 @@ def journal_attrs(data, attr):
     attrs = {journal: attrs[journal][attr] for journal in attrs}
     return sorted([(journal.lower(), attrs[journal.lower()]) for journal in data['Journal']
                        if journal.lower() in attrs], key=lambda attrib: attrib[1], reverse=True)
-
-# Get data using mg.get_data() from relevant csv file in the form of a Pandas data frame
-# data = mg.get_data()
-# Convert full pandas dataframe into containing only journals that use the shared data
-# data = data[data['Data Use'] == 'Y'][data['Journal Category'] == 'Journal']
-# data = journal_attrs(data, 'CiteScore')
-# data = {value: count for value, count in list(dict(data).items())}
-# keys_list = list(data.keys())
-# values_list = list(data.values())
-# print(keys_list[:14])
-# print(values_list[:14])
-# Visualize the counts of Citescore for journals based on data retrieved from relevant csv file
-#count_visualizer(journal_attrs(data, 'CiteScore'), 'barh', 'Number of Publications in High Impact Journals')
-
 
 
 def count_sets(data):
