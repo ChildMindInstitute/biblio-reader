@@ -99,6 +99,3 @@ def get_journal_attrs():
     :return: A dictionary with (key = journal name, value = attributes)
     """
     return {key.lower(): value for key, value in json.load(get_file('journal_attrs.json', INPUT_PATH)).items()}
-
-
-sample = {key.lower(): value for key, value in json.load(get_file('journal_attrs.json', INPUT_PATH)).items()}
