@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """
 Used to isolate specific items from the Pandas data structure
 Can be isolated based on publication type, whether it uses the dataset, the
@@ -20,8 +21,8 @@ if br_path not in sys.path:
     sys.path.append(br_path)
 
 
-def table_data(data, data_use, journal_category, cols, sort_cols, fn=
-               'Table_data.csv', write=True):
+def table_data(data, data_use, journal_category, cols, sort_cols, write=True,
+               fn='Table_data.csv'):
     """
     Parameters
     ----------
@@ -40,11 +41,11 @@ def table_data(data, data_use, journal_category, cols, sort_cols, fn=
     sort_cols: list of strings
         column headers for columns to sort by
 
-    fn: string
-        output filename, default="Table.csv"
-
     write: boolean
         save csv? default=True
+
+    fn: string
+        output filename, default="Table.csv"
     """
     data = data[(data['Data Use'] == data_use) & (data['Journal Category'] ==
            journal_category)]
@@ -54,6 +55,7 @@ def table_data(data, data_use, journal_category, cols, sort_cols, fn=
     return(table_data)
 
 
+# -----------------------------------------------------------------------------
 if __name__ == "__main__":
     import manager as mg
     table_data(mg.get_data(), "Y", "Thesis", ['Title', 'Authors', 'Year',
