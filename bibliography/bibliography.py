@@ -20,7 +20,6 @@ if br_path not in sys.path:
 from table.data_mg import table_data
 from manager import get_data
 
-
 def apa_format(auth, year, small, large, url=""):
     """
     Function to format data into APA-ish format.
@@ -57,7 +56,8 @@ def apa_format(auth, year, small, large, url=""):
     return(apaish)
 
 
-def build_html(data, html_out):
+def build_html(data, html_out, cats=None, uses=['Y', 'S', 'N'], sets=None,
+               title="Bibliography"):
     """
     Function to create an HTML page.
 
@@ -69,19 +69,35 @@ def build_html(data, html_out):
     html_out: string
         path to save HTML to
 
+    cats: list of strings or set of strings or None
+        journal categories to include. If none, include all in no particular
+        order
+
+    sets: list of strings
+        datasets
+
+    uses: list of strings
+        data uses to include from ['Y', 'S', 'N', 'I'], default=['Y', 'S', 'N']
+
+    title: string
+        title of document, default="Bibliography"
+
     Returns
     -------
     html_open: string
         opening html
     """
-    html_string = (html_open() +
-                  html_bib_block(data, 'Y', 'Journal') +
-                  html_close())
+    cats = {cat for cat in data['Journal Category']} if not cats else cats
+    html_string = html_open(title)
+    for cat in cats:
+        for use in uses:
+            html_string = html_string + html_bib_block(data, use, cat, sets)
+    html_string = html_string + html_close()
     with open(html_out, 'w') as h:
         h.write(html_string)
 
 
-def html_bib_block(data, data_use, journal_category):
+def html_bib_block(data, data_use, journal_category, sets=None):
     """
     Function to create a block of HTML bibliography.
 
@@ -96,24 +112,50 @@ def html_bib_block(data, data_use, journal_category):
     journal_category: string
         "Journal", "Thesis", etc.
 
+    sets: list of strings or None
+        data sets, optional
+
     Returns
     -------
     html_block: string
         html for bibliography section
     """
-    category = {"Journal": "Peer-reviewed journal articles"}
-    suffix = {'Y': 'that used our data'}
-
+    html_string = ""
+    if sets and len(sets) > 1:
+        for set_name in sets:
+            html_string += (html_bib_block(data, data_use, journal_category, [
+                           set_name]))
+    category = {"Journal": "Peer-reviewed journal articles",
+                "Proceeding": "Articles in conference proceedings",
+                "Preprint": "Preprint articles",
+                "Thesis": "Theses and dissertations"}
+    set_names = {'FCP': '1,000 Functional Connectomes',
+                 'ADHD200': 'ADHD-200',
+                 'NKI': 'NKI-Rockland',
+                 '': 'unspecified'}
+    set_name = 'our' if not sets else set_names[sets[0]] if sets[0] in        \
+                set_names else sets[0]
+    suffix = {'Y': ' '.join(['that used', set_name, 'data']),
+              'N': ' '.join(['that cited', set_name, 'data']),
+              'S': ' '.join(['that used', set_name, 'scripts'])}
     bib_data = table_data(data, data_use, journal_category, ['Authors', 'Year',
-               'Title', 'Journal'], ['Authors', 'Year', 'Title', 'Journal'],
+               'Title', 'Journal', 'Sets', 'Contributor'], ['Authors',
+               'Year', 'Title', 'Journal'],
                False).fillna("")
-
-    html_string = "".join(["""
-                <p><strong> """, category[journal_category], " ", suffix[
-                  data_use], """</strong>"""])
+    if bib_data.shape[0] == 0:
+        return("")
+    journal_category = category[journal_category] if journal_category in      \
+                       category else journal_category
+    data_use = suffix[data_use] if data_use in suffix else ""
+    html_string += "".join(["""
+                <p><strong>""", journal_category, " ", data_use,
+                """</strong>"""])
     for i, row in bib_data.iterrows():
-        html_string += apa_format(str(row.loc['Authors']), str(row.loc['Year']
-                       ), str(row.loc['Title']), str(row.loc['Journal']))
+        if not sets or (len(sets[0]) and sets[0] in row.loc['Sets']) or sets[0
+                       ] == row.loc['Sets']:
+            html_string += apa_format(str(row.loc['Authors']), str(row.loc[
+                           'Year']), str(row.loc['Title']), str(row.loc[
+                           'Journal']))
     html_string += """
                 </p>"""
     return(html_string)
@@ -160,6 +202,9 @@ def html_open(title="Bibliography", description=""):
     html_open: string
         opening html
     """
+    description_p = "".join(["""<p class="col-head__intro">""", description,  \
+                    """</p><!-- /.intro -->"""]) if len(description) > 0 else \
+                    description
     return("".join(["""<!DOCTYPE html>
 <!--[if lte IE 8 ]>
 <html lang="en" class="no-js oldie">
@@ -219,12 +264,19 @@ def html_open(title="Bibliography", description=""):
 """.js?ver=3.0.0'></script>
 <link rel='https://api.w.org/' href='https://childmind.org/wp-json/' />
 <style>
+body {
+    background-color: #efefef;
+}
+
 cite {
     font-style: italic;
 }
 
 strong {
+    font-size:20px;
+    font-size:1.1875rem;
     font-weight: bold;
+    line-height: 2.5;
 }
 
 .apaish {
@@ -239,15 +291,12 @@ strong {
 
     <div class="row">
 
-        <section class="main-content" itemprop="articleBody">
+        <section>
 
-            <div class="col-head">
+            <div>
 
-                <h1 class="title">""", title, """</h1><!-- /.title -->
-
-                <p class="col-head__intro">""",
-           description, """</p><!-- /.intro -->
-
+                <h1 class="title">""", title, """</h1><!-- /.title -->""",
+                description_p, """
            </div>
 """]))
 
@@ -255,14 +304,18 @@ strong {
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='data_in & html_out')
-    parser.add_argument('data_in', type=str, nargs='?', default=None, help=
-                        "path to master CSV (optional)")
-    parser.add_argument('html_out', type=str, nargs='?', default=os.path.join(
-                        br_path, 'bibliography', 'index.html'), help=
-                        "save path for HTML file (optional)")
+    parser.add_argument('data_in', type=str, nargs='?', default=None,
+                        help="path to master CSV (optional)")
+    parser.add_argument('html_out', type=str, nargs='?', default=
+                        os.path.join(br_path, 'bibliography', 'index.html'),
+                        help="save path for HTML file (optional)")
     arg = parser.parse_args()
     if arg.data_in:
         data = pd.read_csv(arg.data_in)
     else:
         data = get_data()
-    build_html(data, arg.html_out)
+    build_html(data, arg.html_out, ["Journal", "Proceeding", "Thesis",
+               "Preprint"], sets=["FCP", "ABIDE", "ADHD200", "NKI", "CORR", ""],
+               title="Forward citations")
+    build_html(data, os.path.join(os.path.dirname(arg.html_out), "extras.html"
+               ), uses=["I"], title="Irrelevant & duplicate references")
