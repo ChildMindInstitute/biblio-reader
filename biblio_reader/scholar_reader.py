@@ -135,6 +135,10 @@ def citations_per_year(data, sort=False):
         data.reset_index(drop=True, inplace=True)
         mg.update_data()
 
+#data = mg.get_data()
+
+#print(data['Year'][0])
+#print(data['Year'].apply(lambda x: int(x[1:])))
 
 def journal_attrs(data, attr):
     """
@@ -285,13 +289,13 @@ def impacts(data, type, per_year=False):
                     break
             res.append((set, h))
         elif type == 'mean':
-            mean = sum(citations) / float(len(citations))
+            mean = np.nansum(citations) / float(len(citations))
             res.append((set, mean))
         elif type == 'total':
-            res.append((set, sum(citations)))
+            res.append((set, np.nansum(citations)))
         elif type == 'sd':
             pass
-            res.append((set, np.std(citations)))
+            res.append((set, np.nanstd(citations)))
         elif type == 'i10':
             i10 = len([cit for cit in citations if cit >= 10])
             res.append((set, i10))
