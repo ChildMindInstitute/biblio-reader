@@ -1,4 +1,4 @@
-import pandas as pd, matplotlib.pyplot as plt, sys, os, datetime, collections, numpy as np, re
+import pandas as pd, matplotlib.pyplot as plt, sys, os, datetime, collections, numpy as np
 from titlecase import titlecase
 
 sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
@@ -317,7 +317,7 @@ def calculate_stats(data):
         use_data = data[data['Data Use'] == usage]
         use_stats.append(len(use_data))
         use_stats.append(len(use_data[use_data['Contributor'] == 'Not a Contributor']))
-        for type in ['Journal', 'Other', 'Thesis']:
+        for type in ['Peer Reviewed Journal', 'Non Peer Reviewed Journal', 'Book', 'Other', 'Preprint','Thesis']:
             use_stats.append(len(use_data[use_data['Journal Category'] == type]))
         stats.append((usage, use_stats))
     for use_type, use in stats:
@@ -327,9 +327,15 @@ def calculate_stats(data):
             elif i == 1:
                 message = 'Number of publications that did not contribute'
             elif i == 2:
-                message = 'Number of journals'
+                message = 'Number of Peer Reviewed Journals'
             elif i == 3:
-                message = 'Number of preprints, proceedings, books, etc,'
+                message = 'Number of Non Peer Reviewed Journals'
+            elif i == 4:
+                message = 'Number of Books'
+            elif i == 5:
+                message = 'Number of Other'
+            elif i == 6:
+                message = 'Number of Preprints'
             else:
                 message = 'Number of theses/dissertations'
             if use_type == 'Y':
