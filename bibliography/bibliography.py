@@ -20,7 +20,7 @@ if br_path not in sys.path:
 from table.data_mg import table_data
 from manager import get_data
 
-def apa_format(auth, year, small, large, url=""):
+def apa_format(auth, year, small, large, url="", highlight=None):
     """
     Function to format data into APA-ish format.
 
@@ -41,18 +41,25 @@ def apa_format(auth, year, small, large, url=""):
     url: string
         web location
 
+    highlight: string or None
+        HTML color code for highlight color
+
     Returns
     -------
     apaish: string
         formatted html string
     """
-    apaish = "".join(["""<p class="apaish">""", auth.rstrip("."), ". (20",
-             year[-2:] + "). "])
+    hightlight = "" if not highlight else "".join([' style="background-color:',
+                 highlight, '"'])
+    url = "".join([' [<a href="', url, '">link</a>].']) if len(url) > 0 else ""
+    apaish = "".join(['''<p class="apaish"''', hightlight, """>""",
+             auth.rstrip("."), ". (20", year[-2:] + "). "])
     if large and len(large) > 0:
         apaish = "".join([apaish, '"', small.rstrip("."), '." <cite>',
-                 large.rstrip("."), "</cite>.</p>"])
+                 large.rstrip("."), "</cite>.", url, "</p>"])
     else:
-        apaish = "".join([apaish, '<cite>', small.rstrip("."), "</cite>.</p>"])
+        apaish = "".join([apaish, '<cite>', small.rstrip("."), "</cite>.", url,
+                 "</p>"])
     return(apaish)
 
 
@@ -139,7 +146,7 @@ def html_bib_block(data, data_use, journal_category, sets=None):
               'N': ' '.join(['that cited', set_name, 'data']),
               'S': ' '.join(['that used', set_name, 'scripts'])}
     bib_data = table_data(data, data_use, journal_category, ['Authors', 'Year',
-               'Title', 'Journal', 'Sets', 'Contributor'], ['Authors',
+               'Title', 'Journal', 'Sets', 'URL', 'Contributor'], ['Authors',
                'Year', 'Title', 'Journal'],
                False).fillna("")
     if bib_data.shape[0] == 0:
@@ -153,9 +160,12 @@ def html_bib_block(data, data_use, journal_category, sets=None):
     for i, row in bib_data.iterrows():
         if not sets or (len(sets[0]) and sets[0] in row.loc['Sets']) or sets[0
                        ] == row.loc['Sets']:
+            q = "#f2cd32" if ('others' in row.loc['Authors'] or set_name ==
+                "unspecified" or "books.google.com" in row.loc['URL']) else   \
+                "#00c1d5" if row.loc['Contributor'] == 'Contributor' else None
             html_string += apa_format(str(row.loc['Authors']), str(row.loc[
                            'Year']), str(row.loc['Title']), str(row.loc[
-                           'Journal']))
+                           'Journal']), row.loc['URL'], q)
     html_string += """
                 </p>"""
     return(html_string)
@@ -264,6 +274,10 @@ def html_open(title="Bibliography", description=""):
 """.js?ver=3.0.0'></script>
 <link rel='https://api.w.org/' href='https://childmind.org/wp-json/' />
 <style>
+a {
+    color: #242a6a;
+}
+
 body {
     background-color: #efefef;
 }
