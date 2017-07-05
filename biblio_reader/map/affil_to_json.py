@@ -12,8 +12,8 @@ Copyright ©2017, Child Mind Institute (http://childmind.org), Apache v2.0
 """
 import os
 import sys
-br_path = os.path.abspath(os.path.dirname(os.path.dirname((os.path.dirname(
-          __file__)))))
+br_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(
+          __file__))))
 if br_path not in sys.path:
     sys.path.append(br_path)
 import manager as mg
@@ -31,6 +31,37 @@ def main():
     affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil
                    in affiliation.split(';;')] for aff in sublist} for i,
                    affiliation in zip(bibs['i'], bibs['affiliations'])}
+    parse_affiliations()
+
+
+def get_affiliation_json(path='affiliations.json'):
+    """
+    Function to read existing affiliation data from file
+
+    Parameter
+    ---------
+    path: string
+        path to json, default='./affiliations.json'
+
+    Returns
+    -------
+    2-tuple:
+
+    geo_dict: dictionary
+        dictionary from json file
+
+    affils: set
+        set of affiliations (strings) from geo_dict
+    """
+    if os.path.exists(path):
+        with open(path, 'r') as js:
+            geo_dict = json.load(js)
+        affils = {affil for latlong in geo_dict for affil in geo_dict[latlong][
+                 'affiliations']}
+    else:
+        geo_dict = {}
+        affils = set()
+    return(geo_dict, affils)
 
 
 def repair_affils(affiliations):
@@ -115,14 +146,7 @@ def geo_lookup(affiliations):
     -------
     None
     """
-    if os.path.exists('affiliations.json'):
-        with open('affiliations.json', 'r') as js:
-            geo_dict = json.load(js)
-        affils = {affil for latlong in geo_dict for affil in geo_dict[latlong][
-                 'affiliations']}
-    else:
-        geo_dict = {}
-        affils = set()
+    geo_dict, affils = get_affiliation_json()
     for aff, ix in affiliations.items():
         if aff in affils:
             continue
@@ -168,6 +192,7 @@ def geo_lookup(affiliations):
                for latlong in geo_dict}
     with open('affiliations.json', 'w') as jf:
         json.dump(geo_dict, jf)
+
 
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
