@@ -1,5 +1,5 @@
-import os, pandas, sys, re, json
-
+import os, pandas, sys, re, json, numpy as np
+from statistics import median
 
 def dir(dir):
     if not os.path.exists(dir):
@@ -86,7 +86,12 @@ def get_bibs():
     return pandas.read_csv(get_file('parsed_bibs.csv', WORKING_PATH))
 
 
+
 def update_data():
+    """Updates dataframe and exports as a CSV file to the output path directory
+
+    :return: Exports pandas dataframe to a CSV file entitled DATA_NAME.txt
+    """
     print('data updated:', id(DATA))
     DATA.to_csv(path_or_buf=os.path.join(OUTPUT_PATH, DATA_NAME),
                 index=False)
