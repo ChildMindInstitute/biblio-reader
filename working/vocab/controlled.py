@@ -13,13 +13,14 @@ Copyright ©2017, Child Mind Institute (http://childmind.org), Apache v2.0
 """
 import os
 import sys
-br_path = os.path.abspath(os.path.dirname(os.path.dirname(os.path.dirname(
-          __file__))))
+br_path = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir,
+          os.pardir))
 if br_path not in sys.path:
     sys.path.append(br_path)
 import json
 import manager as mg
 import biblio_reader.map.affil_to_json as atj
+import pandas as pd
 
 
 def all_matched_searches(affiliations, de_facto_affiliations):
@@ -49,16 +50,16 @@ def all_matched_searches(affiliations, de_facto_affiliations):
     latlong = dict()
     for affil in de_facto_affiliations:
         if affil in ll:
-            latlong[affil] = ll[affil]
+            latlong[affil] = {"match": affil, "coords": ll[affil]}
         else:
             aff_l, aff_r = parse_affiliation(affil)
             if aff_r in ll:
-                latlong[affil] = {aff_r: ll[aff_r]}
+                latlong[affil] = {"match": aff_r, "coords": ll[aff_r]}
             else:
                 while(aff_r not in ll and len(aff_r.split(", ")) > 1):
                     aff_l, aff_r = parse_affiliation(aff_r)
                 if(aff_r in ll):
-                    latlong[affil] = {aff_r: ll[aff_r]}
+                    latlong[affil] = {"match": aff_r, "coords": ll[aff_r]}
                 else:
                     latlong[affil] = None
     return(latlong)
@@ -147,11 +148,28 @@ def save_vocab(which_vocab, voc):
     """
     path = os.path.join(mg.WORKING_PATH, 'vocab', ''.join([which_vocab, '.json'
            ]))
+
+    cpath = "".join([path[:-5], ".csv"])
+
     v_path = os.path.dirname(path)
     if not os.path.exists(v_path):
         os.makedirs(v_path)
+
     with open(path, 'w') as js:
         json.dump(voc, js)
+
+    cvoc = pd.DataFrame()
+
+    #clabs = {which_vocab}
+
+    for i in voc:
+        try:
+            cvoc = cvoc.append(pd.DataFrame({which_vocab: i, **voc[i]}, index=[
+                   len(cvoc)]))
+        except:
+            print("!!", i, "!!")
+            continue
+    cvoc.to_csv(cpath)
 
 
 def update_vocab(which_vocab, voc):
