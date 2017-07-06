@@ -33,17 +33,23 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         keys are latitude, longitude pairs as strings; values are dictionaries
         of "papers": list of ints (internal paper indices); "affiliations":
         strings as spelled out in papers; "matched searches": terms fed to the
-        Google Maps API that returned parent key coordinates
+        Google Maps API that returned parent key coordinates; "country":
+        dictionary of strings representing countries as spelled and canonically
 
     de_facto_affiliations: set
-        set of strings of affiliations
+        set of affiliation strings
 
     Returns
     -------
-    latlong: dictionary
-        dictionary of affiliation, latitude-longitude string pairs
+    affiliations: dictionary
+        keys are latitude, longitude pairs as strings; values are dictionaries
+        of "papers": list of ints (internal paper indices); "affiliations":
+        strings as spelled out in papers; "matched searches": terms fed to the
+        Google Maps API that returned parent key coordinates; "country":
+        dictionary of strings representing countries as spelled and canonically
     """
     ll = dict()
+    countries = dict()
     for coord, v in affiliations.items():
         for term in v["matched searches"]:
             ll[term] = coord
@@ -62,7 +68,83 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                     latlong[affil] = {"match": aff_r, "coords": ll[aff_r]}
                 else:
                     latlong[affil] = None
-    return(latlong)
+    for affil in latlong:
+        matched_country = None
+        canon_match = None
+        if "country" not in latlong:
+            while not matched_country:
+                matched_country = country_prompt(countries, affil)
+            if matched_country in countries:
+                latlong[affil]["country"] = {'de facto': matched_country,
+                                             'canonical': countries[
+                                              matched_country]}
+            else:
+                if(len(countries)):
+                    print("\n")
+                    for cc in sorted(list({cc for c, cc in countries.items()})
+                              ):
+                        print(cc, end="; ")
+                    print("\n")
+                    print("If that country is the same as one of the above,"
+                          " please enter the match. Otherwise, just press "
+                          "`enter`")
+                    canon_match = input("(please type the full name of the "
+                                  "match, matching case): ")
+                canon_match = matched_country if not canon_match else         \
+                              canon_match
+                if matched_country not in affil:
+                    matched_country = input("How's that spelled here? ")
+                if not matched_country or len(matched_country) == 0:
+                    matched_country = canon_match
+                latlong[affil]["country"] = {'de facto': matched_country,
+                                             'canonical': canon_match}
+            if canon_match:
+                countries[matched_country] = canon_match
+                if canon_match not in countries:
+                    countries[canon_match] = canon_match
+    for coord, v in affiliations.items():
+        for term in v["matched searches"]:
+            affiliations[coord]["country"] = latlong[term]["country"]
+    return(affiliations)
+
+
+def country_prompt(countries, affil):
+    """
+    Function to prompt user if affiliation is in a given country, and, if not,
+    to identify the affiliation.
+
+    Parameters
+    ----------
+    countries: dictionary
+        countries vocabulary
+
+    affil: string
+        affiliation
+
+    Returns
+    -------
+    country: string or None
+        confirmed country
+    """
+    doublecheck = ["India", "CA", "MA", "Georgia", "US", "Mexico"]
+    for country in countries:
+        if country and country in affil:
+            if country not in doublecheck:
+                return(country)
+            match_country = "maybe"
+            while(len(match_country) > 0 and match_country.upper()
+                  not in ["Y", "N"]):
+                match_country = input(''.join(["Is ", affil, " in the country",
+                                " \"", countries[country], "\"? (Y / N) : "]))
+            if len(match_country) == 0 or match_country.upper() == "Y":
+                return(country)
+    match_country = input(''.join(["What country is ", affil, " in? : "]))
+    while match_country:
+        country = match_country if len(match_country) > 0 else country
+        match_country = input(''.join([country,
+                        "? (enter for yes or type again): "]))
+
+    return(country)
 
 
 def get_vocab(which_vocab):
@@ -126,6 +208,7 @@ def parse_affiliations(path='affiliations.json'):
         set of de facto affiliations
     """
     geo_dict, affils = atj.get_affiliation_json(path)
+
     return geo_dict, affils
 
 
@@ -160,19 +243,17 @@ def save_vocab(which_vocab, voc):
 
     cvoc = pd.DataFrame()
 
-    #clabs = {which_vocab}
-
     for i in voc:
         try:
             cvoc = cvoc.append(pd.DataFrame({which_vocab: i, **voc[i]}, index=[
                    len(cvoc)]))
         except:
-            print("!!", i, "!!")
-            continue
-    cvoc.to_csv(cpath)
+            cvoc = cvoc.append(pd.DataFrame({which_vocab: i}, index=[len(cvoc)]
+                   ))
+    cvoc.to_csv(cpath, index=False)
 
 
-def update_vocab(which_vocab, voc):
+def update_vocab(which_vocab):
     """
     Function to get the current cntrolled vocabulary for affiliations
 
@@ -180,10 +261,6 @@ def update_vocab(which_vocab, voc):
     ----------
     which_vocab: string
         name of vocabulary to get
-
-    voc: dictionary
-        dictionary with de facto spelling string keys and canonical spelling
-        string values
 
     Returns
     -------
@@ -194,18 +271,12 @@ def update_vocab(which_vocab, voc):
     up_fun = {'affiliation': (parse_affiliations, os.path.join(br_path,
              'biblio_reader', 'map', 'affiliations.json'))}
     geo_dict, new_v = up_fun[which_vocab][0](up_fun[which_vocab][1])
-    matches = all_matched_searches(geo_dict, new_v)
-    for term in new_v:
-        if term not in voc:
-            if term in matches:
-                voc[term] = matches[term]
-            else:
-                voc[term] = term
+    voc = all_matched_searches(geo_dict, new_v)
     return(voc)
 
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
     which_vocab = 'affiliation'
     v = get_vocab(which_vocab)
-    v = update_vocab(which_vocab, v)
+    v = update_vocab(which_vocab)
     save_vocab(which_vocab, v)
