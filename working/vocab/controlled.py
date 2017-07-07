@@ -17,6 +17,7 @@ br_path = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir,
           os.pardir))
 if br_path not in sys.path:
     sys.path.append(br_path)
+import csv
 import json
 import manager as mg
 import biblio_reader.map.affil_to_json as atj
@@ -49,7 +50,14 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         dictionary of strings representing countries as spelled and canonically
     """
     ll = dict()
+    iso_3166_1_en_short = list()
+    with open("ISO_3166_1_English_short_names.csv", "r") as iso:
+        iso_reader = csv.reader(iso)
+        for line in iso_reader:
+            iso_3166_1_en_short += line
     countries = dict()
+    for s_name in iso_3166_1_en_short:
+        countries[s_name] = s_name
     for coord, v in affiliations.items():
         for term in v["matched searches"]:
             ll[term] = coord
@@ -71,7 +79,7 @@ def all_matched_searches(affiliations, de_facto_affiliations):
     for affil in latlong:
         matched_country = None
         canon_match = None
-        if "country" not in latlong:
+        if affil and "country" not in latlong[affil]:
             while not matched_country:
                 matched_country = country_prompt(countries, affil)
             if matched_country in countries:
@@ -143,8 +151,10 @@ def country_prompt(countries, affil):
         country = match_country if len(match_country) > 0 else country
         match_country = input(''.join([country,
                         "? (enter for yes or type again): "]))
-
-    return(country)
+    if country:
+        return(country)
+    else:
+        return(country_prompt(countries, affil))
 
 
 def get_vocab(which_vocab):
