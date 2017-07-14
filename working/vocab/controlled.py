@@ -48,16 +48,40 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         strings as spelled out in papers; "matched searches": terms fed to the
         Google Maps API that returned parent key coordinates; "country":
         dictionary of strings representing countries as spelled and canonically
+        
+    country_count: dictionary
+        keys are Alpha-2 codes, values are counts
     """
     ll = dict()
-    iso_3166_1_en_short = list()
-    with open("ISO_3166_1_English_short_names.csv", "r") as iso:
-        iso_reader = csv.reader(iso)
-        for line in iso_reader:
-            iso_3166_1_en_short += line
-    countries = dict()
-    for s_name in iso_3166_1_en_short:
-        countries[s_name] = s_name
+    iso_3166_1 = pd.read_csv("ISO_3166.csv", na_filter=False)
+    doublecheck = {"India", "Georgia", "Mexico", "SRB", "BIH"} | {country[
+                  'Alpha-2 code'] for country in iso_3166_1.to_dict(orient=
+                  'records')} | {country['Alpha-3 code'] for country in
+                  iso_3166_1.to_dict(orient='records')}
+    singlecheck = {"".join([", ", country]) for country in doublecheck if (
+                  country not in {country['Alpha-2 code'] for country in
+                  iso_3166_1.to_dict(orient='records')} and country not in
+                  {country['Alpha-3 code'] for country in iso_3166_1.to_dict(
+                  orient='records')})}
+    iso_dict = {**{country['Alpha-2 code']: [country[
+                'English short name (upper/lower case)'], country[
+                'Alpha-2 code'], country['Alpha-3 code']] for country in
+                iso_3166_1.to_dict(orient='records')}, 'unknown': ['unknown'] *
+                3}
+    countries = {**{country['Alpha-2 code']: country['Alpha-2 code'] for
+                country in iso_3166_1.to_dict(orient='records')}, **{country[
+                'Alpha-3 code']: country['Alpha-2 code'] for country in
+                iso_3166_1.to_dict(orient='records')}, **{country[
+                'English short name (upper/lower case)']: country[
+                'Alpha-2 code'] for country in iso_3166_1.to_dict(orient=
+                'records')}, 'unknown': 'unknown', '?': 'unknown'}
+    country_count = {country['Alpha-2 code']: 0 for country in
+                iso_3166_1.to_dict(orient='records')}
+    for country in countries:
+        for keycountry in countries:
+            if country in keycountry and not country == keycountry:
+                doublecheck.add(country)
+                singlecheck.add("".join([", ", country]) 
     for coord, v in affiliations.items():
         for term in v["matched searches"]:
             ll[term] = coord
@@ -75,30 +99,48 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 if(aff_r in ll):
                     latlong[affil] = {"match": aff_r, "coords": ll[aff_r]}
                 else:
-                    latlong[affil] = None
-    for affil in latlong:
+                    latlong[affil] = country_prompt(countries, iso_dict, affil,
+                                     doublecheck, singlecheck)
+    for i, affil in enumerate(latlong):
         matched_country = None
         canon_match = None
-        if affil and "country" not in latlong[affil]:
+        n = []
+        if affil and latlong[affil] and "country" not in latlong[affil]:
             while not matched_country:
-                matched_country = country_prompt(countries, affil)
+                matched_country = country_prompt(countries, iso_dict, affil,
+                                  doublecheck, singlecheck)
+                for keycountry in countries:
+                    if matched_country in keycountry and not matched_country  \
+                       == keycountry:
+                        doublecheck.add(matched_country)
+                        singlecheck.add("".join([", ", matched_country]) 
+                n.append(matched_country)
+            if len(n) > 1:
+                matched_country = None
+                for m in n:
+                    matched_country = country_prompt(countries, iso_dict,
+                                      m, doublecheck, singlecheck) if not     \
+                                      matched_country else matched_country
+            else:
+                matched_country = n[0]
             if matched_country in countries:
+                canon_match = countries[matched_country]
                 latlong[affil]["country"] = {'de facto': matched_country,
-                                             'canonical': countries[
-                                              matched_country]}
+                                             'canonical': canon_match}
             else:
                 if(len(countries)):
                     print("\n")
-                    for cc in sorted(list({cc for c, cc in countries.items()})
-                              ):
-                        print(cc, end="; ")
+                    for cc in sorted(list({cc for c, cc in countries.items(
+                                     )})):
+                        print(iso_dict[cc][0], end="; ")
                     print("\n")
-                    print("If that country is the same as one of the above,"
-                          " please enter the match. Otherwise, just press "
-                          "`enter`")
-                    canon_match = input("(please type the full name of the "
-                                  "match, matching case): ")
-                canon_match = matched_country if not canon_match else         \
+                    print("If that country is the same as one of the "
+                          "above, please enter the match. Otherwise, just "
+                          "press `enter`")
+                    canon_match = countries[input(
+                                  "(please type the full name of the "
+                                  "match, matching case): ")]
+                canon_match = matched_country if not canon_match else     \
                               canon_match
                 if matched_country not in affil:
                     matched_country = input("How's that spelled here? ")
@@ -110,13 +152,27 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 countries[matched_country] = canon_match
                 if canon_match not in countries:
                     countries[canon_match] = canon_match
+            if canon_match in country_count:
+                country_count[canon_match] += 1
+            else:
+                print(matched_country)
+        elif "country" in latlong[affil]:
+            canon_match = latlong[affil]["country"]
+            if canon_match in country_count:
+                    country_count[canon_match] += 1
+        if canon_match in country_count:
+            print(": ".join([iso_dict[canon_match][0], str(country_count[
+                     canon_match])]))
+        else:
+            print(affil)
     for coord, v in affiliations.items():
         for term in v["matched searches"]:
             affiliations[coord]["country"] = latlong[term]["country"]
-    return(affiliations)
+    return(affiliations, country_count)
 
 
-def country_prompt(countries, affil):
+def country_prompt(countries, iso_dict, affil, doublecheck=["India", "CA",
+                   "MA", "Georgia", "US", "Mexico"], singlecheck=[]):
     """
     Function to prompt user if affiliation is in a given country, and, if not,
     to identify the affiliation.
@@ -125,25 +181,35 @@ def country_prompt(countries, affil):
     ----------
     countries: dictionary
         countries vocabulary
+        
+    iso_dict: dictionary
+        spelled-out country names
 
     affil: string
         affiliation
+        
+    doublecheck: list of strings
+        countries to doublecheck if found
+    
+    doublecheck: list of strings
+        strings to not doublecheck if found
 
     Returns
     -------
     country: string or None
         confirmed country
     """
-    doublecheck = ["India", "CA", "MA", "Georgia", "US", "Mexico"]
     for country in countries:
         if country and country in affil:
-            if country not in doublecheck:
+            if country not in doublecheck or (affil in singlecheck and
+               "Indiana" not in affil):
                 return(country)
             match_country = "maybe"
             while(len(match_country) > 0 and match_country.upper()
                   not in ["Y", "N"]):
                 match_country = input(''.join(["Is ", affil, " in the country",
-                                " \"", countries[country], "\"? (Y / N) : "]))
+                                " \"", iso_dict[countries[country]][0],
+                                "\"? (Y / N) : "]))
             if len(match_country) == 0 or match_country.upper() == "Y":
                 return(country)
     match_country = input(''.join(["What country is ", affil, " in? : "]))
@@ -154,7 +220,7 @@ def country_prompt(countries, affil):
     if country:
         return(country)
     else:
-        return(country_prompt(countries, affil))
+        return(country_prompt(countries, iso_dict, affil, doublecheck))
 
 
 def get_vocab(which_vocab):
@@ -277,16 +343,20 @@ def update_vocab(which_vocab):
     voc: dictionary
         dictionary with de facto spelling string keys and canonical spelling
         string values, updated
+        
+    count: dictionary
+        dictionary of counts
     """
     up_fun = {'affiliation': (parse_affiliations, os.path.join(br_path,
              'biblio_reader', 'map', 'affiliations.json'))}
     geo_dict, new_v = up_fun[which_vocab][0](up_fun[which_vocab][1])
-    voc = all_matched_searches(geo_dict, new_v)
-    return(voc)
+    voc, count = all_matched_searches(geo_dict, new_v)
+    return(voc, count)
 
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
     which_vocab = 'affiliation'
     v = get_vocab(which_vocab)
-    v = update_vocab(which_vocab)
+    v, c = update_vocab(which_vocab)
     save_vocab(which_vocab, v)
+    save_vocab('_'.join([which_vocab, 'count']), c)
