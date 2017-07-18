@@ -86,8 +86,7 @@ def all_matched_searches(affiliations, de_facto_affiliations):
     us_states = {state['Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}
     for state in us_states:
-        if state not in countries:
-            countries[state] = us_states[state]
+        countries[state] = us_states[state]
     country_count = {country: 0 for country in iso_dict}
     for k, v in affiliations.items():
         time.sleep(1)
@@ -111,18 +110,16 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                         print(colored(g, 'yellow'))
                         next
             if bool([u for u in us if u in address_components]):
-                for state in us_states:
-                    if state in address_components:
-                        if state == "Georgia":
-                            affiliations[k]["country"] = "US-GA"
-                        else:
-                            affiliations[k]["country"] = countries[state]
-                        country_count[affiliations[k]["country"]] =           \
-                                                                 country_count[
-                                                                  affiliations[
-                                                                    k][
-                                                                    "country"]
-                                                                    ] + 1
+                if bool([state for state in us_states if state in
+                   address_components]):
+                    if state == "Georgia":
+                        affiliations[k]["country"] = "US-GA"
+                    else:
+                        affiliations[k]["country"] = countries[state]
+                    country_count[affiliations[k]["country"]] = country_count[
+                                                                affiliations[
+                                                                k]["country"]]\
+                                                                + 1
             else:
                 for country in countries:
                     if country != 'United States of America' and country in   \
