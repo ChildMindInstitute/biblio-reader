@@ -85,8 +85,14 @@ def all_matched_searches(affiliations, de_facto_affiliations):
     us = {'US', 'USA', 'United States', 'U.S.A', "United States of America"}
     us_states = {state['Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}
+    usa_states = dict()
     for state in us_states:
-        countries[state] = us_states[state]
+        usa_states[countries[state]] = countries[state]
+        usa_states[countries[state][-2:]] = countries[state]
+        if state not in countries:
+            countries[state] = us_states[state]
+    us_states = {**us_states, **usa_states}
+    del usa_states
     country_count = {country: 0 for country in iso_dict}
     for k, v in affiliations.items():
         time.sleep(1)
