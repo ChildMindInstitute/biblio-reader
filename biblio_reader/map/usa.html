@@ -14,13 +14,14 @@
       google.charts.setOnLoadCallback(getData);
 
       function getData() {
-        $.get("./affiliations.csv", function(csvString) {
+        $.get("./us_affiliations.csv", function(csvString) {
           var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
 
           var data = new google.visualization.arrayToDataTable(arrayData);
           $.getJSON("../scale_color_perceptual/hex/viridis.json", function(viridis) {
             var options = {'title':'Affiliations of Papers indexed in PubMed using FCP/INDI Data',
-                          colorAxis: {colors: viridis}};
+                           region: "US", resolution: "provinces",
+                           colorAxis: {colors: viridis}};
 
             var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
 

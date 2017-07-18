@@ -56,7 +56,7 @@ def all_matched_searches(affiliations, de_facto_affiliations):
     iso_3166_1 = pd.read_csv(os.path.abspath(os.path.join(__file__, os.pardir,
                  "ISO_3166_1.csv")), na_filter=False)
     iso_3166_2_us = pd.read_csv(os.path.abspath(os.path.join(__file__,
-                    os.pardir, "ISO_3166_2_us.csv")), na_filter=False)
+                    os.pardir, "ISO_3166_2_US.csv")), na_filter=False)
     doublecheck = {"India", "Georgia", "Mexico", "SRB", "BIH", "CA", "Jersey",
                    "Israel"}\
                   | {country['Alpha-2 code'] for country in iso_3166_1.to_dict(
@@ -66,8 +66,8 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                   country not in {country['Alpha-2 code'] for country in
                   iso_3166_1.to_dict(orient='records')} and country not in
                   {country['Alpha-3 code'] for country in iso_3166_1.to_dict(
-                  orient='records')})} | {"China", "Taiwan"} | {state['Code']
-                  for state in iso_3166_2_us.to_dict(orient='records')}
+                  orient='records')})} | {"China", "Taiwan", "PRC"} | {state[
+                  'Code'] for state in iso_3166_2_us.to_dict(orient='records')}
     iso_dict = {**{country['Alpha-2 code']: [country[
                'English short name (upper/lower case)'], country[
                'Alpha-2 code'], country['Alpha-3 code']] for country in
@@ -86,6 +86,7 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 'Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}, 'unknown': 'unknown',
                 '?': 'unknown', 'Taiwan': 'TW'}
+    us = {'US', 'USA', 'United States', 'U.S.A'}
     us_states = {state['Code'][-2:]: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}
     for state in us_states:
@@ -98,8 +99,11 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         for keycountry in countries:
             if country in keycountry and not country == keycountry and country\
                not in singlecheck:
-                doublecheck.add(country)
-                singlecheck.add("".join([", ", country]))
+                if len(country) > 3 and country not in doublecheck:
+                   singlecheck.add(country)
+                else:
+                    doublecheck.add(country)
+                    singlecheck.add("".join([", ", country]))
     for coord, v in affiliations.items():
         for term in v["matched searches"]:
             ll[term] = coord
@@ -124,7 +128,8 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         matched_country = None
         canon_match = None
         n = []
-        if affil and latlong[affil] and "country" not in latlong[affil]:
+        if not matched_country and affil and latlong[affil] and "country" not  \
+           in latlong[affil]:
             while not matched_country:
                 matched_country = country_prompt(countries, iso_dict, affil,
                                   doublecheck, singlecheck, us_states)
@@ -146,8 +151,11 @@ def all_matched_searches(affiliations, de_facto_affiliations):
             if matched_country in countries and affil in latlong:
                 canon_match = countries[matched_country]
                 latlong[affil]["country"] = canon_match
+            elif matched_country in countries:
+                latlong[affil] = dict()
+                latlong[affil]["country"] = canon_match
             else:
-                if(len(countries)):
+                if(len(countries)) and affil not in latlong:
                     print("\n")
                     for cc in sorted(list({cc for c, cc in countries.items(
                                      )})):
@@ -168,6 +176,7 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 latlong[affil]["country"] = canon_match
             if canon_match:
                 countries[matched_country] = canon_match
+                latlong[affil]["country"] = canon_match
                 if canon_match not in countries:
                     countries[canon_match] = canon_match
             if canon_match in country_count:
@@ -177,22 +186,29 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         elif "country" in latlong[affil]:
             canon_match = latlong[affil]["country"]
             if canon_match in country_count:
-                    country_count[canon_match] += 1
+                country_count[canon_match] += 1
+                if "country" not in latlong[affil]:
+                    latlong[affil]["country"] = canon_match
         if canon_match in country_count:
             print(": ".join([iso_dict[canon_match][0], str(country_count[
-                     canon_match])]))
+                     canon_match]), affil]))
         else:
             print(affil)
+        if "country" not in latlong[affil]:
+            latlong[affil]["country"] = canon_match
+
     for coord, v in affiliations.items():
         for term in v["matched searches"]:
-            affiliations[coord]["country"] = latlong[term]["country"]
+            for match, lv in latlong.items():
+                if "country" not in affiliations[coord] and term in lv['match']:
+                    affiliations[coord]["country"] = lv["country"]
     save_heatmap_data(affiliations)
     return(affiliations, country_count)
 
 
 def country_prompt(countries, iso_dict, affil, doublecheck=["India", "CA",
-                   "MA", "Georgia", "US", "Mexico"], singlecheck=[], states={}
-                   ):
+                   "MA", "Georgia", "Mexico", "IN", "PR"], singlecheck=[],
+                   states={}, us={'US', 'USA', 'United States', 'U.S.A'}):
     """
     Function to prompt user if affiliation is in a given country, and, if not,
     to identify the affiliation.
@@ -224,30 +240,42 @@ def country_prompt(countries, iso_dict, affil, doublecheck=["India", "CA",
     """
     for country in countries:
         if country and "".join([" ", country]) in affil:
+            for u in us:
+                if u in affil and country in affil:
+                    if affil.endswith(u) and affil not in ["VA", "PR"]:
+                        return("".join(["US-", countries[country][-2:]]))
+                    return(state_prompt(countries, iso_dict, affil, states))
             if country not in doublecheck or (country in singlecheck and
                "Indiana" not in affil):
-                if countries[country] == "US":
+                if countries[country] in us:
                     return(state_prompt(countries, iso_dict, affil, states))
                 elif "Indiana" in affil:
                     return("US-IN")
                 else:
                     return(country)
+            if affil.endswith(country) and len(country) > 2:
+                return(country)
             match_country = "maybe"
             while(len(match_country) > 0 and match_country.upper()
                   not in ["Y", "N"]):
+                if country == affil[-len(country):] and country in countries:
+                    return(countries[country])
                 match_country = input(''.join(["Is ", affil, " in the state",
                                 " \"", iso_dict[countries[country]][0],
                                 "\"? (Y / N) : "]))
             if len(match_country) == 0 or match_country.upper() == "Y":
-                if countries[country] == 'US':
+                if countries[country] in us:
                     return(state_prompt(countries, iso_dict, affil, states))
                 return(country)
-            if countries[country] != "US" and ((country and country[0:2] ==
+            if countries[country] not in us and ((country and country[0:2] ==
                "US" and "".join([" ", country[-2:]]) in affil) or ("".join([
                " ", country]) in affil)) and "".join(["US-", countries[country
                ][-2:]]) in countries:
-               if "US" in iso_dict[countries[country]] or input(''.join(["Is ",
-                  affil, " in the state \"", iso_dict["US"][0],
+               for u in us:
+                   if ", ".join([countries[country][-2:], u]) in affil:
+                       return("".join(["US-", countries[country][-2:]]))
+               if "US" in iso_dict[countries[country]] or input(''.join([
+                  "Is ", affil, " in the state \"", iso_dict["US"][0],
                   "\"? (Y / N) : "])).upper() != 'N':
                    return(state_prompt(countries, iso_dict, affil, states))
     match_country = None
@@ -264,7 +292,8 @@ def country_prompt(countries, iso_dict, affil, doublecheck=["India", "CA",
                singlecheck, states))
 
 
-def state_prompt(countries, iso_dict, affil, states):
+def state_prompt(countries, iso_dict, affil, states, us={'US', 'USA',
+                 'United States', 'U.S.A'}):
     """
     Function to prompt user if affiliation is in a given US state, and, if not,
     to identify the affiliation.
@@ -289,20 +318,27 @@ def state_prompt(countries, iso_dict, affil, states):
         confirmed state
     """
     for country in countries:
-        if countries[country] != "US" and ((country and country[0:2] == "US"
-           and "".join([" ", country[-2:]]) in affil) or ("".join([" ", country
-           ]) in affil)) and "".join(["US-", countries[country][-2:]]) in     \
-           countries:
+        for u in us:
+            if u in affil and country in affil:
+                if "".join(["US-", countries[country][-2:]]) in countries and  \
+                   country not in ["VA", "PR"]:
+                       return("".join(["US-", countries[country][-2:]]))
+        if country not in us and countries[country] != "US" and ((country and
+           country[0:2] == "US" and "".join([" ", country[-2:]]) in affil) or (
+           "".join([" ", country]) in affil)) and "".join(["US-", countries[
+           country][-2:]]) in countries:
             match_country = "maybe"
             while(len(match_country) > 0 and match_country.upper() not in ["Y",
                   "N"]):
                 country = "".join(["US-", country]) if "".join(["US-", country]
                           ) in iso_dict else country
+                if country == affil[-len(country):] and country in countries:
+                    return(countries[country])
                 match_country = input(''.join(["Is ", affil,
                                 " in the US state \"", iso_dict[countries[
                                 country]][0], "\"? (Y / N) : "]))
                 if len(match_country) == 0 or match_country.upper() == "Y":
-                    return(country)
+                    return("".join(["US-", countries[country][-2:]]))
     match_country = None
     while not(match_country):
         match_country = input(''.join(["What US state is ", affil, " in? : "]))
@@ -310,7 +346,10 @@ def state_prompt(countries, iso_dict, affil, states):
         country = match_country if len(match_country) > 0 else country
         match_country = input(''.join([country,
                         "? (enter for yes or type again): "]))
-    if country:
+    if country and country in countries and "".join(["US-", countries[country][
+       -2:]]) in countries:
+        return("".join(["US-", countries[country][-2:]]))
+    elif country:
         return(country)
     else:
         return(None)
@@ -399,7 +438,15 @@ def save_heatmap_data(affiliations, outpath=os.path.abspath(os.path.join(
     None
     """
     country_count = dict()
+    us_state_count = dict()
     for coord in affiliations:
+        if affiliations[coord]['country'].startswith("US"):
+            if affiliations[coord]['country'] not in us_state_count:
+                us_state_count[affiliations[coord]['country']] = 0
+            us_state_count[affiliations[coord]['country']] = us_state_count[
+                           affiliations[coord]['country']] + len(affiliations[
+                           coord]['papers'])
+        affiliations[coord]['country'] = "US"
         if affiliations[coord]['country'] not in country_count:
             country_count[affiliations[coord]['country']] = 0
         country_count[affiliations[coord]['country']] = country_count[
@@ -409,7 +456,15 @@ def save_heatmap_data(affiliations, outpath=os.path.abspath(os.path.join(
     country_count = pd.DataFrame(list(country_count.items()), columns=[
                       'country', 'count'])
 
-    country_count[country_count['country'] != 'unknown'].to_csv(outpath)
+    country_count[country_count['country'] != 'unknown'].to_csv(outpath, index=
+                                                                False)
+
+    us_state_count = pd.DataFrame(list(us_state_count.items()), columns=[
+                      'country', 'count'])
+    us_outpath = "".join([outpath.split("affiliations")[0],
+                 "us_affiliations.csv"])
+    us_state_count[us_state_count['country'] != 'unknown'].to_csv(us_outpath,
+                                                                index=False)
 
 
 def save_vocab(which_vocab, voc):
@@ -439,7 +494,7 @@ def save_vocab(which_vocab, voc):
         os.makedirs(v_path)
 
     with open(path, 'w') as js:
-        json.dump(voc, js)
+        json.dump(voc, js, sort_keys=True, indent=4)
 
     cvoc = pd.DataFrame()
 
