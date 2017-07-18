@@ -1,7 +1,9 @@
 import pandas as pd, unidecode, os, xml.etree.ElementTree as etree, sys
+# from biopython <http://biopython.org/DIST/docs/api/Bio.Entrez-module.html>
 from Bio import Entrez
-sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
-import manager as mg
+br_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+if br_path not in sys.path:
+    sys.path.append(br_path)
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
 
@@ -24,8 +26,8 @@ def filterstr(str, filter, decode=True):
 
 def get_ids(data):
     """
-    Takes all pubs of the dataframe and searches Pubmed for PMCID's related to the title, authors, and year in
-    each row
+    Takes all pubs of the dataframe and searches Pubmed for PMCID's related to
+    the title, authors, and year in each row
     :param data: The dataframe
     :return: a list of all IDS, an updated dataframe
     """
@@ -34,8 +36,10 @@ def get_ids(data):
         row = row[1]
         year = row['Year'] or ''
         term = filterstr(str(row['Title']), ")'>',\```[](<}{")
-        author = filterstr(str(row['Authors']).lower().split(' & ')[0], ")'',```'[\](}{')")
-        request = Entrez.esearch(db='pubmed', term=term, retmax=1, field='title', year=year, author=author)
+        author = filterstr(str(row['Authors']).lower().split(' & ')[0],
+                 ")'',```'[\](}{')")
+        request = Entrez.esearch(db='pubmed', term=term, retmax=1, field=
+                  'title', year=year, author=author)
         idlist = Entrez.read(request)['IdList']
         if len(idlist) == 1:
             ids.append(int(idlist[0]))
@@ -54,19 +58,23 @@ def write_bib(data, directory):
     if 'PMCID' not in data:
         print("NO PMCIDS")
         return
-    id_dict = {i: int(pmcid) for i, pmcid in dict(zip(data['i'], data['PMCID'])).items() if int(pmcid) != 0}
+    id_dict = {i: int(pmcid) for i, pmcid in dict(zip(data['i'], data['PMCID'])
+              ).items() if int(pmcid) != 0}
     for i, pmcid in id_dict.items():
-        bib = Entrez.efetch(db='pubmed', id=pmcid, retmode="xml", rettype="full")
+        bib = Entrez.efetch(db='pubmed', id=pmcid, retmode="xml", rettype=
+              "full")
         with open('/'.join([directory, str(i) + '.xml']), 'w') as f:
             f.write(bib.read())
 
 
 def parse_bib(directory, outfile):
     """
-    Parses each Pubmed obtained bibliography to find qualifiers, affiliations, and full author lists
+    Parses each Pubmed obtained bibliography to find qualifiers, affiliations,
+    and full author lists
     :param directory: The directory of Pubmed bibs
     :param outfile: outfile dir to write result in
-    :return: A CSV file with reference #s, qualifiers, affiliations, and authors for each article with a PMCID
+    :return: A CSV file with reference #s, qualifiers, affiliations, and
+             authors for each article with a PMCID
     """
     parsed = []
     for bib in os.listdir(directory):
@@ -78,11 +86,15 @@ def parse_bib(directory, outfile):
             if fore is not None and last is not None:
                 authors.append(' '.join([fore.text, last.text]))
         authors = ';;'.join(authors)
-        affiliations = ';;'.join(set([aff.text for aff in root.findall('.//Affiliation')]))
-        qualifiers = ';;'.join(set([qual.text for qual in root.findall('.//MeshHeading/QualifierName')]).union(set([
+        affiliations = ';;'.join(set([aff.text for aff in root.findall(
+                       './/Affiliation')]))
+        qualifiers = ';;'.join(set([qual.text for qual in root.findall(
+                     './/MeshHeading/QualifierName')]).union(set([
             key.text for key in root.findall('.//KeywordList/Keyword')])))
-        parsed.append((int(bib.replace('.xml', '')), authors, affiliations, qualifiers))
-    parsed_data = pd.DataFrame(parsed, columns=['i', 'authors', 'affiliations', 'qualifiers'])
+        parsed.append((int(bib.replace('.xml', '')), authors, affiliations,
+                      qualifiers))
+    parsed_data = pd.DataFrame(parsed, columns=['i', 'authors', 'affiliations',
+                  'qualifiers'])
     parsed_data.sort_values('i', inplace=True)
     parsed_data.to_csv(path_or_buf=outfile, index=False)
 
