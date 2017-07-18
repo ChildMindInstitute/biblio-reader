@@ -17,14 +17,15 @@ br_path = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir,
           os.pardir))
 if br_path not in sys.path:
     sys.path.append(br_path)
-import csv
 from geopy.exc import GeocoderServiceError
+from geopy.geocoders import GoogleV3 as Google
 import json
 import manager as mg
 from geopy.geocoders import Nominatim
 import biblio_reader.map.affil_to_json as atj
 import pandas as pd
-import re
+from termcolor import colored
+import time
 regappend = "(\s+|,+|$)"
 
 
@@ -57,6 +58,7 @@ def all_matched_searches(affiliations, de_facto_affiliations):
         keys are Alpha-2 codes, values are counts
     """
     geolocator = Nominatim()
+    backup_geolocator = Google("AIzaSyCc3U_YDbluAh_Eja8Zc4e4PX04ndyDXgE")
     iso_3166_1 = pd.read_csv(os.path.abspath(os.path.join(__file__, os.pardir,
                  "ISO_3166_1.csv")), na_filter=False)
     iso_3166_2_us = pd.read_csv(os.path.abspath(os.path.join(__file__,
@@ -78,8 +80,9 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 iso_3166_2_us.to_dict(orient='records')}, **{state[
                 'Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}, 'unknown': 'unknown',
-                '?': 'unknown', 'Taiwan': 'TW', "PRC": "CN", "PR China": "CN"}
-    us = {'US', 'USA', 'United States', 'U.S.A'}
+                '?': 'unknown', 'Taiwan': 'TW', "PRC": "CN", "PR China": "CN",
+                "UK": "GB", "United Kingdom": "GB"}
+    us = {'US', 'USA', 'United States', 'U.S.A', "United States of America"}
     us_states = {state['Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}
     for state in us_states:
@@ -87,17 +90,27 @@ def all_matched_searches(affiliations, de_facto_affiliations):
             countries[state] = us_states[state]
     country_count = {country: 0 for country in iso_dict}
     for k, v in affiliations.items():
+        time.sleep(1)
         if "country" not in affiliations[k]:
             address_components = None
             while not address_components:
+                time.sleep(1)
                 try:
                     address_components = [x.strip() for x in
                                          geolocator.reverse(k, language=
                                          'en').address.split(',')]
                 except GeocoderServiceError as g:
-                    print(g)
-                    next
-            if 'United States of America' in address_components:
+                    try:
+                        address_components = list({com_g.strip() for com_g in [
+                                             com_i for com_h in [com[0].split(
+                                             ',') for com in
+                                             backup_geolocator.reverse(k,
+                                             language='en')] for com_i in com_h
+                                             ]})
+                    except:
+                        print(colored(g, 'yellow'))
+                        next
+            if bool([u for u in us if u in address_components]):
                 for state in us_states:
                     if state in address_components:
                         if state == "Georgia":
@@ -121,9 +134,10 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                                                                     k][
                                                                     "country"]
                                                                      ] + 1
-            if "country" not in affiliations[coord]:
-                country = input("{}\n{}? ".format(str(address_components), str(
-                          affiliations[k]["affiliations"])))
+            if "country" not in affiliations[k]:
+                country = input(colored("{}\n{}? ".format(str(
+                          address_components), str(affiliations[k][
+                          "affiliations"])), 'magenta'))
                 if len(country):
                     affiliations[k]["country"] = countries[country]
                     country_count[affiliations[k]["country"]] = country_count[
