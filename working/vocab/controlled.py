@@ -116,27 +116,29 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                         print(colored(g, 'yellow'))
                         next
             if bool([u for u in us if u in address_components]):
-                if bool([state for state in us_states if state in
-                   address_components]):
-                    if state == "Georgia":
-                        affiliations[k]["country"] = "US-GA"
-                    else:
-                        affiliations[k]["country"] = countries[state]
-                    country_count[affiliations[k]["country"]] = country_count[
-                                                                affiliations[
-                                                                k]["country"]]\
-                                                                + 1
-            else:
-                for country in countries:
-                    if country != 'United States of America' and country in   \
-                       address_components:
-                        affiliations[k]["country"] = countries[country]
+                local_states = [state for state in us_states if state in
+                               address_components]
+                if bool(local_states):
+                    for state in local_states :
+                        affiliations[k]["country"] = us_states[state]
                         country_count[affiliations[k]["country"]] =           \
                                                                  country_count[
                                                                   affiliations[
                                                                     k][
                                                                     "country"]
-                                                                     ] + 1
+                                                                    ] + 1
+            else:
+                for country in countries:
+                    if "country" not in affiliations[k]:
+                        if country != 'United States of America' and country  \
+                           in address_components:
+                            affiliations[k]["country"] = countries[country]
+                            country_count[affiliations[k]["country"]] =       \
+                                                                 country_count[
+                                                                  affiliations[
+                                                                        k][
+                                                                     "country"]
+                                                                        ] + 1
             if "country" not in affiliations[k]:
                 country = input(colored("{}\n{}? ".format(str(
                           address_components), str(affiliations[k][
