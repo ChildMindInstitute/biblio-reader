@@ -17,12 +17,15 @@ br_path = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir,
           os.pardir))
 if br_path not in sys.path:
     sys.path.append(br_path)
-import csv
+from geopy.exc import GeocoderServiceError
+from geopy.geocoders import GoogleV3 as Google
 import json
 import manager as mg
+from geopy.geocoders import Nominatim
 import biblio_reader.map.affil_to_json as atj
 import pandas as pd
-import re
+from termcolor import colored
+import time
 regappend = "(\s+|,+|$)"
 
 
@@ -54,23 +57,12 @@ def all_matched_searches(affiliations, de_facto_affiliations):
     country_count: dictionary
         keys are Alpha-2 codes, values are counts
     """
-    ll = dict()
+    geolocator = Nominatim()
+    backup_geolocator = Google("AIzaSyCc3U_YDbluAh_Eja8Zc4e4PX04ndyDXgE")
     iso_3166_1 = pd.read_csv(os.path.abspath(os.path.join(__file__, os.pardir,
                  "ISO_3166_1.csv")), na_filter=False)
     iso_3166_2_us = pd.read_csv(os.path.abspath(os.path.join(__file__,
                     os.pardir, "ISO_3166_2_US.csv")), na_filter=False)
-    doublecheck = {"India", "Georgia", "Mexico", "SRB", "BIH", "CA", "Jersey",
-                   "Israel", "?"}\
-                  | {country['Alpha-2 code'] for country in iso_3166_1.to_dict(
-                  orient='records')} | {country['Alpha-3 code'] for country in
-                  iso_3166_1.to_dict(orient='records')}
-    singlecheck = {"".join([", ", country]) for country in doublecheck if (
-                  country not in {country['Alpha-2 code'] for country in
-                  iso_3166_1.to_dict(orient='records')} and country not in
-                  {country['Alpha-3 code'] for country in iso_3166_1.to_dict(
-                  orient='records')})} | {"China", "Taiwan", "PRC", "UK", "US"}\
-                  | {state['Code'] for state in iso_3166_2_us.to_dict(orient=
-                  'records')}
     iso_dict = {**{country['Alpha-2 code']: [country[
                'English short name (upper/lower case)'], country[
                'Alpha-2 code'], country['Alpha-3 code']] for country in
@@ -88,281 +80,82 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 iso_3166_2_us.to_dict(orient='records')}, **{state[
                 'Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}, 'unknown': 'unknown',
-                '?': 'unknown', 'Taiwan': 'TW', "PRC": "CN", "PR China": "CN"}
-    us = {'US', 'USA', 'United States', 'U.S.A'}
-    us_states = {state['Code'][-2:]: state['Code'] for state in
+                '?': 'unknown', 'Taiwan': 'TW', "PRC": "CN", "PR China": "CN",
+                "UK": "GB", "United Kingdom": "GB", "Vietnam": "VN",
+                "South Korea": "KR", "Macedonia": "MK",
+                "Macedonia (FYROM)": "MK", "Iran (Islamic Republic of)": "IR"}
+    us = {'US', 'USA', 'United States', 'U.S.A', "United States of America"}
+    us_states = {state['Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}
+    usa_states = dict()
     for state in us_states:
+        usa_states[countries[state]] = countries[state]
+        usa_states[countries[state][-2:]] = countries[state]
         if state not in countries:
             countries[state] = us_states[state]
-    country_count = {**{country['Alpha-2 code']: 0 for country in
-                    iso_3166_1.to_dict(orient='records')}, **{state['Code']: 0
-                    for state in iso_3166_2_us.to_dict(orient='records')}}
-    for country in countries:
-        for keycountry in countries:
-            if country in keycountry and not country == keycountry and country\
-               not in singlecheck:
-                if len(country) > 3 and country not in doublecheck:
-                   singlecheck.add(country)
-                else:
-                    doublecheck.add(country)
-                    singlecheck.add("".join([", ", country]))
-    for coord, v in affiliations.items():
-        for term in v["matched searches"]:
-            ll[term] = coord
-    latlong = dict()
-    for affil in de_facto_affiliations:
-        if affil in ll:
-            latlong[affil] = {"match": affil, "coords": ll[affil]}
-        else:
-            aff_l, aff_r = parse_affiliation(affil)
-            if aff_r in ll:
-                latlong[affil] = {"match": aff_r, "coords": ll[aff_r]}
+    us_states = {**us_states, **usa_states}
+    del usa_states
+    country_count = {country: 0 for country in iso_dict}
+    for k, v in affiliations.items():
+        time.sleep(1)
+        if "country" not in affiliations[k]:
+            address_components = None
+            while not address_components:
+                time.sleep(1)
+                try:
+                    address_components = [x.strip() for x in
+                                         geolocator.reverse(k, language=
+                                         'en').address.split(',')]
+                except GeocoderServiceError as g:
+                    try:
+                        address_components = list({com_g.strip() for com_g in [
+                                             com_i for com_h in [com[0].split(
+                                             ',') for com in
+                                             backup_geolocator.reverse(k,
+                                             language='en')] for com_i in com_h
+                                             ]})
+                    except:
+                        print(colored(g, 'yellow'))
+                        next
+            if bool([u for u in us if u in address_components]):
+                local_states = [state for state in us_states if state in
+                               address_components]
+                if bool(local_states):
+                    for state in local_states :
+                        affiliations[k]["country"] = us_states[state]
+                        country_count[affiliations[k]["country"]] =           \
+                                                                 country_count[
+                                                                  affiliations[
+                                                                    k][
+                                                                    "country"]
+                                                                    ] + 1
             else:
-                while(aff_r not in ll and len(aff_r.split(", ")) > 1):
-                    aff_l, aff_r = parse_affiliation(aff_r)
-                if(aff_r in ll):
-                    latlong[affil] = {"match": aff_r, "coords": ll[aff_r]}
-                else:
-                    latlong[affil] = {"country": country_prompt(countries,
-                                     iso_dict, affil, doublecheck, singlecheck,
-                                     us_states)}
-    for i, affil in enumerate(latlong):
-        matched_country = None
-        canon_match = None
-        n = []
-        if not matched_country and affil and latlong[affil] and "country" not  \
-           in latlong[affil]:
-            while not matched_country:
-                matched_country = country_prompt(countries, iso_dict, affil,
-                                  doublecheck, singlecheck, us_states)
-                for keycountry in countries:
-                    if matched_country in keycountry and not matched_country  \
-                       == keycountry:
-                        doublecheck.add(matched_country)
-                        singlecheck.add("".join([", ", matched_country]))
-                n.append(matched_country)
-            if len(n) > 1:
-                matched_country = None
-                for m in n:
-                    matched_country = country_prompt(countries, iso_dict,
-                                      m, doublecheck, singlecheck, us_states) \
-                                      if not matched_country else             \
-                                      matched_country
-            else:
-                matched_country = n[0]
-            if matched_country in countries and affil in latlong:
-                canon_match = countries[matched_country]
-                latlong[affil]["country"] = canon_match
-            elif matched_country in countries:
-                latlong[affil] = dict()
-                latlong[affil]["country"] = canon_match
-            else:
-                print(affil)
-                if(len(countries)):
-                    print("\n")
-                    for cc in sorted(list({cc for c, cc in countries.items(
-                                     )})):
-                        print(iso_dict[cc][0], end="; ")
-                    print("\n")
-                    print("If that country is the same as one of the "
-                          "above, please enter the match. Otherwise, just "
-                          "press `enter`")
-                    canon_match = countries[input(
-                                  "(please type the full name of the "
-                                  "match, matching case): ")]
-                canon_match = matched_country if not canon_match else     \
-                              canon_match
-                if matched_country not in affil:
-                    matched_country = input("How's that spelled here? ")
-                if not matched_country or len(matched_country) == 0:
-                    matched_country = canon_match
-                if canon_match:
-                    countries[matched_country] = canon_match
-                    latlong[affil]["country"] = canon_match
-                    if canon_match not in countries:
-                        countries[canon_match] = canon_match
-                if canon_match in country_count:
-                    country_count[canon_match] += 1
-                else:
-                    print(matched_country)
-        elif "country" in latlong[affil]:
-            canon_match = latlong[affil]["country"]
-        if canon_match in country_count:
-            country_count[canon_match] += 1
-            if "country" not in latlong[affil]:
-                latlong[affil]["country"] = canon_match
-        if canon_match in country_count:
-            print(": ".join([iso_dict[canon_match][0], str(country_count[
-                     canon_match]), affil]))
-        else:
-            print(affil)
-        if "country" not in latlong[affil]:
-            latlong[affil]["country"] = canon_match
-
-    for coord, v in affiliations.items():
-        for term in v["matched searches"]:
-            for match, lv in latlong.items():
-                if 'match' in lv and "country" not in affiliations[coord] and  \
-                   term in lv['match']:
-                    affiliations[coord]["country"] = lv["country"]
+                for country in countries:
+                    if "country" not in affiliations[k]:
+                        if country != 'United States of America' and country  \
+                           in address_components:
+                            affiliations[k]["country"] = countries[country]
+                            country_count[affiliations[k]["country"]] =       \
+                                                                 country_count[
+                                                                  affiliations[
+                                                                        k][
+                                                                     "country"]
+                                                                        ] + 1
+            if "country" not in affiliations[k]:
+                country = input(colored("{}\n{}? ".format(str(
+                          address_components), str(affiliations[k][
+                          "affiliations"])), 'magenta'))
+                if len(country):
+                    affiliations[k]["country"] = countries[country]
+                    country_count[affiliations[k]["country"]] = country_count[
+                                                                affiliations[
+                                                                k]["country"]]\
+                                                                + 1
+        if "country" in affiliations[k]:
+            print("{}: {}".format(iso_dict[affiliations[k]["country"]][0], str(
+                  address_components)))
     save_heatmap_data(affiliations)
     return(affiliations, country_count)
-
-
-def country_prompt(countries, iso_dict, affil, doublecheck=["India", "CA",
-                   "MA", "Georgia", "Mexico", "IN", "PR"], singlecheck=[],
-                   states={}, us={'US', 'USA', 'United States', 'U.S.A'}):
-    """
-    Function to prompt user if affiliation is in a given country, and, if not,
-    to identify the affiliation.
-
-    Parameters
-    ----------
-    countries: dictionary
-        countries vocabulary
-
-    iso_dict: dictionary
-        spelled-out country names
-
-    affil: string
-        affiliation
-
-    doublecheck: list of strings
-        countries to doublecheck if found
-
-    doublecheck: list of strings
-        strings to not doublecheck if found
-
-    states: dictionary
-        dictionary of state abbreviatons
-
-    Returns
-    -------
-    country: string or None
-        confirmed country
-    """
-    for country in countries:
-        if country and re.search("".join([r" ", country, regappend]), affil):
-            for u in us:
-                if u in affil and re.search("".join([r" ", country, regappend]),
-                   affil):
-                    if affil.endswith(u) and affil not in ["VA", "PR"]:
-                        return("".join(["US-", countries[country][-2:]]))
-                    return(state_prompt(countries, iso_dict, affil, states))
-            if not countries[country] == 'unknown' and len(country) > 2:
-                return(countries[country])
-        elif country and "".join([" ", country]) in affil:
-            if country not in doublecheck or (country in singlecheck and
-               "Indiana" not in affil):
-                if countries[country] in us:
-                    return(state_prompt(countries, iso_dict, affil, states))
-                elif "Indiana" in affil:
-                    return("US-IN")
-            if country and affil.endswith("{}{}".format(" ",country)) and len(
-               country) > 2:
-                return(country)
-            match_country = "maybe"
-            while(len(match_country) > 0 and match_country.upper()
-                  not in ["Y", "N"]):
-                match_country = input(''.join(["Is ", affil, " in the state",
-                                " \"", iso_dict[countries[country]][0],
-                                "\"? (Y / N) : "]))
-            if len(match_country) == 0 or match_country.upper() == "Y":
-                if countries[country] in us:
-                    return(state_prompt(countries, iso_dict, affil, states))
-                elif country in countries:
-                    return(country)
-            elif countries[country] not in us and ((country and country[0:2] ==
-               "US" and "".join([" ", country[-2:]]) in affil) or ("".join([
-               " ", country]) in affil)) and "".join(["US-", countries[country
-               ][-2:]]) in countries:
-                for u in us:
-                    if country == u and affil.endswith(u):
-                        return("".join(["US-", countries[country][-2:]]))
-                    elif ", ".join([countries[country][-2:], u]) in affil or   \
-                       affil.endswith(u):
-                        return("".join(["US-", countries[country][-2:]]))
-                if "US" in iso_dict[countries[country]] or input(''.join([
-                   "Is ", affil, " in the state \"", iso_dict["US"][0],
-                   "\"? (Y / N) : "])).upper() != 'N':
-                    return(state_prompt(countries, iso_dict, affil, states))
-    match_country = None
-    while not(match_country):
-        match_country = input(''.join(["What state is ", affil, " in? : "]))
-    while match_country:
-        country = match_country if len(match_country) > 0 else country
-        match_country = input(''.join([country,
-                        "? (enter for yes or type again): "]))
-    if country:
-        return(country)
-    else:
-        return(country_prompt(countries, iso_dict, affil, doublecheck,
-               singlecheck, states))
-
-
-def state_prompt(countries, iso_dict, affil, states, us={'US', 'USA',
-                 'United States', 'U.S.A'}):
-    """
-    Function to prompt user if affiliation is in a given US state, and, if not,
-    to identify the affiliation.
-
-    Parameters
-    ----------
-    countries: dictionary
-        countries vocabulary
-
-    iso_dict: dictionary
-        spelled-out state names
-
-    affil: string
-        affiliation
-
-    states: dictionary
-        dictionary of state abbreviatons
-
-    Returns
-    -------
-    country: string or None
-        confirmed state
-    """
-    for country in countries:
-        for u in us:
-            if u in affil and re.search("".join([r" ", country, regappend]),
-               affil):
-                if "".join(["US-", countries[country][-2:]]) in countries and  \
-                   country not in ["VA", "PR"]:
-                       return("".join(["US-", countries[country][-2:]]))
-        if country not in us and countries[country] != "US" and ((country and
-           country[0:2] == "US" and "".join([" ", country[-2:]]) in affil) or (
-           "".join([" ", country]) in affil)) and "".join(["US-", countries[
-           country][-2:]]) in countries:
-            match_country = "maybe"
-            while(len(match_country) > 0 and match_country.upper() not in ["Y",
-                  "N"]):
-                country = "".join(["US-", country]) if "".join(["US-", country]
-                          ) in iso_dict else country
-                if country == affil[-len(country):] and country in countries:
-                    return(countries[country])
-                match_country = input(''.join(["Is ", affil,
-                                " in the US state \"", iso_dict[countries[
-                                country]][0], "\"? (Y / N) : "]))
-                if len(match_country) == 0 or match_country.upper() == "Y":
-                    return("".join(["US-", countries[country][-2:]]))
-    match_country = None
-    while not(match_country):
-        match_country = input(''.join(["What US state is ", affil, " in? : "]))
-    while match_country:
-        country = match_country if len(match_country) > 0 else country
-        match_country = input(''.join([country,
-                        "? (enter for yes or type again): "]))
-    if country and country in countries and "".join(["US-", countries[country][
-       -2:]]) in countries:
-        return("".join(["US-", countries[country][-2:]]))
-    elif country:
-        return(country)
-    else:
-        return(None)
 
 
 def get_vocab(which_vocab):
