@@ -81,7 +81,9 @@ def all_matched_searches(affiliations, de_facto_affiliations):
                 'Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}, 'unknown': 'unknown',
                 '?': 'unknown', 'Taiwan': 'TW', "PRC": "CN", "PR China": "CN",
-                "UK": "GB", "United Kingdom": "GB"}
+                "UK": "GB", "United Kingdom": "GB", "Vietnam": "VN",
+                "South Korea": "KR", "Macedonia": "MK",
+                "Macedonia (FYROM)": "MK", "Iran (Islamic Republic of)": "IR"}
     us = {'US', 'USA', 'United States', 'U.S.A', "United States of America"}
     us_states = {state['Subdivision name']: state['Code'] for state in
                 iso_3166_2_us.to_dict(orient='records')}
