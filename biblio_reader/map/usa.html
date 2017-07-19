@@ -18,7 +18,7 @@
           var arrayData = $.csv.toArrays(csvString, {onParseValue: $.csv.hooks.castToScalar});
 
           var data = new google.visualization.arrayToDataTable(arrayData);
-          $.getJSON("../scale_color_perceptual/hex/plasma.json", function(viridis) {
+          $.getJSON("../scale_color_perceptual/hex/viridis.json", function(viridis) {
             var options = {'title':'Affiliations of Papers indexed in PubMed using FCP/INDI Data',
                            region: "US", resolution: "provinces",
                            colorAxis: {colors: viridis}};
