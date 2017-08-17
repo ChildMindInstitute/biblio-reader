@@ -141,8 +141,12 @@ import optparse
 import os
 import re
 import sys
-# Included to import "manager.py" module from upstream directory "Biblio_Reader"
-sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
+# Included to import "manager.py" module from upstream directory
+# "Biblio_Reader"
+Biblio_Reader = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
+if Biblio_Reader not in sys.path:
+    sys.path.append(Biblio_Reader)
+print(sys.path)
 import warnings
 import math
 import manager
