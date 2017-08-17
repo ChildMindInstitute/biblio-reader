@@ -146,6 +146,7 @@ import sys
 Biblio_Reader = os.path.abspath(os.path.join(__file__, os.pardir, os.pardir))
 if Biblio_Reader not in sys.path:
     sys.path.append(Biblio_Reader)
+print(sys.path)
 import warnings
 import math
 import manager
@@ -1034,41 +1035,6 @@ class ScholarQuerier(object):
             ScholarUtils.log('info', err_msg + ': %s' % err)
 
 
-class LocalQuerier(ScholarQuerier):
-    def apply_settings(self, html):
-        """
-        Applies settings as provided by a ScholarSettings instance.
-        """
-
-        # This is a bit of work. We need to actually retrieve the
-        # contents of the Settings pane HTML in order to extract
-        # hidden fields before we can compose the query for updating
-        # the settings.
-        if html is None:
-            return False
-
-        # Now parse the required stuff out of the form. We require the
-        # "scisig" token to make the upload of our settings acceptable
-        # to Google.
-        soup = SoupKitchen.make_soup(html)
-
-        tag = soup.find(name='form', attrs={'id': 'gs_settings_form'})
-        if tag is None:
-            ScholarUtils.log('info', 'parsing settings failed: no form')
-            return False
-
-        tag = tag.find('input', attrs={'type': 'hidden', 'name': 'scisig'})
-        if tag is None:
-            ScholarUtils.log('info', 'parsing settings failed: scisig')
-            return False
-
-        if html is None:
-            return False
-
-        ScholarUtils.log('info', 'settings applied')
-        return True
-
-
 def output(querier, filename):
     if len(querier.articles) == 0:
         print("No articles")
@@ -1079,19 +1045,8 @@ def output(querier, filename):
     df.to_csv(path_or_buf=outfile)
 
 
-def parse_dir(parse_dir):
-    querier = LocalQuerier()
-    for qf in os.listdir(parse_dir):
-
-        querier.apply_settings(qf)
-        manager.write('LOCAL_DATA_NAME.txt', manager.WORKING_PATH, "")
-
-
 def main():
-    usage = """biblio_reader
-Parse through the Google Scholar search result html files in ./search_results
-
-biblio_reader [options] <query string>
+    usage = """biblio_reader [options] <query string>
 A command-line interface to Google Scholar.
 
 Examples:
@@ -1177,11 +1132,10 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970
 
     options, _ = parser.parse_args()
 
-    # Parse through the Google Scholar search result html files in
-    # ./search_results if we have neither keyword search nor author name
+    # Show help if we have neither keyword search nor author name
     if len(sys.argv) == 1:
-        parse_dir("search_results")
-        return 0
+        parser.print_help()
+        return 1
 
     if options.debug > 0:
         options.debug = min(options.debug, ScholarUtils.LOG_LEVELS['debug'])
