@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 """
-This module provides classes for querying Google Scholar and parsing
-returned results. It currently *only* processes the first results
-page. It is not a recursive crawler.
+This module provides classes for optionally querying Google Scholar and parsing
+returned results. Preferably takes a directory of saved Google Scholar result
+html pages.
 """
 # ChangeLog
 # ---------
@@ -157,7 +157,8 @@ try:
     # Try importing for Python 3
     # pylint: disable-msg=F0401
     # pylint: disable-msg=E0611
-    "Imports modules from urllib that allow for HTML text retrieval and parsing"
+    ("Imports modules from urllib that allow for HTML text retrieval and"
+     "parsing")
     from urllib.request import HTTPCookieProcessor, Request, build_opener
     from urllib.parse import quote, unquote
     from http.cookiejar import MozillaCookieJar
@@ -185,12 +186,12 @@ except ImportError:
 
 # Support unicode in both Python 2 and 3. In Python 3, unicode is str.
 if sys.version_info[0] == 3:
-    unicode = str # pylint: disable-msg=W0622
-    encode = lambda s: unicode(s) # pylint: disable-msg=C0103
+    unicode = str  # pylint: disable-msg=W0622
+    encode = lambda s: unicode(s)  # pylint: disable-msg=C0103
 else:
     def encode(s):
         if isinstance(s, basestring):
-            return s.encode('utf-8') # pylint: disable-msg=C0103
+            return s.encode('utf-8')  # pylint: disable-msg=C0103
         else:
             return str(s)
 
@@ -223,26 +224,33 @@ class SoupKitchen(object):
             # select the most suitable parser ... which BS then
             # selects anyway.
             if parser is None:
-                warnings.filterwarnings('ignore', 'No parser was explicitly specified')
+                warnings.filterwarnings('ignore',
+                                        'No parser was explicitly specified')
             return BeautifulSoup(markup, parser)
 
         return BeautifulSoup(markup)
+
 
 class ScholarConf(object):
     """Helper class for global settings."""
 
     VERSION = '2.10'
     LOG_LEVEL = 1
-    MAX_PAGE_RESULTS = 10 # Current default for per-page results
+    MAX_PAGE_RESULTS = 10  # Current default for per-page results
     SCHOLAR_SITE = 'http://scholar.google.com'
 
-    # USER_AGENT = 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.9.2.9) Gecko/20100913 Firefox/3.6.9'
+    # USER_AGENT = 'Mozilla/5.0 (X11; U; FreeBSD i386; en-US; rv:1.9.2.9)
+    # Gecko/20100913 Firefox/3.6.9'
     # Let's update at this point (3/14):
-    USER_AGENT = 'Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0'
+    USER_AGENT = (
+         'Mozilla/5.0 (X11; Linux x86_64; rv:27.0) Gecko/20100101 Firefox/27.0'
+                  )
 
     # If set, we will use this file to read/save cookies to enable
     # cookie use across sessions.
     COOKIE_JAR_FILE = None
+
+
 class ScholarUtils(object):
     """A wrapper for various utensils that come in handy."""
 
@@ -250,7 +258,6 @@ class ScholarUtils(object):
                   'warn':  2,
                   'info':  3,
                   'debug': 4}
-
 
     @staticmethod
     def ensure_int(arg, msg=None):
@@ -318,11 +325,13 @@ class ScholarArticle(object):
             del self.attrs[key]
 
     def set_citation_data(self, citation_data):
-        self.citation_data = bibtexparser.loads(citation_data.decode('utf-8')).entries[0]
+        self.citation_data = bibtexparser.loads(citation_data.decode(
+                             'utf-8')).entries[0]
         if 'journal' in self.citation_data:
             self['journal'] = self.citation_data['journal']
         if 'author' in self.citation_data:
-            self['author(s)'] = str(self.citation_data['author']).replace(' and ', ' & ')
+            self['author(s)'] = str(self.citation_data['author']).replace(
+                                ' and ', ' & ')
         if 'publisher' in self.citation_data:
             self['publisher'] = str(self.citation_data['publisher'])
 
@@ -330,7 +339,6 @@ class ScholarArticle(object):
         return [item[keynumber] for item in
                 sorted(list(self.attrs.values()),
                        key=lambda item: item[2])]
-
 
 
 class ScholarArticleParser(object):
@@ -371,7 +379,8 @@ class ScholarArticleParser(object):
         self._parse_globals()
 
         # Now parse out listed articles:
-        for div in self.soup.findAll(ScholarArticleParser._tag_results_checker):
+        for div in self.soup.findAll(
+                        ScholarArticleParser._tag_results_checker):
             self._parse_article(div)
             self._clean_article()
             if self.article['title']:
@@ -431,7 +440,8 @@ class ScholarArticleParser(object):
                 continue
 
             if tag.get('href').startswith('/scholar?cites'):
-                if hasattr(tag, 'string') and tag.string.startswith('Cited by'):
+                if hasattr(tag, 'string'
+                           ) and tag.string.startswith('Cited by'):
                     self.article['num_citations'] = \
                         self._as_int(tag.string.split()[-1])
 
@@ -460,7 +470,6 @@ class ScholarArticleParser(object):
 
             if tag.getText().startswith('Import'):
                 self.article['url_citation'] = self._path2url(tag.get('href'))
-
 
     @staticmethod
     def _tag_has_class(tag, klass):
@@ -519,7 +528,8 @@ class ScholarArticleParser120201(ScholarArticleParser):
             if not hasattr(tag, 'name'):
                 continue
 
-            if tag.name == 'h3' and self._tag_has_class(tag, 'gs_rt') and tag.a:
+            if tag.name == 'h3' and self._tag_has_class(
+                        tag, 'gs_rt') and tag.a:
                 self.article['title'] = ''.join(tag.a.findAll(text=True))
                 self.article['url'] = self._path2url(tag.a['href'])
                 if self.article['url'].endswith('.pdf'):
@@ -578,19 +588,22 @@ class ScholarArticleParser120726(ScholarArticleParser):
                     if self.article['url'].endswith('.pdf'):
                         self.article['url_pdf'] = self.article['url']
                 except:
-                    # Remove a few spans that have unneeded content (e.g. [CITATION])
+                    # Remove a few spans that have unneeded content
+                    # (e.g. [CITATION])
                     for span in tag.h3.findAll(name='span'):
                         span.clear()
                     self.article['title'] = ''.join(tag.h3.findAll(text=True))
                 if tag.find('div', {'class': 'gs_a'}):
-                    year = self.year_re.findall(tag.find('div', {'class': 'gs_a'}).text)
+                    year = self.year_re.findall(tag.find(
+                           'div', {'class': 'gs_a'}).text)
                     self.article['year'] = year[0] if len(year) > 0 else None
                 if tag.find('div', {'class': 'gs_fl'}):
                     self._parse_links(tag.find('div', {'class': 'gs_fl'}))
 
                 if tag.find('div', {'class': 'gs_rs'}):
                     # These are the content excerpts rendered into the results.
-                    raw_text = tag.find('div', {'class': 'gs_rs'}).findAll(text=True)
+                    raw_text = tag.find(
+                               'div', {'class': 'gs_rs'}).findAll(text=True)
                     if len(raw_text) > 0:
                         raw_text = ''.join(raw_text)
                         raw_text = raw_text.replace('\n', '')
@@ -703,12 +716,12 @@ class SearchScholarQuery(ScholarQuery):
     def __init__(self):
         ScholarQuery.__init__(self)
         self._add_attribute_type('num_results', 'Results', 0)
-        self.words = None # The default search behavior
-        self.page = 0 # The first page of results
-        self.words_some = None # At least one of those words
-        self.words_none = None # None of these words
+        self.words = None  # The default search behavior
+        self.page = 0  # The first page of results
+        self.words_some = None  # At least one of those words
+        self.words_none = None  # None of these words
         self.phrase = None
-        self.scope_title = False # If True, search in title only
+        self.scope_title = False  # If True, search in title only
         self.author = None
         self.pub = None
         self.timeframe = [None, None]
@@ -805,6 +818,7 @@ class SearchScholarQuery(ScholarQuery):
                           if self.num_results is not None else '')
         return self.SCHOLAR_QUERY_URL % urlargs
 
+
 class ScholarQuerier(object):
     """
     ScholarQuerier instances can conduct a search on Google Scholar
@@ -829,7 +843,8 @@ class ScholarQuerier(object):
         + '&hl=en&lang=all&instq=&inst=569367360547434339&save='
 
     # Older URLs:
-    # ScholarConf.SCHOLAR_SITE + '/scholar?q=%s&hl=en&btnG=Search&as_sdt=2001&as_sdtp=on
+    # ScholarConf.SCHOLAR_SITE +
+    # '/scholar?q=%s&hl=en&btnG=Search&as_sdt=2001&as_sdtp=on
 
     class Parser(ScholarArticleParser120726):
         def __init__(self, querier):
@@ -856,11 +871,12 @@ class ScholarQuerier(object):
                                ignore_discard=True)
                 ScholarUtils.log('info', 'loaded cookies file')
             except Exception as msg:
-                ScholarUtils.log('warn', 'could not load cookies file: %s' % msg)
-                self.cjar = MozillaCookieJar() # Just to be safe
+                ScholarUtils.log(
+                             'warn', 'could not load cookies file: %s' % msg)
+                self.cjar = MozillaCookieJar()  # Just to be safe
 
         self.opener = build_opener(HTTPCookieProcessor(self.cjar))
-        self.settings = None # Last settings object, if any
+        self.settings = None  # Last settings object, if any
 
     def apply_settings(self):
         """
@@ -877,7 +893,6 @@ class ScholarQuerier(object):
         if html is None:
             return False
 
-
         # Now parse the required stuff out of the form. We require the
         # "scisig" token to make the upload of our settings acceptable
         # to Google.
@@ -888,7 +903,7 @@ class ScholarQuerier(object):
             ScholarUtils.log('info', 'parsing settings failed: no form')
             return False
 
-        tag = tag.find('input', attrs={'type':'hidden', 'name':'scisig'})
+        tag = tag.find('input', attrs={'type': 'hidden', 'name': 'scisig'})
         if tag is None:
             ScholarUtils.log('info', 'parsing settings failed: scisig')
             return False
@@ -901,7 +916,6 @@ class ScholarQuerier(object):
         html = self._get_http_response(url=self.SET_SETTINGS_URL % urlargs,
                                        log_msg='dump of settings result HTML',
                                        err_msg='applying settings failed')
-
 
         if html is None:
             return False
@@ -930,8 +944,8 @@ class ScholarQuerier(object):
         #     for page in range(1, num_pages):
         #         query.page = page
         #         html = self._get_http_response(url=query.get_url(),
-        #                                        log_msg='dump of query response HTML',
-        #                                        err_msg='results retrieval failed')
+        #                log_msg='dump of query response HTML',
+        #                err_msg='results retrieval failed')
         #         if html is None:
         #             continue
         #         self.parse(html)
@@ -947,9 +961,11 @@ class ScholarQuerier(object):
         if article.citation_data is not None:
             return True
         ScholarUtils.log('info', 'retrieving citation export data')
-        data = self._get_http_response(url=article['url_citation'],
-                                       log_msg='dump of citation data HTML',
-                                       err_msg='unable to retrieve citation data')
+        data = self._get_http_response(
+               url=article['url_citation'],
+               log_msg='dump of citation data HTML',
+               err_msg='unable to retrieve citation data'
+               )
         if data is None:
             return False
 
@@ -999,7 +1015,8 @@ class ScholarQuerier(object):
         try:
             ScholarUtils.log('info', 'requesting %s' % unquote(url))
 
-            req = Request(url=url, headers={'User-Agent': ScholarConf.USER_AGENT})
+            req = Request(
+                  url=url, headers={'User-Agent': ScholarConf.USER_AGENT})
             hdl = self.opener.open(req)
             html = hdl.read()
 
@@ -1008,14 +1025,14 @@ class ScholarQuerier(object):
             ScholarUtils.log('debug', 'url: %s' % hdl.geturl())
             ScholarUtils.log('debug', 'result: %s' % hdl.getcode())
             ScholarUtils.log('debug', 'headers:\n' + str(hdl.info()))
-            ScholarUtils.log('debug', 'data:\n' + html.decode('utf-8')) # For Python 3
+            ScholarUtils.log('debug', 'data:\n' + html.decode(
+                             'utf-8'))  # For Python 3
             ScholarUtils.log('debug', '<<<<' + '-'*68)
 
             return html
         except Exception as err:
             print("Error getting an http response:", url)
             ScholarUtils.log('info', err_msg + ': %s' % err)
-
 
 
 def output(querier, filename):
@@ -1026,6 +1043,7 @@ def output(querier, filename):
     df = pandas.DataFrame(data=artlist, columns=querier.articles[0].getlist(1))
     outfile = os.path.join(manager.OUTPUT_PATH, filename + '.csv')
     df.to_csv(path_or_buf=outfile)
+
 
 def main():
     usage = """biblio_reader [options] <query string>
@@ -1038,21 +1056,35 @@ biblio_reader -c 1 --author "albert einstein" --phrase "quantum theory"
 
 # Retrieve five articles written by Einstein after 1970 where the title
 # does not contain the words "quantum" and "theory":
-biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
+biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970
+"""
 
     fmt = optparse.IndentedHelpFormatter(max_help_position=50, width=100)
     parser = optparse.OptionParser(usage=usage, formatter=fmt)
-    group = optparse.OptionGroup(parser, 'Query arguments',
-                                 'These options define search query arguments and parameters.')
+    group = optparse.OptionGroup(
+            parser,
+            'Query arguments',
+            'These options define search query arguments and parameters.'
+            )
     group.add_option('-a', '--author', metavar='AUTHORS', default=None,
                      help='Author name(s)')
     group.add_option('-A', '--all', metavar='WORDS', default=None, dest='allw',
                      help='Results must contain all of these words')
-    group.add_option('-s', '--some', metavar='WORDS', default=None,
-                     help='Results must contain at least one of these words. Pass arguments in form -s "foo bar baz" \
-                      for simple words, and -s "a phrase, another phrase" for phrases')
-    group.add_option('-n', '--none', metavar='WORDS', default=None,
-                     help='Results must contain none of these words. See -s|--some re. formatting')
+    group.add_option(
+          '-s', '--some', metavar='WORDS', default=None,
+          help=(
+                'Results must contain at least one of these words. '
+                'Pass arguments in form -s "foo bar baz" for oimple words, '
+                'and -s "a phrase, another phrase" for phrases'
+                )
+          )
+    group.add_option(
+          '-n', '--none', metavar='WORDS', default=None,
+          help=(
+                'Results must contain none of these words.'
+                'See -s|--some re. formatting'
+                )
+          )
     group.add_option('-p', '--phrase', metavar='PHRASE', default=None,
                      help='Results must contain exact phrase')
     group.add_option('-t', '--title-only', action='store_true', default=False,
@@ -1072,17 +1104,30 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"
     group = optparse.OptionGroup(parser, 'Output format',
                                  'Control the name of the output file.')
     # Default csv filename in outputs directory is 'ScholarOutput'
-    # For our purposes, it was named FCP_DATA.csv, which led to the issue with get_data() in manager.py
-    group.add_option('-o', '--out', metavar='FILENAME', default='ScholarOutput',
-                     help='Export articles in csv format with a chosen filename')
+    # For our purposes, it was named FCP_DATA.csv, which led to
+    # the issue with get_data() in manager.py
+    group.add_option(
+            '-o', '--out', metavar='FILENAME', default='ScholarOutput',
+            help='Export articles in csv format with a chosen filename'
+            )
     parser.add_option_group(group)
 
     group = optparse.OptionGroup(parser, 'Miscellaneous')
-    group.add_option('--cookie-file', metavar='FILE', default=None,
-                     help='File to use for cookie storage. If given, will read any existing cookies if found at  \
-                     startup, and save resulting cookies in the end.')
-    group.add_option('-d', '--debug', action='count', default=0,
-                     help='Enable verbose logging to stderr. Repeated options increase detail of debug output.')
+    group.add_option(
+            '--cookie-file', metavar='FILE', default=None,
+            help=(
+                  'File to use for cookie storage. If given, will read any '
+                  'existing cookies if found at startup, and save resulting '
+                  'cookies in the end.'
+                  )
+            )
+    group.add_option(
+            '-d', '--debug', action='count', default=0,
+            help=(
+                  'Enable verbose logging to stderr. Repeated options '
+                  'increase detail of debug output.'
+                  )
+            )
     parser.add_option_group(group)
 
     options, _ = parser.parse_args()
@@ -1096,7 +1141,6 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"
         options.debug = min(options.debug, ScholarUtils.LOG_LEVELS['debug'])
         ScholarConf.LOG_LEVEL = options.debug
         ScholarUtils.log('info', 'using log level %d' % ScholarConf.LOG_LEVEL)
-
 
     if options.cookie_file:
         ScholarConf.COOKIE_JAR_FILE = options.cookie_file
