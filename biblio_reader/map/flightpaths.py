@@ -68,23 +68,27 @@ def flightpaths(affiliations):
     for p in papersets:
         coords[p] = set(combinations(papersets[p], 2))
     flightpaths = set()
+    i = 0
     for p in coords:
         for c in coords[p]:
+            s = str(i) if i else ""
             flightpaths.add("".join([
-                            "  var flightPlanCoordinates = [\n",
+                            "  var flightPlanCoordinates", s, " = [\n",
                             "    {lat: ", c[0].split(',')[0],
                             ", lng: ", c[0].split(',')[1], "},\n",
                             "    {lat: ", c[1].split(',')[0],
                             ", lng: ", c[1].split(',')[1], "}\n",
                             "  ];\n\n",
-                            "  var flightPath = new google.maps.Polyline({\n",
-                            "    path: flightPlanCoordinates,\n",
+                            "  var flightPath", s,
+                            " = new google.maps.Polyline({\n",
+                            "    path: flightPlanCoordinates", s, ",\n",
                             "    geodesic: true,\n",
                             "    strokeColor: '#f9e28a',\n",
                             "    strokeOpacity: 0.5,\n",
                             "    strokeWeight: 2\n",
                             "    });\n\n",
-                            "    flightPath.setMap(map);\n\n"]))
+                            "    flightPath", s, ".setMap(map);\n\n"]))
+            i = i + 1
     return(flightpaths)
 
 # -----------------------------------------------------------------------------
