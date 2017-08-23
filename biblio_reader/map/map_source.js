@@ -157400,7 +157400,7 @@ function getCircle(magnitude, zoom) {
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: '#0067a0',
         fillOpacity: .45,
-        scale: 2 * magnitude + 6 * zoom,
+        scale: 2 * magnitude,
         strokeColor: '#a31c3f',
         strokeWeight: .5
     };
