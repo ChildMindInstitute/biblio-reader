@@ -305,9 +305,10 @@ function initMap() {
 			});
 			
     var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 4,
+          zoom: 2,
           center: {lat: 0, lng: 0},
-          disableDefaultUI: True
+          disableDefaultUI: true,
+          zoomControl: false
     });
 
     map.mapTypes.set('styled_map', mapStyle);
@@ -325,19 +326,6 @@ function initMap() {
           	}));
         });
     });
-
-}
-
-function getCircle(magnitude, zoom) {
-    return {
-        path: google.maps.SymbolPath.CIRCLE,
-        fillColor: '#0067a0',
-        fillOpacity: .45,
-        scale: 2 * magnitude + 6 * zoom,
-        strokeColor: '#a31c3f',
-        strokeWeight: .5
-    };
-
 // Flightpaths begin
   var flightPlanCoordinates2396 = [
     {lat: 51.5221999, lng: -0.1233101},
@@ -157405,8 +157393,16 @@ function getCircle(magnitude, zoom) {
     flightPath4032.setMap(map);
 
 // Flightpaths end
+}
 
-
-
+function getCircle(magnitude, zoom) {
+    return {
+        path: google.maps.SymbolPath.CIRCLE,
+        fillColor: '#0067a0',
+        fillOpacity: .45,
+        scale: 2 * magnitude + 6 * zoom,
+        strokeColor: '#a31c3f',
+        strokeWeight: .5
+    };
 
 }
