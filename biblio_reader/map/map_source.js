@@ -306,7 +306,8 @@ function initMap() {
 			
     var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
-          center: {lat: 0, lng: 0}
+          center: {lat: 0, lng: 0},
+          disableDefaultUI: True
     });
 
     map.mapTypes.set('styled_map', mapStyle);
