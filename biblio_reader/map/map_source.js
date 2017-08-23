@@ -322,7 +322,8 @@ function initMap() {
           		position: {lat: parseFloat(latlong[0]),
           		lng: parseFloat(latlong[1])},
           		icon: getCircle(attrs.papers.length, map.getZoom()),
-          		map: map
+          		map: map,
+          		label: attrs.papers.length + " papers"
           	}));
         });
     });
