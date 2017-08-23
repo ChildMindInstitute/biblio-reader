@@ -29,7 +29,7 @@ def main():
                                   "// Flightpaths begin\n",
                                   "".join(fp),
                                   "// Flightpaths end\n",
-                                  map_source.split("// Flightpaths end")[1]])
+                                  map_source.split("// Flightpaths end\n")[1]])
         else:
             print("\n".join(["Please mark the flightpaths section with ",
                              "// Flightpaths begin",
@@ -72,7 +72,10 @@ def flightpaths(affiliations):
         for c in coords[p]:
             flightpaths.add("".join([
                             "  var flightPlanCoordinates = [\n",
-                            "    {lat: ", c[0], ", lng: ", c[1], "}\n"
+                            "    {lat: ", c[0].split(',')[0],
+                            ", lng: ", c[0].split(',')[1], "},\n",
+                            "    {lat: ", c[1].split(',')[0],
+                            ", lng: ", c[1].split(',')[1], "}\n",
                             "  ];\n\n",
                             "  var flightPath = new google.maps.Polyline({\n",
                             "    path: flightPlanCoordinates,\n",
