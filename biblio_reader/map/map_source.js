@@ -323,7 +323,7 @@ function initMap() {
           		lng: parseFloat(latlong[1])},
           		icon: getCircle(attrs.papers.length, map.getZoom()),
           		map: map,
-          	}));
+          	});
           	attachInfo(marker, attrs.affiliations[0] + ": " + attrs.papers.length)
           	markers.push(marker)
         });
