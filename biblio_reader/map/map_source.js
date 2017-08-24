@@ -1,3 +1,5 @@
+var polylines = [];
+
 function initMap() {
     var mapStyle = new google.maps.StyledMapType([
   {
@@ -334,7 +336,6 @@ function initMap() {
     });
     
 // Flightpaths begin
-    var polylines = []
     $.getJSON("flightpaths.json", function(coauthorships) {
         $.each(coauthorships, function(coauthor, coords) {
           	var coauthorship = new google.maps.Polyline({
