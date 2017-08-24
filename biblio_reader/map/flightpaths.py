@@ -84,8 +84,8 @@ def flightpaths(affiliations):
                             "    path: flightPlanCoordinates", s, ",\n",
                             "    geodesic: true,\n",
                             "    strokeColor: '#f9e28a',\n",
-                            "    strokeOpacity: 0.5,\n",
-                            "    strokeWeight: 2\n",
+                            "    strokeOpacity: 0.2,\n",
+                            "    strokeWeight: 1\n",
                             "    });\n\n",
                             "    flightPath", s, ".setMap(map);\n\n"]))
             i = i + 1
