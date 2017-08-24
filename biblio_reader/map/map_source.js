@@ -341,7 +341,7 @@ function initMap() {
             strokeWeight: 1
             });
 
-            flightPath9903.setMap(map);
+            coauthorship.setMap(map);
             polylines.push(coauthorship)
         });
     });
