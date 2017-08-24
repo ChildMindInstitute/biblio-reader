@@ -11,6 +11,7 @@ Copyright ©2017, Child Mind Institute (http://childmind.org), Apache v2.0
     License
 """
 from itertools import combinations
+import json
 import os
 import sys
 br_path = os.path.abspath(os.path.join(__file__,
@@ -22,22 +23,10 @@ from biblio_reader.map.affil_to_json import get_affiliation_json
 
 def main():
     fp = flightpaths(get_affiliation_json()[0])
-    with open("map_source.js", 'r') as map_source_js:
-        map_source = map_source_js.read()
-        if "// Flightpaths begin" in map_source:
-            map_source = "".join([map_source.split("// Flightpaths begin")[0],
-                                  "// Flightpaths begin\n",
-                                  "".join(fp),
-                                  "// Flightpaths end\n",
-                                  map_source.split("// Flightpaths end\n")[1]])
-        else:
-            print("\n".join(["Please mark the flightpaths section with ",
-                             "// Flightpaths begin",
-                             "and",
-                             "// Flightpaths end",
-                             "comments in map_source.js"]))
-    with open("map_source.js", 'w') as map_source_js:
-        map_source_js.write(map_source)
+    with open('flightpaths.json', 'w') as fpfp:
+        json.dump(fp, fpfp,
+                  sort_keys=True, indent=4, separators=(',', ': ')
+                  )
 
 
 def flightpaths(affiliations):
@@ -55,7 +44,7 @@ def flightpaths(affiliations):
     Returns
     -------
     flightpaths: set
-        set of kavascript Google Maps flightpath strings
+        set of JavaScript Google Maps flightpath strings
     """
     papersets = dict()
     for a in affiliations:
@@ -67,27 +56,17 @@ def flightpaths(affiliations):
     coords = dict()
     for p in papersets:
         coords[p] = set(combinations(papersets[p], 2))
-    flightpaths = set()
+    flightpaths = dict()
     i = 0
     for p in coords:
         for c in coords[p]:
-            s = str(i) if i else ""
-            flightpaths.add("".join([
-                            "  var flightPlanCoordinates", s, " = [\n",
-                            "    {lat: ", c[0].split(',')[0],
-                            ", lng: ", c[0].split(',')[1], "},\n",
-                            "    {lat: ", c[1].split(',')[0],
-                            ", lng: ", c[1].split(',')[1], "}\n",
-                            "  ];\n\n",
-                            "  var flightPath", s,
-                            " = new google.maps.Polyline({\n",
-                            "    path: flightPlanCoordinates", s, ",\n",
-                            "    geodesic: true,\n",
-                            "    strokeColor: '#f9e28a',\n",
-                            "    strokeOpacity: 0.2,\n",
-                            "    strokeWeight: 1\n",
-                            "    });\n\n",
-                            "    flightPath", s, ".setMap(map);\n\n"]))
+            s = "".join(["_", str(i)]) if i else ""
+            flightpaths["".join(["coauthorship", s])] = [
+                                     {'lat': float(c[0].split(',')[0]),
+                                      'lng': float(c[0].split(',')[1])},
+                                     {'lat': float(c[1].split(',')[0]),
+                                      'lng': float(c[1].split(',')[1])}
+                                                      ]
             i = i + 1
     return(flightpaths)
 
