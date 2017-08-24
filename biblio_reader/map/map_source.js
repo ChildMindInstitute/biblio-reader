@@ -370,7 +370,7 @@ function getCircle(magnitude, zoom) {
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: '#0067a0',
         fillOpacity: .45,
-        scale: ((9+zoom)*magnitude)/(10+zoom),
+        scale: magnitude,
         strokeColor: '#a31c3f',
         strokeWeight: .5
     };
