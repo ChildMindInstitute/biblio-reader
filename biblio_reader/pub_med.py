@@ -4,7 +4,6 @@ from Bio import Entrez
 br_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 if br_path not in sys.path:
     sys.path.append(br_path)
-import manager as mg
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
 
@@ -109,6 +108,6 @@ if __name__ == '__main__':
     if 'PMCID' not in data:
         get_ids(data)
         mg.update_data()
-    if not os.path.exists(BIB_DIR) or not os.listdir(BIB_DIR):
+    if not os.path.exists(BIB_DIR):
         write_bib(data, mg.dir(BIB_DIR))
     parse_bib(BIB_DIR, PARSED_BIBS)

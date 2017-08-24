@@ -31,6 +31,7 @@ def main():
     affiliations = {i: {aff.strip() for sublist in [affil.split(';') for affil
                    in affiliation.split(';;')] for aff in sublist} for i,
                    affiliation in zip(bibs['i'], bibs['affiliations'])}
+    parse_affiliations()
 
 
 def get_affiliation_json(path='affiliations.json'):
@@ -191,6 +192,7 @@ def geo_lookup(affiliations):
                for latlong in geo_dict}
     with open('affiliations.json', 'w') as jf:
         json.dump(geo_dict, jf)
+
 
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
