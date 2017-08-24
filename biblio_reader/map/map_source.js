@@ -305,7 +305,7 @@ function initMap() {
 			});
 			
     var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 2,
+          zoom: 3,
           center: {lat: 40.761155, lng: -73.970870},
           disableDefaultUI: true,
           zoomControl: true
@@ -324,8 +324,12 @@ function initMap() {
           		icon: getCircle(attrs.papers.length, map.getZoom()),
           		map: map,
           	});
-          	attachInfo(marker, attrs.papers.length + " papers from " + attrs.affiliations[0])
-          	markers.push(marker)
+          	if(attrs.papers.length == 1) {
+          	    attachInfo(marker, attrs.papers.length + " paper from " + attrs.affiliations[0]);
+          	} else {
+          	    attachInfo(marker, attrs.papers.length + " papers from " + attrs.affiliations[0]);
+          	}
+          	markers.push(marker);
         });
     });
     
