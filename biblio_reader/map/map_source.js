@@ -306,25 +306,26 @@ function initMap() {
 			
     var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 2,
-          center: {lat: 0, lng: 0},
+          center: {lat: 40.761155, lng: -73.970870},
           disableDefaultUI: true,
           zoomControl: true
     });
 
     map.mapTypes.set('styled_map', mapStyle);
     map.setMapTypeId('styled_map');
-
+    
     var markers = [];
     $.getJSON("affiliations.json", function(affils) {
         $.each(affils, function(geo_key, attrs) {
           	var latlong = geo_key.split(',');
-          	markers.push(new google.maps.Marker({
+          	var marker = new google.maps.Marker({
           		position: {lat: parseFloat(latlong[0]),
           		lng: parseFloat(latlong[1])},
           		icon: getCircle(attrs.papers.length, map.getZoom()),
           		map: map,
-          		label: attrs.papers.length + " papers"
           	}));
+          	attachInfo(marker, attrs.affiliations[0] + ": " + attrs.papers.length)
+          	markers.push(marker)
         });
     });
 // Flightpaths begin
@@ -157396,12 +157397,22 @@ function initMap() {
 // Flightpaths end
 }
 
+function attachInfo(marker, information) {
+    var infowindow = new google.maps.InfoWindow({
+        content: information
+    });
+    
+    marker.addListener('click', function() {
+        infowindow.open(marker.get('map'), marker);
+    });    
+}
+
 function getCircle(magnitude, zoom) {
     return {
         path: google.maps.SymbolPath.CIRCLE,
         fillColor: '#0067a0',
         fillOpacity: .45,
-        scale: 2 * magnitude,
+        scale: ((1+zoom)*magnitude)/(2+zoom),
         strokeColor: '#a31c3f',
         strokeWeight: .5
     };
