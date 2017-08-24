@@ -305,7 +305,7 @@ function initMap() {
 			});
 			
     var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 1,
+          zoom: 2,
           center: {lat: 40.761155, lng: -73.970870},
           disableDefaultUI: true,
           zoomControl: true
@@ -324,7 +324,7 @@ function initMap() {
           		icon: getCircle(attrs.papers.length, map.getZoom()),
           		map: map,
           	});
-          	attachInfo(marker, attrs.affiliations[0] + ": " + attrs.papers.length)
+          	attachInfo(marker, attrs.papers.length + " papers from " + attrs.affiliations[0])
           	markers.push(marker)
         });
     });
