@@ -333,7 +333,6 @@ function initMap() {
     var polylines = []
     $.getJSON("flightpaths.json", function(coauthorships) {
         $.each(coauthorships, function(coauthor, coords) {
-            alert(coords);
           	var coauthorship = new google.maps.Polyline({
           	path: coords,
             geodesic: true,
