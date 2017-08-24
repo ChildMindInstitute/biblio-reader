@@ -377,13 +377,13 @@ function getCircle(magnitude, zoom) {
 }
 
 function showLines() {
-    polylines.forEach(flightPath, function() {
+    polylines.forEach(function(flightPath) {
         flightPath.setMap(map);
     });
 }
 
 function hideLines() {
-    polylines.forEach(flightPath, function() {
+    polylines.forEach(function(flightPath) {
         flightPath.setMap(null);
     });
 }
