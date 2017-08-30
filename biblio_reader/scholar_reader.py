@@ -1,7 +1,9 @@
 import pandas as pd, matplotlib.pyplot as plt, sys, os, datetime, collections, numpy as np
 from titlecase import titlecase
-
-sys.path.insert(0, "/Users/jake.son/PycharmProjects/Biblio_Reader")
+br_path = os.path.abspath(os.path.join(__file__,
+                          os.pardir, os.pardir))
+if br_path not in sys.path:
+    sys.path.append(br_path)
 import manager as mg
 
 STAT_DIR = mg.dir(os.path.join(mg.OUTPUT_PATH, 'stats'))
@@ -34,7 +36,7 @@ def count_visualizer(value_count, stat_type, name, row_limit=None, color=None):
                     list(value_count.keys())[len(value_count) - 1][1]])
         plt.fill_between(range(len(value_count)), list(value_count.values()))
     else:
-        raise IOError('Invalid stat type')
+        raise IOError('irrelevant stat type')
     plt.title(name)
     plt.plot()
     plt.savefig(os.path.join(STAT_DIR, name.lower().replace(' ', '_') + '.png'), bbox_inches='tight')
@@ -113,7 +115,7 @@ def stacked_data_visualizer(data, column, stack_type, stat, title=None, split=No
             curr_width += width
         plt.xticks([x + (((len(stacks) / 2) - 0.5) * width) for x in range(len(max_stack))], max_stack.keys())
     else:
-        raise IOError('Invalid stat type')
+        raise IOError('irrelevant stat type')
     plt.legend()
     if title is None:
         title = ' by '.join([column, stack_type])
@@ -302,7 +304,7 @@ def impacts(data, type, per_year=False):
         elif isinstance(type, int):
             res.append((set, np.percentile(citations, type)))
         else:
-            raise IOError("Invalid type")
+            raise IOError("irrelevant type")
     return res
 
 
@@ -349,5 +351,5 @@ def calculate_stats(data):
             elif use_type == 'S':
                 message += ' that only used scripts:'
             else:
-                message += ' that were invalid:'
+                message += ' that were irrelevant:'
             print(message, stat)
