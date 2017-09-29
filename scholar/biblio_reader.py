@@ -264,11 +264,7 @@ class ScholarUtils(object):
         try:
             return int(arg)
         except ValueError:
-            # Allow YYYY-MM-DD
-            if len(arg.split("-")) == 3:
-                return arg
-            else:
-                raise FormatError(msg)
+            raise FormatError(msg)
 
     @staticmethod
     def log(level, msg):
@@ -1078,7 +1074,7 @@ biblio_reader -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970
           '-s', '--some', metavar='WORDS', default=None,
           help=(
                 'Results must contain at least one of these words. '
-                'Pass arguments in form -s "foo bar baz" for simple words, '
+                'Pass arguments in form -s "foo bar baz" for oimple words, '
                 'and -s "a phrase, another phrase" for phrases'
                 )
           )
