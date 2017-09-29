@@ -148,7 +148,7 @@ if Biblio_Reader not in sys.path:
     sys.path.append(Biblio_Reader)
 print(sys.path)
 import warnings
-import math
+# import math
 import manager
 import pandas
 
