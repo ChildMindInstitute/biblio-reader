@@ -24,8 +24,7 @@ keywords = [
 command = "python biblio_reader.py -s \"{0}\" --before {1} --after {2} -o \""\
           "{3}\"".format(
               ", ".join([k for k in keywords]),
-              date(date.today().year),
-              date(date.today().year))
-          )
+              date.today().year,
+              date.today().year)
 print(command)
 subprocess.call(command, shell=True)
