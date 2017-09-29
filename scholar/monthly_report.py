@@ -21,12 +21,11 @@ keywords = [
                "Consortium for Reproducibility and Reliability"
            ]
 
-command = "python biblio_reader.py -s \"{0}\" --before {1} --after {2} -o \""\
-          "{3}\"".format(
+command = "python biblio_reader.py -s \"{0}\" --before {1} --after {2} "\
+          "--all-pages".format(
               ", ".join([k for k in keywords]),
               str(date.today().year),
-              str(date.today().year),
-              str(date.today())
+              str(date.today().year)
           )
 print(command)
 subprocess.call(command, shell=True)

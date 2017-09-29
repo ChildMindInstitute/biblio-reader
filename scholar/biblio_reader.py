@@ -1258,6 +1258,13 @@ scholar.py -c 5 -a "albert einstein" -t --none "quantum theory" --after 1970"""
                      help='Maximum number of results')
     group.add_option('--all-pages', action='store_true', default=False,
                      help='Include results of all pages up to page 99')
+    # Default csv filename in outputs directory is 'ScholarOutput'
+    # For our purposes, it was named FCP_DATA.csv, which led to
+    # the issue with get_data() in manager.py
+    group.add_option(
+            '-o', '--out', metavar='FILENAME', default='ScholarOutput',
+            help='Export articles in csv format with a chosen filename'
+            )
     parser.add_option_group(group)
 
     group = optparse.OptionGroup(parser, 'Output format',
