@@ -1,5 +1,14 @@
-import PyPDF2, os, pandas as pd, urllib.parse as urlparse, urllib.request as urllib, manager as mg
 from bs4 import BeautifulSoup as bs
+import os
+import pandas as pd
+import PyPDF2
+import sys
+import urllib.parse as urlparse
+import urllib.request as urllib
+ancestor = os.path.abspath(os.path.join(os.pardir, os.pardir))
+if ancestor not in sys.path:
+    sys.path.append(ancestor)
+from Biblio_Reader import manager as mg
 data = mg.get_data()
 
 
@@ -8,16 +17,18 @@ def pdfopener(data, dir):
     Opens all PDF URLs in the dataframe
     """
     for i, row in data.iterrows():
-        url = row[1]['URL']
+        url = row['URL']
+        url = url[26:] if url.startswith(
+                'http://scholar.google.com/') else url
         if pd.isnull(url):
             continue
         if '.pdf' in url:
             try:
                 pdf = urllib.urlopen(url)
-                with open(dir + str(i) + '.pdf', 'wb') as f:
+                with open(os.path.join(dir, str(row['i'])) + '.pdf', 'wb') as f:
                     f.write(pdf.read())
             except:
-                print('Unable to open:', i)
+                print('Unable to open:', row['i'])
                 print(url)
                 continue
 
@@ -32,6 +43,8 @@ def pdffinder(data, dir):
     pdfs_found = 0
     for key in data:
         link = data[key]
+        link = link[26:] if link.startswith(
+                'http://scholar.google.com/') else link
         try:
             html = urllib.urlopen(link).read()
         except:
@@ -69,6 +82,8 @@ def arxiv_open(data, dir):
     data = dict(data)
     for key in data:
         link = data[key]
+        link = link[26:] if link.startswith(
+                'http://scholar.google.com/') else link
         try:
             html = urllib.urlopen(link).read()
         except:
@@ -88,6 +103,7 @@ def arxiv_open(data, dir):
                 except Exception as e:
                     print(e, key, pdf)
 
+
 def plos_open(data, dir):
     """
     Writes all PDFS found on PLoS website to the dir
@@ -96,6 +112,8 @@ def plos_open(data, dir):
     data = dict(data)
     for key in data:
         link = data[key]
+        link = link[26:] if link.startswith(
+                'http://scholar.google.com/') else link
         try:
             html = urllib.urlopen(link).read()
         except:
@@ -124,6 +142,8 @@ def liebert_open(data, dir):
     data = dict(data)
     for key in data:
         link = data[key]
+        link = link[26:] if link.startswith(
+                'http://scholar.google.com/') else link
         try:
             html = urllib.urlopen(link).read()
         except:
@@ -152,6 +172,8 @@ def citeseer_open(data, dir):
     data = dict(data)
     for key in data:
         link = data[key]
+        link = link[26:] if link.startswith(
+                'http://scholar.google.com/') else link
         try:
             pdf_file = urllib.urlopen(link).read()
             with open(os.path.join(dir, str(key)) + '.pdf', 'wb') as f:
@@ -168,11 +190,15 @@ def find_corrupted(pdf_directory):
     res = []
     for path, dirs, files in os.walk(pdf_directory):
         for file in files:
-            full_file = '/'.join([path, file])
-            try:
-                PyPDF2.PdfFileReader(full_file)
-            except:
-                res.append(int(file.replace('.pdf', '')))
+            full_file = os.path.join(path, file)
+            if file == ".DS_Store":
+                os.remove(full_file)
+            if file.endswith(".pdf"):
+                try:
+                    PyPDF2.PdfFileReader(full_file)
+                except:
+                    os.remove(full_file)
+                    res.append(int(file.replace('.pdf', '')))
     return res
 
 

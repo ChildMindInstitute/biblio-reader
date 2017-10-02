@@ -67,8 +67,10 @@ def get_data():
     global DATA_NAME, DATA
     DATA_NAME = get_file('DATA_NAME.txt', WORKING_PATH).read() + '.csv'
     DATA = pandas.read_csv(get_file(DATA_NAME, OUTPUT_PATH))
-    DATA = DATA.loc[DATA['Duplicate of'] < 0]
-    DATA.drop('Duplicate of', axis=1, inplace=True)
+    DATA = DATA.loc[DATA['Duplicate of'] < 0] if (
+            'Duplicate of' in DATA.columns) else DATA
+    if 'Duplicate of' in DATA.columns:
+        DATA.drop('Duplicate of', axis=1, inplace=True)
     return DATA
 
 
