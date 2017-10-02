@@ -22,10 +22,11 @@ keywords = [
            ]
 
 command = "python biblio_reader.py -s \"{0}\" --before {1} --after {2} "\
-          "--all-pages".format(
+          "--all-pages -o \"{3}\"".format(
               ", ".join([k for k in keywords]),
               str(date.today().year),
-              str(date.today().year)
+              str(date.today().year),
+              str(date.today())
           )
 print(command)
 subprocess.call(command, shell=True)
