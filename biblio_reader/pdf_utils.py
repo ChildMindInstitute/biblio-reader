@@ -9,7 +9,6 @@ ancestor = os.path.abspath(os.path.join(os.pardir, os.pardir))
 if ancestor not in sys.path:
     sys.path.append(ancestor)
 from Biblio_Reader import manager as mg
-data = mg.get_data()
 
 
 def pdfopener(data, dir):
