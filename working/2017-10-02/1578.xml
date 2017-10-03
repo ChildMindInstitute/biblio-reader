@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2017//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_170101.dtd">
+<PubmedArticleSet>
+<PubmedArticle>
+    <MedlineCitation Status="Publisher" Owner="NLM">
+        <PMID Version="1">28866433</PMID>
+        <DateCreated>
+            <Year>2017</Year>
+            <Month>09</Month>
+            <Day>03</Day>
+        </DateCreated>
+        <DateRevised>
+            <Year>2017</Year>
+            <Month>09</Month>
+            <Day>03</Day>
+        </DateRevised>
+        <Article PubModel="Print-Electronic">
+            <Journal>
+                <ISSN IssnType="Electronic">1361-8423</ISSN>
+                <JournalIssue CitedMedium="Internet">
+                    <Volume>42</Volume>
+                    <PubDate>
+                        <Year>2017</Year>
+                        <Month>Aug</Month>
+                        <Day>30</Day>
+                    </PubDate>
+                </JournalIssue>
+                <Title>Medical image analysis</Title>
+                <ISOAbbreviation>Med Image Anal</ISOAbbreviation>
+            </Journal>
+            <ArticleTitle>Multivariate brain network graph identification in functional MRI.</ArticleTitle>
+            <Pagination>
+                <MedlinePgn>228-240</MedlinePgn>
+            </Pagination>
+            <ELocationID EIdType="pii" ValidYN="Y">S1361-8415(17)30130-5</ELocationID>
+            <ELocationID EIdType="doi" ValidYN="Y">10.1016/j.media.2017.08.007</ELocationID>
+            <Abstract>
+                <AbstractText>Motivated by recent interest in identification of functional brain networks, we develop a new multivariate approach for functional brain network identification and name it as Multivariate Vector Regression-based Connectivity (MVRC). The proposed MVRC method regresses time series of all regions to those of other regions simultaneously and estimates pairwise association between two regions with consideration of influence of other regions and builds the adjacency matrix. Next, modularity method is applied on the adjacency matrix to detect communities or functional brain networks. We compare the proposed MVRC method with existing methods ranging from simple Pearson correlation to advanced Multivariate Adaptive Sparse Representation (ASR) methods. Experimental results on simulated and real fMRI dataset demonstrate that MVRC is able to extract functional brain networks that are consistent with the literature. Also, the proposed MVRC method is 650-750 times faster compared to the existing ASR method on 90 node network.</AbstractText>
+                <CopyrightInformation>Copyright © 2017 Elsevier B.V. All rights reserved.</CopyrightInformation>
+            </Abstract>
+            <AuthorList CompleteYN="Y">
+                <Author ValidYN="Y">
+                    <LastName>Aggarwal</LastName>
+                    <ForeName>Priya</ForeName>
+                    <Initials>P</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Signal processing and Bio-medical Imaging Lab, Department of Electronics and Communication Engineering, Indraprastha Institute of Information Technology-Delhi (IIIT-D), India. Electronic address: priyaa@iiitd.ac.in.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Gupta</LastName>
+                    <ForeName>Anubha</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Signal processing and Bio-medical Imaging Lab, Department of Electronics and Communication Engineering, Indraprastha Institute of Information Technology-Delhi (IIIT-D), India. Electronic address: anubha@iiitd.ac.in.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+                <Author ValidYN="Y">
+                    <LastName>Garg</LastName>
+                    <ForeName>Ajay</ForeName>
+                    <Initials>A</Initials>
+                    <AffiliationInfo>
+                        <Affiliation>Department of Neuroradiology, Neurosciences Centre, All India Institute of Medical Sciences (AIIMS), Delhi, India. Electronic address: drajaygarg@gmail.com.</Affiliation>
+                    </AffiliationInfo>
+                </Author>
+            </AuthorList>
+            <Language>eng</Language>
+            <PublicationTypeList>
+                <PublicationType UI="D016428">Journal Article</PublicationType>
+            </PublicationTypeList>
+            <ArticleDate DateType="Electronic">
+                <Year>2017</Year>
+                <Month>08</Month>
+                <Day>30</Day>
+            </ArticleDate>
+        </Article>
+        <MedlineJournalInfo>
+            <Country>Netherlands</Country>
+            <MedlineTA>Med Image Anal</MedlineTA>
+            <NlmUniqueID>9713490</NlmUniqueID>
+            <ISSNLinking>1361-8415</ISSNLinking>
+        </MedlineJournalInfo>
+        <KeywordList Owner="NOTNLM">
+            <Keyword MajorTopicYN="N">Elastic net</Keyword>
+            <Keyword MajorTopicYN="N">Functional MRI</Keyword>
+            <Keyword MajorTopicYN="N">Functional connectivity</Keyword>
+            <Keyword MajorTopicYN="N">Resting-state brain networks</Keyword>
+            <Keyword MajorTopicYN="N">Time series analysis</Keyword>
+        </KeywordList>
+    </MedlineCitation>
+    <PubmedData>
+        <History>
+            <PubMedPubDate PubStatus="received">
+                <Year>2016</Year>
+                <Month>09</Month>
+                <Day>20</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="revised">
+                <Year>2017</Year>
+                <Month>08</Month>
+                <Day>24</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="accepted">
+                <Year>2017</Year>
+                <Month>08</Month>
+                <Day>28</Day>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="entrez">
+                <Year>2017</Year>
+                <Month>9</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="pubmed">
+                <Year>2017</Year>
+                <Month>9</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+            <PubMedPubDate PubStatus="medline">
+                <Year>2017</Year>
+                <Month>9</Month>
+                <Day>4</Day>
+                <Hour>6</Hour>
+                <Minute>0</Minute>
+            </PubMedPubDate>
+        </History>
+        <PublicationStatus>aheadofprint</PublicationStatus>
+        <ArticleIdList>
+            <ArticleId IdType="pubmed">28866433</ArticleId>
+            <ArticleId IdType="pii">S1361-8415(17)30130-5</ArticleId>
+            <ArticleId IdType="doi">10.1016/j.media.2017.08.007</ArticleId>
+        </ArticleIdList>
+    </PubmedData>
+</PubmedArticle>
+
+</PubmedArticleSet>

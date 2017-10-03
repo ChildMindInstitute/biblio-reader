@@ -14,7 +14,7 @@ def find_paragraphs(txt_directory, terms, outfile=None):
     :return: The dictionary with pub index numbers and corresponding paragraphs
     """
     res = {}
-    terms = list(map((lambda x: x.lower()), terms))
+    # terms = list(map((lambda x: x.lower()), terms))
     for file in os.listdir(txt_directory):
         full_file = os.path.join(txt_directory, file)
         with open(full_file, 'r') as f:

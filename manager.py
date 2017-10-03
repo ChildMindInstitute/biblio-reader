@@ -74,12 +74,18 @@ def get_data():
     return DATA
 
 
-def get_paragraphs():
-    """Retrieves text from the paragraphs.json file and converts into a dictionary
+def get_paragraphs(pfile='paragraphs.json'):
+    """
+    Retrieves text from the paragraphs.json file and converts into a
+    dictionary
 
     :return: Dictionary with (key = integer index, value = paragraph text)
     """
-    return {int(i): paragraph for i, paragraph in json.load(get_file('paragraphs.json', WORKING_PATH)).items()}
+    return {
+        int(i): paragraph for i, paragraph in json.load(
+            get_file(pfile, WORKING_PATH)
+            ).items()
+        }
 
 
 def get_bibs():

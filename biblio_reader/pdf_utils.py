@@ -210,6 +210,8 @@ def find_articles_left(data, dir):
     unlinkables = []
     for i, url in data:
         if i not in [file.replace('.txt', '') for file in os.listdir(dir)]:
+            url = url[26:] if url.startswith(
+                'http://scholar.google.com/') else url
             print(i, url)
             unlinkables.append((i, url))
     return unlinkables
