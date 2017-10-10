@@ -747,7 +747,7 @@ class ScholarQuery(object):
         """
         pages = min(math.ceil(num_results / 10) - 1, 99)
         for count in range(1, pages):
-            self.page = count
+            self.page = count * 10
             self.urls.append(self.get_url())
         return self.urls
 
