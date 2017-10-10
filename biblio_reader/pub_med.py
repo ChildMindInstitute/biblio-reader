@@ -22,6 +22,25 @@ def filterstr(str, filter, decode=True):
         return unidecode.unidecode(str)
     else:
         return str
+    
+
+def get_abstract(pmid):
+    """
+    Function to get a text abstract from any article with a PubMed ID
+    
+    Parameter
+    ---------
+    pmid : int
+    
+    Returns
+    -------
+    abstract : string
+    """
+    abstract = "" if not pmid else urllib.urlopen(
+        "http://togows.dbcls.jp/entry/ncbi-pubmed/{0}/abstract".format(
+        pmid)
+    ).read().decode("UTF-8")
+    return(abstract)
 
 
 def get_ids(data):
