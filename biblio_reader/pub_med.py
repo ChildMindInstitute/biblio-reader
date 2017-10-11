@@ -6,6 +6,8 @@ if br_path not in sys.path:
     sys.path.append(br_path)
 Entrez.email = 'drcc@vt.edu'
 pd.options.mode.chained_assignment = None
+import manager as mg
+import urllib.request as urllib
 
 
 def filterstr(str, filter, decode=True):
@@ -24,7 +26,7 @@ def filterstr(str, filter, decode=True):
         return str
     
 
-def get_abstract(pmid):
+def get_abstract(data):
     """
     Function to get a text abstract from any article with a PubMed ID
     
@@ -36,12 +38,47 @@ def get_abstract(pmid):
     -------
     abstract : string
     """
-    abstract = "" if not pmid else urllib.urlopen(
-        "http://togows.dbcls.jp/entry/ncbi-pubmed/{0}/abstract".format(
-        pmid)
-    ).read().decode("UTF-8")
-    return(abstract)
 
+    abstracts = []
+    pmcids = list(data['PMCID'])
+
+    for int in range(len(pmcids)):
+        pmid = pmcids[int]
+
+        try:
+            abstract = "Not in PubMed" if pmid == 0 else urllib.urlopen(
+                "http://togows.dbcls.jp/entry/ncbi-pubmed/{0}/abstract".format(
+                pmid)
+            ).read().decode("UTF-8")
+        except:
+            abstract = "No abstract"
+
+        abstracts.append(abstract)
+
+    data['Abstracts'] = abstracts
+    return(abstracts)
+
+def get_journals(data):
+
+    journals = []
+    pmcids = list(data['PMCID'])
+
+    for int in range(len(pmcids)):
+        pmid = pmcids[int]
+
+        try:
+            journal = "Not in PubMed" if pmid == 0 else urllib.urlopen(
+                "http://togows.dbcls.jp/entry/ncbi-pubmed/{0}/journal".format(
+                    pmid)
+            ).read().decode("UTF-8")
+        except:
+            journal = "No Journal Found"
+
+        journals.append(journal)
+
+    data['Journal'] = journals
+
+    return journals
 
 def get_ids(data):
     """
@@ -130,3 +167,6 @@ if __name__ == '__main__':
     if not os.path.exists(BIB_DIR):
         write_bib(data, mg.dir(BIB_DIR))
     parse_bib(BIB_DIR, PARSED_BIBS)
+    # get_abstract(data)
+    get_journals(data)
+    mg.update_data()
