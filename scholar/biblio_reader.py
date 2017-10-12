@@ -934,7 +934,7 @@ class ScholarSettings(object):
     CITFORM_BIBTEX = 4
 
     def __init__(self):
-        self.citform = 0 # Citation format, default none
+        self.citform = 4 # Citation format, default Bibtex
         self.per_page_results = None
         self._is_configured = False
 
@@ -1088,8 +1088,8 @@ class ScholarQuerier(object):
             htmls = []
             for url in query.flip_page(num_results):
                 html = self._get_http_response(url=url,
-                                               log_msg='dump of query response HTML',
-                                               err_msg='results retrieval failed')
+                           log_msg='dump of query response HTML',
+                           err_msg='results retrieval failed')
                 htmls.append(html)
             if not htmls:
                 return
@@ -1107,9 +1107,11 @@ class ScholarQuerier(object):
             return True
 
         ScholarUtils.log('info', 'retrieving citation export data')
-        data = self._get_http_response(url=article['url_citation'],
-                                       log_msg='citation data response',
-                                       err_msg='requesting citation data failed')
+        data = self._get_http_response(
+                   url=article['url_citation'],
+                   log_msg='citation data response',
+                   err_msg='requesting citation data failed'
+               )
         if data is None:
             return False
 
@@ -1158,7 +1160,12 @@ class ScholarQuerier(object):
         try:
             ScholarUtils.log('info', 'requesting %s' % unquote(url))
 
-            req = Request(url=url, headers={'User-Agent': ScholarConf.USER_AGENT})
+            req = Request(
+                      url=url,
+                      headers={
+                          'User-Agent': ScholarConf.USER_AGENT
+                      }
+                  )
             hdl = self.opener.open(req)
             html = hdl.read()
 
