@@ -64,7 +64,7 @@ def apa_format(auth, year, small, large, url="", highlight=None):
 
 
 def build_html(data, html_out, cats=None, uses=['Y', 'S', 'N'], sets=None,
-               title="Bibliography"):
+               title="Bibliography", debug=False):
     """
     Function to create an HTML page.
 
@@ -88,6 +88,9 @@ def build_html(data, html_out, cats=None, uses=['Y', 'S', 'N'], sets=None,
 
     title: string
         title of document, default="Bibliography"
+        
+    debug: boolean (optional)
+        highlight entries that need work?
 
     Returns
     -------
@@ -98,13 +101,15 @@ def build_html(data, html_out, cats=None, uses=['Y', 'S', 'N'], sets=None,
     html_string = html_open(title)
     for cat in cats:
         for use in uses:
-            html_string = html_string + html_bib_block(data, use, cat, sets)
+            html_string = html_string + html_bib_block(
+                              data, use, cat, sets, debug
+                          )
     html_string = html_string + html_close()
     with open(html_out, 'w') as h:
         h.write(html_string)
 
 
-def html_bib_block(data, data_use, journal_category, sets=None):
+def html_bib_block(data, data_use, journal_category, sets=None, debug=False):
     """
     Function to create a block of HTML bibliography.
 
@@ -121,6 +126,9 @@ def html_bib_block(data, data_use, journal_category, sets=None):
 
     sets: list of strings or None
         data sets, optional
+        
+    debug: boolean (optional)
+        highlight entries that need work?
 
     Returns
     -------
@@ -160,9 +168,15 @@ def html_bib_block(data, data_use, journal_category, sets=None):
     for i, row in bib_data.iterrows():
         if not sets or (len(sets[0]) and sets[0] in row.loc['Sets']) or sets[0
                        ] == row.loc['Sets']:
-            q = "#f2cd32" if ('others' in row.loc['Authors'] or set_name ==
-                "unspecified" or "books.google.com" in row.loc['URL']) else   \
-                "#00c1d5" if row.loc['Contributor'] == 'Contributor' else None
+            q = "#f2cd32" if (
+                    debug and (
+                        'others' in row.loc['Authors'] or
+                        set_name == "unspecified" or
+                        "books.google.com" in row.loc['URL']
+                    )
+                ) else "#00c1d5" if (
+                    row.loc['Contributor'] == 'Contributor'
+                ) else None
             html_string += apa_format(str(row.loc['Authors']), str(row.loc[
                            'Year']), str(row.loc['Title']), str(row.loc[
                            'Journal']), row.loc['URL'], q)
@@ -317,19 +331,55 @@ strong {
 
 # -----------------------------------------------------------------------------
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='data_in & html_out')
+    debug = False
+    parser = argparse.ArgumentParser(
+                 description='data_in, html_out, debug'
+              )
     parser.add_argument('data_in', type=str, nargs='?', default=None,
                         help="path to master CSV (optional)")
     parser.add_argument('html_out', type=str, nargs='?', default=
                         os.path.join(br_path, 'bibliography', 'index.html'),
                         help="save path for HTML file (optional)")
+    parser.add_argument('-d', '--debug', action='store_true',
+                        help="highlight entries that need more vetting")
     arg = parser.parse_args()
     if arg.data_in:
         data = pd.read_csv(arg.data_in)
     else:
         data = get_data()
-    build_html(data, arg.html_out, ["Journal", "Proceeding", "Thesis",
-               "Preprint"], sets=["FCP", "ABIDE", "ADHD200", "NKI", "CORR", ""],
-               title="Forward citations")
-    build_html(data, os.path.join(os.path.dirname(arg.html_out), "extras.html"
-               ), uses=["I"], title="Irrelevant & duplicate references")
+    build_html(
+        data,
+        arg.html_out,
+        [
+            "Journal",
+            "Proceeding",
+            "Thesis",
+            "Preprint"
+        ],
+        sets=[
+            "FCP",
+            "ABIDE",
+            "ADHD200",
+            "NKI",
+            "CORR",
+            ""
+        ] if debug else [
+            "FCP",
+            "ABIDE",
+            "ADHD200",
+            "NKI",
+            "CORR",
+        ],
+        title="Forward citations",
+        debug=debug
+    )
+    build_html(
+        data,
+        os.path.join(
+            os.path.dirname(arg.html_out),
+            "extras.html"
+        ),
+        uses=["I"],
+        title="Irrelevant & duplicate references",
+        debug=debug
+    )
