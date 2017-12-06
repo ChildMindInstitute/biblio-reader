@@ -1,7 +1,7 @@
-Biblio_Reader
+biblio-reader
 =============
 
-Welcome! Biblio_Reader is a literature parsing tool that compiles and analyzes publications matched by Google Scholar searches.
+Welcome! biblio-reader is a literature parsing tool that compiles and analyzes publications matched by Google Scholar searches.
 For publications found on Google Scholar between pages 1 and 99, it can do the following:
 * Compile key information from each publication (such as article title, year, authors, journal title, URL, and citations)
 * Write all key information into a CSV file
